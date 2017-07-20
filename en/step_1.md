@@ -10,7 +10,7 @@ In this project, you’ll design and code improvements to a 2D version of Minecr
 
 ### Additional information for club leaders
 
-If you need to print this project, please use the [Printer friendly version](./print).
+If you need to print this project, please use the [Printer friendly version](https://projects.raspberry-pi.org/en/projects/codecraft/print).
 
 
 --- collapse ---
