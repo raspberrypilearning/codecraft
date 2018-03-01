@@ -76,5 +76,4 @@ Dieses Projekt deckt Elemente aus den folgenden Bereichen des [Raspberry Pi Lehr
 ## Häufig gestellte Fragen (FAQ)
 + __Offline Python funktioniert nicht mit .png images. .gif Bilder wurden für die offline Nutzung bereit gestellt.__
 + Die Kinder müssen evtl. daran erinnert werden, dass die Elemente in einem Wörterbuch, bzw. in einer Liste durch ein Komma getrennt werden müssen. Zum Beispiel wenn Inventarposten, Grafiken und Spielregeln zum Spiel hinzugefügt werden.
-
 --- /collapse ---
