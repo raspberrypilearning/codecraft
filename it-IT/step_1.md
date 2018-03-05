@@ -16,7 +16,7 @@ __Questo progetto utilizza Python 3.__ È consigliabile utilizzare [trinket](htt
 
 È presente anche un trinket che contiene il progetto completato:
 
-+ [â€˜CodeCraftâ€™ Finito -- trinket.io/python/9ac3995d69](https://trinket.io/python/9ac3995d69)
++ ["CodeCraft" Finito -- trinket.io/python/9ac3995d69](https://trinket.io/python/9ac3995d69)
 
 #Risorse offline
 Questo progetto può essere completato [offline](https://www.codeclubprojects.org/en-GB/resources/python-working-offline/) se preferito. È possibile accedere alle risorse del progetto facendo clic sul link "Materiali per il progetto". Il link apre la sezione "Risorse del progetto" che contiene le risorse necessarie ai bambini per completare il progetto offline. È bene assicurarsi che tutti i bambini abbiano accesso a una copia di queste risorse. Questa sezione contiene i seguenti file:
