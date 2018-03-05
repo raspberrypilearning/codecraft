@@ -17,7 +17,7 @@ title: Notas del líder del club
 ## Introducción:
 A través de este proyecto, los niños aprenderán sobre gráficas y diseño de juegos realizando mejoras a un clon de Minecraft básico en 2D. Los niños crearán nuevos recursos y normas para combinar recursos y crear otros nuevos. Esto se logrará comprendiendo y gestionando variables, listas y diccionarios.
 
-#Recursos online
+## Recursos online
 
 __Este proyecto usa Python 3.__ Recomendamos usar [trinket](https://trinket.io/) para escribir Python online. Este proyecto contiene los siguientes Trinkets:
 
