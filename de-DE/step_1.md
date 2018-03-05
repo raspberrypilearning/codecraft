@@ -8,15 +8,6 @@ In diesem Projekt wirst du Code-Verbesserungen für eine 2D Version von Minecraf
   <img src="images/craft-finished.png">
 </div>
 
---- collapse ---
----
-title: Hinweise des Clubleiters
----
-
-
-## Einführung:
-In diesem Projekt finden die Kinder weitere Aspekte über Grafik und Spieldesign heraus, indem sie Verbesserungen für einen einfachen 2D Minecraft Klon herstellen. Die Kinder werden neue Ressourcen kreieren und Regeln aufstellen, um die Ressourcen miteinander zu kombinieren und somit neue Ressourcen zu produzieren. Dies wird durch ein Verständnis über sowie das Manipulieren von Variablen, Listen und Wörterbüchern erreicht.
-
 ## Online Ressourcen
 
 __Dieses Projekt benutzt Python 3.__ Wir empfehlen die Nutzung von [trinket](https://trinket.io/), um Python online zu schreiben. Dieses Projekt enthält die folgenden Trinkets:
@@ -76,5 +67,3 @@ Dieses Projekt deckt Elemente aus den folgenden Bereichen des [Raspberry Pi Lehr
 ## Häufig gestellte Fragen (FAQ)
 + __Offline Python funktioniert nicht mit .png images. .gif Bilder wurden für die offline Nutzung bereit gestellt.__
 + Die Kinder müssen evtl. daran erinnert werden, dass die Elemente in einem Wörterbuch, bzw. in einer Liste durch ein Komma getrennt werden müssen. Zum Beispiel wenn Inventarposten, Grafiken und Spielregeln zum Spiel hinzugefügt werden.
-
---- /collapse ---
