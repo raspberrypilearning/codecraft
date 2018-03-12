@@ -14,12 +14,12 @@ site_areas: codeclub, python
 steps:
 - title: Introducción
 - title: Jugar
-- title: 'Reto: Crea tu propio mundo'
+- title: "Reto: Crea tu propio mundo"
 - title: Personalizar tu juego
-- title: 'Reto: Cambia el tamaño de tu mundo'
+- title: "Reto: Cambia el tamaño de tu mundo"
 - title: Creación de un nuevo recurso: madera
-- title: 'Reto: Crear arena'
+- title: "Reto: Crear arena"
 - title: Crear tablones de madera
-- title: 'Reto: Crear cristal a partir de arena'
-- title: 'Reto: Crea más recursos'
+- title: "Reto: Crear cristal a partir de arena"
+- title: "Reto: Crea más recursos"
 
