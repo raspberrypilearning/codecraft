@@ -8,16 +8,6 @@ Dans ce projet, tu vas dessiner et coder des améliorations dans une version 2D 
   <img src="images/craft-finished.png">
 </div>
 
-
---- collapse ---
----
-title: Notes de leader du club
----
-
-
-## Introduction:
-Dans ce projet, tu vas dessiner et coder des améliorations dans une version 2D de Minecraft.
-
 ## Ressources en ligne
 
 __Ce projet utilise Python 3.__ Nous vous conseillons d'utiliser [trinket](https://trinket.io/) pour écrire du Python en ligne. Ce projet contient les Trinkets suivants :
