@@ -14,12 +14,12 @@ site_areas: codeclub, python
 steps:
 - title: Introduction
 - title: Jouer le jeu
-- title: 'Défi : Construire ton monde'
+- title: "Défi : Construire ton monde"
 - title: Customisation de ton jeu
-- title: 'Défi : Change la taille de ton monde'
+- title: "Défi : Change la taille de ton monde"
 - title: Créer une nouvelle ressource en bois
-- title: 'Défi : Créer du sable'
+- title: "Défi : Créer du sable"
 - title: Façonner des planches de bois
-- title: 'Défi : Façonner le verre du sable'
-- title: 'Défi : Créer d'autres ressources'
+- title: "Défi : Façonner le verre du sable"
+- title: "Défi : Créer d'autres ressources"
 
