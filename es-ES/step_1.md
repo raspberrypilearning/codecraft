@@ -8,12 +8,6 @@ En este proyecto diseñarás y codificarás mejoras en una versión en 2D de Min
   <img src="images/craft-finished.png">
 </div>
 
---- collapse ---
----
-title: Notas del líder del club
----
-
-
 ## Introducción:
 A través de este proyecto, los niños aprenderán sobre gráficas y diseño de juegos realizando mejoras a un clon de Minecraft básico en 2D. Los niños crearán nuevos recursos y normas para combinar recursos y crear otros nuevos. Esto se logrará comprendiendo y gestionando variables, listas y diccionarios.
 
