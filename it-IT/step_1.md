@@ -8,15 +8,6 @@ In questo progetto apporterai miglioramenti al design e al codice di una version
   <img src="images/craft-finished.png">
 </div>
 
---- collapse ---
----
-title: Note del leader del club
----
-
-
-## Introduzione:
-In questo progetto, i bambini impareranno aspetti di grafica e design dei giochi apportando miglioramenti ad un semplice clone di Minecraft 2D. I bambini creeranno nuove risorse e concepiranno regole di fabbricazione per combinare insieme risorse e crearne di nuove. Questo obiettivo verrà realizzato tramite la comprensione e la gestione di variabili, elenchi e dizionari.
-
 ## Risorse online
 
 __Questo progetto utilizza Python 3.__ È consigliabile utilizzare [trinket](https://trinket.io/) per scrivere in linguaggio Python online. Questo progetto contiene i seguenti Trinket:
