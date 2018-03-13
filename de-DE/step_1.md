@@ -1,4 +1,4 @@
-## Introduction
+## Einführung
 
 In diesem Projekt wirst du Code-Verbesserungen für eine 2D Version von Minecraft konzipieren und vornehmen.
 
@@ -7,9 +7,6 @@ In diesem Projekt wirst du Code-Verbesserungen für eine 2D Version von Minecraf
   </iframe>
   <img src="images/craft-finished.png">
 </div>
-
-## Einführung:
-In diesem Projekt finden die Kinder weitere Aspekte über Grafik und Spieldesign heraus, indem sie Verbesserungen für einen einfachen 2D Minecraft Klon herstellen. Die Kinder werden neue Ressourcen kreieren und Regeln aufstellen, um die Ressourcen miteinander zu kombinieren und somit neue Ressourcen zu produzieren. Dies wird durch ein Verständnis über sowie das Manipulieren von Variablen, Listen und Wörterbüchern erreicht.
 
 ## Online Ressourcen
 
