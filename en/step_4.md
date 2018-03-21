@@ -25,3 +25,4 @@ The variable `MAXTILES` is the amount of each resource that can be held in your 
  ![screenshot](images/craft-maxtiles.png)
 
 --- /task ---
+
