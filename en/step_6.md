@@ -2,51 +2,90 @@
 
 Let's create a new wood resource. To do this, you'll need to add to some variables in your `variables.py` file.
 
-+ First, you need to give your new resource a number. You'll then be able to use the word `WOOD` in your code instead of the number 4.
+--- task ---
 
-    ![screenshot](images/craft-wood-const.png)
+First, you need to give your new resource a number. You'll then be able to use the word `WOOD` in your code instead of the number 4.
 
-+ You should add your new `WOOD` resource to your list of `resources`.
+ ![screenshot](images/craft-wood-const.png)
 
-    ![screenshot](images/craft-wood-resources.png)
+--- /task ---
 
-+ You should also give your resource a name, which will be displayed in the inventory.
+--- task ---
 
-    ![screenshot](images/craft-wood-name.png)
+You should add your new `WOOD` resource to your list of `resources`.
 
-    Notice the comma `,` at the end of the line above.
+ ![screenshot](images/craft-wood-resources.png)
 
-+ Your resource will also need an image. The project already includes an image called `wood.png`, which you should add to the `textures` dictionary.
+--- /task ---
 
-    ![screenshot](images/craft-wood-texture.png)
+--- task ---
 
-+ Add the number of your resource that should be in your `inventory` to start with.
+You should also give your resource a name, which will be displayed in the inventory.
 
-    ![screenshot](images/craft-wood-inventory.png)
+ ![screenshot](images/craft-wood-name.png)
 
-+ Finally, add the key that you'll press to place wood in the world. 
+ Notice the comma `,` at the end of the line above.
 
-    ![screenshot](images/craft-wood-placekey.png)
+--- /task ---
 
-+ Run your project to test it. You'll see that you now have a new 'wood' resource in your inventory.
+--- task ---
 
-    ![screenshot](images/craft-wood-test.png)
+Your resource will also need an image. The project already includes an image called `wood.png`, which you should add to the `textures` dictionary.
 
-+ There's no wood in your world! To fix this, click on your `main.py` file and find the function called `generateRandomWorld()`.
+ ![screenshot](images/craft-wood-texture.png)
 
-    ![screenshot](images/craft-wood-random1.png)    
+--- /task ---
 
-    This code generates a random number between 0 and 10, and uses the number to decide which resource to place:
+--- task ---
 
-    + 1 or 2 = water
-    + 3 or 4 = grass
-    + anything else = DIRT
+Add the number of your resource that should be in your `inventory` to start with.
 
-+ Add this code to add wood to your world whenever the `randomNumber` is 5.
+ ![screenshot](images/craft-wood-inventory.png)
 
-    ![screenshot](images/craft-wood-random2.png)
+--- /task ---
 
-+ Test your project again. This time, you should see some wood appear in your world.
+--- task ---
 
-    ![screenshot](images/craft-wood-test2.png)
+Finally, add the key that you'll press to place wood in the world. 
 
+ ![screenshot](images/craft-wood-placekey.png)
+
+--- /task ---
+
+--- task ---
+
+Run your project to test it. You'll see that you now have a new 'wood' resource in your inventory.
+
+ ![screenshot](images/craft-wood-test.png)
+
+--- /task ---
+
+--- task ---
+
+There's no wood in your world! To fix this, click on your `main.py` file and find the function called `generateRandomWorld()`.
+
+ ![screenshot](images/craft-wood-random1.png)    
+
+ This code generates a random number between 0 and 10, and uses the number to decide which resource to place:
+
+ + 1 or 2 = water
+ + 3 or 4 = grass
+ + anything else = DIRT
+
+--- /task ---
+
+--- task ---
+
+Add this code to add wood to your world whenever the `randomNumber` is 5.
+
+ ![screenshot](images/craft-wood-random2.png)
+
+--- /task ---
+
+--- task ---
+
+Test your project again. This time, you should see some wood appear in your world.
+
+ ![screenshot](images/craft-wood-test2.png)
+
+--- /task ---
