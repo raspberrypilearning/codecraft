@@ -45,4 +45,3 @@ You can then press they '4' key to place your crafted bricks.
  ![screenshot](images/craft-place-brick.png)
 
 --- /task ---
-

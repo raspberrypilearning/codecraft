@@ -73,4 +73,3 @@ To test your new plank resource, gather up a few wood tiles and then craft some 
  ![screenshot](images/craft-plank-test.png)
 
 --- /task ---
-
