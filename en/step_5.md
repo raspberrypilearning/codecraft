@@ -4,4 +4,7 @@ Can you change the values of your `MAPWIDTH` and `MAPHEIGHT` variables to change
 
 ![screenshot](images/craft-mapsize.png)
 
+
+
+
 --- /challenge ---

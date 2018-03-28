@@ -8,4 +8,7 @@ The project already includes a `sand.png` image, but you can create and upload y
 
 ![screenshot](images/craft-upload.png)
 
+
+
+
 --- /challenge ---
