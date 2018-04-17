@@ -5,32 +5,35 @@ duration: 2
 listed: true
 ingredient: false
 copyedit: false
-curriculum: creator, design-0, programming-0, phys-comp-0, manufacture-0, community-0
+curriculum: 1, design-1, programming-1, phys-comp-0, manufacture-0, community-0
 title: CodeCraft
-description: Design and code improvements to a 2D version of Minecraft.
+description: En este proyecto diseñarás y codificarás mejoras en una versión en 2D de Minecraft.
 original_url: https://codeclubprojects.org/en-GB/python/codecraft
-interests: ''
+interests: games
 technologies: python
-site_areas: codeclub, python
+site_areas: projects
+hardware: ''
+software: python
+version: 3
+last_tested: 2017-01-01
 steps:
   - 
-    title: Introduction
+    title: Introducción
   - 
-    title: Playing the game
+    title: Jugar al juego
   - 
-    title: 'Challenge: Build your world'
+    title: 'Reto: Crea tu propio mundo'
   - 
-    title: Customising your game
+    title: Personalizar tu juego
   - 
-    title: 'Challenge: Change your world size'
+    title: 'Reto: Cambia el tamaño de tu mundo'
   - 
-    title: Creating a new wood resource
+    title: 'Creación de un nuevo recurso: madera'
   - 
-    title: 'Challenge: Creating sand'
+    title: 'Reto: Crear arena'
   - 
-    title: Crafting planks from wood
+    title: 'Paso 4: Crear tablones de madera'
   - 
-    title: 'Challenge: Crafting glass from sand'
+    title: 'Reto: Crear cristal a partir de arena'
   - 
-    title: 'Challenge: Create more resources'
-
+    title: 'Reto: Crea más recursos'
