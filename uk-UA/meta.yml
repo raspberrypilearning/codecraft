@@ -1,0 +1,39 @@
+---
+hero_image: images / codecraft.png
+theme: синій
+duration: 2
+listed: true
+ingredient: false
+copyedit: false
+curriculum: 1, design-1, programming-1, phys-comp-0, manufacture-0, community-0
+title: CodeCraft
+description: Розробка та вдосконалення коду для 2D-версії Minecraft.
+original_url: https://codeclubprojects.org/en-GB/python/codecraft
+interests: games
+technologies: python
+site_areas: projects
+hardware: ''
+software: python
+version: 3
+last_tested: 2017-01-01
+steps:
+  - 
+    title: Вступ
+  - 
+    title: Гра в гру
+  - 
+    title: 'Виклик: побудуй свій світ'
+  - 
+    title: Налаштування вашої гри
+  - 
+    title: 'Виклик: змініть свій розмір у світі'
+  - 
+    title: Створення нового лісового ресурсу
+  - 
+    title: 'Виклик: створення піску'
+  - 
+    title: Виготовлення дощок з дерева
+  - 
+    title: 'Виклик: обробка скла із піску'
+  - 
+    title: 'Виклик: створити більше ресурсів'
