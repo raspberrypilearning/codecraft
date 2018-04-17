@@ -1,39 +1,39 @@
-## Crafting planks from wood
+## Crear tablones a partir de madera
 
-Let's create a new plank resource that be crafted from wood.
+Vamos a crear un nuevo recurso: tablón, creado a partir de madera.
 
-+ First, add a new `PLANK` variable to your game.
++ Primero, añade una nueva variable `PLANK` para tu juego.
     
     ![screenshot](images/craft-plank-const.png)
 
-+ Add a new `PLANK` variable to your game.
++ Añade una nueva variable `PLANK` a tu juego.
     
     ![screenshot](images/craft-plank-resources.png)
 
-+ Name the resource `'plank'`.
++ Nombra el recurso `'tablon'`.
     
     ![screenshot](images/craft-plank-names.png)
 
-+ Give your `PLANK` resource an image. The project already contains a `plank.png` image, but you can create your own if you prefer.
++ Dale a tu recurso `PLANK` una imagen. El proyecto ya contiene una imagen `plank.png`, pero puedes crear la tuya si lo prefieres.
     
     ![screenshot](images/craft-plank-textures.png)
 
-+ Add planks to your inventory.
++ Añade tablones a tu inventario.
     
     ![screenshot](images/craft-plank-inventory.png)
 
-+ Set a key for placing planks.
++ Establece una tecla para poner tablones.
     
     ![screenshot](images/craft-plank-placekeys.png)
 
-+ As this resource can be crafted, you need to create a crafting rule, which is that a plank can be made from 3 wood tiles. Add this code to the `crafting` dictionary.
++ Como se puede crear este recurso, debes crear una regla de creación: que un tablón se puede crear con 3 fichas de madera. Añade este código al diccionario de `creacion`.
     
     ![screenshot](images/craft-plank-crafting.png)
 
-+ Finally, you need to set a key for crafting new planks.
++ Finalmente, debes establecer una tecla para crear tablones nuevos.
     
     ![screenshot](images/craft-plank-craftkeys.png)
 
-+ To test your new plank resource, gather up a few wood tiles and then craft some planks from your wood. You can then place your new planks in your world.
++ Para probar tu nuevo recurso de tablón, junta algunas fichas de madera y luego crea algunos tablones de madera. Luego puedes poner tus nuevos tablones en tu mundo.
     
     ![screenshot](images/craft-plank-test.png)
