@@ -1,11 +1,11 @@
 \--- challenge \---
 
-## Challenge: Crafting glass from sand
+## Challenge: Crear cristal a partir de arena
 
-Can you create a new glass resource, that can be crafted from sand? You can follow the steps above to help you.
+¿Puedes crear un nuevo recurso, cristal, a partir de arena? Sigue los pasos anteriores como ayuda.
 
 ![screenshot](images/craft-glass.png)
 
-The project already contains a `glass.png` image that you can use, or you can create your own image if you prefer.
+El proyecto ya contiene una imagen `glass.png` que puedes usar, pero puedes crear la tuya si lo prefieres.
 
 \--- /challenge \---
