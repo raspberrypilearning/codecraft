@@ -3,19 +3,18 @@
 In dit project ontwerp en codeer je verbeteringen aan een 2D-versie van Minecraft.
 
 <div class="trinket">
-  <iframe src="https://trinket.io/embed/python/9ac3995d69?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
-  </iframe>
+  ***embed finished nl-NL***
   <img src="images/craft-finished.png">
 </div>
 
 ### Aanvullende informatie voor clubleiders
 
-Als je dit project wilt afdrukken, gebruik dan de [Printvriendelijke versie](https://projects.raspberrypi.org/en/projects/codecraft/print).
+Als je dit project wilt afdrukken, gebruik dan de [Printvriendelijke versie](https://projects.raspberrypi.org/nl-NL/projects/codecraft/print).
 
 --- collapse ---
-
+---
 ## title: Clubleider notities
-
+---
 ## Inleiding:
 
 In dit project leren kinderen aspecten van grafische vormgeving en gamedesign door verbeteringen aan te brengen in een standaard 2D Minecraft-kloon. Kinderen zullen nieuwe bronnen creëren en maakregels gebruiken om bestaande bronnen samen te voegen tot nieuwe. Dit wordt bereikt door variabelen, lijsten en woordenboeken te begrijpen en te manipuleren.
@@ -24,11 +23,11 @@ In dit project leren kinderen aspecten van grafische vormgeving en gamedesign do
 
 **Dit project maakt gebruik van Python 3.** We raden aan om [trinket](https://trinket.io/) te gebruiken om online Python te schrijven. Dit project bevat de volgende Trinkets:
 
-+ ['CodeCraft' uitgangspunt - jumpto.cc/codecraft-go](http://jumpto.cc/codecraft-go)
++ ['CodeCraft' uitgangspunt - jumpto.cc/codecraft-go](https://trinket.io/python/e8a488ff23)
 
 Er is ook een trinket met het voltooide project:
 
-+ ['CodeCraft' gereed - trinket.io/python/9ac3995d69](https://trinket.io/python/9ac3995d69)
++ ['CodeCraft' gereed - trinket.io/python/9ac3995d69](**add finished nl-NL**)
 
 ## Offline bronnen
 
@@ -69,7 +68,7 @@ Dit project behandelt elementen uit de volgende onderdelen van het [Raspberry Pi
 
 + [Ontwerp standaard 2D- en 3D-middelen.](https://www.raspberrypi.org/curriculum/design/creator)
 
-+ [Combineer programmeerconstructies om een ​​probleem op te lossen.](https://www.raspberrypi.org/curriculum/programming/builder)
++ [Combineer programmeerconstructies om een probleem op te lossen.](https://www.raspberrypi.org/curriculum/programming/builder)
 
 ## Uitdagingen
 
@@ -94,7 +93,7 @@ title: Projectmaterialen
 ## Project bronnen
 
 + [.zip-bestand met alle projectbronnen](resources/codecraft-project-resources.zip)
-+ [Online Trinket met alle 'CodeCraft' projectbronnen](http://jumpto.cc/codecraft-go)
++ [Online Trinket met alle 'CodeCraft' projectbronnen](https://trinket.io/python/e8a488ff23)
 + [codecraft/codecraft.py](resources/codecraft-codecraft.py)
 + [codecraft/variables.py](resources/codecraft-variables.py)
 + [codecraft/brick.gif](resources/codecraft-brick.gif)
@@ -110,7 +109,7 @@ title: Projectmaterialen
 ## Clubleider bronnen
 
 + [.zip-bestand met alle voltooide projectresources](resources/codecraft-volunteer-resources.zip)
-+ [Online voltooid Trinket-project](https://trinket.io/python/9ac3995d69)
++ [Online voltooid Trinket-project](***Add link to finished project nl-NL***)
 + [codecraft-finished/codecraft.py](resources/codecraft-finished-codecraft.py)
 + [codecraft-finished/variables.py](resources/codecraft-finished-variables.py)
 + [codecraft-finished/brick.gif](resources/codecraft-finished-brick.gif)
