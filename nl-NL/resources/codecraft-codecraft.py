@@ -17,8 +17,8 @@ def beweegLinks():
 
 #beweegt speler 1 tegel naar rechts.
 def beweegRechts():
-  global spelerX, KAARTBREEDTE
-  if(spelerX < KAARTBREEDTE - 1):
+  global spelerX, MAPBREEDTE
+  if(spelerX < MAPBREEDTE - 1):
     spelerX += 1
     tekenSpeler()
 
@@ -31,8 +31,8 @@ def beweegBoven():
 
 #beweegt speler 1 tegel naar onder.
 def beweegOnder():
-  global spelerY, KAARTHOOGTE
-  if(spelerY < KAARTHOOGTE - 1):
+  global spelerY, MAPHOOGTE
+  if(spelerY < MAPHOOGTE - 1):
     spelerY += 1
     tekenSpeler()
 
@@ -147,9 +147,9 @@ def tekenSpeler():
 #teken de wereldkaart
 def tekenWereld():
   #doorloop elke rij
-  for rij in range(KAARTHOOGTE):
+  for rij in range(MAPHOOGTE):
     #doorloop elke kolom in de rij
-    for kolom in range(KAARTBREEDTE):
+    for kolom in range(MAPBREEDTE):
       #teken de tegel op de huidige positie
       tekenBron(kolom, rij)
 
@@ -175,13 +175,13 @@ def tekenInventaris():
     rendererT.color('')
     #laat 'plaats' en 'maak' tekst zien
     for i in range(1,num_rijen+1):
-      rendererT.goto(20, (hoogte - (KAARTHOOGTE * TEGELGROOTTE)) - 20 - (i * 100))
+      rendererT.goto(20, (hoogte - (MAPHOOGTE * TEGELGROOTTE)) - 20 - (i * 100))
       rendererT.write("plaats")
-      rendererT.goto(20, (hoogte - (KAARTHOOGTE * TEGELGROOTTE)) - 40 - (i * 100))
+      rendererT.goto(20, (hoogte - (MAPHOOGTE * TEGELGROOTTE)) - 40 - (i * 100))
       rendererT.write("maak")
     #bepaal de positie van de inventaris
     xPositie = 70
-    yPositie = hoogte - (KAARTHOOGTE * TEGELGROOTTE) - 80
+    yPositie = hoogte - (MAPHOOGTE * TEGELGROOTTE) - 80
     itemNum = 0
     for i, item in enumerate(bronnen):
       #voeg de afbeelding toe
