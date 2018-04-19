@@ -147,9 +147,9 @@ def tekenSpeler():
 #teken de wereldkaart
 def tekenWereld():
   #doorloop elke rij
-  for rij in range(MAPHOOGTE):
+  for rij in range(KAARTHOOGTE):
     #doorloop elke kolom in de rij
-    for kolom in range(MAPBREEDTE):
+    for kolom in range(KAARTBREEDTE):
       #teken de tegel op de huidige positie
       tekenBron(kolom, rij)
 
@@ -175,13 +175,13 @@ def tekenInventaris():
     rendererT.color('')
     #laat 'plaats' en 'maak' tekst zien
     for i in range(1,num_rijen+1):
-      rendererT.goto(20, (hoogte - (MAPHOOGTE * TEGELGROOTTE)) - 20 - (i * 100))
+      rendererT.goto(20, (hoogte - (KAARTHOOGTE * TEGELGROOTTE)) - 20 - (i * 100))
       rendererT.write("plaats")
-      rendererT.goto(20, (hoogte - (MAPHOOGTE * TEGELGROOTTE)) - 40 - (i * 100))
+      rendererT.goto(20, (hoogte - (KAARTHOOGTE * TEGELGROOTTE)) - 40 - (i * 100))
       rendererT.write("maak")
     #bepaal de positie van de inventaris
     xPositie = 70
-    yPositie = hoogte - (MAPHOOGTE * TEGELGROOTTE) - 80
+    yPositie = hoogte - (KAARTHOOGTE * TEGELGROOTTE) - 80
     itemNum = 0
     for i, item in enumerate(bronnen):
       #voeg de afbeelding toe
@@ -222,16 +222,16 @@ def genereerInstructies():
   #laat de instructies zien
   yPos = hoogte - 20
   for item in instructies:
-    rendererT.goto( MAPBREEDTE*TEGELGROOTTE + 40, yPos)
+    rendererT.goto( KAARTBREEDTE*TEGELGROOTTE + 40, yPos)
     rendererT.write(item)
     yPos-=20
 
 #genereer een willekeurige wereld
 def genereerWillekeurigeWereld():
   #doorloop elke rij
-  for rij in range(MAPHOOGTE):
+  for rij in range(KAARTHOOGTE):
     #doorloop elke kolom in de rij
-    for kolom in range(MAPBREEDTE):
+    for kolom in range(KAARTBREEDTE):
       #neem een willekeurig getal tussen 0 en 10
       willekeurigGetal = random.randint(0,10)
       #WATER als het willekeurige getal 1 of 2 is
@@ -264,10 +264,10 @@ tekenen = False
 #maak een nieuw spelerobject
 scherm = turtle.Screen()
 #bereken breedte hoogte
-breedte = (TEGELGROOTTE * MAPBREEDTE) + max(200,INVbreedte * 50)
+breedte = (TEGELGROOTTE * KAARTBREEDTE) + max(200,INVbreedte * 50)
 num_rijen = int(ceil((len(bronnen) / INVbreedte)))
 inventaris_hoogte =  num_rijen * 120 + 40
-hoogte = (TEGELGROOTTE * MAPHOOGTE) + inventaris_hoogte
+hoogte = (TEGELGROOTTE * KAARTHOOGTE) + inventaris_hoogte
 
 scherm.setup(breedte, hoogte)
 scherm.setworldcoordinates(0,0,breedte,hoogte)
@@ -295,7 +295,7 @@ rendererT.speed(0)
 rendererT.setheading(90)
 
 #maak een wereld met willekeurige bronnen.
-wereld = [ [VUIL for w in range(MAPHOOGTE)] for h in range(MAPBREEDTE) ]
+wereld = [ [VUIL for w in range(KAARTHOOGTE)] for h in range(KAARTBREEDTE) ]
 
 #laat de toetsen zien voor de voortbeweging en het oppakken.
 scherm.onkey(beweegBoven, 'w')
