@@ -1,0 +1,29 @@
+---
+hero_image: images / codecraft.png
+theme: red
+duration: 2
+listed: true
+ingredient: false
+copyedit: false
+curriculum: 1, design-1, programming-1, phys-comp-0, manufacture-0, community-0
+title: CodeCraft
+description: Ontwerp- en codeverbeteringen in een 2D-versie van Minecraft.
+original_url: https://codeclubprojects.org/en-GB/python/codecraft
+interests: games
+technologies: Python
+site_areas: projects
+hardware: ''
+software: python
+version: 3
+last_tested: 2017-01-01
+steps:
+  - title: Inleiding
+  - title: Speel het spel
+  - title: 'Uitdaging: bouw je wereld'
+  - title: Je spel aanpassen
+  - title: 'Uitdaging: verander de grootte van je wereld'
+  - title: Maak een nieuwe bron voor hout
+  - title: 'Uitdaging: maak zand'
+  - title: Maak planken van hout
+  - title: 'Uitdaging: maak glas van zand'
+  - title: 'Uitdaging: meer bronnen maken'
