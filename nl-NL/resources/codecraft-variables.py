@@ -29,10 +29,10 @@ namen = {
 
 # een woordenboek dat bronnen koppelt aan afbeeldingen.
 materialen = {
-  VUIL : 'dirt.gif',
-  GRAS : 'grass.gif',
-  WATER   : 'water.gif',
-  STEEN   : 'brick.gif'
+  VUIL : 'dirt.png',
+  GRAS : 'grass.png',
+  WATER   : 'water.png',
+  STEEN   : 'brick.png'
 }
 
 #het aantal bronnen dat een speler heeft.
@@ -44,7 +44,7 @@ inventaris = {
 }
 
 #spelersafbeelding.
-spelerImg = 'player.gif'
+spelerImg = 'player.png'
 
 #de positie van de speler.
 spelerX = 0
