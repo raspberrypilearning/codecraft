@@ -7,8 +7,8 @@ ACHTERGRONDKLEUR = 'lightblue'
 
 #kaart variabelen.
 MAXTEGELS = 40
-MAPBREEDTE = 20
-MAPHOOGTE = 15
+KAARTBREEDTE = 20
+KAARTHOOGTE = 15
 
 #variabelen die de verschillende bronnen representeren.
 VUIL = 0
