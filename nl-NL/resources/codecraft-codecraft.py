@@ -222,16 +222,16 @@ def genereerInstructies():
   #laat de instructies zien
   yPos = hoogte - 20
   for item in instructies:
-    rendererT.goto( KAARTBREEDTE*TEGELGROOTTE + 40, yPos)
+    rendererT.goto( MAPBREEDTE*TEGELGROOTTE + 40, yPos)
     rendererT.write(item)
     yPos-=20
 
 #genereer een willekeurige wereld
 def genereerWillekeurigeWereld():
   #doorloop elke rij
-  for rij in range(KAARTHOOGTE):
+  for rij in range(MAPHOOGTE):
     #doorloop elke kolom in de rij
-    for kolom in range(KAARTBREEDTE):
+    for kolom in range(MAPBREEDTE):
       #neem een willekeurig getal tussen 0 en 10
       willekeurigGetal = random.randint(0,10)
       #WATER als het willekeurige getal 1 of 2 is
@@ -264,10 +264,10 @@ tekenen = False
 #maak een nieuw spelerobject
 scherm = turtle.Screen()
 #bereken breedte hoogte
-breedte = (TEGELGROOTTE * KAARTBREEDTE) + max(200,INVbreedte * 50)
+breedte = (TEGELGROOTTE * MAPBREEDTE) + max(200,INVbreedte * 50)
 num_rijen = int(ceil((len(bronnen) / INVbreedte)))
 inventaris_hoogte =  num_rijen * 120 + 40
-hoogte = (TEGELGROOTTE * KAARTHOOGTE) + inventaris_hoogte
+hoogte = (TEGELGROOTTE * MAPHOOGTE) + inventaris_hoogte
 
 scherm.setup(breedte, hoogte)
 scherm.setworldcoordinates(0,0,breedte,hoogte)
@@ -295,7 +295,7 @@ rendererT.speed(0)
 rendererT.setheading(90)
 
 #maak een wereld met willekeurige bronnen.
-wereld = [ [VUIL for w in range(KAARTHOOGTE)] for h in range(KAARTBREEDTE) ]
+wereld = [ [VUIL for w in range(MAPHOOGTE)] for h in range(MAPBREEDTE) ]
 
 #laat de toetsen zien voor de voortbeweging en het oppakken.
 scherm.onkey(beweegBoven, 'w')
