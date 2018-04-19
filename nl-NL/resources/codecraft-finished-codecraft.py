@@ -126,7 +126,7 @@ def verbindMaakToetsen():
 def tekenBron(y, x):
   #Deze variabele stopt alle dingen die getekend worden
   global tekenen
-  teken alleen als er niks anders wordt getekend
+  #teken alleen als er niks anders wordt getekend
   if tekenen == False:
     #er wordt nu iets getekend
     tekenen = True
@@ -157,7 +157,7 @@ def tekenWereld():
 def tekenInventaris():
   #Deze variabele stopt alle dingen die getekend worden
   global tekenen
-  teken alleen als er niks anders wordt getekend
+  #teken alleen als er niks anders wordt getekend
   if tekenen == False:
     #er wordt nu iets getekend
     tekenen = True
