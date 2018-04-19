@@ -17,8 +17,8 @@ def beweegLinks():
 
 #beweegt speler 1 tegel naar rechts.
 def beweegRechts():
-  global spelerX, MAPBREEDTE
-  if(spelerX < MAPBREEDTE - 1):
+  global spelerX, KAARTBREEDTE
+  if(spelerX < KAARTBREEDTE - 1):
     spelerX += 1
     tekenSpeler()
 
@@ -31,8 +31,8 @@ def beweegBoven():
 
 #beweegt speler 1 tegel naar onder.
 def beweegOnder():
-  global spelerY, MAPHOOGTE
-  if(spelerY < MAPHOOGTE - 1):
+  global spelerY, KAARTHOOGTE
+  if(spelerY < KAARTHOOGTE - 1):
     spelerY += 1
     tekenSpeler()
 
