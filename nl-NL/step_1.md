@@ -3,7 +3,7 @@
 In dit project ontwerp en codeer je verbeteringen aan een 2D-versie van Minecraft.
 
 <div class="trinket">
-  ***embed finished nl-NL***
+  <iframe src="https://trinket.io/embed/python/373f405a78?outputOnly=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
   <img src="images/craft-finished.png">
 </div>
 
@@ -27,7 +27,7 @@ In dit project leren kinderen aspecten van grafische vormgeving en gamedesign do
 
 Er is ook een trinket met het voltooide project:
 
-+ ['CodeCraft' gereed - trinket.io/python/9ac3995d69](**add finished nl-NL**)
++ ['CodeCraft' gereed - trinket.io/python/9ac3995d69](https://trinket.io/python/373f405a78)
 
 ## Offline bronnen
 
@@ -109,7 +109,7 @@ title: Projectmaterialen
 ## Clubleider bronnen
 
 + [.zip-bestand met alle voltooide projectresources](resources/codecraft-volunteer-resources.zip)
-+ [Online voltooid Trinket-project](***Add link to finished project nl-NL***)
++ [Online voltooid Trinket-project](https://trinket.io/python/373f405a78)
 + [codecraft-finished/codecraft.py](resources/codecraft-finished-codecraft.py)
 + [codecraft-finished/variables.py](resources/codecraft-finished-variables.py)
 + [codecraft-finished/brick.gif](resources/codecraft-finished-brick.gif)
