@@ -7,8 +7,8 @@ ACHTERGRONDKLEUR = 'lightblue'
 
 #kaart variabelen.
 MAXTEGELS = 40
-MAPBREEDTE = 20
-MAPHOOGTE = 15
+KAARTBREEDTE = 20
+KAARTHOOGTE = 15
 
 #variabelen die de verschillende bronnen representeren.
 VUIL = 0
@@ -21,7 +21,7 @@ PLANK = 6
 GLAS = 7
 
 #een lijst van alle spelbronnen.
-bronnen = [VUIL, GRAS, WATER, BAKSTEEN, HOUT, ZAND, PLANK, GLAS]
+bronnen = [VUIL, GRAS, WATER, STEEN, HOUT, ZAND, PLANK, GLAS]
 
 #de namen van de bronnen.
 namen = {
@@ -37,14 +37,14 @@ namen = {
 
 # een woordenboek dat bronnen koppelt aan afbeeldingen.
 materialen = {
-  VUIL : 'dirt.gif',
-  GRAS : 'grass.gif',
-  WATER   : 'water.gif',
-  STEEN   : 'brick.gif',
-  HOUT: 'wood.gif',
-  ZAND    : 'sand.gif',
-  PLANK   : 'plank.gif',
-  GLAS   : 'glass.gif'
+  VUIL : 'dirt.png',
+  GRAS : 'grass.png',
+  WATER   : 'water.png',
+  STEEN   : 'brick.png',
+  HOUT: 'wood.png',
+  ZAND    : 'sand.png',
+  PLANK   : 'plank.png',
+  GLAS   : 'glass.png'
 }
 
 #het aantal bronnen dat een speler heeft.
@@ -60,7 +60,7 @@ inventaris = {
 }
 
 #spelersafbeelding.
-spelerImg = 'player.gif'
+spelerImg = 'player.png'
 
 #de positie van de speler.
 spelerX = 0
