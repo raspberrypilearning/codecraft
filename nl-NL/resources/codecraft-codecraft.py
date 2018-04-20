@@ -196,7 +196,7 @@ def tekenInventaris():
       rendererT.write(plaatstoetsen[item])
       #voeg 'maak'toets toe
       if maken.get(item) != None:
-        rendererT.goto(xPosition, yPostition - TEGELGROOTTE - 40)
+        rendererT.goto(xPositie, yPositie - TEGELGROOTTE - 40)
         rendererT.write(maaktoetsen[item])     
       #ga door naar het volgende inventaris item
       xPositie += 50
