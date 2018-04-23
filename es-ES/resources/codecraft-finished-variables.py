@@ -32,7 +32,7 @@ nombres = {
   MADERA    : 'madera',
   ARENA   : 'arena',
   TABLON   : 'tablón',
-  CRSITAL   : 'cristal'
+  CRISTAL   : 'cristal'
 }
 
 #un diccionario que vincula recursos a imágenes.
