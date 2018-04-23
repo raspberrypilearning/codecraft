@@ -110,8 +110,8 @@ def makeplace(recurso):
 
 #da la función de 'poner' a cada tecla que pulsemos
 def bindPlacingKeys():
-  for k in teclasParaColocar:
-    screen.onkey(makeplace(k), teclasParaColocar[k])
+  for k in placekeys:
+    screen.onkey(makeplace(k), placekeys[k])
 
 #crear una función para crear cada recurso
 def makecraft(recurso):
@@ -316,9 +316,9 @@ bindCraftingKeys()
 
 #estas funciones se definen arriba
 generateRandomWorld()
-def drawWorld()
+drawWorld()
 drawInventory()
-def generateInstructions()
+generateInstructions()
 drawPlayer()
 jugadorT.showturtle()
 
