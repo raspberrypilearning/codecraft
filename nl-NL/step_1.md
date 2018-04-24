@@ -27,7 +27,7 @@ In dit project leren kinderen aspecten van grafische vormgeving en gamedesign do
 
 Er is ook een trinket met het voltooide project:
 
-+ ['CodeCraft' gereed - trinket.io/python/9ac3995d69](https://trinket.io/python/abc0d47864)
++ ['CodeCraft' gereed - trinket.io/python/abc0d47864](https://trinket.io/python/abc0d47864)
 
 ## Offline bronnen
 
