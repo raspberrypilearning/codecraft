@@ -2,7 +2,7 @@
 
 
 
-+ Abre este trinket: <a href="http://jumpto.cc/codecraft-go" target="_blank">jumpto.cc/codecraft-go</a>. 
++ Abre este trinket: <a href="https://trinket.io/python/c3877b95d4" target="_blank">jumpto.cc/codecraft-go</a>. 
 
 + Usa las teclas WASD para desplazarte por el mundo lleno de recursos (suciedad, césped y agua)
 
