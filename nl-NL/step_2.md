@@ -1,6 +1,6 @@
 ## Speel het spel
 
-+ Open deze trinket: <a href="http://jumpto.cc/codecraft-go" target="_blank">jumpto.cc/codecraft-go</a>.
++ Open deze trinket: <a href="https://trinket.io/python/a4cdd53d10" target="_blank">jumpto.cc/codecraft-go</a>.
 
 + Gebruik de WASD-toetsen om je speler in de wereld rond te laten lopen, die vol zit met verschillende bronnen (vuil, gras en water).
     
