@@ -12,7 +12,7 @@ En este proyecto diseñarás y codificarás mejoras en una versión en 2D de Min
 
 __Este proyecto usa Python 3.__ Recomendamos usar [trinket](https://trinket.io/) para escribir Python online. Este proyecto contiene los siguientes Trinkets:
 
-+ [Punto de inicio de 'Creación de códigos' -- jumpto.cc/codecraft-go](http://jumpto.cc/codecraft-go)
++ [Punto de inicio de 'Creación de códigos' -- jumpto.cc/codecraft-go](https://trinket.io/python/c3877b95d4)
 
 Existe igualmente un trinket que contiene el proyecto terminado:
 
