@@ -3,7 +3,7 @@
 En este proyecto diseñarás y codificarás mejoras en una versión en 2D de Minecraft.
 
 <div class="trinket">
-  <iframe src="https://trinket.io/embed/python/9ac3995d69?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
+  <iframe src="https://trinket.io/embed/python/ba085f0bd2?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
   </iframe>
   <img src="images/craft-finished.png">
 </div>
@@ -16,7 +16,7 @@ __Este proyecto usa Python 3.__ Recomendamos usar [trinket](https://trinket.io/)
 
 Existe igualmente un trinket que contiene el proyecto terminado:
 
-+ ['Creación de códigos' terminado -- trinket.io/python/9ac3995d69](https://trinket.io/python/9ac3995d69)
++ ['Creación de códigos' terminado -- trinket.io/python/9ac3995d69](https://trinket.io/python/ba085f0bd2)
 
 ## Recursos offline
 Este proyecto puede completarse igualmente [offline](https://www.codeclubprojects.org/en-GB/resources/python-working-offline/). Podrá acceder a los recursos del proyecto haciendo clic en el enlace 'Materiales de proyecto' de este proyecto. Este enlace contiene una sección denominada 'Recursos del proyecto', la cual incluye recursos que los niños necesitarán para completar este proyecto offline. Asegúrese de que cada niño tenga acceso a una copia de estos recursos. Esta sección incluye los siguientes archivos:
