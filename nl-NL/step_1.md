@@ -3,7 +3,7 @@
 In dit project ontwerp en codeer je verbeteringen aan een 2D-versie van Minecraft.
 
 <div class="trinket">
-  <iframe src="https://trinket.io/embed/python/373f405a78?outputOnly=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+  <iframe src="https://trinket.io/embed/python/abc0d47864?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
   <img src="images/craft-finished.png">
 </div>
 
@@ -23,11 +23,11 @@ In dit project leren kinderen aspecten van grafische vormgeving en gamedesign do
 
 **Dit project maakt gebruik van Python 3.** We raden aan om [trinket](https://trinket.io/) te gebruiken om online Python te schrijven. Dit project bevat de volgende Trinkets:
 
-+ ['CodeCraft' uitgangspunt - jumpto.cc/codecraft-go](https://trinket.io/python/e8a488ff23)
++ ['CodeCraft' uitgangspunt - jumpto.cc/codecraft-go](https://trinket.io/python/a4cdd53d10)
 
 Er is ook een trinket met het voltooide project:
 
-+ ['CodeCraft' gereed - trinket.io/python/9ac3995d69](https://trinket.io/python/373f405a78)
++ ['CodeCraft' gereed - trinket.io/python/9ac3995d69](https://trinket.io/python/abc0d47864)
 
 ## Offline bronnen
 
@@ -93,7 +93,7 @@ title: Projectmaterialen
 ## Project bronnen
 
 + [.zip-bestand met alle projectbronnen](resources/codecraft-project-resources.zip)
-+ [Online Trinket met alle 'CodeCraft' projectbronnen](https://trinket.io/python/e8a488ff23)
++ [Online Trinket met alle 'CodeCraft' projectbronnen](https://trinket.io/python/a4cdd53d10)
 + [codecraft/codecraft.py](resources/codecraft-codecraft.py)
 + [codecraft/variables.py](resources/codecraft-variables.py)
 + [codecraft/brick.gif](resources/codecraft-brick.gif)
@@ -109,7 +109,7 @@ title: Projectmaterialen
 ## Clubleider bronnen
 
 + [.zip-bestand met alle voltooide projectresources](resources/codecraft-volunteer-resources.zip)
-+ [Online voltooid Trinket-project](https://trinket.io/python/373f405a78)
++ [Online voltooid Trinket-project](https://trinket.io/python/abc0d47864)
 + [codecraft-finished/codecraft.py](resources/codecraft-finished-codecraft.py)
 + [codecraft-finished/variables.py](resources/codecraft-finished-variables.py)
 + [codecraft-finished/brick.gif](resources/codecraft-finished-brick.gif)
