@@ -13,7 +13,7 @@ Als je dit project wilt afdrukken, gebruik dan de [Printvriendelijke versie](htt
 
 --- collapse ---
 ---
-## title: Clubleider notities
+title: Clubleider notities
 ---
 ## Inleiding:
 
