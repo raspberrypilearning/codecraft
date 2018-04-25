@@ -4,7 +4,6 @@ En este proyecto, diseñarás y codificarás mejoras en una versión 2D de Minec
 
 <div class="trinket">
   <iframe src="https://trinket.io/embed/python/ba085f0bd2?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-  </iframe>
   <img src="images/craft-finished.png">
 </div>
 
