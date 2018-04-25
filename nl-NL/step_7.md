@@ -1,5 +1,4 @@
 --- challenge ---
-
 ## Uitdaging: zand maken
 
 Kun je een `ZAND` bron aan je spel toevoegen? Je kunt de bovenstaande stappen gebruiken.
