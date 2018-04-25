@@ -1,42 +1,39 @@
-## Crear tablones de madera
+## Crear tablones a partir de madera
 
-Creemos el recurso tablón que puede desarrollarse a partir de madera.
+Vamos a crear un nuevo recurso: tablón, creado a partir de madera.
 
-+ En primer lugar, añade una nueva variable `PLANK` a tu juego.
-
++ Primero, añade una nueva variable `PLANK` para tu juego.
+    
     ![screenshot](images/craft-plank-const.png)
 
 + Añade una nueva variable `PLANK` a tu juego.
-
+    
     ![screenshot](images/craft-plank-resources.png)
 
-+ Nombra el recurso `'plank'`.
-
++ Nombra el recurso `'tablon'`.
+    
     ![screenshot](images/craft-plank-names.png)
 
-+ Proporciona una imagen a tu recurso `PLANK`. El proyecto ya incluye una imagen `plank.png`, sin embargo, puedes crear otra si así lo deseas.
-
++ Dale a tu recurso `PLANK` una imagen. El proyecto ya contiene una imagen `plank.png`, pero puedes crear la tuya si lo prefieres.
+    
     ![screenshot](images/craft-plank-textures.png)
 
 + Añade tablones a tu inventario.
-
+    
     ![screenshot](images/craft-plank-inventory.png)
 
-+ Establece la tecla que usarás para colocar tablones.
-
++ Establece una tecla para poner tablones.
+    
     ![screenshot](images/craft-plank-placekeys.png)
 
-+ Como este recurso puede crease, necesitarás definir la norma de creación, por ejemplo: 1 tablón necesita 3 trozos de madera. Añade este código al diccionario `crafting`. 
-
++ Como se puede crear este recurso, debes crear una regla de creación: que un tablón se puede crear con 3 fichas de madera. Añade este código al diccionario de `creacion`.
+    
     ![screenshot](images/craft-plank-crafting.png)
 
-+ Por último, debes establecer una tecla para la creación de nuevos tablones.
-
++ Finalmente, debes establecer una tecla para crear tablones nuevos.
+    
     ![screenshot](images/craft-plank-craftkeys.png)
 
-+ Para probar el nuevo recurso, acumula trozos de madera y crea tablones a partir de ella. A continuación, podrás colocar los nuevos tablones en tu mundo.
-
++ Para probar tu nuevo recurso de tablón, junta algunas fichas de madera y luego crea algunos tablones de madera. Luego puedes poner tus nuevos tablones en tu mundo.
+    
     ![screenshot](images/craft-plank-test.png)
-
-
-

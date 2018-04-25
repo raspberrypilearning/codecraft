@@ -1,7 +1,6 @@
 --- challenge ---
-## Reto: Crea más recursos
-¿Puedes crear más recursos y normas de fabricación?
+## Desafío: Crea más recursos
 
-
+¿Puedes añadir más recursos y crear reglas para tu juego?
 
 --- /challenge ---

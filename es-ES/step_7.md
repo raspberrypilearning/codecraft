@@ -1,14 +1,12 @@
 --- challenge ---
-## Reto: Crear arena
-¿Puedes añadir el recurso `SAND` a tu juego? Usa los pasos anteriores como ayuda.
+## Desafío: Crear arena
+
+¿Puedes añadir un recurso de `ARENA` para tu juego? Sigue los pasos anteriores como ayuda.
 
 ![screenshot](images/craft-sand.png)
 
-El proyecto ya incluye una imagen `sand.png`, sin embargo, puedes crear y cargar otra si así lo deseas.
+El proyecto ya contiene una imagen `sand.png`, pero puedes crear la tuya si lo prefieres.
 
 ![screenshot](images/craft-upload.png)
-
-
-
 
 --- /challenge ---
