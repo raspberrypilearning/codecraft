@@ -1,5 +1,4 @@
 --- challenge ---
-
 ## Uitdaging: maak glas van zand
 
 Kun je een nieuwe bron glas creëren die van zand is gemaakt? Je kunt de bovenstaande stappen volgen.
