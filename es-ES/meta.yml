@@ -1,5 +1,5 @@
 ---
-hero_image: images/codecraft.png
+hero_image: images/banner.png
 theme: blue
 duration: 2
 listed: true
@@ -17,13 +17,13 @@ software: python
 version: 3
 last_tested: 2017-01-01
 steps:
-  - title: Introducción
-  - title: Jugar al juego
-  - title: 'Desafío: Crea tu propio mundo'
-  - title: Personalizar tu juego
-  - title: 'Desafío: Cambia el tamaño de tu mundo'
-  - title: 'Creación de un nuevo recurso: madera'
-  - title: 'Desafío: Crear arena'
-  - title: 'Paso 4: Crear tablones de madera'
-  - title: 'Desafío: Crear cristal a partir de arena'
-  - title: 'Desafío: Crea más recursos'
+- title: Introducción
+- title: Jugar al juego
+- title: 'Desafío: Crea tu propio mundo'
+- title: Personalizar tu juego
+- title: 'Desafío: Cambia el tamaño de tu mundo'
+- title: 'Creación de un nuevo recurso: madera'
+- title: 'Desafío: Crear arena'
+- title: 'Paso 4: Crear tablones de madera'
+- title: 'Desafío: Crear cristal a partir de arena'
+- title: 'Desafío: Crea más recursos'
