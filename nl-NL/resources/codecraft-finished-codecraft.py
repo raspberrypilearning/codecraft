@@ -172,7 +172,7 @@ def tekenInventaris():
       rendererT.forward(breedte)
       rendererT.right(90)
     rendererT.end_fill()
-    rendererT.color('')
+    rendererT.color('zwart')
     #laat 'plaats' en 'maak' tekst zien
     for i in range(1,num_rijen+1):
       rendererT.goto(20, (hoogte - (KAARTHOOGTE * TEGELGROOTTE)) - 20 - (i * 100))

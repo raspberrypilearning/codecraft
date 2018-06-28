@@ -172,7 +172,7 @@ def drawInventory():
       renderizadorT.forward(anchura)
       renderizadorT.right(90)
     renderizadorT.end_fill()
-    renderizadorT.color('')
+    renderizadorT.color('negro')
     #muestra el texto 'poner' y 'crear'
     for i in range(1,num_filas+1):
       renderizadorT.goto(20, (altura - (ALTURAMAPA * TAMANYOCASILLA)) - 20 - (i * 100))
