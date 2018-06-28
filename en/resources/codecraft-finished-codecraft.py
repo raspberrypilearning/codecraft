@@ -172,7 +172,7 @@ def drawInventory():
       rendererT.forward(width)
       rendererT.right(90)
     rendererT.end_fill()
-    rendererT.color('')
+    rendererT.color('Black')
     #display the 'place' and 'craft' text
     for i in range(1,num_rows+1):
       rendererT.goto(20, (height - (MAPHEIGHT * TILESIZE)) - 20 - (i * 100))
