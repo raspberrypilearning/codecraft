@@ -16,7 +16,7 @@ Let's create a new wood resource. To do this, you'll need to add to some variabl
 
     Notice the comma `,` at the end of the line above.
 
-+ Your resource will also need an image. The project already includes an image called `wood.png`, which you should add to the `textures` dictionary.
++ Your resource will also need an image. The project already includes an image called `wood.gif`, which you should add to the `textures` dictionary.
 
     ![screenshot](images/craft-wood-texture.png)
 

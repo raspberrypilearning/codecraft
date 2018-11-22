@@ -14,7 +14,7 @@ Let's create a new plank resource that be crafted from wood.
 
     ![screenshot](images/craft-plank-names.png)
 
-+ Give your `PLANK` resource an image. The project already contains a `plank.png` image, but you can create your own if you prefer.
++ Give your `PLANK` resource an image. The project already contains a `plank.gif` image, but you can create your own if you prefer.
 
     ![screenshot](images/craft-plank-textures.png)
 
