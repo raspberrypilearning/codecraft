@@ -1,0 +1,30 @@
+---
+hero_image: images/codecraft.png
+duration: 2
+listed: true
+copyedit: false
+title: CodeCraft
+description: Dizajniraj i kodiraj poboljšanja za 2D verziju Minecrafta.
+version: 3.1.0
+last_tested: 2018-11-22
+steps:
+  - 
+    title: Uvod
+  - 
+    title: Igranje igre
+  - 
+    title: 'Izazov: Izgradi svoj svijet'
+  - 
+    title: Prilagođavanje igre
+  - 
+    title: 'Izazov: Promijeni veličinu svog svijeta'
+  - 
+    title: Kreiranje novog resursa - drveta
+  - 
+    title: 'Izazov: Kreiraj pijesak'
+  - 
+    title: Izrada dasaka od drva
+  - 
+    title: 'Izazov: Izradi staklo od pijeska'
+  - 
+    title: 'Izazov: Kreiraj još resursa'
