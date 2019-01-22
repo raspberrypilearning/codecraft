@@ -1,7 +1,7 @@
-\--- desafio \---
+\--- challenge \---
 
-## Desafio: criar mais recursos
+## Desafio: Criar mais recursos
 
-Você pode adicionar mais recursos e criar regras para o seu jogo?
+Você pode adicionar mais recursos e criar regras para eles no seu jogo?
 
-\--- / desafio \---
+\--- /challenge \---
