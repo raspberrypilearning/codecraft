@@ -6,6 +6,6 @@ Você pode criar um novo recurso, o vidro, que será fabricado a partir da areia
 
 ![screenshot](images/craft-glass.png)
 
-The project already contains a `glass.gif` image that you can use, or you can create your own image if you prefer.
+O projeto já contém uma imagem `glass.gif` que você pode usar, ou você pode criar sua própria imagem, se preferir.
 
 \--- /challenge \---
