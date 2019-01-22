@@ -14,7 +14,7 @@ Laten we een nieuw plankmateriaal van hout maken.
     
     ![screenshot](images/craft-plank-names.png)
 
-+ Geef je `PLANK` bron een afbeelding. Het project bevat al een afbeelding `plank.png`, maar je kunt er zelf ook een maken als je dat wilt.
++ Geef je `PLANK` bron een afbeelding. The project already contains a `plank.gif` image, but you can create your own if you prefer.
     
     ![screenshot](images/craft-plank-textures.png)
 
