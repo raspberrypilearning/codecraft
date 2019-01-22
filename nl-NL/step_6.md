@@ -16,7 +16,7 @@ Laten we een nieuwe bron voor hout creëren. Daarvoor moet je enkele variabelen 
     
     Let op de komma `,` aan het einde van de regel hierboven.
 
-+ Je bron heeft ook een afbeelding nodig. Het project bevat al een afbeelding met de naam `wood.png`, die je zou moeten toevoegen aan het `materialen` woordenboek.
++ Je bron heeft ook een afbeelding nodig. The project already includes an image called `wood.gif`, which you should add to the `textures` dictionary.
     
     ![screenshot](images/craft-wood-texture.png)
 
