@@ -1,39 +1,39 @@
-## Crafting planks from wood
+## Izradi daske od drva
 
-Let's create a new plank resource that be crafted from wood.
+Napravimo novi resurs, dasku, koji se može izraditi od drva.
 
-+ First, add a new `PLANK` variable to your game.
++ Prvo stvori u igri novu varijablu `DASKA`.
     
     ![screenshot](images/craft-plank-const.png)
 
-+ Add a new `PLANK` variable to your game.
++ Dodaj igri novu varijablu `DASKA`.
     
     ![screenshot](images/craft-plank-resources.png)
 
-+ Name the resource `'plank'`.
++ Nazovi resurs `'daska'`.
     
     ![screenshot](images/craft-plank-names.png)
 
-+ Give your `PLANK` resource an image. The project already contains a `plank.png` image, but you can create your own if you prefer.
++ Pridruži resursu `DASKA` sliku. The project already contains a `plank.gif` image, but you can create your own if you prefer.
     
     ![screenshot](images/craft-plank-textures.png)
 
-+ Add planks to your inventory.
++ Dodaj daske u svoj inventar.
     
     ![screenshot](images/craft-plank-inventory.png)
 
-+ Set a key for placing planks.
++ Odredi tipku kojom će se daske postavljati u svijet.
     
     ![screenshot](images/craft-plank-placekeys.png)
 
-+ As this resource can be crafted, you need to create a crafting rule, which is that a plank can be made from 3 wood tiles. Add this code to the `crafting` dictionary.
++ S obzirom da je ovo resurs koji može biti izrađen od drugih resursa, moraš utvrditi po kojim pravilima može biti izrađen. Neka pravilo bude da se daska može izraditi od 3 komada drveta. Dodaj ovaj kôd u svoj rječnik `izrada`.
     
     ![screenshot](images/craft-plank-crafting.png)
 
-+ Finally, you need to set a key for crafting new planks.
++ Na kraju, moraš odrediti kojom tipkom će se izrađivati nove daske.
     
     ![screenshot](images/craft-plank-craftkeys.png)
 
-+ To test your new plank resource, gather up a few wood tiles and then craft some planks from your wood. You can then place your new planks in your world.
++ Testiraj svoj novi resurs dasku. Sakupi nekoliko komada drveta i od njih izradi daske. Zatim postavi svoje nove daske u svijet.
     
     ![screenshot](images/craft-plank-test.png)
