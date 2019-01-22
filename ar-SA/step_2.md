@@ -1,23 +1,23 @@
-## Playing the game
+## لعب اللعبة
 
-+ Open this trinket: <a href="http://jumpto.cc/codecraft-go" target="_blank">jumpto.cc/codecraft-go</a>.
++ Open this trinket: [rpf.io/codecraft-on](http://rpf.io/codecraft-on){:target="_blank"}.
 
-+ Use the WASD keys to move your player around the world, which is full of different resources (dirt, grass and water).
++ استخدم مفاتيح WASD على لوحة المفاتيح لتحريك اللاعب في كل مكان في عالم اللعبة المليء بالموارد المختلفة (التراب والحشائش والماء).
     
-    ![screenshot](images/craft-move.png)
+    ![لقطة الشاشة](images/craft-move.png)
 
-+ You can press the spacebar to collect resources. Pick up a few of each type of resource, and you'll see them added to your inventory.
++ يمكنك الضغط على مفتاح المسافة لجمع الموارد. اجمع بعض المربعات من كل نوع من الموارد وسترى أنها أضيفت إلى المخزون.
     
-    ![screenshot](images/craft-pickup.png)
+    ![لقطة الشاشة](images/craft-pickup.png)
 
-+ Press the number keys (1 to 3) to place a resource on the map. For example, press 3 to place some water on the map. This will only work if you have some water in your inventory.
++ اضغط على مفاتيح الأرقام (1 إلى 3) لوضع مورد على الخريطة. على سبيل المثال، اضغط على 3 لتضع بعض مربعات الماء على الخريطة. ولن يمكنك القيام بذلك إلا إذا كان لديك بعض مربعات الماء في المخزون.
     
-    ![screenshot](images/craft-place-water.png)
+    ![لقطة الشاشة](images/craft-place-water.png)
 
-+ You can craft an item by pressing the key displayed in the menu. Crafting means combining items you already have in your inventory to create new ones. Try pressing the 'r' key to craft a new brick (as long as you have 2 dirt and 1 water in your inventory).
++ يمكنك صناعة عنصر بالضغط على المفتاح الذي يظهر في القائمة. والمقصود بالصناعة هو جمع العناصر الموجودة بالفعل في المخزون لإنشاء عناصر جديدة. جرِّب الضغط على المفتاح 'R' لصناعة طوبة جديدة (إذا كان لديك مربعان من التراب ومربع واحد من الماء في المخزون).
     
-    ![screenshot](images/craft-craft-brick.png)
+    ![لقطة الشاشة](images/craft-craft-brick.png)
 
-+ You can then press they '4' key to place your crafted bricks.
++ يمكنك بعد ذلك الضغط على المفتاح '4' لوضع الطوب الذي صنعتَه على الخريطة.
     
-    ![screenshot](images/craft-place-brick.png)
+    ![لقطة الشاشة](images/craft-place-brick.png)
