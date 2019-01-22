@@ -16,7 +16,7 @@
     
     Зверніть увагу на коментар `,` в кінці рядка вище.
 
-+ Вашому ресурсу також буде потрібно зображення. Проект вже містить зображення `wood.png`, яке слід додати до словника `textures`.
++ Вашому ресурсу також буде потрібно зображення. The project already includes an image called `wood.gif`, which you should add to the `textures` dictionary.
     
     ![скріншот](images/craft-wood-texture.png)
 
