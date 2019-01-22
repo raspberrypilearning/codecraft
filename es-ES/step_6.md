@@ -16,7 +16,7 @@ Vamos a crear un nuevo recurso de madera. Para hacer esto, necesitarás añadir 
     
     Observa la coma `,` al final de la línea de arriba.
 
-+ Tu recurso también necesitará una imagen. El proyecto ya incluye una imagen llamada `wood.png`, que debes añadir al `diccionario` de texturas.
++ Tu recurso también necesitará una imagen. The project already includes an image called `wood.gif`, which you should add to the `textures` dictionary.
     
     ![screenshot](images/craft-wood-texture.png)
 
