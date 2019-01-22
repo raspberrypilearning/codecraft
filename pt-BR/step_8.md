@@ -1,39 +1,39 @@
-## Crafting pranchas de madeira
+## Criar tábuas a partir da madeira
 
-Vamos criar um novo recurso de prancha que seja criado a partir de madeira.
+Vamos criar um novo recurso, a tábua que será criado a partir da madeira.
 
-+ Primeiro, adicione uma nova variável `PLANK` ao seu jogo.
++ Primeiro, adicione uma nova variável `TABUA` ao seu jogo.
     
-    ![captura de tela](images/craft-plank-const.png)
+    ![screenshot](images/craft-plank-const.png)
 
-+ Adicione uma nova variável `PLANK` ao seu jogo.
++ Adicione a nova variável `TABUA` à lista 'recursos'.
     
-    ![captura de tela](images/craft-plank-resources.png)
+    ![screenshot](images/craft-plank-resources.png)
 
-+ Nomeie o recurso `'plank'`.
++ Nomeie o recurso `'Tábua'`.
     
-    ![captura de tela](images/craft-plank-names.png)
+    ![screenshot](images/craft-plank-names.png)
 
-+ Dê uma imagem à sua `PLANK` recurso. O projeto já contém uma imagem `plank.png` , mas você pode criar a sua própria, se preferir.
++ Dê uma imagem ao seu recursos `TABUA`. The project already contains a `plank.gif` image, but you can create your own if you prefer.
     
-    ![captura de tela](images/craft-plank-textures.png)
+    ![screenshot](images/craft-plank-textures.png)
 
-+ Adicione tábuas ao seu inventário.
++ Adicione as tábuas ao seu inventário.
     
-    ![captura de tela](images/craft-plank-inventory.png)
+    ![screenshot](images/craft-plank-inventory.png)
 
 + Defina uma chave para colocar as tábuas.
     
-    ![captura de tela](images/craft-plank-placekeys.png)
+    ![screenshot](images/craft-plank-placekeys.png)
 
-+ Como este recurso pode ser trabalhado, você precisa criar uma regra de criação, que é que uma prancha pode ser feita a partir de 3 ladrilhos de madeira. Adicione este código ao `crafting` dicionário.
++ Como este recurso pode ser trabalhado, você precisa criar uma regra de criação, que uma tábua poderá ser construída a partir de 3 blocos de madeira. Adicione este código ao dicionário `fabricando`.
     
-    ![captura de tela](images/craft-plank-crafting.png)
+    ![screenshot](images/craft-plank-crafting.png)
 
-+ Finalmente, você precisa definir uma chave para criar novas pranchas.
++ Finalmente, você precisa definir uma chave para criar novas tábuas.
     
-    ![captura de tela](images/craft-plank-craftkeys.png)
+    ![screenshot](images/craft-plank-craftkeys.png)
 
-+ Para testar seu novo recurso de prancha, junte alguns ladrilhos de madeira e depois faça algumas tábuas em sua madeira. Você pode então colocar suas novas tábuas em seu mundo.
++ Para testar o seu novo recurso, junte alguns blocos de madeira e depois faça algumas tábuas. Você pode colocar as suas novas tábuas no seu mundo.
     
-    ![captura de tela](images/craft-plank-test.png)
+    ![screenshot](images/craft-plank-test.png)
