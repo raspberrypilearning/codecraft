@@ -16,7 +16,7 @@ Stwórzmy nowy zasób drewna. Aby to zrobić, musisz dodać do niektórych zmien
     
     Zauważ przecinek `,` na końcu powyższej linii.
 
-+ Twój zasób będzie również potrzebował obrazu. Projekt zawiera już obraz o nazwie `wood.png`, który powinieneś dodać do słownika `tekstur`.
++ Twój zasób będzie również potrzebował obrazu. The project already includes an image called `wood.gif`, which you should add to the `textures` dictionary.
     
     ![zrzut ekranu](images/craft-wood-texture.png)
 
