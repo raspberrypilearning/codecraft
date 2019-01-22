@@ -6,7 +6,7 @@
 
 ![скріншот](images/craft-sand.png)
 
-Проект вже містить зображення `sand.png` , але ви можете створювати та завантажувати свої власні, якщо хочете.
+The project already includes a `sand.gif` image, but you can create and upload your own if you prefer.
 
 ![скріншот](images/craft-upload.png)
 
