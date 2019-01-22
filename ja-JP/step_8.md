@@ -1,39 +1,39 @@
-## Crafting planks from wood
+## 木から板をクラフトする
 
-Let's create a new plank resource that be crafted from wood.
+新しいリソース板（PLANK）を木からクラフトしましょう。
 
-+ First, add a new `PLANK` variable to your game.
++ 最初に、`PLANK`変数を追加。
     
-    ![screenshot](images/craft-plank-const.png)
+    ![スクリーンショット](images/craft-plank-const.png)
 
-+ Add a new `PLANK` variable to your game.
++ `PLANK`変数をresoucesに追加。
     
-    ![screenshot](images/craft-plank-resources.png)
+    ![スクリーンショット](images/craft-plank-resources.png)
 
-+ Name the resource `'plank'`.
++ リソースに `'plank'`と名付け、namesに追加。
     
-    ![screenshot](images/craft-plank-names.png)
+    ![スクリーンショット](images/craft-plank-names.png)
 
-+ Give your `PLANK` resource an image. The project already contains a `plank.png` image, but you can create your own if you prefer.
++ `PLANK`リソースに画像を追加。 The project already contains a `plank.gif` image, but you can create your own if you prefer.
     
-    ![screenshot](images/craft-plank-textures.png)
+    ![スクリーンショット](images/craft-plank-textures.png)
 
-+ Add planks to your inventory.
++ 持ち物リストに板を追加。
     
-    ![screenshot](images/craft-plank-inventory.png)
+    ![スクリーンショット](images/craft-plank-inventory.png)
 
-+ Set a key for placing planks.
++ 板を置くキーを設定。
     
-    ![screenshot](images/craft-plank-placekeys.png)
+    ![スクリーンショット](images/craft-plank-placekeys.png)
 
-+ As this resource can be crafted, you need to create a crafting rule, which is that a plank can be made from 3 wood tiles. Add this code to the `crafting` dictionary.
++ この板リソースはクラフトできるものなので、３つの木リソースからクラフトするルールを作成。 そのルールを`crafting`辞書に追加。
     
-    ![screenshot](images/craft-plank-crafting.png)
+    ![スクリーンショット](images/craft-plank-crafting.png)
 
-+ Finally, you need to set a key for crafting new planks.
++ 板リソースをクラフトするキーを追加。 
     
-    ![screenshot](images/craft-plank-craftkeys.png)
+    ![スクリーンショット](images/craft-plank-craftkeys.png)
 
-+ To test your new plank resource, gather up a few wood tiles and then craft some planks from your wood. You can then place your new planks in your world.
++ 板リソースをテストするために、木リソースを集めて板リソースをクラフトする。 ワールドに板リソースが配置できます。
     
-    ![screenshot](images/craft-plank-test.png)
+    ![スクリーンショット](images/craft-plank-test.png)
