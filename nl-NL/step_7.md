@@ -6,7 +6,7 @@ Kun je een `ZAND` bron aan je spel toevoegen? Je kunt de bovenstaande stappen ge
 
 ![screenshot](images/craft-sand.png)
 
-Het project bevat al een afbeelding` sand.png`, maar je kunt je eigen afbeelding maken en uploaden als je dat wilt.
+The project already includes a `sand.gif` image, but you can create and upload your own if you prefer.
 
 ![screenshot](images/craft-upload.png)
 
