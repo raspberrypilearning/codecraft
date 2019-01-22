@@ -6,7 +6,7 @@ Možeš li u svoju igru da dodaš resurs `PIJESAK`? Za pomoć pogledaj korake iz
 
 ![screenshot](images/craft-sand.png)
 
-The project already includes a `sand.gif` image, but you can create and upload your own if you prefer.
+Projekat već sadrži sliku `sand.gif`, ali možeš da napraviš i učitaš sopstvenu sliku ako želiš.
 
 ![screenshot](images/craft-upload.png)
 
