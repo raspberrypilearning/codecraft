@@ -3,7 +3,7 @@
 W tym projekcie będziesz projektować i kodować ulepszenia w 2D wersji Minecrafta.
 
 <div class="trinket">
-  <iframe src="https://trinket.io/embed/python/9ac3995d69?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
+  <iframe src="https://trinket.io/embed/python/ebc5b0148b?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
   </iframe>
   <img src="images/craft-finished.png">
 </div>
@@ -24,11 +24,11 @@ W tym projekcie dzieci poznają aspekty grafiki i projektowania gier, wprowadzaj
 
 **Ten projekt używa Python 3.** Zalecamy użycie [bibeloty](https://trinket.io/) do pisania Python online. Ten projekt zawiera następujące bibeloty:
 
-+ [Punkt początkowy "CodeCraft" - jumpto.cc/codecraft-go](http://jumpto.cc/codecraft-go)
++ ['CodeCraft' starter project -- rpf.io/codecraft-on](http://rpf.io/codecraft-on)
 
 Jest też bibelot zawierający ukończony projekt:
 
-+ ["CodeCraft" Zakończony - trinket.io/python/9ac3995d69](https://trinket.io/python/9ac3995d69)
++ [‘CodeCraft’ Finished -- trinket.io/python/ebc5b0148b](https://trinket.io/python/ebc5b0148b)
 
 ## Zasoby offline
 
@@ -36,25 +36,31 @@ Ten projekt może być [zakończony w trybie offline](https://www.codeclubprojec
 
 + codecraft / codecraft.py
 + codecraft / variables.py
-+ codecraft / player.gif
++ codecraft/brick.gif
 + codecraft / dirt.gif
-+ codecraft / grass.gif
-+ codecraft / water.gif
-+ codecraft / brick.gif
++ codecraft/glass.gif
++ codecraft/grass.gif
++ codecraft/plank.gif
++ codecraft/player.gif
++ codecraft/sand.gif
++ codecraft/water.gif
++ codecraft/wood.gif
 
 Pełną wersję tego projektu można również znaleźć w sekcji "Zasoby dla wolontariuszy", która zawiera:
 
 + codecraft-finished / codecraft.py
 + codecraft-finished / variables.py
-+ codecraft-finished / player.gif
++ codecraft-finished/brick.gif
 + codecraft-finished / dirt.gif
-+ codecraft-finished / grass.gif
-+ codecraft-finished / water.gif
-+ codecraft-finished / brick.gif
-+ codecraft-finished / wood.gif
-+ codecraft-finished / plank.gif
++ codecraft-finished/glass.gif
++ codecraft-finished/grass.gif
++ codecraft-finished/plank.gif
++ codecraft-finished/player.gif
++ codecraft-finished/sand.gif
++ codecraft-finished/water.gif
++ codecraft-finished/wood.gif
 
-(Wszystkie powyższe zasoby można również pobrać jako pliki projektu i wolontariusza `.zip`).
+(All of the resources above are also downloadable as `.zip` files.)
 
 ## Cele kształcenia
 
@@ -81,8 +87,7 @@ Ten projekt obejmuje elementy z następujących wątków [Curriculum Digital Mak
 
 ## Często Zadawane Pytania
 
-+ **Offline Python nie działa z obrazami .png. Pliki .gif zostały dostarczone do użytku w trybie offline.**
-+ Dzieci mogą potrzebować przypomnienia, że ​​elementy słownika / listy są oddzielone przecinkiem. Na przykład podczas dodawania do gry elementów z ekwipunku, grafiki i rzemiosła.
++ Children may need reminding that elements of a dictionary/list are separated by a comma. For example, when adding inventory items, graphics and crafting rules to the game.
 
 \--- /zawalić się \---
 
@@ -92,34 +97,12 @@ Ten projekt obejmuje elementy z następujących wątków [Curriculum Digital Mak
 
 ## Zasoby projektu
 
-+ [Plik .zip zawierający wszystkie zasoby projektu](resources/codecraft-project-resources.zip)
-+ [Internetowy drobiazg zawierający wszystkie zasoby projektu "CodeCraft"](http://jumpto.cc/codecraft-go)
-+ [codecraft / codecraft.py](resources/codecraft-codecraft.py)
-+ [codecraft / variables.py](resources/codecraft-variables.py)
-+ [codecraft / brick.gif](resources/codecraft-brick.gif)
-+ [codecraft / dirt.gif](resources/codecraft-dirt.gif)
-+ [codecraft / glass.gif](resources/codecraft-glass.gif)
-+ [codecraft / grass.gif](resources/codecraft-grass.gif)
-+ [codecraft / plank.gif](resources/codecraft-plank.gif)
-+ [codecraft / player.gif](resources/codecraft-player.gif)
-+ [codecraft / sand.gif](resources/codecraft-sand.gif)
-+ [codecraft / water.gif](resources/codecraft-water.gif)
-+ [codecraft / wood.gif](resources/codecraft-wood.gif)
++ [Plik .zip zawierający wszystkie zasoby projektu](resources/codecraft-resources.zip)
++ [Internetowy drobiazg zawierający wszystkie zasoby projektu "CodeCraft"](http://rpf.io/codecraft-on)
 
 ## Zasoby lidera klubu
 
-+ [Plik .zip zawierający wszystkie ukończone zasoby projektu](resources/codecraft-volunteer-resources.zip)
-+ [Zakończony online projekt Trinket](https://trinket.io/python/9ac3995d69)
-+ [codecraft-finished / codecraft.py](resources/codecraft-finished-codecraft.py)
-+ [codecraft-finished / variables.py](resources/codecraft-finished-variables.py)
-+ [codecraft-finished / brick.gif](resources/codecraft-finished-brick.gif)
-+ [codecraft-finished / dirt.gif](resources/codecraft-finished-dirt.gif)
-+ [codecraft-finished / glass.gif](resources/codecraft-finished-glass.gif)
-+ [codecraft-finished / grass.gif](resources/codecraft-finished-grass.gif)
-+ [codecraft-finished / plank.gif](resources/codecraft-finished-plank.gif)
-+ [codecraft-finished / player.gif](resources/codecraft-finished-player.gif)
-+ [codecraft-finished / sand.gif](resources/codecraft-finished-sand.gif)
-+ [codecraft-finished / water.gif](resources/codecraft-finished-water.gif)
-+ [codecraft-finished / wood.gif](resources/codecraft-finished-wood.gif)
++ [Plik .zip zawierający wszystkie ukończone zasoby projektu](solutions/codecraft-solution.zip)
++ [Zakończony online projekt Trinket](https://trinket.io/python/ebc5b0148b)
 
 \--- /zawalić się \---
