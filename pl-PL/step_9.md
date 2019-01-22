@@ -6,6 +6,6 @@ Czy możesz stworzyć nowy materiał szklany, który można wykonać z piasku? M
 
 ![zrzut ekranu](images/craft-glass.png)
 
-Projekt zawiera już obraz `glass.png` , którego możesz użyć lub możesz utworzyć własny obraz, jeśli wolisz.
+The project already contains a `glass.gif` image that you can use, or you can create your own image if you prefer.
 
 \--- / wyzwanie \---
