@@ -1,7 +1,7 @@
 \--- challenge \---
 
-## Challenge: Create more resources
+## التحدي: أنشئ موارد أخرى
 
-Can you add more resources and crafting rules to your game?
+هل يمكنك إضافة موارد وقواعد صناعة أخرى إلى لعبتك؟
 
 \--- /challenge \---
