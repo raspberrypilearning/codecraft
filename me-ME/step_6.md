@@ -16,7 +16,7 @@ Kreirajmo novi resurs - drvo. Da bismo to napravili, moramo dodati još neke pro
     
     Obrati pažnju na zarez `,` na kraju reda.
 
-+ Tvom resursu će biti potrebna i slika. The project already includes an image called `wood.gif`, which you should add to the `textures` dictionary.
++ Tvom resursu će biti potrebna i slika. Projekat već sadrži sliku pod nazivom `wood.gif` koju treba da dodaš u rječnik sa nazivom `teksture`.
     
     ![screenshot](images/craft-wood-texture.png)
 
