@@ -1,13 +1,13 @@
 \--- challenge \---
 
-## Challenge: Creating sand
+## التحدي: أنشئ مورد الرمل
 
-Can you add a `SAND` resource to your game? You can use the steps above to help you.
+هل يمكنك إضافة مورد `SAND` إلى لعبتك؟ يمكنك استخدام الخطوات السابقة لمساعدتك.
 
-![screenshot](images/craft-sand.png)
+![لقطة شاشة](images/craft-sand.png)
 
-The project already includes a `sand.png` image, but you can create and upload your own if you prefer.
+The project already includes a `sand.gif` image, but you can create and upload your own if you prefer.
 
-![screenshot](images/craft-upload.png)
+![لقطة الشاشة](images/craft-upload.png)
 
 \--- /challenge \---
