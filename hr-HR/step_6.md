@@ -1,51 +1,51 @@
-## Creating a new wood resource
+## Stvori novi resurs - drvo
 
-Let's create a new wood resource. To do this, you'll need to add to some variables in your `variables.py` file.
+Stvorimo novi resurs - drvo. Da bi to napravili, moramo dodati još neke varijable u datoteku `variables.py`.
 
-+ First, you need to give your new resource a number. You'll then be able to use the word `WOOD` in your code instead of the number 4.
++ Prvo moraš odabrati broj za svoj novi resurs. Tada ćeš, umjesto broja 4, moći koristiti riječ DRVO u kôdu.
     
     ![screenshot](images/craft-wood-const.png)
 
-+ You should add your new `WOOD` resource to your list of `resources`.
++ Dodaj novi resurs `DRVO` unutar svoje liste `resursi`.
     
     ![screenshot](images/craft-wood-resources.png)
 
-+ You should also give your resource a name, which will be displayed in the inventory.
++ Također moraš svom resursu dati naziv koji će se prikazivati u inventaru.
     
     ![screenshot](images/craft-wood-name.png)
     
-    Notice the comma `,` at the end of the line above.
+    Primijeti da se na kraju linija nalazi zarez`,`.
 
-+ Your resource will also need an image. The project already includes an image called `wood.png`, which you should add to the `textures` dictionary.
++ Tvoj resurs trebat će i sliku. The project already includes an image called `wood.gif`, which you should add to the `textures` dictionary.
     
     ![screenshot](images/craft-wood-texture.png)
 
-+ Add the number of your resource that should be in your `inventory` to start with.
++ Za početak, u rječnik `inventar` dodaj broj koji si pridružio resursu.
     
     ![screenshot](images/craft-wood-inventory.png)
 
-+ Finally, add the key that you'll press to place wood in the world.
++ Zatim dodaj tipku kojom ćeš postaviti drvo u svijet.
     
     ![screenshot](images/craft-wood-placekey.png)
 
-+ Run your project to test it. You'll see that you now have a new 'wood' resource in your inventory.
++ Pokreni i testiraj projekt. Vidjet ćeš da sada imaš novi resurs 'drvo' u svom inventaru.
     
     ![screenshot](images/craft-wood-test.png)
 
-+ There's no wood in your world! To fix this, click on your `main.py` file and find the function called `generateRandomWorld()`.
++ U tvom svijetu nema drva! Popravi to tako da odabereš datoteku `main.py` i pronađeš funkciju `generateRandomWorld()`.
     
     ![screenshot](images/craft-wood-random1.png)
     
-    This code generates a random number between 0 and 10, and uses the number to decide which resource to place:
+    Ovaj kôd nasumično generira broj između 0 i 10, a dobiveni broj odlučuje koji element će se postaviti u svijet:
     
-    + 1 or 2 = water
-    + 3 or 4 = grass
-    + anything else = DIRT
+    + 1 ili 2 = voda
+    + 3 ili 4 = trava
+    + bilo što drugo = ZEMLJA
 
-+ Add this code to add wood to your world whenever the `randomNumber` is 5.
++ Unesi sljedeći kôd kako bi dodao drvo u svoj svijet svaki put kada je `randomNumber` 5.
     
     ![screenshot](images/craft-wood-random2.png)
 
-+ Test your project again. This time, you should see some wood appear in your world.
++ Ponovno testiraj projekt. Ovoga bi se puta drvo trebalo pojaviti u tvom svijetu.
     
     ![screenshot](images/craft-wood-test2.png)
