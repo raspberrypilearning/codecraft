@@ -6,7 +6,7 @@ Kannst du eine Ressource `SAND` zu deinem Spiel hinzufügen? Du kannst die vorhe
 
 ![screenshot](images/craft-sand.png)
 
-The project already includes a `sand.gif` image, but you can create and upload your own if you prefer.
+Das Projekt enthält bereits ein `sand.gif`-Bild, aber du kannst dein eigenes erstellen und hochladen, wenn du das willst.
 
 ![screenshot](images/craft-upload.png)
 
