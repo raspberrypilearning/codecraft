@@ -14,7 +14,7 @@ Vamos a crear un nuevo recurso: tablón, creado a partir de madera.
     
     ![screenshot](images/craft-plank-names.png)
 
-+ Dale a tu recurso `PLANK` una imagen. El proyecto ya contiene una imagen `plank.png`, pero puedes crear la tuya si lo prefieres.
++ Dale a tu recurso `PLANK` una imagen. The project already contains a `plank.gif` image, but you can create your own if you prefer.
     
     ![screenshot](images/craft-plank-textures.png)
 
