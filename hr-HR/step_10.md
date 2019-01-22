@@ -1,7 +1,7 @@
 \--- challenge \---
 
-## Challenge: Create more resources
+## Izazov: Stvori još elemenata
 
-Can you add more resources and crafting rules to your game?
+Možeš li svojoj igri dodati još elemenata i pravila za izrađivanje?
 
 \--- /challenge \---
