@@ -16,7 +16,7 @@ Schaffen wir eine neue Ressource: Holz. Dazu musst du einige Variablen in der Da
     
     Denke an das Komma `,` am Ende der obenstehenden Zeile.
 
-+ Deine Ressource benötigt auch ein Bild. The project already includes an image called `wood.gif`, which you should add to the `textures` dictionary.
++ Deine Ressource benötigt auch ein Bild. Das Projekt enthält bereits ein Bild mit dem Namen `wood.gif`, das zum `textures`-Dictionary hinzugefügt werden muss.
     
     ![screenshot](images/craft-wood-texture.png)
 
