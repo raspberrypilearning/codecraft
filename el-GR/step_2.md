@@ -1,6 +1,6 @@
 ## Παίζοντας το παιχνίδι
 
-+ Open this trinket: [rpf.io/codecraft-on](http://rpf.io/codecraft-on){:target="_blank"}.
++ Άνοιξε αυτό το πρότυπο trinket: [rpf.io/codecraft-on](http://rpf.io/codecraft-on){:target="_blank"}.
 
 + Χρησιμοποίησε τα πλήκτρα WASD για να μετακινήσεις τον παίκτη σου σε όλο τον κόσμο, ο οποίος είναι γεμάτος από διαφορετικούς πόρους (λάσπη, χόρτο και νερό).
     
