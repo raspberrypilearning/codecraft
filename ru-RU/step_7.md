@@ -1,12 +1,12 @@
 \--- challenge \---
 
-## Challenge: Creating sand
+## Задача: создать песок
 
-Can you add a `SAND` resource to your game? You can use the steps above to help you.
+Вы можете добавить в вашу игру блок песка `SAND`? В качестве помощи можно использовать описанные выше шаги.
 
 ![screenshot](images/craft-sand.png)
 
-The project already includes a `sand.png` image, but you can create and upload your own if you prefer.
+The project already includes a `sand.gif` image, but you can create and upload your own if you prefer.
 
 ![screenshot](images/craft-upload.png)
 
