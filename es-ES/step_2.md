@@ -1,6 +1,6 @@
 ## Jugar el juego
 
-+ Abre este Trinket: <a href="http://jumpto.cc/codecraft-go" target="_blank">jumpto.cc/codecraft-go</a>.
++ Open this trinket: [rpf.io/codecraft-on](http://rpf.io/codecraft-on){:target="_blank"}.
 
 + Usa las teclas WASD para mover tu jugador por todo el mundo, que está lleno de diferentes recursos (tierra, césped y agua).
     
