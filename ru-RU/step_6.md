@@ -1,51 +1,51 @@
-## Creating a new wood resource
+## Создание нового ресурса «дерево»
 
-Let's create a new wood resource. To do this, you'll need to add to some variables in your `variables.py` file.
+Давайте создадим новый ресурс: «дерево». Для этого вам нужно добавить некоторые переменные в ваш файл ` variables.py `.
 
-+ First, you need to give your new resource a number. You'll then be able to use the word `WOOD` in your code instead of the number 4.
++ Во-первых, вам нужно задать номер (например, 4) для обозначения вашего нового ресурса, сопоставив его с переменной ресурса (например, WOOD). Затем вы сможете использовать в вашей программе переменную `WOOD` вместо номера 4.
     
     ![screenshot](images/craft-wood-const.png)
 
-+ You should add your new `WOOD` resource to your list of `resources`.
++ Вы должны добавить свой новый ресурс `WOOD` в список ресурсов `resources`.
     
     ![screenshot](images/craft-wood-resources.png)
 
-+ You should also give your resource a name, which will be displayed in the inventory.
++ Вы также должны дать вашему ресурсу название, которое будет отображаться в запасах.
     
     ![screenshot](images/craft-wood-name.png)
     
-    Notice the comma `,` at the end of the line above.
+    Обратите внимание на запятую `,` в конце строки в вышеприведённом коде.
 
-+ Your resource will also need an image. The project already includes an image called `wood.png`, which you should add to the `textures` dictionary.
++ Вашему ресурсу также понадобится изображение. The project already includes an image called `wood.gif`, which you should add to the `textures` dictionary.
     
     ![screenshot](images/craft-wood-texture.png)
 
-+ Add the number of your resource that should be in your `inventory` to start with.
++ Для начала добавьте количество блоков своего ресурса, который будет в вашем списке запасов `inventory`.
     
     ![screenshot](images/craft-wood-inventory.png)
 
-+ Finally, add the key that you'll press to place wood in the world.
++ Наконец, добавьте клавишу, которую вы будете нажимать, чтобы разместить блок «дерево» в мире.
     
     ![screenshot](images/craft-wood-placekey.png)
 
-+ Run your project to test it. You'll see that you now have a new 'wood' resource in your inventory.
++ Запустите ваш проект, чтобы проверить его. Вы увидите, что теперь у вас среди ваших запасов есть новый ресурс «дерево».
     
     ![screenshot](images/craft-wood-test.png)
 
-+ There's no wood in your world! To fix this, click on your `main.py` file and find the function called `generateRandomWorld()`.
++ Но в вашем мире нет дерева! Чтобы исправить это, нажмите на файл `main.py` и найдите функцию под названием `generateRandomWorld()`.
     
     ![screenshot](images/craft-wood-random1.png)
     
-    This code generates a random number between 0 and 10, and uses the number to decide which resource to place:
+    Этот код генерирует случайное число от 0 до 10 и использует этот номер, чтобы определить, какой ресурс следует разместить:
     
-    + 1 or 2 = water
-    + 3 or 4 = grass
-    + anything else = DIRT
+    + 1 или 2 = вода
+    + 3 или 4 = трава
+    + все остальное = DIRT (грязь)
 
-+ Add this code to add wood to your world whenever the `randomNumber` is 5.
++ Добавьте этот код, чтобы добавить блок «дерево» в ваш мир, всякий раз, когда значение `randomNumber` будет равно 5.
     
     ![screenshot](images/craft-wood-random2.png)
 
-+ Test your project again. This time, you should see some wood appear in your world.
++ Запустите свой проект для проверки ещё раз. На этот раз вы должны увидеть, как в вашем мире появились блоки «дерево».
     
     ![screenshot](images/craft-wood-test2.png)
