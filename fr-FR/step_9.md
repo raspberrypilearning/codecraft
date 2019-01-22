@@ -1,11 +1,11 @@
 \--- challenge \---
 
-## Challenge: Crafting glass from sand
+## Défi: Fabrique du verre à partir du sable
 
-Can you create a new glass resource, that can be crafted from sand? You can follow the steps above to help you.
+Peux tu créer une nouvelle ressource verre qui peut être fabriquée à partir du sable ? Tu peux suivre les étapes précédentes pour t'aider.
 
-![screenshot](images/craft-glass.png)
+![capture d'écran](images/craft-glass.png)
 
-The project already contains a `glass.png` image that you can use, or you can create your own image if you prefer.
+The project already contains a `glass.gif` image that you can use, or you can create your own image if you prefer.
 
 \--- /challenge \---
