@@ -14,7 +14,7 @@
     
     ![скріншот](images/craft-plank-names.png)
 
-+ Надайте `PLANK` ресурсу зображення. Проект вже містить `plank.png` зображення, але ви можете створити його власне, якщо хочете.
++ Надайте `PLANK` ресурсу зображення. The project already contains a `plank.gif` image, but you can create your own if you prefer.
     
     ![скріншот](images/craft-plank-textures.png)
 
