@@ -14,7 +14,7 @@ Lass uns eine neue Ressource Brett erstellen, die aus Holz gefertigt wird.
     
     ![screenshot](images/craft-plank-names.png)
 
-+ Weise der Ressource `BRETT` ein Bild zu. The project already contains a `plank.gif` image, but you can create your own if you prefer.
++ Weise der Ressource `BRETT` ein Bild zu. Das Projekt enthält bereits das `plank.gif`-Bild, aber du kannst dein eigenes erstellen, wenn du das willst.
     
     ![screenshot](images/craft-plank-textures.png)
 
