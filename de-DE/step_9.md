@@ -6,6 +6,6 @@ Kannst du eine neue Ressource Glas erstellen, die aus Sand hergestellt wird? Du 
 
 ![screenshot](images/craft-glass.png)
 
-The project already contains a `glass.gif` image that you can use, or you can create your own image if you prefer.
+Das Projekt enthält bereits ein `glass.gif`-Bild das du verwenden kannst, aber du kannst auch dein eigenes Bild verwenden, wenn dir das lieber ist.
 
 \--- /challenge \---
