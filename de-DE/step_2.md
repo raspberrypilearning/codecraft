@@ -1,6 +1,6 @@
 ## Das Spiel spielen
 
-+ Open this trinket: [rpf.io/codecraft-on](http://rpf.io/codecraft-on){:target="_blank"}.
++ Öffne dieses trinket [rpf.io/codecraft-on](http://rpf.io/codecraft-on){:target="_blank"}.
 
 + Benutze die Tasten W, A, S und D, um deinen Spieler in der Welt, die voll mit verschiedenen Ressourcen ist (Erde, Gras und Wasser), umher zu bewegen.
     
