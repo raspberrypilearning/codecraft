@@ -1,39 +1,30 @@
 ---
 hero_image: images/codecraft.png
-theme: blue
 duration: 2
 listed: true
-ingredient: false
 copyedit: false
-curriculum: 1, design-1, programming-1, phys-comp-0, manufacture-0, community-0
-title: CodeCraft
-description: Design and code improvements to a 2D version of Minecraft.
-original_url: https://codeclubprojects.org/en-GB/python/codecraft
-interests: games
-technologies: python
-site_areas: projects
-hardware: ''
-software: python
-version: 3
-last_tested: 2017-01-01
+title: 코드크래프트
+description: 2D 마인크래프트 게임의 소스코드를 개선시켜 보세요!
+version: 3.1.0
+last_tested: 2018-11-22
 steps:
   - 
-    title: Introduction
+    title: 소개
   - 
-    title: Playing the game
+    title: 게임 플레이
   - 
-    title: 'Challenge: Build your world'
+    title: '과제: 자신만의 월드 구축하기'
   - 
-    title: Customising your game
+    title: 게임 맞춤 설정
   - 
-    title: 'Challenge: Change your world size'
+    title: '과제: 월드 사이즈 수정하기'
   - 
-    title: Creating a new wood resource
+    title: 나무 아이템 만들기
   - 
-    title: 'Challenge: Creating sand'
+    title: '과제: 모래 만들기'
   - 
-    title: Crafting planks from wood
+    title: 나무에서 나무 판 만들기
   - 
-    title: 'Challenge: Crafting glass from sand'
+    title: '과제: 모래로 유리 만들기'
   - 
-    title: 'Challenge: Create more resources'
+    title: '과제: 더 많은 아이템 만들기'
