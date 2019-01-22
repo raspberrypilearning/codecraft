@@ -24,11 +24,11 @@ U ovom projektu djeca će učiti o aspektima grafike i dizajna igara tako što �
 
 **U ovom projektu koristi se Python 3.** Preporučujemo korišćenje [trinketa](https://trinket.io/) za online pisanje u Pythonu. Ovaj projekat sadrži sljedeće Trinkete:
 
-+ ['CodeCraft' starter project -- rpf.io/codecraft-on](http://rpf.io/codecraft-on)
++ [Početak projekta 'CodeCraft' -- rpf.io/codecraft-on](http://rpf.io/codecraft-on)
 
 Takođe postoji trinket koji sadrži završen projekat:
 
-+ [‘CodeCraft’ Finished -- trinket.io/python/ebc5b0148b](https://trinket.io/python/ebc5b0148b)
++ [Završen projekat 'CodeCraft' -- trinket.io/python/ebc5b0148b](https://trinket.io/python/ebc5b0148b)
 
 ## Offline izvori
 
@@ -60,7 +60,7 @@ Takođe, završenu verziju ovoga projekta možete naći u odjeljku 'Izvori za vo
 + codecraft-finished/water.gif
 + codecraft-finished/wood.gif
 
-(All of the resources above are also downloadable as `.zip` files.)
+(Sve navedene izvore moguće je preuzeti kao `.zip` datoteke.)
 
 ## Ciljevi učenja
 
@@ -87,7 +87,7 @@ Ovim projektom obuhvaćeni su elementi iz sljedećih dijelova [Raspberry Pi Digi
 
 ## Često postavljana pitanja
 
-+ Children may need reminding that elements of a dictionary/list are separated by a comma. For example, when adding inventory items, graphics and crafting rules to the game.
++ Možda će biti potrebno podsjetiti djecu da se elementi rječnika/liste odvajaju zarezima. Na primjer, kada se u igru dodaju elementi inventara, grafika i pravila za izradu resursa.
 
 \--- /collapse \---
 
