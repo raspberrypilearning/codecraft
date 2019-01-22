@@ -1,23 +1,23 @@
-## Playing the game
+## Das Spiel spielen
 
-+ Open this trinket: <a href="http://jumpto.cc/codecraft-go" target="_blank">jumpto.cc/codecraft-go</a>.
++ Open this trinket: [rpf.io/codecraft-on](http://rpf.io/codecraft-on){:target="_blank"}.
 
-+ Use the WASD keys to move your player around the world, which is full of different resources (dirt, grass and water).
++ Benutze die Tasten W, A, S und D, um deinen Spieler in der Welt, die voll mit verschiedenen Ressourcen ist (Erde, Gras und Wasser), umher zu bewegen.
     
     ![screenshot](images/craft-move.png)
 
-+ You can press the spacebar to collect resources. Pick up a few of each type of resource, and you'll see them added to your inventory.
++ Du kannst die Leertaste drücken, um Ressourcen zu sammeln. Nimm ein paar Stück von jeder Ressource und du wirst sehen, wie sie zu deinem Inventar hinzugefügt werden.
     
     ![screenshot](images/craft-pickup.png)
 
-+ Press the number keys (1 to 3) to place a resource on the map. For example, press 3 to place some water on the map. This will only work if you have some water in your inventory.
++ Drücke die Zifferntasten (1 bis 3), um eine Ressource auf der Karte zu platzieren. Du musst zum Beispiel die 3 drücken um etwas Wasser auf der Karte platzieren. Dies funktioniert nur, wenn du etwas Wasser in deinem Inventar hast.
     
     ![screenshot](images/craft-place-water.png)
 
-+ You can craft an item by pressing the key displayed in the menu. Crafting means combining items you already have in your inventory to create new ones. Try pressing the 'r' key to craft a new brick (as long as you have 2 dirt and 1 water in your inventory).
++ Du kannst einen Gegenstand herstellen, indem du die im Menü angezeigte Taste drückst. Herstellen bedeutet, Elemente aus deinem Inventar so zu kombinieren, dass du neue Elemente schaffst. Versuche, die 'z' Taste zu drücken um einen neuen Ziegel herzustellen (sofern du mindestens 2 x Erde und 1 x Wasser in deinem Inventar hast).
     
     ![screenshot](images/craft-craft-brick.png)
 
-+ You can then press they '4' key to place your crafted bricks.
++ Du kannst dann die Taste "4" drücken, um deine fertigen Ziegel ​​zu platzieren.
     
     ![screenshot](images/craft-place-brick.png)
