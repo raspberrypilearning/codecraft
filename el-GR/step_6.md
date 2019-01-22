@@ -16,7 +16,7 @@
     
     Παρατήρησε το κόμμα `,` στο τέλος της παραπάνω γραμμής.
 
-+ Ο πόρος σου θα χρειαστεί επίσης μια εικόνα. The project already includes an image called `wood.gif`, which you should add to the `textures` dictionary.
++ Ο πόρος σου θα χρειαστεί επίσης μια εικόνα. Το έργο περιλαμβάνει ήδη μια εικόνα που ονομάζεται `wood.gif`, την οποία πρέπει να προσθέσεις στο λεξικό `textures`.
     
     ![screenshot](images/craft-wood-texture.png)
 
