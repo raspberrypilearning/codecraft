@@ -1,125 +1,108 @@
-## Introduction
+## Uvod
 
-In this project, you’ll design and code improvements to a 2D version of Minecraft.
+U ovom projektu dizajnirat ćeš i kodirati poboljšanja za 2D verziju Minecrafta.
 
 <div class="trinket">
-  <iframe src="https://trinket.io/embed/python/9ac3995d69?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
+  <iframe src="https://trinket.io/embed/python/ebc5b0148b?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
   </iframe>
   <img src="images/craft-finished.png">
 </div>
 
-### Additional information for club leaders
+### Dodatne informacije za voditelje klubova
 
-If you need to print this project, please use the [Printer friendly version](https://projects.raspberrypi.org/en/projects/codecraft/print).
+Ako trebate ispisati ovaj projekt, koristite [verziju koja je prilagođena pisaču](https://projects.raspberrypi.org/en/projects/codecraft/print).
 
 ## \--- collapse \---
 
-## title: Club leader notes
+## title: Bilješke za voditelje Kluba
 
-## Introduction:
+## Uvod:
 
-In this project, children will learn aspects of graphics and game design by making improvements to a basic 2D Minecraft clone. Children will create new resources, as well as crafting rules for combining resources to make new ones. This will be achieved by understanding and manipulating variables, lists and dictionaries.
+U ovom projektu djeca će naučiti aspekte grafike i dizajna igara tako što će poboljšati kopiju igre 2D Minecraft. Napravit će nove resurse te osmisliti pravila za kombiniranje resursa kako bi stvorili nove resurse. To će postići razumijevanjem i manipulacijom varijabli, listi i rječnika.
 
-## Online Resources
+## Online izvori
 
-**This project uses Python 3.** We recommend using [trinket](https://trinket.io/) to write Python online. This project contains the following Trinkets:
+**Ovaj projekt koristi Python 3.** Predlažemo korištenje [trinketa](https://trinket.io/) za online kodiranje u Pythonu. Ovaj projekt sadrži sljedeće Trinkete:
 
-+ ['CodeCraft' starting point -- jumpto.cc/codecraft-go](http://jumpto.cc/codecraft-go)
++ ['CodeCraft' starter project -- rpf.io/codecraft-on](http://rpf.io/codecraft-on)
 
-There is also a trinket containing the completed project:
+Također postoji i trinket koji sadrži dovršen projekt:
 
-+ [‘CodeCraft’ Finished -- trinket.io/python/9ac3995d69](https://trinket.io/python/9ac3995d69)
++ [‘CodeCraft’ Finished -- trinket.io/python/ebc5b0148b](https://trinket.io/python/ebc5b0148b)
 
-## Offline Resources
+## Offline izvori
 
-This project can be [completed offline](https://www.codeclubprojects.org/en-GB/resources/python-working-offline/) if preferred. You can access the project resources by clicking the 'Project Materials' link for this project. This link contains a 'Project Resources' section, which includes resources that children will need to complete this project offline. Make sure that each child has access to a copy of these resources. This section includes the following files:
+Ako želite, ovaj projekt možete izraditi [offline](https://www.codeclubprojects.org/en-GB/resources/python-working-offline/). Materijalima projekta možete pristupiti klikom na poveznicu ‘Materijali projekta’. Poveznica sadrži odjeljak ‘Resursi’ u kojem se nalaze materijali koji će djeci biti potrebni za izradu projekta offline. Pobrinite se da svako dijete ima pristup kopiji ovih materijala. U odjeljku se nalaze sljedeće datoteke:
 
 + codecraft/codecraft.py
 + codecraft/variables.py
-+ codecraft/player.gif
-+ codecraft/dirt.gif
-+ codecraft/grass.gif
-+ codecraft/water.gif
 + codecraft/brick.gif
++ codecraft/dirt.gif
++ codecraft/glass.gif
++ codecraft/grass.gif
++ codecraft/plank.gif
++ codecraft/player.gif
++ codecraft/sand.gif
++ codecraft/water.gif
++ codecraft/wood.gif
 
-You can also find a completed version of this project in the 'Volunteer Resources' section, which contains:
+Dovršenu verziju projekta možete pronaći i u odjeljku ‘Resursi za volontere’ koji sadrži i:
 
 + codecraft-finished/codecraft.py
 + codecraft-finished/variables.py
-+ codecraft-finished/player.gif
-+ codecraft-finished/dirt.gif
-+ codecraft-finished/grass.gif
-+ codecraft-finished/water.gif
 + codecraft-finished/brick.gif
-+ codecraft-finished/wood.gif
++ codecraft-finished/dirt.gif
++ codecraft-finished/glass.gif
++ codecraft-finished/grass.gif
 + codecraft-finished/plank.gif
++ codecraft-finished/player.gif
++ codecraft-finished/sand.gif
++ codecraft-finished/water.gif
++ codecraft-finished/wood.gif
 
-(All of the resources above are also downloadable as project and volunteer `.zip` files.)
+(All of the resources above are also downloadable as `.zip` files.)
 
-## Learning Objectives
+## Ishodi učenja
 
-+ Creating and editing graphics;
-+ Game design;
-+ Editing: 
-    + Variables;
++ Stvaranje i uređivanje grafike;
++ Dizajn igre;
++ Uređivanje: 
+    + Varijabli;
     + Lists;
-    + Dictionaries.
+    + Rječnika.
 
-This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+Ovaj projekt pokriva elemente sljedećih dijelova kurikuluma [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
 
-+ [Design basic 2D and 3D assets.](https://www.raspberrypi.org/curriculum/design/creator)
++ [Izrada jednostavnih 2D i 3D predmeta.](https://www.raspberrypi.org/curriculum/design/creator)
 
-+ [Combine programming constructs to solve a problem.](https://www.raspberrypi.org/curriculum/programming/builder)
++ [Uporaba različitih programskih struktura za rješavanje problema.](https://www.raspberrypi.org/curriculum/programming/builder)
 
-## Challenges
+## Izazovi
 
-+ "Build your world" - Playing the game, placing and crafting existing blocks;
-+ "Change your world size" - editing the `MAPWIDTH` and `MAPHEIGHT` variables to change the world size;
-+ "Creating sand" - Creating a new sand resource, along with associated game data.
-+ "Crafting glass from sand" - Creating a new craftable glass resource.
-+ "Create more resources" - Use what's been learnt to create more blocks and crafting rules.
++ "Izgradi svoj svijet" - igranje igre, postavljanje i izrada postojećih blokova;
++ "Promijeni veličinu svog svijeta" - uređivanje `SIRINAMAPE` i `VISINAMAPE` varijabli radi izmjene veličine svijeta;
++ "Stvori pijesak" - stvaranje novog resursa, pijeska, zajedno s ostalim potrebnim podatcima.
++ "Izradi staklo od pijeska" - stvaranje novog resursa, stakla, korištenjem već postojećeg resursa pijeska.
++ "Stvori još elemenata" - primjena naučenog za stvaranje još elemenata i pravila za izradu resursa.
 
-## Frequently Asked Questions
+## Često postavljana pitanja
 
-+ **Offline Python does not work with .png images. .gif images have been supplied for offline use.**
 + Children may need reminding that elements of a dictionary/list are separated by a comma. For example, when adding inventory items, graphics and crafting rules to the game.
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: Project materials
+## title: Projektni materijali
 
-## Project resources
+## Projektni resursi
 
-+ [.zip file containing all project resources](resources/codecraft-project-resources.zip)
-+ [Online Trinket containing all 'CodeCraft' project resources](http://jumpto.cc/codecraft-go)
-+ [codecraft/codecraft.py](resources/codecraft-codecraft.py)
-+ [codecraft/variables.py](resources/codecraft-variables.py)
-+ [codecraft/brick.gif](resources/codecraft-brick.gif)
-+ [codecraft/dirt.gif](resources/codecraft-dirt.gif)
-+ [codecraft/glass.gif](resources/codecraft-glass.gif)
-+ [codecraft/grass.gif](resources/codecraft-grass.gif)
-+ [codecraft/plank.gif](resources/codecraft-plank.gif)
-+ [codecraft/player.gif](resources/codecraft-player.gif)
-+ [codecraft/sand.gif](resources/codecraft-sand.gif)
-+ [codecraft/water.gif](resources/codecraft-water.gif)
-+ [codecraft/wood.gif](resources/codecraft-wood.gif)
++ [.zip datoteka koja sadrži sve materijale projekta](resources/codecraft-resources.zip)
++ [Online Trinket koji sadrži sve resurse projekta "CodeCraft"](http://rpf.io/codecraft-on)
 
-## Club leader resources
+## Materijali za voditelja Kluba
 
-+ [.zip file containing all completed project resources](resources/codecraft-volunteer-resources.zip)
-+ [Online completed Trinket project](https://trinket.io/python/9ac3995d69)
-+ [codecraft-finished/codecraft.py](resources/codecraft-finished-codecraft.py)
-+ [codecraft-finished/variables.py](resources/codecraft-finished-variables.py)
-+ [codecraft-finished/brick.gif](resources/codecraft-finished-brick.gif)
-+ [codecraft-finished/dirt.gif](resources/codecraft-finished-dirt.gif)
-+ [codecraft-finished/glass.gif](resources/codecraft-finished-glass.gif)
-+ [codecraft-finished/grass.gif](resources/codecraft-finished-grass.gif)
-+ [codecraft-finished/plank.gif](resources/codecraft-finished-plank.gif)
-+ [codecraft-finished/player.gif](resources/codecraft-finished-player.gif)
-+ [codecraft-finished/sand.gif](resources/codecraft-finished-sand.gif)
-+ [codecraft-finished/water.gif](resources/codecraft-finished-water.gif)
-+ [codecraft-finished/wood.gif](resources/codecraft-finished-wood.gif)
++ [.zip datoteka koja sadrži sve dovršene materijale projekta](solutions/codecraft-solution.zip)
++ [Dovršeni Online Trinket projekt](https://trinket.io/python/ebc5b0148b)
 
 \--- /collapse \---
