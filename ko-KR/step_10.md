@@ -1,7 +1,7 @@
 \--- challenge \---
 
-## Challenge: Create more resources
+## 과제: 더 많은 아이템 만들기
 
-Can you add more resources and crafting rules to your game?
+게임에 더 많은 아이템과 규칙을 추가할 수 있나요?
 
 \--- /challenge \---
