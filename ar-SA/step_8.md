@@ -1,39 +1,39 @@
-## Crafting planks from wood
+## صناعة ألواح خشبية من مورد الخشب
 
-Let's create a new plank resource that be crafted from wood.
+لننشئ مورد ألواح خشبية جديدًا يمكنك صناعته من مورد الخشب.
 
-+ First, add a new `PLANK` variable to your game.
++ أولًا، أضف متغير` PLANK` جديدًا إلى لعبتك.
     
-    ![screenshot](images/craft-plank-const.png)
+    ![لقطة الشاشة](images/craft-plank-const.png)
 
-+ Add a new `PLANK` variable to your game.
++ أضف مورد `PLANK` جديدًا إلى لعبتك.
     
-    ![screenshot](images/craft-plank-resources.png)
+    ![لقطة الشاشة](images/craft-plank-resources.png)
 
-+ Name the resource `'plank'`.
++ سمِّ هذا المورد `'plank'`.
     
-    ![screenshot](images/craft-plank-names.png)
+    ![لقطة الشاشة](images/craft-plank-names.png)
 
-+ Give your `PLANK` resource an image. The project already contains a `plank.png` image, but you can create your own if you prefer.
++ عيِّن صورة إلى المورد `PLANK`. The project already contains a `plank.gif` image, but you can create your own if you prefer.
     
-    ![screenshot](images/craft-plank-textures.png)
+    ![لقطة الشاشة](images/craft-plank-textures.png)
 
-+ Add planks to your inventory.
++ أضف عدد مربعات ألواح الخشب إلى المخزون.
     
-    ![screenshot](images/craft-plank-inventory.png)
+    ![لقطة الشاشة](images/craft-plank-inventory.png)
 
-+ Set a key for placing planks.
++ عيِّن مفتاحًا لوضع ألواح الخشب على خريطة اللعبة.
     
-    ![screenshot](images/craft-plank-placekeys.png)
+    ![لقطة الشاشة](images/craft-plank-placekeys.png)
 
-+ As this resource can be crafted, you need to create a crafting rule, which is that a plank can be made from 3 wood tiles. Add this code to the `crafting` dictionary.
++ حتى يمكن صناعة هذا المورد، ستحتاج إلى إنشاء قاعدة صناعة، بحيث تكون هذه القاعدة هي صناعة لوح خشبي من ثلاثة مربعات من مورد الخشب. أضف هذه التعليمة البرمجية إلى القاموس `crafting`.
     
-    ![screenshot](images/craft-plank-crafting.png)
+    ![لقطة الشاشة](images/craft-plank-crafting.png)
 
-+ Finally, you need to set a key for crafting new planks.
++ وأخيرًا، ستحتاج إلى تعيين مفتاح لصناعة ألواح خشبية جديدة.
     
-    ![screenshot](images/craft-plank-craftkeys.png)
+    ![لقطة الشاشة](images/craft-plank-craftkeys.png)
 
-+ To test your new plank resource, gather up a few wood tiles and then craft some planks from your wood. You can then place your new planks in your world.
++ لتختبر مورد الألواح الخشبية الجديد، اجمع بعض مربعات الخشب ثم اصنع بعض الألواح الخشبية منها. وعندئذٍ يمكنك وضع الألواح الخشبية الجديدة في عالمك.
     
-    ![screenshot](images/craft-plank-test.png)
+    ![لقطة الشاشة](images/craft-plank-test.png)
