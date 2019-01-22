@@ -6,7 +6,7 @@
 
 ![screenshot](images/craft-sand.png)
 
-The project already includes a `sand.gif` image, but you can create and upload your own if you prefer.
+Το έργο περιλαμβάνει ήδη μια εικόνα `sand.gif`, αλλά μπορείς να δημιουργήσεις και να ανεβάσεις τη δική σου αν προτιμάς.
 
 ![screenshot](images/craft-upload.png)
 
