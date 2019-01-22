@@ -16,7 +16,7 @@ Vamos criar um novo recurso, a madeira. Para fazer isso, você precisará adicio
     
     Observe a vírgula `,` no final da linha acima.
 
-+ Seu recurso também precisará de uma imagem. The project already includes an image called `wood.gif`, which you should add to the `textures` dictionary.
++ Seu recurso também precisará de uma imagem. O projeto já inclui uma imagem chamada `wood.gif`, que você deve adicionar ao dicionário de `texturas`.
     
     ![screenshot](images/craft-wood-texture.png)
 
