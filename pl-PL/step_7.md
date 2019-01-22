@@ -6,7 +6,7 @@ Czy możesz dodać zasób `SAND` do swojej gry? Możesz skorzystać z powyższyc
 
 ![zrzut ekranu](images/craft-sand.png)
 
-Projekt zawiera już obraz `sand.png` , ale możesz utworzyć i przesłać własny, jeśli wolisz.
+The project already includes a `sand.gif` image, but you can create and upload your own if you prefer.
 
 ![zrzut ekranu](images/craft-upload.png)
 
