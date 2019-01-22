@@ -1,125 +1,108 @@
-## Introduction
+## Введение
 
-In this project, you’ll design and code improvements to a 2D version of Minecraft.
+В этом проекте вы будете разрабатывать и кодировать улучшения к 2D-версии Minecraft.
 
 <div class="trinket">
-  <iframe src="https://trinket.io/embed/python/9ac3995d69?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
+  <iframe src="https://trinket.io/embed/python/ebc5b0148b?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
   </iframe>
   <img src="images/craft-finished.png">
 </div>
 
-### Additional information for club leaders
+### Дополнительная информация для руководителей клуба
 
-If you need to print this project, please use the [Printer friendly version](https://projects.raspberrypi.org/en/projects/codecraft/print).
+Если вам нужно распечатать этот проект, пожалуйста, используйте [Версию для печати](https://projects.raspberrypi.org/en/projects/codecraft/print).
 
 ## \--- collapse \---
 
-## title: Club leader notes
+## title: Заметки для руководителя клуба
 
-## Introduction:
+## Введение:
 
-In this project, children will learn aspects of graphics and game design by making improvements to a basic 2D Minecraft clone. Children will create new resources, as well as crafting rules for combining resources to make new ones. This will be achieved by understanding and manipulating variables, lists and dictionaries.
+В этом проекте дети будут изучать основы графики и разработки игр, улучшая клон 2D-игры Minecraft. Дети будут создавать новые ресурсы, а также разрабатывать правила для объединения ресурсов, чтобы создавать новые ресурсы. Это будет достигнуто путём изучения и использования переменных, списков и словарей.
 
-## Online Resources
+## Интернет-ресурсы
 
-**This project uses Python 3.** We recommend using [trinket](https://trinket.io/) to write Python online. This project contains the following Trinkets:
+**В этом проекте используется Python 3.** Мы рекомендуем использовать [Trinket](https://trinket.io/), чтобы программировать на Python онлайн. Эта часть состоит из следующих частей:
 
-+ ['CodeCraft' starting point -- jumpto.cc/codecraft-go](http://jumpto.cc/codecraft-go)
++ ['CodeCraft' starter project -- rpf.io/codecraft-on](http://rpf.io/codecraft-on)
 
-There is also a trinket containing the completed project:
+Есть также trinket, содержащий завершенный проект:
 
-+ [‘CodeCraft’ Finished -- trinket.io/python/9ac3995d69](https://trinket.io/python/9ac3995d69)
++ [‘CodeCraft’ Finished -- trinket.io/python/ebc5b0148b](https://trinket.io/python/ebc5b0148b)
 
-## Offline Resources
+## Интернет-ресурсы
 
-This project can be [completed offline](https://www.codeclubprojects.org/en-GB/resources/python-working-offline/) if preferred. You can access the project resources by clicking the 'Project Materials' link for this project. This link contains a 'Project Resources' section, which includes resources that children will need to complete this project offline. Make sure that each child has access to a copy of these resources. This section includes the following files:
+Этот проект может быть [завершён в автономном режиме](https://www.codeclubprojects.org/en-GB/resources/python-working-offline/), если это предпочтительнее. Вы можете получить доступ к ресурсам проекта, щёлкнув ссылку «Материалы проекта» для этого проекта. Эта ссылка содержит раздел «Ресурсы проекта», который включает ресурсы, которые понадобятся детям, чтобы завершить этот проект в автономном режиме. Убедитесь, что у каждого ребёнка есть доступ к копии этих ресурсов. Этот раздел содержит следующие файлы:
 
 + codecraft/codecraft.py
 + codecraft/variables.py
-+ codecraft/player.gif
-+ codecraft/dirt.gif
-+ codecraft/grass.gif
-+ codecraft/water.gif
 + codecraft/brick.gif
++ codecraft/dirt.gif
++ codecraft/glass.gif
++ codecraft/grass.gif
++ codecraft/plank.gif
++ codecraft/player.gif
++ codecraft/sand.gif
++ codecraft/water.gif
++ codecraft/wood.gif
 
-You can also find a completed version of this project in the 'Volunteer Resources' section, which contains:
+Вы также можете найти завершенную версию этого проекта в разделе «Ресурсы добровольцев», который содержит:
 
 + codecraft-finished/codecraft.py
 + codecraft-finished/variables.py
-+ codecraft-finished/player.gif
-+ codecraft-finished/dirt.gif
-+ codecraft-finished/grass.gif
-+ codecraft-finished/water.gif
 + codecraft-finished/brick.gif
-+ codecraft-finished/wood.gif
++ codecraft-finished/dirt.gif
++ codecraft-finished/glass.gif
++ codecraft-finished/grass.gif
 + codecraft-finished/plank.gif
++ codecraft-finished/player.gif
++ codecraft-finished/sand.gif
++ codecraft-finished/water.gif
++ codecraft-finished/wood.gif
 
-(All of the resources above are also downloadable as project and volunteer `.zip` files.)
+(All of the resources above are also downloadable as `.zip` files.)
 
-## Learning Objectives
+## Цели обучения
 
-+ Creating and editing graphics;
-+ Game design;
-+ Editing: 
-    + Variables;
-    + Lists;
-    + Dictionaries.
++ Создание и редактирование графики;
++ Проектирование игр;
++ Редактирование: 
+    + Переменные;
+    + Списки;
+    + Словари.
 
-This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+Этот проект охватывает элементы из следующих разделов [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
 
-+ [Design basic 2D and 3D assets.](https://www.raspberrypi.org/curriculum/design/creator)
++ [Проектирование базовых 2D и 3D-объектов.](https://www.raspberrypi.org/curriculum/design/creator)
 
-+ [Combine programming constructs to solve a problem.](https://www.raspberrypi.org/curriculum/programming/builder)
++ [Комбинирование программных конструкций для решения задачи.](https://www.raspberrypi.org/curriculum/programming/builder)
 
-## Challenges
+## Задания
 
-+ "Build your world" - Playing the game, placing and crafting existing blocks;
-+ "Change your world size" - editing the `MAPWIDTH` and `MAPHEIGHT` variables to change the world size;
-+ "Creating sand" - Creating a new sand resource, along with associated game data.
-+ "Crafting glass from sand" - Creating a new craftable glass resource.
-+ "Create more resources" - Use what's been learnt to create more blocks and crafting rules.
++ «Создайте свой мир» - играйте в игру, размещая и создавая существующие блоки;
++ «Поменяйте размер своего мира» - отредактируйте значения переменных `MAPWIDTH` и `MAPHEIGHT` для изменения размера мира;
++ «Создание песка» - создайте новый ресурс "песок" и связанные с ним игровые данные.
++ «Изготовление стекла из песка» - создайте из песка новый ресурс, пригодный для использования.
++ «Создайте больше ресурсов» - используйте то, что было изучено, чтобы создавать больше блоков и правил их применения.
 
-## Frequently Asked Questions
+## Часто задаваемые вопросы
 
-+ **Offline Python does not work with .png images. .gif images have been supplied for offline use.**
 + Children may need reminding that elements of a dictionary/list are separated by a comma. For example, when adding inventory items, graphics and crafting rules to the game.
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: Project materials
+## title: Материалы проекта
 
-## Project resources
+## Ресурсы проекта
 
-+ [.zip file containing all project resources](resources/codecraft-project-resources.zip)
-+ [Online Trinket containing all 'CodeCraft' project resources](http://jumpto.cc/codecraft-go)
-+ [codecraft/codecraft.py](resources/codecraft-codecraft.py)
-+ [codecraft/variables.py](resources/codecraft-variables.py)
-+ [codecraft/brick.gif](resources/codecraft-brick.gif)
-+ [codecraft/dirt.gif](resources/codecraft-dirt.gif)
-+ [codecraft/glass.gif](resources/codecraft-glass.gif)
-+ [codecraft/grass.gif](resources/codecraft-grass.gif)
-+ [codecraft/plank.gif](resources/codecraft-plank.gif)
-+ [codecraft/player.gif](resources/codecraft-player.gif)
-+ [codecraft/sand.gif](resources/codecraft-sand.gif)
-+ [codecraft/water.gif](resources/codecraft-water.gif)
-+ [codecraft/wood.gif](resources/codecraft-wood.gif)
++ [.zip-файл, содержащий все ресурсы проекта](resources/codecraft-resources.zip)
++ [Онлайн Trinket, содержащий все ресурсы проекта «CodeCraft»](http://rpf.io/codecraft-on)
 
-## Club leader resources
+## Ресурсы для руководителя клуба
 
-+ [.zip file containing all completed project resources](resources/codecraft-volunteer-resources.zip)
-+ [Online completed Trinket project](https://trinket.io/python/9ac3995d69)
-+ [codecraft-finished/codecraft.py](resources/codecraft-finished-codecraft.py)
-+ [codecraft-finished/variables.py](resources/codecraft-finished-variables.py)
-+ [codecraft-finished/brick.gif](resources/codecraft-finished-brick.gif)
-+ [codecraft-finished/dirt.gif](resources/codecraft-finished-dirt.gif)
-+ [codecraft-finished/glass.gif](resources/codecraft-finished-glass.gif)
-+ [codecraft-finished/grass.gif](resources/codecraft-finished-grass.gif)
-+ [codecraft-finished/plank.gif](resources/codecraft-finished-plank.gif)
-+ [codecraft-finished/player.gif](resources/codecraft-finished-player.gif)
-+ [codecraft-finished/sand.gif](resources/codecraft-finished-sand.gif)
-+ [codecraft-finished/water.gif](resources/codecraft-finished-water.gif)
-+ [codecraft-finished/wood.gif](resources/codecraft-finished-wood.gif)
++ [.zip-файл, содержащий все завершенные ресурсы проекта](solutions/codecraft-solution.zip)
++ [Завершённый онлайн-проект в Trinket](https://trinket.io/python/ebc5b0148b)
 
 \--- /collapse \---
