@@ -6,6 +6,6 @@
 
 ![screenshot](images/craft-glass.png)
 
-El proyecto ya contiene una imagen `glass.png` que puedes usar, pero puedes crear la tuya si lo prefieres.
+The project already contains a `glass.gif` image that you can use, or you can create your own image if you prefer.
 
 \--- /challenge \---
