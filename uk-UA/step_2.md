@@ -1,6 +1,6 @@
 ## Гра в гру
 
-+ Відкрийте цю дрібничку: <a href="http://jumpto.cc/codecraft-go" target="_blank">jumpto.cc/codecraft-go</a>.
++ Open this trinket: [rpf.io/codecraft-on](http://rpf.io/codecraft-on){:target="_blank"}.
 
 + Використовуйте клавіші WASD для переміщення вашого гравця по всьому світу, який наповнений різними ресурсами (бруд, трава та вода).
     
