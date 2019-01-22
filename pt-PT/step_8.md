@@ -14,7 +14,7 @@ Vamos criar um novo recurso de prancha que seja criado a partir de madeira.
     
     ![captura de tela](images/craft-plank-names.png)
 
-+ Dê uma imagem à sua `PLANK` recurso. O projeto já contém uma imagem `plank.png` , mas você pode criar a sua própria, se preferir.
++ Dê uma imagem à sua `PLANK` recurso. The project already contains a `plank.gif` image, but you can create your own if you prefer.
     
     ![captura de tela](images/craft-plank-textures.png)
 
