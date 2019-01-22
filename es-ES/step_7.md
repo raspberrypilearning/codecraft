@@ -6,7 +6,7 @@
 
 ![screenshot](images/craft-sand.png)
 
-The project already includes a `sand.gif` image, but you can create and upload your own if you prefer.
+El proyecto ya contiene una imagen `sand.gif`, pero puedes crear la tuya si lo prefieres.
 
 ![screenshot](images/craft-upload.png)
 
