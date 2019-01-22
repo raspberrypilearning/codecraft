@@ -1,23 +1,23 @@
-## Playing the game
+## Как играть в игру
 
-+ Open this trinket: <a href="http://jumpto.cc/codecraft-go" target="_blank">jumpto.cc/codecraft-go</a>.
++ Open this trinket: [rpf.io/codecraft-on](http://rpf.io/codecraft-on){:target="_blank"}.
 
-+ Use the WASD keys to move your player around the world, which is full of different resources (dirt, grass and water).
++ Используйте клавиши WASD для перемещения вашего игрока по всему миру, который полон разных ресурсов (грязь, трава и вода).
     
     ![screenshot](images/craft-move.png)
 
-+ You can press the spacebar to collect resources. Pick up a few of each type of resource, and you'll see them added to your inventory.
++ Вы можете нажать клавишу пробел, чтобы собирать ресурсы. Возьмите несколько ресурсов каждого типа, и вы увидите, что они добавлены в ваши запасы.
     
     ![screenshot](images/craft-pickup.png)
 
-+ Press the number keys (1 to 3) to place a resource on the map. For example, press 3 to place some water on the map. This will only work if you have some water in your inventory.
++ Нажмите цифровые клавиши (от 1 до 3), чтобы разместить ресурс на карте. Например, нажмите клавишу 3, чтобы поместить немного воды на карту. Это сработает, только если у вас есть вода среди ваших запасов.
     
     ![screenshot](images/craft-place-water.png)
 
-+ You can craft an item by pressing the key displayed in the menu. Crafting means combining items you already have in your inventory to create new ones. Try pressing the 'r' key to craft a new brick (as long as you have 2 dirt and 1 water in your inventory).
++ Вы можете создать предмет, нажав клавишу, отображаемую в меню. Создать - означает комбинировать предметы, которые уже есть среди ваших запасов, чтобы получить новые. Попробуйте нажать клавишу «r», чтобы создать новый кирпич (если среди ваших запасов есть 2 блока грязи и 1 блок воды).
     
     ![screenshot](images/craft-craft-brick.png)
 
-+ You can then press they '4' key to place your crafted bricks.
++ Затем вы можете нажать клавишу «4», чтобы поместить свои созданные кирпичи.
     
     ![screenshot](images/craft-place-brick.png)
