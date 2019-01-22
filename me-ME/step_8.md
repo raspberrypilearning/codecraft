@@ -14,7 +14,7 @@ Napravimo novi resurs, dasku, koja može biti izrađena od drva.
     
     ![screenshot](images/craft-plank-names.png)
 
-+ Resursu `DASKA` dodijeli sliku. The project already contains a `plank.gif` image, but you can create your own if you prefer.
++ Resursu `DASKA` dodijeli sliku. Projekat već sadrži sliku `plank.gif`, ali možeš da napraviš sopstvenu sliku ako želiš.
     
     ![screenshot](images/craft-plank-textures.png)
 
