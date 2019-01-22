@@ -14,7 +14,7 @@
     
     ![screenshot](images/craft-plank-names.png)
 
-+ Δώσε στον πόρο `PLANK` μια εικόνα. The project already contains a `plank.gif` image, but you can create your own if you prefer.
++ Δώσε στον πόρο `PLANK` μια εικόνα. Το έργο περιέχει ήδη μια εικόνα `plank.gif`, αλλά μπορείς να δημιουργήσεις τη δική σου εάν προτιμάς.
     
     ![screenshot](images/craft-plank-textures.png)
 
