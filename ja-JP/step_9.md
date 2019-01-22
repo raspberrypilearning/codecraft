@@ -1,11 +1,11 @@
 \--- challenge \---
 
-## Challenge: Crafting glass from sand
+## チャレンジ：ガラスを砂からクラフトする
 
-Can you create a new glass resource, that can be crafted from sand? You can follow the steps above to help you.
+新しいガラスリソースを作成し、砂からクラフトできるようにできますか？ 上記の手順が役に立ちます。
 
-![screenshot](images/craft-glass.png)
+![スクリーンショット](images/craft-glass.png)
 
-The project already contains a `glass.png` image that you can use, or you can create your own image if you prefer.
+The project already contains a `glass.gif` image that you can use, or you can create your own image if you prefer.
 
 \--- /challenge \---
