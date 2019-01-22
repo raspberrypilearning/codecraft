@@ -1,6 +1,6 @@
 ## Grać w gre
 
-+ Otwórz ten bibelot: <a href="http://jumpto.cc/codecraft-go" target="_blank">jumpto.cc/codecraft-go</a>.
++ Open this trinket: [rpf.io/codecraft-on](http://rpf.io/codecraft-on){:target="_blank"}.
 
 + Użyj klawiszy WASD, aby przenieść gracza na cały świat, który jest pełen różnych zasobów (brud, trawa i woda).
     
