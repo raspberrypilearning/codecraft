@@ -1,51 +1,51 @@
-## Creating a new wood resource
+## Eine neue Ressource schaffen: Holz
 
-Let's create a new wood resource. To do this, you'll need to add to some variables in your `variables.py` file.
+Schaffen wir eine neue Ressource: Holz. Dazu musst du einige Variablen in der Datei `variables.py` hinzufügen.
 
-+ First, you need to give your new resource a number. You'll then be able to use the word `WOOD` in your code instead of the number 4.
++ Zuerst musst du deiner neuen Ressource eine Nummer geben. Du kannst dann im Code das Wort `HOLZ` statt der Nummer 4 verwenden.
     
     ![screenshot](images/craft-wood-const.png)
 
-+ You should add your new `WOOD` resource to your list of `resources`.
++ Du musst dann die neue `HOLZ`-Ressource zu deiner `ressourcen`- Liste hinzufügen.
     
     ![screenshot](images/craft-wood-resources.png)
 
-+ You should also give your resource a name, which will be displayed in the inventory.
++ Du musst deiner Ressource auch einen Namen geben, der im Inventar angezeigt wird.
     
     ![screenshot](images/craft-wood-name.png)
     
-    Notice the comma `,` at the end of the line above.
+    Denke an das Komma `,` am Ende der obenstehenden Zeile.
 
-+ Your resource will also need an image. The project already includes an image called `wood.png`, which you should add to the `textures` dictionary.
++ Deine Ressource benötigt auch ein Bild. The project already includes an image called `wood.gif`, which you should add to the `textures` dictionary.
     
     ![screenshot](images/craft-wood-texture.png)
 
-+ Add the number of your resource that should be in your `inventory` to start with.
++ Füge die Anzahl Elemente von dieser Ressource hinzu, die zu Beginn in deinem `inventar` sein sollen.
     
     ![screenshot](images/craft-wood-inventory.png)
 
-+ Finally, add the key that you'll press to place wood in the world.
++ Und zum Schluss musst du noch die Taste angeben, die gedrückt werden muss, um Holz in deine Welt zu setzen.
     
     ![screenshot](images/craft-wood-placekey.png)
 
-+ Run your project to test it. You'll see that you now have a new 'wood' resource in your inventory.
++ Führe dein Projekt aus, um es zu testen. Du wirst sehen, dass du jetzt eine neue 'Holz' -Ressource in deinem Inventar hast.
     
     ![screenshot](images/craft-wood-test.png)
 
-+ There's no wood in your world! To fix this, click on your `main.py` file and find the function called `generateRandomWorld()`.
++ In deiner Welt gibt es aber kein Holz! Um das zu beheben, klicke auf deine `main.py` Datei und suche die Funktion `erschaffeZuffallsWelt()`.
     
     ![screenshot](images/craft-wood-random1.png)
     
-    This code generates a random number between 0 and 10, and uses the number to decide which resource to place:
+    Dieser Code generiert eine Zufallszahl zwischen 0 und 10 und bestimmt anhand der Nummer, welche Ressource platziert werden soll:
     
-    + 1 or 2 = water
-    + 3 or 4 = grass
-    + anything else = DIRT
+    + 1 oder 2 = Wasser
+    + 3 oder 4 = Gras
+    + alles andere = ERDE
 
-+ Add this code to add wood to your world whenever the `randomNumber` is 5.
++ Füge diesen Code hinzu, um Holz auf deiner Welt zu platzieren, wenn die `zufallsZahl` gleich 5 ist.
     
     ![screenshot](images/craft-wood-random2.png)
 
-+ Test your project again. This time, you should see some wood appear in your world.
++ Teste dein Projekt erneut. Diesmal solltest du etwas Holz in deiner Welt sehen.
     
     ![screenshot](images/craft-wood-test2.png)
