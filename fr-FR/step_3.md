@@ -1,9 +1,9 @@
 \--- challenge \---
 
-## Challenge: Build your world
+## Défis: Construit ton monde
 
-Can you build a house, with a garden and a swimming pool? What else can you create?
+Peux tu construire une maison, avec un jardin et une piscine ? Que peux-tu faire d'autre ?
 
-![screenshot](images/craft-build-example.png)
+![capture d'écran](images/craft-build-example.png)
 
 \--- /challenge \---
