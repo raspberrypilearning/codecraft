@@ -6,7 +6,7 @@ Você pode adicionar um recurso `SAND` ao seu jogo? Você pode usar as etapas ac
 
 ![captura de tela](images/craft-sand.png)
 
-O projeto já inclui uma imagem `sand.png` , mas você pode criar e fazer o upload do seu próprio, se preferir.
+The project already includes a `sand.gif` image, but you can create and upload your own if you prefer.
 
 ![captura de tela](images/craft-upload.png)
 
