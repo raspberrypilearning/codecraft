@@ -1,8 +1,8 @@
 \--- challenge \---
 
-## Challenge: Build your world
+## Задача: построить свой мир
 
-Can you build a house, with a garden and a swimming pool? What else can you create?
+Можете ли вы построить дом с садом и бассейном? Что ещё вы можете создать?
 
 ![screenshot](images/craft-build-example.png)
 
