@@ -24,11 +24,11 @@ In diesem Projekt lernen Kinder Aspekte des Grafik- und des Spieldesigns, indem 
 
 **Dieses Projekt verwendet Python 3.** Wir empfehlen die Verwendung von [trinket](https://trinket.io/), um Python-Programme online zu schreiben. Dieses Projekt enthält folgende Trinkets:
 
-+ ['CodeCraft' starter project -- rpf.io/codecraft-on](http://rpf.io/codecraft-on)
++ ['CodeCraft' Startpunkt -- rpf.io/codecraft-on](http://rpf.io/codecraft-on)
 
 Außerdem ist ein trinket mit dem vollständigen Projekt verfügbar:
 
-+ [‘CodeCraft’ Finished -- trinket.io/python/ebc5b0148b](https://trinket.io/python/ebc5b0148b)
++ [Fertiges 'CodeCraft' Projekt - trinket.io/python/ebc5b0148b](https://trinket.io/python/ebc5b0148b)
 
 ## Offline-Ressourcen
 
@@ -60,7 +60,7 @@ Eine vollständige Version dieses Projekts finden Sie auch im Abschnitt "Ressour
 + codecraft-finished/water.gif
 + codecraft-finished/wood.gif
 
-(All of the resources above are also downloadable as `.zip` files.)
+(Alle oben genannten Ressourcen können auch als `.zip`-Dateien für Projekte und für Freiwillige heruntergeladen werden.)
 
 ## Lernziele
 
@@ -87,7 +87,7 @@ Dieses Projekt umfasst Elemente aus den folgenden Zweigen des [Raspberry Pi Digi
 
 ## Häufig Gestellte Fragen
 
-+ Children may need reminding that elements of a dictionary/list are separated by a comma. For example, when adding inventory items, graphics and crafting rules to the game.
++ Kinder müssen möglicherweise daran erinnert werden, dass Elemente eines Wörterbuchs / einer Liste durch ein Komma getrennt werden. Zum Beispiel, wenn Inventarelemente, Grafiken und Herstellungsregeln zum Spiel hinzugefügt werden.
 
 \--- /collapse \---
 
