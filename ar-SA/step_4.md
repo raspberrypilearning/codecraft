@@ -1,15 +1,15 @@
-## Customising your game
+## تخصيص اللعبة
 
-Let’s modify some variables to change how your game works.
+لنعدِّل بعض المتغيرات لنغيِّر طريقة عرض اللعبة.
 
-+ Click the `variables.py` file to see some variables that can be changed.
++ انقر فوق الملف `variables.py` لترى بعض المتغيرات التي يمكن تغييرها.
     
-    ![screenshot](images/craft-variables.png)
+    ![لقطة الشاشة](images/craft-variables.png)
 
-+ Change the value of your `BACKGROUNDCOLOUR` variable, and click 'Run' to see the change to your game.
++ غيِّر قيمة المتغير `BACKGROUNDCOLOUR`، وانقر فوق 'Run' لترى التغيير الذي حدث في اللعبة.
     
-    ![screenshot](images/craft-background.png)
+    ![لقطة الشاشة](images/craft-background.png)
 
-+ The variable `MAXTILES` is the amount of each resource that can be held in your inventory. Change this variable if you want to store more (or less) than 20 of each resource.
++ يمثل المتغير `MAXTILES` كمية المربعات التي يمكن أن يستوعبها المخزون من كل مورد. غيِّر هذا المتغير إذا كنت تريد تخزين أكثر (أو أقل) من 20 مربعًا من كل مورد.
     
-    ![screenshot](images/craft-maxtiles.png)
+    ![لقطة الشاشة](images/craft-maxtiles.png)
