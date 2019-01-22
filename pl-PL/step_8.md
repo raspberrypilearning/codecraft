@@ -14,7 +14,7 @@ Stwórzmy nowy materiał deski, który będzie wykonany z drewna.
     
     ![zrzut ekranu](images/craft-plank-names.png)
 
-+ Podaj swój `PLANK` zasób obraz. Projekt zawiera już obraz `plank.png` , ale możesz utworzyć własny, jeśli wolisz.
++ Podaj swój `PLANK` zasób obraz. The project already contains a `plank.gif` image, but you can create your own if you prefer.
     
     ![zrzut ekranu](images/craft-plank-textures.png)
 
