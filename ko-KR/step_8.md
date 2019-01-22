@@ -1,39 +1,39 @@
-## Crafting planks from wood
+## 나무에서 나무 판 만들기
 
-Let's create a new plank resource that be crafted from wood.
+이번에는 나무로 만든 새로운 나무 판을 만들어 보겠습니다.
 
-+ First, add a new `PLANK` variable to your game.
++ 먼저, `PLANK` 변수를 코드에 추가해 주세요.
     
-    ![screenshot](images/craft-plank-const.png)
+    ![스크린샷](images/craft-plank-const.png)
 
-+ Add a new `PLANK` variable to your game.
++ 새로운 `PLANK` 변수를 아래와 같이 추가합니다.
     
-    ![screenshot](images/craft-plank-resources.png)
+    ![스크린샷](images/craft-plank-resources.png)
 
-+ Name the resource `'plank'`.
++ 리소스의 이름은 `'나무판'`으로 지정하세요.
     
-    ![screenshot](images/craft-plank-names.png)
+    ![스크린샷](images/craft-plank-names.png)
 
-+ Give your `PLANK` resource an image. The project already contains a `plank.png` image, but you can create your own if you prefer.
++ `PLANK` 리소스에 이미지를 부여합니다. The project already contains a `plank.gif` image, but you can create your own if you prefer.
     
-    ![screenshot](images/craft-plank-textures.png)
+    ![스크린샷](images/craft-plank-textures.png)
 
-+ Add planks to your inventory.
++ 인벤토리에 나무판을 아래와 같이 추가하세요.
     
-    ![screenshot](images/craft-plank-inventory.png)
+    ![스크린샷](images/craft-plank-inventory.png)
 
-+ Set a key for placing planks.
++ 나무판을 추가하는 키를 설정하세요.
     
-    ![screenshot](images/craft-plank-placekeys.png)
+    ![스크린샷](images/craft-plank-placekeys.png)
 
-+ As this resource can be crafted, you need to create a crafting rule, which is that a plank can be made from 3 wood tiles. Add this code to the `crafting` dictionary.
++ 인벤토리에 기본 배정되는 나무판 개수가 0개이므로, 나무판에 대한 조합법을 만들어야 합니다. 아래 코드를 `crafting` 딕셔너리에 추가하세요.
     
-    ![screenshot](images/craft-plank-crafting.png)
+    ![스크린샷](images/craft-plank-crafting.png)
 
-+ Finally, you need to set a key for crafting new planks.
++ 마지막으로, 나무판을 제작하는 키를 설정하세요.
     
-    ![screenshot](images/craft-plank-craftkeys.png)
+    ![스크린샷](images/craft-plank-craftkeys.png)
 
-+ To test your new plank resource, gather up a few wood tiles and then craft some planks from your wood. You can then place your new planks in your world.
++ 나무판을 테스트하기 위해서는 몇 개의 나무를 모은 다음 나무판을 만들면 됩니다. 그리고 세계에 새로운 나무판을 추가해 보세요.
     
-    ![screenshot](images/craft-plank-test.png)
+    ![스크린샷](images/craft-plank-test.png)
