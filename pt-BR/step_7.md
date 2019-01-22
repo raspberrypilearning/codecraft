@@ -6,7 +6,7 @@ Você pode adicionar um recurso `AREIA` ao seu jogo? Você pode usar as etapas a
 
 ![screenshot](images/craft-sand.png)
 
-The project already includes a `sand.gif` image, but you can create and upload your own if you prefer.
+O projeto já inclui uma imagem `sand.gif`, mas você pode criar e fazer o upload do seu próprio, se preferir.
 
 ![screenshot](images/craft-upload.png)
 
