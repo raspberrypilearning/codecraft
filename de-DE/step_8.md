@@ -1,39 +1,39 @@
-## Crafting planks from wood
+## Bretter aus Holz herstellen
 
-Let's create a new plank resource that be crafted from wood.
+Lass uns eine neue Ressource Brett erstellen, die aus Holz gefertigt wird.
 
-+ First, add a new `PLANK` variable to your game.
++ Füge zuerst eine neue Variable `BRETT` zu deinem Spiel hinzu.
     
     ![screenshot](images/craft-plank-const.png)
 
-+ Add a new `PLANK` variable to your game.
++ Füge hier den neuen Namen `BRETT` hinzu.
     
     ![screenshot](images/craft-plank-resources.png)
 
-+ Name the resource `'plank'`.
++ Gib dieser Ressource den Namen `'Brett'`.
     
     ![screenshot](images/craft-plank-names.png)
 
-+ Give your `PLANK` resource an image. The project already contains a `plank.png` image, but you can create your own if you prefer.
++ Weise der Ressource `BRETT` ein Bild zu. The project already contains a `plank.gif` image, but you can create your own if you prefer.
     
     ![screenshot](images/craft-plank-textures.png)
 
-+ Add planks to your inventory.
++ Füge Bretter zu deinem Inventar hinzu.
     
     ![screenshot](images/craft-plank-inventory.png)
 
-+ Set a key for placing planks.
++ Bestimme eine Taste für das Platzieren der Bretter.
     
     ![screenshot](images/craft-plank-placekeys.png)
 
-+ As this resource can be crafted, you need to create a crafting rule, which is that a plank can be made from 3 wood tiles. Add this code to the `crafting` dictionary.
++ Da diese Ressource hergestellt werden kann, musst du eine Regel für die Herstellung programmieren, d. h. ein Brett kann aus 3 Elementen Holz hergestellt werden. Füge diesen Code zu deinem `herstellenMit` -Dictionary hinzu.
     
     ![screenshot](images/craft-plank-crafting.png)
 
-+ Finally, you need to set a key for crafting new planks.
++ Schließlich musst du eine Taste für die Herstellung neuer Bretter festlegen.
     
     ![screenshot](images/craft-plank-craftkeys.png)
 
-+ To test your new plank resource, gather up a few wood tiles and then craft some planks from your wood. You can then place your new planks in your world.
++ Um deine neue Brett-Ressource zu testen, sammle ein paar Elemente Holz ein und stelle dann einige Bretter aus diesem Holz her. Du kannst dann diese neuen Bretter in deiner Welt platzieren.
     
     ![screenshot](images/craft-plank-test.png)
