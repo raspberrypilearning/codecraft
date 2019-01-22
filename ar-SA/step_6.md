@@ -1,51 +1,51 @@
-## Creating a new wood resource
+## إنشاء مورد خشب جديد
 
-Let's create a new wood resource. To do this, you'll need to add to some variables in your `variables.py` file.
+لننشئ مورد خشب جديدًا. لتفعل ذلك، ستحتاج إلى إضافة بعض المتغيرات في الملف `variables.py`.
 
-+ First, you need to give your new resource a number. You'll then be able to use the word `WOOD` in your code instead of the number 4.
++ أولًا، تحتاج إلى تعيين رقم إلى المورد الجديد. وسيمكنك عندئذٍ استخدام الكلمة `WOOD` في التعليمات البرمجية بدلًا من الرقم 4.
     
-    ![screenshot](images/craft-wood-const.png)
+    ![لقطة الشاشة](images/craft-wood-const.png)
 
-+ You should add your new `WOOD` resource to your list of `resources`.
++ يجب أن تضيف مورد `WOOD` الجديد إلى القائمة `resources`.
     
-    ![screenshot](images/craft-wood-resources.png)
+    ![لقطة الشاشة](images/craft-wood-resources.png)
 
-+ You should also give your resource a name, which will be displayed in the inventory.
++ يجب أن تعيِّن اسمًا إلى هذا المورد أيضًا، بحيث يظهر في المخزون.
     
-    ![screenshot](images/craft-wood-name.png)
+    ![لقطة الشاشة](images/craft-wood-name.png)
     
-    Notice the comma `,` at the end of the line above.
+    لاحظ وجود الفاصلة `,` في نهاية الأسطر أعلاه.
 
-+ Your resource will also need an image. The project already includes an image called `wood.png`, which you should add to the `textures` dictionary.
++ سيحتاج هذا المورد إلى صورة أيضًا. The project already includes an image called `wood.gif`, which you should add to the `textures` dictionary.
     
-    ![screenshot](images/craft-wood-texture.png)
+    ![لقطة الشاشة](images/craft-wood-texture.png)
 
-+ Add the number of your resource that should be in your `inventory` to start with.
++ أضف عدد مربعات المورد التي يجب أن تكون موجودة في `inventory` عندما تبدأ.
     
-    ![screenshot](images/craft-wood-inventory.png)
+    ![لقطة الشاشة](images/craft-wood-inventory.png)
 
-+ Finally, add the key that you'll press to place wood in the world.
++ وأخيرًا، أضف المفتاح الذي ستضغط عليه لوضع الخشب في عالمك.
     
-    ![screenshot](images/craft-wood-placekey.png)
+    ![لقطة الشاشة](images/craft-wood-placekey.png)
 
-+ Run your project to test it. You'll see that you now have a new 'wood' resource in your inventory.
++ شغِّل مشروعك لتختبره. سترى الآن أن المورد 'wood' الجديد قد أضيف إلى المخزون.
     
-    ![screenshot](images/craft-wood-test.png)
+    ![لقطة الشاشة](images/craft-wood-test.png)
 
-+ There's no wood in your world! To fix this, click on your `main.py` file and find the function called `generateRandomWorld()`.
++ لا يوجد خشب في عالمك! لإصلاح ذلك، انقر فوق الملف`main.py` وابحث عن الدالة `()generateRandomWorld`.
     
-    ![screenshot](images/craft-wood-random1.png)
+    ![لقطة الشاشة](images/craft-wood-random1.png)
     
-    This code generates a random number between 0 and 10, and uses the number to decide which resource to place:
+    تنشئ هذه التعليمة البرمجية عددًا عشوائيًا بين 0 و10، وتستخدم العدد لتحديد المورد الذي سيتم وضعه على خريطة عالمك:
     
-    + 1 or 2 = water
-    + 3 or 4 = grass
-    + anything else = DIRT
+    + 1 أو 2 = الماء
+    + 3 أو 4 = الحشائش
+    + غير ذلك = التراب
 
-+ Add this code to add wood to your world whenever the `randomNumber` is 5.
++ أضف هذه التعليمة البرمجية لإضافة خشب إلى عالمك متى كانت قيمة `randomNumber` هي 5.
     
-    ![screenshot](images/craft-wood-random2.png)
+    ![لقطة الشاشة](images/craft-wood-random2.png)
 
-+ Test your project again. This time, you should see some wood appear in your world.
++ اختبر مشروعك مرة أخرى. في هذه المرة، ستلاحظ ظهور بعض مربعات الخشب على خريطة عالمك.
     
-    ![screenshot](images/craft-wood-test2.png)
+    ![لقطة الشاشة](images/craft-wood-test2.png)
