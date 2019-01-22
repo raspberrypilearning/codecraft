@@ -1,125 +1,108 @@
-## Introduction
+## はじめに
 
-In this project, you’ll design and code improvements to a 2D version of Minecraft.
+このプロジェクトでは、2D版のマインクラフトの改良をデザイン・コーディングします。
 
 <div class="trinket">
-  <iframe src="https://trinket.io/embed/python/9ac3995d69?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
+  <iframe src="https://trinket.io/embed/python/ebc5b0148b?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
   </iframe>
   <img src="images/craft-finished.png">
 </div>
 
-### Additional information for club leaders
+### クラブリーダーのための追加情報
 
-If you need to print this project, please use the [Printer friendly version](https://projects.raspberrypi.org/en/projects/codecraft/print).
+このプロジェクトを印刷する必要がある場合は、 [印刷用バージョン](https://projects.raspberrypi.org/en/projects/codecraft/print)を使用してください。
 
 ## \--- collapse \---
 
-## title: Club leader notes
+## title：クラブリーダー・ノート
 
-## Introduction:
+## はじめに
 
-In this project, children will learn aspects of graphics and game design by making improvements to a basic 2D Minecraft clone. Children will create new resources, as well as crafting rules for combining resources to make new ones. This will be achieved by understanding and manipulating variables, lists and dictionaries.
+このプロジェクトでは、子供たちは基本的な2Dマインクラフトのクローンを改良することにより、グラフィクスとゲームデザインを学びます。 子供たちはリソースを作成、またはリソースを結合するルールをつくることにより新しいリソースを作ります。 変数・リスト・辞書を理解して操作することにより、このプロジェクトを達成できます。
 
-## Online Resources
+## オンラインリソース
 
-**This project uses Python 3.** We recommend using [trinket](https://trinket.io/) to write Python online. This project contains the following Trinkets:
+**本プロジェクトでは、Python 3**を使います。オンラインでPythonのコードを記述するには、[trinket](https://trinket.io/)の使用をお勧めします。 本プロジェクトには、以下のtrinketが用意されています：
 
-+ ['CodeCraft' starting point -- jumpto.cc/codecraft-go](http://jumpto.cc/codecraft-go)
++ ['CodeCraft' starter project -- rpf.io/codecraft-on](http://rpf.io/codecraft-on)
 
-There is also a trinket containing the completed project:
+また、完成版プログラムが入力済みのtrinketも用意されています。
 
-+ [‘CodeCraft’ Finished -- trinket.io/python/9ac3995d69](https://trinket.io/python/9ac3995d69)
++ [‘CodeCraft’ Finished -- trinket.io/python/ebc5b0148b](https://trinket.io/python/ebc5b0148b)
 
-## Offline Resources
+## オフライン・リソース
 
-This project can be [completed offline](https://www.codeclubprojects.org/en-GB/resources/python-working-offline/) if preferred. You can access the project resources by clicking the 'Project Materials' link for this project. This link contains a 'Project Resources' section, which includes resources that children will need to complete this project offline. Make sure that each child has access to a copy of these resources. This section includes the following files:
+このプロジェクトは[オフライン](https://www.codeclubprojects.org/en-GB/resources/python-working-offline/)で完成することが可能です。 “プロジェクト資料”のリンクをクリックすることでこのプロジェクトのリソースにアクセスすることが可能です。 リンクには”プロジェクト・リソース”の個所もあり、ここにプロジェクトをオフラインで完成させるために必要なリソースが含まれている。 各子供がこのリソースのコピーを持っていることを確認してください。 このセクションは下記ファイルを含む：
 
 + codecraft/codecraft.py
 + codecraft/variables.py
-+ codecraft/player.gif
-+ codecraft/dirt.gif
-+ codecraft/grass.gif
-+ codecraft/water.gif
 + codecraft/brick.gif
++ codecraft/dirt.gif
++ codecraft/glass.gif
++ codecraft/grass.gif
++ codecraft/plank.gif
++ codecraft/player.gif
++ codecraft/sand.gif
++ codecraft/water.gif
++ codecraft/wood.gif
 
-You can also find a completed version of this project in the 'Volunteer Resources' section, which contains:
+また、以下の完成版プログラムは、「リーダー用ノート」セクションから入手可能です。
 
 + codecraft-finished/codecraft.py
 + codecraft-finished/variables.py
-+ codecraft-finished/player.gif
-+ codecraft-finished/dirt.gif
-+ codecraft-finished/grass.gif
-+ codecraft-finished/water.gif
 + codecraft-finished/brick.gif
-+ codecraft-finished/wood.gif
++ codecraft-finished/dirt.gif
++ codecraft-finished/glass.gif
++ codecraft-finished/grass.gif
 + codecraft-finished/plank.gif
++ codecraft-finished/player.gif
++ codecraft-finished/sand.gif
++ codecraft-finished/water.gif
++ codecraft-finished/wood.gif
 
-(All of the resources above are also downloadable as project and volunteer `.zip` files.)
+(All of the resources above are also downloadable as `.zip` files.)
 
-## Learning Objectives
+## 学習目的
 
-+ Creating and editing graphics;
-+ Game design;
-+ Editing: 
-    + Variables;
-    + Lists;
-    + Dictionaries.
++ グラフィクスの作成・編集
++ ゲームデザイン
++ 編集 
+    + 変数
+    + リスト
+    + 辞書
 
-This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+このプロジェクトでは [Raspberry Pi デジタル・メイキング・カリキュラム](http://rpf.io/curriculum)（英語）の柱の一つである、プログラミングの以下の要素を学びます。
 
-+ [Design basic 2D and 3D assets.](https://www.raspberrypi.org/curriculum/design/creator)
++ [2次元と3次元のアセットをデザインする。](https://www.raspberrypi.org/curriculum/design/creator)
 
-+ [Combine programming constructs to solve a problem.](https://www.raspberrypi.org/curriculum/programming/builder)
++ [プログラミング構造を組み合わせて問題を解決する。](https://www.raspberrypi.org/curriculum/programming/builder)
 
-## Challenges
+## チャレンジ
 
-+ "Build your world" - Playing the game, placing and crafting existing blocks;
-+ "Change your world size" - editing the `MAPWIDTH` and `MAPHEIGHT` variables to change the world size;
-+ "Creating sand" - Creating a new sand resource, along with associated game data.
-+ "Crafting glass from sand" - Creating a new craftable glass resource.
-+ "Create more resources" - Use what's been learnt to create more blocks and crafting rules.
++ "ワールドを構築" – ゲームをプレイし、既存のブロックを配置または作成する。
++ "ワールドのサイズを変更" - `MAPWIDTH` と `MAPHEIGHT` 変数を編集してワールドのサイズを変更する。
++ "砂を作る" – 関連するゲームデータとともに新しい‘砂’リソースを作る。
++ "砂からガラスをクラフト（作成）する" – 新しいガラスリソースを作る。
++ ”さらにリソースを作る" – 習ったことを使ってさらにブロックやクラフティングルール（作成ルール）を作成する。
 
-## Frequently Asked Questions
+## よくある質問
 
-+ **Offline Python does not work with .png images. .gif images have been supplied for offline use.**
 + Children may need reminding that elements of a dictionary/list are separated by a comma. For example, when adding inventory items, graphics and crafting rules to the game.
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: Project materials
+## title：プロジェクト資料
 
-## Project resources
+## プロジェクト資料
 
-+ [.zip file containing all project resources](resources/codecraft-project-resources.zip)
-+ [Online Trinket containing all 'CodeCraft' project resources](http://jumpto.cc/codecraft-go)
-+ [codecraft/codecraft.py](resources/codecraft-codecraft.py)
-+ [codecraft/variables.py](resources/codecraft-variables.py)
-+ [codecraft/brick.gif](resources/codecraft-brick.gif)
-+ [codecraft/dirt.gif](resources/codecraft-dirt.gif)
-+ [codecraft/glass.gif](resources/codecraft-glass.gif)
-+ [codecraft/grass.gif](resources/codecraft-grass.gif)
-+ [codecraft/plank.gif](resources/codecraft-plank.gif)
-+ [codecraft/player.gif](resources/codecraft-player.gif)
-+ [codecraft/sand.gif](resources/codecraft-sand.gif)
-+ [codecraft/water.gif](resources/codecraft-water.gif)
-+ [codecraft/wood.gif](resources/codecraft-wood.gif)
++ [全プロジェクト・リソースの入った.zipファイル](resources/codecraft-resources.zip)
++ [「コードクラフト」プロジェクト・リソースの入ったのオンラインtrinket](http://rpf.io/codecraft-on)
 
-## Club leader resources
+## クラブ・リーダー向けリソース
 
-+ [.zip file containing all completed project resources](resources/codecraft-volunteer-resources.zip)
-+ [Online completed Trinket project](https://trinket.io/python/9ac3995d69)
-+ [codecraft-finished/codecraft.py](resources/codecraft-finished-codecraft.py)
-+ [codecraft-finished/variables.py](resources/codecraft-finished-variables.py)
-+ [codecraft-finished/brick.gif](resources/codecraft-finished-brick.gif)
-+ [codecraft-finished/dirt.gif](resources/codecraft-finished-dirt.gif)
-+ [codecraft-finished/glass.gif](resources/codecraft-finished-glass.gif)
-+ [codecraft-finished/grass.gif](resources/codecraft-finished-grass.gif)
-+ [codecraft-finished/plank.gif](resources/codecraft-finished-plank.gif)
-+ [codecraft-finished/player.gif](resources/codecraft-finished-player.gif)
-+ [codecraft-finished/sand.gif](resources/codecraft-finished-sand.gif)
-+ [codecraft-finished/water.gif](resources/codecraft-finished-water.gif)
-+ [codecraft-finished/wood.gif](resources/codecraft-finished-wood.gif)
++ [全プロジェクトの完成版リソースの入った.zipファイル](solutions/codecraft-solution.zip)
++ [完成版プロジェクトのオンラインtrinket](https://trinket.io/python/ebc5b0148b)
 
 \--- /collapse \---
