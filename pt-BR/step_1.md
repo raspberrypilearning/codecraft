@@ -24,11 +24,11 @@ Neste projeto, as crianças aprenderão aspectos de gráficos e design de jogos,
 
 **Este projeto usa o Python 3.** Recomendamos usar [trinket](https://trinket.io/) para escrever Python online. Este projeto contém os seguintes Trinkets:
 
-+ ['CodeCraft' starter project -- rpf.io/codecraft-on](http://rpf.io/codecraft-on)
++ [Ponto de partida 'CodeCraft' - rpf.io/codecraft-on](http://rpf.io/codecraft-on)
 
 Há também uma trinket contendo o projeto concluído:
 
-+ [‘CodeCraft’ Finished -- trinket.io/python/ebc5b0148b](https://trinket.io/python/ebc5b0148b)
++ ['CodeCraft' concluído - trinket.io/python/ebc5b0148b](https://trinket.io/python/ebc5b0148b)
 
 ## Recursos offline
 
@@ -60,7 +60,7 @@ Você também pode encontrar uma versão completa deste projeto na seção 'Recu
 + codecraft-finished/water.gif
 + codecraft-finished/wood.gif
 
-(All of the resources above are also downloadable as `.zip` files.)
+(Todos os recursos acima também podem ser baixados como arquivos `.zip` do projeto e dos voluntários.)
 
 ## Objetivos de aprendizado
 
@@ -87,7 +87,7 @@ Este projeto abrange elementos das seguintes vertentes do [Currículo de Criaç�
 
 ## Perguntas Frequentes
 
-+ Children may need reminding that elements of a dictionary/list are separated by a comma. For example, when adding inventory items, graphics and crafting rules to the game.
++ As crianças podem precisar de lembrar que os elementos de um dicionário / lista são separados por uma vírgula. Por exemplo, ao adicionar itens de inventário, gráficos e regras de criação ao jogo.
 
 \--- /collapse \---
 
