@@ -1,51 +1,51 @@
-## Creating a new wood resource
+## 나무 아이템 만들기
 
-Let's create a new wood resource. To do this, you'll need to add to some variables in your `variables.py` file.
+나무 아이템을 새롭게 만들어 봅시다. 나무를 추가하기 위해서는, `variables.py` 에 일부 변수를 추가해야 합니다.
 
-+ First, you need to give your new resource a number. You'll then be able to use the word `WOOD` in your code instead of the number 4.
++ 먼저, 새로운 나무 아이템에 번호를 부여해야 합니다. `WOOD` 대신 4를 리소스 번호로 사용합니다.
     
-    ![screenshot](images/craft-wood-const.png)
+    ![스크린샷](images/craft-wood-const.png)
 
-+ You should add your new `WOOD` resource to your list of `resources`.
++ 새로운 `WOOD` 아이템을 `resources` 리스트에 추가합니다.
     
-    ![screenshot](images/craft-wood-resources.png)
+    ![스크린샷](images/craft-wood-resources.png)
 
-+ You should also give your resource a name, which will be displayed in the inventory.
++ 또한 인벤토리에 표시되는 아이템 명은 아래처럼 추가할 수 있습니다.
     
-    ![screenshot](images/craft-wood-name.png)
+    ![스크린샷](images/craft-wood-name.png)
     
-    Notice the comma `,` at the end of the line above.
+    각 라인의 끝에는 마지막 요소를 제외하고 `,`가 추가되어야 합니다.
 
-+ Your resource will also need an image. The project already includes an image called `wood.png`, which you should add to the `textures` dictionary.
++ 리소스에는 이미지도 필요합니다. The project already includes an image called `wood.gif`, which you should add to the `textures` dictionary.
     
-    ![screenshot](images/craft-wood-texture.png)
+    ![스크린샷](images/craft-wood-texture.png)
 
-+ Add the number of your resource that should be in your `inventory` to start with.
++ 게임을 처음 시작할 때 플레이어의 `inventory` 에 입력되는 아이템의 개수를 지정할 수 있습니다.
     
-    ![screenshot](images/craft-wood-inventory.png)
+    ![스크린샷](images/craft-wood-inventory.png)
 
-+ Finally, add the key that you'll press to place wood in the world.
++ 마지막으로, 월드에 나무를 배치하기 위해 누르는 키를 추가하세요.
     
-    ![screenshot](images/craft-wood-placekey.png)
+    ![스크린샷](images/craft-wood-placekey.png)
 
-+ Run your project to test it. You'll see that you now have a new 'wood' resource in your inventory.
++ 테스트를 위해 프로젝트를 실행해 보세요. 새로운 '나무' 자원이 아래와 같이 추가된 것을 볼 수 있습니다.
     
-    ![screenshot](images/craft-wood-test.png)
+    ![스크린샷](images/craft-wood-test.png)
 
-+ There's no wood in your world! To fix this, click on your `main.py` file and find the function called `generateRandomWorld()`.
++ 그런데 나무가 없어요! 이 문제를 해결하기 위해서는 `main.py` 파일의 `generateRandomWorld()` 함수를 찾아 보세요. 
     
-    ![screenshot](images/craft-wood-random1.png)
+    ![스크린샷](images/craft-wood-random1.png)
     
-    This code generates a random number between 0 and 10, and uses the number to decide which resource to place:
+    이 코드는 0부터 10까지의 랜덤 숫자를 생성하는데, 이 숫자를 기반으로 어떤 블럭이 세계에 배치되는지 정하게 됩니다.
     
-    + 1 or 2 = water
-    + 3 or 4 = grass
-    + anything else = DIRT
+    + 1이나 2 = 물 블록
+    + 3이나 4 = 초원 블록
+    + 이외 = 흙 블록
 
-+ Add this code to add wood to your world whenever the `randomNumber` is 5.
++ 아래와 같이 `randomNumber`가 5인 경우, 나무가 월드 안에 추가되도록 코드를 설계하세요.
     
-    ![screenshot](images/craft-wood-random2.png)
+    ![스크린샷](images/craft-wood-random2.png)
 
-+ Test your project again. This time, you should see some wood appear in your world.
++ 프로젝트를 다시 테스트해 보세요. 이제 월드에서 아래와 같이 나무가 보일 것입니다.
     
-    ![screenshot](images/craft-wood-test2.png)
+    ![스크린샷](images/craft-wood-test2.png)
