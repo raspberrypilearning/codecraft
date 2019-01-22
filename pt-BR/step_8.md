@@ -14,7 +14,7 @@ Vamos criar um novo recurso, a tábua que será criado a partir da madeira.
     
     ![screenshot](images/craft-plank-names.png)
 
-+ Dê uma imagem ao seu recursos `TABUA`. The project already contains a `plank.gif` image, but you can create your own if you prefer.
++ Dê uma imagem ao seu recursos `TABUA`. O projeto já contém uma imagem `plank.gif`, mas você pode criar a sua própria, se preferir.
     
     ![screenshot](images/craft-plank-textures.png)
 
