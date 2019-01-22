@@ -1,6 +1,6 @@
 ## Igranje igre
 
-+ Open this trinket: [rpf.io/codecraft-on](http://rpf.io/codecraft-on){:target="_blank"}.
++ Otvori ovaj trinket: [rpf.io/codecraft-on](http://rpf.io/codecraft-on){:target="_blank"}.
 
 + Koristi tastere W, A, S i D za pomjeranje igrača po svijetu koji je pun različitih resursa (zemlje, trave i vode).
     
