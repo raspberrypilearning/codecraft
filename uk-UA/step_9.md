@@ -6,6 +6,6 @@
 
 ![скріншот](images/craft-glass.png)
 
-Проект вже містить `glass.png` зображення, яке ви можете використовувати, або ви можете створити власне зображення, якщо хочете.
+The project already contains a `glass.gif` image that you can use, or you can create your own image if you prefer.
 
 \--- / виклик \---
