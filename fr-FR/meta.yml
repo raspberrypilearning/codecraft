@@ -11,20 +11,20 @@ steps:
   - 
     title: Introduction
   - 
-    title: Jouer le jeu
+    title: Jouer au jeu
   - 
-    title: 'Défi : Construire ton monde'
+    title: 'Challenge : Construit ton monde'
   - 
-    title: Customisation de ton jeu
+    title: Personnalise ton jeu
   - 
-    title: 'Défi : Change la taille de ton monde'
+    title: 'Challenge: Change la taille de ton monde'
   - 
-    title: Créer une nouvelle ressource en bois
+    title: 'Crée une nouvelle ressource: le bois'
   - 
-    title: 'Défi : Créer du sable'
+    title: 'Challenge: Crée du sable'
   - 
-    title: Façonner des planches de bois
+    title: Fabriquer des planches à partir du bois
   - 
-    title: 'Défi : Façonner le verre du sable'
+    title: 'Challenge: Fabrique du verre à partir du sable'
   - 
-    title: 'Défi : Créer d''autres ressources'
+    title: 'Challenge: Crée plus de ressources'
