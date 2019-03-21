@@ -1,13 +1,13 @@
-\--- challenge \---
+\---挑戰\---
 
-## Challenge: Creating sand
+## 挑戰：創造沙子
 
-Can you add a `SAND` resource to your game? You can use the steps above to help you.
+你能為遊戲添加 `SAND` 資源嗎？ 您可以使用上述步驟來幫助您。
 
-![screenshot](images/craft-sand.png)
+![截圖](images/craft-sand.png)
 
-The project already includes a `sand.gif` image, but you can create and upload your own if you prefer.
+該項目已包含 `sand.gif` 圖像，但您可以根據需要創建和上傳自己的圖像。
 
-![screenshot](images/craft-upload.png)
+![截圖](images/craft-upload.png)
 
-\--- /challenge \---
+\--- /挑戰\---
