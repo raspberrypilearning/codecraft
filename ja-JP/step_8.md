@@ -14,7 +14,7 @@
     
     ![スクリーンショット](images/craft-plank-names.png)
 
-+ `PLANK`リソースに画像を追加。 The project already contains a `plank.gif` image, but you can create your own if you prefer.
++ `PLANK`リソースに画像を追加。 このプロジェクトは`plank.gif` 画像を含んでいます。しかし、自分の画像を作成してアップロードして使用することもできます。
     
     ![スクリーンショット](images/craft-plank-textures.png)
 
