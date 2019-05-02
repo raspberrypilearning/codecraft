@@ -28,7 +28,7 @@ In dit project leren kinderen aspecten van grafische vormgeving en gamedesign do
 
 Er is ook een trinket met het voltooide project:
 
-+ [‘CodeCraft’ Finished -- trinket.io/python/ebc5b0148b](https://trinket.io/python/ebc5b0148b)
++ ['CodeCraft' gereed - trinket.io/python/ebc5b0148b](https://trinket.io/python/ebc5b0148b)
 
 ## Offline bronnen
 
@@ -87,7 +87,7 @@ Dit project behandelt elementen uit de volgende onderdelen van het [Raspberry Pi
 
 ## Veelgestelde vragen (faq)
 
-+ Children may need reminding that elements of a dictionary/list are separated by a comma. For example, when adding inventory items, graphics and crafting rules to the game.
++ Kinderen moeten er mogelijk aan herinnerd worden dat elementen van een woordenboek/lijst moeten worden gescheiden door een komma. Bijvoorbeeld bij het toevoegen van voorraaditems, afbeeldingen en maakregels aan het spel.
 
 \--- /collapse \---
 
