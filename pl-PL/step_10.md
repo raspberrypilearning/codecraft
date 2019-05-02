@@ -1,7 +1,7 @@
-\--- wyzwanie \---
+\--- challenge \---
 
-## Wyzwanie: Utwórz więcej zasobów
+## Zadanie: tworzenie nowych zasobów
 
-Czy możesz dodać więcej zasobów i zasad tworzenia do swojej gry?
+Dodaj do swojej gry nowe zasoby oraz zasady ich tworzenia.
 
-\--- / wyzwanie \---
+\--- /challenge \---
