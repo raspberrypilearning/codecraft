@@ -1,9 +1,9 @@
-\--- wyzwanie \---
+\--- challenge \---
 
-## Wyzwanie: Zmień swój świat
+## Zadanie: zmiana rozmiarów świata
 
-Czy możesz zmienić wartości zmiennych `MAPWIDTH` i `MAPHEIGHT` , aby zmienić rozmiar świata?
+Zmodyfikuj wartości zmiennych `SZEROKOSCSWIATA` i `WYSOKOSCSWIATA` , aby zmienić rozmiar swojego świata.
 
 ![zrzut ekranu](images/craft-mapsize.png)
 
-\--- / wyzwanie \---
+\--- /challenge \---
