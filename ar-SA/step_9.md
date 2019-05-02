@@ -6,6 +6,6 @@
 
 ![لقطة شاشة](images/craft-glass.png)
 
-The project already contains a `glass.gif` image that you can use, or you can create your own image if you prefer.
+يحتوي هذا المشروع بالفعل على صورة `glass.gif` يمكنك استخدامها، أو يمكنك إنشاء صورة من عندك إذا أردتَ.
 
-\--- challenge/ \---
+\--- challenge \---
