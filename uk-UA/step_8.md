@@ -8,7 +8,7 @@
 
 + Додайте нову `PLANK` змінну до своєї гри.
     
-    ![скріншот](images/craft-plank-resources.png)
+    ![знімок екрану](images/craft-plank-resources.png)
 
 + Назвіть ресурс `'Дошка'`.
     
@@ -20,7 +20,7 @@
 
 + Додайте дошки до свого інвентарю.
     
-    ![скріншот](images/craft-plank-inventory.png)
+    ![знімок екрану](images/craft-plank-inventory.png)
 
 + Встановіть кнопку для розміщення дощок.
     
