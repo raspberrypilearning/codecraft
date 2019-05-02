@@ -20,7 +20,7 @@
 
 このプロジェクトでは、子供たちは基本的な2Dマインクラフトのクローンを改良することにより、グラフィクスとゲームデザインを学びます。 子供たちはリソースを作成、またはリソースを結合するルールをつくることにより新しいリソースを作ります。 変数・リスト・辞書を理解して操作することにより、このプロジェクトを達成できます。
 
-## オンラインリソース
+## オンライン・リソース
 
 **本プロジェクトでは、Python 3**を使います。オンラインでPythonのコードを記述するには、[trinket](https://trinket.io/)の使用をお勧めします。 本プロジェクトには、以下のtrinketが用意されています：
 
@@ -28,7 +28,7 @@
 
 また、完成版プログラムが入力済みのtrinketも用意されています。
 
-+ [‘CodeCraft’ Finished -- trinket.io/python/ebc5b0148b](https://trinket.io/python/ebc5b0148b)
++ ['コードクラフト'の完成版プログラム -- trinket.io/python/ebc5b0148b](https://trinket.io/python/ebc5b0148b)
 
 ## オフライン・リソース
 
@@ -62,7 +62,7 @@
 
 (All of the resources above are also downloadable as `.zip` files.)
 
-## 学習目的
+## 学習目標
 
 + グラフィクスの作成・編集
 + ゲームデザイン
@@ -87,7 +87,7 @@
 
 ## よくある質問
 
-+ Children may need reminding that elements of a dictionary/list are separated by a comma. For example, when adding inventory items, graphics and crafting rules to the game.
++ 子供は、辞書/リストの要素がコンマで区切られていることを思い出させる必要があるかもしれない。 たとえば、インベントリアイテム、グラフィックス、および作成ルールをゲームに追加する場合などです。
 
 \--- /collapse \---
 
