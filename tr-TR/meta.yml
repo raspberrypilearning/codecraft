@@ -1,0 +1,30 @@
+---
+hero_image: images/codecraft.png
+duration: 2
+listed: true
+copyedit: false
+title: CodeCraft
+description: Design and code improvements to a 2D version of Minecraft.
+version: 3.1.0
+last_tested: 2018-11-22
+steps:
+  - 
+    title: Introduction
+  - 
+    title: Playing the game
+  - 
+    title: 'Challenge: Build your world'
+  - 
+    title: Customising your game
+  - 
+    title: 'Challenge: Change your world size'
+  - 
+    title: Creating a new wood resource
+  - 
+    title: 'Challenge: Creating sand'
+  - 
+    title: Crafting planks from wood
+  - 
+    title: 'Challenge: Crafting glass from sand'
+  - 
+    title: 'Challenge: Create more resources'
