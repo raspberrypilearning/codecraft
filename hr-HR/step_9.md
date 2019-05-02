@@ -6,6 +6,6 @@ Možeš li stvoriti novi resurs staklo koje se može izraditi od pijeska? Za pom
 
 ![screenshot](images/craft-glass.png)
 
-The project already contains a `glass.gif` image that you can use, or you can create your own image if you prefer.
+U projektu se već nalazi slika `glass.gif`, ali možeš stvoriti i vlastitu ako želiš.
 
 \--- challenge \---
