@@ -16,7 +16,7 @@
     
     لاحظ وجود الفاصلة `,` في نهاية الأسطر أعلاه.
 
-+ سيحتاج هذا المورد إلى صورة أيضًا. The project already includes an image called `wood.gif`, which you should add to the `textures` dictionary.
++ سيحتاج هذا المورد إلى صورة أيضًا. يحتوى المشروع بالفعل على صورة تُسمى `wood.gif` يجب أن تضيفها إلى القاموس `textures`.
     
     ![لقطة الشاشة](images/craft-wood-texture.png)
 
