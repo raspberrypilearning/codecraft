@@ -4,10 +4,10 @@
 
 Peux-tu ajouter une ressource `SABLE` dans ton jeu ? Tu peux utiliser les étapes précédentes pour t'aider.
 
-![capture d'écran](images/craft-sand.png)
+![screenshot](images/craft-sand.png)
 
-The project already includes a `sand.gif` image, but you can create and upload your own if you prefer.
+Le projet inclut déjà une image `sable.gif`, mais tu peux créer et télécharger la tienne si tu préfères.
 
-![capture d'écran](images/craft-upload.png)
+![screenshot](images/craft-upload.png)
 
 \--- /challenge \---
