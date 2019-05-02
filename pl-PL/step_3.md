@@ -1,9 +1,9 @@
-\--- wyzwanie \---
+\--- challenge \---
 
-## Wyzwanie: Zbuduj swój świat
+## Zadanie: tworzenie własnego świata
 
-Czy możesz zbudować dom z ogrodem i basenem? Co jeszcze możesz stworzyć?
+Zbuduj dom z ogrodem i basenem. Co jeszcze możesz zbudować?
 
 ![zrzut ekranu](images/craft-build-example.png)
 
-\--- / wyzwanie \---
+\--- /challenge \---
