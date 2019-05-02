@@ -14,7 +14,7 @@
     
     ![스크린샷](images/craft-plank-names.png)
 
-+ `PLANK` 리소스에 이미지를 부여합니다. The project already contains a `plank.gif` image, but you can create your own if you prefer.
++ `PLANK` 리소스에 이미지를 부여합니다. 이 프로젝트는 이미 `plank.gif` 이미지가 포함되어 있으나, 원하는 경우 이미지를 만들고 업로드할 수 있습니다.
     
     ![스크린샷](images/craft-plank-textures.png)
 
