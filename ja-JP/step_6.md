@@ -16,7 +16,7 @@
     
     リストに新しいアイテムを追加する際、”`,`”を追加するのを忘れないように。
 
-+ 新しいリソースには画像が必要。 The project already includes an image called `wood.gif`, which you should add to the `textures` dictionary.
++ 新しいリソースには画像が必要。 このプロジェクトはすでに`wood.gif`という画像が含まれています。それを`textures` に追加してください。
     
     ![スクリーンショット](images/craft-wood-texture.png)
 
