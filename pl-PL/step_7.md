@@ -1,13 +1,13 @@
-\--- wyzwanie \---
+\--- challenge \---
 
-## Wyzwanie: tworzenie piasku
+## Zadanie: utworzyć piasek
 
-Czy możesz dodać zasób `SAND` do swojej gry? Możesz skorzystać z powyższych kroków, aby ci pomóc.
+Dodaj zasób `PIACH` do swojej gry. Dla ułatwienia możesz skorzystać z powyższych kroków.
 
 ![zrzut ekranu](images/craft-sand.png)
 
-The project already includes a `sand.gif` image, but you can create and upload your own if you prefer.
+W projekcie jest już obrazek `piach.gif`, ale jeśli chcesz, możesz dodać własny i go użyć.
 
 ![zrzut ekranu](images/craft-upload.png)
 
-\--- / wyzwanie \---
+\--- /challenge \---
