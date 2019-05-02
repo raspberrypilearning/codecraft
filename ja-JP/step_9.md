@@ -6,6 +6,6 @@
 
 ![スクリーンショット](images/craft-glass.png)
 
-The project already contains a `glass.gif` image that you can use, or you can create your own image if you prefer.
+このプロジェクトは`glass.gif` 画像を含んでいます。しかし、自分の画像を作成してアップロードして使用することもできます。
 
 \--- /challenge \---
