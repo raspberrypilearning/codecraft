@@ -1,39 +1,39 @@
 ## Wytwarzanie desek z drewna
 
-Stwórzmy nowy materiał deski, który będzie wykonany z drewna.
+Stwórzmy nowy zasób – deski, który będzie wykonany z drewna.
 
-+ First, add a new `PLANK` variable to your game.
++ Najpierw dodaj nową zmienną `DESKA` do gry.
     
     ![zrzut ekranu](images/craft-plank-const.png)
 
-+ Add a new `PLANK` variable to your game.
++ Dodaj nową zmienną `DESKA` do gry.
     
     ![zrzut ekranu](images/craft-plank-resources.png)
 
-+ Nazwij zasób `"deskę"`.
++ Nazwij nowy zasób `„deska”`.
     
     ![zrzut ekranu](images/craft-plank-names.png)
 
-+ Podaj swój `PLANK` zasób obraz. The project already contains a `plank.gif` image, but you can create your own if you prefer.
++ Przypisz obrazek zasobowi `DESKA`. W projekcie jest już obrazek `deska.gif`, ale jeśli chcesz, możesz dodać własny i go użyć.
     
-    ![zrzut ekranu](images/craft-plank-textures.png)
+    ![screenshot](images/craft-plank-textures.png)
 
 + Dodaj deski do ekwipunku.
     
-    ![zrzut ekranu](images/craft-plank-inventory.png)
+    ![screenshot](images/craft-plank-inventory.png)
 
-+ Ustaw klucz do układania desek.
++ Ustaw klawisz, którym będziesz wstawiać deski na mapie.
     
     ![zrzut ekranu](images/craft-plank-placekeys.png)
 
-+ Ponieważ ten zasób może zostać stworzony, musisz stworzyć regułę tworzenia, która polega na tym, że deskę można wykonać z 3 drewnianych płytek. Dodaj ten kod do słownika `crafting`.
++ Należy utworzyć reguły budowania zasobu, skoro może on być wytwarzany. Deskę można zbudować z 3 sztuk drewna. Dodaj ten kod do słownika `budowanie`.
     
     ![zrzut ekranu](images/craft-plank-crafting.png)
 
-+ Na koniec musisz ustawić klucz do tworzenia nowych desek.
++ Na koniec musisz przypisać klawisz do tworzenia nowych desek.
     
     ![zrzut ekranu](images/craft-plank-craftkeys.png)
 
-+ Aby przetestować nowy zasób deski, zebrać kilka drewnianych płytek, a następnie wykuć deski z drewna. Możesz wtedy umieścić swoje nowe deski w swoim świecie.
++ Aby przetestować nowy zasób, zbierz kilka sztuk drewna, a następnie zbuduj z nich deski. Teraz możesz wstawić deski w swoim świecie.
     
     ![zrzut ekranu](images/craft-plank-test.png)
