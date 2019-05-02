@@ -6,7 +6,7 @@
 
 ![لقطة شاشة](images/craft-sand.png)
 
-The project already includes a `sand.gif` image, but you can create and upload your own if you prefer.
+يحتوي هذا المشروع بالفعل على صورة `sand.gif`، لكن يمكنك إنشاء أو تحميل صورة من عندك إذا أردتَ.
 
 ![لقطة الشاشة](images/craft-upload.png)
 
