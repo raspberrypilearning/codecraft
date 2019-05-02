@@ -1,23 +1,23 @@
-## Grać w gre
+## Zasady gry
 
-+ Open this trinket: [rpf.io/codecraft-on](http://rpf.io/codecraft-on){:target="_blank"}.
++ Otwórz Trinket: [rpf.io/codecraft-on](http://rpf.io/codecraft-on){:target="_blank"}.
 
-+ Użyj klawiszy WASD, aby przenieść gracza na cały świat, który jest pełen różnych zasobów (brud, trawa i woda).
++ Do poruszania się po świecie pełnym różnych zasobów (piach, trawa, czy woda) użyj klawiszy WSAD.
     
     ![zrzut ekranu](images/craft-move.png)
 
-+ Możesz nacisnąć spację, aby zebrać zasoby. Wybierz kilka rodzajów zasobów, a zobaczysz, że zostały dodane do Twojego ekwipunku.
++ Gdy wciśniesz SPACJĘ, zbierzesz zasób na którym stoi Twoja postać. Zbierz kilka rodzajów zasobów, a zobaczyć je w swoim ekwipunku.
     
     ![zrzut ekranu](images/craft-pickup.png)
 
-+ Naciśnij klawisze numeryczne (od 1 do 3), aby umieścić zasoby na mapie. Na przykład naciśnij 3, aby umieścić trochę wody na mapie. To zadziała tylko, jeśli masz trochę wody w ekwipunku.
++ Naciśnij klawisze z liczbami (od 1 do 3), aby umieścić odpowiednie zasoby na mapie. Na przykład, gdy naciśniesz 3 na mapie ukaże się woda, ale tylko pod warunkiem, że masz trochę wody w ekwipunku.
     
     ![zrzut ekranu](images/craft-place-water.png)
 
-+ Możesz stworzyć przedmiot, naciskając klawisz wyświetlony w menu. Crafting to połączenie przedmiotów, które już masz w ekwipunku, w celu stworzenia nowych. Spróbuj nacisnąć klawisz "r", aby stworzyć nową cegłę (o ile masz 2 zabrudzenia i 1 wodę w ekwipunku).
++ Możesz także stworzyć przedmiot, naciskając klawisz wyświetlony w menu. Tworzenie to łączenie przedmiotów, które już masz w ekwipunku, w celu zbudowania nowych. Gdy będziesz mieć co najmniej 2 sztuki piachu oraz 1 wody, naciśnij klawisz „r”, aby zbudować nową cegłę.
     
     ![zrzut ekranu](images/craft-craft-brick.png)
 
-+ Możesz wtedy nacisnąć klawisz "4", aby umieścić swoje cegiełki.
++ Swoje cegły umieścisz na mapie, naciskając klawisz „4”.
     
     ![zrzut ekranu](images/craft-place-brick.png)
