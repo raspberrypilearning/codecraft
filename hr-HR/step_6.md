@@ -16,7 +16,7 @@ Stvorimo novi resurs - drvo. Da bi to napravili, moramo dodati još neke varijab
     
     Primijeti da se na kraju linija nalazi zarez`,`.
 
-+ Tvoj resurs trebat će i sliku. The project already includes an image called `wood.gif`, which you should add to the `textures` dictionary.
++ Tvoj resurs trebat će i sliku. U projektu se već nalazi slika pod nazivom `wood.gif` koju ćeš dodati u rječnik naziva `teksture`.
     
     ![screenshot](images/craft-wood-texture.png)
 
