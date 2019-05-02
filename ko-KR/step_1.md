@@ -12,9 +12,9 @@
 
 이 프로젝트를 인쇄하려면 [인쇄용 용지](https://projects.raspberrypi.org/en/projects/codecraft/print)를 사용하세요.
 
-## \--- 중간생략 \---
+## \--- collapse \---
 
-## title: 교육자들을 위한 메모
+## 제목: 교육자 노트
 
 ## 소개
 
@@ -28,11 +28,11 @@
 
 완성된 프로젝트가 저장된 Trinket도 있습니다:
 
-+ [‘CodeCraft’ Finished -- trinket.io/python/ebc5b0148b](https://trinket.io/python/ebc5b0148b)
++ ['코드크래프트' 완성본 -- trinket.io/python/ebc5b0148b](https://trinket.io/python/ebc5b0148b)
 
 ## 오프라인 자료들
 
-여러분의 선호에 따라 프로젝트를 [오프라인에서 완성](https://www.codeclubprojects.org/en-GB/resources/python-working-offline/)할 수 있습니다. 'Project Materials' 라는 링크를 클릭하여 이 프로젝트의 자료를 확인해볼 수 있습니다. 이 링크에는 어린이들이 프로젝트를 오프라인으로 완료하는 데 필요한 자료가 포함된 'Project Resource' 섹션이 있습니다. 학생들이 이러한 자료의 사본에 접근할 수 있는지 확인하십시오. 이 섹션에는 아래와 같은 파일들이 포함되어 있습니다.
+여러분의 선호에 따라 프로젝트를 [오프라인에서 완성](https://www.codeclubprojects.org/en-GB/resources/python-working-offline/)할 수 있습니다. 'Project Materials' 라는 링크를 클릭하여 이 프로젝트의 자료를 확인해볼 수 있습니다. 이 링크에는 어린이들이 프로젝트를 오프라인으로 완료하는 데 필요한 자료가 포함된 'Project Resource' 섹션이 있습니다. 각 어린이가 이러한 자료의 사본에 접근할 수 있는지 확인하십시오. 이 섹션에는 아래와 같은 파일들이 포함되어 있습니다.
 
 + codecraft/codecraft.py
 + codecraft/variables.py
@@ -68,12 +68,12 @@
 + 게임 디자인;
 + 코드 편집: 
     + 변수;
-    + 리스트;
+    + Python 리스트;
     + 딕셔너리.
 
 이 프로젝트는 [라즈베리파이 디지털 메이킹 커리큘럼](http://rpf.io/curriculum) 중 아래의 과정에 있는 요소들을 다룹니다.
 
-+ [2D와 3D 디자인](https://www.raspberrypi.org/curriculum/design/creator)
++ [기본적인 2차원과 3차원의 자원을 디자인 해봅니다.](https://www.raspberrypi.org/curriculum/design/creator)
 
 + [프로그래밍 구조를 결합하여 문제 해결하기](https://www.raspberrypi.org/curriculum/programming/builder)
 
@@ -87,15 +87,15 @@
 
 ## 자주 물어보는 질문
 
-+ Children may need reminding that elements of a dictionary/list are separated by a comma. For example, when adding inventory items, graphics and crafting rules to the game.
++ 학생들에게 딕셔너리/리스트 목록의 요소가 쉼표로 구분된다는 것을 알려 주십시오. 예를 들어, 인벤토리에 아이템을 추가하거나, 그래픽, 제작 규칙을 추가하는 것이 해당될 수 있습니다.
 
-\--- /collapse \---
+\--- / collapse \---
 
 ## \--- collapse \---
 
-## title: 프로젝트 자료
+## 타이틀: Project materials
 
-## 프로젝트 리소스
+## Project resources
 
 + [프로젝트의 모든 리소스가 들어있는 .zip 파일](resources/codecraft-resources.zip)
 + [코드크래프트 프로젝트 자료가 포함된 온라인 Trinket](http://rpf.io/codecraft-on)
