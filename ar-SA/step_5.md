@@ -6,4 +6,4 @@
 
 ![لقطة شاشة](images/craft-mapsize.png)
 
-\--- challenge \---
+\--- /challenge \---
