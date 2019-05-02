@@ -1,4 +1,4 @@
-## Introduction
+## Introducción
 
 In this project, you’ll design and code improvements to a 2D version of Minecraft.
 
@@ -8,15 +8,15 @@ In this project, you’ll design and code improvements to a 2D version of Minecr
   <img src="images/craft-finished.png">
 </div>
 
-### Additional information for club leaders
+### Información adicional para los líderes del club
 
-If you need to print this project, please use the [Printer friendly version](https://projects.raspberrypi.org/en/projects/codecraft/print).
+Si necesita imprimir este proyecto, use la [versión para imprimir](https://projects.raspberrypi.org/en/projects/codecraft/print).
 
 ## \--- collapse \---
 
-## title: Club leader notes
+## title: Notas para el líder del club
 
-## Introduction:
+## Introducción:
 
 In this project, children will learn aspects of graphics and game design by making improvements to a basic 2D Minecraft clone. Children will create new resources, as well as crafting rules for combining resources to make new ones. This will be achieved by understanding and manipulating variables, lists and dictionaries.
 
@@ -62,7 +62,7 @@ You can also find a completed version of this project in the 'Volunteer Resource
 
 (All of the resources above are also downloadable as `.zip` files.)
 
-## Learning Objectives
+## Objetivos del Aprendizaje
 
 + Creating and editing graphics;
 + Game design;
@@ -71,13 +71,13 @@ You can also find a completed version of this project in the 'Volunteer Resource
     + Lists;
     + Dictionaries.
 
-This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+Este proyecto incluye elementos de los siguientes aspectos del [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
 
 + [Design basic 2D and 3D assets.](https://www.raspberrypi.org/curriculum/design/creator)
 
 + [Combine programming constructs to solve a problem.](https://www.raspberrypi.org/curriculum/programming/builder)
 
-## Challenges
+## Desafíos
 
 + "Build your world" - Playing the game, placing and crafting existing blocks;
 + "Change your world size" - editing the `MAPWIDTH` and `MAPHEIGHT` variables to change the world size;
@@ -93,14 +93,14 @@ This project covers elements from the following strands of the [Raspberry Pi Dig
 
 ## \--- collapse \---
 
-## title: Project materials
+## title: Materiales del proyecto
 
 ## Project resources
 
 + [.zip file containing all project resources](resources/codecraft-resources.zip)
 + [Online Trinket containing all 'CodeCraft' project resources](http://rpf.io/codecraft-on)
 
-## Club leader resources
+## Recursos del líder del club
 
 + [.zip file containing all completed project resources](solutions/codecraft-solution.zip)
 + [Online completed Trinket project](https://trinket.io/python/ebc5b0148b)
