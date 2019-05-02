@@ -1,11 +1,11 @@
-\--- wyzwanie \---
+\--- challenge \---
 
-## Wyzwanie: Wytwarzanie szkła z piasku
+## Zadanie: przetworzyć piasek w szkło
 
-Czy możesz stworzyć nowy materiał szklany, który można wykonać z piasku? Możesz wykonać powyższe kroki, aby ci pomóc.
+Utwórz nowy materiał – szkło, który można wykonać z piasku. Dla ułatwienia wykonaj powyższe kroki.
 
 ![zrzut ekranu](images/craft-glass.png)
 
-The project already contains a `glass.gif` image that you can use, or you can create your own image if you prefer.
+W projekcie jest już obrazek `szklo.gif`, ale jeśli chcesz, możesz dodać własny i go użyć.
 
-\--- / wyzwanie \---
+\--- /challenge \---
