@@ -4,6 +4,6 @@
 
 Чи можете ви побудувати будинок, з садом та басейном? Що ще ви можете створити?
 
-![скріншот](images/craft-build-example.png)
+![знімок екрану](images/craft-build-example.png)
 
 -- /challenge \---
