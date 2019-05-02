@@ -1,9 +1,9 @@
 \--- challenge \---
 
-## Challenge: Build your world
+## चुनौती: अपनी दुनिया बनाएँ
 
 Can you build a house, with a garden and a swimming pool? What else can you create?
 
-![screenshot](images/craft-build-example.png)
+![स्क्रीनशॉट](images/craft-build-example.png)
 
 \--- /challenge \---
