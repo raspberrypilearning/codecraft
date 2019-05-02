@@ -14,7 +14,7 @@
     
     ![لقطة الشاشة](images/craft-plank-names.png)
 
-+ عيِّن صورة إلى المورد `PLANK`. The project already contains a `plank.gif` image, but you can create your own if you prefer.
++ عيِّن صورة إلى المورد `PLANK`. يحتوي هذا المشروع بالفعل على صورة `plank.gif`، لكن يمكنك إنشاء صورة من عندك إذا أردتَ.
     
     ![لقطة الشاشة](images/craft-plank-textures.png)
 
