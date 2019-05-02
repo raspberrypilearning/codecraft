@@ -26,7 +26,7 @@ Dans ce projet, les enfants apprendront les aspects d'interfaces graphiques et l
 
 + ['CodeCraft' starter project -- rpf.io/codecraft-on](http://rpf.io/codecraft-on)
 
-Il existe aussi ce trinket qui contient le projet completé:
+Il existe aussi ce trinket qui contient le projet complet:
 
 + [‘CodeCraft’ Finished -- trinket.io/python/ebc5b0148b](https://trinket.io/python/ebc5b0148b)
 
@@ -60,7 +60,7 @@ Vous pouvez aussi trouver une version complétée du projet dans la section "Res
 + codecraft-finished/water.gif
 + codecraft-finished/wood.gif
 
-(All of the resources above are also downloadable as `.zip` files.)
+(Toutes les ressources ci-dessus peuvent aussi être téléchargées dans les fichiers`.zip`)
 
 ## Objectifs d'apprentissage
 
@@ -77,7 +77,7 @@ Ce projet couvre les élements suivants du [Programme Raspberry Pi de Créativit
 
 + [Combiner des constructions de programmation pour résoudre un problème.](https://www.raspberrypi.org/curriculum/programming/builder)
 
-## Défis
+## Challenges
 
 + "Construit ton monde" - Jouer au jeu, placer et fabriquer des blocs existants
 + "Change la taille de ton monde" - Modifier les variables `LARGEURCARTE` et `HAUTEURCARTE` pour changer les dimensions du monde;
@@ -87,7 +87,7 @@ Ce projet couvre les élements suivants du [Programme Raspberry Pi de Créativit
 
 ## Foire aux questions
 
-+ Children may need reminding that elements of a dictionary/list are separated by a comma. For example, when adding inventory items, graphics and crafting rules to the game.
++ Les enfants peuvent avoir besoin d'un rappel: les éléments dans un dictionnaire/une liste doivent être séparés par des virgules. Par exemple, lorsque l'on ajoute des éléments à l'inventaire, des éléments graphiques ou des règles de fabrications pour le jeu.
 
 \--- /collapse \---
 
