@@ -1,4 +1,4 @@
-\--- challenge \---
+\--- 도전 \---
 
 ## 과제: 모래로 유리 만들기
 
@@ -6,6 +6,6 @@
 
 ![스크린샷](images/craft-glass.png)
 
-The project already contains a `glass.gif` image that you can use, or you can create your own image if you prefer.
+이 프로젝트는 이미 `glass.gif` 이미지가 포함되어 있으나, 원하는 경우 이미지를 만들고 업로드할 수 있습니다.
 
-\--- /challenge \---
+<0>for</0>, <0>forward()</0>, <0>penup()</0> and <0>pendown()</0>를 사용해 보세요.
