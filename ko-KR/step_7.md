@@ -1,4 +1,4 @@
-\--- challenge \---
+\--- 도전 \---
 
 ## 과제: 모래 만들기
 
@@ -6,8 +6,8 @@
 
 ![스크린샷](images/craft-sand.png)
 
-The project already includes a `sand.gif` image, but you can create and upload your own if you prefer.
+이 프로젝트는 이미 `sand.gif` 이미지가 포함되어 있으나, 원하는 경우 이미지를 만들고 업로드할 수 있습니다.
 
-![스크린샷](images/craft-upload.png)
+![screenshot](images/craft-upload.png)
 
-\--- /challenge \---
+\--- /과제 \---
