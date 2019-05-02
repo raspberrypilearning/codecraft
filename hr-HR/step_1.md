@@ -8,13 +8,13 @@ U ovom projektu dizajnirat ćeš i kodirati poboljšanja za 2D verziju Minecraft
   <img src="images/craft-finished.png">
 </div>
 
-### Dodatne informacije za voditelje klubova
+### Dodatne informacije za voditelje kluba
 
-Ako trebate ispisati ovaj projekt, koristite [verziju koja je prilagođena pisaču](https://projects.raspberrypi.org/en/projects/codecraft/print).
+Ako želite ispisati ovaj projekt, molimo Vas da koristite [verziju koja je prilagođena za ispis](https://projects.raspberrypi.org/en/projects/codecraft/print).
 
 ## \--- collapse \---
 
-## title: Bilješke za voditelje Kluba
+## title: Bilješke za voditelja kluba
 
 ## Uvod:
 
@@ -22,17 +22,17 @@ U ovom projektu djeca će naučiti aspekte grafike i dizajna igara tako što će
 
 ## Online izvori
 
-**Ovaj projekt koristi Python 3.** Predlažemo korištenje [trinketa](https://trinket.io/) za online kodiranje u Pythonu. Ovaj projekt sadrži sljedeće Trinkete:
+**U ovom projektu koristi se Python 3.** Predlažemo korištenje [trinketa](https://trinket.io/) za online pisanje u Pythonu. Ovaj projekt sadrži sljedeće Trinkete:
 
 + ['CodeCraft' starter project -- rpf.io/codecraft-on](http://rpf.io/codecraft-on)
 
-Također postoji i trinket koji sadrži dovršen projekt:
+Također je uključen i trinket koji sadrži dovršeni projekt:
 
-+ [‘CodeCraft’ Finished -- trinket.io/python/ebc5b0148b](https://trinket.io/python/ebc5b0148b)
++ [‘CodeCraft’ dovršeni projekt -- trinket.io/python/ebc5b0148b](https://trinket.io/python/ebc5b0148b)
 
 ## Offline izvori
 
-Ako želite, ovaj projekt možete izraditi [offline](https://www.codeclubprojects.org/en-GB/resources/python-working-offline/). Materijalima projekta možete pristupiti klikom na poveznicu ‘Materijali projekta’. Poveznica sadrži odjeljak ‘Resursi’ u kojem se nalaze materijali koji će djeci biti potrebni za izradu projekta offline. Pobrinite se da svako dijete ima pristup kopiji ovih materijala. U odjeljku se nalaze sljedeće datoteke:
+Ako želite, ovaj projekt može bit [završen offline](https://www.codeclubprojects.org/en-GB/resources/python-working-offline/). Materijalima projekta možete pristupiti klikom na poveznicu 'Project Materials'. Poveznica sadrži odjeljak 'Project Resources' u kojem se nalaze materijali koji će djeci biti potrebni za izradu projekta offline. Pobrinite se da svako dijete ima pristup kopiji ovih materijala. U odjeljku se nalaze sljedeće datoteke:
 
 + codecraft/codecraft.py
 + codecraft/variables.py
@@ -46,7 +46,7 @@ Ako želite, ovaj projekt možete izraditi [offline](https://www.codeclubproject
 + codecraft/water.gif
 + codecraft/wood.gif
 
-Dovršenu verziju projekta možete pronaći i u odjeljku ‘Resursi za volontere’ koji sadrži i:
+Dovršenu verziju projekta možete pronaći i u odjeljku ‘Resursi za volontere’ koji sadrži:
 
 + codecraft-finished/codecraft.py
 + codecraft-finished/variables.py
@@ -67,11 +67,11 @@ Dovršenu verziju projekta možete pronaći i u odjeljku ‘Resursi za volontere
 + Stvaranje i uređivanje grafike;
 + Dizajn igre;
 + Uređivanje: 
-    + Varijabli;
-    + Lists;
+    + Varijable;
+    + Lista;
     + Rječnika.
 
-Ovaj projekt pokriva elemente sljedećih dijelova kurikuluma [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+Ovaj projekt obuhvaća elemente iz sljedećih dijelova [ Raspberry Pi Digital Making](http://rpf.io/curriculum) nastavnog plana i programa:
 
 + [Izrada jednostavnih 2D i 3D predmeta.](https://www.raspberrypi.org/curriculum/design/creator)
 
@@ -87,15 +87,15 @@ Ovaj projekt pokriva elemente sljedećih dijelova kurikuluma [Raspberry Pi Digit
 
 ## Često postavljana pitanja
 
-+ Children may need reminding that elements of a dictionary/list are separated by a comma. For example, when adding inventory items, graphics and crafting rules to the game.
++ Djecu će možda biti potrebno podsjetiti da se elementi unutar rječnika/liste odvajaju zarezom. Na primjer pri dodavanju resursa u inventar, grafike i pravila za izradu resursa u igru.
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: Projektni materijali
+## title: Materijali projekta
 
-## Projektni resursi
+## Resursi projekta
 
 + [.zip datoteka koja sadrži sve materijale projekta](resources/codecraft-resources.zip)
 + [Online Trinket koji sadrži sve resurse projekta "CodeCraft"](http://rpf.io/codecraft-on)
