@@ -16,7 +16,7 @@
     
     각 라인의 끝에는 마지막 요소를 제외하고 `,`가 추가되어야 합니다.
 
-+ 리소스에는 이미지도 필요합니다. The project already includes an image called `wood.gif`, which you should add to the `textures` dictionary.
++ 리소스에는 이미지도 필요합니다. 이 프로젝트에는 이미 `wood.gif`가 포함되어 있습니다. 이를 `textures` 딕셔너리에 추가해 봅시다.
     
     ![스크린샷](images/craft-wood-texture.png)
 
@@ -30,7 +30,7 @@
 
 + 테스트를 위해 프로젝트를 실행해 보세요. 새로운 '나무' 자원이 아래와 같이 추가된 것을 볼 수 있습니다.
     
-    ![스크린샷](images/craft-wood-test.png)
+    ![screenshot](images/craft-wood-test.png)
 
 + 그런데 나무가 없어요! 이 문제를 해결하기 위해서는 `main.py` 파일의 `generateRandomWorld()` 함수를 찾아 보세요. 
     
