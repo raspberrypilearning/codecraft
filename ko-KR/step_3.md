@@ -1,4 +1,4 @@
-\--- challenge \---
+\--- 도전 \---
 
 ## 과제: 자신만의 월드 구축하기
 
@@ -6,4 +6,4 @@
 
 ![스크린샷](images/craft-build-example.png)
 
-\--- /challenge \---
+\--- /도전 \---
