@@ -1,6 +1,6 @@
 --- challenge ---
 
-## Desafio: Criar vidro
+## Desafio: Criar vidro a partir da areia
 
 Você pode criar um novo recurso, o vidro, que será fabricado a partir da areia? Você pode seguir os passos acima para ajudá-lo.
 
