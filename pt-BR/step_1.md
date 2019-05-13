@@ -13,8 +13,9 @@ Neste projeto, você irá projetar e programar melhorias para uma versão 2D do 
 Se você precisar imprimir este projeto, use a [versão para impressão](https://projects.raspberrypi.org/pt-BR/projects/codecraft/print).
 
 --- collapse ---
-
-## título: Notas do líder do clube
+---
+title: Notas do líder do clube
+---
 
 ## Introdução:
 
@@ -92,8 +93,9 @@ Este projeto abrange elementos das seguintes vertentes do [Currículo de Criaç�
 --- /collapse ---
 
 --- collapse ---
-
-## Título: Materiais do projeto
+---
+title: Materiais do projeto
+---
 
 ## Recursos do projeto
 
