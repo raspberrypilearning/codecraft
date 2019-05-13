@@ -1,52 +1,51 @@
-## Eine neue Ressource aus Holz erstellen
+## Schaffe eine neue Ressource - Holz
 
-Lass uns eine neue Ressource aus Holz erstellen. Damit du dies tun kannst, musst du manche Variablen in deine `variables.py` Datei hinzufügen.
+Schaffen wir eine neue Ressource: Holz. Dazu musst du einige Variablen in der Datei `variables.py` hinzufügen.
 
-+ Als erstes musst du deiner neuen Ressource eine Zahl geben. Du kannst dann das Wort `WOOD` (Holz) in deinen Code eingeben statt der Zahl 4.
-
++ Zuerst musst du deiner neuen Ressource eine Nummer geben. Du kannst dann im Code das Wort `HOLZ` statt der Nummer 4 verwenden.
+    
     ![screenshot](images/craft-wood-const.png)
 
-+ Du solltest deine neue `WOOD` (Holz) Ressource zu deiner Liste an `resources` (Ressourcen) hinzufügen.
-
++ Du musst dann die neue `HOLZ`-Ressource zu deiner `ressourcen`- Liste hinzufügen.
+    
     ![screenshot](images/craft-wood-resources.png)
 
-+ Du solltest deiner Ressource einen Namen geben, der dann in der Inventarliste aufgeführt wird.
-
++ Du musst deiner Ressource auch einen Namen geben, der im Inventar angezeigt wird.
+    
     ![screenshot](images/craft-wood-name.png)
+    
+    Denke an das Komma `,` am Ende der obenstehenden Zeile.
 
-    Achte auf das Komma `,` am Ende der obigen Zeile!
-
-+ Deine Ressource benötigt auch ein Bild. Das Projekt beinhaltet bereits ein Bild namens `wood.png`, (Holz), das du zu deinem `textures` (Strukturen) Wörterbuch hinzufügen solltest.
-
++ Deine Ressource benötigt auch ein Bild. Das Projekt enthält bereits ein Bild mit dem Namen `wood.gif`, das zum `textures` - Dictionary hinzugefügt werden muss.
+    
     ![screenshot](images/craft-wood-texture.png)
 
-+ Füge die Anzahl deiner Ressourcen hinzu, welche sich von Beginn an in deinem `inventory` (Inventar) befinden sollten.
-
++ Füge die Anzahl Elemente von dieser Ressource hinzu, die zu Beginn in deinem `inventar` sein sollen.
+    
     ![screenshot](images/craft-wood-inventory.png)
 
-+ Abschließend musst du die Taste hinzufügen, die gedrückt werden soll, um das Holz in deiner Welt platzieren zu können. 
-
++ Und zum Schluss musst du noch die Taste angeben, die gedrückt werden muss, um Holz in deine Welt zu setzen.
+    
     ![screenshot](images/craft-wood-placekey.png)
 
-+ Lasse dein Projekt laufen, um es zu testen. Du wirst jetzt sehen, dass du eine neue 'wood' (Holz) Ressource in deinem Inventar hast.
-
++ Führe dein Projekt aus, um es zu testen. Du wirst sehen, dass du jetzt eine neue 'Holz' -Ressource in deinem Inventar hast.
+    
     ![screenshot](images/craft-wood-test.png)
 
-+ Es gibt kein Holz in deiner Welt! Um dieses Problem zu behen, klicke auf die `main.py` (Haupt-) Datei und finde die Funktion namens `generateRandomWorld()` (zufällige Welt generieren).
-
-    ![screenshot](images/craft-wood-random1.png)    
-
-    Dieser Code generiert eine Zufallszahl zwischen 0 und 10 und benutzt diese Zahl, um zu entscheiden, welche Ressource platziert werden soll:
-
++ In deiner Welt gibt es aber kein Holz! Um das zu beheben, klicke auf deine `main.py` Datei und suche die Funktion `erschaffeZuffallsWelt()`.
+    
+    ![screenshot](images/craft-wood-random1.png)
+    
+    Dieser Code generiert eine Zufallszahl zwischen 0 und 10 und bestimmt anhand der Nummer, welche Ressource platziert werden soll:
+    
     + 1 oder 2 = Wasser
     + 3 oder 4 = Gras
-    + alle anderen Zahlen = ERDE
+    + alles andere = ERDE
 
-+ Füge diesen Code hinzu, um das Holz zu deiner Welt hinzuzufügen, wannimmer die `randomNumber` (Zufallszahl) die Nummer 5 ist.
-
++ Füge diesen Code hinzu, um Holz auf deiner Welt zu platzieren, wenn die `zufallsZahl` gleich 5 ist.
+    
     ![screenshot](images/craft-wood-random2.png)
 
-+ Teste dein Projekt erneut. Dieses Mal solltest du sehen können, dass das Holz jetzt in deiner Welt erscheint.
-
++ Teste dein Projekt erneut. Diesmal solltest du etwas Holz in deiner Welt sehen.
+    
     ![screenshot](images/craft-wood-test2.png)
-
