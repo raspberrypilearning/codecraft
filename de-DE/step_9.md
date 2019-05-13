@@ -1,12 +1,11 @@
 --- challenge ---
-## Aufgabe: Glas aus Sand herstellen
-Kannst du eine neue Glas-Ressource herstellen, die aus Sand angefertigt wird? Du kannst die folgenden, o.g. Schritte benutzen, um dir hierbei zu helfen.
+
+## Herausforderung: Glas aus Sand herstellen
+
+Kannst du eine neue Ressource Glas erstellen, die aus Sand hergestellt wird? Du kannst die vorhergehenden Schritte als Hilfe verwenden.
 
 ![screenshot](images/craft-glass.png)
 
-Das Projekt enthält bereits ein `glass.png` (Glas) Bild, das du benutzen kannst oder du kannst, wenn du willst, dein eigenes Bild herstellen.
-
-
-
+Das Projekt enthält bereits ein `glass.gif`-Bild das du verwenden kannst, aber du kannst auch dein eigenes Bild verwenden, wenn dir das lieber ist.
 
 --- /challenge ---

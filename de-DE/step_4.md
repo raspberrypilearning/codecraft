@@ -1,16 +1,15 @@
 ## Du kannst dein Spiel persönlicher gestalten
 
-Lass uns ein paar Variable modifizieren, um zu ändern, wie dein Spiel funktioniert.
+Lass uns einige der Variablen ändern, um die Funktionsweise des Spiels zu ändern.
 
-+ Klicke auf die Datei `variables.py` (Variable), um manche der Variablen zu sehen, die geändert werden können.
-
++ Klicke auf die Datei `variables.py`, um einige der Variablen zu sehen, die geändert werden können.
+    
     ![screenshot](images/craft-variables.png)
 
-+ Ändere den Wert deiner `BACKGROUNDCOLOUR` (Hintergrundfarbe) Variable und klicke auf 'Run' (laufen lassen), um diese Veränderung in deinem Spiel sehen zu können.
-
++ Ändere den Wert der Variable `HINTERGRUNDFARBE` und klicke auf 'Run' (Ausführen), um die Änderung in deinem Spiel zu sehen.
+    
     ![screenshot](images/craft-background.png)
 
-+ Die Variable `MAXTILES` (maximale Anzahl) ist die Menge an jeder Ressource, die in deinem Inventar festgehalten werden kann. Du kannst diese Variable ändern, wenn du mehr (oder weniger) als 20 von jeder Ressource speichern möchtest.
-
++ Die Variable `MAXELEMENTE` ist die größte Anzahl jeder Ressource, die in deinem Inventar enthalten sein kann. Ändere diese Variable, wenn du mehr (oder weniger) als 20 Elemente jeder Ressource speichern möchtest.
+    
     ![screenshot](images/craft-maxtiles.png)
-
