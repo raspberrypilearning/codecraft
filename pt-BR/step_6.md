@@ -1,4 +1,4 @@
-## Criando um novo recurso: Madeira
+## Criando um novo recurso - Madeira
 
 Vamos criar um novo recurso, a madeira. Para fazer isso, você precisará adicionar algumas variáveis ​​em seu arquivo `variables.py`.
 
