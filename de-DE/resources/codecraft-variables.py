@@ -1,75 +1,75 @@
 #!/bin/python3
 
-#Game variables that can be changed!
+#Variablen des Spiels, die geändert werden können!
 
-#game background colour.
-BACKGROUNDCOLOUR = 'white'
+#Hintergrundfarbe des Spiels.
+HINTERGRUNDFARBE = 'white'
 
-#map variables.
-MAXTILES  = 20
-MAPWIDTH  = 10
-MAPHEIGHT = 10
+#Variablen für die Welt.
+MAXELEMENTE = 20
+WELTBREITE = 10
+WELTHOEHE = 10
 
-#variables representing the different resources.
-DIRT    = 0
-GRASS   = 1
-WATER   = 2
-BRICK   = 3
+#Diese Variablen stellen die verschiedenen Ressourcen dar.
+ERDE = 0
+GRAS = 1
+WASSER = 2
+ZIEGEL = 3
 
-#a list of all game resources.
-resources = [DIRT,GRASS,WATER,BRICK]
+#Eine Liste mit allen Ressourcen des Spiels.
+ressourcen = [ERDE, GRAS, WASSER, ZIEGEL]
 
-#the names of the resources.
-names = {
-  DIRT    : 'dirt',
-  GRASS   : 'grass',
-  WATER   : 'water',
-  BRICK   : 'brick'
+#Die namen der Ressourcen.
+namen = {
+ERDE : 'Erde',
+GRAS: 'Gras',
+WASSER : 'Wasser',
+ZIEGEL: 'Ziegel'
 }
 
-#a dictionary linking resources to images.
-textures = {
-  DIRT    : 'dirt.gif',
-  GRASS   : 'grass.gif',
-  WATER   : 'water.gif',
-  BRICK   : 'brick.gif'
+#Ein Dictionary (Wörterbuch), das Ressourcen mit Bildern verknüpft.
+texturen = {
+ERDE : 'dirt.gif',
+GRAS : 'grass.gif',
+WASSER : 'water.gif',
+ZIEGEL: 'brick.gif'
 }
 
-#the number of each resource the player has.
-inventory = {
-  DIRT    : 10,
-  GRASS   : 10,
-  WATER   : 10,
-  BRICK   : 0
+#Ressourcen des Spielers bei Spielstart.
+inventar = {
+ERDE: 10,
+GRAS: 10,
+WASSER: 10,
+ZIEGEL: 0,
 }
 
-#the player image.
-playerImg = 'player.gif'
+#Das Spielerbild.
+spielerBild = 'player.gif'
 
-#the player position.
-playerX = 0
-playerY = 0
+#Spielerposition.
+spielerX = 0
+spielerY = 0
 
-#rules to make new resources.
-crafting = {
-  BRICK    : { WATER : 1, DIRT : 2 }
+#Regeln zur Herstellung neuer Ressourcen.
+herstellenMit = {
+ZIEGEL : { WASSER : 1, ERDE : 2 }
 }
 
-#keys for placing resources.
-placekeys = {
-  DIRT  : '1',
-  GRASS : '2',
-  WATER : '3',
-  BRICK : '4'
+#Tasten zum Ablegen von Ressourcen.
+tastenZumAblegen = {
+ERDE: '1',
+GRAS: '2',
+WASSER: '3',
+ZIEGEL: '4'
 }
 
-#keys for crafting tiles.
-craftkeys = {
-  BRICK : 'r'
+#Tasten für die Herstellung von Elementen einer Ressource.
+tastenZumHerstellen = {
+ZIEGEL : 'z'
 }
 
-#game instructions that are displayed.
-instructions =  [
-  'Instructions:',
-  'Use WASD to move'
+#Spielanleitung zum Anzeigen.
+anleitungen = [
+'Anleitungen:'
+'Bewege dich mit den Tasten WASD'
 ]

@@ -5,321 +5,320 @@
 #############
 
 #---
-#Game functions
+#Funktionen des Spiels
 #---
 
-#moves the player left 1 tile.
-def moveLeft():
-  global playerX
-  if(playerX > 0):
-    playerX -= 1
-    drawPlayer()
+#bewege den Spieler um ein Feld nach links.
+def nachLinksBewegen():
+global spielerX
+if(spielerX > 0):
+spielerX -=1
+zeichneSpieler()
 
-#moves the player right 1 tile.
-def moveRight():
-  global playerX, MAPWIDTH
-  if(playerX < MAPWIDTH - 1):
-    playerX += 1
-    drawPlayer()
+#bewege den Spieler um ein Feld nach rechts.
+def nachRechtsBewegen():
+global spielerX, WELTBREITE
+if(spielerX < WELTBREITE - 1):
+spielerX += 1
+zeichneSpieler()
 
-#moves the player up 1 tile.
-def moveUp():
-  global playerY
-  if(playerY > 0):
-    playerY -= 1
-    drawPlayer()
+#bewege den Spieler um ein Feld nach oben.
+def nachObenBewegen():
+global spielerY
+if(spielerY > 0):
+spielerY -= 1
+zeichneSpieler()
 
-#moves the player down 1 tile.
-def moveDown():
-  global playerY, MAPHEIGHT
-  if(playerY < MAPHEIGHT - 1):
-    playerY += 1
-    drawPlayer()
+#bewege den Spieler um ein Feld nach unten.
+def nachUntenBewegen():
+global spielerY, WELTHOEHE
+if(spielerY < WELTHOEHE -1):
+spielerY += 1
+zeichneSpieler()
 
-#picks up the resource at the player's position.
-def pickUp():
-  global playerX, playerY
-  drawing = True
-  currentTile = world[playerX][playerY]
-  #if the user doesn't already have too many...
-  if inventory[currentTile] < MAXTILES:
-    #player now has 1 more of this resource
-    inventory[currentTile] += 1
-    #the player is now standing on dirt
-    world[playerX][playerY] = DIRT
-    #draw the new DIRT tile
-    drawResource(playerX, playerY)
-    #redraw the inventory with the extra resource.
-    drawInventory()
+#nimm die Ressource an der Spieler-Position auf.
+def nehmen():
+global spielerX, spielerY
+binAmZeichnen = True
+aktuellesFeld = welt[spielerX][spielerY]
+#sofern der Nutzer nicht bereits zu viele davon hat...
+if inventar[aktuellesFeld] < MAXELEMENTE:
+#der Spieler besitzt von dieser Ressource nun ein Element mehr
+inventar[aktuellesFeld] += 1
+#der Spieler steht nun auf Erde
+welt[spielerX][spielerY] = ERDE
+#neues ERDE Feld zeichnen
+zeichneRessource(spielerX, spielerY)
+#Inventar mit zusätzlicher Ressource neu zeichnen.
+zeichneInventar()
 
-#place a resource at the player's current position
-def place(resource):
-  print('placing: ', names[resource])
-  #only place if the player has some left...
-  if inventory[resource] > 0:
-    #find out the resourcee at the player's current position
-    currentTile = world[playerX][playerY]
-    #pick up the resource the player's standing on
-    #(if it's not DIRT)
-    if currentTile is not DIRT:
-      inventory[currentTile] += 1
-    #place the resource at the player's current position
-    world[playerX][playerY] = resource
-    #add the new resource to the inventory
-    inventory[resource] -= 1
-    #update the display (world and inventory)
-    drawResource(playerX, playerY)
-    drawInventory()
-    print('   Placing', names[resource], 'complete')
-  #...and if they have none left...
-  else:
-    print('   You have no', names[resource], 'left')
+# Platziere eine Ressource an der aktuellen Position des Spielers
+def platzieren(ressource):
+print('Platziere: ', namen[ressource])
+#aber nur wenn der Spieler ein paar übrig hat ...
+if inventar[ressource] > 0:
+# Prüfe welche Ressource sich aktuell an der Spielerposition befindet
+aktuellesFeld = welt[spielerX][spielerY]
+#hebt die Ressource an der Spieler-Position auf
+#(sofern ist keine ERDE ist)
+if aktuellesFeld is not ERDE:
+inventar[aktuellesFeld] += 1
+# Platziere die Ressource an der aktuellen Position des Spielers
+welt[spielerX][spielerY] = ressource
+# Aktualisiere das Inventar
+inventar[ressource] -= 1
+# aktualisiere die Anzeigen (Welt und Inventar)
+zeichneRessource(spielerX, spielerY)
+zeichneInventar()
+print(' Platzieren von ', namen[ressource], ' abgeschlossen')
+# ... und falls keine Ressource vorhanden ist ...
+else:
+print(' Du hast kein/keinen ', namen[ressource], ' übrig')
 
-#craft a new resource
-def craft(resource):
-  print('Crafting: ', names[resource])
-  #if the resource can be crafted...
-  if resource in crafting:
-    #keeps track of whether we have the resources
-    #to craft this item
-    canBeMade = True
-    #for each item needed to craft the resource
-    for i in crafting[resource]:
-      #...if we don't have enough...
-      if crafting[resource][i] > inventory[i]:
-      #...we can't craft it!
-        canBeMade = False
-        break
-    #if we can craft it (we have all needed resources)
-    if canBeMade == True:
-      #take each item from the inventory
-      for i in crafting[resource]:
-        inventory[i] -= crafting[resource][i]
-      #add the crafted item to the inventory
-      inventory[resource] += 1
-      print('   Crafting', names[resource], 'complete')
-    #...otherwise the resource can't be crafted...
-    else:
-      print('   Can\'t craft', names[resource])
-    #update the displayed inventory
-    drawInventory()
+# Eine neue Ressource herstellen
+def herstellen(ressource):
+print('Bin beim Herstellen von ', namen[ressource])
+#sofern die Ressource hergestellt werden kann...
+if ressource in herstellenMit:
+#prüft ob die notwendigen Ressourcen vorhanden sind
+#um die neue Ressource herzustellen
+kannHergestelltWerden = True
+#für jedes Element, das benötigt wird um die Ressource herzustellen
+for i in herstellenMit[ressource]:
+#...falls wir nicht genügend davon haben...
+if herstellenMit[ressource][i] > inventar[i]:
+#...dann können wir die neue Ressource nicht herstellen!
+kannHergestelltWerden = False
+break
+#aber wenn wir sie herstellen können (wir haben alle dafür nötigen Ressourcen)
+if kannHergestelltWerden == True:
+#entferne die betreffenden Elemente aus dem Inventar
+for i in herstellenMit[ressource]:
+inventar[i] -= herstellenMit[ressource][i]
+#und füge die neu hergestellte Ressource dem Inventar hinzu
+inventar[ressource] += 1
+print(' Herstellen von ', namen[ressource], ' abgeschlossen')
+#...wenn die neue Ressource aber nicht hergestellt werden kann...
+else:
+print(' Die Ressource ', namen[ressource], ' kann nicht hergestellt werden.')
+#aktualisiere das angezeigte Inventar
+zeichneInventar()
 
-#creates a function for placing each resource
-def makeplace(resource):
-  return lambda: place(resource)
+#definiere eine Funktion um die Ressource abzulegen
+def machPlatzieren(ressource):
+return lambda: platzieren(ressource)
 
-#attaches a 'placing' function to each key press
-def bindPlacingKeys():
-  for k in placekeys:
-    screen.onkey(makeplace(k), placekeys[k])
+#weist einem Tastendruck eine 'platziere'-Funktion zu
+def verknuepfeTastenZumAblegen():
+for k in tastenZumAblegen:
+fenster.onkey(machPlatzieren(k), tastenZumAblegen[k])
 
-#creates a function for crafting each resource
-def makecraft(resource):
-  return lambda: craft(resource)
+#definiert eine Funktion um eine Ressource herzustellen
+def stelleHer(ressource):
+return lambda: herstellen(ressource)
 
-#attaches a 'crafting' function to each key press
-def bindCraftingKeys():
-  for k in craftkeys:
-    screen.onkey(makecraft(k), craftkeys[k])
+#weist einem Tastendruck eine 'stelle her'-Funktion zu
+def verknuepfeTastenZumHerstellen():
+for k in tastenZumHerstellen:
+fenster.onkey(stelleHer(k), tastenZumHerstellen[k])
 
-#draws a resource at the position (y,x)
-def drawResource(y, x):
-  #this variable stops other stuff being drawn
-  global drawing
-  #only draw if nothing else is being drawn
-  if drawing == False:
-    #something is now being drawn
-    drawing = True
-    #draw the resource at that position in the tilemap, using the correct image
-    rendererT.goto( (y * TILESIZE) + 20, height - (x * TILESIZE) - 20 )
-    #draw tile with correct texture
-    texture = textures[world[y][x]]
-    rendererT.shape(texture)
-    rendererT.stamp()
-    screen.update()
-    #nothing is now being drawn
-    drawing = False
+# Zeichne eine Ressource an der Position (y, x)
+def zeichneRessource(y, x):
+#diese Variable verhindert, dass mehrere Objekte gleichzeitig gezeichnet werden
+global binAmZeichnen
+#nur dann zeichnen, wenn nichts anderes gezeichnet wird
+if binAmZeichnen == False:
+#dann zeichne ich jetzt
+binAmZeichnen = True
+#zeichne die Ressource an dieser Position auf dem Spielfeld und verwende dazu das richtige Bild
+grafikT.goto( (y * FELDGROESSE) + 20, hoehe - (x * FELDGROESSE) - 20 )
+#Zeichne das Feld mit der richtigen Textur
+textur = texturen[welt[y][x]]
+grafikT.shape(textur)
+grafikT.stamp()
+fenster.update()
+#ich bin jetzt mit dem Zeichnen fertig
+binAmZeichnen = False
 
-#draws the player on the world
-def drawPlayer():
-  playerT.goto( (playerX * TILESIZE) + 20, height - (playerY * TILESIZE) -20 )
+#zeichne den Spieler in der Welt
+def zeichneSpieler():
+spielerT.goto( (spielerX * FELDGROESSE) + 20, hoehe - (spielerY * FELDGROESSE) -20 )
 
-#draws the world map
-def drawWorld():
-  #loop through each row
-  for row in range(MAPHEIGHT):
-    #loop through each column in the row
-    for column in range(MAPWIDTH):
-      #draw the tile at the current position
-      drawResource(column, row)
+#zeichne das Spielfeld
+def zeichneWelt():
+#bearbeite jede Zeile
+for zeile in range(WELTHOEHE):
+#bearbeite jede Spalte in der Zeile
+for spalte in range(WELTBREITE):
+#zeichne das Feld an der aktuellen Position
+zeichneRessource(spalte, zeile)
 
-#draws the inventory to the screen
-def drawInventory():
-  #this variable stops other stuff being drawn
-  global drawing
-  #only draw if nothing else is being drawn
-  if drawing == False:
-    #something is now being drawn
-    drawing = True
-    #use a rectangle to cover the current inventory
-    rendererT.color(BACKGROUNDCOLOUR)
-    rendererT.goto(0,0)
-    rendererT.begin_fill()
-    #rendererT.setheading(0)
-    for i in range(2):
-      rendererT.forward(inventory_height - 60)
-      rendererT.right(90)
-      rendererT.forward(width)
-      rendererT.right(90)
-    rendererT.end_fill()
-    rendererT.color('')
-    #display the 'place' and 'craft' text
-    for i in range(1,num_rows+1):
-      rendererT.goto(20, (height - (MAPHEIGHT * TILESIZE)) - 20 - (i * 100))
-      rendererT.write("place")
-      rendererT.goto(20, (height - (MAPHEIGHT * TILESIZE)) - 40 - (i * 100))
-      rendererT.write("craft")
-    #set the inventory position
-    xPosition = 70
-    yPostition = height - (MAPHEIGHT * TILESIZE) - 80
-    itemNum = 0
-    for i, item in enumerate(resources):
-      #add the image
-      rendererT.goto(xPosition, yPostition)
-      rendererT.shape(textures[item])
-      rendererT.stamp()
-      #add the number in the inventory
-      rendererT.goto(xPosition, yPostition - TILESIZE)
-      rendererT.write(inventory[item])
-      #add key to place
-      rendererT.goto(xPosition, yPostition - TILESIZE - 20)
-      rendererT.write(placekeys[item])
-      #add key to craft
-      if crafting.get(item) != None:
-        rendererT.goto(xPosition, yPostition - TILESIZE - 40)
-        rendererT.write(craftkeys[item])     
-      #move along to place the next inventory item
-      xPosition += 50
-      itemNum += 1
-      #drop down to the next row every 10 items
-      if itemNum % INVWIDTH == 0:
-        xPosition = 70
-        itemNum = 0
-        yPostition -= TILESIZE + 80
-    drawing = False
+#Zeige das Inventar auf dem Bildschirm an
+def zeichneInventar():
+#diese Variable verhindert, dass mehrere Objekte gleichzeitig gezeichnet werden
+global binAmZeichnen
+#nur dann zeichnen, wenn nichts anderes gezeichnet wird
+if binAmZeichnen == False:
+#dann zeichne ich jetzt
+binAmZeichnen = True
+#verwende ein Rechteck, um das aktuelle Inventar zu verdecken
+grafikT.color(HINTERGRUNDFARBE)
+grafikT.goto(0,0)
+grafikT.begin_fill()
+#grafikT.setheading(0)
+for i in range(2):
+grafikT.forward(inventar_hoehe - 60)
+grafikT.right(90)
+grafikT.forward(breite)
+grafikT.right(90)
+grafikT.end_fill()
+grafikT.color('')
+#zeige den Text 'ablegen' und 'herstellen' an
+for i in range(1,anzahl_zeilen+1):
+grafikT.goto(20, (hoehe - (WELTHOEHE * FELDGROESSE)) - 20 - (i * 100))
+grafikT.write("Ablegen")
+grafikT.goto(20, (hoehe - (WELTHOEHE * FELDGROESSE)) - 40 - (i * 100))
+grafikT.write("Herstellen")
+#Position für das Inventar berechnen
+xPosition = 70
+yPosition = hoehe - (WELTHOEHE * FELDGROESSE) - 80
+elementNummer = 0
+for i, element in enumerate(ressourcen):
+#füge das Bild hinzu
+grafikT.goto(xPosition, yPosition)
+grafikT.shape(texturen[element])
+grafikT.stamp()
+# Füge die Anzahl im Inventar hinzu
+grafikT.goto(xPosition, yPosition - FELDGROESSE)
+grafikT.write(inventar[element])
+#füge die Taste zum Ablegen hinzu
+grafikT.goto(xPosition, yPosition - FELDGROESSE - 20)
+grafikT.write(tastenZumAblegen[element])
+#füge die Taste zum Herstellen hinzu
+if herstellenMit.get(element) != None:
+grafikT.goto(xPosition, yPosition - FELDGROESSE - 40)
+grafikT.write(tastenZumHerstellen[element]) 
+#gehe weiter um das nächste Element vom Inventar abzulegen
+xPosition += 50
+elementNummer += 1
+#gehe nach jeweils 10 Elementen eine Zeile nach unten
+if elementNummer % INVENTARBREITE == 0:
+xPosition = 70
+elementNummer = 0
+yPosition -= FELDGROESSE + 80
+binAmZeichnen = False
 
-#generate the instructions, including crafting rules
-def generateInstructions():
-  instructions.append('Crafting rules:')
-  #for each resource that can be crafted...
-  for rule in crafting:
-    #create the crafting rule text
-    craftrule = names[rule] + ' = '
-    for resource, number in crafting[rule].items():
-      craftrule += str(number) + ' ' + names[resource] + ' '
-    #add the crafting rule to the instructions
-    instructions.append(craftrule)
-  #display the instructions
-  yPos = height - 20
-  for item in instructions:
-    rendererT.goto( MAPWIDTH*TILESIZE + 40, yPos)
-    rendererT.write(item)
-    yPos-=20
+#generiere die Anleitungen, einschließlich der Herstellungsregeln
+def generiereAnleitungen():
+anleitungen.append('Regeln für die Herstellung:')
+#für jede Ressource, die hergestellt werden kann ...
+for regel in herstellenMit:
+#definiere den Text für die Herstellungsregel
+herstellungsRegel = namen[regel] + ' = '
+for ressource, nummer in herstellenMit[regel].items():
+herstellungsRegel += str(nummer) + ' ' + namen[ressource] + ' '
+#füge die Herstellungsregel den Anweisungen hinzu
+anleitungen.append(herstellungsRegel)
+#Anzeigen der Anleitungen
+yPos = hoehe - 20
+for element in anleitungen:
+grafikT.goto( WELTBREITE*FELDGROESSE + 40, yPos)
+grafikT.write(element)
+yPos-=20
 
-#generate a random world
-def generateRandomWorld():
-  #loop through each row
-  for row in range(MAPHEIGHT):
-    #loop through each column in that row
-    for column in range(MAPWIDTH):
-      #pick a random number between 0 and 10
-      randomNumber = random.randint(0,10)
-      #WATER if the random number is a 1 or a 2
-      if randomNumber in [1,2]:
-        tile = WATER
-      #GRASS if the random number is a 3 or a 4
-      elif randomNumber in [3,4]:
-        tile = GRASS
-      #WOOD if it's a 5
-      elif randomNumber == 5:
-        tile = WOOD
-      #SAND if it's a 6
-      elif randomNumber == 6:
-        tile = SAND
-      #otherwise it's DIRT
-      else:
-        tile = DIRT
-      #set the position in the tilemap to the randomly chosen tile
-      world[column][row] = tile
+#generiere eine zufällige Welt
+def generiereZufallsWelt():
+#bearbeite jede Zeile
+for zeile in range(WELTHOEHE):
+#bearbeite jede Spalte in der Zeile
+for spalte in range(WELTBREITE):
+#wähle eine Zufallszahl zwischen 0 und 10
+zufallsZahl = random.randint(0,10)
+#WASSER, wenn die Zufallszahl eine 1 oder 2 ist
+if zufallsZahl in [1,2]:
+feld = WASSER
+#GRAS, wenn die Zufallszahl eine 3 oder 4 ist
+elif zufallsZahl in [3,4]:
+feld = GRAS
+#HOLZ, wenn es eine 5 ist
+elif zufallsZahl == 5:
+feld = HOLZ
+#SAND, wenn es eine 6 ist
+elif zufallsZahl == 6:
+feld = SAND
+#ansonsten ist es ERDE
+else:
+feld = ERDE
+#aktualisiere die Position in der Welt mit der zufällig ausgewählten Ressource
+welt[spalte][zeile] = feld
 
 #---
-#Code starts running here
+# ab hier wird das eigentliche Programm ausgeführt
 #---
 
-#import the modules and variables needed
+#importiere die benötigten Module und Variablen
 import turtle
 import random
 from variables import *
 from math import ceil
 
-TILESIZE = 20
-#the number of inventory resources per row
-INVWIDTH = 8
-drawing = False
+FELDGROESSE = 20
+#die Anzahl der Inventarressourcen pro Zeile
+INVENTARBREITE = 8
+binAmZeichnen = False
 
-#create a new 'screen' object
-screen = turtle.Screen()
-#calculate the width and height
-width = (TILESIZE * MAPWIDTH) + max(200,INVWIDTH * 50)
-num_rows = int(ceil((len(resources) / INVWIDTH)))
-inventory_height =  num_rows * 120 + 40
-height = (TILESIZE * MAPHEIGHT) + inventory_height
+#schaffe ein neues 'fenster'-Objekt
+fenster = turtle.Screen()
+#berechne die Breite und Höhe
+breite = (FELDGROESSE * WELTBREITE) + max (200, INVENTARBREITE * 50)
+anzahl_zeilen = int(ceil((len(ressourcen) / INVENTARBREITE)))
+inventar_hoehe = anzahl_zeilen * 120 + 40
+hoehe = (FELDGROESSE * WELTHOEHE) + inventar_hoehe
 
-screen.setup(width, height)
-screen.setworldcoordinates(0,0,width,height)
-screen.bgcolor(BACKGROUNDCOLOUR)
-screen.listen()
+fenster.setup(breite, hoehe)
+fenster.setworldcoordinates(0,0,breite,hoehe)
+fenster.bgcolor(HINTERGRUNDFARBE)
+fenster.listen()
 
-#register the player image  
-screen.register_shape(playerImg)
-#register each of the resource images
-for texture in textures.values():
-  screen.register_shape(texture)
-  
-#create a new player object
-playerT = turtle.Turtle()
-playerT.hideturtle()
-playerT.shape(playerImg)
-playerT.penup()
-playerT.speed(0)
+#registriere das Bild des Spielers 
+fenster.register_shape(spielerBild)
+#registriere jedes Bild der Ressourcen
+for textur in texturen.values():
+fenster.register_shape(textur)
 
-#create another turtle to do the graphics drawing
-rendererT = turtle.Turtle()
-rendererT.hideturtle()
-rendererT.penup()
-rendererT.speed(0)
-rendererT.setheading(90)
+#definiere ein neues Objekt 'Spieler'
+spielerT = turtle.Turtle()
+spielerT.hideturtle()
+spielerT.shape(spielerBild)
+spielerT.penup()
+spielerT.speed(0)
 
-#create a world of random resources.
-world = [ [DIRT for w in range(MAPHEIGHT)] for h in range(MAPWIDTH) ]
+#definiere eine weitere Schildkröte, um die Grafik zu zeichnen
+grafikT = turtle.Turtle()
+grafikT.hideturtle()
+grafikT.penup()
+grafikT.speed(0)
+grafikT.setheading(90)
 
-#map the keys for moving and picking up to the correct functions.
-screen.onkey(moveUp, 'w')
-screen.onkey(moveDown, 's')
-screen.onkey(moveLeft, 'a')
-screen.onkey(moveRight, 'd')
-screen.onkey(pickUp, 'space')
+#erschaffe eine Welt mit zufälligen Ressourcen.
+welt = [ [ERDE for w in range(WELTHOEHE)] for h in range(WELTBREITE) ]
 
-#set up the keys for placing and crafting each resource
-bindPlacingKeys()
-bindCraftingKeys()
+#weise den Tasten zum Bewegen und zum Nehmen die richtigen Funktionen zu.
+fenster.onkey(nachObenBewegen, 'w')
+fenster.onkey(nachUntenBewegen, 's')
+fenster.onkey(nachLinksBewegen, 'a')
+fenster.onkey(nachRechtsBewegen, 'd')
+fenster.onkey(nehmen, 'space')
 
-#these functions are defined above
-generateRandomWorld()
-drawWorld()
-drawInventory()
-generateInstructions()
-drawPlayer()
-playerT.showturtle()
+#definiere die Tasten zum Ablegen und Herstellen der Ressourcen
+verknuepfeTastenZumAblegen()
+verknuepfeTastenZumHerstellen()
 
+#diese Funktionen sind weiter oben definiert
+generiereZufallsWelt()
+zeichneWelt()
+zeichneInventar()
+generiereAnleitungen()
+zeichneSpieler()
+spielerT.showturtle()
 
