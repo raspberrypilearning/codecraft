@@ -1,75 +1,75 @@
 #!/bin/python3
 
-#¡Variables del juego que se puede cambiar!
+#Μεταβλητές παιχνιδιού που μπορούν να αλλάξουν!
 
-#color del fondo del juego.
-COLORDELFONDO = 'white'
+#χρώμα φόντου παιχνιδιού.
+BACKGROUNDCOLOUR = 'white'
 
-#variables del mapa.
-MAXCASILLAS  = 20
-ANCHURAMAPA  = 10
-ALTURAMAPA = 10
+#μεταβλητές χάρτη.
+MAXTILES = 20
+MAPWIDTH = 10
+MAPHEIGHT = 10
 
-#variables que representan los distintos recursos.
-TIERRA    = 0
-CESPED   = 1
-AGUA   = 2
-LADRILLO   = 3
+#μεταβλητές που απεικονίζουν τους διάφορους πόρους.
+DIRT = 0
+GRASS = 1
+WATER = 2
+BRICK = 3
 
-#una lista de todos recursos del juego.
-recursos = [TIERRA,CESPED,AGUA,LADRILLO]
+#μία λίστα με όλους τους πόρους του παιχνιδιού.
+resources = [DIRT,GRASS,WATER,BRICK]
 
-#los nombres de los recursos.
-nombres = {
-  TIERRA    : 'tierra',
-  CESPED   : 'césped',
-  AGUA   : 'agua',
-  LADRILLO   : 'ladrillo'
+# τα ονόματα των πόρων.
+names = {
+  DIRT : 'λάσπη',
+  GRASS : 'γρασίδι',
+  WATER : 'νερό',
+  BRICK : 'τούβλο'
 }
 
-#un diccionario que vincula recursos a imágenes.
-texturas = {
-  TIERRA    : 'dirt.gif',
-  CESPED   : 'grass.gif',
-  AGUA   : 'water.gif',
-  LADRILLO   : 'brick.gif'
+#ένα dictionary που αντιστοιχεί τους πόρους στις εικόνες.
+textures = {
+  DIRT : 'dirt.gif',
+  GRASS : 'grass.gif',
+  WATER : 'water.gif',
+  BRICK : 'brick.gif'
 }
 
-#la cantidad de cada recurso que tiene el jugador.
-inventario = {
-  TIERRA    : 10,
-  CESPED   : 10,
-  AGUA   : 10,
-  LADRILLO   : 0
+#το πλήθος κάθε πόρου που έχει ο παίκτης.
+inventory = {
+  DIRT : 10,
+  GRASS : 10,
+  WATER : 10,
+  BRICK : 0
 }
 
-#la imagen del jugador.
-imgJugador = 'player.gif'
+#η εικόνα του παίκτη.
+playerImg = 'player.gif'
 
-#la posición del jugador.
-juagdorX = 0
-jugadorY = 0
+# η θέση του παίκτη.
+playerX = 0
+playerY = 0
 
-#las reglas para crear nuevos recursos.
+#κανόνες για να δημιουργήσεις νέους πόρους.
 crafting = {
-  LADRILLO    : { AGUA : 1, TIERRA : 2 }
+  BRICK : { WATER : 1, DIRT : 2 }
 }
 
-#las teclas para poner recursos.
-teclasParaColocar = {
-  TIERRA  : '1',
-  CESPED : '2',
-  AGUA : '3',
-  LADRILLO : '4'
+#πλήκτρα για την τοποθέτηση πόρων.
+placekeys = {
+  DIRT : '1',
+  GRASS : '2',
+  WATER : '3',
+  BRICK : '4'
 }
 
-#las teclas para crear fichas.
-teclasParaCrear = {
-  LADRILLO : 'r'
+#πλήκτρα για τη δημιουργία πόρων.
+craftkeys = {
+  BRICK : 'r'
 }
 
-#instrucciones del juego que se muestran.
-instrucciones =  [
-  'Instrucciones:',
-  'Usa las teclas WASD para moverte'
+#οδηγίες παιχνιδιού που εμφανίζονται.
+instructions = [
+  'Οδηγίες:',
+  'Χρησιμοποίησε τα πλήκτρα για να μετακινηθείς'
 ]

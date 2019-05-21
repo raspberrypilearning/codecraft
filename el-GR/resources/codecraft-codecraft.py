@@ -5,315 +5,313 @@
 #############
 
 #---
-#Funciones del juego
+#Λειτουργίες παιχνιδιού
 #---
 
-#mueve el jugador 1 ficha a la izquierda.
+#μετακινεί τον παίκτη ένα τετράγωνο αριστερά.
 def moveLeft():
-  global jugadorX
-  if (jugadorX> 0):
-    jugadorX -= 1
+  global playerX
+  if(playerX > 0):
+    playerX -= 1
     drawPlayer()
 
-#mueve el jugador 1 ficha a la derecha.
+#μετακινεί τον παίκτη ένα τετράγωνο δεξιά.
 def moveRight():
-  global jugadorX, ANCHURAMAPA
-  if(jugadorX < ANCHURAMAPA - 1):
-    jugadorX += 1
+  global playerX, MAPWIDTH
+  if(playerX < MAPWIDTH - 1):
+    playerX += 1
     drawPlayer()
 
-#mueve el jugador 1 ficha hacia arriba.
+#μετακινεί τον παίκτη ένα τετράγωνο πάνω.
 def moveUp():
-  global jugadorY
-  if (jugadorY> 0):
-    jugadorY -= 1
+  global playerY
+  if(playerY > 0):
+    playerY -= 1
     drawPlayer()
 
-#mueve el jugador 1 ficha hacia abajo.
+#μετακινεί τον παίκτη ένα τετράγωνο κάτω.
 def moveDown():
-  global jugadorY, ALTURAMAPA
-  if(jugadorY < ALTURAMAPA - 1):
-    jugadorY += 1
+  global playerY, MAPHEIGHT
+  if(playerY < MAPHEIGHT - 1):
+    playerY += 1
     drawPlayer()
 
-#recoge el recurso en la posición del jugador.
+#μαζεύει τον πόρο στη θέση που βρίσκεται ο παίκτης.
 def pickUp():
-  global jugadorX, jugadorY
-  dibujando = True
-  casillaActual = mundo[jugadorX][jugadorY]
-  #si el usuario no tiene todavía demasiado...
-  if inventario[casillaActual] < MAXCASILLAS:
-    #ahora el jugador tiene 1 más de este recurso
-    inventario[casillaActual] += 1
-    #el jugador ahora está de pie en la tierra
-    mundo[jugadorX][jugadorY] = TIERRA
-    #dibuja la nueva ficha de TIERRA
-    drawResource(jugadorX, jugadorY)
-    #dibuja de nuevo el inventario con el nuevo recurso.
+  global playerX, playerY
+  drawing = True
+  currentTile = world[playerX][playerY]
+  #αν ο χρήστης δεν έχει ήδη πολλά...
+  if inventory[currentTile] < MAXTILES:
+    #τώρα ο παίκτης έχει ένα ακόμη από αυτούς τους πόρους
+    inventory[currentTile] += 1
+    #ο παίκτης στέκεται σε λάσπη
+    world[playerX][playerY] = DIRT
+    #κάνε το εικονίδιο λάσπη
+    drawResource(playerX, playerY)
+    #ξαναζωγράφισε το απόθεμα με τον επιπλέον πόρο.
     drawInventory()
 
-#pon un recurso en la posición actual del jugador
-def place(recurso):
-  print('posición: ', nombres[recurso])
-  #solo ponlo si al jugador todavía le quedan recursos...
-  if inventario[recurso] > 0:
-    #identifica el recurso en la posición actual del jugador
-    casillaActual = mundo[jugadorX][jugadorY]
-    #recoge el recurso en el que el jugador está de pie
-    #(si no es TIERRA)
-    if casillaActual is not TIERRA:
-      inventario[casillaActual] += 1
-    #pon el recurso en la posición actual del jugador
-    mundo[jugadorX][jugadorY] = recurso
-    #añade un nuevo recurso al inventario
-    inventario[recurso] -= 1
-    #actualiza lo que se muestra (el mundo y el inventario)
-    drawResource(jugadorX, jugadorY)
+#τοποθετεί ένα πόρο στη θέση που είναι ο παίκτης
+def place(resource):
+  print('τοποθέτηση: ', names[resource])
+  #τοποθετεί μόνο αν έχουν μείνει στον παίκτη...
+  if inventory[resource] > 0:
+    #βρίσκει τον πόρο που είναι στη θέση του παίκτη
+    currentTile = world[playerX][playerY]
+    #παίρνει τον πόρο στον οποίο στέκεται ο παίκτης
+    #(αν δεν είναι λάσπη)
+    if currentTile is not DIRT:
+      inventory[currentTile] += 1
+    #τοποθετεί τον πόρο στη θέση του παίκτη
+    world[playerX][playerY] = resource
+    #προσθέτει τον νέο πόρο στο απόθεμα
+    inventory[resource] -= 1
+    #ενημερώνει την οθόνη (τον κόσμο και το απόθεμα)
+    drawResource(playerX, playerY)
     drawInventory()
-    print('   Posición', nombres[recurso], 'terminada')
-  #...y si no le queda nada...
+    print(' Η τοποθέτηση', names[resource], 'ολοκληρώθηκε')
+  #...και αν δεν έχουν μείνει...
   else:
-    print('   No te queda nada de', nombres[recurso])
+    print(' Δεν έχει μείνει καθόλου', names[resource], '')
 
-#crea un nuevo recurso
-def craft(recurso):
-  print('Creación: ', nombres[recurso])
-  #si se puede crear el recurso...
-  if recurso in crafting:
-    #mantiene un registro de si tenemos los recursos
-    #para crear este objeto
-    puedeHacerse = True
-    #para cada artículo que se necesita para crear el recurso
-    for i in crafting[recurso]:
-      #...si no tenemos bastante...
-      if crafting[recurso][i] > inventario[i]:
-      #...¡no podemos crearlo!
-        puedeHacerse = True
+#Δημιουργεί έναν νέο πόρο
+def craft(resource):
+  print('Δημιουργία: ', names[resource])
+  #αν ο πόρος μπορεί να δημιουργηθεί...
+  if resource in crafting:
+    #ελέγχει αν έχουμε τους πόρους
+    #για να φτιάξουμε αυτό το αντικείμενο
+    canBeMade = True
+    #για κάθε αντικείμενο που χρειαζόμαστε για να φτιάξουμε τον πόρο
+    for i in crafting[resource]:
+      #...αν δεν έχουμε αρκετά...
+      if crafting[resource][i] > inventory[i]:
+      #...δεν μπορούμε να το φτιάξουμε!
+        canBeMade = False
         break
-    #si podemos crearlo (tenemos todos los recursos que se necesita)
-    if puedeHacerse == True:
-      #toma cada artículo del inventario
-      for i in crafting[recurso]:
-        inventario[i] -= crafting[recurso][i]
-      #añade el artículo creado al inventario
-      inventario[recurso] += 1
-      print('   Creación', nombres[recurso], 'terminada')
-    #...si no, no se puede crear el recurso...
+    #αν μπορούμε να το φτιάξουμε (έχουμε όλους τους πόρους που χρειαζόμαστε)
+    if canBeMade == True:
+      #παίρνει τα αντικείμενα από το απόθεμα
+      for i in crafting[resource]:
+        inventory[i] -= crafting[resource][i]
+      #προσθέτει το δημιουργημένο αντικείμενο στο απόθεμα
+      inventory[resource] += 1
+      print(' Δημιουργία', names[resource], 'ολοκληρώθηκε')
+    #...ειδάλλως ο πόρος δεν μπορεί να δημιουργηθεί...
     else:
-      print('   No se puede crear', nombres[recurso])
-    #actualiza el inventario mostrado
+      print(' Δεν μπορεί να δημιουργηθεί', names[resource])
+    #ενημερώνει το απόθεμα στην οθόνη
     drawInventory()
 
-#crea una función para poner cada recurso
-def makeplace(recurso):
-  return lambda: place(recurso)
+#δημιουργεί μία συνάρτηση για να τοποθετούμε κάθε πόρο
+def makeplace(resource):
+  return lambda: place(resource)
 
-#da la función de 'poner' a cada tecla que pulsemos
+#αντιστοιχεί μία συνάρτηση "τοποθέτησης" σε κάθε πλήκτρο
 def bindPlacingKeys():
-  for k in teclasParaColocar:
-    pantalla.onkey(makeplace(k), teclasParaColocar[k])
+  for k in placekeys:
+    screen.onkey(makeplace(k), placekeys[k])
 
-#crear una función para crear cada recurso
-def makecraft(recurso):
-  return lambda: craft(recurso)
+#δημιουργεί μία συνάρτηση για τη δημιουργία του κάθε πόρου
+def makecraft(resource):
+  return lambda: craft(resource)
 
-#da la función de 'crear' a cada tecla que pulsemos
+#αντιστοιχεί μία συνάρτηση "δημιουργίας" σε κάθε πλήκτρο
 def bindCraftingKeys():
-  for k in teclasParaCrear:
-    pantalla.onkey(makecraft(k), teclasParaCrear[k])
+  for k in craftkeys:
+    screen.onkey(makecraft(k), craftkeys[k])
 
-#dibuja un recurso en la posición (y,x)
+#ζωγραφίζει έναν πόρο στη θέση (y,x)
 def drawResource(y, x):
-  #esta variable evita que se dibujen otras cosas
-  global dibujando
-  #sólo dibuja si nada más se está dibujando
-  if dibujando == False:
-    #ahora se está dibujando algo
-    dibujando = True
-    #dibuja el recurso en esta posición en el mapa cuadriculado, usando la imagen correcta
-    renderizadorT.goto( (y * TAMANYOCASILLA) + 20, altura - (x * TAMANYOCASILLA) - 20 )
-    #dibuja una ficha con la textura correcta
-    textura = texturas[mundo[y][x]]
-    renderizadorT.shape(textura)
-    renderizadorT.stamp()
-    pantalla.update()
-    #ahora nada se está dibujando
-    dibujando = False
+  #αυτή η μεταβλητή εμποδίζει να ζωγραφίζεται ο χάρτης παράλληλα από άλλα σημεία του κώδικα
+  global drawing
+  #ζωγραφίζει μόνο αν δεν ζωγραφίζεται τίποτε άλλο
+  if drawing == False:
+    #τώρα κάτι ζωγραφίζεται
+    drawing = True
+    #ζωγραφίζει τον πόρο σε εκείνο το σημείο, χρησιμοποιώντας τη σωστή εικόνα
+    rendererT.goto( (y * TILESIZE) + 20, height - (x * TILESIZE) - 20 )
+    #ζωγραφίζει με τη σωστή υφή
+    texture = textures[world[y][x]]
+    rendererT.shape(texture)
+    rendererT.stamp()
+    screen.update()
+    #τίποτε δεν ζωγραφίζεται πλέον
+    drawing = False
 
-#dibuja al jugador encima del mundo
+#ζωγραφίζει τον παίκτη στον κόσμο
 def drawPlayer():
-  jugadorT.goto( (playerX * TAMANYOCASILLA) + 20, altura - (playerY * TAMANYOCASILLA) -20 )
+  playerT.goto( (playerX * TILESIZE) + 20, height - (playerY * TILESIZE) -20 )
 
-#dibuja el mapa del mundo
+#ζωγραφίζει τον χάρτη
 def drawWorld():
-  #da una vuelta a través de cada fila
-  for fila in range(ALTURAMAPA):
-    #da una vuelta a través de cada columna en esa fila
-    for columna in range(ANCHURAMAPA):
-      #dibuja la ficha en la posición actual
-      drawResource(columna, fila)
+  #επαναλαμβάνοντας τη σχεδίαση για κάθε γραμμή
+  for row in range(MAPHEIGHT):
+    #επαναλαμβάνοντας για κάθε στήλη
+    for column in range(MAPWIDTH):
+      #ζωγραφίζει το τετραγωνάκι στη συγκεκριμένη θέση
+      drawResource(column, row)
 
-#dibuja el inventario en la pantalla
+#ζωγραφίζει το απόθεμα στην οθόνη
 def drawInventory():
-  #esta variable evita que se dibujen otras cosas
-  global dibujando
-  #sólo dibuja si nada más se está dibujando
-  if dibujando == False:
-    #ahora se está dibujando algo
-    dibujando = True
-    #usa un rectángulo para cubrir el inventario actual
-    renderizadorT.color(COLORDELFONDO)
-    renderizadorT.goto(0,0)
-    renderizadorT.begin_fill()
-    #renderizadorT.setheading(0)
+  #αυτή η μεταβλητή εμποδίζει να ζωγραφίζεται ο χάρτης παράλληλα από άλλα σημεία του κώδικα
+  global drawing
+  #ζωγραφίζει μόνο αν δεν ζωγραφίζεται τίποτε άλλο
+  if drawing == False:
+    #τώρα κάτι ζωγραφίζεται
+    drawing = True
+    #χρησιμοποιεί ένα τετράπλευρο για να καλύψει το απόθεμα αυτή τη στιγμή
+    rendererT.color(BACKGROUNDCOLOUR)
+    rendererT.goto(0,0)
+    rendererT.begin_fill()
+    #rendererT.setheading(0)
     for i in range(2):
-      rendererizadorT.forward(altura_inventario - 60)
-      renderizadorT.right(90)
-      renderizadorT.forward(anchura)
-      renderizadorT.right(90)
-    renderizadorT.end_fill()
-    renderizadorT.color('')
-    #muestra el texto 'poner' y 'crear'
-    for i in range(1,num_filas+1):
-      renderizadorT.goto(20, (altura - (ALTURAMAPA * TAMANYOCASILLA)) - 20 - (i * 100))
-      renderizadorT.write("poner")
-      renderizadorT.goto(20, (altura - (ALTURAMAPA* TAMANYOCASILLA)) - 40 - (i * 100))
-      rendererizadorT.write("crear")
-    #determina la posición del inventario
-    posicionX = 70
-    posicionY = altura - (ALTURAMAPA * TAMANYOCASILLA) - 80
-    numObjeto = 0
-    for i, item in enumerate(recursos):
-      #añade la imagen
-      renderizadorT.goto(posicionX, posicionY)
-      renderizadorT.shape(texturas[objeto])
-      renderizadorT.stamp()
-      #añade el número en el inventario
-      renderizadorT.goto(posicionX, posicionY - TAMANYOCASILLA)
-      renderizadorT.write(inventario[objeto])
-      #añade la tecla para poner
-      renderizadorT.goto(posicionX, posicionY - TAMANYOCASILLA - 20)
-      renderizadorT.write(teclasParaColocar[objeto])
-      #añade la tecla para crear
-      if crafting.get(objeto) != None:
-        renderizadorT.goto(posicionX, posicionY - TAMANYOCASILLA - 40)
-        renderizadorT.write(teclasParaCrear[objeto])     
-      #avanza para poner el próximo artículo del inventario
-      posicionX += 50
-      numObjeto += 1
-      #baja a la próxima fila cada 10 artículos
-      if numObjeto % ANCHURAINVENTARIO == 0:
-        posicionX = 70
-        numObjeto = 0
-        posicionY -= TAMANYOCASILLA + 80
-    dibujando = False
+      rendererT.forward(inventory_height - 60)
+      rendererT.right(90)
+      rendererT.forward(width)
+      rendererT.right(90)
+    rendererT.end_fill()
+    rendererT.color('')
+    #εμφανίζει το κείμενο "τοποθέτηση" και "δημιουργία"
+    for i in range(1,num_rows+1):
+      rendererT.goto(20, (height - (MAPHEIGHT * TILESIZE)) - 20 - (i * 100))
+      rendererT.write("τοποθέτηση")
+      rendererT.goto(20, (height - (MAPHEIGHT * TILESIZE)) - 40 - (i * 100))
+      rendererT.write("δημιουργία")
+    #ορίζει τη θέση του αποθέματος
+    xPosition = 80
+    yPostition = height - (MAPHEIGHT * TILESIZE) - 80
+    itemNum = 0
+    for i, item in enumerate(resources):
+      #προσθέτει την εικόνα
+      rendererT.goto(xPosition, yPostition)
+      rendererT.shape(textures[item])
+      rendererT.stamp()
+      #προσθέτει το νούμερο στο απόθεμα
+      rendererT.goto(xPosition, yPostition - TILESIZE)
+      rendererT.write(inventory[item])
+      #προσθέτει το πλήκτρο τοποθέτησης
+      rendererT.goto(xPosition, yPostition - TILESIZE - 20)
+      rendererT.write(placekeys[item])
+      #προσθέτει το πλήκτρο δημιουργίας
+      if crafting.get(item) != None:
+        rendererT.goto(xPosition, yPostition - TILESIZE - 40)
+        rendererT.write(craftkeys[item]) 
+      #μεταφέρεται στο επόμενο αντικείμενο του αποθέματος
+      xPosition += 50
+      itemNum += 1
+      #κάθε δέκα αντικείμενα, πηγαίνει στην επόμενη γραμμή
+      if itemNum % INVWIDTH == 0:
+        xPosition = 70
+        itemNum = 0
+        yPostition -= TILESIZE + 80
+    drawing = False
 
-#genera las instrucciones, incluyendo las reglas para crear
+#παράγει τις οδηγίες, όπως και τους κανόνες δημιουργίας
 def generateInstructions():
-  instrucciones.append('Reglas para crear:')
-  #para cada recurso que se puede crear...
-  for regla in crafting:
-    #crear el texto de reglas para crear
-    reglaParaCrear = nombres[regla] + ' = '
-    for recurso, numero in crafting[regla].items():
-      reglaParaCrear += str(numero) + ' ' + nombres[recurso] + ' '
-    #añade las reglas para crear a las instrucciones
-    instrucciones.append(reglaParaCrear)
-  #muestra las instrucciones
-  posY = altura - 20
-  for objeto in instrucciones:
-    renderizadorT.goto( ANCHURAMAPA*TAMANYOCASILLA + 40, posY)
-    renderizadorT.write(objeto)
-    posY-=20
+  instructions.append('Κανόνες δημιουργίας:')
+  #για κάθε πόρο που μπορεί να δημιουργηθεί...
+  for rule in crafting:
+    #δημιουργεί το κείμενο του κανόνα δημιουργίας
+    craftrule = names[rule] + ' = '
+    for resource, number in crafting[rule].items():
+      craftrule += str(number) + ' ' + names[resource] + ' '
+    #προσθέτει τον κανόνα δημιουργίας στις οδηγίες
+    instructions.append(craftrule)
+  #εμφανίζει τις οδηγίες
+  yPos = height - 20
+  for item in instructions:
+    rendererT.goto( MAPWIDTH*TILESIZE + 40, yPos)
+    rendererT.write(item)
+    yPos-=20
 
-#genera un mundo aleatorio
+#δημιουργεί ένα τυχαίο κόσμο
 def generateRandomWorld():
-  #da una vuelta a través de cada fila
-  for fila in range(ALTURAMAPA):
-    #da una vuelta a través de cada columna en esa fila
-    for columna in range(ANCHURAMAPA):
-      #elige un número aleatorio entre 0 y 10
-      numeroAleatorio = random.randint(0,10)
-      #AGUA si el número aleatorio es 1 o 2
-      if numeroAleatorio in [1,2]:
-        casilla = AGUA
-      #CÉSPED si el número aleatorio es 3 o 4
-      elif numeroAleatorio in [3,4]:
-        casilla = CESPED
-      #si no es TIERRA
+  #επαναλαμβάνοντας τη σχεδίαση για κάθε γραμμή
+  for row in range(MAPHEIGHT):
+    #επαναλαμβάνοντας για κάθε στήλη
+    for column in range(MAPWIDTH):
+      #επιλέγει έναν τυχαίο αριθμό μεταξύ 0 και 10
+      randomNumber = random.randint(0,10)
+      #WATER (νερό) αν ο τυχαίος αριθμός είναι 1 ή 2
+      if randomNumber in [1,2]:
+        tile = WATER
+      #GRASS (γρασίδι) αν ο τυχαίος αριθμός είναι 3 ή 4
+      elif randomNumber in [3,4]:
+        tile = GRASS
+      #ειδάλλως είναι DIRT (λάσπη)
       else:
-        casilla = TIERRA
-      #determina la posición en el mapa cuadriculado a la ficha aleatoria
-      mundo[columna][fila] = casilla
+        tile = DIRT
+      #τοποθετεί στη θέση του χάρτη το τυχαίο εικονίδιο
+      world[column][row] = tile
 
 #---
-#Aquí empieza ejecutándose el código
+#Ο κώδικας αρχίζει να τρέχει εδώ
 #---
 
-#importa los módulos y las variables que se necesitan
+#εισάγει τα modules και τις μεταβλητές που χρειάζονται
 import turtle
 import random
 from variables import *
 from math import ceil
 
-TAMANYOCASILLA = 20
-#el número de recursos de inventario por fila
-ANCHURAINVENTARIO = 8
-dibujando = False
+TILESIZE = 20
+# ο αριθμός των πόρων αποθέματος ανά σειρά
+INVWIDTH = 8
+drawing = False
 
-#crea un objeto de 'pantalla' nuevo
-pantalla = turtle.Screen()
-#calcula el ancho y la altura
-anchura = (TAMANYOCASILLA * ANCHURAMAPA) + max(200,ANCHURAINVENTARIO * 50)
-num_filas = int(ceil((len(recursos) / ANCHURAINVENTARIO)))
-altura_inventario =  num_filas * 120 + 40
-altura = (TAMANYOCASILLA * ALTURAMAPA) + altura_inventario
+#δημιουργεί ένα νέο αντικείμενο "οθόνης"
+screen = turtle.Screen()
+#υπολογίζει το πλάτος και το ύψος
+width = (TILESIZE * MAPWIDTH) + max(200,INVWIDTH * 50)
+num_rows = int(ceil((len(resources) / INVWIDTH)))
+inventory_height = num_rows * 120 + 40
+height = (TILESIZE * MAPHEIGHT) + inventory_height
 
-pantalla.setup(anchura, altura)
-pantalla.setworldcoordinates(0,0,anchura,altura)
-pantalla.bgcolor(COLORDELFONDO)
-pantalla.listen()
+screen.setup(width, height)
+screen.setworldcoordinates(0,0,width,height)
+screen.bgcolor(BACKGROUNDCOLOUR)
+screen.listen()
 
-#registra la imagen del jugador  
-pantalla.register_shape(imgJugador)
-#registra cada imagen de recurso
-for textura in texturas.values():
-  pantalla.register_shape(textura)
-  
-#crea un objeto de jugador nuevo
-jugadorT = turtle.Turtle()
-jugadorT.hideturtle()
-jugadorT.shape(imgJugador)
-jugadorT.penup()
-jugadorT.speed(0)
+#καταγράφει την εικόνα του παίκτη 
+screen.register_shape(playerImg)
+#καταγράφει τις εικόνες των πόρων
+for texture in textures.values():
+  screen.register_shape(texture)
 
-#crea otra tortuga para hacer el dibujo de gráficos
-renderizadorT = turtle.Turtle()
-renderizadorT.hideturtle()
-renderizadorT.penup()
-renderizadorT.speed(0)
-renderizadorT.setheading(90)
+#δημιουργεί ένα νέο αντικείμενο παίκτη
+playerT = turtle.Turtle()
+playerT.hideturtle()
+playerT.shape(playerImg)
+playerT.penup()
+playerT.speed(0)
 
-#crea un mundo de recursos aleatorios.
-mundo = [ [TIERRA for w in range(ALTURAMAPA)] for h in range(ANCHURAMAPA) ]
+#δημιουργεί άλλο αντικείμενο της κλάσης turtle για να σχεδιάσει τα γραφικά
+rendererT = turtle.Turtle()
+rendererT.hideturtle()
+rendererT.penup()
+rendererT.speed(0)
+rendererT.setheading(90)
 
-#vincula las teclas para mover y recoger a las funciones correctas.
-pantalla.onkey(moveUp, 'w')
-pantalla.onkey(moveDown, 's')
-pantalla.onkey(moveLeft, 'a')
-pantalla.onkey(moveRight, 'd')
-pantalla.onkey(pickUp, 'espacio')
+#δημιουργεί έναν κόσμο τυχαίων πόρων.
+world = [ [DIRT for w in range(MAPHEIGHT)] for h in range(MAPWIDTH) ]
 
-#establece las teclas para poner y crear cada recurso
+#αντιστοιχεί τα πλήκτρα για μετακίνηση και λήψη πόρου με τις σωστές συναρτήσεις.
+screen.onkey(moveUp, 'w')
+screen.onkey(moveDown, 's')
+screen.onkey(moveLeft, 'a')
+screen.onkey(moveRight, 'd')
+screen.onkey(pickUp, 'space')
+
+#ρυθμίζει τα πλήκτρα για την τοποθέτηση και την δημιουργία κάθε πόρου
 bindPlacingKeys()
 bindCraftingKeys()
 
-#estas funciones se definen arriba
+#αυτές οι συναρτήσεις ορίζονται παραπάνω
 generateRandomWorld()
 drawWorld()
 drawInventory()
 generateInstructions()
 drawPlayer()
-jugadorT.showturtle()
-
-
+playerT.showturtle()
