@@ -3,7 +3,7 @@
 Σε αυτό το έργο, θα σχεδιάσεις και θα γράψεις κώδικα για βελτιώσεις σε μια δισδιάστατη εκδοχή του Minecraft.
 
 <div class="trinket">
-  <iframe src="https://trinket.io/embed/python/ebc5b0148b?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
+  <iframe src="https://trinket.io/embed/python/9678f16b78?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
   </iframe>
   <img src="images/craft-finished.png">
 </div>
@@ -29,7 +29,7 @@ title: Σημειώσεις συντονιστή ομάδας
 
 Υπάρχει επίσης ένα trinket που περιέχει το ολοκληρωμένο έργο:
 
-+ ['CodeCraft' ολοκληρώθηκε - trinket.io/python/ebc5b0148b](https://trinket.io/python/ebc5b0148b)
++ ['CodeCraft' ολοκληρώθηκε - trinket.io/python/ebc5b0148b](https://trinket.io/python/9678f16b78)
 
 ## Offline Πόροι
 
@@ -105,6 +105,6 @@ title: Υλικό έργου
 ## Πόροι συντονιστή ομάδας
 
 + [Αρχείο .zip που περιέχει όλους τους πόρους του έργου](solutions/codecraft-solution.zip)
-+ [Online ολοκληρωμένο έργο Trinket](https://trinket.io/python/ebc5b0148b)
++ [Online ολοκληρωμένο έργο Trinket](https://trinket.io/python/9678f16b78)
 
 --- /collapse ---
