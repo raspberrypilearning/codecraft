@@ -3,7 +3,7 @@
 In diesem Projekt wirst du Verbesserungen für eine 2D Version von Minecraft konzipieren und programmieren.
 
 <div class="trinket">
-  <iframe src="https://trinket.io/embed/python/ebc5b0148b?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
+  <iframe src="https://trinket.io/embed/python/69c378bd37?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
   </iframe>
   <img src="images/craft-finished.png">
 </div>
@@ -25,7 +25,7 @@ In diesem Projekt lernen Kinder Aspekte des Grafik- und des Spieldesigns, indem 
 
 **Dieses Projekt verwendet Python 3.** Wir empfehlen die Verwendung von [trinket](https://trinket.io/), um Python-Programme online zu schreiben. Dieses Projekt enthält folgende Trinkets:
 
-+ ['CodeCraft' Startpunkt -- rpf.io/codecraft-on](http://rpf.io/codecraft-on)
++ ['CodeCraft' Startpunkt -- rpf.io/codecraft-on](https://trinket.io/python/496e9e12ee)
 
 Außerdem ist ein trinket mit dem vollständigen Projekt verfügbar:
 
@@ -88,7 +88,7 @@ Dieses Projekt umfasst Elemente aus den folgenden Zweigen des [Raspberry Pi Digi
 
 ## Häufig Gestellte Fragen
 
-+ Kinder müssen möglicherweise daran erinnert werden, dass Elemente eines Wörterbuchs/einer Liste durch ein Komma getrennt werden. Zum Beispiel, wenn Inventarelemente, Grafiken und Herstellungsregeln zum Spiel hinzugefügt werden.
++ Kinder müssen möglicherweise daran erinnert werden, dass Elemente eines Wörterbuchs / einer Liste durch ein Komma getrennt werden. Zum Beispiel, wenn Inventarelemente, Grafiken und Herstellungsregeln zum Spiel hinzugefügt werden.
 
 --- /collapse ---
 
@@ -105,6 +105,6 @@ title: Projektmaterial
 ## Ressourcen für Clubleiter
 
 + [.zip-Datei mit allen fertig gestellten Projektressourcen](solutions/codecraft-solution.zip)
-+ [Vollständiges Trinket-Projekt (online)](https://trinket.io/python/ebc5b0148b)
++ [Vollständiges Trinket-Projekt (online)](https://trinket.io/python/69c378bd37)
 
 --- /collapse ---

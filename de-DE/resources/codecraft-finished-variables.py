@@ -1,99 +1,99 @@
 #!/bin/python3
 
-#Variablen des Spiels, die geändert werden können!
+#Game variables that can be changed!
 
-#Hintergrundfarbe des Spiels.
-HINTERGRUNDFARBE = 'lightblue'
+#game background colour.
+BACKGROUNDCOLOUR = 'lightblue'
 
-#Variablen für die Welt.
-MAXELEMENTE = 40
-WELTBREITE = 20
-WELTHOEHE = 15
+#map variables.
+MAXTILES  = 40
+MAPWIDTH  = 20
+MAPHEIGHT = 15
 
-#Diese Variablen stellen die verschiedenen Ressourcen dar.
-ERDE = 0
-GRAS = 1
-WASSER = 2
-ZIEGEL = 3
-HOLZ = 4
-SAND = 5
-BRETT = 6
-GLAS = 7
+#variables representing the different resources.
+DIRT    = 0
+GRASS   = 1
+WATER   = 2
+BRICK   = 3
+WOOD    = 4
+SAND    = 5
+PLANK   = 6
+GLASS   = 7
 
-#Eine Liste mit allen Ressourcen des Spiels.
-ressourcen = [ERDE,GRAS,WASSER,ZIEGEL,HOLZ,SAND,BRETT,GLAS]
+#a list of all game resources.
+resources = [DIRT,GRASS,WATER,BRICK,WOOD,SAND,PLANK,GLASS]
 
-#Die namen der Ressourcen.
-namen = {
-ERDE : 'Erde',
-GRAS : 'Gras',
-WASSER : 'Wasser',
-ZIEGEL : 'Ziegel',
-HOLZ : 'Holz',
-SAND : 'Sand',
-BRETT : 'Brett',
-GLAS : 'Glas'
+#the names of the resources.
+names = {
+  DIRT    : 'dirt',
+  GRASS   : 'grass',
+  WATER   : 'water',
+  BRICK   : 'brick',
+  WOOD    : 'wood',
+  SAND    : 'sand',
+  PLANK   : 'plank',
+  GLASS   : 'glass'
 }
 
-#Ein Dictionary (Wörterbuch) verknüpft Ressourcen und Bilder.
-texturen = {
-ERDE : 'dirt.gif',
-GRAS : 'grass.gif',
-WASSER : 'water.gif',
-ZIEGEL: 'brick.gif',
-HOLZ : 'wood.gif',
-SAND : 'sand.gif',
-BRETT : 'plank.gif',
-GLAS : 'glass.gif'
+#a dictionary linking resources to images.
+textures = {
+  DIRT    : 'dirt.gif',
+  GRASS   : 'grass.gif',
+  WATER   : 'water.gif',
+  BRICK   : 'brick.gif',
+  WOOD    : 'wood.gif',
+  SAND    : 'sand.gif',
+  PLANK   : 'plank.gif',
+  GLASS   : 'glass.gif'
 }
 
-#Ressourcen des Spielers bei Spielstart.
-inventar = {
-ERDE : 10,
-GRAS : 10,
-WASSER : 10,
-ZIEGEL : 0,
-HOLZ : 5,
-SAND : 5,
-BRETT : 0,
-GLAS : 0
+#the number of each resource the player has.
+inventory = {
+  DIRT    : 10,
+  GRASS   : 10,
+  WATER   : 10,
+  BRICK   : 0,
+  WOOD    : 5,
+  SAND    : 5,
+  PLANK   : 0,
+  GLASS   : 0
 }
 
-#Das Spielerbild.
-spielerBild = 'player.gif'
+#the player image.
+playerImg = 'player.gif'
 
-#Spielerposition.
-spielerX = 0
-spielerY = 0
+#the player position.
+playerX = 0
+playerY = 0
 
-#Tasten zum Ablegen von Ressourcen.
-tastenZumAblegen = {
-ERDE : '1',
-GRAS : '2',
-WASSER : '3',
-ZIEGEL : '4',
-HOLZ : '5',
-SAND : '6',
-BRETT : '7',
-GLAS : '8'
+#keys for placing resources.
+placekeys = {
+  DIRT  : '1',
+  GRASS : '2',
+  WATER : '3',
+  BRICK : '4',
+  WOOD  : '5',
+  SAND  : '6',
+  PLANK : '7',
+  GLASS : '8'
 }
 
-#Regeln zur Herstellung neuer Ressourcen.
-herstellenMit = {
-ZIEGEL : { WASSER : 1, ERDE : 2 },
-BRETT : { HOLZ : 3 },
-GLAS : { SAND : 3 }
+#rules to make new resources.
+crafting = {
+  BRICK    : { WATER : 1, DIRT : 2 },
+  PLANK    : { WOOD : 3 },
+  GLASS    : { SAND : 3 }
 }
 
-#Tasten für die Herstellung von Elementen einer Ressource.
-tastenZumHerstellen = {
-ZIEGEL : 'z',
-BRETT : 'b',
-GLAS : 'g'
+#keys for crafting tiles.
+craftkeys = {
+  BRICK : 'r',
+  PLANK : 'u',
+  GLASS : 'i'
 }
 
-#Spielanleitung zum Anzeigen.
-anleitungen = [
-'Anleitungen:',
-'Bewege dich mit den Tasten WASD'
+#game instructions that are displayed.
+instructions =  [
+  'Instructions:',
+  'Use WASD to move'
 ]

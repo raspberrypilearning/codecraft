@@ -1,6 +1,6 @@
 --- challenge ---
 
-## Herausforderung: Baue deine Welt
+## Herausforderung: Bau dir deine Welt
 
 Kannst du ein Haus mit einem Garten und einem Pool bauen? Was kannst du sonst noch herstellen?
 
