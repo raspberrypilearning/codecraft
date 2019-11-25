@@ -1,6 +1,6 @@
 \--- challenge \---
 
-## Challenge: verander de grootte van je wereld
+## Uitdaging: verander de grootte van je wereld
 
 Kun je de waarden van de `MAPBREEDTE` en `MAPHOOGTE` variabelen aanpassen om de grootte van de wereld te veranderen?
 
