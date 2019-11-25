@@ -1,30 +1,30 @@
 ---
-hero_image: images / codecraft.png
+hero_image: images/codecraft.png
 duration: 2
 listed: true
 copyedit: false
 title: CodeCraft
 description: Ontwerp- en codeverbeteringen in een 2D-versie van Minecraft.
-version: 3
-last_tested: 2018/11/22
+version: 3.1.0
+last_tested: 2018-11-22
 steps:
   - 
     title: Inleiding
   - 
     title: Speel het spel
   - 
-    title: 'Challenge: bouw je wereld'
+    title: 'Uitdaging: bouw je wereld'
   - 
     title: Je spel aanpassen
   - 
-    title: 'Challenge: verander de grootte van je wereld'
+    title: 'Uitdaging: verander de grootte van je wereld'
   - 
     title: Maak een nieuwe bron voor hout
   - 
-    title: 'Challenge: maak zand'
+    title: 'Uitdaging: maak zand'
   - 
     title: Maak planken van hout
   - 
-    title: 'Challenge: maak glas van zand'
+    title: 'Uitdaging: maak glas van zand'
   - 
-    title: 'Challenge: meer bronnen maken'
+    title: 'Uitdaging: meer bronnen maken'
