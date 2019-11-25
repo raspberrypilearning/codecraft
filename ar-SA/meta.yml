@@ -1,12 +1,12 @@
 ---
-hero_image: images/codecraft.png
+hero_image: images/banner.png
 duration: 2
 listed: true
 copyedit: false
 title: صناعة الأكواد
 description: صمِّم تحسينات لنسخة ثنائية الأبعاد من لعبة ماين كرافت واكتب تعليماتها البرمجية.
 version: 3.1.0
-last_tested: 2018-22-01
+last_tested: 2018-11-22
 steps:
   - 
     title: المقدمة
