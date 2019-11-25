@@ -10,7 +10,7 @@ In dit project ontwerp en codeer je verbeteringen aan een 2D-versie van Minecraf
 
 ### Aanvullende informatie voor clubleiders
 
-Als je dit project wilt afdrukken, gebruik dan de [Printvriendelijke versie](https://projects.raspberrypi.org/en/projects/codecraft/print).
+Als je dit project wilt afdrukken, gebruik dan de [printervriendelijke versie](https://projects.raspberrypi.org/en/projects/codecraft/print).
 
 ## \--- collapse \---
 
@@ -24,7 +24,7 @@ In dit project leren kinderen aspecten van grafische vormgeving en gamedesign do
 
 **Dit project maakt gebruik van Python 3.** We raden aan om [trinket](https://trinket.io/) te gebruiken om online Python te schrijven. Dit project bevat de volgende Trinkets:
 
-+ ['CodeCraft' starter project -- rpf.io/codecraft-on](http://rpf.io/codecraft-on)
++ ['CodeCraft' startproject -- rpf.io/codecraft-on](http://rpf.io/codecraft-on)
 
 Er is ook een trinket met het voltooide project:
 
@@ -34,10 +34,10 @@ Er is ook een trinket met het voltooide project:
 
 Dit project kan [offline worden voltooid](https://www.codeclubprojects.org/en-GB/resources/python-working-offline/) als dit de voorkeur heeft. Je kunt toegang krijgen tot de projectbronnen door op de koppeling 'Projectmaterialen' voor dit project te klikken. Deze link bevat een 'Projectbronnen'-sectie die bronnen bevat om dit project offline te voltooien. Zorg ervoor dat elk kind toegang heeft tot een kopie van deze bronnen. Deze sectie bevat de volgende bestanden:
 
-+ codecraft / codecraft.py
++ codecraft/codecraft.py
 + codecraft / variables.py
 + codecraft/brick.gif
-+ codecraft / dirt.gif
++ codecraft/dirt.gif
 + codecraft/glass.gif
 + codecraft/grass.gif
 + codecraft/plank.gif
@@ -48,7 +48,7 @@ Dit project kan [offline worden voltooid](https://www.codeclubprojects.org/en-GB
 
 Je kunt ook een voltooide versie van dit project vinden in de sectie 'Vrijwilligersbronnen', die het volgende bevat:
 
-+ codecraft afgewerkte / codecraft.py
++ codecraft-finished/codecraft.py
 + codecraft-finished/variables.py
 + codecraft-finished/brick.gif
 + codecraft-finished/dirt.gif
@@ -60,7 +60,7 @@ Je kunt ook een voltooide versie van dit project vinden in de sectie 'Vrijwillig
 + codecraft-finished/water.gif
 + codecraft-finished/wood.gif
 
-(All of the resources above are also downloadable as `.zip` files.)
+(Alle bovenstaande bronnen kunnen ook worden gedownload als `.zip` bestanden.)
 
 ## Leerdoelen
 
@@ -95,12 +95,12 @@ Dit project behandelt elementen uit de volgende onderdelen van het [Raspberry Pi
 
 ## title: Projectmaterialen
 
-## Project bronnen
+## Projectbronnen
 
 + [.zip-bestand met alle projectbronnen](resources/codecraft-resources.zip)
 + [Online Trinket met alle 'CodeCraft' projectbronnen](http://rpf.io/codecraft-on)
 
-## Clubleider bronnen
+## Clubleiderbronnen
 
 + [.zip-bestand met alle voltooide projectresources](solutions/codecraft-solution.zip)
 + [Online voltooid Trinket-project](https://trinket.io/python/ebc5b0148b)
