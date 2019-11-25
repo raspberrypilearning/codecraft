@@ -4,6 +4,6 @@
 
 هل يمكنك تصميم منزل بحديقة وحمام سباحة؟ ما التصميمات الأخرى التي يمكنك إنشاؤها؟
 
-![لقطة شاشة](images/craft-build-example.png)
+![screenshot](images/craft-build-example.png)
 
 \--- /challenge \---
