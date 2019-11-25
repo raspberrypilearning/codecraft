@@ -8,9 +8,9 @@
   <img src="images/craft-finished.png">
 </div>
 
-### Дополнительная информация для руководителей клуба
+### Дополнительная информация для преподавателей
 
-Если вам нужно распечатать этот проект, пожалуйста, используйте [Версию для печати](https://projects.raspberrypi.org/en/projects/codecraft/print).
+Если ты хочешь распечатать этот проект, то воспользуйся [версией для печати](https://projects.raspberrypi.org/en/projects/codecraft/print).
 
 ## \--- collapse \---
 
@@ -24,11 +24,11 @@
 
 **В этом проекте используется Python 3.** Мы рекомендуем использовать [Trinket](https://trinket.io/), чтобы программировать на Python онлайн. Эта часть состоит из следующих Trinket-ов:
 
-+ ['CodeCraft' starter project -- rpf.io/codecraft-on](http://rpf.io/codecraft-on)
++ [Стартовый проект «CodeCraft» — rpf.io/codecraft-on](http://rpf.io/codecraft-on)
 
 Есть также trinket, содержащий завершенный проект:
 
-+ [‘CodeCraft’ Finished -- trinket.io/python/ebc5b0148b](https://trinket.io/python/ebc5b0148b)
++ [«CodeCraft» завершен--trinket.io/python/ebc5b0148b](https://trinket.io/python/ebc5b0148b)
 
 ## Оффлайн Ресурсы
 
@@ -71,11 +71,11 @@
     + Списки;
     + Словари.
 
-Этот проект охватывает элементы из следующих разделов [Цифровой Программы Обучения Raspberry Pi](http://rpf.io/curriculum):
+Этот проект основан на следующих модулях [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
 
 + [Проектирование базовых 2D и 3D-объектов.](https://www.raspberrypi.org/curriculum/design/creator)
 
-+ [Комбинирование программных конструкций для решения задачи.](https://www.raspberrypi.org/curriculum/programming/builder)
++ [Использование программного кода для решения проблемы.](https://www.raspberrypi.org/curriculum/programming/builder)
 
 ## Испытания
 
@@ -87,7 +87,7 @@
 
 ## Часто Задаваемые Вопросы
 
-+ Children may need reminding that elements of a dictionary/list are separated by a comma. For example, when adding inventory items, graphics and crafting rules to the game.
++ Возможно, детям понадобится напомнить, что элементы словаря / списка разделяются запятыми. Например, при добавлении в игру предметов инвентаря, графики и правил строительства.
 
 \--- /collapse \---
 
