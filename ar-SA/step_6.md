@@ -4,37 +4,37 @@
 
 + أولًا، تحتاج إلى تعيين رقم إلى المورد الجديد. وسيمكنك عندئذٍ استخدام الكلمة `WOOD` في التعليمات البرمجية بدلًا من الرقم 4.
     
-    ![لقطة الشاشة](images/craft-wood-const.png)
+    ![screenshot](images/craft-wood-const.png)
 
 + يجب أن تضيف مورد `WOOD` الجديد إلى القائمة `resources`.
     
-    ![لقطة الشاشة](images/craft-wood-resources.png)
+    ![screenshot](images/craft-wood-resources.png)
 
 + يجب أن تعيِّن اسمًا إلى هذا المورد أيضًا، بحيث يظهر في المخزون.
     
-    ![لقطة الشاشة](images/craft-wood-name.png)
+    ![screenshot](images/craft-wood-name.png)
     
     لاحظ وجود الفاصلة `,` في نهاية الأسطر أعلاه.
 
 + سيحتاج هذا المورد إلى صورة أيضًا. يحتوى المشروع بالفعل على صورة تُسمى `wood.gif` يجب أن تضيفها إلى القاموس `textures`.
     
-    ![لقطة الشاشة](images/craft-wood-texture.png)
+    ![screenshot](images/craft-wood-texture.png)
 
 + أضف عدد مربعات المورد التي يجب أن تكون موجودة في `inventory` عندما تبدأ.
     
-    ![لقطة الشاشة](images/craft-wood-inventory.png)
+    ![screenshot](images/craft-wood-inventory.png)
 
 + وأخيرًا، أضف المفتاح الذي ستضغط عليه لوضع الخشب في عالمك.
     
-    ![لقطة الشاشة](images/craft-wood-placekey.png)
+    ![screenshot](images/craft-wood-placekey.png)
 
 + شغِّل مشروعك لتختبره. سترى الآن أن المورد 'wood' الجديد قد أضيف إلى المخزون.
     
-    ![لقطة الشاشة](images/craft-wood-test.png)
+    ![screenshot](images/craft-wood-test.png)
 
 + لا يوجد خشب في عالمك! لإصلاح ذلك، انقر فوق الملف`main.py` وابحث عن الدالة `()generateRandomWorld`.
     
-    ![لقطة الشاشة](images/craft-wood-random1.png)
+    ![screenshot](images/craft-wood-random1.png)
     
     تنشئ هذه التعليمة البرمجية عددًا عشوائيًا بين 0 و10، وتستخدم العدد لتحديد المورد الذي سيتم وضعه على خريطة عالمك:
     
@@ -44,8 +44,8 @@
 
 + أضف هذه التعليمة البرمجية لإضافة خشب إلى عالمك متى كانت قيمة `randomNumber` هي 5.
     
-    ![لقطة الشاشة](images/craft-wood-random2.png)
+    ![screenshot](images/craft-wood-random2.png)
 
 + اختبر مشروعك مرة أخرى. في هذه المرة، ستلاحظ ظهور بعض مربعات الخشب على خريطة عالمك.
     
-    ![لقطة الشاشة](images/craft-wood-test2.png)
+    ![screenshot](images/craft-wood-test2.png)
