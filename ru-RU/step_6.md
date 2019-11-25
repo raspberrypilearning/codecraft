@@ -1,4 +1,4 @@
-## Создание нового ресурса "дерево"
+## Создание нового лесного ресурса
 
 Давай создадим новый ресурс: дерево. Для этого тебе нужно добавить некоторые переменные в твой файл `variables.py`.
 
@@ -8,33 +8,33 @@
 
 + Вы должны добавить свой новый ресурс `WOOD` в список ресурсов `resources`.
     
-    ![screenshot](images/craft-wood-resources.png)
+    ![скриншот](images/craft-wood-resources.png)
 
 + Вы также должны дать вашему ресурсу название, которое будет отображаться в инвентаре.
     
-    ![screenshot](images/craft-wood-name.png)
+    ![скриншот](images/craft-wood-name.png)
     
     Обратите внимание на запятую `,` в конце строки в вышеприведённом коде.
 
-+ Вашему ресурсу также понадобится изображение. The project already includes an image called `wood.gif`, which you should add to the `textures` dictionary.
++ Вашему ресурсу также понадобится изображение. В проекте уже есть изображение под названием `wood.gif`, которое вы должны добавить к словарю текстур `textures`.
     
     ![screenshot](images/craft-wood-texture.png)
 
 + Для начала добавьте количество блоков своего ресурса, который будет в вашем списке запасов `inventory`.
     
-    ![screenshot](images/craft-wood-inventory.png)
+    ![скриншот](images/craft-wood-inventory.png)
 
 + Наконец, добавьте клавишу, которую вы будете нажимать, чтобы разместить блок "дерево" в мире.
     
-    ![screenshot](images/craft-wood-placekey.png)
+    ![скриншот](images/craft-wood-placekey.png)
 
 + Запустите ваш проект, чтобы проверить его. Вы увидите, что теперь у вас среди ваших запасов есть новый ресурс «дерево».
     
-    ![screenshot](images/craft-wood-test.png)
+    ![скриншот](images/craft-wood-test.png)
 
 + Но в вашем мире нет дерева! Чтобы исправить это, нажмите на файл `main.py` и найдите функцию под названием `generateRandomWorld()`.
     
-    ![screenshot](images/craft-wood-random1.png)
+    ![скриншот](images/craft-wood-random1.png)
     
     Этот код генерирует случайное число от 0 до 10 и использует этот номер, чтобы определить, какой ресурс следует разместить:
     
@@ -44,8 +44,8 @@
 
 + Добавьте этот код, чтобы добавить блок "дерево" в ваш мир, всякий раз, когда значение `randomNumber` будет равно 5.
     
-    ![screenshot](images/craft-wood-random2.png)
+    ![скриншот](images/craft-wood-random2.png)
 
 + Запустите свой проект для проверки ещё раз. На этот раз вы должны увидеть, как в вашем мире появились блоки "дерево".
     
-    ![screenshot](images/craft-wood-test2.png)
+    ![скриншот](images/craft-wood-test2.png)
