@@ -8,8 +8,8 @@
 
 + Измените значение переменной `BACKGROUNDCOLOUR` и нажмите кнопку "Run", чтобы увидеть изменения в твоей игре.
     
-    ![screenshot](images/craft-background.png)
+    ![скриншот](images/craft-background.png)
 
 + Значение переменной `MAXTILES` - это количество каждого ресурса, который может храниться в твоих запасах. Измени значение этой переменной, если ты хочешь хранить больше (или меньше), чем 20 единиц каждого ресурса.
     
-    ![screenshot](images/craft-maxtiles.png)
+    ![скриншот](images/craft-maxtiles.png)
