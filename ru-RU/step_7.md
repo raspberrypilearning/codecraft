@@ -1,12 +1,12 @@
-\--- challenge \---
+скриншот
 
-## Испытание: Создание песка
+## Задача: Создаем песок
 
 Вы можете добавить в вашу игру блок песка `SAND`? В качестве помощи можно использовать описанные выше шаги.
 
-![screenshot](images/craft-sand.png)
+![скриншот](images/craft-sand.png)
 
-The project already includes a `sand.gif` image, but you can create and upload your own if you prefer.
+В проекте уже есть изображение `sand.gif`, но вы можете создать и загрузить своё собственное, если хотите.
 
 ![screenshot](images/craft-upload.png)
 
