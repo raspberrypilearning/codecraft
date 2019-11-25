@@ -1,15 +1,15 @@
-## Customising your game
+## Tùy chỉnh trò chơi của bạn
 
-Let’s modify some variables to change how your game works.
+Hãy sửa đổi một số biến để thay đổi cách trò chơi của bạn hoạt động.
 
-+ Click the `variables.py` file to see some variables that can be changed.
++ Nhấp vào tệp `biến số` để xem một số biến có thể thay đổi.
     
-    ![screenshot](images/craft-variables.png)
+    ![ảnh chụp màn hình](images/craft-variables.png)
 
-+ Change the value of your `BACKGROUNDCOLOUR` variable, and click 'Run' to see the change to your game.
++ Thay đổi giá trị của biến `BACKGROUNDCOLOUR` của bạn và nhấp vào 'Chạy' để xem thay đổi trong trò chơi của bạn.
     
-    ![screenshot](images/craft-background.png)
+    ![ảnh chụp màn hình](images/craft-background.png)
 
-+ The variable `MAXTILES` is the amount of each resource that can be held in your inventory. Change this variable if you want to store more (or less) than 20 of each resource.
++ Biến `MAXTILES` là số lượng của mỗi tài nguyên có thể được giữ trong kho của bạn. Thay đổi biến này nếu bạn muốn lưu trữ nhiều hơn (hoặc ít hơn) hơn 20 mỗi tài nguyên.
     
-    ![screenshot](images/craft-maxtiles.png)
+    ![ảnh chụp màn hình](images/craft-maxtiles.png)
