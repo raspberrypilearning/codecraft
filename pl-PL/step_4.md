@@ -1,6 +1,6 @@
-## Ulepszanie gry
+## Modyfikacja własnej gry
 
-Zmodyfikuj niektóre zmienne, aby zmienić sposób działania Twojej gry.
+Zmodyfikujmy niektóre zmienne, aby zmienić sposób działania Twojej gry.
 
 + Kliknij plik `variables.py` , aby wyświetlić zmienne, które można zmienić.
     
