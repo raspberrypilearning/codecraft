@@ -2,7 +2,7 @@
 
 ## Zadanie: zmiana rozmiarów świata
 
-Zmodyfikuj wartości zmiennych `SZEROKOSCSWIATA` i `WYSOKOSCSWIATA` , aby zmienić rozmiar swojego świata.
+Czy jesteś w stanie zmienić wartości zmiennych `SZEROKOSCMAPY` i `WYSOKOSCMAPY`, aby zmienić rozmiar świata?
 
 ![zrzut ekranu](images/craft-mapsize.png)
 
