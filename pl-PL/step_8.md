@@ -1,6 +1,6 @@
 ## Wytwarzanie desek z drewna
 
-Stwórzmy nowy zasób – deski, który będzie wykonany z drewna.
+Stwórzmy nowy zasób – deskę (ang. plank), który będzie wykonany z drewna.
 
 + Najpierw dodaj nową zmienną `DESKA` do gry.
     
@@ -14,19 +14,19 @@ Stwórzmy nowy zasób – deski, który będzie wykonany z drewna.
     
     ![zrzut ekranu](images/craft-plank-names.png)
 
-+ Przypisz obrazek zasobowi `DESKA`. W projekcie jest już obrazek `deska.gif`, ale jeśli chcesz, możesz dodać własny i go użyć.
++ Przypisz obrazek zasobowi `DESKA`. W projekcie jest już obrazek `plank.gif`, ale jeśli chcesz, możesz dodać własny i go użyć.
     
-    ![screenshot](images/craft-plank-textures.png)
+    ![zrzut ekranu](images/craft-plank-textures.png)
 
 + Dodaj deski do ekwipunku.
     
-    ![screenshot](images/craft-plank-inventory.png)
+    ![zrzut ekranu](images/craft-plank-inventory.png)
 
 + Ustaw klawisz, którym będziesz wstawiać deski na mapie.
     
     ![zrzut ekranu](images/craft-plank-placekeys.png)
 
-+ Należy utworzyć reguły budowania zasobu, skoro może on być wytwarzany. Deskę można zbudować z 3 sztuk drewna. Dodaj ten kod do słownika `budowanie`.
++ Ponieważ ten zasób może zostać stworzony, musisz stworzyć regułę tworzenia, która polega na tym, że deskę można wykonać z 3 drewnianych płytek. Dodaj ten kod do słownika `tworzenie`.
     
     ![zrzut ekranu](images/craft-plank-crafting.png)
 
