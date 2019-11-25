@@ -1,9 +1,9 @@
 \--- challenge \---
 
-## Challenge: Build your world
+## Izziv: Zgradite svoj svet
 
-Can you build a house, with a garden and a swimming pool? What else can you create?
+Ali lahko zgradite hišo z vrtom in bazenom? Kaj še lahko ustvarite?
 
-![screenshot](images/craft-build-example.png)
+![posnetek zaslona](images/craft-build-example.png)
 
 \--- /challenge \---
