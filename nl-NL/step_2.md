@@ -1,6 +1,6 @@
 ## Speel het spel
 
-+ Open this trinket: [rpf.io/codecraft-on](http://rpf.io/codecraft-on){:target="_blank"}.
++ Open deze trinket: [rpf.io/codecraft-on](http://rpf.io/codecraft-on){:target="_blank"}.
 
 + Gebruik de WASD-toetsen om je speler in de wereld rond te laten lopen, die vol zit met verschillende bronnen (vuil, gras en water).
     
