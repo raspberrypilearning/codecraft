@@ -1,9 +1,9 @@
-\--- challenge \---
+скриншот
 
-## Испытание: Построй свой мир
+## Задача: Построить свой мир
 
 Сможешь ли ты построить дом с садом и бассейном? Что ещё ты можешь создать?
 
-![screenshot](images/craft-build-example.png)
+![скриншот](images/craft-build-example.png)
 
 \--- /challenge \---
