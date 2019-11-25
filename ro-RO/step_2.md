@@ -1,23 +1,23 @@
-## Playing the game
+## Cum să joci
 
-+ Open this trinket: [rpf.io/codecraft-on](http://rpf.io/codecraft-on){:target="_blank"}.
++ Deschide acest trinket: [rpf.io/codecraft-on](http://rpf.io/codecraft-on){:target="_blank"}.
 
-+ Use the WASD keys to move your player around the world, which is full of different resources (dirt, grass and water).
++ Folosiți tastele WASD pentru a vă muta jucătorul pe hartă, care este plină de diverse resurse (noroi, iarbă și apă).
     
-    ![screenshot](images/craft-move.png)
+    ![captură de ecran](images/craft-move.png)
 
-+ You can press the spacebar to collect resources. Pick up a few of each type of resource, and you'll see them added to your inventory.
++ Puteți apăsa tasta space pentru a colecta resurse. Adunați câteva din fiecare tip de resursă și le veți găsi în inventarul dvs.
     
-    ![screenshot](images/craft-pickup.png)
+    ![captură de ecran](images/craft-pickup.png)
 
-+ Press the number keys (1 to 3) to place a resource on the map. For example, press 3 to place some water on the map. This will only work if you have some water in your inventory.
++ Apăsați tastele numerice (de la 1 la 3) pentru a plasa o resursă pe hartă. De exemplu, apăsați 3 pentru a plasa apă pe hartă. Acest lucru va funcționa numai dacă aveți apă în inventar.
     
-    ![screenshot](images/craft-place-water.png)
+    ![captură de ecran](images/craft-place-water.png)
 
-+ You can craft an item by pressing the key displayed in the menu. Crafting means combining items you already have in your inventory to create new ones. Try pressing the 'r' key to craft a new brick (as long as you have 2 dirt and 1 water in your inventory).
++ Puteți crea un obiect apăsând tasta afișată în meniu. Crearea înseamnă combinarea articolelor pe care le aveți deja în inventar pentru a crea altele noi. Încercați să apăsați tasta 'r' pentru a crea o cărămidă nouă (atât timp cât aveți 2 noroi și 1 apă în inventar).
     
-    ![screenshot](images/craft-craft-brick.png)
+    ![captură de ecran](images/craft-craft-brick.png)
 
-+ You can then press they '4' key to place your crafted bricks.
++ Puteți apoi să apăsați tasta „4” pentru a plasa cărămizile realizate.
     
-    ![screenshot](images/craft-place-brick.png)
+    ![captură de ecran](images/craft-place-brick.png)
