@@ -1,6 +1,6 @@
-## Introduction
+## Giới thiệu
 
-In this project, you’ll design and code improvements to a 2D version of Minecraft.
+Trong dự án này, bạn sẽ thiết kế và cải tiến mã cho phiên bản 2D của Minecraft.
 
 <div class="trinket">
   <iframe src="https://trinket.io/embed/python/ebc5b0148b?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
@@ -8,101 +8,101 @@ In this project, you’ll design and code improvements to a 2D version of Minecr
   <img src="images/craft-finished.png">
 </div>
 
-### Additional information for club leaders
+### Thông tin bổ sung cho các nhà lãnh đạo câu lạc bộ
 
-If you need to print this project, please use the [Printer friendly version](https://projects.raspberrypi.org/en/projects/codecraft/print).
+Nếu bạn cần in dự án này, hãy sử dụng [phiên bản thân thiện với máy in](https://projects.raspberrypi.org/en/projects/codecraft/print).
 
-## \--- collapse \---
+## \--- sụp đổ \---
 
-## title: Club leader notes
+## title: Ghi chú dành cho lãnh đạo câu lạc bộ
 
-## Introduction:
+## Giới thiệu:
 
-In this project, children will learn aspects of graphics and game design by making improvements to a basic 2D Minecraft clone. Children will create new resources, as well as crafting rules for combining resources to make new ones. This will be achieved by understanding and manipulating variables, lists and dictionaries.
+Trong dự án này, trẻ em sẽ học các khía cạnh của đồ họa và thiết kế trò chơi bằng cách cải tiến bản sao 2D Minecraft cơ bản. Trẻ em sẽ tạo ra các tài nguyên mới, cũng như các quy tắc chế tạo để kết hợp các tài nguyên để tạo ra các tài nguyên mới. Điều này sẽ đạt được bằng cách hiểu và thao tác các biến, danh sách và từ điển.
 
-## Online Resources
+## Những nguồn thông tin trên mạng
 
-**This project uses Python 3.** We recommend using [trinket](https://trinket.io/) to write Python online. This project contains the following Trinkets:
+**Dự án này sử dụng Python 3.** Chúng tôi khuyên bạn nên sử dụng [trinket](https://trinket.io/) để viết Python trực tuyến. Dự án này chứa các trang trinket sau đây:
 
-+ ['CodeCraft' starter project -- rpf.io/codecraft-on](http://rpf.io/codecraft-on)
++ [Dự án khởi động 'CodeCraft' - rpf.io/codecraft-on](http://rpf.io/codecraft-on)
 
-There is also a trinket containing the completed project:
+Ngoài ra còn có một nữ trang chứa dự án đã hoàn thành:
 
-+ [‘CodeCraft’ Finished -- trinket.io/python/ebc5b0148b](https://trinket.io/python/ebc5b0148b)
++ ['CodeCraft' Đã hoàn thành - trinket.io/python/ebc5b0148b](https://trinket.io/python/ebc5b0148b)
 
-## Offline Resources
+## Tài nguyên ngoại tuyến
 
-This project can be [completed offline](https://www.codeclubprojects.org/en-GB/resources/python-working-offline/) if preferred. You can access the project resources by clicking the 'Project Materials' link for this project. This link contains a 'Project Resources' section, which includes resources that children will need to complete this project offline. Make sure that each child has access to a copy of these resources. This section includes the following files:
+Dự án này có thể được [hoàn thành ngoại tuyến](https://www.codeclubprojects.org/en-GB/resources/python-working-offline/) nếu bạn muốn. Bạn có thể truy cập tài nguyên dự án bằng cách nhấp vào liên kết 'Tài liệu Dự án' cho dự án này. Liên kết này chứa phần 'Tài nguyên dự án', bao gồm các tài nguyên mà các em sẽ cần để hoàn thành dự án này ngoại tuyến. Đảm bảo rằng mỗi đứa trẻ đều có khả năng truy cập vào một bản sao của các tài nguyên này. Phần này bao gồm các tệp sau:
 
-+ codecraft/codecraft.py
-+ codecraft/variables.py
-+ codecraft/brick.gif
-+ codecraft/dirt.gif
-+ codecraft/glass.gif
-+ codecraft/grass.gif
-+ codecraft/plank.gif
-+ codecraft/player.gif
-+ codecraft/sand.gif
-+ codecraft/water.gif
-+ codecraft/wood.gif
++ codecraft / codecraft.py
++ codecraft / biến
++ codecraft / brick.gif
++ codecraft / Dirt.gif
++ codecraft / glass.gif
++ codecraft / grass.gif
++ mã hóa / plank.gif
++ codecraft / player.gif
++ codecraft / sand.gif
++ codecraft / water.gif
++ codecraft / wood.gif
 
-You can also find a completed version of this project in the 'Volunteer Resources' section, which contains:
+Bạn cũng có thể tìm thấy phiên bản hoàn chỉnh của dự án này trong phần 'Tài nguyên tình nguyện', có chứa:
 
-+ codecraft-finished/codecraft.py
-+ codecraft-finished/variables.py
-+ codecraft-finished/brick.gif
-+ codecraft-finished/dirt.gif
-+ codecraft-finished/glass.gif
-+ codecraft-finished/grass.gif
-+ codecraft-finished/plank.gif
-+ codecraft-finished/player.gif
-+ codecraft-finished/sand.gif
-+ codecraft-finished/water.gif
-+ codecraft-finished/wood.gif
++ codecraft-thành công / codecraft.py
++ codecraft-thành công / biến
++ codecraft-finish / brick.gif
++ codecraft-finish / Dirt.gif
++ codecraft-finish / glass.gif
++ codecraft-finish / grass.gif
++ codecraft-finish / plank.gif
++ codecraft-finish / player.gif
++ codecraft-finish / sand.gif
++ codecraft-thành công / water.gif
++ codecraft-thành / wood.gif
 
-(All of the resources above are also downloadable as `.zip` files.)
+(Tất cả các tài nguyên ở trên cũng có thể tải xuống dưới dạng `.zip` tệp.)
 
-## Learning Objectives
+## Mục tiêu học tập
 
-+ Creating and editing graphics;
-+ Game design;
-+ Editing: 
-    + Variables;
-    + Lists;
-    + Dictionaries.
++ Tạo và chỉnh sửa đồ họa;
++ Thiết kế trò chơi;
++ Chỉnh sửa: 
+    + Biến;
+    + Danh sách;
+    + Từ điển.
 
-This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+Dự án này bao gồm các nội dung từ các chuỗi sau đây của [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
 
-+ [Design basic 2D and 3D assets.](https://www.raspberrypi.org/curriculum/design/creator)
++ [Thiết kế các tài sản 2D và 3D cơ bản.](https://www.raspberrypi.org/curriculum/design/creator)
 
-+ [Combine programming constructs to solve a problem.](https://www.raspberrypi.org/curriculum/programming/builder)
++ [Kết hợp các cấu trúc lập trình để giải quyết vấn đề.](https://www.raspberrypi.org/curriculum/programming/builder)
 
-## Challenges
+## Thử thách
 
-+ "Build your world" - Playing the game, placing and crafting existing blocks;
-+ "Change your world size" - editing the `MAPWIDTH` and `MAPHEIGHT` variables to change the world size;
-+ "Creating sand" - Creating a new sand resource, along with associated game data.
-+ "Crafting glass from sand" - Creating a new craftable glass resource.
-+ "Create more resources" - Use what's been learnt to create more blocks and crafting rules.
++ "Xây dựng thế giới của bạn" - Chơi trò chơi, đặt và chế tạo các khối hiện có;
++ "Thay đổi kích thước thế giới của bạn" - chỉnh sửa `biến MAPWIDTH` và `MAPHEIGHT` để thay đổi kích thước thế giới;
++ "Tạo cát" - Tạo tài nguyên cát mới, cùng với dữ liệu trò chơi liên quan.
++ "Chế tạo thủy tinh từ cát" - Tạo ra một nguồn tài nguyên thủy tinh mới.
++ "Tạo thêm tài nguyên" - Sử dụng những gì đã học để tạo thêm khối và quy tắc chế tạo.
 
-## Frequently Asked Questions
+## Các câu hỏi thường gặp
 
-+ Children may need reminding that elements of a dictionary/list are separated by a comma. For example, when adding inventory items, graphics and crafting rules to the game.
++ Trẻ em có thể cần nhắc nhở rằng các yếu tố của từ điển / danh sách được phân tách bằng dấu phẩy. Ví dụ: khi thêm các vật phẩm tồn kho, đồ họa và quy tắc chế tạo vào trò chơi.
 
-\--- /collapse \---
+\--- /sự sụp đổ \---
 
-## \--- collapse \---
+## \--- sụp đổ \---
 
-## title: Project materials
+## title: Tài liệu dự án
 
-## Project resources
+## Tài nguyên dự án
 
-+ [.zip file containing all project resources](resources/codecraft-resources.zip)
-+ [Online Trinket containing all 'CodeCraft' project resources](http://rpf.io/codecraft-on)
++ [tệp .zip chứa tất cả tài nguyên dự án](resources/codecraft-resources.zip)
++ [Trinket trực tuyến chứa tất cả tài nguyên dự án 'CodeCraft'](http://rpf.io/codecraft-on)
 
-## Club leader resources
+## Tài nguyên lãnh đạo câu lạc bộ
 
-+ [.zip file containing all completed project resources](solutions/codecraft-solution.zip)
-+ [Online completed Trinket project](https://trinket.io/python/ebc5b0148b)
++ [tệp .zip chứa tất cả tài nguyên dự án đã hoàn thành](solutions/codecraft-solution.zip)
++ [Dự án Trinket hoàn thành trực tuyến](https://trinket.io/python/ebc5b0148b)
 
 \--- /collapse \---
