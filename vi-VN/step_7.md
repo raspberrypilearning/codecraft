@@ -1,13 +1,13 @@
 \--- challenge \---
 
-## Challenge: Creating sand
+## Thử thách: Tạo cát
 
-Can you add a `SAND` resource to your game? You can use the steps above to help you.
+Bạn có thể thêm tài nguyên `SAND` vào trò chơi của mình không? Bạn có thể sử dụng các bước trên để giúp bạn.
 
-![screenshot](images/craft-sand.png)
+![ảnh chụp màn hình](images/craft-sand.png)
 
-The project already includes a `sand.gif` image, but you can create and upload your own if you prefer.
+Dự án đã bao gồm một hình ảnh `sand.gif` , nhưng bạn có thể tạo và tải lên hình ảnh của riêng bạn nếu bạn thích.
 
-![screenshot](images/craft-upload.png)
+![ảnh chụp màn hình](images/craft-upload.png)
 
-\--- /challenge \---
+\--- /thử thách \---
