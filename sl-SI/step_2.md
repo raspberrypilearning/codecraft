@@ -1,23 +1,23 @@
-## Playing the game
+## Igranje igre
 
-+ Open this trinket: [rpf.io/codecraft-on](http://rpf.io/codecraft-on){:target="_blank"}.
++ Odprite ta trinket:[rpf.io/codecraft-on](http://rpf.io/codecraft-on){:target="_blank"}.
 
-+ Use the WASD keys to move your player around the world, which is full of different resources (dirt, grass and water).
++ S tipkami WASD lahko premikate vaš lik po svetu, ki je poln različnih surovin (zemlja, trava in voda).
     
-    ![screenshot](images/craft-move.png)
+    ![posnetek zaslona](images/craft-move.png)
 
-+ You can press the spacebar to collect resources. Pick up a few of each type of resource, and you'll see them added to your inventory.
++ Za pobiranje surovin pritisnite preslednico. Poberite nekaj vsake vrste surovin, in videli boste, da so dodani v vaš inventar.
     
-    ![screenshot](images/craft-pickup.png)
+    ![posnetek zaslona](images/craft-pickup.png)
 
-+ Press the number keys (1 to 3) to place a resource on the map. For example, press 3 to place some water on the map. This will only work if you have some water in your inventory.
++ Pritisnite številčne tipke (1 do 3), če zelite surovino postaviti. Na primer, pritisnite 3, da postavite nekaj vode. To bo delovalo le, če imate zalogo vode v inventarju.
     
-    ![screenshot](images/craft-place-water.png)
+    ![posnetek zaslona](images/craft-place-water.png)
 
-+ You can craft an item by pressing the key displayed in the menu. Crafting means combining items you already have in your inventory to create new ones. Try pressing the 'r' key to craft a new brick (as long as you have 2 dirt and 1 water in your inventory).
++ Predmete lahko izdelate s pritiskom na tipko, prikazano v meniju. Izdelava pomeni uporaba predmetov, ki jih že imate v inventarju za izdelavo novih. Poskusite pritisniti tipko 'R' za izdelavo nove opeke (če imate v inventarju vsaj 2 vira zemlje in 1 vir vode).
     
-    ![screenshot](images/craft-craft-brick.png)
+    ![posnetek zaslona](images/craft-craft-brick.png)
 
-+ You can then press they '4' key to place your crafted bricks.
++ Nato pritisnite tipko '4', da postavite izdelane opeke.
     
-    ![screenshot](images/craft-place-brick.png)
+    ![posnetek zaslona](images/craft-place-brick.png)
