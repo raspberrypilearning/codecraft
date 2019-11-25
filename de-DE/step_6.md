@@ -16,7 +16,7 @@ Schaffen wir eine neue Ressource: Holz. Dazu musst du einige Variablen in der Da
     
     Denke an das Komma `,` am Ende der obenstehenden Zeile.
 
-+ Deine Ressource benötigt auch ein Bild. Das Projekt enthält bereits ein Bild mit dem Namen `wood.gif`, das zum `textures`-Dictionary hinzugefügt werden muss.
++ Deine Ressource benötigt auch ein Bild. Das Projekt enthält bereits ein Bild mit dem Namen `wood.gif`, das zum `texturen`-Dictionary hinzugefügt werden muss.
     
     ![screenshot](images/craft-wood-texture.png)
 
@@ -32,7 +32,7 @@ Schaffen wir eine neue Ressource: Holz. Dazu musst du einige Variablen in der Da
     
     ![screenshot](images/craft-wood-test.png)
 
-+ In deiner Welt gibt es aber kein Holz! Um das zu beheben, klicke auf deine `main.py` Datei und suche die Funktion `erschaffeZuffallsWelt()`.
++ In deiner Welt gibt es aber kein Holz! Um das zu beheben, klicke auf deine `main.py` Datei und suche die Funktion `generiereZuffallsWelt()`.
     
     ![screenshot](images/craft-wood-random1.png)
     
