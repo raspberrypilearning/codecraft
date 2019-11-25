@@ -4,9 +4,9 @@ duration: 2
 listed: true
 copyedit: false
 title: CodeCraft
-description: Poprawki projektu i kodu wersji 2D Minecraftu.
+description: Udoskonalenia projektu i kodu do wersji 2D Minecrafta.
 version: 3.1.0
-last_tested: 22 listopada 2018
+last_tested: 2018-11-22
 steps:
   - 
     title: Wprowadzenie
@@ -15,13 +15,13 @@ steps:
   - 
     title: 'Zadanie: tworzenie własnego świata'
   - 
-    title: Ulepszanie gry
+    title: Modyfikacja własnej gry
   - 
     title: 'Zadanie: zmiana rozmiarów świata'
   - 
-    title: 'Tworzenie nowego zasobu: drewno'
+    title: Tworzenie nowego zasobu drewna
   - 
-    title: 'Zadanie: utworzyć piasek'
+    title: 'Wyzwanie: tworzenie piasku'
   - 
     title: Wytwarzanie desek z drewna
   - 
