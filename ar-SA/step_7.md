@@ -4,10 +4,10 @@
 
 هل يمكنك إضافة مورد `SAND` إلى لعبتك؟ يمكنك استخدام الخطوات السابقة لمساعدتك.
 
-![لقطة شاشة](images/craft-sand.png)
+![screenshot](images/craft-sand.png)
 
-يحتوي هذا المشروع بالفعل على صورة `sand.gif`، لكن يمكنك إنشاء أو تحميل صورة من عندك إذا أردتَ.
+يحتوي هذا المشروع على صورة `sand.gif` مسبقاً، لكن يمكنك إنشاء أو تحميل صورتك الخاصة إذا أردتَ.
 
-![لقطة الشاشة](images/craft-upload.png)
+![screenshot](images/craft-upload.png)
 
 \--- /challenge \---
