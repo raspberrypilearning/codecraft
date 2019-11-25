@@ -60,7 +60,7 @@
 + codecraft-finished/water.gif
 + codecraft-finished/wood.gif
 
-(All of the resources above are also downloadable as `.zip` files.)
+(위의 모든 리소스들은 .zip파일 형식으로 다운로드 할 수 있습니다.)
 
 ## 학습 목표
 
