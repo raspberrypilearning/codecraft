@@ -1,14 +1,14 @@
 #!/bin/python3
 
 #############
-# CodeCraft #
+# 코드크래프트 #
 #############
 
 #---
-#Game functions
+#게임 함수
 #---
 
-#moves the player left 1 tile.
+#플레이어가 왼쪽으로 1칸 이동
 def moveLeft():
   global playerX
   if(drawing == False and playerX > 0):
@@ -17,7 +17,7 @@ def moveLeft():
     drawResource(oldX, playerY)
     drawResource(playerX, playerY)
     
-#moves the player right 1 tile.
+#플레이어가 오른쪽으로 1칸 이동
 def moveRight():
   global playerX, MAPWIDTH
   if(drawing == False and playerX < MAPWIDTH - 1):
@@ -26,7 +26,7 @@ def moveRight():
     drawResource(oldX, playerY)
     drawResource(playerX, playerY)
     
-#moves the player up 1 tile.
+#플레이어가 위쪽으로 1칸 이동
 def moveUp():
   global playerY
   if(drawing == False and playerY > 0):
@@ -35,7 +35,7 @@ def moveUp():
     drawResource(playerX, oldY)
     drawResource(playerX, playerY)
     
-#moves the player down 1 tile.
+#플레이어가 아래쪽으로 1칸 이동
 def moveDown():
   global playerY, MAPHEIGHT
   if(drawing == False and playerY < MAPHEIGHT - 1):
@@ -44,105 +44,105 @@ def moveDown():
     drawResource(playerX, oldY)
     drawResource(playerX, playerY)
     
-#picks up the resource at the player's position.
+#플레이어의 위치에서 아이템을 줍는 코드
 def pickUp():
   global playerX, playerY
   drawing = True
   currentTile = world[playerX][playerY]
-  #if the user doesn't already have too many...
+  #만약 플레이어가 너무 많이 아이템을 소지하지 않은 경우...
   if inventory[currentTile] < MAXTILES:
-    #player now has 1 more of this resource
+    #플레이어에게 자원 +1
     inventory[currentTile] += 1
-    #the player is now standing on dirt
+    #플레이어가 흙 위에 서있는 것으로 변경
     world[playerX][playerY] = DIRT
-    #draw the new DIRT tile
+    #새로운 흙 아이템 그리기
     drawResource(playerX, playerY)
-    #redraw the inventory with the extra resource.
+    #인벤토리 업데이트
     drawInventory()
     #drawPlayer()
 
-#place a resource at the player's current position
+#플레이어의 위치에 아이템을 배치
 def place(resource):
-  print('placing: ', names[resource])
-  #only place if the player has some left...
+  print('제작 중: ', names[resource])
+  #플레어어가 아이템이 조금이라도 남은 경우...
   if inventory[resource] > 0:
-    #find out the resourcee at the player's current position
+    #플레이어의 위치에 배치된 아이템 검색
     currentTile = world[playerX][playerY]
-    #pick up the resource the player's standing on
-    #(if it's not DIRT)
+    #플레이어의 위치에서 아이템을 줍는 코드
+    #(만약 흙이 아닌 경우)
     if currentTile is not DIRT:
       inventory[currentTile] += 1
-    #place the resource at the player's current position
+    #플레이어의 위치에 아이템을 배치
     world[playerX][playerY] = resource
-    #add the new resource to the inventory
+    #새 자원을 인벤토리에 추가
     inventory[resource] -= 1
-    #update the display (world and inventory)
+    #디스플레이 업데이트(월드 및 인벤토리)
     drawResource(playerX, playerY)
     drawInventory()
     #drawPlayer()
-    print('   Placing', names[resource], 'complete')
-  #...and if they have none left...
+    print(names[resource], ' 설치 완료')
+  #만약 남지 않은 경우...
   else:
-    print('   You have no', names[resource], 'left')
+    print(names[resource], ' 자원이 없습니다!')
 
-#craft a new resource
+#새로운 아이템 생성
 def craft(resource):
-  print('Crafting: ', names[resource])
-  #if the resource can be crafted...
+  print('조합 중: ', names[resource])
+  #만약 만들 수 있는 아이템이라면
   if resource in crafting:
-    #keeps track of whether we have the resources
-    #to craft this item
+    #리소스가 있는지의 여부를 추적
+    #아이템을 만들 수 있는지 알기 위해
     canBeMade = True
-    #for each item needed to craft the resource
+    #자원을 만드는 데 필요한 각 항목의 수
     for i in crafting[resource]:
-      #...if we don't have enough...
+      #만약 충분하지 못하다면
       if crafting[resource][i] > inventory[i]:
-      #...we can't craft it!
+      #만들 수 없습니다!
         canBeMade = False
         break
-    #if we can craft it (we have all needed resources)
+    #만약 만들 수 있다면
     if canBeMade == True:
-      #take each item from the inventory
+      #각 아이템을 인벤토리에서 빼냄
       for i in crafting[resource]:
         inventory[i] -= crafting[resource][i]
-      #add the crafted item to the inventory
+      #새 자원을 인벤토리에 추가
       inventory[resource] += 1
-      print('   Crafting', names[resource], 'complete')
-    #...otherwise the resource can't be crafted...
+      print(names[resource], ' 설치 완료')
+    #만약 만들 수 없는 아이템이라면
     else:
-      print('   Can\'t craft', names[resource])
-    #update the displayed inventory
+      print(names[resource], ' 를 만들 수 없습니다!')
+    #디스플레이 업데이트(월드 및 인벤토리)
     drawInventory()
 
-#creates a function for placing each resource
+#각 리소스를 배치하기위한 함수
 def makeplace(resource):
   return lambda: place(resource)
 
-#attaches a 'placing' function to each key press
+#키 누름 함수
 def bindPlacingKeys():
   for k in placekeys:
     screen.onkey(makeplace(k), placekeys[k])
 
-#creates a function for crafting each resource
+#각 리소스를 제작하기 위한 함수
 def makecraft(resource):
   return lambda: craft(resource)
 
-#attaches a 'crafting' function to each key press
+#제작 키 누름 함수
 def bindCraftingKeys():
   for k in craftkeys:
     screen.onkey(makecraft(k), craftkeys[k])
 
-#draws a resource at the position (y,x)
+#(y,x) 포지션에 아이템 설치
 def drawResource(y, x):
-  #this variable stops other stuff being drawn
+  #다른 곳에서 작동 중인 함수를 멈춤
   global drawing
-  #only draw if nothing else is being drawn
+  #만약 다른 곳에서 그리고 있지 않다면
   if drawing == False:
-    #something is now being drawn
+    #그려지고 있다는 플래그를 True로 설정
     drawing = True
-    #draw the resource at that position in the tilemap, using the correct image
+    #올바른 리소스를 사용하여 타일 맵에 이미지를 배치함
     rendererT.goto( (y * TILESIZE) + 20, height - (x * TILESIZE) - 20 )
-    #draw tile with correct texture
+    #올바른 텍스쳐 사용
     texture = textures[world[y][x]]
     rendererT.shape(texture)
     rendererT.stamp()
@@ -150,27 +150,27 @@ def drawResource(y, x):
       rendererT.shape(playerImg)
       rendererT.stamp()
     screen.update()
-    #nothing is now being drawn
+    #그려지고 있다는 플래그를 False로 설정
     drawing = False
     
-#draws the world map
+#월드 내 맵을 그리는 함수
 def drawWorld():
-  #loop through each row
+  #각 행을 반복
   for row in range(MAPHEIGHT):
-    #loop through each column in the row
+    #해당 행의 각 열을 반복
     for column in range(MAPWIDTH):
-      #draw the tile at the current position
+      #현재 위치에서 타일을 그리기
       drawResource(column, row)
 
-#draws the inventory to the screen
+#인벤토리를 화면에 표시
 def drawInventory():
-  #this variable stops other stuff being drawn
+  #다른 곳에서 작동 중인 함수를 멈춤
   global drawing
-  #only draw if nothing else is being drawn
+  #만약 다른 곳에서 그리고 있지 않다면
   if drawing == False:
-    #something is now being drawn
+    #그려지고 있다는 플래그를 True로 설정
     drawing = True
-    #use a rectangle to cover the current inventory
+    # 배경 색상 설정
     rendererT.color(BACKGROUNDCOLOUR)
     rendererT.goto(0,0)
     rendererT.begin_fill()
@@ -182,97 +182,97 @@ def drawInventory():
       rendererT.right(90)
     rendererT.end_fill()
     rendererT.color('black')
-    #display the 'place' and 'craft' text
+    #'설치 단축키' 및 '조합 단축키' 텍스트 표시
     for i in range(1,num_rows+1):
       rendererT.goto(20, (height - (MAPHEIGHT * TILESIZE)) - 20 - (i * 100))
-      rendererT.write("place")
+      rendererT.write("설치 단축키")
       rendererT.goto(20, (height - (MAPHEIGHT * TILESIZE)) - 40 - (i * 100))
-      rendererT.write("craft")
-    #set the inventory position
+      rendererT.write("조합 단축키")
+    #인벤토리 포지션 설정
     xPosition = 70
     yPostition = height - (MAPHEIGHT * TILESIZE) - 80
     itemNum = 0
     for i, item in enumerate(resources):
-      #add the image
+      #이미지 추가
       rendererT.goto(xPosition, yPostition)
       rendererT.shape(textures[item])
       rendererT.stamp()
-      #add the number in the inventory
+      #새롭게 카운트를 인벤토리에 추가
       rendererT.goto(xPosition, yPostition - TILESIZE)
       rendererT.write(inventory[item])
-      #add key to place
+      #설치 단축키
       rendererT.goto(xPosition, yPostition - TILESIZE - 20)
       rendererT.write(placekeys[item])
-      #add key to craft
+      #조합 단축키
       if crafting.get(item) != None:
         rendererT.goto(xPosition, yPostition - TILESIZE - 40)
         rendererT.write(craftkeys[item])     
-      #move along to place the next inventory item
+      #다음 인벤토리 아이템 배치
       xPosition += 50
       itemNum += 1
-      #drop down to the next row every 10 items
+      #10개 항목마다 다음 행
       if itemNum % INVWIDTH == 0:
         xPosition = 70
         itemNum = 0
         yPostition -= TILESIZE + 80
     drawing = False
 
-#generate the instructions, including crafting rules
+#게임 플레이 방법, 조합법
 def generateInstructions():
-  instructions.append('Crafting rules:')
-  #for each resource that can be crafted...
+  instructions.append('제작 방법:')
+  #만들 수 있는 아이템만큼 반복
   for rule in crafting:
-    #create the crafting rule text
+    #조합 규칙 텍스트 작성
     craftrule = names[rule] + ' = '
     for resource, number in crafting[rule].items():
       craftrule += str(number) + ' ' + names[resource] + ' '
-    #add the crafting rule to the instructions
+    #조합법 추가
     instructions.append(craftrule)
-  #display the instructions
+  #조합법 표시
   yPos = height - 20
   for item in instructions:
     rendererT.goto( MAPWIDTH*TILESIZE + 40, yPos)
     rendererT.write(item)
     yPos-=20
 
-#generate a random world
+#임의로 블럭 배치
 def generateRandomWorld():
-  #loop through each row
+  #각 행을 반복
   for row in range(MAPHEIGHT):
-    #loop through each column in that row
+    #해당 행의 각 열을 반복
     for column in range(MAPWIDTH):
-      #pick a random number between 0 and 10
+      #0부터 10까지의 임의의 숫자를 뽑음
       randomNumber = random.randint(0,10)
-      #WATER if the random number is a 1 or a 2
+      #1 또는 2일 경우 물
       if randomNumber in [1,2]:
         tile = WATER
-      #GRASS if the random number is a 3 or a 4
+      #3 또는 4일 경우 초원
       elif randomNumber in [3,4]:
         tile = GRASS
-      #otherwise it's DIRT
+      #이외는 흙
       else:
         tile = DIRT
-      #set the position in the tilemap to the randomly chosen tile
+      #무작위로 선정된 타일로 타일 맵의 위치 선정
       world[column][row] = tile
 
 #---
-#Code starts running here
+#코드는 여기서부터 실행됨!
 #---
 
-#import the modules and variables needed
+#필요한 모듈과 변수 가져오기
 import turtle
 import random
 from variables import *
 from math import ceil
 
 TILESIZE = 20
-#the number of inventory resources per row
+#행당 인벤토리 리소스 수
 INVWIDTH = 8
 drawing = False
 
-#create a new 'screen' object
+#'screen' 오브젝트 생성
 screen = turtle.Screen()
-#calculate the width and height
+#너비와 높이 계산
 width = (TILESIZE * MAPWIDTH) + max(200,INVWIDTH * 50)
 num_rows = int(ceil((len(resources) / INVWIDTH)))
 inventory_height =  num_rows * 120 + 40
@@ -283,34 +283,34 @@ screen.setworldcoordinates(0,0,width,height)
 screen.bgcolor(BACKGROUNDCOLOUR)
 screen.listen()
 
-#register the player image  
+#플레이어 이미지 등록  
 screen.register_shape(playerImg)
-#register each of the resource images
+#각 아이템 이미지 등록
 for texture in textures.values():
   screen.register_shape(texture)
 
-#create another turtle to do the graphics drawing
+#Turtle 생성
 rendererT = turtle.Turtle()
 rendererT.hideturtle()
 rendererT.penup()
 rendererT.speed(0)
 rendererT.setheading(90)
 
-#create a world of random resources.
+#무작위로 월드에 자원 배치
 world = [ [DIRT for w in range(MAPHEIGHT)] for h in range(MAPWIDTH) ]
 
-#map the keys for moving and picking up to the correct functions.
+#단축키
 screen.onkey(moveUp, 'w')
 screen.onkey(moveDown, 's')
 screen.onkey(moveLeft, 'a')
 screen.onkey(moveRight, 'd')
 screen.onkey(pickUp, 'space')
 
-#set up the keys for placing and crafting each resource
+#자원 배치 및 제작을 위한 키 설정
 bindPlacingKeys()
 bindCraftingKeys()
 
-#these functions are defined above
+#함수 불러오기
 generateRandomWorld()
 drawWorld()
 drawInventory()
