@@ -5,37 +5,37 @@
 #############
 
 #---
-#Game functions
+#Ігрові функції
 #---
 
-#moves the player left 1 tile.
-def moveLeft():
+#переміщає гравця на 1 плитку ліворуч.
+def moveLeft ():
   global playerX
   if(drawing == False and playerX > 0):
     oldX = playerX
-    playerX -= 1
+    playerX - = 1
     drawResource(oldX, playerY)
     drawResource(playerX, playerY)
     
-#moves the player right 1 tile.
+#перемістити гравця на 1 плитку праворуч.
 def moveRight():
   global playerX, MAPWIDTH
   if(drawing == False and playerX < MAPWIDTH - 1):
     oldX = playerX
-    playerX += 1
+    playerX + = 1
     drawResource(oldX, playerY)
     drawResource(playerX, playerY)
     
-#moves the player up 1 tile.
+#переміщає гравця на 1 плитку вверх.
 def moveUp():
   global playerY
   if(drawing == False and playerY > 0):
     oldY = playerY
-    playerY -= 1
+    playerY - = 1
     drawResource(playerX, oldY)
     drawResource(playerX, playerY)
     
-#moves the player down 1 tile.
+#переміщає гравця на 1 плитку вниз.
 def moveDown():
   global playerY, MAPHEIGHT
   if(drawing == False and playerY < MAPHEIGHT - 1):
@@ -44,105 +44,105 @@ def moveDown():
     drawResource(playerX, oldY)
     drawResource(playerX, playerY)
     
-#picks up the resource at the player's position.
+#підбирає ресурс з позиції гравця.
 def pickUp():
   global playerX, playerY
   drawing = True
   currentTile = world[playerX][playerY]
-  #if the user doesn't already have too many...
+  #якщо гравець ще не має надто багато...
   if inventory[currentTile] < MAXTILES:
-    #player now has 1 more of this resource
+    #гравець тепер має на 1 більше цього ресурсу
     inventory[currentTile] += 1
-    #the player is now standing on dirt
+    #гравець зараз стоїть на землі
     world[playerX][playerY] = DIRT
-    #draw the new DIRT tile
+    #намалювати нову плитку землі
     drawResource(playerX, playerY)
-    #redraw the inventory with the extra resource.
+    #перемалювати інвентар з додатковим ресурсом.
     drawInventory()
     #drawPlayer()
 
-#place a resource at the player's current position
+#поставити ресурс на поточну позицію гравця
 def place(resource):
-  print('placing: ', names[resource])
-  #only place if the player has some left...
+  print('Розміщуємо: ', names[resource])
+  #розміщуємо тільки якщо у гравця є ресурс...
   if inventory[resource] > 0:
-    #find out the resourcee at the player's current position
+    #визначаємо ресурс на поточній позиції гравця
     currentTile = world[playerX][playerY]
-    #pick up the resource the player's standing on
-    #(if it's not DIRT)
+    #підбираємо ресурс з-під ніг гравця
+    #(якщо це не земля)
     if currentTile is not DIRT:
       inventory[currentTile] += 1
-    #place the resource at the player's current position
+    #ставимо ресурс на поточну позицію гравця
     world[playerX][playerY] = resource
-    #add the new resource to the inventory
+    #віднімаємо ресурс з інвентарю
     inventory[resource] -= 1
-    #update the display (world and inventory)
+    #оновлюємо дисплей (світ та інвентар)
     drawResource(playerX, playerY)
     drawInventory()
     #drawPlayer()
-    print('   Placing', names[resource], 'complete')
-  #...and if they have none left...
+    print('   Ресурс', names[resource], 'розміщено')
+  #...і якщо жодного не залишилось...
   else:
-    print('   You have no', names[resource], 'left')
+    print('   Ресурсу', names[resource], 'немає')
 
-#craft a new resource
+#створюємо новий ресурс
 def craft(resource):
-  print('Crafting: ', names[resource])
-  #if the resource can be crafted...
+  print('Створюємо: ', names[resource])
+  #якщо ресурс можна створити...
   if resource in crafting:
-    #keeps track of whether we have the resources
-    #to craft this item
+    #відстежуємо чи є у нас ресурси
+    #щоб створити предмет
     canBeMade = True
-    #for each item needed to craft the resource
+    #для кожного предмету потрібного для створення ресурсу
     for i in crafting[resource]:
-      #...if we don't have enough...
+      #...якщо ми не маємо достатньо...
       if crafting[resource][i] > inventory[i]:
-      #...we can't craft it!
+      #...ми не можемо створити!
         canBeMade = False
         break
-    #if we can craft it (we have all needed resources)
+    #якщо ми можемо створити (у нас є всі необхідні ресурси)
     if canBeMade == True:
-      #take each item from the inventory
+      #взяти кожен елемент з інвентарю
       for i in crafting[resource]:
         inventory[i] -= crafting[resource][i]
-      #add the crafted item to the inventory
+      #додаємо створений предмет до інвентарю
       inventory[resource] += 1
-      print('   Crafting', names[resource], 'complete')
-    #...otherwise the resource can't be crafted...
+      print('   Ресурс', names[resource], 'розміщено')
+    #...в іншому випадку ресурс не можливо створити...
     else:
-      print('   Can\'t craft', names[resource])
-    #update the displayed inventory
+      print('   Не можливо створити ресурс', names[resource])
+    #оновлюємо зображення інвентарю
     drawInventory()
 
-#creates a function for placing each resource
+#створює функцію для розміщення кожного ресурсу
 def makeplace(resource):
   return lambda: place(resource)
 
-#attaches a 'placing' function to each key press
+#прикріплює функцію 'розміщення' до кожної клавіші
 def bindPlacingKeys():
   for k in placekeys:
     screen.onkey(makeplace(k), placekeys[k])
 
-#creates a function for crafting each resource
+#створює функцію для розміщення кожного ресурсу
 def makecraft(resource):
   return lambda: craft(resource)
 
-#attaches a 'crafting' function to each key press
+#прикріплює функцію 'створення' до кожної клавіші
 def bindCraftingKeys():
   for k in craftkeys:
     screen.onkey(makecraft(k), craftkeys[k])
 
-#draws a resource at the position (y,x)
+#малює ресурс на позиції (y, x)
 def drawResource(y, x):
-  #this variable stops other stuff being drawn
+  #ця змінна зупиняє промальовування інших речей, поки попереднє не завершилось
   global drawing
-  #only draw if nothing else is being drawn
+  #малюємо тільки якщо нічого не малюється
   if drawing == False:
-    #something is now being drawn
+    #зараз щось малюється
     drawing = True
-    #draw the resource at that position in the tilemap, using the correct image
+    #малює ресурс на позиції на карті плиток, використовуючи правильне зображення
     rendererT.goto( (y * TILESIZE) + 20, height - (x * TILESIZE) - 20 )
-    #draw tile with correct texture
+    #намалювати плитку з правильною текстурою
     texture = textures[world[y][x]]
     rendererT.shape(texture)
     rendererT.stamp()
@@ -150,31 +150,31 @@ def drawResource(y, x):
       rendererT.shape(playerImg)
       rendererT.stamp()
     screen.update()
-    #nothing is now being drawn
+    #тепер нічого не малюється
     drawing = False
     
-#draws the world map
+#draws карта світу
 def drawWorld():
-  #loop through each row
+  #цикл через кожен рядок
   for row in range(MAPHEIGHT):
-    #loop through each column in the row
+    #цикл через кожен стовпець рядка
     for column in range(MAPWIDTH):
-      #draw the tile at the current position
+      #малює плитку на поточній позиції
       drawResource(column, row)
 
-#draws the inventory to the screen
+#малює інвентар на екрані
 def drawInventory():
-  #this variable stops other stuff being drawn
+  #ця змінна зупиняє промальовування інших речей, поки попереднє не завершилось
   global drawing
-  #only draw if nothing else is being drawn
+  #малюємо тільки якщо нічого не малюється
   if drawing == False:
-    #something is now being drawn
+    #зараз щось малюється
     drawing = True
-    #use a rectangle to cover the current inventory
+    #використовуємо прямокутник, щоб приховати поточний інвентар
     rendererT.color(BACKGROUNDCOLOUR)
     rendererT.goto(0,0)
     rendererT.begin_fill()
-    #rendererT.setheading(0)
+    #rendererT.setheading (0)
     for i in range(2):
       rendererT.forward(inventory_height - 60)
       rendererT.right(90)
@@ -182,97 +182,97 @@ def drawInventory():
       rendererT.right(90)
     rendererT.end_fill()
     rendererT.color('black')
-    #display the 'place' and 'craft' text
+    #відобразити текст 'розмістити' і 'створити'
     for i in range(1,num_rows+1):
       rendererT.goto(20, (height - (MAPHEIGHT * TILESIZE)) - 20 - (i * 100))
-      rendererT.write("place")
+      rendererT.write("розмістити")
       rendererT.goto(20, (height - (MAPHEIGHT * TILESIZE)) - 40 - (i * 100))
-      rendererT.write("craft")
-    #set the inventory position
+      rendererT.write("створити")
+    #встановлюємо позицію інвентарю
     xPosition = 70
     yPostition = height - (MAPHEIGHT * TILESIZE) - 80
     itemNum = 0
     for i, item in enumerate(resources):
-      #add the image
+      #додаємо зображення
       rendererT.goto(xPosition, yPostition)
       rendererT.shape(textures[item])
       rendererT.stamp()
-      #add the number in the inventory
+      #додаємо кількість ресурсу в інвентарі
       rendererT.goto(xPosition, yPostition - TILESIZE)
       rendererT.write(inventory[item])
-      #add key to place
+      #додаємо кнопку для розміщення
       rendererT.goto(xPosition, yPostition - TILESIZE - 20)
       rendererT.write(placekeys[item])
-      #add key to craft
+      #додаємо кнопку для створення
       if crafting.get(item) != None:
         rendererT.goto(xPosition, yPostition - TILESIZE - 40)
         rendererT.write(craftkeys[item])     
-      #move along to place the next inventory item
+      #зміщуємося для розміщення наступного елемента інвентарю
       xPosition += 50
       itemNum += 1
-      #drop down to the next row every 10 items
+      #зміщуємося на наступний рядок через кожних 10 елементів
       if itemNum % INVWIDTH == 0:
         xPosition = 70
         itemNum = 0
         yPostition -= TILESIZE + 80
     drawing = False
 
-#generate the instructions, including crafting rules
+#генеруємо інструкції, разом з правилами створення
 def generateInstructions():
-  instructions.append('Crafting rules:')
-  #for each resource that can be crafted...
+  instructions.append('Правила створення:')
+  #для кожного ресурсу який можна створити...
   for rule in crafting:
-    #create the crafting rule text
+    #утворюємо текст з правилом створення
     craftrule = names[rule] + ' = '
     for resource, number in crafting[rule].items():
       craftrule += str(number) + ' ' + names[resource] + ' '
-    #add the crafting rule to the instructions
+    #додаємо правило створення до інструкцій
     instructions.append(craftrule)
-  #display the instructions
+  #відображаємо інструкції
   yPos = height - 20
   for item in instructions:
     rendererT.goto( MAPWIDTH*TILESIZE + 40, yPos)
     rendererT.write(item)
     yPos-=20
 
-#generate a random world
+#Генеруємо випадковий світ
 def generateRandomWorld():
-  #loop through each row
+  #цикл через кожен рядок
   for row in range(MAPHEIGHT):
-    #loop through each column in that row
+    #цикл через кожен стовпець рядка
     for column in range(MAPWIDTH):
-      #pick a random number between 0 and 10
+      #беремо випадкове число між 0 і 10
       randomNumber = random.randint(0,10)
-      #WATER if the random number is a 1 or a 2
+      #Вода, якщо випадкове число - 1 або 2
       if randomNumber in [1,2]:
         tile = WATER
-      #GRASS if the random number is a 3 or a 4
+      #Трава, якщо випадкове число - 3 або 4
       elif randomNumber in [3,4]:
         tile = GRASS
-      #otherwise it's DIRT
+      #в іншому випадку земля
       else:
         tile = DIRT
-      #set the position in the tilemap to the randomly chosen tile
+      #встановлюємо випадково вибраний ресурс на позицію у карті плиток
       world[column][row] = tile
 
 #---
-#Code starts running here
+#Код запускається тут
 #---
 
-#import the modules and variables needed
+#імпортуємо необхідні модулі та змінні
 import turtle
 import random
 from variables import *
 from math import ceil
 
 TILESIZE = 20
-#the number of inventory resources per row
+#кількість ресурсів у рядку інвентаря
 INVWIDTH = 8
 drawing = False
 
-#create a new 'screen' object
+#створюємо новий об'єкт "екрану"
 screen = turtle.Screen()
-#calculate the width and height
+#вираховуємо ширину і висоту
 width = (TILESIZE * MAPWIDTH) + max(200,INVWIDTH * 50)
 num_rows = int(ceil((len(resources) / INVWIDTH)))
 inventory_height =  num_rows * 120 + 40
@@ -283,34 +283,34 @@ screen.setworldcoordinates(0,0,width,height)
 screen.bgcolor(BACKGROUNDCOLOUR)
 screen.listen()
 
-#register the player image  
+#реєструємо зображення гравця  
 screen.register_shape(playerImg)
-#register each of the resource images
+#реєструємо зображення усіх ресурсів
 for texture in textures.values():
   screen.register_shape(texture)
 
-#create another turtle to do the graphics drawing
+#створюємо іншу turtle (черепашку) для зображення картинок
 rendererT = turtle.Turtle()
 rendererT.hideturtle()
 rendererT.penup()
 rendererT.speed(0)
-rendererT.setheading(90)
+rendererT.setheading (90)
 
-#create a world of random resources.
+#створюмо світ з випадковими ресурсами.
 world = [ [DIRT for w in range(MAPHEIGHT)] for h in range(MAPWIDTH) ]
 
-#map the keys for moving and picking up to the correct functions.
+#встановлюємо клавіші для переміщення та підбору предметів.
 screen.onkey(moveUp, 'w')
 screen.onkey(moveDown, 's')
 screen.onkey(moveLeft, 'a')
 screen.onkey(moveRight, 'd')
 screen.onkey(pickUp, 'space')
 
-#set up the keys for placing and crafting each resource
+#встановлюємо клавіші для встановлення та створення ресурсів
 bindPlacingKeys()
 bindCraftingKeys()
 
-#these functions are defined above
+#ці функції визначені вище
 generateRandomWorld()
 drawWorld()
 drawInventory()
