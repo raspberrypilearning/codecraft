@@ -1,6 +1,6 @@
 --- challenge ---
 
-## Herausforderung: Sand schaffen
+## Herausforderung: Sand erschaffen
 
 Kannst du eine Ressource `SAND` zu deinem Spiel hinzufügen? Du kannst die vorher verwendeten Schritte als Hilfe benutzen.
 

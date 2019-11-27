@@ -11,31 +11,39 @@
 #moves the player left 1 tile.
 def moveLeft():
   global playerX
-  if(playerX > 0):
+  if(drawing == False and playerX > 0):
+    oldX = playerX
     playerX -= 1
-    drawPlayer()
-
+    drawResource(oldX, playerY)
+    drawResource(playerX, playerY)
+    
 #moves the player right 1 tile.
 def moveRight():
   global playerX, MAPWIDTH
-  if(playerX < MAPWIDTH - 1):
+  if(drawing == False and playerX < MAPWIDTH - 1):
+    oldX = playerX
     playerX += 1
-    drawPlayer()
-
+    drawResource(oldX, playerY)
+    drawResource(playerX, playerY)
+    
 #moves the player up 1 tile.
 def moveUp():
   global playerY
-  if(playerY > 0):
+  if(drawing == False and playerY > 0):
+    oldY = playerY
     playerY -= 1
-    drawPlayer()
-
+    drawResource(playerX, oldY)
+    drawResource(playerX, playerY)
+    
 #moves the player down 1 tile.
 def moveDown():
   global playerY, MAPHEIGHT
-  if(playerY < MAPHEIGHT - 1):
+  if(drawing == False and playerY < MAPHEIGHT - 1):
+    oldY = playerY
     playerY += 1
-    drawPlayer()
-
+    drawResource(playerX, oldY)
+    drawResource(playerX, playerY)
+    
 #picks up the resource at the player's position.
 def pickUp():
   global playerX, playerY
@@ -51,6 +59,7 @@ def pickUp():
     drawResource(playerX, playerY)
     #redraw the inventory with the extra resource.
     drawInventory()
+    #drawPlayer()
 
 #place a resource at the player's current position
 def place(resource):
@@ -70,6 +79,7 @@ def place(resource):
     #update the display (world and inventory)
     drawResource(playerX, playerY)
     drawInventory()
+    #drawPlayer()
     print('   Placing', names[resource], 'complete')
   #...and if they have none left...
   else:
@@ -136,14 +146,13 @@ def drawResource(y, x):
     texture = textures[world[y][x]]
     rendererT.shape(texture)
     rendererT.stamp()
+    if playerX == y and playerY == x:
+      rendererT.shape(playerImg)
+      rendererT.stamp()
     screen.update()
     #nothing is now being drawn
     drawing = False
-
-#draws the player on the world
-def drawPlayer():
-  playerT.goto( (playerX * TILESIZE) + 20, height - (playerY * TILESIZE) -20 )
-
+    
 #draws the world map
 def drawWorld():
   #loop through each row
@@ -172,7 +181,7 @@ def drawInventory():
       rendererT.forward(width)
       rendererT.right(90)
     rendererT.end_fill()
-    rendererT.color('')
+    rendererT.color('black')
     #display the 'place' and 'craft' text
     for i in range(1,num_rows+1):
       rendererT.goto(20, (height - (MAPHEIGHT * TILESIZE)) - 20 - (i * 100))
@@ -240,12 +249,6 @@ def generateRandomWorld():
       #GRASS if the random number is a 3 or a 4
       elif randomNumber in [3,4]:
         tile = GRASS
-      #WOOD if it's a 5
-      elif randomNumber == 5:
-        tile = WOOD
-      #SAND if it's a 6
-      elif randomNumber == 6:
-        tile = SAND
       #otherwise it's DIRT
       else:
         tile = DIRT
@@ -285,13 +288,6 @@ screen.register_shape(playerImg)
 #register each of the resource images
 for texture in textures.values():
   screen.register_shape(texture)
-  
-#create a new player object
-playerT = turtle.Turtle()
-playerT.hideturtle()
-playerT.shape(playerImg)
-playerT.penup()
-playerT.speed(0)
 
 #create another turtle to do the graphics drawing
 rendererT = turtle.Turtle()
@@ -319,7 +315,5 @@ generateRandomWorld()
 drawWorld()
 drawInventory()
 generateInstructions()
-drawPlayer()
-playerT.showturtle()
 
 
