@@ -1,11 +1,11 @@
 #!/bin/python3
 
 #############
-# CodeCraft #
+# 代码世界 #
 #############
 
 #---
-#Game functions
+＃游戏功能
 #---
 
 #moves the player left 1 tile.
