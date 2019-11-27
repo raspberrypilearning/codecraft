@@ -1,14 +1,14 @@
 #!/bin/python3
 
 #############
-# CodeCraft #
+# صناعة الأكواد #
 #############
 
 #---
-#Game functions
+وظائف اللعبة#
 #---
 
-#moves the player left 1 tile.
+#تحريك اللاعب بلاطه واحده إلى اليسار.
 def moveLeft():
   global playerX
   if(drawing == False and playerX > 0):
@@ -17,7 +17,7 @@ def moveLeft():
     drawResource(oldX, playerY)
     drawResource(playerX, playerY)
     
-#moves the player right 1 tile.
+#تحريك اللاعب بلاطه واحده إلى اليمين.
 def moveRight():
   global playerX, MAPWIDTH
   if(drawing == False and playerX < MAPWIDTH - 1):
@@ -26,7 +26,7 @@ def moveRight():
     drawResource(oldX, playerY)
     drawResource(playerX, playerY)
     
-#moves the player up 1 tile.
+#تحريك اللاعب بلاطه واحده إلى الأعلى.
 def moveUp():
   global playerY
   if(drawing == False and playerY > 0):
@@ -35,7 +35,7 @@ def moveUp():
     drawResource(playerX, oldY)
     drawResource(playerX, playerY)
     
-#moves the player down 1 tile.
+#تحريك اللاعب بلاطه واحده إلى الأسفل.
 def moveDown():
   global playerY, MAPHEIGHT
   if(drawing == False and playerY < MAPHEIGHT - 1):
@@ -44,105 +44,105 @@ def moveDown():
     drawResource(playerX, oldY)
     drawResource(playerX, playerY)
     
-#picks up the resource at the player's position.
+#جمع الموارد من منطقة اللاعب.
 def pickUp():
   global playerX, playerY
   drawing = True
   currentTile = world[playerX][playerY]
-  #if the user doesn't already have too many...
+  #إذا المستخدم لا يملك موارد كافية...
   if inventory[currentTile] < MAXTILES:
-    #player now has 1 more of this resource
+    #يملك اللاعب الان واحد اضافي من هذا المورد
     inventory[currentTile] += 1
-    #the player is now standing on dirt
+    #اللاعب الان يقف على الطين
     world[playerX][playerY] = DIRT
-    #draw the new DIRT tile
+    #رسم منطقة من الطين جديدة
     drawResource(playerX, playerY)
-    #redraw the inventory with the extra resource.
+    #إعادة رسم المخزون بالموارد الإضافية.
     drawInventory()
     #drawPlayer()
 
-#place a resource at the player's current position
+#ضع موردًا في مكان اللاعب حاليًا
 def place(resource):
-  print('placing: ', names[resource])
-  #only place if the player has some left...
+  print('وضغ: ', names[resource])
+  #ضع موردا في مكان اللاعب في حال إمتلاكه أحدها...
   if inventory[resource] > 0:
-    #find out the resourcee at the player's current position
+    #اكتشف الموارد في منطقة اللاعب الحاليه
     currentTile = world[playerX][playerY]
-    #pick up the resource the player's standing on
-    #(if it's not DIRT)
+    #جمع الموارد من منطقة اللاعب
+    #(إذا لم يكن طين)
     if currentTile is not DIRT:
       inventory[currentTile] += 1
-    #place the resource at the player's current position
+    #ضع موردًا في مكان اللاعب حاليًا
     world[playerX][playerY] = resource
-    #add the new resource to the inventory
+    #اضف المورد الجديد إلى المخزون
     inventory[resource] -= 1
-    #update the display (world and inventory)
+    #تحديث مظهر(العالم و المخزون)
     drawResource(playerX, playerY)
     drawInventory()
     #drawPlayer()
-    print('   Placing', names[resource], 'complete')
-  #...and if they have none left...
+    print('   صناعة', names[resource], 'اكتملت')
+  #... في حال لم يعد يمتلك مورد...
   else:
-    print('   You have no', names[resource], 'left')
+    print('   ليس لديك', names[resource], 'متبقي')
 
-#craft a new resource
+#إنشاء مورد جديد
 def craft(resource):
-  print('Crafting: ', names[resource])
-  #if the resource can be crafted...
+  print('صناعة: ', names[resource])
+  #اذا كان بالامكان انشاء المورد...
   if resource in crafting:
-    #keeps track of whether we have the resources
-    #to craft this item
+    #يتتبع في حال وجود الموارد
+    #لإنشاء هذا العنصر
     canBeMade = True
-    #for each item needed to craft the resource
+    #لكل عنصر يلزمة إنشاء مورد
     for i in crafting[resource]:
-      #...if we don't have enough...
+      #... إذا لم يمتلك ما يكفيه...
       if crafting[resource][i] > inventory[i]:
-      #...we can't craft it!
+      #...لا نستطيع إنشائه!
         canBeMade = False
         break
-    #if we can craft it (we have all needed resources)
+    #إذا يمكن إنشائه(فإنه يملك جميع الموارد اللازمة)
     if canBeMade == True:
-      #take each item from the inventory
+      #خذ كل عنصر من المخزون
       for i in crafting[resource]:
         inventory[i] -= crafting[resource][i]
-      #add the crafted item to the inventory
+      #اضف العنصر الجديد إلى المخزون
       inventory[resource] += 1
-      print('   Crafting', names[resource], 'complete')
-    #...otherwise the resource can't be crafted...
+      print('   صناعة', names[resource], 'اكتملت')
+    #... غير ذلك فإن المورد لا يمكن إنشائه...
     else:
-      print('   Can\'t craft', names[resource])
-    #update the displayed inventory
+      print('   لا يمكن صناعة', names[resource])
+    #تحديث مظهر المخزون
     drawInventory()
 
-#creates a function for placing each resource
+#إنشاء دالة لوضع المورد
 def makeplace(resource):
   return lambda: place(resource)
 
-#attaches a 'placing' function to each key press
+#ارفق دالة 'placing' لكل ضغطة المفتاح
 def bindPlacingKeys():
   for k in placekeys:
     screen.onkey(makeplace(k), placekeys[k])
 
-#creates a function for crafting each resource
+#إنشاء دالة لانشاء المورد
 def makecraft(resource):
   return lambda: craft(resource)
 
-#attaches a 'crafting' function to each key press
+#ارفق دالة 'crafting' لكل ضغطة المفتاح
 def bindCraftingKeys():
   for k in craftkeys:
     screen.onkey(makecraft(k), craftkeys[k])
 
-#draws a resource at the position (y,x)
+#رسم مورد في منطقة (ص،س)
 def drawResource(y, x):
-  #this variable stops other stuff being drawn
+  # هذا المتغير يتوقف على الأشياء الأخرى التي يتم رسمها
   global drawing
-  #only draw if nothing else is being drawn
+  #فقط ارسم في حال لم يتم رسم شيء آخر
   if drawing == False:
-    #something is now being drawn
+    #شيء ما يتم رسمه الآن
     drawing = True
-    #draw the resource at that position in the tilemap, using the correct image
+    # رسم المورد في منطقة معينة من خريطة البلاط، باستخدام الصورة الصحيحة
     rendererT.goto( (y * TILESIZE) + 20, height - (x * TILESIZE) - 20 )
-    #draw tile with correct texture
+    #رسم البلاط بالبنية الصحيحة
     texture = textures[world[y][x]]
     rendererT.shape(texture)
     rendererT.stamp()
@@ -150,27 +150,27 @@ def drawResource(y, x):
       rendererT.shape(playerImg)
       rendererT.stamp()
     screen.update()
-    #nothing is now being drawn
+    #لا شيء يتم رسمه
     drawing = False
     
-#draws the world map
+#رسم خريطة العالم
 def drawWorld():
-  #loop through each row
+  #كرر من خلال كل صف
   for row in range(MAPHEIGHT):
-    #loop through each column in the row
+    #كرر من خلال كل عمود في الصف
     for column in range(MAPWIDTH):
-      #draw the tile at the current position
+      #رسم البلاط في المنطقة الحالية
       drawResource(column, row)
 
-#draws the inventory to the screen
+#رسم المخزون على الشاشة
 def drawInventory():
-  #this variable stops other stuff being drawn
+  # هذا المتغير يتوقف على الأشياء الأخرى التي يتم رسمها
   global drawing
-  #only draw if nothing else is being drawn
+  #فقط ارسم في حال لم يتم رسم شيء آخر
   if drawing == False:
-    #something is now being drawn
+    #شيء ما يتم رسمه الآن
     drawing = True
-    #use a rectangle to cover the current inventory
+    #استخدم المستطيل لتغطية المخزون الحالي
     rendererT.color(BACKGROUNDCOLOUR)
     rendererT.goto(0,0)
     rendererT.begin_fill()
@@ -182,103 +182,103 @@ def drawInventory():
       rendererT.right(90)
     rendererT.end_fill()
     rendererT.color('black')
-    #display the 'place' and 'craft' text
+    #عرض نص "المكان" و"الصنعة"
     for i in range(1,num_rows+1):
       rendererT.goto(20, (height - (MAPHEIGHT * TILESIZE)) - 20 - (i * 100))
       rendererT.write("place")
       rendererT.goto(20, (height - (MAPHEIGHT * TILESIZE)) - 40 - (i * 100))
       rendererT.write("craft")
-    #set the inventory position
+    #ضبط منطقة المخزون
     xPosition = 70
     yPostition = height - (MAPHEIGHT * TILESIZE) - 80
     itemNum = 0
     for i, item in enumerate(resources):
-      #add the image
+      #اضف الصورة
       rendererT.goto(xPosition, yPostition)
       rendererT.shape(textures[item])
       rendererT.stamp()
-      #add the number in the inventory
+      #اضف قيمة المخزون
       rendererT.goto(xPosition, yPostition - TILESIZE)
       rendererT.write(inventory[item])
-      #add key to place
+      #اضف مفتاح للمكان
       rendererT.goto(xPosition, yPostition - TILESIZE - 20)
       rendererT.write(placekeys[item])
-      #add key to craft
+      #اضف مفتاح للصناعة
       if crafting.get(item) != None:
         rendererT.goto(xPosition, yPostition - TILESIZE - 40)
         rendererT.write(craftkeys[item])     
-      #move along to place the next inventory item
+      #التحرك لوضع عنصر المخزون التالي
       xPosition += 50
       itemNum += 1
-      #drop down to the next row every 10 items
+      #انتقل الى الصف التالي كل 10 عناصر
       if itemNum % INVWIDTH == 0:
         xPosition = 70
         itemNum = 0
         yPostition -= TILESIZE + 80
     drawing = False
 
-#generate the instructions, including crafting rules
+#توفير التعليمات، بالاضافة الى قوانين الصناعه
 def generateInstructions():
   instructions.append('Crafting rules:')
-  #for each resource that can be crafted...
+  #لكل مورد يمكن إنشائه...
   for rule in crafting:
-    #create the crafting rule text
+    #إنشاء نص قانون الصياغة
     craftrule = names[rule] + ' = '
     for resource, number in crafting[rule].items():
       craftrule += str(number) + ' ' + names[resource] + ' '
-    #add the crafting rule to the instructions
+    #اضف قواعد الصناعه على التعليمات
     instructions.append(craftrule)
-  #display the instructions
+  #إظهار التعليمات
   yPos = height - 20
   for item in instructions:
     rendererT.goto( MAPWIDTH*TILESIZE + 40, yPos)
     rendererT.write(item)
     yPos-=20
 
-#generate a random world
+#إدراج عالم عشوائي
 def generateRandomWorld():
-  #loop through each row
+  #كرر من خلال كل صف
   for row in range(MAPHEIGHT):
-    #loop through each column in that row
+    #كرر من خلال كل عمود في الصف
     for column in range(MAPWIDTH):
-      #pick a random number between 0 and 10
+      #اختر رقم عشوائي بين 0 الى 10
       randomNumber = random.randint(0,10)
-      #WATER if the random number is a 1 or a 2
+      # الماء إذا كان الرقم العشوائي 1 او 2
       if randomNumber in [1,2]:
         tile = WATER
-      #GRASS if the random number is a 3 or a 4
+      #عشب إذا كان الرقم العشوائي 3 او 4
       elif randomNumber in [3,4]:
         tile = GRASS
-      #WOOD if it's a 5
+      #خشب إذا كان الرقم 5
       elif randomNumber == 5:
         tile = WOOD
-      #SAND if it's a 6
+      #رمل إذا كان 6
       elif randomNumber == 6:
         tile = SAND
-      #otherwise it's DIRT
+      # غير ذلك فهو طين
       else:
         tile = DIRT
-      #set the position in the tilemap to the randomly chosen tile
+      #ضبط الموقع في خريطة البلاط للأختيار العشوائي للبلاط
       world[column][row] = tile
 
 #---
-#Code starts running here
+#يبدأ تشغيل الكود من هنا
 #---
 
-#import the modules and variables needed
-import turtle
+#استدعي الوحدات والمتغيرات اللازمة
+استدعاء السلاحف
 import random
 from variables import *
 from math import ceil
 
 TILESIZE = 20
-#the number of inventory resources per row
+#عدد موارد المخزون لكل صف
 INVWIDTH = 8
 drawing = False
 
-#create a new 'screen' object
-screen = turtle.Screen()
-#calculate the width and height
+# إنشاء كائن "شاشة" جديد
+الشاشة = turtle.Screen()
+# حساب العرض والارتفاع
 width = (TILESIZE * MAPWIDTH) + max(200,INVWIDTH * 50)
 num_rows = int(ceil((len(resources) / INVWIDTH)))
 inventory_height =  num_rows * 120 + 40
@@ -289,34 +289,34 @@ screen.setworldcoordinates(0,0,width,height)
 screen.bgcolor(BACKGROUNDCOLOUR)
 screen.listen()
 
-#register the player image  
+#تسجيل صورة اللاعب  
 screen.register_shape(playerImg)
-#register each of the resource images
+#تسجيل كل صور الموارد
 for texture in textures.values():
   screen.register_shape(texture)
 
-#create another turtle to do the graphics drawing
+#إنشاء سلاحف اخرى للقيام بالرسم البياني
 rendererT = turtle.Turtle()
 rendererT.hideturtle()
 rendererT.penup()
 rendererT.speed(0)
 rendererT.setheading(90)
 
-#create a world of random resources.
+#إنشاء عالم من الموارد العشوائية.
 world = [ [DIRT for w in range(MAPHEIGHT)] for h in range(MAPWIDTH) ]
 
-#map the keys for moving and picking up to the correct functions.
+#تعيين مفتاح لتحريك والتقاط المهام الصحيحة.
 screen.onkey(moveUp, 'w')
 screen.onkey(moveDown, 's')
 screen.onkey(moveLeft, 'a')
 screen.onkey(moveRight, 'd')
 screen.onkey(pickUp, 'space')
 
-#set up the keys for placing and crafting each resource
-bindPlacingKeys()
+#ضبط مفاتيح لوضع وصياغة كل مورد
+bindCraftingKeys()
 bindCraftingKeys()
 
-#these functions are defined above
+#هذه الدوال معرفة بالاعلى
 generateRandomWorld()
 drawWorld()
 drawInventory()
