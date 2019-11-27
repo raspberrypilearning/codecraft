@@ -5,10 +5,10 @@
 #############
 
 #---
-#Game functions
+#Funkcije igre
 #---
 
-#moves the player left 1 tile.
+#premakne igralca 1 blok v levo.
 def moveLeft():
   global playerX
   if(drawing == False and playerX > 0):
@@ -17,7 +17,7 @@ def moveLeft():
     drawResource(oldX, playerY)
     drawResource(playerX, playerY)
     
-#moves the player right 1 tile.
+#premakne igralca 1 blok v desno.
 def moveRight():
   global playerX, MAPWIDTH
   if(drawing == False and playerX < MAPWIDTH - 1):
@@ -26,7 +26,7 @@ def moveRight():
     drawResource(oldX, playerY)
     drawResource(playerX, playerY)
     
-#moves the player up 1 tile.
+#premakne igralca 1 blok gor.
 def moveUp():
   global playerY
   if(drawing == False and playerY > 0):
@@ -35,7 +35,7 @@ def moveUp():
     drawResource(playerX, oldY)
     drawResource(playerX, playerY)
     
-#moves the player down 1 tile.
+#premakne igralca 1 blok dol.
 def moveDown():
   global playerY, MAPHEIGHT
   if(drawing == False and playerY < MAPHEIGHT - 1):
@@ -44,16 +44,16 @@ def moveDown():
     drawResource(playerX, oldY)
     drawResource(playerX, playerY)
     
-#picks up the resource at the player's position.
+#pobere surovino na igralčevi poziciji.
 def pickUp():
   global playerX, playerY
   drawing = True
   currentTile = world[playerX][playerY]
-  #if the user doesn't already have too many...
+  #če uporabnik še nima preveč...
   if inventory[currentTile] < MAXTILES:
-    #player now has 1 more of this resource
+    #igralec ima zdaj 1 surovino več
     inventory[currentTile] += 1
-    #the player is now standing on dirt
+    #igralec sedaj stoji na bloku zemlje
     world[playerX][playerY] = DIRT
     #draw the new DIRT tile
     drawResource(playerX, playerY)
