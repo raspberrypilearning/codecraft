@@ -5,315 +5,315 @@
 #############
 
 #---
-#Game functions
+#Spelfuncties
 #---
 
-#moves the player left 1 tile.
-def moveLeft():
-  global playerX
+#beweegt speler 1 tegel naar links.
+def beweegLinks():
+  global spelerX
   if(drawing == False and playerX > 0):
     oldX = playerX
-    playerX -= 1
+    spelerX -= 1
     drawResource(oldX, playerY)
-    drawResource(playerX, playerY)
+    tekenBron(spelerX, spelerY)
     
-#moves the player right 1 tile.
-def moveRight():
-  global playerX, MAPWIDTH
+#beweegt speler 1 tegel naar rechts.
+def beweegRechts():
+  global spelerX, KAARTBREEDTE
   if(drawing == False and playerX < MAPWIDTH - 1):
     oldX = playerX
-    playerX += 1
+    spelerX += 1
     drawResource(oldX, playerY)
-    drawResource(playerX, playerY)
+    tekenBron(spelerX, spelerY)
     
-#moves the player up 1 tile.
-def moveUp():
-  global playerY
+#beweegt speler 1 tegel naar boven.
+def beweegBoven():
+  global spelerY
   if(drawing == False and playerY > 0):
     oldY = playerY
-    playerY -= 1
+    spelerY -= 1
     drawResource(playerX, oldY)
-    drawResource(playerX, playerY)
+    tekenBron(spelerX, spelerY)
     
-#moves the player down 1 tile.
-def moveDown():
-  global playerY, MAPHEIGHT
+#beweegt speler 1 tegel naar onder.
+def beweegOnder():
+  global spelerY, KAARTHOOGTE
   if(drawing == False and playerY < MAPHEIGHT - 1):
     oldY = playerY
-    playerY += 1
+    spelerY += 1
     drawResource(playerX, oldY)
-    drawResource(playerX, playerY)
+    tekenBron(spelerX, spelerY)
     
-#picks up the resource at the player's position.
-def pickUp():
-  global playerX, playerY
-  drawing = True
-  currentTile = world[playerX][playerY]
-  #if the user doesn't already have too many...
-  if inventory[currentTile] < MAXTILES:
-    #player now has 1 more of this resource
-    inventory[currentTile] += 1
-    #the player is now standing on dirt
-    world[playerX][playerY] = DIRT
-    #draw the new DIRT tile
-    drawResource(playerX, playerY)
-    #redraw the inventory with the extra resource.
-    drawInventory()
-    #drawPlayer()
+#pakt de bron op, op de positie van de speler.
+def pakOp():
+  global spelerX, spelerY
+  tekenen = True
+  dezeTegel = wereld[spelerX][spelerY]
+  #als de speler er al niet teveel heeft...
+  if inventaris[dezeTegel] < MAXTEGELS:
+    #speler heeft nu 1 of meer van deze bron
+    inventaris[dezeTegel] += 1
+    #de speler staat nu op Vuil
+    wereld[spelerX][spelerY] = VUIL
+    #teken de volgende VUIL tegel
+    tekenBron(spelerX, spelerY)
+    #herteken de inventaris met de extra bron.
+    tekenInventaris()
+    #tekenSpeler()
 
-#place a resource at the player's current position
-def place(resource):
-  print('placing: ', names[resource])
-  #only place if the player has some left...
-  if inventory[resource] > 0:
-    #find out the resourcee at the player's current position
-    currentTile = world[playerX][playerY]
-    #pick up the resource the player's standing on
-    #(if it's not DIRT)
-    if currentTile is not DIRT:
-      inventory[currentTile] += 1
-    #place the resource at the player's current position
-    world[playerX][playerY] = resource
-    #add the new resource to the inventory
-    inventory[resource] -= 1
-    #update the display (world and inventory)
-    drawResource(playerX, playerY)
-    drawInventory()
-    #drawPlayer()
-    print('   Placing', names[resource], 'complete')
-  #...and if they have none left...
+#plaats een bron op de positie van de speler
+def plaats(bron):
+  print('plaatsen: ', namen[bron])
+  #alleen plaatsen als de speler nog wat over heeft...
+  if inventaris[bron] > 0:
+    #wat is de bron op de positie van de speler
+    dezeTegel = wereld[spelerX][spelerY]
+    #pak de bron waarop de speler staat
+    #(als het niet VUIL is)
+    if dezeTegel is not VUIL:
+      inventaris[dezeTegel] += 1
+    #plaats de bron op de positie van de speler
+    wereld[spelerX][spelerY] = bron
+    #voeg de nieuwe bron toe aan de inventaris
+    inventaris[bron] -= 1
+    #vernieuw het scherm (wereld en inventaris)
+    tekenBron(spelerX, spelerY)
+    tekenInventaris()
+    #tekenSpeler()
+    print('   Plaatsen', namen[bron], 'klaar')
+  #...en als er niks over is...
   else:
-    print('   You have no', names[resource], 'left')
+    print('   Je hebt geen', namen[bron], 'over')
 
-#craft a new resource
-def craft(resource):
-  print('Crafting: ', names[resource])
-  #if the resource can be crafted...
-  if resource in crafting:
-    #keeps track of whether we have the resources
-    #to craft this item
-    canBeMade = True
-    #for each item needed to craft the resource
-    for i in crafting[resource]:
-      #...if we don't have enough...
-      if crafting[resource][i] > inventory[i]:
-      #...we can't craft it!
-        canBeMade = False
+#maak een nieuwe bron
+def maak(bron):
+  print('maken: ', namen[bron])
+  #als de bron kan worden gemaakt...
+  if bron in maken:
+    #hou bij of we de bronnen hebben
+    #om dit item te kunnen maken
+    kanGemaaktWorden = True
+    #voor elke item dat we nodig hebben om de bron te maken
+    for i in maken[bron]:
+      #...als we niet genoeg hebben...
+      if maken[bron][i] > inventaris[i]:
+      #...kunnen we het niet maken!
+        kanGemaaktWorden = False
         break
-    #if we can craft it (we have all needed resources)
-    if canBeMade == True:
-      #take each item from the inventory
-      for i in crafting[resource]:
-        inventory[i] -= crafting[resource][i]
-      #add the crafted item to the inventory
-      inventory[resource] += 1
-      print('   Crafting', names[resource], 'complete')
-    #...otherwise the resource can't be crafted...
+    #als we het kunnen maken (we hebben alle bronnen)
+    if kanGemaaktWorden == True:
+      #neem elk item van de inventaris
+      for i in maken[bron]:
+        inventaris[i] -= maken[bron][i]
+      #voeg het gemaakte item toe aan de inventaris
+      inventaris[bron] += 1
+      print('   maken', namen[bron], 'klaar')
+    #...anders kan de bron niet worden gemaakt...
     else:
-      print('   Can\'t craft', names[resource])
-    #update the displayed inventory
-    drawInventory()
+      print('   Kan', namen[bron],'niet maken')
+    #vernieuw de inventaris op het scherm
+    tekenInventaris()
 
-#creates a function for placing each resource
-def makeplace(resource):
-  return lambda: place(resource)
+#maakt een functie om elke bron te plaatsen
+def maakplaats(bron):
+  return lambda: plaats(bron)
 
-#attaches a 'placing' function to each key press
-def bindPlacingKeys():
-  for k in placekeys:
-    screen.onkey(makeplace(k), placekeys[k])
+#verbind een 'plaats'functie aan elke ingedrukte toe
+def verbindPlaatsToetsen():
+  for k in plaatstoetsen:
+    scherm.onkey(maakplaats(k), plaatstoetsen[k])
 
-#creates a function for crafting each resource
-def makecraft(resource):
-  return lambda: craft(resource)
+#maak een functie voor het maken van elke bron
+def maakmaak(bron):
+  return lambda: maak(bron)
 
-#attaches a 'crafting' function to each key press
-def bindCraftingKeys():
-  for k in craftkeys:
-    screen.onkey(makecraft(k), craftkeys[k])
+#verbindt een 'maak'functie aan elke ingedrukte toets
+def verbindMaakToetsen():
+  for k in maaktoetsen:
+    scherm.onkey(maakmaak(k), maaktoetsen[k])
 
-#draws a resource at the position (y,x)
-def drawResource(y, x):
-  #this variable stops other stuff being drawn
-  global drawing
-  #only draw if nothing else is being drawn
-  if drawing == False:
-    #something is now being drawn
-    drawing = True
-    #draw the resource at that position in the tilemap, using the correct image
-    rendererT.goto( (y * TILESIZE) + 20, height - (x * TILESIZE) - 20 )
-    #draw tile with correct texture
-    texture = textures[world[y][x]]
-    rendererT.shape(texture)
+#teken bron op positie (y,x)
+def tekenBron(y, x):
+  #Deze variabele stopt alle dingen die getekend worden
+  global tekenen
+  teken alleen als er niks anders wordt getekend
+  if tekenen == False:
+    #er wordt nu iets getekend
+    tekenen = True
+    #teken de bron op de positie op de tegelkaart, met het goede plaatje erbij
+    rendererT.goto( (y * TEGELGROOTTE) + 20, hoogte - (x * TEGELGROOTTE) - 20 )
+    #teken de tegel met het juiste materiaal
+    materiaal = materialen[wereld[y][x]]
+    rendererT.shape(materiaal)
     rendererT.stamp()
     if playerX == y and playerY == x:
       rendererT.shape(playerImg)
       rendererT.stamp()
-    screen.update()
-    #nothing is now being drawn
-    drawing = False
+    scherm.update()
+    #er wordt niets getekend
+    tekenen = False
     
-#draws the world map
-def drawWorld():
-  #loop through each row
-  for row in range(MAPHEIGHT):
-    #loop through each column in the row
-    for column in range(MAPWIDTH):
-      #draw the tile at the current position
-      drawResource(column, row)
+#teken de wereldkaart
+def tekenWereld():
+  #doorloop elke rij
+  for rij in range(KAARTHOOGTE):
+    #doorloop elke kolom in de rij
+    for kolom in range(KAARTBREEDTE):
+      #teken de tegel op de huidige positie
+      tekenBron(kolom, rij)
 
-#draws the inventory to the screen
-def drawInventory():
-  #this variable stops other stuff being drawn
-  global drawing
-  #only draw if nothing else is being drawn
-  if drawing == False:
-    #something is now being drawn
-    drawing = True
-    #use a rectangle to cover the current inventory
-    rendererT.color(BACKGROUNDCOLOUR)
+#tekent de inventaris op het scherm
+def tekenInventaris():
+  #Deze variabele stopt alle dingen die getekend worden
+  global tekenen
+  teken alleen als er niks anders wordt getekend
+  if tekenen == False:
+    #er wordt nu iets getekend
+    tekenen = True
+    #gebruik een rechthoek voor de inventaris
+    rendererT.color(ACHTERGRONDKLEUR)
     rendererT.goto(0,0)
     rendererT.begin_fill()
     #rendererT.setheading(0)
     for i in range(2):
-      rendererT.forward(inventory_height - 60)
+      rendererT.forward(inventaris_hoogte - 60)
       rendererT.right(90)
-      rendererT.forward(width)
+      rendererT.forward(breedte)
       rendererT.right(90)
     rendererT.end_fill()
     rendererT.color('black')
-    #display the 'place' and 'craft' text
-    for i in range(1,num_rows+1):
-      rendererT.goto(20, (height - (MAPHEIGHT * TILESIZE)) - 20 - (i * 100))
-      rendererT.write("place")
-      rendererT.goto(20, (height - (MAPHEIGHT * TILESIZE)) - 40 - (i * 100))
-      rendererT.write("craft")
-    #set the inventory position
-    xPosition = 70
-    yPostition = height - (MAPHEIGHT * TILESIZE) - 80
+    #laat 'plaats' en 'maak' tekst zien
+    for i in range(1,num_rijen+1):
+      rendererT.goto(20, (hoogte - (KAARTHOOGTE * TEGELGROOTTE)) - 20 - (i * 100))
+      rendererT.write("plaats")
+      rendererT.goto(20, (hoogte - (KAARTHOOGTE * TEGELGROOTTE)) - 40 - (i * 100))
+      rendererT.write("maak")
+    #bepaal de positie van de inventaris
+    xPositie = 70
+    yPositie = hoogte - (KAARTHOOGTE * TEGELGROOTTE) - 80
     itemNum = 0
-    for i, item in enumerate(resources):
-      #add the image
-      rendererT.goto(xPosition, yPostition)
-      rendererT.shape(textures[item])
+    for i, item in enumerate(bronnen):
+      #voeg de afbeelding toe
+      rendererT.goto(xPositie, yPositie)
+      rendererT.shape(materialen[item])
       rendererT.stamp()
-      #add the number in the inventory
-      rendererT.goto(xPosition, yPostition - TILESIZE)
-      rendererT.write(inventory[item])
-      #add key to place
-      rendererT.goto(xPosition, yPostition - TILESIZE - 20)
-      rendererT.write(placekeys[item])
-      #add key to craft
-      if crafting.get(item) != None:
-        rendererT.goto(xPosition, yPostition - TILESIZE - 40)
-        rendererT.write(craftkeys[item])     
-      #move along to place the next inventory item
-      xPosition += 50
+      #voeg het nummer in de inventaris toe
+      rendererT.goto(xPositie, yPositie - TEGELGROOTTE)
+      rendererT.write(inventaris[item])
+      #voeg 'plaats'toets toe
+      rendererT.goto(xPositie, yPositie - TEGELGROOTTE - 20)
+      rendererT.write(plaatstoetsen[item])
+      #voeg 'maak'toets toe
+      if maken.get(item) != None:
+        rendererT.goto(xPositie, yPostitie - TEGELGROOTTE - 40)
+        rendererT.write(maaktoetsen[item])     
+      #ga door naar het volgende inventaris item
+      xPositie += 50
       itemNum += 1
-      #drop down to the next row every 10 items
-      if itemNum % INVWIDTH == 0:
-        xPosition = 70
+      #ga naar de volgende rij na elke 10 items
+      if itemNum % INVbreedte == 0:
+        xPositie = 70
         itemNum = 0
-        yPostition -= TILESIZE + 80
-    drawing = False
+        yPositie -= TEGELGROOTTE + 80
+    tekenen = False
 
-#generate the instructions, including crafting rules
-def generateInstructions():
-  instructions.append('Crafting rules:')
-  #for each resource that can be crafted...
-  for rule in crafting:
-    #create the crafting rule text
-    craftrule = names[rule] + ' = '
-    for resource, number in crafting[rule].items():
-      craftrule += str(number) + ' ' + names[resource] + ' '
-    #add the crafting rule to the instructions
-    instructions.append(craftrule)
-  #display the instructions
-  yPos = height - 20
-  for item in instructions:
-    rendererT.goto( MAPWIDTH*TILESIZE + 40, yPos)
+#genereer de instructies, inclusief de maakregels
+def genereerInstructies():
+  instructies.append('maakregels:')
+  #voor elke bron die kan worden gemaakt...
+  for regel in maken:
+    #maak de maakregeltekst
+    maakregel = namen[regel] + ' = '
+    for bron, nummer in maken[regel].items():
+      maakregel += str(nummer) + ' ' + namen[bron] + ' '
+    #voeg maakregel toe aan de instructies
+    instructies.append(maakregel)
+  #laat de instructies zien
+  yPos = hoogte - 20
+  for item in instructies:
+    rendererT.goto( KAARTBREEDTE*TEGELGROOTTE + 40, yPos)
     rendererT.write(item)
     yPos-=20
 
-#generate a random world
-def generateRandomWorld():
-  #loop through each row
-  for row in range(MAPHEIGHT):
-    #loop through each column in that row
-    for column in range(MAPWIDTH):
-      #pick a random number between 0 and 10
-      randomNumber = random.randint(0,10)
-      #WATER if the random number is a 1 or a 2
-      if randomNumber in [1,2]:
-        tile = WATER
-      #GRASS if the random number is a 3 or a 4
-      elif randomNumber in [3,4]:
-        tile = GRASS
-      #otherwise it's DIRT
+#genereer een willekeurige wereld
+def genereerWillekeurigeWereld():
+  #doorloop elke rij
+  for rij in range(KAARTHOOGTE):
+    #doorloop elke kolom in de rij
+    for kolom in range(KAARTBREEDTE):
+      #neem een willekeurig getal tussen 0 en 10
+      willekeurigGetal = random.randint(0,10)
+      #WATER als het willekeurige getal 1 of 2 is
+      if willekeurigGetal in [1,2]:
+        tegel = WATER
+      #GRAS als het een 3 of een 4 is
+      elif willekeurigGetal in [3,4]:
+        tegel = GRAS
+      #anders is het VUIL
       else:
-        tile = DIRT
-      #set the position in the tilemap to the randomly chosen tile
-      world[column][row] = tile
+        tegel = VUIL
+      #maak de positie in op de tegelkaart een willekeurig gekozen tegel
+      wereld[kolom][rij] = tegel
 
 #---
-#Code starts running here
+#Het programma begint hier
 #---
 
-#import the modules and variables needed
+#importeer de benodigde modules en variables
 import turtle
 import random
 from variables import *
 from math import ceil
 
-TILESIZE = 20
-#the number of inventory resources per row
-INVWIDTH = 8
-drawing = False
+TEGELGROOTTE = 20
+#het aantal inventarisbronnen per rij
+INVbreedte = 8
+tekenen = False
 
-#create a new 'screen' object
-screen = turtle.Screen()
-#calculate the width and height
-width = (TILESIZE * MAPWIDTH) + max(200,INVWIDTH * 50)
-num_rows = int(ceil((len(resources) / INVWIDTH)))
-inventory_height =  num_rows * 120 + 40
-height = (TILESIZE * MAPHEIGHT) + inventory_height
+#maak een nieuw spelerobject
+scherm = turtle.Screen()
+#bereken breedte hoogte
+breedte = (TEGELGROOTTE * KAARTBREEDTE) + max(200,INVbreedte * 50)
+num_rijen = int(ceil((len(bronnen) / INVbreedte)))
+inventaris_hoogte =  num_rijen * 120 + 40
+hoogte = (TEGELGROOTTE * KAARTHOOGTE) + inventaris_hoogte
 
-screen.setup(width, height)
-screen.setworldcoordinates(0,0,width,height)
-screen.bgcolor(BACKGROUNDCOLOUR)
-screen.listen()
+scherm.setup(breedte, hoogte)
+scherm.setworldcoordinates(0,0,breedte,hoogte)
+scherm.bgcolor(ACHTERGRONDKLEUR)
+scherm.listen()
 
-#register the player image  
-screen.register_shape(playerImg)
-#register each of the resource images
-for texture in textures.values():
-  screen.register_shape(texture)
+#registreer de spelersafbeelding  
+scherm.register_shape(spelerImg)
+#registreer alle bronafbeeldingen
+for materiaal in materialen.values():
+  scherm.register_shape(materiaal)
 
-#create another turtle to do the graphics drawing
+#maak een nieuwe turtle (schildpad) om te tekenen
 rendererT = turtle.Turtle()
 rendererT.hideturtle()
 rendererT.penup()
 rendererT.speed(0)
 rendererT.setheading(90)
 
-#create a world of random resources.
-world = [ [DIRT for w in range(MAPHEIGHT)] for h in range(MAPWIDTH) ]
+#maak een wereld met willekeurige bronnen.
+wereld = [ [VUIL for w in range(KAARTHOOGTE)] for h in range(KAARTBREEDTE) ]
 
-#map the keys for moving and picking up to the correct functions.
-screen.onkey(moveUp, 'w')
-screen.onkey(moveDown, 's')
-screen.onkey(moveLeft, 'a')
-screen.onkey(moveRight, 'd')
-screen.onkey(pickUp, 'space')
+#laat de toetsen zien voor de voortbeweging en het oppakken.
+scherm.onkey(beweegBoven, 'w')
+scherm.onkey(beweegOnder, 's')
+scherm.onkey(beweegLinks, 'a')
+scherm.onkey(beweegRechts, 'd')
+scherm.onkey(pakOp, 'space')
 
-#set up the keys for placing and crafting each resource
-bindPlacingKeys()
-bindCraftingKeys()
+#installeren van de toetsen voor plaatsen en maken van elke bron
+verbindPlaatsToetsen()
+verbindMaakToetsen()
 
-#these functions are defined above
-generateRandomWorld()
-drawWorld()
-drawInventory()
-generateInstructions()
+#deze functies worden hierboven gedefinieerd
+genereerWillekeurigeWereld()
+tekenWereld()
+tekenInventaris()
+genereerInstructies()
 
 
