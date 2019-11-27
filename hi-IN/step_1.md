@@ -1,6 +1,6 @@
 ## परिचय
 
-In this project, you’ll design and code improvements to a 2D version of Minecraft.
+इस परियोजना में, आप माइनक्राफ 2 डी संस्करण में सुधार और डिजाइन करेंगे।
 
 <div class="trinket">
   <iframe src="https://trinket.io/embed/python/ebc5b0148b?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
@@ -12,9 +12,9 @@ In this project, you’ll design and code improvements to a 2D version of Minecr
 
 यदि आप इस प्रोजेक्ट को प्रिंट करना चाहते हैं, तो कृपया [प्रिंटर अनुकूल संस्करण](https://projects.raspberrypi.org/en/projects/codecraft/print) का उपयोग करें।
 
-## \--- collapse \---
+## \--- ढहना \---
 
-## title: क्लब नेता नोट्स
+## शीर्षक: क्लब नेता नोट्स
 
 ## परिचय:
 
