@@ -8,7 +8,7 @@
 ＃游戏功能
 #---
 
-#moves the player left 1 tile.
+＃将玩家向左移动1个图块。
 def moveLeft():
   global playerX
   if(drawing == False and playerX > 0):
@@ -17,7 +17,7 @@ def moveLeft():
     drawResource(oldX, playerY)
     drawResource(playerX, playerY)
     
-#moves the player right 1 tile.
+＃将玩家向右移动1个图块。
 def moveRight():
   global playerX, MAPWIDTH
   if(drawing == False and playerX < MAPWIDTH - 1):
@@ -26,7 +26,7 @@ def moveRight():
     drawResource(oldX, playerY)
     drawResource(playerX, playerY)
     
-#moves the player up 1 tile.
+＃将玩家向上移动1个图块。
 def moveUp():
   global playerY
   if(drawing == False and playerY > 0):
@@ -35,7 +35,7 @@ def moveUp():
     drawResource(playerX, oldY)
     drawResource(playerX, playerY)
     
-#moves the player down 1 tile.
+＃将玩家向下移动1个图块。
 def moveDown():
   global playerY, MAPHEIGHT
   if(drawing == False and playerY < MAPHEIGHT - 1):
@@ -44,27 +44,27 @@ def moveDown():
     drawResource(playerX, oldY)
     drawResource(playerX, playerY)
     
-#picks up the resource at the player's position.
+＃在玩家的位置捡起资源。
 def pickUp():
   global playerX, playerY
   drawing = True
   currentTile = world[playerX][playerY]
-  #if the user doesn't already have too many...
+  ＃如果用户还没有太多...
   if inventory[currentTile] < MAXTILES:
-    #player now has 1 more of this resource
+    #player现在有1个此资源
     inventory[currentTile] += 1
-    #the player is now standing on dirt
+    ＃玩家现在站在泥土上
     world[playerX][playerY] = DIRT
-    #draw the new DIRT tile
+    ＃绘制新的DIRT图块
     drawResource(playerX, playerY)
-    #redraw the inventory with the extra resource.
+    #用额外资源重新绘制。
     drawInventory()
     #drawPlayer()
 
-#place a resource at the player's current position
+＃将资源放置在玩家的当前位置
 def place(resource):
   print('placing: ', names[resource])
-  #only place if the player has some left...
+  ＃仅在玩家有剩余时才放置...
   if inventory[resource] > 0:
     #find out the resourcee at the player's current position
     currentTile = world[playerX][playerY]
