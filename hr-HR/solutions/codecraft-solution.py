@@ -5,7 +5,7 @@
 #############
 
 #---
-#Game functions
+#Funkcije u igri
 #---
 
 #moves the player left 1 tile.
