@@ -8,7 +8,7 @@
 ＃游戏功能
 #---
 
-#moves the player left 1 tile.
+＃将玩家向左移动1个图块。
 def moveLeft():
   global playerX
   if(drawing == False and playerX > 0):
@@ -44,12 +44,12 @@ def moveDown():
     drawResource(playerX, oldY)
     drawResource(playerX, playerY)
     
-#picks up the resource at the player's position.
+＃在玩家的位置捡起资源。
 def pickUp():
   global playerX, playerY
   drawing = True
   currentTile = world[playerX][playerY]
-  #if the user doesn't already have too many...
+  ＃如果用户还没有太多...
   if inventory[currentTile] < MAXTILES:
     #player now has 1 more of this resource
     inventory[currentTile] += 1
@@ -57,68 +57,68 @@ def pickUp():
     world[playerX][playerY] = DIRT
     #draw the new DIRT tile
     drawResource(playerX, playerY)
-    #redraw the inventory with the extra resource.
+    #用额外资源重新绘制。
     drawInventory()
     #drawPlayer()
 
-#place a resource at the player's current position
+＃将资源放置在玩家的当前位置
 def place(resource):
-  print('placing: ', names[resource])
-  #only place if the player has some left...
+  print('放置中: ', names[resource])
+  ＃仅在玩家有剩余时才放置...
   if inventory[resource] > 0:
-    #find out the resourcee at the player's current position
+    ＃找到玩家当前位置的资源
     currentTile = world[playerX][playerY]
-    #pick up the resource the player's standing on
+    ＃在玩家的位置捡起资源。
     #(if it's not DIRT)
     if currentTile is not DIRT:
       inventory[currentTile] += 1
-    #place the resource at the player's current position
+    ＃将资源放置在玩家的当前位置
     world[playerX][playerY] = resource
-    #add the new resource to the inventory
+    ＃将新资源添加到库存
     inventory[resource] -= 1
-    #update the display (world and inventory)
+    ＃更新显示（世界和库存）
     drawResource(playerX, playerY)
     drawInventory()
     #drawPlayer()
-    print('   Placing', names[resource], 'complete')
-  #...and if they have none left...
+    print('   放置', names[resource], '完成')
+  #...如果没有剩余...
   else:
-    print('   You have no', names[resource], 'left')
+    print('   您没有', names[resource], '剩余')
 
-#craft a new resource
+#制作一个新的资源
 def craft(resource):
-  print('Crafting: ', names[resource])
-  #if the resource can be crafted...
+  print('构建中: ', names[resource])
+  ＃如果可以制作资源...
   if resource in crafting:
-    #keeps track of whether we have the resources
-    #to craft this item
+    #保持跟踪我们是否有资源
+    #制作这个物品
     canBeMade = True
-    #for each item needed to craft the resource
+    ＃针对制作资源所需的每个项目
     for i in crafting[resource]:
-      #...if we don't have enough...
+      ＃...如果我们没有足够的...
       if crafting[resource][i] > inventory[i]:
-      #...we can't craft it!
+      ＃...我们做不到！
         canBeMade = False
         break
-    #if we can craft it (we have all needed resources)
+    ＃如果我们能制作出来的话（我们拥有所有需要的资源）
     if canBeMade == True:
-      #take each item from the inventory
+      ＃从库存中取出每个物品
       for i in crafting[resource]:
         inventory[i] -= crafting[resource][i]
-      #add the crafted item to the inventory
+      ＃将制作的物品添加到库存中
       inventory[resource] += 1
-      print('   Crafting', names[resource], 'complete')
-    #...otherwise the resource can't be crafted...
+      print('   正在构建', names[resource], '完成')
+    ＃...否则将无法制作资源...
     else:
-      print('   Can\'t craft', names[resource])
-    #update the displayed inventory
+      print('   不能构建', names[resource])
+    ＃更新显示的库存
     drawInventory()
 
-#creates a function for placing each resource
+#创建一个用于放置每个资源的函数
 def makeplace(resource):
   return lambda: place(resource)
 
-#attaches a 'placing' function to each key press
+#附加一个“放置”函数到每个键按下
 def bindPlacingKeys():
   for k in placekeys:
     screen.onkey(makeplace(k), placekeys[k])
@@ -127,22 +127,22 @@ def bindPlacingKeys():
 def makecraft(resource):
   return lambda: craft(resource)
 
-#attaches a 'crafting' function to each key press
+＃为每个按键附加一个“制作”功能
 def bindCraftingKeys():
   for k in craftkeys:
     screen.onkey(makecraft(k), craftkeys[k])
 
-#draws a resource at the position (y,x)
+＃在（y，x）位置绘制资源
 def drawResource(y, x):
-  #this variable stops other stuff being drawn
+  #此变量停止正在绘制的其他内容
   global drawing
-  #only draw if nothing else is being drawn
+  ＃仅在没有其他内容绘制时绘制
   if drawing == False:
-    #something is now being drawn
+    #东西正在绘制中
     drawing = True
-    #draw the resource at that position in the tilemap, using the correct image
+    ＃使用正确的图片在tilemap中的该位置绘制资源
     rendererT.goto( (y * TILESIZE) + 20, height - (x * TILESIZE) - 20 )
-    #draw tile with correct texture
+    ＃绘制纹理正确的图块
     texture = textures[world[y][x]]
     rendererT.shape(texture)
     rendererT.stamp()
@@ -150,12 +150,12 @@ def drawResource(y, x):
       rendererT.shape(playerImg)
       rendererT.stamp()
     screen.update()
-    #nothing is now being drawn
+    ＃现在什么都没画
     drawing = False
     
-#draws the world map
+＃绘制世界地图
 def drawWorld():
-  #loop through each row
+  ＃循环遍历每一行
   for row in range(MAPHEIGHT):
     #loop through each column in the row
     for column in range(MAPWIDTH):
