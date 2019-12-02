@@ -81,28 +81,28 @@
 
 + “打造您的世界”-玩游戏，放置和制作现有方块;
 + “更改世界大小”-编辑` MAPWIDTH `和` MAPHEIGHT `改变世界规模的变量；
-+ "Creating sand" - Creating a new sand resource, along with associated game data.
-+ "Crafting glass from sand" - Creating a new craftable glass resource.
-+ "Create more resources" - Use what's been learnt to create more blocks and crafting rules.
++ “创建沙子”-创建新的沙子资源以及相关的游戏数据。
++ “用沙子制作玻璃”-创建新的可加工玻璃资源。
++ “创建更多资源”-使用已学到的知识来创建更多块和制定规则。
 
-## Frequently Asked Questions
+## 常见问题
 
-+ Children may need reminding that elements of a dictionary/list are separated by a comma. For example, when adding inventory items, graphics and crafting rules to the game.
++ 可能需要提醒孩子们字典或列表中的元素之间要用逗号分开。 例如，在向游戏添加库存物品，图形和手工规则时。
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: Project materials
+## title: 项目材料
 
-## Project resources
+## 项目资源
 
-+ [.zip file containing all project resources](resources/codecraft-resources.zip)
-+ [Online Trinket containing all 'CodeCraft' project resources](http://rpf.io/codecraft-on)
++ [包含所有项目资源的.zip文件](resources/codecraft-resources.zip)
++ [在线Trinket包含所有“CodeCrafe”项目资源](http://rpf.io/codecraft-on)
 
-## Club leader resources
+## 俱乐部导师资源
 
-+ [.zip file containing all completed project resources](solutions/codecraft-solution.zip)
-+ [Online completed Trinket project](https://trinket.io/python/ebc5b0148b)
++ [包含所有完整版项目资源的.zip压缩包](solutions/codecraft-solution.zip)
++ [在线完整版Trinket项目](https://trinket.io/python/ebc5b0148b)
 
 \--- /collapse \---
