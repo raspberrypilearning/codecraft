@@ -134,15 +134,15 @@ def bindCraftingKeys():
 
 ＃在（y，x）位置绘制资源
 def drawResource(y, x):
-  #this variable stops other stuff being drawn
+  ＃此变量停止绘制其他内容
   global drawing
-  #only draw if nothing else is being drawn
+  ＃仅在没有其他内容绘制时绘制
   if drawing == False:
-    #something is now being drawn
+    #东西正在绘制中
     drawing = True
-    #draw the resource at that position in the tilemap, using the correct image
+    ＃使用正确的图片在tilemap中的该位置绘制资源
     rendererT.goto( (y * TILESIZE) + 20, height - (x * TILESIZE) - 20 )
-    #draw tile with correct texture
+    ＃绘制纹理正确的图块
     texture = textures[world[y][x]]
     rendererT.shape(texture)
     rendererT.stamp()
@@ -150,27 +150,27 @@ def drawResource(y, x):
       rendererT.shape(playerImg)
       rendererT.stamp()
     screen.update()
-    #nothing is now being drawn
+    ＃现在什么都没画
     drawing = False
     
-#draws the world map
+＃绘制世界地图
 def drawWorld():
-  #loop through each row
+  ＃循环遍历每一行
   for row in range(MAPHEIGHT):
-    #loop through each column in the row
+    #循环行中的每一列
     for column in range(MAPWIDTH):
-      #draw the tile at the current position
+      ＃在当前位置绘制图块
       drawResource(column, row)
 
-#draws the inventory to the screen
+#将库存画到屏幕
 def drawInventory():
-  #this variable stops other stuff being drawn
+  #此变量停止正在绘制的其他内容
   global drawing
-  #only draw if nothing else is being drawn
+  ＃仅在没有其他内容绘制时绘制
   if drawing == False:
-    #something is now being drawn
+    #东西正在绘制中
     drawing = True
-    #use a rectangle to cover the current inventory
+    #使用矩形来覆盖当前物品栏
     rendererT.color(BACKGROUNDCOLOUR)
     rendererT.goto(0,0)
     rendererT.begin_fill()
@@ -182,97 +182,97 @@ def drawInventory():
       rendererT.right(90)
     rendererT.end_fill()
     rendererT.color('black')
-    #display the 'place' and 'craft' text
+    #显示 '位置' 和 '组件' 文本
     for i in range(1,num_rows+1):
       rendererT.goto(20, (height - (MAPHEIGHT * TILESIZE)) - 20 - (i * 100))
-      rendererT.write("place")
+      rendererT.write("位置")
       rendererT.goto(20, (height - (MAPHEIGHT * TILESIZE)) - 40 - (i * 100))
-      rendererT.write("craft")
-    #set the inventory position
+      rendererT.write("组件")
+    ＃设置库存位置
     xPosition = 70
     yPostition = height - (MAPHEIGHT * TILESIZE) - 80
     itemNum = 0
     for i, item in enumerate(resources):
-      #add the image
+      ＃添加图片
       rendererT.goto(xPosition, yPostition)
       rendererT.shape(textures[item])
       rendererT.stamp()
-      #add the number in the inventory
+      # 将物品加入玩家的物品清单
       rendererT.goto(xPosition, yPostition - TILESIZE)
       rendererT.write(inventory[item])
-      #add key to place
+      #添加钥匙到位置
       rendererT.goto(xPosition, yPostition - TILESIZE - 20)
       rendererT.write(placekeys[item])
-      #add key to craft
+      #添加钥匙到组件
       if crafting.get(item) != None:
         rendererT.goto(xPosition, yPostition - TILESIZE - 40)
         rendererT.write(craftkeys[item])     
-      #move along to place the next inventory item
+      #移动以放置下一个物品栏
       xPosition += 50
       itemNum += 1
-      #drop down to the next row every 10 items
+      ＃每10个项目下移至下一行
       if itemNum % INVWIDTH == 0:
         xPosition = 70
         itemNum = 0
         yPostition -= TILESIZE + 80
     drawing = False
 
-#generate the instructions, including crafting rules
+#生成指令，包括制造规则
 def generateInstructions():
-  instructions.append('Crafting rules:')
-  #for each resource that can be crafted...
+  instructions.append('建造规则:')
+  ＃针对可以制作的每种资源...
   for rule in crafting:
-    #create the crafting rule text
+    #创建制造规则文本
     craftrule = names[rule] + ' = '
     for resource, number in crafting[rule].items():
       craftrule += str(number) + ' ' + names[resource] + ' '
-    #add the crafting rule to the instructions
+    #将制造规则添加到说明中
     instructions.append(craftrule)
-  #display the instructions
+  ＃显示说明
   yPos = height - 20
   for item in instructions:
     rendererT.goto( MAPWIDTH*TILESIZE + 40, yPos)
     rendererT.write(item)
     yPos-=20
 
-#generate a random world
+＃生成随机世界
 def generateRandomWorld():
-  #loop through each row
+  ＃循环遍历每一行
   for row in range(MAPHEIGHT):
-    #loop through each column in that row
+    #循环行中的每一列
     for column in range(MAPWIDTH):
-      #pick a random number between 0 and 10
+      ＃选择0到10之间的随机数
       randomNumber = random.randint(0,10)
-      #WATER if the random number is a 1 or a 2
+      #WATER如果随机数是1或2
       if randomNumber in [1,2]:
         tile = WATER
-      #GRASS if the random number is a 3 or a 4
+      #GRASS随机数是3或4
       elif randomNumber in [3,4]:
         tile = GRASS
-      #otherwise it's DIRT
+      ＃否则就是DIRT
       else:
         tile = DIRT
-      #set the position in the tilemap to the randomly chosen tile
+      #将层图中的位置设置为随机选择的图块
       world[column][row] = tile
 
 #---
-#Code starts running here
+＃代码从此处开始运行
 #---
 
-#import the modules and variables needed
+＃导入所需的模块和变量
 import turtle
 import random
 from variables import *
 from math import ceil
 
 TILESIZE = 20
-#the number of inventory resources per row
+＃每行的物品栏资源数量
 INVWIDTH = 8
 drawing = False
 
-#create a new 'screen' object
+＃创建一个新的“屏幕”对象
 screen = turtle.Screen()
-#calculate the width and height
+＃计算宽度和高度
 width = (TILESIZE * MAPWIDTH) + max(200,INVWIDTH * 50)
 num_rows = int(ceil((len(resources) / INVWIDTH)))
 inventory_height =  num_rows * 120 + 40
@@ -283,9 +283,9 @@ screen.setworldcoordinates(0,0,width,height)
 screen.bgcolor(BACKGROUNDCOLOUR)
 screen.listen()
 
-#register the player image  
+＃注册玩家图像  
 screen.register_shape(playerImg)
-#register each of the resource images
+#注册每个资源图像
 for texture in textures.values():
   screen.register_shape(texture)
 
