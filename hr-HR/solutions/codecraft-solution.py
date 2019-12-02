@@ -210,75 +210,75 @@ def drawInventory():
       #pomakni se za postavljanje sljedećeg elementa u inventaru
       xPosition += 50
       itemNum += 1
-      #drop down to the next row every 10 items
+      #spusti se u sljedeći red svakih 10 stavki
       if itemNum % INVWIDTH == 0:
         xPosition = 70
         itemNum = 0
         yPostition -= TILESIZE + 80
     drawing = False
 
-#generate the instructions, including crafting rules
+#generira upute, uključujući i pravila za stvaranje resursa
 def generateInstructions():
-  instructions.append('Crafting rules:')
-  #for each resource that can be crafted...
+  instructions.append('Pravila stvaranja:')
+  #za svaki resurs koji se može stvoriti...
   for rule in crafting:
-    #create the crafting rule text
+    #stvori tekst pravila za stvaranje
     craftrule = names[rule] + ' = '
     for resource, number in crafting[rule].items():
       craftrule += str(number) + ' ' + names[resource] + ' '
-    #add the crafting rule to the instructions
+    #dodajte pravilo za stvaranje uputama
     instructions.append(craftrule)
-  #display the instructions
+  #prikaži upute
   yPos = height - 20
   for item in instructions:
     rendererT.goto( MAPWIDTH*TILESIZE + 40, yPos)
     rendererT.write(item)
     yPos-=20
 
-#generate a random world
+#generira nasumični svijet
 def generateRandomWorld():
-  #loop through each row
+  #ponavljaj za svaki redak
   for row in range(MAPHEIGHT):
-    #loop through each column in that row
+    #ponavljaj za svaki stupac u retku
     for column in range(MAPWIDTH):
-      #pick a random number between 0 and 10
+      #odaberi nasumičan broj između 0 i 10
       randomNumber = random.randint(0,10)
-      #WATER if the random number is a 1 or a 2
+      #VODA ako je nasumičan broj 1 ili 2
       if randomNumber in [1,2]:
         tile = WATER
-      #GRASS if the random number is a 3 or a 4
+      #TRAVA ako je nasumičan broj 3 ili 4
       elif randomNumber in [3,4]:
         tile = GRASS
-      #WOOD if it's a 5
+      #DRVO ako je 5
       elif randomNumber == 5:
         tile = WOOD
-      #SAND if it's a 6
+      #PIJESAK ako je 6
       elif randomNumber == 6:
         tile = SAND
-      #otherwise it's DIRT
+      #inače je ZEMLJA
       else:
         tile = DIRT
-      #set the position in the tilemap to the randomly chosen tile
+      #dodaj položaj nasumično odabrane pločice na mapu
       world[column][row] = tile
 
 #---
-#Code starts running here
+#Kod se počinje izvršavati ovdje
 #---
 
-#import the modules and variables needed
+#uvezi potrebne module i varijable
 import turtle
 import random
 from variables import *
 from math import ceil
 
 TILESIZE = 20
-#the number of inventory resources per row
+#broj resursa u inventaru po retku
 INVWIDTH = 8
 drawing = False
 
-#create a new 'screen' object
+#stvori novi objekt 'zaslon'
 screen = turtle.Screen()
-#calculate the width and height
+#izračunaj širinu i visinu
 width = (TILESIZE * MAPWIDTH) + max(200,INVWIDTH * 50)
 num_rows = int(ceil((len(resources) / INVWIDTH)))
 inventory_height =  num_rows * 120 + 40
@@ -289,34 +289,34 @@ screen.setworldcoordinates(0,0,width,height)
 screen.bgcolor(BACKGROUNDCOLOUR)
 screen.listen()
 
-#register the player image  
+#registriraj sliku igrača  
 screen.register_shape(playerImg)
-#register each of the resource images
+#registriraj sliku pojedinog resursa
 for texture in textures.values():
   screen.register_shape(texture)
 
-#create another turtle to do the graphics drawing
+#stvori još jednu kornjaču za prikaz crteža
 rendererT = turtle.Turtle()
 rendererT.hideturtle()
 rendererT.penup()
 rendererT.speed(0)
 rendererT.setheading(90)
 
-#create a world of random resources.
+#stvori svijet od nasumično odabranih resursa.
 world = [ [DIRT for w in range(MAPHEIGHT)] for h in range(MAPWIDTH) ]
 
-#map the keys for moving and picking up to the correct functions.
+#poveži tipke za kretanje i skupljanje s ispravnim funkcijama.
 screen.onkey(moveUp, 'w')
 screen.onkey(moveDown, 's')
 screen.onkey(moveLeft, 'a')
 screen.onkey(moveRight, 'd')
 screen.onkey(pickUp, 'space')
 
-#set up the keys for placing and crafting each resource
+#postavi tipke za postavljanje i izradu svakog resursa
 bindPlacingKeys()
 bindCraftingKeys()
 
-#these functions are defined above
+#ovo su funkcije koje su definirane iznad
 generateRandomWorld()
 drawWorld()
 drawInventory()
