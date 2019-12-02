@@ -289,28 +289,28 @@ screen.register_shape(playerImg)
 for texture in textures.values():
   screen.register_shape(texture)
 
-#create another turtle to do the graphics drawing
+#创建另一个海龟来绘制图形
 rendererT = turtle.Turtle()
 rendererT.hideturtle()
 rendererT.penup()
 rendererT.speed(0)
 rendererT.setheading(90)
 
-#create a world of random resources.
+#创建一个随机资源的世界。
 world = [ [DIRT for w in range(MAPHEIGHT)] for h in range(MAPWIDTH) ]
 
-#map the keys for moving and picking up to the correct functions.
+#映射移动和提取到正确函数的键值。
 screen.onkey(moveUp, 'w')
 screen.onkey(moveDown, 's')
 screen.onkey(moveLeft, 'a')
 screen.onkey(moveRight, 'd')
 screen.onkey(pickUp, 'space')
 
-#set up the keys for placing and crafting each resource
+#设置放置和制造每个资源的密钥
 bindPlacingKeys()
 bindCraftingKeys()
 
-#these functions are defined above
+#这些函数已在上面定义
 generateRandomWorld()
 drawWorld()
 drawInventory()
