@@ -1,33 +1,33 @@
 #!/bin/python3
 
-#Game variables that can be changed!
+#Varijable u igri koje se mogu mijenjati!
 
-#game background colour.
+#boja pozadine u igri.
 BACKGROUNDCOLOUR = 'white'
 
-#map variables.
+#varijable mape.
 MAXTILES  = 20
 MAPWIDTH  = 10
 MAPHEIGHT = 10
 
-#variables representing the different resources.
+#varijable koje predstavljaju različite resurse.
 DIRT    = 0
 GRASS   = 1
 WATER   = 2
 BRICK   = 3
 
-#a list of all game resources.
+#popis svih resursa u igri.
 resources = [DIRT,GRASS,WATER,BRICK]
 
-#the names of the resources.
+#nazivi resursa.
 names = {
-  DIRT    : 'dirt',
-  GRASS   : 'grass',
-  WATER   : 'water',
-  BRICK   : 'brick'
+  DIRT    : 'zemlja',
+  GRASS   : 'trava',
+  WATER   : 'voda',
+  BRICK   : 'cigla'
 }
 
-#a dictionary linking resources to images.
+#rječnik koji povezuje resurse sa slikama.
 textures = {
   DIRT    : 'dirt.gif',
   GRASS   : 'grass.gif',
@@ -35,7 +35,7 @@ textures = {
   BRICK   : 'brick.gif'
 }
 
-#the number of each resource the player has.
+#broj svih resursa kojeg igrač posjeduje.
 inventory = {
   DIRT    : 10,
   GRASS   : 10,
@@ -43,19 +43,19 @@ inventory = {
   BRICK   : 0
 }
 
-#the player image.
+#slika igrača.
 playerImg = 'player.gif'
 
-#the player position.
+#položaj igrača.
 playerX = 0
 playerY = 0
 
-#rules to make new resources.
+#pravila za stvaranje novih resursa.
 crafting = {
   BRICK    : { WATER : 1, DIRT : 2 }
 }
 
-#keys for placing resources.
+#tipke za postavljanje resursa.
 placekeys = {
   DIRT  : '1',
   GRASS : '2',
@@ -63,13 +63,13 @@ placekeys = {
   BRICK : '4'
 }
 
-#keys for crafting tiles.
+#tipke za stvaranje cigli.
 craftkeys = {
   BRICK : 'r'
 }
 
-#game instructions that are displayed.
+#upute igre koje su prikazane.
 instructions =  [
-  'Instructions:',
-  'Use WASD to move'
+  'Upute:',
+  'Koristite WASD za kretanje'
 ]
