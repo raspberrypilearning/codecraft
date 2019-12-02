@@ -8,7 +8,7 @@
 #Funkcije u igri
 #---
 
-#moves the player left 1 tile.
+#pomiče igrača 1 pločicu u lijevo.
 def moveLeft():
   global playerX
   if(drawing == False and playerX > 0):
@@ -17,7 +17,7 @@ def moveLeft():
     drawResource(oldX, playerY)
     drawResource(playerX, playerY)
     
-#moves the player right 1 tile.
+#pomiče igrača 1 pločicu u desno.
 def moveRight():
   global playerX, MAPWIDTH
   if(drawing == False and playerX < MAPWIDTH - 1):
@@ -26,7 +26,7 @@ def moveRight():
     drawResource(oldX, playerY)
     drawResource(playerX, playerY)
     
-#moves the player up 1 tile.
+#pomiče igrača 1 pločicu prema gore.
 def moveUp():
   global playerY
   if(drawing == False and playerY > 0):
@@ -35,7 +35,7 @@ def moveUp():
     drawResource(playerX, oldY)
     drawResource(playerX, playerY)
     
-#moves the player down 1 tile.
+#pomiče igrača 1 pločicu prema dolje.
 def moveDown():
   global playerY, MAPHEIGHT
   if(drawing == False and playerY < MAPHEIGHT - 1):
@@ -44,105 +44,105 @@ def moveDown():
     drawResource(playerX, oldY)
     drawResource(playerX, playerY)
     
-#picks up the resource at the player's position.
+#skuplja resurs na mjestu na kojem se igrač trenutno nalazi.
 def pickUp():
   global playerX, playerY
   drawing = True
   currentTile = world[playerX][playerY]
-  #if the user doesn't already have too many...
+  #ako korisnik već nema previše...
   if inventory[currentTile] < MAXTILES:
-    #player now has 1 more of this resource
+    #igrač sada ima još jedan resurs
     inventory[currentTile] += 1
     #the player is now standing on dirt
     world[playerX][playerY] = DIRT
-    #draw the new DIRT tile
+    #nacrtaj novu pločicu ZEMLJA
     drawResource(playerX, playerY)
-    #redraw the inventory with the extra resource.
+    #ponovno prikaži inventar s ekstra resursom.
     drawInventory()
     #drawPlayer()
 
-#place a resource at the player's current position
+#postavi resurs na trenutni položaj igrača
 def place(resource):
   print('placing: ', names[resource])
-  #only place if the player has some left...
+  #postavi samo ako igrač već posjeduje resurs...
   if inventory[resource] > 0:
-    #find out the resourcee at the player's current position
+    #otkrijte resurs na trenutnoj poziciji igrača
     currentTile = world[playerX][playerY]
-    #pick up the resource the player's standing on
-    #(if it's not DIRT)
+    #skupi resurs na kojemu igrač stoji
+    #(ako nije ZEMLJA)
     if currentTile is not DIRT:
       inventory[currentTile] += 1
-    #place the resource at the player's current position
+    #postavi resurs na igračev trenutni položaj
     world[playerX][playerY] = resource
-    #add the new resource to the inventory
+    #dodaj novi resurs u inventar
     inventory[resource] -= 1
-    #update the display (world and inventory)
+    #ažuriraj prikaz (svijet i inventar)
     drawResource(playerX, playerY)
     drawInventory()
     #drawPlayer()
     print('   Placing', names[resource], 'complete')
-  #...and if they have none left...
+  #...a ako nije ostao niti jedan...
   else:
     print('   You have no', names[resource], 'left')
 
-#craft a new resource
+#stvori novi resurs
 def craft(resource):
   print('Crafting: ', names[resource])
-  #if the resource can be crafted...
+  #ako resurs može biti stvoren...
   if resource in crafting:
-    #keeps track of whether we have the resources
-    #to craft this item
+    #prati stanje o tome imamo li resurse
+    #da stvorimo ovaj predmet
     canBeMade = True
-    #for each item needed to craft the resource
+    #za svaki predmet potreban za stvaranje resursa
     for i in crafting[resource]:
-      #...if we don't have enough...
+      #...ako nemamo dovoljno...
       if crafting[resource][i] > inventory[i]:
-      #...we can't craft it!
+      #...ne možemo ga stvoriti!
         canBeMade = False
         break
-    #if we can craft it (we have all needed resources)
+    #ako ga možemo stvoriti (imamo sve potrebne resurse)
     if canBeMade == True:
-      #take each item from the inventory
+      #uzmi pojedinčni predmet iz inventara
       for i in crafting[resource]:
         inventory[i] -= crafting[resource][i]
-      #add the crafted item to the inventory
+      #dodaj stvoreni predmet u inventar
       inventory[resource] += 1
       print('   Crafting', names[resource], 'complete')
-    #...otherwise the resource can't be crafted...
+    #...inače ako resurs ne može biti stvoren...
     else:
-      print('   Can\'t craft', names[resource])
-    #update the displayed inventory
+      print('   Ne može se stvoriti resurs:', names[resource])
+    #ažuriraj prikazani inventar
     drawInventory()
 
-#creates a function for placing each resource
+#funkcija za postavljanje pojedinog resursa
 def makeplace(resource):
   return lambda: place(resource)
 
-#attaches a 'placing' function to each key press
+#pridružuje funkciju za postavljanje s pripadajućom tipkom
 def bindPlacingKeys():
   for k in placekeys:
     screen.onkey(makeplace(k), placekeys[k])
 
-#creates a function for crafting each resource
+#stvara funkciju za stvaranje pojedinog resursa
 def makecraft(resource):
   return lambda: craft(resource)
 
-#attaches a 'crafting' function to each key press
+#pridružuje funkciju za stvaranje s pripadajućom tipkom
 def bindCraftingKeys():
   for k in craftkeys:
     screen.onkey(makecraft(k), craftkeys[k])
 
-#draws a resource at the position (y,x)
+#prikazuje resurs na poziciji (y,x)
 def drawResource(y, x):
-  #this variable stops other stuff being drawn
+  #ova varijabla zaustavlja prikaz drugih stvari
   global drawing
-  #only draw if nothing else is being drawn
+  #samo crta ako se ništa drugo ne crta
   if drawing == False:
-    #something is now being drawn
+    #nešto se trenutno prikazuje
     drawing = True
-    #draw the resource at that position in the tilemap, using the correct image
+    #nacrtaj resurs na položaju u mapi koristeći ispravnu sliku
     rendererT.goto( (y * TILESIZE) + 20, height - (x * TILESIZE) - 20 )
-    #draw tile with correct texture
+    #prikaži pločicu s ispravnom teksturom
     texture = textures[world[y][x]]
     rendererT.shape(texture)
     rendererT.stamp()
@@ -150,27 +150,27 @@ def drawResource(y, x):
       rendererT.shape(playerImg)
       rendererT.stamp()
     screen.update()
-    #nothing is now being drawn
+    #ništa se sada crta
     drawing = False
     
-#draws the world map
+#crta mapu svijeta
 def drawWorld():
-  #loop through each row
+  #ponavljaj za svaki redak
   for row in range(MAPHEIGHT):
-    #loop through each column in the row
+    #ponavljaj za svaki stupac u retku
     for column in range(MAPWIDTH):
-      #draw the tile at the current position
+      #prikaži pločicu na trenutnoj poziciji
       drawResource(column, row)
 
-#draws the inventory to the screen
+#crta inventar na zaslonu
 def drawInventory():
-  #this variable stops other stuff being drawn
+  #ova varijabla zaustavlja crtanje drugih stvari
   global drawing
-  #only draw if nothing else is being drawn
+  #samo crta ako se ništa drugo ne crta
   if drawing == False:
-    #something is now being drawn
+    #nešto se trenutno crta
     drawing = True
-    #use a rectangle to cover the current inventory
+    #koristi pravokutnik za prekrivanje trenutnog inventara
     rendererT.color(BACKGROUNDCOLOUR)
     rendererT.goto(0,0)
     rendererT.begin_fill()
@@ -182,32 +182,32 @@ def drawInventory():
       rendererT.right(90)
     rendererT.end_fill()
     rendererT.color('black')
-    #display the 'place' and 'craft' text
+    #prikaži tekst 'postavi' i 'izradi'
     for i in range(1,num_rows+1):
       rendererT.goto(20, (height - (MAPHEIGHT * TILESIZE)) - 20 - (i * 100))
       rendererT.write("place")
       rendererT.goto(20, (height - (MAPHEIGHT * TILESIZE)) - 40 - (i * 100))
       rendererT.write("craft")
-    #set the inventory position
+    #postavi položaj inventara
     xPosition = 70
     yPostition = height - (MAPHEIGHT * TILESIZE) - 80
     itemNum = 0
     for i, item in enumerate(resources):
-      #add the image
+      #dodaj sliku
       rendererT.goto(xPosition, yPostition)
       rendererT.shape(textures[item])
       rendererT.stamp()
-      #add the number in the inventory
+      #dodaj broj u inventar
       rendererT.goto(xPosition, yPostition - TILESIZE)
       rendererT.write(inventory[item])
-      #add key to place
+      #dodaj tipku za postavljanje
       rendererT.goto(xPosition, yPostition - TILESIZE - 20)
       rendererT.write(placekeys[item])
-      #add key to craft
+      #dodaj tipku za stvaranje
       if crafting.get(item) != None:
         rendererT.goto(xPosition, yPostition - TILESIZE - 40)
         rendererT.write(craftkeys[item])     
-      #move along to place the next inventory item
+      #pomakni se za postavljanje sljedećeg elementa u inventaru
       xPosition += 50
       itemNum += 1
       #drop down to the next row every 10 items
