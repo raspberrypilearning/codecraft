@@ -1,39 +1,39 @@
-## Crafting planks from wood
+## 利用木材制作木板
 
-Let's create a new plank resource that be crafted from wood.
+让我们创建一个由木材制成的新木板资源。
 
-+ First, add a new `PLANK` variable to your game.
++ 首先，添加一个新的` PLANK `您的游戏变量。
     
     ![screenshot](images/craft-plank-const.png)
 
-+ Add a new `PLANK` variable to your game.
++ 首先，添加一个新的` PLANK `您的游戏变量。
     
     ![screenshot](images/craft-plank-resources.png)
 
-+ Name the resource `'plank'`.
++ 将资源命名为`'plank' ` 。
     
     ![screenshot](images/craft-plank-names.png)
 
-+ Give your `PLANK` resource an image. The project already contains a `plank.gif` image, but you can create your own if you prefer.
++ 给你的`木板`获取图像。 该项目已包含` plank.gif `图片，但您可以根据需要创建和上传自己的图片。
     
     ![screenshot](images/craft-plank-textures.png)
 
-+ Add planks to your inventory.
++ 将木板添加到您的库存。
     
     ![screenshot](images/craft-plank-inventory.png)
 
-+ Set a key for placing planks.
++ 设置用于放置木板的主键。
     
     ![screenshot](images/craft-plank-placekeys.png)
 
-+ As this resource can be crafted, you need to create a crafting rule, which is that a plank can be made from 3 wood tiles. Add this code to the `crafting` dictionary.
++ 由于可以制作此资源，因此需要创建一个制作规则，即可以用3个木砖制作一块木板。 将此代码添加到`crafting`字典中。
     
     ![screenshot](images/craft-plank-crafting.png)
 
-+ Finally, you need to set a key for crafting new planks.
++ 最后，您需要设置制作新木板的主键。
     
     ![screenshot](images/craft-plank-craftkeys.png)
 
-+ To test your new plank resource, gather up a few wood tiles and then craft some planks from your wood. You can then place your new planks in your world.
++ 要测试您的新木板资源，请收集一些木砖，然后用木头制作一些木板。 然后，您可以将新木板放置在您的世界中。
     
     ![screenshot](images/craft-plank-test.png)
