@@ -5,10 +5,10 @@
 #############
 
 #---
-#Game functions
+#Funkcije u igri
 #---
 
-#moves the player left 1 tile.
+#pomiče igrača 1 pločicu u lijevo.
 def moveLeft():
   global playerX
   if(drawing == False and playerX > 0):
@@ -17,7 +17,7 @@ def moveLeft():
     drawResource(oldX, playerY)
     drawResource(playerX, playerY)
     
-#moves the player right 1 tile.
+#pomiče igrača 1 pločicu u desno.
 def moveRight():
   global playerX, MAPWIDTH
   if(drawing == False and playerX < MAPWIDTH - 1):
@@ -26,7 +26,7 @@ def moveRight():
     drawResource(oldX, playerY)
     drawResource(playerX, playerY)
     
-#moves the player up 1 tile.
+#pomiče igrača 1 pločicu prema gore.
 def moveUp():
   global playerY
   if(drawing == False and playerY > 0):
@@ -35,7 +35,7 @@ def moveUp():
     drawResource(playerX, oldY)
     drawResource(playerX, playerY)
     
-#moves the player down 1 tile.
+#pomiče igrača 1 pločicu prema dolje.
 def moveDown():
   global playerY, MAPHEIGHT
   if(drawing == False and playerY < MAPHEIGHT - 1):
@@ -44,12 +44,12 @@ def moveDown():
     drawResource(playerX, oldY)
     drawResource(playerX, playerY)
     
-#picks up the resource at the player's position.
+#skuplja resurs na mjestu na kojem se igrač trenutno nalazi.
 def pickUp():
   global playerX, playerY
   drawing = True
   currentTile = world[playerX][playerY]
-  #if the user doesn't already have too many...
+  #ako korisnik već nema previše...
   if inventory[currentTile] < MAXTILES:
     #player now has 1 more of this resource
     inventory[currentTile] += 1
