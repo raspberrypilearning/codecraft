@@ -1,16 +1,16 @@
 #!/bin/python3
 
-#Game variables that can be changed!
+# متغيرات اللعبة التي يمكن تغييرها!
 
-#game background colour.
+#لون خلفية اللعبة.
 BACKGROUNDCOLOUR = 'lightblue'
 
-#map variables.
+#متغيرات الخريطة.
 MAXTILES  = 40
 MAPWIDTH  = 20
 MAPHEIGHT = 15
 
-#variables representing the different resources.
+# المتغيرات التي تُمثل الموارد المختلفة.
 DIRT    = 0
 GRASS   = 1
 WATER   = 2
@@ -20,22 +20,22 @@ SAND    = 5
 PLANK   = 6
 GLASS   = 7
 
-#a list of all game resources.
+# قائمة بموارد اللعبة.
 resources = [DIRT,GRASS,WATER,BRICK,WOOD,SAND,PLANK,GLASS]
 
-#the names of the resources.
+#أسماء الموارد.
 names = {
-  DIRT    : 'dirt',
-  GRASS   : 'grass',
-  WATER   : 'water',
-  BRICK   : 'brick',
-  WOOD    : 'wood',
-  SAND    : 'sand',
-  PLANK   : 'plank',
-  GLASS   : 'glass'
+  DIRT    : 'طين',
+  GRASS   : 'حشيش',
+  WATER   : 'ماء',
+  BRICK   : 'طابوق',
+  WOOD    : 'خشب',
+  SAND    : 'رمل',
+  PLANK   : 'لوح',
+  GLASS   : 'زجاج'
 }
 
-#a dictionary linking resources to images.
+#قاموس يربط الموارد بالصور.
 textures = {
   DIRT    : 'dirt.gif',
   GRASS   : 'grass.gif',
@@ -47,7 +47,7 @@ textures = {
   GLASS   : 'glass.gif'
 }
 
-#the number of each resource the player has.
+#رقم لكل مورد يملكه اللاعب.
 inventory = {
   DIRT    : 10,
   GRASS   : 10,
@@ -59,41 +59,41 @@ inventory = {
   GLASS   : 0
 }
 
-#the player image.
+# صورة اللاعب.
 playerImg = 'player.gif'
 
-#the player position.
+# موقع اللاعب.
 playerX = 0
 playerY = 0
 
-#keys for placing resources.
+# مفاتيح لوضع الموارد.
 placekeys = {
-  DIRT  : '1',
-  GRASS : '2',
-  WATER : '3',
-  BRICK : '4',
+  DIRT  : '١',
+  GRASS : '٢',
+  WATER : '٣',
+  BRICK : '٤',
   WOOD  : '5',
   SAND  : '6',
   PLANK : '7',
   GLASS : '8'
 }
 
-#rules to make new resources.
+# قواعد لصنع موارد جديدة.
 crafting = {
   BRICK    : { WATER : 1, DIRT : 2 },
   PLANK    : { WOOD : 3 },
   GLASS    : { SAND : 3 }
 }
 
-#keys for crafting tiles.
+# مفاتيح لصياغة البلاط.
 craftkeys = {
   BRICK : 'r',
   PLANK : 'u',
   GLASS : 'i'
 }
 
-#game instructions that are displayed.
+# تعليمات اللعبة التي يتم عرضها.
 instructions =  [
-  'Instructions:',
-  'Use WASD to move'
+  'التعليمات:',
+  'استخدم W-A-S-D للتحرك'
 ]
