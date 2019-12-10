@@ -118,7 +118,7 @@ def craft(resource):
 def makeplace(resource):
   return lambda: place(resource)
 
-#ارفق دالة 'placing' لكل ضغطة المفتاح
+#ارفق دالة 'وضع' لكل ضغطة المفتاح
 def bindPlacingKeys():
   for k in placekeys:
     screen.onkey(makeplace(k), placekeys[k])
@@ -219,7 +219,7 @@ def drawInventory():
 
 #توفير التعليمات، بالاضافة الى قوانين الصناعه
 def generateInstructions():
-  instructions.append('Crafting rules:')
+  instructions.append('قوانين الصناعة:')
   #لكل مورد يمكن إنشائه...
   for rule in crafting:
     #إنشاء نص قانون الصياغة
@@ -277,7 +277,7 @@ INVWIDTH = 8
 drawing = False
 
 # إنشاء كائن "شاشة" جديد
-الشاشة = turtle.Screen()
+screen = turtle.Screen()
 # حساب العرض والارتفاع
 width = (TILESIZE * MAPWIDTH) + max(200,INVWIDTH * 50)
 num_rows = int(ceil((len(resources) / INVWIDTH)))
@@ -310,7 +310,7 @@ screen.onkey(moveUp, 'w')
 screen.onkey(moveDown, 's')
 screen.onkey(moveLeft, 'a')
 screen.onkey(moveRight, 'd')
-screen.onkey(pickUp, 'space')
+screen.onkey(pickUp, 'مسافة')
 
 #ضبط مفاتيح لوضع وصياغة كل مورد
 bindCraftingKeys()
