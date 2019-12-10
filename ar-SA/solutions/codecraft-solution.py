@@ -63,7 +63,7 @@ def pickUp():
 
 #ضع موردًا في مكان اللاعب حاليًا
 def place(resource):
-  print('وضغ: ', names[resource])
+  print('وضع: ', names[resource])
   #ضع موردا في مكان اللاعب في حال إمتلاكه أحدها...
   if inventory[resource] > 0:
     #اكتشف الموارد في منطقة اللاعب الحاليه
@@ -97,7 +97,7 @@ def craft(resource):
     for i in crafting[resource]:
       #... إذا لم يمتلك ما يكفيه...
       if crafting[resource][i] > inventory[i]:
-      #...لا نستطيع إنشائه!
+      #...لا تستطيع إنشائه!
         canBeMade = False
         break
     #إذا يمكن إنشائه(فإنه يملك جميع الموارد اللازمة)
@@ -127,7 +127,7 @@ def bindPlacingKeys():
 def makecraft(resource):
   return lambda: craft(resource)
 
-#ارفق دالة 'crafting' لكل ضغطة المفتاح
+#ارفق دالة 'صناعة' لكل ضغطة المفتاح
 def bindCraftingKeys():
   for k in craftkeys:
     screen.onkey(makecraft(k), craftkeys[k])
@@ -181,13 +181,13 @@ def drawInventory():
       rendererT.forward(width)
       rendererT.right(90)
     rendererT.end_fill()
-    rendererT.color('black')
+    rendererT.color('اسود')
     #عرض نص "المكان" و"الصنعة"
     for i in range(1,num_rows+1):
       rendererT.goto(20, (height - (MAPHEIGHT * TILESIZE)) - 20 - (i * 100))
-      rendererT.write("place")
+      rendererT.write("المكان")
       rendererT.goto(20, (height - (MAPHEIGHT * TILESIZE)) - 40 - (i * 100))
-      rendererT.write("craft")
+      rendererT.write("الصنعة")
     #ضبط منطقة المخزون
     xPosition = 70
     yPostition = height - (MAPHEIGHT * TILESIZE) - 80
