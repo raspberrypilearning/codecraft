@@ -118,7 +118,7 @@ def craft(resource):
 def makeplace(resource):
   return lambda: place(resource)
 
-#ارفق دالة 'placing' لكل ضغطة المفتاح
+#ارفق دالة 'وضع' لكل ضغطة المفتاح
 def bindPlacingKeys():
   for k in placekeys:
     screen.onkey(makeplace(k), placekeys[k])
@@ -127,7 +127,7 @@ def bindPlacingKeys():
 def makecraft(resource):
   return lambda: craft(resource)
 
-#ارفق دالة 'crafting' لكل ضغطة المفتاح
+#ارفق دالة 'صناعة' لكل ضغطة المفتاح
 def bindCraftingKeys():
   for k in craftkeys:
     screen.onkey(makecraft(k), craftkeys[k])
@@ -181,13 +181,13 @@ def drawInventory():
       rendererT.forward(width)
       rendererT.right(90)
     rendererT.end_fill()
-    rendererT.color('black')
+    rendererT.color('اسود')
     #عرض نص "المكان" و"الصنعة"
     for i in range(1,num_rows+1):
       rendererT.goto(20, (height - (MAPHEIGHT * TILESIZE)) - 20 - (i * 100))
-      rendererT.write("place")
+      rendererT.write("المكان")
       rendererT.goto(20, (height - (MAPHEIGHT * TILESIZE)) - 40 - (i * 100))
-      rendererT.write("craft")
+      rendererT.write("الصنعة")
     #ضبط منطقة المخزون
     xPosition = 70
     yPostition = height - (MAPHEIGHT * TILESIZE) - 80
@@ -219,7 +219,7 @@ def drawInventory():
 
 #توفير التعليمات، بالاضافة الى قوانين الصناعه
 def generateInstructions():
-  instructions.append('Crafting rules:')
+  instructions.append('قوانين الصناعة:')
   #لكل مورد يمكن إنشائه...
   for rule in crafting:
     #إنشاء نص قانون الصياغة
@@ -304,7 +304,7 @@ screen.onkey(moveUp, 'w')
 screen.onkey(moveDown, 's')
 screen.onkey(moveLeft, 'a')
 screen.onkey(moveRight, 'd')
-screen.onkey(pickUp, 'space')
+screen.onkey(pickUp, 'مسافة')
 
 #ضبط مفاتيح لوضع وصياغة كل مورد
 bindCraftingKeys()
