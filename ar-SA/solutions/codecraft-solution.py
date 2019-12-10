@@ -266,7 +266,7 @@ def generateRandomWorld():
 #---
 
 #استدعي الوحدات والمتغيرات اللازمة
-استدعاء السلاحف
+import turtle
 import random
 from variables import *
 from math import ceil
