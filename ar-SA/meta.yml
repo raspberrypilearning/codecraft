@@ -1,25 +1,20 @@
+---
 hero_image: images/banner.png
-theme: blue
 duration: 2
 listed: true
-ingredient: false
 copyedit: false
-curriculum: creator, design-0, programming-0, phys-comp-0, manufacture-0, community-0
 title: صناعة الأكواد
 description: صمِّم تحسينات لنسخة ثنائية الأبعاد من لعبة ماين كرافت واكتب تعليماتها البرمجية.
-original_url: https://codeclubprojects.org/en-GB/python/codecraft
-interests: ''
-technologies: python
-site_areas: codeclub, python
+version: 3.1.0
+last_tested: 2018-11-22
 steps:
-- title: المقدمة
-- title: لعب اللعبة
-- title: 'التحدي: صمِّم عالمك'
-- title: تخصيص اللعبة
-- title: 'التحدي: غيِّر حجم عالمك'
-- title: إنشاء مورد خشب جديد
-- title: 'التحدي: أنشئ مورد الرمل'
-- title: صناعة ألواح خشبية من مورد الخشب
-- title: 'التحدي: اصنع الزجاج من الرمل'
-- title: 'التحدي: أنشئ موارد أخرى'
-
+  - title: المقدمة
+  - title: لعب اللعبة
+  - title: 'التحدي: صمِّم عالمك'
+  - title: تخصيص اللعبة
+  - title: 'التحدي: غيِّر حجم عالمك'
+  - title: إنشاء مورد خشب جديد
+  - title: 'التحدي: أنشئ مورد الرمل'
+  - title: صناعة ألواح خشبية من مورد الخشب
+  - title: 'التحدي: اصنع الزجاج من الرمل'
+  - title: 'التحدي: أنشئ موارد أخرى'
