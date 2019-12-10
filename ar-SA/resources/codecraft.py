@@ -63,7 +63,7 @@ def pickUp():
 
 #ضع موردًا في مكان اللاعب حاليًا
 def place(resource):
-  print('وضغ: ', names[resource])
+  print('وضع: ', names[resource])
   #ضع موردا في مكان اللاعب في حال إمتلاكه أحدها...
   if inventory[resource] > 0:
     #اكتشف الموارد في منطقة اللاعب الحاليه
