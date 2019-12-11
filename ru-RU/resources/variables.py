@@ -69,7 +69,7 @@ craftkeys = {
 }
 
 #game instructions that are displayed.
-порядок действий =  [
+instructions =  [
   'Порядок действий:',
-  'Use WASD to move'
+  Используй клавиши WASD, чтобы двигаться
 ]
