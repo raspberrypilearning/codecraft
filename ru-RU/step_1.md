@@ -60,7 +60,7 @@
 + codecraft-finished/water.gif
 + codecraft-finished/wood.gif
 
-(All of the resources above are also downloadable as `.zip` files.)
+(Все вышеперечисленные ресурсы также можно загрузить как `.zip` файлы.)
 
 ## Цели обучения
 
