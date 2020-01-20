@@ -1,4 +1,4 @@
-\--- challenge \---
+\--- meydan okuma \---
 
 ## Challenge: Create more resources
 
