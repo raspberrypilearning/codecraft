@@ -2,61 +2,61 @@
 
 #Game variables that can be changed!
 
-#game background colour.
-BACKGROUNDCOLOUR = 'lightblue'
+#barva ozadja igre.
+BARVAOZADJA = 'svetlo modra'
 
-#map variables.
-MAXTILES  = 40
-MAPWIDTH  = 20
-MAPHEIGHT = 15
+#spremenljivke mape.
+MAKSIMALNOŠTEVILOPLOŠČ = 40
+MAKSIMALNAŠIRINA = 20
+VIŠINAMAPE = 15
 
-#variables representing the different resources.
-DIRT    = 0
-GRASS   = 1
-WATER   = 2
-BRICK   = 3
-WOOD    = 4
-SAND    = 5
-PLANK   = 6
-GLASS   = 7
+#spremenljivke, ki predstavljajo različna sredstva.
+ZEMLJA = 0
+TRAVA     = 1
+VODA = 2
+OPEKA = 3
+LES  = 4
+PESEK = 5
+DESKA = 6
+STEKLO = 7
 
-#a list of all game resources.
-resources = [DIRT,GRASS,WATER,BRICK,WOOD,SAND,PLANK,GLASS]
+#seznam vseh sredstev v igri.
+sredstva = [ZEMLJA,TRAVA,VODA,OPEKA,LES,PESEK,DESKA,STEKLO]
 
-#the names of the resources.
-names = {
-  DIRT    : 'dirt',
-  GRASS   : 'grass',
-  WATER   : 'water',
-  BRICK   : 'brick',
-  WOOD    : 'wood',
-  SAND    : 'sand',
-  PLANK   : 'plank',
-  GLASS   : 'glass'
+#imena sredstev.
+imena = {
+  ZEMLJA : 'zemlja',
+  TRAVA : 'trava',
+  VODA :'voda',
+  OPEKA :'opeka',
+  LES :'les',
+  PESEK :'pesek',
+  DESKA :'deska',
+  STEKLO :'steklo',
 }
 
-#a dictionary linking resources to images.
-textures = {
-  DIRT    : 'dirt.gif',
-  GRASS   : 'grass.gif',
-  WATER   : 'water.gif',
-  BRICK   : 'brick.gif',
-  WOOD    : 'wood.gif',
-  SAND    : 'sand.gif',
-  PLANK   : 'plank.gif',
-  GLASS   : 'glass.gif'
+#slovar, povezav sredstev s slikami.
+teksture = {
+  ZEMLJA : 'dirt.gif',
+  TRAVA : 'dirt.gif',
+  VODA  : 'water.gif',
+  OPEKA  : 'brick.gif',
+  LES  : 'wood.gif',
+  PESEK : 'sand.gif',
+  DESKA : 'plank.gif',
+  STEKLO  : 'glass.gif'
 }
 
-#the number of each resource the player has.
-inventory = {
-  DIRT    : 10,
-  GRASS   : 10,
-  WATER   : 10,
-  BRICK   : 0,
-  WOOD    : 5,
-  SAND    : 5,
-  PLANK   : 0,
-  GLASS   : 0
+#vsota sredstev, ki jih ima igralec v inventarju.
+inventar = {
+  ZEMLJA : 10,
+  TRAVA : 10,
+  VODA : 10,
+  OPEKA : 0,
+  LES      : 5,
+  PESEK : 5,
+  DESKA : 0,
+  STEKLO : 0
 }
 
 #the player image.
