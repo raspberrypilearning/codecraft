@@ -12,14 +12,13 @@ In this project, you’ll design and code improvements to a 2D version of Minecr
 
 If you need to print this project, please use the [Printer friendly version](https://projects.raspberrypi.org/en/projects/codecraft/print).
 
-
 --- collapse ---
 ---
 title: Club leader notes
 ---
 
-
 ## Introduction:
+
 In this project, children will learn aspects of graphics and game design by making improvements to a basic 2D Minecraft clone. Children will create new resources, as well as crafting rules for combining resources to make new ones. This will be achieved by understanding and manipulating variables, lists and dictionaries.
 
 ## Online Resources
@@ -33,6 +32,7 @@ There is also a trinket containing the completed project:
 + [‘CodeCraft’ Finished -- trinket.io/python/ebc5b0148b](https://trinket.io/python/ebc5b0148b)
 
 ## Offline Resources
+
 This project can be [completed offline](https://www.codeclubprojects.org/en-GB/resources/python-working-offline/) if preferred. You can access the project resources by clicking the 'Project Materials' link for this project. This link contains a 'Project Resources' section, which includes resources that children will need to complete this project offline. Make sure that each child has access to a copy of these resources. This section includes the following files:
 
 + codecraft/codecraft.py
@@ -64,6 +64,7 @@ You can also find a completed version of this project in the 'Volunteer Resource
 (All of the resources above are also downloadable as `.zip` files.)
 
 ## Learning Objectives
+
 + Creating and editing graphics;
 + Game design;
 + Editing:
@@ -78,6 +79,7 @@ This project covers elements from the following strands of the [Raspberry Pi Dig
 + [Combine programming constructs to solve a problem.](https://www.raspberrypi.org/curriculum/programming/builder)
 
 ## Challenges
+
 + "Build your world" - Playing the game, placing and crafting existing blocks;
 + "Change your world size" - editing the `MAPWIDTH` and `MAPHEIGHT` variables to change the world size;
 + "Creating sand" - Creating a new sand resource, along with associated game data.
@@ -85,21 +87,23 @@ This project covers elements from the following strands of the [Raspberry Pi Dig
 + "Create more resources" - Use what's been learnt to create more blocks and crafting rules.
 
 ## Frequently Asked Questions
+
 + Children may need reminding that elements of a dictionary/list are separated by a comma. For example, when adding inventory items, graphics and crafting rules to the game.
 
-
 --- /collapse ---
-
 
 --- collapse ---
 ---
 title: Project materials
 ---
+
 ## Project resources
+
 * [.zip file containing all project resources](resources/codecraft-resources.zip)
 * [Online Trinket containing all 'CodeCraft' project resources](http://rpf.io/codecraft-on)
 
 ## Club leader resources
+
 * [.zip file containing all completed project resources](solutions/codecraft-solution.zip)
 * [Online completed Trinket project](https://trinket.io/python/ebc5b0148b)
 
