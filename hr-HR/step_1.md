@@ -14,7 +14,7 @@ Ako želite ispisati ovaj projekt, molimo Vas da koristite [verziju koja je pril
 
 ## \--- collapse \---
 
-## title: Bilješke za voditelja kluba
+## naslov: Bilješke voditelja kluba
 
 ## Uvod:
 
@@ -93,7 +93,7 @@ Ovaj projekt obuhvaća elemente iz sljedećih dijelova [ Raspberry Pi Digital Ma
 
 ## \--- collapse \---
 
-## title: Materijali projekta
+## naslov: Projektni materijali
 
 ## Resursi projekta
 
