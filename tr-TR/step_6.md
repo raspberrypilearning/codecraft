@@ -4,37 +4,37 @@ Let's create a new wood resource. To do this, you'll need to add to some variabl
 
 + First, you need to give your new resource a number. You'll then be able to use the word `WOOD` in your code instead of the number 4.
     
-    ![screenshot](images/craft-wood-const.png)
+    ![ekran görüntüsü](images/craft-wood-const.png)
 
 + You should add your new `WOOD` resource to your list of `resources`.
     
-    ![screenshot](images/craft-wood-resources.png)
+    ![ekran alıntısı](images/craft-wood-resources.png)
 
 + You should also give your resource a name, which will be displayed in the inventory.
     
-    ![screenshot](images/craft-wood-name.png)
+    ![ekran görüntüsü](images/craft-wood-name.png)
     
     Notice the comma `,` at the end of the line above.
 
 + Your resource will also need an image. The project already includes an image called `wood.gif`, which you should add to the `textures` dictionary.
     
-    ![screenshot](images/craft-wood-texture.png)
+    ![ekran görüntüsü](images/craft-wood-texture.png)
 
 + Add the number of your resource that should be in your `inventory` to start with.
     
-    ![screenshot](images/craft-wood-inventory.png)
+    ![ekran görüntüsü](images/craft-wood-inventory.png)
 
 + Finally, add the key that you'll press to place wood in the world.
     
-    ![screenshot](images/craft-wood-placekey.png)
+    ![ekran görüntüsü](images/craft-wood-placekey.png)
 
 + Run your project to test it. You'll see that you now have a new 'wood' resource in your inventory.
     
-    ![screenshot](images/craft-wood-test.png)
+    ![ekran görüntüsü](images/craft-wood-test.png)
 
 + There's no wood in your world! To fix this, click on your `main.py` file and find the function called `generateRandomWorld()`.
     
-    ![screenshot](images/craft-wood-random1.png)
+    ![ekran görüntüsü](images/craft-wood-random1.png)
     
     This code generates a random number between 0 and 10, and uses the number to decide which resource to place:
     
@@ -44,8 +44,8 @@ Let's create a new wood resource. To do this, you'll need to add to some variabl
 
 + Add this code to add wood to your world whenever the `randomNumber` is 5.
     
-    ![screenshot](images/craft-wood-random2.png)
+    ![ekran görüntüsü](images/craft-wood-random2.png)
 
 + Test your project again. This time, you should see some wood appear in your world.
     
-    ![screenshot](images/craft-wood-test2.png)
+    ![ekran görüntüsü](images/craft-wood-test2.png)
