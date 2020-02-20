@@ -1,16 +1,16 @@
 #!/bin/python3
 
-#Ігрові змінні, які можна змінити!
+#Game variables that can be changed!
 
-#Колір фону.
+#game background colour.
 BACKGROUNDCOLOUR = 'lightblue'
 
-#змінні карти.
+#map variables.
 MAXTILES  = 40
 MAPWIDTH  = 20
 MAPHEIGHT = 15
 
-#змінні, що представляють різні ресурси.
+#variables representing the different resources.
 DIRT    = 0
 GRASS   = 1
 WATER   = 2
@@ -20,22 +20,22 @@ SAND    = 5
 PLANK   = 6
 GLASS   = 7
 
-#список усіх ігрових ресурсів.
+#a list of all game resources.
 resources = [DIRT,GRASS,WATER,BRICK,WOOD,SAND,PLANK,GLASS]
 
-#назви ресурсів.
+#the names of the resources.
 names = {
-  DIRT: "земля",
-  GRASS : 'трава',
-  WATER : 'вода',
-  BRICK : 'цегла',
-  WOOD : 'дерево',
-  SAND : 'пісок',
-  PLANK : 'дошка',
-  GLASS : 'скло'
+  DIRT    : 'dirt',
+  GRASS   : 'grass',
+  WATER   : 'water',
+  BRICK   : 'brick',
+  WOOD    : 'wood',
+  SAND    : 'sand',
+  PLANK   : 'plank',
+  GLASS   : 'glass'
 }
 
-#словник, що зв'язує ресурси з зображеннями.
+#a dictionary linking resources to images.
 textures = {
   DIRT    : 'dirt.gif',
   GRASS   : 'grass.gif',
@@ -47,7 +47,7 @@ textures = {
   GLASS   : 'glass.gif'
 }
 
-#кількість кожного ресурсу який має гравець.
+#the number of each resource the player has.
 inventory = {
   DIRT    : 10,
   GRASS   : 10,
@@ -59,14 +59,14 @@ inventory = {
   GLASS   : 0
 }
 
-#зображення гравця.
+#the player image.
 playerImg = 'player.gif'
 
-#позиція гравця.
+#the player position.
 playerX = 0
 playerY = 0
 
-#кнопки для розміщення ресурсів.
+#keys for placing resources.
 placekeys = {
   DIRT  : '1',
   GRASS : '2',
@@ -78,22 +78,22 @@ placekeys = {
   GLASS : '8'
 }
 
-#правила для створення нових ресурсів.
+#rules to make new resources.
 crafting = {
   BRICK    : { WATER : 1, DIRT : 2 },
   PLANK    : { WOOD : 3 },
   GLASS    : { SAND : 3 }
 }
 
-#кнопки для створення ресурсів.
+#keys for crafting tiles.
 craftkeys = {
   BRICK : 'r',
   PLANK : 'u',
   GLASS : 'i'
 }
 
-#ігрові інструкцій, що показуються у грі.
-інструкції =  [
-  'Інструкції:',
-  "Використовуйте WASD для переміщення"
+#game instructions that are displayed.
+instructions =  [
+  'Instructions:',
+  'Use WASD to move'
 ]
