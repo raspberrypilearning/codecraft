@@ -1,11 +1,11 @@
 \--- challenge \---
 
-## Izazov: Izradi staklo od pijeska
+## Challenge: Crafting glass from sand
 
-Možeš li da kreiraš novi resurs, staklo, koje može biti izrađeno od pijeska? Za pomoć pogledaj prethodne korake.
+Can you create a new glass resource, that can be crafted from sand? You can follow the steps above to help you.
 
 ![screenshot](images/craft-glass.png)
 
-Projekat već sadrži sliku `glass.gif` koju možeš da koristiš, ali možeš da napraviš sopstvenu sliku ako želiš.
+The project already contains a `glass.gif` image that you can use, or you can create your own image if you prefer.
 
 \--- /challenge \---
