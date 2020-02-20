@@ -1,9 +1,9 @@
-\--- desafio \---
+\--- challenge \---
 
-## Desafio: mude seu tamanho do mundo
+## Challenge: Change your world size
 
-Você pode alterar os valores de suas variáveis ​​ `MAPWIDTH` e `MAPHEIGHT` para alterar o tamanho do mundo?
+Can you change the values of your `MAPWIDTH` and `MAPHEIGHT` variables to change the size of the world?
 
-![captura de tela](images/craft-mapsize.png)
+![screenshot](images/craft-mapsize.png)
 
-\--- / desafio \---
+\--- /challenge \---
