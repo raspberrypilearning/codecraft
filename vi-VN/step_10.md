@@ -1,7 +1,7 @@
 \--- challenge \---
 
-## Thách thức: Tạo thêm tài nguyên
+## Challenge: Create more resources
 
-Bạn có thể thêm nhiều tài nguyên và quy tắc chế tạo vào trò chơi của bạn không?
+Can you add more resources and crafting rules to your game?
 
-\--- /thử thách \---
+\--- /challenge \---
