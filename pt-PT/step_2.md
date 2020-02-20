@@ -1,23 +1,23 @@
-## Jogando o jogo
+## Playing the game
 
 + Open this trinket: [rpf.io/codecraft-on](http://rpf.io/codecraft-on){:target="_blank"}.
 
-+ Use as teclas WASD para mover o seu jogador ao redor do mundo, que é cheio de recursos diferentes (sujeira, grama e água).
++ Use the WASD keys to move your player around the world, which is full of different resources (dirt, grass and water).
     
-    ![captura de tela](images/craft-move.png)
+    ![screenshot](images/craft-move.png)
 
-+ Você pode pressionar a barra de espaço para coletar recursos. Escolha alguns de cada tipo de recurso e você os verá adicionados ao seu inventário.
++ You can press the spacebar to collect resources. Pick up a few of each type of resource, and you'll see them added to your inventory.
     
-    ![captura de tela](images/craft-pickup.png)
+    ![screenshot](images/craft-pickup.png)
 
-+ Pressione as teclas numéricas (1 a 3) para colocar um recurso no mapa. Por exemplo, pressione 3 para colocar um pouco de água no mapa. Isso só funcionará se você tiver um pouco de água no seu inventário.
++ Press the number keys (1 to 3) to place a resource on the map. For example, press 3 to place some water on the map. This will only work if you have some water in your inventory.
     
-    ![captura de tela](images/craft-place-water.png)
+    ![screenshot](images/craft-place-water.png)
 
-+ Você pode criar um item pressionando a tecla exibida no menu. Criar significa combinar itens que você já possui em seu inventário para criar novos. Tente pressionar a tecla 'r' para criar um novo tijolo (contanto que você tenha 2 sujeira e 1 água no seu inventário).
++ You can craft an item by pressing the key displayed in the menu. Crafting means combining items you already have in your inventory to create new ones. Try pressing the 'r' key to craft a new brick (as long as you have 2 dirt and 1 water in your inventory).
     
-    ![captura de tela](images/craft-craft-brick.png)
+    ![screenshot](images/craft-craft-brick.png)
 
-+ Você pode pressionar a tecla '4' para colocar seus tijolos artesanais.
++ You can then press they '4' key to place your crafted bricks.
     
-    ![captura de tela](images/craft-place-brick.png)
+    ![screenshot](images/craft-place-brick.png)
