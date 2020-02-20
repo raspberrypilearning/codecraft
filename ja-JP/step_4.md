@@ -1,15 +1,15 @@
-## ゲームをカスタマイズする
+## Customising your game
 
-ゲームの仕組みを変更するために変数を修正しましょう。
+Let’s modify some variables to change how your game works.
 
-+ `variables.py`ファイルをクリックしてどの変数が変更できるか見てみる。
++ Click the `variables.py` file to see some variables that can be changed.
     
-    ![スクリーンショット](images/craft-variables.png)
+    ![screenshot](images/craft-variables.png)
 
-+ `BACKGROUNDCOLOUR` 変数の値を変更し、Runアイコンをクリックして、ゲーム内で何が変更されるか見てみる。
++ Change the value of your `BACKGROUNDCOLOUR` variable, and click 'Run' to see the change to your game.
     
-    ![スクリーンショット](images/craft-background.png)
+    ![screenshot](images/craft-background.png)
 
-+ 変数`MAXTILES`は持ち物リストに入れられるリソースの最大量を示す。 その変数を変更し、持ち物リストにそれぞれ２０個以上（または以下）のリソースを持てるようにしてみる。
++ The variable `MAXTILES` is the amount of each resource that can be held in your inventory. Change this variable if you want to store more (or less) than 20 of each resource.
     
-    ![スクリーンショット](images/craft-maxtiles.png)
+    ![screenshot](images/craft-maxtiles.png)
