@@ -1,15 +1,15 @@
-## Personalizarea jocului tău
+## Customising your game
 
-Haideți să modificăm câteva variabile pentru a schimba modul în care funcționează jocul dvs.
+Let’s modify some variables to change how your game works.
 
-+ Faceți clic pe `variables.py` pentru a vedea unele variabile ce pot fi modificate.
++ Click the `variables.py` file to see some variables that can be changed.
     
-    ![captură de ecran](images/craft-variables.png)
+    ![screenshot](images/craft-variables.png)
 
-+ Modificați valoarea variabilei ` BACKGROUNDCOLOUR ` și faceți clic pe „Run” pentru a vedea schimbarea în jocului dvs.
++ Change the value of your `BACKGROUNDCOLOUR` variable, and click 'Run' to see the change to your game.
     
-    ![captură de ecran](images/craft-background.png)
+    ![screenshot](images/craft-background.png)
 
-+ Variabila ` MAXTILES ` este cantiatea maxima a fiecărei resurse ce poate fi păstrată în inventarul dvs. Modificați această variabilă dacă doriți să stocați mai mult (sau mai puțin) de 20 din fiecare resursă.
++ The variable `MAXTILES` is the amount of each resource that can be held in your inventory. Change this variable if you want to store more (or less) than 20 of each resource.
     
-    ![captură de ecran](images/craft-maxtiles.png)
+    ![screenshot](images/craft-maxtiles.png)
