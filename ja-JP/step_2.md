@@ -1,23 +1,23 @@
-## ゲームプレイ
+## Playing the game
 
 + Open this trinket: [rpf.io/codecraft-on](http://rpf.io/codecraft-on){:target="_blank"}.
 
-+ キーボード上のW A S Dキーを使ってたくさんのリソース（土・草・水）で埋め尽くされたワールド内のプレイヤーを動かす。
++ Use the WASD keys to move your player around the world, which is full of different resources (dirt, grass and water).
     
-    ![スクリーンショット](images/craft-move.png)
+    ![screenshot](images/craft-move.png)
 
-+ スペースバーを押すとその下にあるリソースを拾う。 それぞれのタイプのリソースを拾って、下段にある持ち物リストに追加されたことを確認してください。
++ You can press the spacebar to collect resources. Pick up a few of each type of resource, and you'll see them added to your inventory.
     
-    ![スクリーンショット](images/craft-pickup.png)
+    ![screenshot](images/craft-pickup.png)
 
-+ 数字キー１から３を押して、リソースを地図上に置く。 たとえば、３キーを押して水を地図上に置きます。 これは、持ち物リストに水がある時だけできます。
++ Press the number keys (1 to 3) to place a resource on the map. For example, press 3 to place some water on the map. This will only work if you have some water in your inventory.
     
-    ![スクリーンショット](images/craft-place-water.png)
+    ![screenshot](images/craft-place-water.png)
 
-+ メニューに表示されたキーを押し、アイテムをクラフト（作成）する。 クラフトとは、すでに持っているアイテムを結合して新しいものを作ることを意味します 。 Rキーを押し、新しいレンガを作ります（２つの土と１つの水が持ち物リストにある場合のみ）。
++ You can craft an item by pressing the key displayed in the menu. Crafting means combining items you already have in your inventory to create new ones. Try pressing the 'r' key to craft a new brick (as long as you have 2 dirt and 1 water in your inventory).
     
-    ![スクリーンショット](images/craft-craft-brick.png)
+    ![screenshot](images/craft-craft-brick.png)
 
-+ 4キーを押してクラフトされたレンガを置きます。
++ You can then press they '4' key to place your crafted bricks.
     
-    ![スクリーンショット](images/craft-place-brick.png)
+    ![screenshot](images/craft-place-brick.png)
