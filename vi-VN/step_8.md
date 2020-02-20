@@ -1,39 +1,39 @@
-## Ván gỗ từ gỗ
+## Crafting planks from wood
 
-Hãy tạo một tài nguyên ván mới được chế tác từ gỗ.
+Let's create a new plank resource that be crafted from wood.
 
-+ Đầu tiên, thêm một biến `PLANK` vào trò chơi của bạn.
++ First, add a new `PLANK` variable to your game.
     
-    ![ảnh chụp màn hình](images/craft-plank-const.png)
+    ![screenshot](images/craft-plank-const.png)
 
-+ Thêm một biến `PLANK` vào trò chơi của bạn.
++ Add a new `PLANK` variable to your game.
     
-    ![ảnh chụp màn hình](images/craft-plank-resources.png)
+    ![screenshot](images/craft-plank-resources.png)
 
-+ Đặt tên cho tài nguyên `'plank'`.
++ Name the resource `'plank'`.
     
-    ![ảnh chụp màn hình](images/craft-plank-names.png)
+    ![screenshot](images/craft-plank-names.png)
 
-+ Cung cấp cho tài nguyên `PLANK` của bạn một hình ảnh. Dự án đã chứa một hình ảnh `plank.gif` , nhưng bạn có thể tạo hình ảnh của riêng bạn nếu bạn thích.
++ Give your `PLANK` resource an image. The project already contains a `plank.gif` image, but you can create your own if you prefer.
     
-    ![ảnh chụp màn hình](images/craft-plank-textures.png)
+    ![screenshot](images/craft-plank-textures.png)
 
-+ Thêm các tấm ván vào kho của bạn.
++ Add planks to your inventory.
     
-    ![ảnh chụp màn hình](images/craft-plank-inventory.png)
+    ![screenshot](images/craft-plank-inventory.png)
 
-+ Đặt chìa khóa để đặt ván.
++ Set a key for placing planks.
     
-    ![ảnh chụp màn hình](images/craft-plank-placekeys.png)
+    ![screenshot](images/craft-plank-placekeys.png)
 
-+ Vì tài nguyên này có thể được chế tạo, bạn cần tạo một quy tắc chế tạo, đó là một tấm ván có thể được làm từ 3 gạch gỗ. Thêm mã này vào từ điển `crafting`.
++ As this resource can be crafted, you need to create a crafting rule, which is that a plank can be made from 3 wood tiles. Add this code to the `crafting` dictionary.
     
-    ![ảnh chụp màn hình](images/craft-plank-crafting.png)
+    ![screenshot](images/craft-plank-crafting.png)
 
-+ Cuối cùng, bạn cần đặt một chìa khóa để chế tạo các tấm ván mới.
++ Finally, you need to set a key for crafting new planks.
     
-    ![ảnh chụp màn hình](images/craft-plank-craftkeys.png)
+    ![screenshot](images/craft-plank-craftkeys.png)
 
-+ Để kiểm tra tài nguyên ván mới của bạn, thu thập một vài gạch gỗ và sau đó chế tạo một số ván từ gỗ của bạn. Sau đó bạn có thể đặt các tấm ván mới của bạn trong thế giới của bạn.
++ To test your new plank resource, gather up a few wood tiles and then craft some planks from your wood. You can then place your new planks in your world.
     
-    ![ảnh chụp màn hình](images/craft-plank-test.png)
+    ![screenshot](images/craft-plank-test.png)
