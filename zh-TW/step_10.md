@@ -1,7 +1,7 @@
-\---挑戰\---
+\--- challenge \---
 
-## 挑戰：創造更多資源
+## Challenge: Create more resources
 
-你能為遊戲添加更多資源和製定規則嗎？
+Can you add more resources and crafting rules to your game?
 
-\--- /挑戰\---
+\--- /challenge \---
