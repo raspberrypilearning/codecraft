@@ -10,45 +10,45 @@ MAXIMUMTUILES = 20
 LARGEURCARTE = 10
 HAUTEURCARTE = 10
 
-#Variales qui représentent les différentes ressources.
-TERRE = 0
-HERBE = 1
-EAU = 2
-BRIQUE = 3
+#Variables qui représentent les différentes ressources.
+TERRE    = 0
+HERBE   = 1
+EAU   = 2
+BRIQUE   = 3
 
 #liste de toutes les ressources du jeu.
 ressources = [TERRE,HERBE,EAU,BRIQUE]
 
 #noms des ressources.
 noms = {
-  TERRE : 'terre',
-  HERBE : 'herbe',
-  EAU : 'eau',
-  BRIQUE : 'brique'
+  TERRE    : 'terre',
+  HERBE   : 'herbe',
+  EAU   : 'eau',
+  BRIQUE   : 'brique'
 }
 
 #dictionnaire liant les ressources aux images.
 textures = {
-  TERRE : 'dirt.gif',
-  HERBE : 'grass.gif',
-  EAU : 'water.gif',
-  BRIQUE : 'brick.gif'
+  TERRE    : 'dirt.gif',
+  HERBE   : 'grass.gif',
+  EAU   : 'water.gif',
+  BRIQUE   : 'brick.gif'
 }
 
 #nombre de chaque ressource que possède le joueur.
 inventaire = {
-  TERRE : 10,
-  HERBE : 10,
-  EAU : 10,
-  BRIQUE : 0
+  TERRE    : 10,
+  HERBE   : 10,
+  EAU   : 10,
+  BRIQUE  : 0
 }
 
 #image du joueur.
-imgJoueur = 'player.gif'
+joueurImg = 'player.gif'
 
 #position du joueur.
-xJoueur = 0
-yJoueur = 0
+joueurX = 0
+joueurY = 0
 
 #règles pour fabriquer des nouvelles ressources.
 fabrication = {
