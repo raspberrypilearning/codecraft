@@ -1,13 +1,13 @@
-\--- desafio \---
+\--- challenge \---
 
-## Desafio: criando areia
+## Challenge: Creating sand
 
-Você pode adicionar um recurso `SAND` ao seu jogo? Você pode usar as etapas acima para ajudá-lo.
+Can you add a `SAND` resource to your game? You can use the steps above to help you.
 
-![captura de tela](images/craft-sand.png)
+![screenshot](images/craft-sand.png)
 
 The project already includes a `sand.gif` image, but you can create and upload your own if you prefer.
 
-![captura de tela](images/craft-upload.png)
+![screenshot](images/craft-upload.png)
 
-\--- / desafio \---
+\--- /challenge \---
