@@ -10,65 +10,65 @@ MAXIMUMTUILES = 40
 LARGEURCARTE = 20
 HAUTEURCARTE = 15
 
-#Variales qui représentent les différentes ressources.
-TERRE = 0
-HERBE = 1
-EAU = 2
-BRIQUE = 3
-BOIS = 4
-SALE = 5
-PLANCHE = 6
-VERRE = 7
+#Variables qui représentent les différentes ressources.
+TERRE    = 0
+HERBE   = 1
+EAU   = 2
+BRIQUE   = 3
+BOIS    = 4
+SABLE    = 5
+PLANCHE   = 6
+VERRE   = 7
 
 #liste de toutes les ressources du jeu.
 ressources = [TERRE,HERBE,EAU,BRIQUE,BOIS,SABLE,PLANCHE,VERRE]
 
 #noms des ressources.
 noms = {
-  TERRE : 'terre',
-  HERBE : 'herbe',
-  EAU : 'eau',
-  BRIQUE : 'brique',
-  BOIS : 'bois',
-  SABLE : 'sable',
-  PLANCHE: 'planche',
-  VERRE : 'verre'
+  TERRE    : 'terre',
+  HERBE   : 'herbe',
+  EAU   : 'eau',
+  BRIQUE   : 'brique',
+  BOIS    : 'bois',
+  SABLE    : 'sable',
+  PLANCHE   : 'planche',
+  VERRE   : 'verre'
 }
 
 #dictionnaire liant les ressources aux images.
 textures = {
-  TERRE : 'dirt.gif',
-  HERBE : 'grass.gif',
-  EAU : 'water.gif',
-  BRIQUE : 'brick.gif',
-  BOIS : 'wood.gif',
-  SABLE: 'sand.gif',
-  PLANCHE : 'plank.gif',
-  VERRE : 'glass.gif'
+  TERRE    : 'dirt.gif',
+  HERBE   : 'grass.gif',
+  EAU   : 'water.gif',
+  BRIQUE   : 'brick.gif',
+  BOIS    : 'wood.gif',
+  SABLE    : 'sand.gif',
+  PLANCHE   : 'plank.gif',
+  VERRE   : 'glass.gif'
 }
 
 #nombre de chaque ressource que possède le joueur.
 inventaire = {
-  TERRE : 10,
-  HERBE : 10,
-  EAU : 10,
-  BRIQUE : 0,
-  BOIS : 5,
-  SABLE : 5,
-  PLANCHES: 0,
-  VERRE : 0
+  TERRE    : 10,
+  HERBE   : 10,
+  EAU   : 10,
+  BRIQUE  : 0,
+  BOIS    : 5,
+  SABLE    : 5,
+  PLANCHE   : 0,
+  VERRE   : 0
 }
 
 #image du joueur.
-imgJoueur = 'player.gif'
+joueurImg = 'player.gif'
 
 #position du joueur.
-xJoueur = 0
-yJoueur = 0
+joueurX = 0
+joueurY = 0
 
 #touches pour placer des ressources.
 touchesPlacement = {
-  TERRE : '1',
+  TERRE  : '1',
   HERBE : '2',
   EAU : '3',
   BRIQUE : '4',
