@@ -1,12 +1,12 @@
 \--- challenge \---
 
-## Izazov: Stvori pijesak
+## Challenge: Creating sand
 
-Možeš li dodati resurs PIJESAK u igru? Za pomoć pogledaj korake iznad.
+Can you add a `SAND` resource to your game? You can use the steps above to help you.
 
 ![screenshot](images/craft-sand.png)
 
-U projektu se već nalazi slika `sand.gif`, ali možeš stvoriti i učitati vlastitu ako želiš.
+The project already includes a `sand.gif` image, but you can create and upload your own if you prefer.
 
 ![screenshot](images/craft-upload.png)
 
