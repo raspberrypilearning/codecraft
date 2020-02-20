@@ -1,4 +1,4 @@
-## Giriş
+## Introduction
 
 In this project, you’ll design and code improvements to a 2D version of Minecraft.
 
@@ -8,31 +8,31 @@ In this project, you’ll design and code improvements to a 2D version of Minecr
   <img src="images/craft-finished.png">
 </div>
 
-### Kulüp liderleri için ek bilgi
+### Additional information for club leaders
 
-Bu projeyi yazdırmanız gerekiyorsa, lütfen [Yazıcı dostu sürüm](https://projects.raspberrypi.org/en/projects/codecraft/print)ü kullanın.
+If you need to print this project, please use the [Printer friendly version](https://projects.raspberrypi.org/en/projects/codecraft/print).
 
 ## \--- collapse \---
 
-## title: Kulüp lideri notları
+## title: Club leader notes
 
-## Giriş:
+## Introduction:
 
 In this project, children will learn aspects of graphics and game design by making improvements to a basic 2D Minecraft clone. Children will create new resources, as well as crafting rules for combining resources to make new ones. This will be achieved by understanding and manipulating variables, lists and dictionaries.
 
-## Çevrimiçi Kaynaklar
+## Online Resources
 
-**Bu proje Python 3'ü kullanıyor.** Çevrimiçi Python programlama için [trinket](https://trinket.io/) kullanmanızı tavsiye ederiz. Bu proje aşağıdaki trinketleri içeriyor:
+**This project uses Python 3.** We recommend using [trinket](https://trinket.io/) to write Python online. This project contains the following Trinkets:
 
 + ['CodeCraft' starter project -- rpf.io/codecraft-on](http://rpf.io/codecraft-on)
 
-Ayrıca tamamlanmış projeyi içeren bir trinket da bulunmaktadır:
+There is also a trinket containing the completed project:
 
 + [‘CodeCraft’ Finished -- trinket.io/python/ebc5b0148b](https://trinket.io/python/ebc5b0148b)
 
-## Çevrimdışı Kaynaklar
+## Offline Resources
 
-Bu proje, istenirse [çevrimdışı](https://www.codeclubprojects.org/en-GB/resources/python-working-offline/) olarak tamamlanabilir. Bu proje için proje kaynaklarına, 'Proje Malzemeleri' bağlantısını tıklayarak erişebilirsiniz. Bu link, çocukların bu projeyi çevrimdışı tamamlamaları için ihtiyaç duyacağı kaynakları içeren bir 'Proje Kaynakları' bölümü içermektedir. Her çocuğun bu kaynakların bir kopyasına erişimi olduğundan emin olun. Bu bölüm aşağıdaki dosyaları içerir:
+This project can be [completed offline](https://www.codeclubprojects.org/en-GB/resources/python-working-offline/) if preferred. You can access the project resources by clicking the 'Project Materials' link for this project. This link contains a 'Project Resources' section, which includes resources that children will need to complete this project offline. Make sure that each child has access to a copy of these resources. This section includes the following files:
 
 + codecraft/codecraft.py
 + codecraft/variables.py
@@ -46,7 +46,7 @@ Bu proje, istenirse [çevrimdışı](https://www.codeclubprojects.org/en-GB/reso
 + codecraft/water.gif
 + codecraft/wood.gif
 
-Bu projenin tamamlanmış bir versiyonunu aşağıdakileri içeren 'Gönüllü Kaynaklar' bölümünde de bulabilirsiniz:
+You can also find a completed version of this project in the 'Volunteer Resources' section, which contains:
 
 + codecraft-finished/codecraft.py
 + codecraft-finished/variables.py
@@ -62,22 +62,22 @@ Bu projenin tamamlanmış bir versiyonunu aşağıdakileri içeren 'Gönüllü K
 
 (All of the resources above are also downloadable as `.zip` files.)
 
-## Kazanımlar
+## Learning Objectives
 
 + Creating and editing graphics;
 + Game design;
 + Editing: 
-    + Değişkenler;
-    + Listeler;
+    + Variables;
+    + Lists;
     + Dictionaries.
 
-Bu proje, [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum) 'un aşağıdaki bölümlerinden unsurları kapsamaktadır:
+This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
 
-+ [Temel 2B ve 3B varlıkların tasarlanması.](https://www.raspberrypi.org/curriculum/design/creator)
++ [Design basic 2D and 3D assets.](https://www.raspberrypi.org/curriculum/design/creator)
 
-+ [Bir problemi çözmek için programlama yapılarını birleştirin.](https://www.raspberrypi.org/curriculum/programming/builder)
++ [Combine programming constructs to solve a problem.](https://www.raspberrypi.org/curriculum/programming/builder)
 
-## Meydan Okumalar
+## Challenges
 
 + "Build your world" - Playing the game, placing and crafting existing blocks;
 + "Change your world size" - editing the `MAPWIDTH` and `MAPHEIGHT` variables to change the world size;
@@ -85,7 +85,7 @@ Bu proje, [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum) 'un
 + "Crafting glass from sand" - Creating a new craftable glass resource.
 + "Create more resources" - Use what's been learnt to create more blocks and crafting rules.
 
-## Sıkça Sorulan Sorular
+## Frequently Asked Questions
 
 + Children may need reminding that elements of a dictionary/list are separated by a comma. For example, when adding inventory items, graphics and crafting rules to the game.
 
@@ -93,16 +93,16 @@ Bu proje, [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum) 'un
 
 ## \--- collapse \---
 
-## title: Proje materyalleri
+## title: Project materials
 
-## Proje kaynakları
+## Project resources
 
-+ [tüm proje kaynaklarını içeren .zip dosyası](resources/codecraft-resources.zip)
++ [.zip file containing all project resources](resources/codecraft-resources.zip)
 + [Online Trinket containing all 'CodeCraft' project resources](http://rpf.io/codecraft-on)
 
-## Kulüp lideri için kaynaklar
+## Club leader resources
 
-+ [tamamlanmış tüm proje kaynaklarını içeren .zip dosyası](solutions/codecraft-solution.zip)
-+ [Çevrimiçi tamamlanmış Trinket projesi](https://trinket.io/python/ebc5b0148b)
++ [.zip file containing all completed project resources](solutions/codecraft-solution.zip)
++ [Online completed Trinket project](https://trinket.io/python/ebc5b0148b)
 
 \--- /collapse \---
