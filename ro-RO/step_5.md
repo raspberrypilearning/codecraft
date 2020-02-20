@@ -1,9 +1,9 @@
 \--- challenge \---
 
-## Provocare: Schimbați dimensiunea hărţii
+## Challenge: Change your world size
 
-Puteți modifica valorile variabilelor ` MAPWIDTH ` și ` MAPHEIGHT ` pentru a schimba dimensiunea hărţii?
+Can you change the values of your `MAPWIDTH` and `MAPHEIGHT` variables to change the size of the world?
 
-![captură de ecran](images/craft-mapsize.png)
+![screenshot](images/craft-mapsize.png)
 
 \--- /challenge \---
