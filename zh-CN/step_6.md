@@ -1,51 +1,51 @@
-## 创建一个新的木材资源
+## Creating a new wood resource
 
-让我们创建一个新的木材资源。 为此，您需要在` variables.py中添加一些变量`文件。
+Let's create a new wood resource. To do this, you'll need to add to some variables in your `variables.py` file.
 
-+ 首先，您需要给新资源一个数字。 然后，您将可以使用单词` WOOD `在您的代码中而不是数字4中。
++ First, you need to give your new resource a number. You'll then be able to use the word `WOOD` in your code instead of the number 4.
     
     ![screenshot](images/craft-wood-const.png)
 
-+ 您应该添加新的` WOOD `资源到您的`资源列表中` 。
++ You should add your new `WOOD` resource to your list of `resources`.
     
     ![screenshot](images/craft-wood-resources.png)
 
-+ 您还应该给资源指定一个名称，该名称将显示在清单中。
++ You should also give your resource a name, which will be displayed in the inventory.
     
     ![screenshot](images/craft-wood-name.png)
     
-    注意逗号`， `在上面一行的末尾。
+    Notice the comma `,` at the end of the line above.
 
-+ 您的资源还将需要一张图片。 该项目已经包含名为` wood.gif的图像。 ` ，应将其添加到`纹理中`字典。
++ Your resource will also need an image. The project already includes an image called `wood.gif`, which you should add to the `textures` dictionary.
     
     ![screenshot](images/craft-wood-texture.png)
 
-+ 添加应该在您的`库存中的资源编号`首先。
++ Add the number of your resource that should be in your `inventory` to start with.
     
     ![screenshot](images/craft-wood-inventory.png)
 
-+ 最后，添加您要在世界上放置木头的按键。
++ Finally, add the key that you'll press to place wood in the world.
     
     ![screenshot](images/craft-wood-placekey.png)
 
-+ 运行你的代码进行测试。 您会看到清单中现在有了新的“木材”资源。
++ Run your project to test it. You'll see that you now have a new 'wood' resource in your inventory.
     
     ![screenshot](images/craft-wood-test.png)
 
-+ 您的世界没有木头！ 要解决此问题，请单击您的` main.py `文件并找到名为` generateRandomWorld（）的函数` 。
++ There's no wood in your world! To fix this, click on your `main.py` file and find the function called `generateRandomWorld()`.
     
     ![screenshot](images/craft-wood-random1.png)
     
-    此代码生成一个介于0到10之间的随机数，并使用该数字来决定放置哪个资源：
+    This code generates a random number between 0 and 10, and uses the number to decide which resource to place:
     
-    + 1或2 =水
-    + 3或4 =草
-    + 其他= DIRT
+    + 1 or 2 = water
+    + 3 or 4 = grass
+    + anything else = DIRT
 
-+ 当`随机编号` 是5时，添加此代码以添加木头到你的世界。
++ Add this code to add wood to your world whenever the `randomNumber` is 5.
     
     ![screenshot](images/craft-wood-random2.png)
 
-+ 再次测试你的程序。 这次，您应该看到世界上出现了一些木头。
++ Test your project again. This time, you should see some wood appear in your world.
     
     ![screenshot](images/craft-wood-test2.png)
