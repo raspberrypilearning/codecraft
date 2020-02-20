@@ -1,11 +1,11 @@
-\---挑戰\---
+\--- challenge \---
 
-## 挑戰：用沙子製作玻璃
+## Challenge: Crafting glass from sand
 
-你能創造出一種可以用沙子製作的新玻璃資源嗎？ 您可以按照上述步驟來幫助您。
+Can you create a new glass resource, that can be crafted from sand? You can follow the steps above to help you.
 
-![截圖](images/craft-glass.png)
+![screenshot](images/craft-glass.png)
 
-該項目已包含您可以使用的 `glass.gif` 圖像，或者您可以根據需要創建自己的圖像。
+The project already contains a `glass.gif` image that you can use, or you can create your own image if you prefer.
 
-\--- /挑戰\---
+\--- /challenge \---
