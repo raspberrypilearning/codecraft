@@ -1,7 +1,7 @@
 \--- challenge \---
 
-## Izziv: Ustvari več sredstev
+## Challenge: Create more resources
 
-Ali lahko dodaš več sredstev in navodil za izdelavo v svojo igro?
+Can you add more resources and crafting rules to your game?
 
 \--- /challenge \---
