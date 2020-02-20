@@ -1,16 +1,16 @@
 #!/bin/python3
 
-＃可以更改的游戏变量！
+#Game variables that can be changed!
 
-#游戏背景颜色。
+#game background colour.
 BACKGROUNDCOLOUR = 'lightblue'
 
-#地图变量。
+#map variables.
 MAXTILES  = 40
 MAPWIDTH  = 20
 MAPHEIGHT = 15
 
-#代表不同资源的变量。
+#variables representing the different resources.
 DIRT    = 0
 GRASS   = 1
 WATER   = 2
@@ -20,10 +20,10 @@ SAND    = 5
 PLANK   = 6
 GLASS   = 7
 
-＃所有游戏资源的列表。
+#a list of all game resources.
 resources = [DIRT,GRASS,WATER,BRICK,WOOD,SAND,PLANK,GLASS]
 
-＃资源名称。
+#the names of the resources.
 names = {
   DIRT    : 'dirt',
   GRASS   : 'grass',
@@ -35,7 +35,7 @@ names = {
   GLASS   : 'glass'
 }
 
-#将资源链接到图像的数据字典。
+#a dictionary linking resources to images.
 textures = {
   DIRT    : 'dirt.gif',
   GRASS   : 'grass.gif',
@@ -47,7 +47,7 @@ textures = {
   GLASS   : 'glass.gif'
 }
 
-＃玩家拥有的每种资源的数量。
+#the number of each resource the player has.
 inventory = {
   DIRT    : 10,
   GRASS   : 10,
@@ -59,14 +59,14 @@ inventory = {
   GLASS   : 0
 }
 
-#玩家图像
+#the player image.
 playerImg = 'player.gif'
 
-#玩家位置
+#the player position.
 playerX = 0
 playerY = 0
 
-＃用于放置资源的键。
+#keys for placing resources.
 placekeys = {
   DIRT  : '1',
   GRASS : '2',
@@ -78,22 +78,22 @@ placekeys = {
   GLASS : '8'
 }
 
-#用于创建新资源的规则。
+#rules to make new resources.
 crafting = {
   BRICK    : { WATER : 1, DIRT : 2 },
   PLANK    : { WOOD : 3 },
   GLASS    : { SAND : 3 }
 }
 
-#制作图块的键值。
+#keys for crafting tiles.
 craftkeys = {
   BRICK : 'r',
   PLANK : 'u',
   GLASS : 'i'
 }
 
-#游戏说明显示。
+#game instructions that are displayed.
 instructions =  [
   'Instructions:',
-  使用W-A-S-D快捷键 移动。
+  'Use WASD to move'
 ]
