@@ -1,16 +1,16 @@
 #!/bin/python3
 
-#変更可能なゲーム変数！
+#Game variables that can be changed!
 
-#ゲームの背景色
+#game background colour.
 BACKGROUNDCOLOUR = 'lightblue'
 
-#ゲームマップ（地図上）の変数
-MAXTILES = 40  #持ち物リストに入れられるリソースの最大量
-MAPWIDTH  = 20 #マップの幅
-MAPHEIGHT = 15 #マップの高さ
+#map variables.
+MAXTILES  = 40
+MAPWIDTH  = 20
+MAPHEIGHT = 15
 
-#リソースをあらわす変数
+#variables representing the different resources.
 DIRT    = 0
 GRASS   = 1
 WATER   = 2
@@ -20,22 +20,22 @@ SAND    = 5
 PLANK   = 6
 GLASS   = 7
 
-#ゲームのリソース
+#a list of all game resources.
 resources = [DIRT,GRASS,WATER,BRICK,WOOD,SAND,PLANK,GLASS]
 
-#リソースの名前
+#the names of the resources.
 names = {
-  DIRT : u'土',
-  GRASS: u'草',
-  WATER: u'水',
-  BRICK: u'レンガ',
-  WOOD: u'木',
-  SAND:  u'砂',
-  PLANK : u'板',
-  GLASS   : u'ガラス'
+  DIRT    : 'dirt',
+  GRASS   : 'grass',
+  WATER   : 'water',
+  BRICK   : 'brick',
+  WOOD    : 'wood',
+  SAND    : 'sand',
+  PLANK   : 'plank',
+  GLASS   : 'glass'
 }
 
-#リソースを画像にリンクするディクショナリ（辞書）
+#a dictionary linking resources to images.
 textures = {
   DIRT    : 'dirt.gif',
   GRASS   : 'grass.gif',
@@ -47,7 +47,7 @@ textures = {
   GLASS   : 'glass.gif'
 }
 
-#各プレイヤーが持つリソースの数
+#the number of each resource the player has.
 inventory = {
   DIRT    : 10,
   GRASS   : 10,
@@ -59,14 +59,14 @@ inventory = {
   GLASS   : 0
 }
 
-#プレイヤーの画像
+#the player image.
 playerImg = 'player.gif'
 
-#プレイヤーの位置
+#the player position.
 playerX = 0
 playerY = 0
 
-#新しいリソースを作るために必要なリソースの数（レンガを作るためには土を２つと水を１つ必要）
+#keys for placing resources.
 placekeys = {
   DIRT  : '1',
   GRASS : '2',
@@ -78,7 +78,7 @@ placekeys = {
   GLASS : '8'
 }
 
-#新しいリソースを作るために押すキー
+#rules to make new resources.
 crafting = {
   BRICK    : { WATER : 1, DIRT : 2 },
   PLANK    : { WOOD : 3 },
@@ -92,8 +92,8 @@ craftkeys = {
   GLASS : 'i'
 }
 
-#画面に表示されるゲームの説明（ルール
+#game instructions that are displayed.
 instructions =  [
-  '説明:',
-  'プレイヤーを左右上下に移動する場合、WASDキーを押してください'
+  'Instructions:',
+  'Use WASD to move'
 ]
