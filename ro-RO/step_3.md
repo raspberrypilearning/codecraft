@@ -1,9 +1,9 @@
 \--- challenge \---
 
-## Provocare: Construiește-ți lumea
+## Challenge: Build your world
 
-Puteți construi o casă, cu o grădină și o piscină? Ce altceva mai poți crea?
+Can you build a house, with a garden and a swimming pool? What else can you create?
 
-![captură de ecran](images/craft-build-example.png)
+![screenshot](images/craft-build-example.png)
 
 \--- /challenge \---
