@@ -5,58 +5,58 @@
 #############
 
 #---
-# CodeCraft #
+#Fonctions du jeu
 #---
 
 #déplacer le joueur d'une tuile vers la gauche.
 def deplaceGauche():
-  global xJoueur
-  if(drawing == False and playerX > 0):
-    oldX = playerX
-    xJoueur -= 1
-    drawResource(oldX, playerY)
-    dessineRessource(xJoueur, yJoueur)
+  global joueurX
+  if(dessine == False and joueurX > 0):
+    ancientX = joueurX
+    joueurX -= 1
+    dessineRessource(ancientX, joueurY)
+    dessineRessource(joueurX, joueurY)
     
 #déplacer le joueur d'une tuile vers la droite.
 def deplaceDroite():
-  global xJoueur, LARGEURCARTE
-  if(drawing == False and playerX < MAPWIDTH - 1):
-    oldX = playerX
-    xJoueur += 1
-    drawResource(oldX, playerY)
-    dessineRessource(xJoueur, yJoueur)
+  global joueurX, LARGEURCARTE
+  if(dessine == False and joueurX < LARGEURCARTE - 1):
+    ancientX = joueurX
+    joueurX += 1
+    dessineRessource(ancientX, joueurY)
+    dessineRessource(joueurX, joueurY)
     
 #déplacer le joueur d'une tuile vers le haut.
 def deplaceHaut():
-  global yJoueur
-  if(drawing == False and playerY > 0):
-    oldY = playerY
-    yJoueur -= 1
-    drawResource(playerX, oldY)
-    dessineRessource(xJoueur, yJoueur)
+  global joueurY
+  if(dessine == False and joueurY > 0):
+    ancientY = joueurY
+    joueurY -= 1
+    dessineRessource(joueurX, ancientY)
+    dessineRessource(joueurX, joueurY)
     
 #déplacer le joueur d'une tuile vers le bas.
 def deplaceBas():
-  global yJoueur, HAUTEURCARTE
-  if(drawing == False and playerY < MAPHEIGHT - 1):
-    oldY = playerY
-    yJoueur += 1
-    drawResource(playerX, oldY)
-    dessineRessource(xJoueur, yJoueur)
+  global joueurY, HAUTEURCARTE
+  if(dessine == False and joueurY < HAUTEURCARTE - 1):
+    ancientY = joueurY
+    joueurY += 1
+    dessineRessource(joueurX, ancientY)
+    dessineRessource(joueurX, joueurY)
     
 #ramasser les ressources à la position du joueur.
 def ramasse():
-  global xJoueur, yJoueur
+  global joueurX, joueurY
   dessine = True
-  tuileActuelle = carte[xJoueur][yJoueur]
+  tuileActuelle = carte[joueurX][joueurY]
   #si l'utilisateur n'en a pas déjà trop...
   if inventaire[tuileActuelle] < MAXIMUMTUILES:
     #le joueur a donc un de plus de cette ressource
     inventaire[tuileActuelle] += 1
     #le joueur se tient maintenant sur de la terre
-    carte[xJoueur][yJoueur] = TERRE
+    carte[joueurX][joueurY] = TERRE
     #dessiner une nouvelle tuile de terre
-    dessineRessource(xJoueur, yJoueur)
+    dessineRessource(joueurX, joueurY)
     #redessiner l'inventaire avec les nouvelles ressources.
     dessineInventaire()
     #dessineJoueur()
@@ -67,17 +67,17 @@ def place(ressource):
   #seulement si le joueur en a encore dans son inventaire...
   if inventaire[ressource] > 0:
     #trouver la ressource à la position actuelle du joueur
-    tuileActuelle = carte[xJoueur][yJoueur]
+    tuileActuelle = carte[joueurX][joueurY]
     #ramasser la ressource sur laquelle se trouve le joueur
     #(si ce n'est pas de la TERRE)
     if tuileActuelle is not TERRE:
       inventaire[tuileActuelle] += 1
     #place la ressource à la position actuelle du joueur
-    carte[xJoueur][yJoueur] = ressource
+    carte[joueurX][joueurY] = ressource
     #retire la ressource à l'inventaire
     inventaire[ressource] -= 1
     #met à jour l'affichage (carte et inventaire)
-    dessineRessource(xJoueur, yJoueur)
+    dessineRessource(joueurX, joueurY)
     dessineInventaire()
     #dessineJoueur()
     print('    Placement de', noms[ressource], 'terminé')
@@ -95,7 +95,7 @@ def fabrique(ressource):
     peutEtreFabrique = True
     #pour chaque élément nécessaire pour fabriquer cette ressource
     for i in fabrication[ressource]:
-      #... is l'on n'en a pas assez...
+      #... si on n'en a pas assez...
       if fabrication[ressource][i] > inventaire[i]:
       #... on peut le fabriquer !
         peutEtreFabrique = False
@@ -118,7 +118,7 @@ def fabrique(ressource):
 def faireplace(ressource):
   return lambda: place(ressource)
 
-#attacher une fonction "placer" à chaque touche appuyé
+#attacher une fonction « placer » à chaque touche appuyée
 def lieTouchesPlacements():
   for k in touchesPlacement:
     ecran.onkey(faireplace(k),touchesPlacement[k])
@@ -138,17 +138,17 @@ def dessineRessource(y, x):
   global dessine
   #dessine seulement si rien d'autre n'est dessiné
   if dessine == False:
-    #quelque chose se dessine donc
+    #quelque chose est maintenant en cours de dessin
     dessine = True
     #dessine la ressource à cette position sur la carte, en utilisant la bonne image
-    TdeRendu.goto( (y * TAILLETUILE) + 20, hauteur - (x * TAILLETUILE) - 20 )
+    rendererT.goto( (y * TAILLETUILE) + 20, hauteur - (x * TAILLETUILE) - 20 )
     #dessine la tuile avec la bonne texture
     texture = textures[carte[y][x]]
-    tdeRendu.shape(texture)
-    TdeRendu.stamp()
-    if playerX == y and playerY == x:
-      rendererT.shape(playerImg)
-      TdeRendu.stamp()
+    rendererT.shape(texture)
+    rendererT.stamp()
+    if joueurX == y and joueurY == x:
+      rendererT.shape(joueurImg)
+      rendererT.stamp()
     ecran.update()
     #rien d'autre n'est dessiné maintenant
     dessine = False
@@ -158,7 +158,7 @@ def dessineCarte():
   #boucle pour chaque ligne
   for ligne in range(HAUTEURCARTE):
     #boucle pour chaque colonne dans la ligne
-    for colonne in range(LARGEURCARTE):
+    for column in range(LARGEURCARTE):
       #dessine la tuile à la position actuelle
       dessineRessource(colonne, ligne)
 
@@ -168,52 +168,52 @@ def dessineInventaire():
   global dessine
   #dessine seulement si rien d'autre n'est dessiné
   if dessine == False:
-    #quelque chose se dessine donc
+    #quelque chose est maintenant en cours de dessin
     dessine = True
     #utilise un rectangle pour couvrir l'inventaire actuel
-    TdeRendu.color(COULEURDEFOND)
-    TdeRendu.goto(0,0)
-    TdeRendu.begin_fill()
-    #TdeRendu.setheading(0)
+    rendererT.color(COULEURDEFOND)
+    rendererT.goto(0,0)
+    rendererT.begin_fill()
+    #rendererT.setheading(0)
     for i in range(2):
-      TdeRendu.forward(hauteur_inventaire - 60)
-      TdeRendu.right(90)
-      TdeRendu.forward(largeur)
-      TdeRendu.right(90)
-    TdeRendu.end_fill()
+      rendererT.forward(hauteur_inventaire - 60)
+      rendererT.right(90)
+      rendererT.forward(largeur)
+      rendererT.right(90)
+    rendererT.end_fill()
     rendererT.color('black')
     #affiche le texte de "placement" et de "fabrication"
-    for i in range(1,nb_ligne+1):
-      TdeRendu.goto(20, (hauteur - (HAUTEURCARTE * TAILLETUILE)) - 20 - (i * 100))
-      TdeRendu.write('placer')
-      TdeRendu.goto(20, (hauteur - (HAUTEURCARTE * TAILLETUILE)) - 40 - (i * 100))
-      TdeRendu.write('fabriquer')
+    for i in range(1,num_rows+1):
+      rendererT.goto(20, (hauteur - (HAUTEURCARTE * TAILLETUILE)) - 20 - (i * 100))
+      rendererT.write("placer")
+      rendererT.goto(20, (hauteur - (HAUTEURCARTE * TAILLETUILE)) - 40 - (i * 100))
+      rendererT.write("fabriquer")
     #paramètre la position de l’inventaire
     xPosition = 70
     yPosition = hauteur- (HAUTEURCARTE* TAILLETUILE) - 80
-    numElement = 0
-    for i, element in enumerate(ressources):
+    itemNum = 0
+    for i, item in enumerate(ressources):
       #ajoute l'image
-      TdeRendu.goto(xPosition, yPosition)
-      TdeRendu.shape(textures[element])
-      TdeRendu.stamp()
+      rendererT.goto(xPosition, yPosition)
+      rendererT.shape(textures[item])
+      rendererT.stamp()
       #ajoute le numéro dans l'inventaire
-      TdeRendu.goto(xPosition, yPosition - TAILLETUILE)
-      TdeRendu.write(inventaire[element])
+      rendererT.goto(xPosition, yPosition - TAILLETUILE)
+      rendererT.write(inventaire[item])
       #ajoute la touche de placement
-      TdeRendu.goto(xPosition, yPosition - TAILLETUILE - 20)
-      TdeRendu.write(touchesPlacement[element])
+      rendererT.goto(xPosition, yPosition - TAILLETUILE - 20)
+      rendererT.write(touchesPlacement[item])
       #ajoute la touche de fabrication
-      if fabrication.get(element) != None:
-        TdeRendu.goto(xPosition, yPosition - TAILLETUILE - 40)
-        TdeRendu.write(touchesFabrication[element])     
+      if fabrication.get(item) != None:
+        rendererT.goto(xPosition, yPosition - TAILLETUILE - 40)
+        rendererT.write(touchesFabrication[item])     
       #se déplace sur la longueur pour placer l'élément d'inventaire suivant
       xPosition += 50
-      numElement += 1
+      itemNum += 1
       #Retourne à la ligne au bout de 10 éléments
-      if numElement % LARGEURINV == 0:
+      if itemNum % INVWIDTH == 0:
         xPosition = 70
-        numElement = 0
+        itemNum = 0
         yPosition -= TAILLETUILE + 80
     dessine = False
 
@@ -230,9 +230,9 @@ def genereInstructions():
     instructions.append(regleFabrication)
   #affiche les instructions
   yPos = hauteur - 20
-  for element in instructions:
-    TdeRendu.goto( LARGEURCARTE *TAILLETUILE + 40, yPos)
-    TdeRendu.write(element)
+  for item in instructions:
+    rendererT.goto( LARGEURCARTE *TAILLETUILE + 40, yPos)
+    rendererT.write(item)
     yPos-=20
 
 #génération d'un monde aléatoire
@@ -240,8 +240,8 @@ def genereUnMondeAleatoire():
   #boucle pour chaque ligne
   for ligne in range(HAUTEURCARTE):
     #boucle pour chaque colonne dans la ligne
-    for colonne in range(LARGEURCARTE):
-      #choisit un nomre aléatoire ente 0 et 10
+    for column in range(LARGEURCARTE):
+      #choisit un nombre aléatoire ente 0 et 10
       nombreAleatoire = random.randint(0,10)
       #EAU si le nombre aléatoire est entre 1 et 2
       if nombreAleatoire in [1,2]:
@@ -272,17 +272,17 @@ from variables import *
 from math import ceil
 
 TAILLETUILE = 20
-#le nombre de ressource par rangée de l'inventaire
-LARGEURINV = 8
+#le nombre de ressources d'inventaire par ligne
+INVWIDTH = 8
 dessine = False
 
-#crée un nouvel objet 'ecran'
+#crée un nouvel objet 'écran'
 ecran = turtle.Screen()
 #calcule la largeur et la hauteur
-largeur = (TAILLETUILE * LARGEURCARTE) + max(200,LARGEURINV * 50)
-nb_ligne = int(ceil((len(ressources) / LARGEURINV)))
-hauteur_inventaire = nb_ligne * 120  + 40
-hauteur = (TAILLETUILE * HAUTEURCARTE) + hauteur_inventaire
+largeur = (TAILLETUILE * LARGEURCARTE) + max(200,INVWIDTH * 50)
+num_rows = int(ceil((len(ressources) / INVWIDTH)))
+hauteur_inventaire = num_row * 120  + 40
+height = (TAILLETUILE * HAUTEURCARTE) + hauteur_inventaire
 
 ecran.setup(largeur, hauteur)
 ecran.setworldcoordinates(0,0,largeur,hauteur)
@@ -290,20 +290,20 @@ ecran.bgcolor(COULEURDEFOND)
 ecran.listen()
 
 #déclare l'image du joueur  
-ecran.register_shape(imgJoueur)
+screen.register_shape(joueurImg)
 #déclare toutes les images des ressources
 for texture in textures.values():
   ecran.register_shape(texture)
 
-#crée une autre tortue pour faire les dessins grafiques
-TdeRendu = turtle.Turtle()
-TdeRendu.hideturtle()
-TdeRendu.penup()
-TdeRendu.speed(0)
-TdeRendu.setheading(90)
+#crée une autre tortue pour faire les dessins graphiques
+rendererT = turtle.Turtle()
+rendererT.hideturtle()
+rendererT.penup()
+rendererT.speed(0)
+rendererT.setheading(90)
 
 #crée un monde avec des ressources aléatoires.
-carte = [ [TERRE for l in range(HAUTEURCARTE)] for h in range(LARGEURCARTE) ]
+carte = [ [TERRE for w in range(HAUTEURCARTE)] for h in range(LARGEURCARTE) ]
 
 #tracer les touches pour se déplacer et récolter des ressources avec les bonnes fonctions.
 ecran.onkey(deplaceHaut, 'z')
