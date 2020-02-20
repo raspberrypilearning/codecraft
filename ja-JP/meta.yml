@@ -3,28 +3,28 @@ hero_image: images/codecraft.png
 duration: 2
 listed: true
 copyedit: false
-title: コードクラフト
+title: CodeCraft
 description: Design and code improvements to a 2D version of Minecraft.
 version: 3.1.0
-last_tested: 2018-22-01
+last_tested: 2018-11-22
 steps:
   - 
-    title: 前書き
+    title: Introduction
   - 
-    title: ゲームプレイ
+    title: Playing the game
   - 
-    title: 'チャレンジ：ワールドを構築'
+    title: 'Challenge: Build your world'
   - 
-    title: ゲームをカスタマイズする
+    title: Customising your game
   - 
-    title: 'チャレンジ：ワールドのサイズを変更'
+    title: 'Challenge: Change your world size'
   - 
-    title: 新しい木のリソースを作成
+    title: Creating a new wood resource
   - 
-    title: 'チャレンジ：砂の作成'
+    title: 'Challenge: Creating sand'
   - 
-    title: 木から板をクラフトする
+    title: Crafting planks from wood
   - 
-    title: 'チャレンジ：ガラスを砂からクラフトする'
+    title: 'Challenge: Crafting glass from sand'
   - 
-    title: 'チャレンジ：さらにリソースを作成'
+    title: 'Challenge: Create more resources'
