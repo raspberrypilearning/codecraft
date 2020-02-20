@@ -1,6 +1,6 @@
-## Introducere
+## Introduction
 
-În acest proiect, veți proiecta și veți dezvolta îmbunătățiri unei versiuni 2D a Minecraft.
+In this project, you’ll design and code improvements to a 2D version of Minecraft.
 
 <div class="trinket">
   <iframe src="https://trinket.io/embed/python/ebc5b0148b?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
@@ -8,31 +8,31 @@
   <img src="images/craft-finished.png">
 </div>
 
-### Informații suplimentare pentru liderii de club
+### Additional information for club leaders
 
-Dacă dorești să imprimi acest proiect, folosește [Versiunea pentru imprimare](https://projects.raspberrypi.org/en/projects/codecraft/print).
+If you need to print this project, please use the [Printer friendly version](https://projects.raspberrypi.org/en/projects/codecraft/print).
 
 ## \--- collapse \---
 
-## title: Note pentru conducătorul clubului
+## title: Club leader notes
 
-## Introducere:
+## Introduction:
 
-În acest proiect, copiii vor învăța aspecte ale graficii și proiectării de jocuri, aducând îmbunătățiri unei clone rudimentare 2D a Minecraft. Copiii vor crea noi resurse, precum și reguli de combinare a resurselor pentru a face altele noi. Acest lucru va fi realizat prin înțelegerea și manipularea variabilelor, listelor și dicționarelor.
+In this project, children will learn aspects of graphics and game design by making improvements to a basic 2D Minecraft clone. Children will create new resources, as well as crafting rules for combining resources to make new ones. This will be achieved by understanding and manipulating variables, lists and dictionaries.
 
-## Resurse online
+## Online Resources
 
-**Acest proiect folosește Python 3.** Recomandăm folosirea [trinket](https://trinket.io/) pentru a scrie cod Python online. Proiectul conține următoarele Trinket-uri:
+**This project uses Python 3.** We recommend using [trinket](https://trinket.io/) to write Python online. This project contains the following Trinkets:
 
-+ [Proiect de început „CodeCraft” - rpf.io/codecraft-on](http://rpf.io/codecraft-on)
++ ['CodeCraft' starter project -- rpf.io/codecraft-on](http://rpf.io/codecraft-on)
 
-Există, de asemenea, un trinket care conține proiectul final:
+There is also a trinket containing the completed project:
 
-+ [„CodeCraft” finalizat - trinket.io/python/ebc5b0148b](https://trinket.io/python/ebc5b0148b)
++ [‘CodeCraft’ Finished -- trinket.io/python/ebc5b0148b](https://trinket.io/python/ebc5b0148b)
 
-## Resurse offline
+## Offline Resources
 
-Acest proiect poate fi [finalizat offline](https://www.codeclubprojects.org/en-GB/resources/python-working-offline/) dacă preferați. Poți accesa resursele proiectului dând click pe link-ul „Materiale pentru proiect”. Link-ul conține o secțiune „Resursele proiectului” care include resurse de care copiii vor avea nevoie pentru finalizarea proiectului offline. Asigurați-vă că fiecare copil are acces la o copie a acestor resurse. Această secțiune include următoarele fișiere:
+This project can be [completed offline](https://www.codeclubprojects.org/en-GB/resources/python-working-offline/) if preferred. You can access the project resources by clicking the 'Project Materials' link for this project. This link contains a 'Project Resources' section, which includes resources that children will need to complete this project offline. Make sure that each child has access to a copy of these resources. This section includes the following files:
 
 + codecraft/codecraft.py
 + codecraft/variables.py
@@ -46,7 +46,7 @@ Acest proiect poate fi [finalizat offline](https://www.codeclubprojects.org/en-G
 + codecraft/water.gif
 + codecraft/wood.gif
 
-De asemenea, poți găsi proiectul finalizat în secțiunea "Resurse pentru voluntari", care conține:
+You can also find a completed version of this project in the 'Volunteer Resources' section, which contains:
 
 + codecraft-finished/codecraft.py
 + codecraft-finished/variables.py
@@ -60,49 +60,49 @@ De asemenea, poți găsi proiectul finalizat în secțiunea "Resurse pentru volu
 + codecraft-finished/water.gif
 + codecraft-finished/wood.gif
 
-(Toate resursele de mai sus pot fi descărcate și ca fișiere `.zip`.)
+(All of the resources above are also downloadable as `.zip` files.)
 
-## Obiective de învățare
+## Learning Objectives
 
-+ Creare și editare grafică;
-+ Proiectare de jocuri
-+ Editare: 
-    + Variabile;
-    + Liste;
-    + Dicționare.
++ Creating and editing graphics;
++ Game design;
++ Editing: 
+    + Variables;
+    + Lists;
+    + Dictionaries.
 
-Acest proiect acoperă elemente din următoarele domenii ale curriculumului [Raspberry Pi Digital Making](http://rpf.io/curriculum):
+This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
 
-+ [Proiectarea elementelor grafice 2D și 3D de bază.](https://www.raspberrypi.org/curriculum/design/creator)
++ [Design basic 2D and 3D assets.](https://www.raspberrypi.org/curriculum/design/creator)
 
-+ [Combină modalități de programare ca să rezolvi o problemă.](https://www.raspberrypi.org/curriculum/programming/builder)
++ [Combine programming constructs to solve a problem.](https://www.raspberrypi.org/curriculum/programming/builder)
 
-## Provocări
+## Challenges
 
-+ „Construiți-vă lumea” - Desfășurarea jocului, plasarea și crearea blocurilor existente
-+ „Schimbați dimensiunea lumii dvs.” - modificarea variabilelor ` MAPWIDTH ` (lățime) și ` MAPHEIGHT ` (înălțime) pentru a schimba dimensiunea lumii;
-+ „Crearea nisipului” - Crearea unei noi resurse de nisip, împreună cu datele jocului asociate.
-+ „Crearea sticlei din nisip” - Crearea unei noi resurse de sticlă.
-+ „Creați mai multe resurse” - Utilizați ceea ce ați învățat pentru a crea mai multe blocuri și reguli de combinare a resurselor.
++ "Build your world" - Playing the game, placing and crafting existing blocks;
++ "Change your world size" - editing the `MAPWIDTH` and `MAPHEIGHT` variables to change the world size;
++ "Creating sand" - Creating a new sand resource, along with associated game data.
++ "Crafting glass from sand" - Creating a new craftable glass resource.
++ "Create more resources" - Use what's been learnt to create more blocks and crafting rules.
 
-## Întrebări frecvente
+## Frequently Asked Questions
 
-+ Este posibil ca copiii să aibă nevoie să li se reamintească faptul că elementele unui dicționar/listă sunt separate printr-o virgulă. De exemplu, atunci când adăugați obiecte de inventar, grafică și reguli de combinare a resurselor la joc.
++ Children may need reminding that elements of a dictionary/list are separated by a comma. For example, when adding inventory items, graphics and crafting rules to the game.
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: Materiale pentru proiect
+## title: Project materials
 
-## Resursele proiectului
+## Project resources
 
-+ [fișier .zip care conține toate resursele proiectului](resources/codecraft-resources.zip)
-+ [Trinket online care conține toate resursele proiectului „CodeCraft”](http://rpf.io/codecraft-on)
++ [.zip file containing all project resources](resources/codecraft-resources.zip)
++ [Online Trinket containing all 'CodeCraft' project resources](http://rpf.io/codecraft-on)
 
-## Resurse pentru liderul de club
+## Club leader resources
 
-+ [fișier .zip care conține toate resursele proiectului, finalizate](solutions/codecraft-solution.zip)
-+ [Proiect Trinket online, finalizat](https://trinket.io/python/ebc5b0148b)
++ [.zip file containing all completed project resources](solutions/codecraft-solution.zip)
++ [Online completed Trinket project](https://trinket.io/python/ebc5b0148b)
 
 \--- /collapse \---
