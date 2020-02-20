@@ -1,14 +1,14 @@
 #!/bin/python3
 
 #############
-# コードクラフト #
+# CodeCraft #
 #############
 
 #---
-#ゲーム用の関数
+#Game functions
 #---
 
-#プレイヤーを左に1マス動かす
+#moves the player left 1 tile.
 def moveLeft():
   global playerX
   if(drawing == False and playerX > 0):
@@ -17,7 +17,7 @@ def moveLeft():
     drawResource(oldX, playerY)
     drawResource(playerX, playerY)
     
-#プレイヤーを右に1マス動かす
+#moves the player right 1 tile.
 def moveRight():
   global playerX, MAPWIDTH
   if(drawing == False and playerX < MAPWIDTH - 1):
@@ -26,7 +26,7 @@ def moveRight():
     drawResource(oldX, playerY)
     drawResource(playerX, playerY)
     
-#プレイヤーを上にに1マス動かす
+#moves the player up 1 tile.
 def moveUp():
   global playerY
   if(drawing == False and playerY > 0):
@@ -35,7 +35,7 @@ def moveUp():
     drawResource(playerX, oldY)
     drawResource(playerX, playerY)
     
-#プレイヤーを下に1マス動かす
+#moves the player down 1 tile.
 def moveDown():
   global playerY, MAPHEIGHT
   if(drawing == False and playerY < MAPHEIGHT - 1):
@@ -44,105 +44,105 @@ def moveDown():
     drawResource(playerX, oldY)
     drawResource(playerX, playerY)
     
-#プレイヤーの位置にあるリソースをとる。
+#picks up the resource at the player's position.
 def pickUp():
   global playerX, playerY
   drawing = True
   currentTile = world[playerX][playerY]
-  #ユーザーにはあまりにも多くのリソースがない場合...
+  #if the user doesn't already have too many...
   if inventory[currentTile] < MAXTILES:
-    #プレイヤーにリソースが1つ追加されました
+    #player now has 1 more of this resource
     inventory[currentTile] += 1
-    #プレイヤーが土の上に立っている場合
+    #the player is now standing on dirt
     world[playerX][playerY] = DIRT
-    #新しい土のマスを描く
+    #draw the new DIRT tile
     drawResource(playerX, playerY)
-    #持ち物リストにリソースを追加して描き直す
+    #redraw the inventory with the extra resource.
     drawInventory()
     #drawPlayer()
 
-#プレーヤーの現在の位置にリソースを置く
+#place a resource at the player's current position
 def place(resource):
-  print(u'置く', names[resource])
-  #もしプレイヤーがすでにリソースを持っている場合。。。
+  print('placing: ', names[resource])
+  #only place if the player has some left...
   if inventory[resource] > 0:
-    #プレイヤーの位置にあるリソースを見つけ出す
+    #find out the resourcee at the player's current position
     currentTile = world[playerX][playerY]
-    #プレイヤーの位置にあるリソースをとる。
-    #（もし土ではない場合）
+    #pick up the resource the player's standing on
+    #(if it's not DIRT)
     if currentTile is not DIRT:
       inventory[currentTile] += 1
-    #プレーヤーの現在の位置にリソースを置く
+    #place the resource at the player's current position
     world[playerX][playerY] = resource
-    #新しいリソースを持ち物リストに追加する
+    #add the new resource to the inventory
     inventory[resource] -= 1
-    #ゲーム画面を更新（ゲームワールドと持ち物リスト）
+    #update the display (world and inventory)
     drawResource(playerX, playerY)
     drawInventory()
     #drawPlayer()
-    print(u'   配置', names[resource], u'完了')
-  #。。。もし何もなければ
+    print('   Placing', names[resource], 'complete')
+  #...and if they have none left...
   else:
-    print(u'   あなたは', names[resource], u'持っていない')
+    print('   You have no', names[resource], 'left')
 
-#新しいリソースを作成
+#craft a new resource
 def craft(resource):
-  print(u'作成：', names[resource])
-  #もしリソースを作成できる場合
+  print('Crafting: ', names[resource])
+  #if the resource can be crafted...
   if resource in crafting:
-    #まず変数にリソースを作成
-    #できると設定する
+    #keeps track of whether we have the resources
+    #to craft this item
     canBeMade = True
-    #リソースの作成に必要な各アイテム
+    #for each item needed to craft the resource
     for i in crafting[resource]:
-      #。。。もしアイテムが足りなければ。。。
+      #...if we don't have enough...
       if crafting[resource][i] > inventory[i]:
-      #。。。変数にリソースを作れないと設定する
+      #...we can't craft it!
         canBeMade = False
         break
-    #もし作成できる場合（作成するために必要なアイテムがある場合）
+    #if we can craft it (we have all needed resources)
     if canBeMade == True:
-      #持ち物リストからアイテムを出す
+      #take each item from the inventory
       for i in crafting[resource]:
         inventory[i] -= crafting[resource][i]
-      #新しいリソースを持ち物リストに追加する
+      #add the crafted item to the inventory
       inventory[resource] += 1
-      print(u'   作成', names[resource], u'完了')
-    #。。。リソースを作成できない場合
+      print('   Crafting', names[resource], 'complete')
+    #...otherwise the resource can't be crafted...
     else:
-      print(u'   作成できない', names[resource])
-    #表示されている持ち物リストを更新
+      print('   Can\'t craft', names[resource])
+    #update the displayed inventory
     drawInventory()
 
-#各リソースを配置するための関数を作成する
+#creates a function for placing each resource
 def makeplace(resource):
   return lambda: place(resource)
 
-#各キープレスに「配置」機能を取り付けます
+#attaches a 'placing' function to each key press
 def bindPlacingKeys():
   for k in placekeys:
     screen.onkey(makeplace(k), placekeys[k])
 
-#リソースを作成する関数を作成する
+#creates a function for crafting each resource
 def makecraft(resource):
   return lambda: craft(resource)
 
-#各キープレスに「作成」機能を取り付けます
+#attaches a 'crafting' function to each key press
 def bindCraftingKeys():
   for k in craftkeys:
     screen.onkey(makecraft(k), craftkeys[k])
 
-#位置（y、x）のリソースを描画します。
+#draws a resource at the position (y,x)
 def drawResource(y, x):
-  #この変数は他のものを描画するのを止める
+  #this variable stops other stuff being drawn
   global drawing
-  #他に何も描画されていない場合描画します
+  #only draw if nothing else is being drawn
   if drawing == False:
-    #何かが現在描画されています。
+    #something is now being drawn
     drawing = True
-    #正しいイメージを使用して、タイルマップ内のその位置にリソースを描画する
+    #draw the resource at that position in the tilemap, using the correct image
     rendererT.goto( (y * TILESIZE) + 20, height - (x * TILESIZE) - 20 )
-    #正しいテクスチャーでタイルを描く
+    #draw tile with correct texture
     texture = textures[world[y][x]]
     rendererT.shape(texture)
     rendererT.stamp()
@@ -150,27 +150,27 @@ def drawResource(y, x):
       rendererT.shape(playerImg)
       rendererT.stamp()
     screen.update()
-    #何も現在描画されていません
+    #nothing is now being drawn
     drawing = False
     
-#ワールドを描く
+#draws the world map
 def drawWorld():
-  #地図上の列をループする
+  #loop through each row
   for row in range(MAPHEIGHT):
-    #地図上の行をループする
+    #loop through each column in the row
     for column in range(MAPWIDTH):
-      #現在の位置にタイルを表示する
+      #draw the tile at the current position
       drawResource(column, row)
 
-#持ち物リストを画面に表示する
+#draws the inventory to the screen
 def drawInventory():
-  #この変数は他のものを描画するのを止める
+  #this variable stops other stuff being drawn
   global drawing
-  #他に何も描画されていない場合描画します
+  #only draw if nothing else is being drawn
   if drawing == False:
-    #何かが現在描画されています。
+    #something is now being drawn
     drawing = True
-    #四角形を使用して持ち物リストをカバーしてください
+    #use a rectangle to cover the current inventory
     rendererT.color(BACKGROUNDCOLOUR)
     rendererT.goto(0,0)
     rendererT.begin_fill()
@@ -182,103 +182,103 @@ def drawInventory():
       rendererT.right(90)
     rendererT.end_fill()
     rendererT.color('black')
-    #「場所」と「リソース」テキストを表示する
+    #display the 'place' and 'craft' text
     for i in range(1,num_rows+1):
       rendererT.goto(20, (height - (MAPHEIGHT * TILESIZE)) - 20 - (i * 100))
-      rendererT.write(u"置く")
+      rendererT.write("place")
       rendererT.goto(20, (height - (MAPHEIGHT * TILESIZE)) - 40 - (i * 100))
-      rendererT.write(u"クラフト（作成）")
-    #持ち物リストの位置を設定する
+      rendererT.write("craft")
+    #set the inventory position
     xPosition = 70
     yPostition = height - (MAPHEIGHT * TILESIZE) - 80
     itemNum = 0
     for i, item in enumerate(resources):
-      #画像を追加する
+      #add the image
       rendererT.goto(xPosition, yPostition)
       rendererT.shape(textures[item])
       rendererT.stamp()
-      #リソースの数を持ち物リストに追加
+      #add the number in the inventory
       rendererT.goto(xPosition, yPostition - TILESIZE)
       rendererT.write(inventory[item])
-      #キーを追加する
+      #add key to place
       rendererT.goto(xPosition, yPostition - TILESIZE - 20)
       rendererT.write(placekeys[item])
-      #キーをリソースに追加する
+      #add key to craft
       if crafting.get(item) != None:
         rendererT.goto(xPosition, yPostition - TILESIZE - 40)
         rendererT.write(craftkeys[item])     
-      #移動して次のアイテムをリソースに追加
+      #move along to place the next inventory item
       xPosition += 50
       itemNum += 1
-      #10個のアイテムごとに次の行に移動
+      #drop down to the next row every 10 items
       if itemNum % INVWIDTH == 0:
         xPosition = 70
         itemNum = 0
         yPostition -= TILESIZE + 80
     drawing = False
 
-#新しいリソースを作成するために必要なリソースの分量のルール
+#generate the instructions, including crafting rules
 def generateInstructions():
-  instructions.append('作成ルール:')
-  #もしリソースを作成できる場合
+  instructions.append('Crafting rules:')
+  #for each resource that can be crafted...
   for rule in crafting:
-    #作成ルールを作成
+    #create the crafting rule text
     craftrule = names[rule] + ' = '
     for resource, number in crafting[rule].items():
       craftrule += str(number) + ' ' + names[resource] + ' '
-    #作成ルールをゲーム説明に追加
+    #add the crafting rule to the instructions
     instructions.append(craftrule)
-  #作成ルールを表示
+  #display the instructions
   yPos = height - 20
   for item in instructions:
     rendererT.goto( MAPWIDTH*TILESIZE + 40, yPos)
     rendererT.write(item)
     yPos-=20
 
-#ワールド（地図）をランダムに作成
+#generate a random world
 def generateRandomWorld():
-  #地図上の列をループする
+  #loop through each row
   for row in range(MAPHEIGHT):
-    #地図上の行をループする
+    #loop through each column in that row
     for column in range(MAPWIDTH):
-      #0から10の数字をランダムに選ぶ
+      #pick a random number between 0 and 10
       randomNumber = random.randint(0,10)
-      #もしランダムに選ばれた数字が1か2だったら水
+      #WATER if the random number is a 1 or a 2
       if randomNumber in [1,2]:
         tile = WATER
-      #もしランダムに選ばれた数字が3か4だったら草
+      #GRASS if the random number is a 3 or a 4
       elif randomNumber in [3,4]:
         tile = GRASS
-      #もしランダムに選ばれた数字が5だったら木
+      #WOOD if it's a 5
       elif randomNumber == 5:
         tile = WOOD
-      #もしランダムに選ばれた数字が6だったら木
+      #SAND if it's a 6
       elif randomNumber == 6:
         tile = SAND
-      #他の数字だったら土
+      #otherwise it's DIRT
       else:
         tile = DIRT
-      #地図上の位置に選ばれたリソースをセットする（置く）
+      #set the position in the tilemap to the randomly chosen tile
       world[column][row] = tile
 
 #---
-#コードはここから実行を開始します
+#Code starts running here
 #---
 
-#必要なモジュールと変数をインポート
+#import the modules and variables needed
 import turtle
 import random
 from variables import *
 from math import ceil
 
 TILESIZE = 20
-#各列にあるリソースの数
+#the number of inventory resources per row
 INVWIDTH = 8
 drawing = False
 
-#新しい「スクリーン」オブジェクトを作成する
+#create a new 'screen' object
 screen = turtle.Screen()
-#幅と高さを計算する
+#calculate the width and height
 width = (TILESIZE * MAPWIDTH) + max(200,INVWIDTH * 50)
 num_rows = int(ceil((len(resources) / INVWIDTH)))
 inventory_height =  num_rows * 120 + 40
@@ -289,30 +289,30 @@ screen.setworldcoordinates(0,0,width,height)
 screen.bgcolor(BACKGROUNDCOLOUR)
 screen.listen()
 
-#プレーヤーの画像を登録する  
+#register the player image  
 screen.register_shape(playerImg)
-#各リソースの画像を登録する
+#register each of the resource images
 for texture in textures.values():
   screen.register_shape(texture)
 
-#グラフィックを描くために別のカメを作成する
+#create another turtle to do the graphics drawing
 rendererT = turtle.Turtle()
 rendererT.hideturtle()
 rendererT.penup()
 rendererT.speed(0)
 rendererT.setheading(90)
 
-#ランダムにリソースが散らばっているワールド（地図）を作成
+#create a world of random resources.
 world = [ [DIRT for w in range(MAPHEIGHT)] for h in range(MAPWIDTH) ]
 
-#プレイヤーを移動させるキーを設定
+#map the keys for moving and picking up to the correct functions.
 screen.onkey(moveUp, 'w')
 screen.onkey(moveDown, 's')
 screen.onkey(moveLeft, 'a')
 screen.onkey(moveRight, 'd')
 screen.onkey(pickUp, 'space')
 
-#リソースを作成する、リソースを置くキーの設定
+#set up the keys for placing and crafting each resource
 bindPlacingKeys()
 bindCraftingKeys()
 
