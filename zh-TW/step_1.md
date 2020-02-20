@@ -1,6 +1,6 @@
-## 介紹
+## Introduction
 
-在這個項目中，您將設計和編碼Minecraft的2D版本的改進。
+In this project, you’ll design and code improvements to a 2D version of Minecraft.
 
 <div class="trinket">
   <iframe src="https://trinket.io/embed/python/ebc5b0148b?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
@@ -8,101 +8,101 @@
   <img src="images/craft-finished.png">
 </div>
 
-### 俱樂部領導的其他信息
+### Additional information for club leaders
 
-如果您需要打印此項目，請使用 [打印機友好版本](https://projects.raspberrypi.org/en/projects/codecraft/print)。
+If you need to print this project, please use the [Printer friendly version](https://projects.raspberrypi.org/en/projects/codecraft/print).
 
-## - - 坍方 - -
+## \--- collapse \---
 
-## 標題：俱樂部領導說明
+## title: Club leader notes
 
-## 介紹：
+## Introduction:
 
-在這個項目中，孩子們將通過改進基本的2D Minecraft克隆來學習圖形和遊戲設計的各個方面。 兒童將創造新的資源，並製定組合資源以製定新資源的規則。 這將通過理解和操作變量，列表和詞典來實現。
+In this project, children will learn aspects of graphics and game design by making improvements to a basic 2D Minecraft clone. Children will create new resources, as well as crafting rules for combining resources to make new ones. This will be achieved by understanding and manipulating variables, lists and dictionaries.
 
-## 在線資源
+## Online Resources
 
-**這個項目使用Python 3.** 我們建議使用 [trinket](https://trinket.io/) 在線編寫Python。 該項目包含以下小飾品：
+**This project uses Python 3.** We recommend using [trinket](https://trinket.io/) to write Python online. This project contains the following Trinkets:
 
-+ ['CodeCraft'入門項目 - rpf.io/codecraft-on](http://rpf.io/codecraft-on)
++ ['CodeCraft' starter project -- rpf.io/codecraft-on](http://rpf.io/codecraft-on)
 
-還有一個包含已完成項目的飾品：
+There is also a trinket containing the completed project:
 
-+ ['CodeCraft'完成 - trinket.io/python/ebc5b0148b](https://trinket.io/python/ebc5b0148b)
++ [‘CodeCraft’ Finished -- trinket.io/python/ebc5b0148b](https://trinket.io/python/ebc5b0148b)
 
-## 離線資源
+## Offline Resources
 
-該項目可 [完成脫機](https://www.codeclubprojects.org/en-GB/resources/python-working-offline/) ，如果首選。 您可以通過單擊此項目的“項目材料”鏈接來訪問項目資源。 此鏈接包含“項目資源”部分，其中包含兒童離線完成此項目所需的資源。 確保每個孩子都可以訪問這些資源的副本。 本節包括以下文件：
+This project can be [completed offline](https://www.codeclubprojects.org/en-GB/resources/python-working-offline/) if preferred. You can access the project resources by clicking the 'Project Materials' link for this project. This link contains a 'Project Resources' section, which includes resources that children will need to complete this project offline. Make sure that each child has access to a copy of these resources. This section includes the following files:
 
-+ codecraft / codecraft.py
-+ codecraft / variables.py
-+ codecraft / brick.gif
-+ codecraft / dirt.gif
-+ codecraft / glass.gif
-+ codecraft / grass.gif
-+ codecraft / plank.gif
-+ codecraft / player.gif
-+ codecraft / sand.gif
-+ codecraft / water.gif
-+ codecraft / wood.gif
++ codecraft/codecraft.py
++ codecraft/variables.py
++ codecraft/brick.gif
++ codecraft/dirt.gif
++ codecraft/glass.gif
++ codecraft/grass.gif
++ codecraft/plank.gif
++ codecraft/player.gif
++ codecraft/sand.gif
++ codecraft/water.gif
++ codecraft/wood.gif
 
-您還可以在“志願者資源”部分找到此項目的完整版本，其中包含：
+You can also find a completed version of this project in the 'Volunteer Resources' section, which contains:
 
-+ codecraft成品/ codecraft.py
-+ codecraft成品/ variables.py
-+ codecraft成品/ brick.gif
-+ codecraft成品/ dirt.gif
-+ codecraft成品/ glass.gif
-+ codecraft成品/ grass.gif
-+ codecraft成品/ plank.gif
-+ codecraft成品/ player.gif
-+ codecraft成品/ sand.gif
-+ codecraft成品/ water.gif
-+ codecraft成品/ wood.gif
++ codecraft-finished/codecraft.py
++ codecraft-finished/variables.py
++ codecraft-finished/brick.gif
++ codecraft-finished/dirt.gif
++ codecraft-finished/glass.gif
++ codecraft-finished/grass.gif
++ codecraft-finished/plank.gif
++ codecraft-finished/player.gif
++ codecraft-finished/sand.gif
++ codecraft-finished/water.gif
++ codecraft-finished/wood.gif
 
-（以上所有資源也可以下載為 `.zip` 文件。）
+(All of the resources above are also downloadable as `.zip` files.)
 
-## 學習目標
+## Learning Objectives
 
-+ 創建和編輯圖形;
-+ 遊戲設計;
-+ 編輯： 
-    + 變量;
-    + 名單;
-    + 字典。
++ Creating and editing graphics;
++ Game design;
++ Editing: 
+    + Variables;
+    + Lists;
+    + Dictionaries.
 
-該項目涵蓋了 [Raspberry Pi數字製作課程](http://rpf.io/curriculum)的以下幾個元素：
+This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
 
-+ [設計基本的2D和3D資產。](https://www.raspberrypi.org/curriculum/design/creator)
++ [Design basic 2D and 3D assets.](https://www.raspberrypi.org/curriculum/design/creator)
 
-+ [結合編程結構來解決問題。](https://www.raspberrypi.org/curriculum/programming/builder)
++ [Combine programming constructs to solve a problem.](https://www.raspberrypi.org/curriculum/programming/builder)
 
-## 挑戰
+## Challenges
 
-+ “建立你的世界” - 玩遊戲，放置和製作現有的街區;
-+ “改變你的世界大小” - 編輯 `MAPWIDTH` 和 `MAPHEIGHT` 變量來改變世界大小;
-+ “創建沙子” - 創建新的沙子資源以及相關的遊戲數據。
-+ “用沙子製作玻璃” - 創造一種新的可製作玻璃資源。
-+ “創建更多資源” - 使用已學習的內容創建更多塊和製定規則。
++ "Build your world" - Playing the game, placing and crafting existing blocks;
++ "Change your world size" - editing the `MAPWIDTH` and `MAPHEIGHT` variables to change the world size;
++ "Creating sand" - Creating a new sand resource, along with associated game data.
++ "Crafting glass from sand" - Creating a new craftable glass resource.
++ "Create more resources" - Use what's been learnt to create more blocks and crafting rules.
 
-## 經常問的問題
+## Frequently Asked Questions
 
-+ 兒童可能需要提醒字典/列表的元素用逗號分隔。 例如，向遊戲添加庫存物品，圖形和製作規則時。
++ Children may need reminding that elements of a dictionary/list are separated by a comma. For example, when adding inventory items, graphics and crafting rules to the game.
 
-- - /坍方 - -
+\--- /collapse \---
 
-## - - 坍方 - -
+## \--- collapse \---
 
-## 標題：項目材料
+## title: Project materials
 
-## 項目資源
+## Project resources
 
-+ [包含所有項目資源的.zip文件](resources/codecraft-resources.zip)
-+ [在線飾品包含所有'CodeCraft'項目資源](http://rpf.io/codecraft-on)
++ [.zip file containing all project resources](resources/codecraft-resources.zip)
++ [Online Trinket containing all 'CodeCraft' project resources](http://rpf.io/codecraft-on)
 
-## 俱樂部領導資源
+## Club leader resources
 
-+ [包含所有已完成項目資源的.zip文件](solutions/codecraft-solution.zip)
-+ [在線完成Trinket項目](https://trinket.io/python/ebc5b0148b)
++ [.zip file containing all completed project resources](solutions/codecraft-solution.zip)
++ [Online completed Trinket project](https://trinket.io/python/ebc5b0148b)
 
-- - /坍方 - -
+\--- /collapse \---
