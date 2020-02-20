@@ -1,39 +1,39 @@
-## Izdelava desk iz lesa
+## Crafting planks from wood
 
-Usvari ustvari novo sredstvo deske, ki jih lahko narediš iz lesa.
+Let's create a new plank resource that be crafted from wood.
 
-+ Najprej dodaj novo spremeljivko `PLANK` v svojo igro.
++ First, add a new `PLANK` variable to your game.
     
-    ![posnetek zaslona](images/craft-plank-const.png)
+    ![screenshot](images/craft-plank-const.png)
 
-+ Dodaj novo spremeljivko `PLANK` v svojo igro.
++ Add a new `PLANK` variable to your game.
     
-    ![posnetek zaslona](images/craft-plank-resources.png)
+    ![screenshot](images/craft-plank-resources.png)
 
-+ Poimenij sredstvo `'plank'`.
++ Name the resource `'plank'`.
     
-    ![posnetek zaslona](images/craft-plank-names.png)
+    ![screenshot](images/craft-plank-names.png)
 
-+ Dodaj svojemu sredstvu `PLANK` sliko. Projekt že vsebuje `plank.gif` sliko ki jo lahko uporabiš ali pa če želiš ustvariš svojo.
++ Give your `PLANK` resource an image. The project already contains a `plank.gif` image, but you can create your own if you prefer.
     
-    ![posnetek zaslona](images/craft-plank-textures.png)
+    ![screenshot](images/craft-plank-textures.png)
 
-+ Dodaj deske v svoj inventar.
++ Add planks to your inventory.
     
-    ![posnetek zaslona](images/craft-plank-inventory.png)
+    ![screenshot](images/craft-plank-inventory.png)
 
-+ Dodaj tipko za postavitev desk.
++ Set a key for placing planks.
     
-    ![posnetek zaslona](images/craft-plank-placekeys.png)
+    ![screenshot](images/craft-plank-placekeys.png)
 
-+ Ker je to sredstvo mogoče izdelati, moraš ustvariti pravilo za izdelavo, to je, da za eno desko potrebuješ tri kose lesa. Dodaj to kodo v `crafting` slovar.
++ As this resource can be crafted, you need to create a crafting rule, which is that a plank can be made from 3 wood tiles. Add this code to the `crafting` dictionary.
     
-    ![posnetek zaslona](images/craft-plank-crafting.png)
+    ![screenshot](images/craft-plank-crafting.png)
 
-+ Končno, moraš dodati tipko za izdelavo desk.
++ Finally, you need to set a key for crafting new planks.
     
-    ![posnetek zaslona](images/craft-plank-craftkeys.png)
+    ![screenshot](images/craft-plank-craftkeys.png)
 
-+ Če hočeš preizkusiti nov vir desk, zberi nekaj kosov lesa in izdelaj iz njih desko. Nato lahko postaviš svoje nove deske v svoj svet.
++ To test your new plank resource, gather up a few wood tiles and then craft some planks from your wood. You can then place your new planks in your world.
     
-    ![posnetek zaslona](images/craft-plank-test.png)
+    ![screenshot](images/craft-plank-test.png)
