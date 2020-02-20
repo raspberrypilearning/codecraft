@@ -1,11 +1,11 @@
 \--- challenge \---
 
-## Izziv: Izdelava stekla iz peska
+## Challenge: Crafting glass from sand
 
-Ali lahko ustvariš novo sredstvo steklo, ki ga izdelaš iz stekla? Za pomoč lahko uporabiš korake zgoraj.
+Can you create a new glass resource, that can be crafted from sand? You can follow the steps above to help you.
 
-![posnetek zaslona](images/craft-glass.png)
+![screenshot](images/craft-glass.png)
 
-Projekt že vsebuje `glass.gif` sliko ki jo lahko uporabiš ali pa če želiš ustvariš svojo.
+The project already contains a `glass.gif` image that you can use, or you can create your own image if you prefer.
 
 \--- /challenge \---
