@@ -5,8 +5,8 @@ listed: true
 copyedit: false
 title: CodeCraft
 description: Miglioramenti al design e al codice di una versione 2D di Minecraft.
-version: 3
-last_tested: 2017-01-01
+version: 3.1.0
+last_tested: 2018-11-22
 steps:
   - 
     title: Introduzione
