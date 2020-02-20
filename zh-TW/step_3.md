@@ -1,9 +1,9 @@
-\---挑戰\---
+\--- challenge \---
 
-## 挑戰：建立你的世界
+## Challenge: Build your world
 
-你能建一座帶花園和游泳池的房子嗎？ 你還能創造什麼？
+Can you build a house, with a garden and a swimming pool? What else can you create?
 
-![截圖](images/craft-build-example.png)
+![screenshot](images/craft-build-example.png)
 
-\--- /挑戰\---
+\--- /challenge \---
