@@ -1,9 +1,9 @@
 \--- challenge \---
 
-## チャレンジ：ワールドのサイズを変更
+## Challenge: Change your world size
 
-`MAPWIDTH`と`MAPHEIGHT` 変数の値を変更してワールドのサイズを変更できますか？
+Can you change the values of your `MAPWIDTH` and `MAPHEIGHT` variables to change the size of the world?
 
-![スクリーンショット](images/craft-mapsize.png)
+![screenshot](images/craft-mapsize.png)
 
 \--- /challenge \---
