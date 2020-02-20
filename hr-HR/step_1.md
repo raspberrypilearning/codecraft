@@ -1,6 +1,6 @@
-## Uvod
+## Introduction
 
-U ovom projektu dizajnirat ćeš i kodirati poboljšanja za 2D verziju Minecrafta.
+In this project, you’ll design and code improvements to a 2D version of Minecraft.
 
 <div class="trinket">
   <iframe src="https://trinket.io/embed/python/ebc5b0148b?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
@@ -8,31 +8,31 @@ U ovom projektu dizajnirat ćeš i kodirati poboljšanja za 2D verziju Minecraft
   <img src="images/craft-finished.png">
 </div>
 
-### Dodatne informacije za voditelje kluba
+### Additional information for club leaders
 
-Ako želite ispisati ovaj projekt, molimo Vas da koristite [verziju koja je prilagođena za ispis](https://projects.raspberrypi.org/en/projects/codecraft/print).
+If you need to print this project, please use the [Printer friendly version](https://projects.raspberrypi.org/en/projects/codecraft/print).
 
 ## \--- collapse \---
 
-## naslov: Bilješke voditelja kluba
+## title: Club leader notes
 
-## Uvod:
+## Introduction:
 
-U ovom projektu djeca će naučiti aspekte grafike i dizajna igara tako što će poboljšati kopiju igre 2D Minecraft. Napravit će nove resurse te osmisliti pravila za kombiniranje resursa kako bi stvorili nove resurse. To će postići razumijevanjem i manipulacijom varijabli, listi i rječnika.
+In this project, children will learn aspects of graphics and game design by making improvements to a basic 2D Minecraft clone. Children will create new resources, as well as crafting rules for combining resources to make new ones. This will be achieved by understanding and manipulating variables, lists and dictionaries.
 
-## Online izvori
+## Online Resources
 
-**U ovom projektu koristi se Python 3.** Predlažemo korištenje [trinketa](https://trinket.io/) za online pisanje u Pythonu. Ovaj projekt sadrži sljedeće Trinkete:
+**This project uses Python 3.** We recommend using [trinket](https://trinket.io/) to write Python online. This project contains the following Trinkets:
 
 + ['CodeCraft' starter project -- rpf.io/codecraft-on](http://rpf.io/codecraft-on)
 
-Također je uključen i trinket koji sadrži dovršeni projekt:
+There is also a trinket containing the completed project:
 
-+ [‘CodeCraft’ dovršeni projekt -- trinket.io/python/ebc5b0148b](https://trinket.io/python/ebc5b0148b)
++ [‘CodeCraft’ Finished -- trinket.io/python/ebc5b0148b](https://trinket.io/python/ebc5b0148b)
 
-## Offline izvori
+## Offline Resources
 
-Ako želite, ovaj projekt može bit [završen offline](https://www.codeclubprojects.org/en-GB/resources/python-working-offline/). Materijalima projekta možete pristupiti klikom na poveznicu 'Project Materials'. Poveznica sadrži odjeljak 'Project Resources' u kojem se nalaze materijali koji će djeci biti potrebni za izradu projekta offline. Pobrinite se da svako dijete ima pristup kopiji ovih materijala. U odjeljku se nalaze sljedeće datoteke:
+This project can be [completed offline](https://www.codeclubprojects.org/en-GB/resources/python-working-offline/) if preferred. You can access the project resources by clicking the 'Project Materials' link for this project. This link contains a 'Project Resources' section, which includes resources that children will need to complete this project offline. Make sure that each child has access to a copy of these resources. This section includes the following files:
 
 + codecraft/codecraft.py
 + codecraft/variables.py
@@ -46,7 +46,7 @@ Ako želite, ovaj projekt može bit [završen offline](https://www.codeclubproje
 + codecraft/water.gif
 + codecraft/wood.gif
 
-Dovršenu verziju projekta možete pronaći i u odjeljku ‘Resursi za volontere’ koji sadrži:
+You can also find a completed version of this project in the 'Volunteer Resources' section, which contains:
 
 + codecraft-finished/codecraft.py
 + codecraft-finished/variables.py
@@ -62,47 +62,47 @@ Dovršenu verziju projekta možete pronaći i u odjeljku ‘Resursi za volontere
 
 (All of the resources above are also downloadable as `.zip` files.)
 
-## Ishodi učenja
+## Learning Objectives
 
-+ Stvaranje i uređivanje grafike;
-+ Dizajn igre;
-+ Uređivanje: 
-    + Varijable;
-    + Lista;
-    + Rječnika.
++ Creating and editing graphics;
++ Game design;
++ Editing: 
+    + Variables;
+    + Lists;
+    + Dictionaries.
 
-Ovaj projekt obuhvaća elemente iz sljedećih dijelova [ Raspberry Pi Digital Making](http://rpf.io/curriculum) nastavnog plana i programa:
+This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
 
-+ [Izrada jednostavnih 2D i 3D predmeta.](https://www.raspberrypi.org/curriculum/design/creator)
++ [Design basic 2D and 3D assets.](https://www.raspberrypi.org/curriculum/design/creator)
 
-+ [Uporaba različitih programskih struktura za rješavanje problema.](https://www.raspberrypi.org/curriculum/programming/builder)
++ [Combine programming constructs to solve a problem.](https://www.raspberrypi.org/curriculum/programming/builder)
 
-## Izazovi
+## Challenges
 
-+ "Izgradi svoj svijet" - igranje igre, postavljanje i izrada postojećih blokova;
-+ "Promijeni veličinu svog svijeta" - uređivanje `SIRINAMAPE` i `VISINAMAPE` varijabli radi izmjene veličine svijeta;
-+ "Stvori pijesak" - stvaranje novog resursa, pijeska, zajedno s ostalim potrebnim podatcima.
-+ "Izradi staklo od pijeska" - stvaranje novog resursa, stakla, korištenjem već postojećeg resursa pijeska.
-+ "Stvori još elemenata" - primjena naučenog za stvaranje još elemenata i pravila za izradu resursa.
++ "Build your world" - Playing the game, placing and crafting existing blocks;
++ "Change your world size" - editing the `MAPWIDTH` and `MAPHEIGHT` variables to change the world size;
++ "Creating sand" - Creating a new sand resource, along with associated game data.
++ "Crafting glass from sand" - Creating a new craftable glass resource.
++ "Create more resources" - Use what's been learnt to create more blocks and crafting rules.
 
-## Često postavljana pitanja
+## Frequently Asked Questions
 
-+ Djecu će možda biti potrebno podsjetiti da se elementi unutar rječnika/liste odvajaju zarezom. Na primjer pri dodavanju resursa u inventar, grafike i pravila za izradu resursa u igru.
++ Children may need reminding that elements of a dictionary/list are separated by a comma. For example, when adding inventory items, graphics and crafting rules to the game.
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## naslov: Projektni materijali
+## title: Project materials
 
-## Resursi projekta
+## Project resources
 
-+ [.zip datoteka koja sadrži sve materijale projekta](resources/codecraft-resources.zip)
-+ [Online Trinket koji sadrži sve resurse projekta "CodeCraft"](http://rpf.io/codecraft-on)
++ [.zip file containing all project resources](resources/codecraft-resources.zip)
++ [Online Trinket containing all 'CodeCraft' project resources](http://rpf.io/codecraft-on)
 
-## Materijali za voditelja Kluba
+## Club leader resources
 
-+ [.zip datoteka koja sadrži sve dovršene materijale projekta](solutions/codecraft-solution.zip)
-+ [Dovršeni Online Trinket projekt](https://trinket.io/python/ebc5b0148b)
++ [.zip file containing all completed project resources](solutions/codecraft-solution.zip)
++ [Online completed Trinket project](https://trinket.io/python/ebc5b0148b)
 
 \--- /collapse \---
