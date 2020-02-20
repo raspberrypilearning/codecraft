@@ -1,9 +1,9 @@
 \--- challenge \---
 
-## Thách thức: Thay đổi kích thước thế giới của bạn
+## Challenge: Change your world size
 
-Bạn có thể thay đổi giá trị của các biến `MAPWIDTH` và `MAPHEIGHT` để thay đổi kích thước của thế giới không?
+Can you change the values of your `MAPWIDTH` and `MAPHEIGHT` variables to change the size of the world?
 
-![ảnh chụp màn hình](images/craft-mapsize.png)
+![screenshot](images/craft-mapsize.png)
 
-\--- /thử thách \---
+\--- /challenge \---
