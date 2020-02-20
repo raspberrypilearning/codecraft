@@ -3,28 +3,28 @@ hero_image: images/codecraft.png
 duration: 2
 listed: true
 copyedit: false
-title: कोडक्राफ्ट
-description: माइनक्राफ्ट के 2D संस्करण डिज़ाइन और सुधार के लिए कोड करें।
+title: CodeCraft
+description: Design and code improvements to a 2D version of Minecraft.
 version: 3.1.0
 last_tested: 2018-11-22
 steps:
   - 
-    title: भूमिका
+    title: Introduction
   - 
-    title: गेम खेलना
+    title: Playing the game
   - 
-    title: 'चुनौती: अपनी दुनिया बनाएँ'
+    title: 'Challenge: Build your world'
   - 
-    title: अपनी गेम को कस्टमाइज़
+    title: Customising your game
   - 
-    title: 'चुनौती: अपनी दुनिया का आकार बदलें'
+    title: 'Challenge: Change your world size'
   - 
-    title: नया लकड़ी का संसाधन बनाना
+    title: Creating a new wood resource
   - 
-    title: 'चुनौती: रेत बनाना'
+    title: 'Challenge: Creating sand'
   - 
-    title: लकड़ी से तख्ते बनाना
+    title: Crafting planks from wood
   - 
-    title: 'चुनौती: रेत से काँच बनाना'
+    title: 'Challenge: Crafting glass from sand'
   - 
-    title: 'चुनौती: और संसाधन बनाएँ'
+    title: 'Challenge: Create more resources'
