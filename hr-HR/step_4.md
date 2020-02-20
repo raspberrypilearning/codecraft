@@ -1,15 +1,15 @@
-## Prilagodba igre
+## Customising your game
 
-Izmijenimo neke od varijabli kako bi promijenili način na koji igra funkcionira.
+Let’s modify some variables to change how your game works.
 
-+ Klikni na datoteku `variables.py` kako bi pogledao neke od varijabli koje se mogu izmijeniti.
++ Click the `variables.py` file to see some variables that can be changed.
     
     ![screenshot](images/craft-variables.png)
 
-+ Promijeni vrijednost varijable `BOJAPOZADINE` pa klikni na ‘Run’ da bi vidio promjene.
++ Change the value of your `BACKGROUNDCOLOUR` variable, and click 'Run' to see the change to your game.
     
     ![screenshot](images/craft-background.png)
 
-+ Varijabla `PLOCICEMAX` predstavlja količinu svakog elementa koji se može nalaziti u tvom inventaru. Izmijeni ovu varijablu ako želiš da se u tvom inventaru pohranjuje više (ili manje) od 20 komada svakog elementa.
++ The variable `MAXTILES` is the amount of each resource that can be held in your inventory. Change this variable if you want to store more (or less) than 20 of each resource.
     
     ![screenshot](images/craft-maxtiles.png)
