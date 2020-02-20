@@ -1,99 +1,99 @@
 #!/bin/python3
 
-#Varijable u igri koje se mogu mijenjati!
+#Game variables that can be changed!
 
-#boja pozadine u igri.
+#game background colour.
 BACKGROUNDCOLOUR = 'lightblue'
 
-#varijable mape.
-PLOCICEMAX  = 40
-SIRINAMAPE  = 20
-VISINAMAPE = 15
+#map variables.
+MAXTILES  = 40
+MAPWIDTH  = 20
+MAPHEIGHT = 15
 
-#varijable koje predstavljaju različite resurse.
-ZEMLJA   = 0
-TRAVA  = 1
-VODA   = 2
-CIGLA   = 3
-DRVO    = 4
-PIJESAK    = 5
-DASKA   = 6
-STAKLO   = 7
+#variables representing the different resources.
+DIRT    = 0
+GRASS   = 1
+WATER   = 2
+BRICK   = 3
+WOOD    = 4
+SAND    = 5
+PLANK   = 6
+GLASS   = 7
 
-#popis svih resursa u igri.
-resources = [ZEMLJA,TRAVA,VODA,CIGLA,DRVO,PIJESAK,DASKA,STAKLO]
+#a list of all game resources.
+resources = [DIRT,GRASS,WATER,BRICK,WOOD,SAND,PLANK,GLASS]
 
-#nazivi resursa.
+#the names of the resources.
 names = {
-  ZEMLJA    : 'zemlja',
-  TRAVA   : 'trava',
-  VODA  : 'voda',
-  CIGLA   : 'cigla',
-  DRVO    : 'drvo',
-  PIJESAK    : 'pijesak',
-  DASKA   : 'daska',
-  STAKLO   : 'staklo'
+  DIRT    : 'dirt',
+  GRASS   : 'grass',
+  WATER   : 'water',
+  BRICK   : 'brick',
+  WOOD    : 'wood',
+  SAND    : 'sand',
+  PLANK   : 'plank',
+  GLASS   : 'glass'
 }
 
-#rječnik koji povezuje resurse sa slikama.
+#a dictionary linking resources to images.
 textures = {
-  ZEMLJA    : 'dirt.gif',
-  TRAVA   : 'grass.gif',
-  VODA   : 'water.gif',
-  CIGLA   : 'brick.gif',
-  DRVO    : 'wood.gif',
-  PIJESAK    : 'sand.gif',
-  DASKA   : 'plank.gif',
-  STAKLO   : 'glass.gif'
+  DIRT    : 'dirt.gif',
+  GRASS   : 'grass.gif',
+  WATER   : 'water.gif',
+  BRICK   : 'brick.gif',
+  WOOD    : 'wood.gif',
+  SAND    : 'sand.gif',
+  PLANK   : 'plank.gif',
+  GLASS   : 'glass.gif'
 }
 
-#broj svih resursa kojeg igrač posjeduje.
+#the number of each resource the player has.
 inventory = {
-  ZEMLJA   : 10,
-  TRAVA   : 10,
-  VODA   : 10,
-  CIGLA   : 0,
-  DRVO    : 5,
-  PIJESAK   : 5,
-  DASKA   : 0,
-  STALO   : 0
+  DIRT    : 10,
+  GRASS   : 10,
+  WATER   : 10,
+  BRICK   : 0,
+  WOOD    : 5,
+  SAND    : 5,
+  PLANK   : 0,
+  GLASS   : 0
 }
 
-#slika igrača.
+#the player image.
 playerImg = 'player.gif'
 
-#položaj igrača.
+#the player position.
 playerX = 0
 playerY = 0
 
-#tipke za postavljanje resursa.
+#keys for placing resources.
 placekeys = {
-  ZEMLJA  : '1',
-  TRAVA : '2',
-  VODA : '3',
-  CIGLA : '4',
-  DRVO  : '5',
-  PIJESAK : '6',
-  DASKA : '7',
-  STAKLO: '8'
+  DIRT  : '1',
+  GRASS : '2',
+  WATER : '3',
+  BRICK : '4',
+  WOOD  : '5',
+  SAND  : '6',
+  PLANK : '7',
+  GLASS : '8'
 }
 
-#pravila za stvaranje novih resursa.
+#rules to make new resources.
 crafting = {
-  CIGLA   : { VODA: 1, ZEMLJA : 2 },
-  DASKA    : { DRVO : 3 },
+  BRICK    : { WATER : 1, DIRT : 2 },
+  PLANK    : { WOOD : 3 },
   GLASS    : { SAND : 3 }
 }
 
-#tipke za stvaranje cigli.
+#keys for crafting tiles.
 craftkeys = {
-  CIGLA : 'r',
-  DASKA : 'u',
-  STAKLO : 'i'
+  BRICK : 'r',
+  PLANK : 'u',
+  GLASS : 'i'
 }
 
-#upute igre koje su prikazane.
+#game instructions that are displayed.
 instructions =  [
-  'Upute:',
-  'koristi tipke WASD za pomicanje'
+  'Instructions:',
+  'Use WASD to move'
 ]
