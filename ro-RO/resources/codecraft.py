@@ -5,85 +5,85 @@
 #############
 
 #---
-#Functiile jocului
+#Game functions
 #---
 
-#muta jucatorul cu o casuta la stanga.
-def mutaStanga():
-  global jucatorX
+#moves the player left 1 tile.
+def moveLeft():
+  global playerX
   if(drawing == False and playerX > 0):
     oldX = playerX
-    jucatorX -= 1
+    playerX -= 1
     drawResource(oldX, playerY)
-    deseneazaResursa(jucatorX, jucatorY)
+    drawResource(playerX, playerY)
     
-#muta jucatorul cu o casuta la dreapta.
-def mutaDreapta():
-  global jucatorX, LATIMEHARTA
+#moves the player right 1 tile.
+def moveRight():
+  global playerX, MAPWIDTH
   if(drawing == False and playerX < MAPWIDTH - 1):
     oldX = playerX
-    jucatorX += 1
+    playerX += 1
     drawResource(oldX, playerY)
-    deseneazaResursa(jucatorX, jucatorY)
+    drawResource(playerX, playerY)
     
-#muta jucatorul cu o casuta in sus.
-def mutaSus():
-  global jucatorY
+#moves the player up 1 tile.
+def moveUp():
+  global playerY
   if(drawing == False and playerY > 0):
     oldY = playerY
-    jucatorY -= 1
+    playerY -= 1
     drawResource(playerX, oldY)
-    deseneazaResursa(jucatorX, jucatorY)
+    drawResource(playerX, playerY)
     
-#muta jucatorul cu o casuta in jos.
-def mutaJos():
-  global jucatorY, INALTIMEHARTA
+#moves the player down 1 tile.
+def moveDown():
+  global playerY, MAPHEIGHT
   if(drawing == False and playerY < MAPHEIGHT - 1):
     oldY = playerY
-    jucatorY += 1
+    playerY += 1
     drawResource(playerX, oldY)
-    deseneazaResursa(jucatorX, jucatorY)
+    drawResource(playerX, playerY)
     
-#aduna resursa de la pozitia jucatorului.
-def aduna():
-  global jucatorX, jucatorY
-  desenare = True
-  casutaCurenta = lume[jucatorX][jucatorY]
-  #daca jucatorul nu detine deja prea multe...
-  if inventar[casutaCurenta] < CASUTEMAXIME:
-    #acum jucatorul are 1 din aceasta resursa
-    inventar[casutaCurenta] += 1
-    #jucatorul sta acum pe pamant
-    lume[jucatorX][jucatorY] = NOROI
-    #deseneaza noua casuta de PAMANT
-    deseneazaResursa(jucatorX, jucatorY)
-    #redeseneaza inventarul cu resursa extra.
-    deseneazaInventar()
-    #deseneazaJucator()
+#picks up the resource at the player's position.
+def pickUp():
+  global playerX, playerY
+  drawing = True
+  currentTile = world[playerX][playerY]
+  #if the user doesn't already have too many...
+  if inventory[currentTile] < MAXTILES:
+    #player now has 1 more of this resource
+    inventory[currentTile] += 1
+    #the player is now standing on dirt
+    world[playerX][playerY] = DIRT
+    #draw the new DIRT tile
+    drawResource(playerX, playerY)
+    #redraw the inventory with the extra resource.
+    drawInventory()
+    #drawPlayer()
 
-#plaseaza resursa la pozitia curenta a jucatorului
-def plaseaza(resursa):
-  print('plasez: ', nume[resursa])
-  #plaseaza doar daca jucatorul mai are resursa...
-  if inventar[resursa] > 0:
-    #descopera resursa de la pozitia jucatorului
-    casutaCurenta = lume[jucatorX][jucatorY]
-    # ridica resursa pe care se afla jucatorul
-    #(daca nu e PAMANT)
-    if casutaCurenta is not PAMANT:
-      inventar[casutaCurenta] += 1
-    #plaseaza resursa la pozitia jucatorului
-    lume[jucatorX][jucatorY] = resource
-    #adauga noua resursa in inventar
-    inventar[resursa] -= 1
-    #actualizeaza afisajul (lume si inventar)
-    deseneazaResursa(jucatorX, jucatorY)
-    deseneazaInventar()
-    #deseneazaJucator()
-    print('   Plasarea', nume[resursa], 'este completa')
-  #...si daca nu mai este...
+#place a resource at the player's current position
+def place(resource):
+  print('placing: ', names[resource])
+  #only place if the player has some left...
+  if inventory[resource] > 0:
+    #find out the resourcee at the player's current position
+    currentTile = world[playerX][playerY]
+    #pick up the resource the player's standing on
+    #(if it's not DIRT)
+    if currentTile is not DIRT:
+      inventory[currentTile] += 1
+    #place the resource at the player's current position
+    world[playerX][playerY] = resource
+    #add the new resource to the inventory
+    inventory[resource] -= 1
+    #update the display (world and inventory)
+    drawResource(playerX, playerY)
+    drawInventory()
+    #drawPlayer()
+    print('   Placing', names[resource], 'complete')
+  #...and if they have none left...
   else:
-    print('   Nu mai ai', nume[resursa], 'ramas')
+    print('   You have no', names[resource], 'left')
 
 #craft a new resource
 def craft(resource):
@@ -112,7 +112,7 @@ def craft(resource):
     else:
       print('   Can\'t craft', names[resource])
     #update the displayed inventory
-    deseneazaInventar()
+    drawInventory()
 
 #creates a function for placing each resource
 def makeplace(resource):
@@ -139,7 +139,7 @@ def drawResource(y, x):
   #only draw if nothing else is being drawn
   if drawing == False:
     #something is now being drawn
-    desenare = True
+    drawing = True
     #draw the resource at that position in the tilemap, using the correct image
     rendererT.goto( (y * TILESIZE) + 20, height - (x * TILESIZE) - 20 )
     #draw tile with correct texture
@@ -169,7 +169,7 @@ def drawInventory():
   #only draw if nothing else is being drawn
   if drawing == False:
     #something is now being drawn
-    desenare = True
+    drawing = True
     #use a rectangle to cover the current inventory
     rendererT.color(BACKGROUNDCOLOUR)
     rendererT.goto(0,0)
@@ -313,7 +313,7 @@ bindCraftingKeys()
 #these functions are defined above
 generateRandomWorld()
 drawWorld()
-deseneazaInventar()
+drawInventory()
 generateInstructions()
 
 
