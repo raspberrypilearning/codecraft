@@ -1,11 +1,11 @@
 \--- challenge \---
 
-## Thử thách: Chế tạo thủy tinh từ cát
+## Challenge: Crafting glass from sand
 
-Bạn có thể tạo ra một nguồn tài nguyên thủy tinh mới, có thể được chế tạo từ cát? Bạn có thể làm theo các bước trên để giúp bạn.
+Can you create a new glass resource, that can be crafted from sand? You can follow the steps above to help you.
 
-![ảnh chụp màn hình](images/craft-glass.png)
+![screenshot](images/craft-glass.png)
 
-Dự án đã chứa `glass.gif` hình ảnh mà bạn có thể sử dụng hoặc bạn có thể tạo hình ảnh của riêng mình nếu bạn thích.
+The project already contains a `glass.gif` image that you can use, or you can create your own image if you prefer.
 
-\--- /thử thách \---
+\--- /challenge \---
