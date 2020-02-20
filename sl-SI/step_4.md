@@ -1,15 +1,15 @@
-## Prilagoditev igre
+## Customising your game
 
-Spremenimo nekaj spremenljivk, da spremnimo kako deluje vaša igra.
+Let’s modify some variables to change how your game works.
 
-+ Kliknite `Spremenljivka` datoteko za ogled nekaterih spremenljivk, ki jih je mogoče spremeniti.
++ Click the `variables.py` file to see some variables that can be changed.
     
-    ![posnetek zaslona](images/craft-variables.png)
+    ![screenshot](images/craft-variables.png)
 
-+ Spremenite vrednos vaše spremenljivke `BACKGROUNDCOLOUR` in kliknite 'Zaženi', če si želite ogledati spremembo v igri.
++ Change the value of your `BACKGROUNDCOLOUR` variable, and click 'Run' to see the change to your game.
     
-    ![posnetek zaslona](images/craft-background.png)
+    ![screenshot](images/craft-background.png)
 
-+ Spremenljivka `MAXTILES` je količina vsake surovine, ki se lahko hrani v vašem inventarju. Spremenite to spremenljivko, če želite shraniti več (ali manj) kot 20 vsake surovine.
++ The variable `MAXTILES` is the amount of each resource that can be held in your inventory. Change this variable if you want to store more (or less) than 20 of each resource.
     
-    ![posnetek zaslona](images/craft-maxtiles.png)
+    ![screenshot](images/craft-maxtiles.png)
