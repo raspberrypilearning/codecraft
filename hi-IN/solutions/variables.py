@@ -93,7 +93,7 @@ craftkeys = {
 }
 
 #game instructions that are displayed.
-निर्देश =  [
-  'निर्देश:',
+instructions =  [
+  'Instructions:',
   'Use WASD to move'
 ]
