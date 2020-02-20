@@ -1,4 +1,4 @@
-## Ustvarjanje novega vira lesa
+## Creating a new wood resource
 
 Let's create a new wood resource. To do this, you'll need to add to some variables in your `variables.py` file.
 
