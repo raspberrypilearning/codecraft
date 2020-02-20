@@ -93,7 +93,7 @@ craftkeys = {
 }
 
 #game instructions that are displayed.
-instrucțiuni =  [
-  'Instrucțiuni:',
+instructions =  [
+  'Instructions:',
   'Use WASD to move'
 ]
