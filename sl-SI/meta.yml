@@ -4,27 +4,27 @@ duration: 2
 listed: true
 copyedit: false
 title: CodeCraft
-description: Načrtuj in kodiraj izboljšave za 2D verzijo Minecraft-a.
+description: Design and code improvements to a 2D version of Minecraft.
 version: 3.1.0
 last_tested: 2018-11-22
 steps:
   - 
-    title: Uvod
+    title: Introduction
   - 
-    title: Igranje igre
+    title: Playing the game
   - 
-    title: 'Izziv: Zgradite svoj svet'
+    title: 'Challenge: Build your world'
   - 
-    title: Prilagodi svojo igro
+    title: Customising your game
   - 
-    title: 'Izziv: Spremeni velikost svojega sveta'
+    title: 'Challenge: Change your world size'
   - 
-    title: Ustvarjanje nove vrste lesa
+    title: Creating a new wood resource
   - 
-    title: 'Izziv: Ustvarjanje peska'
+    title: 'Challenge: Creating sand'
   - 
-    title: Izdelava desk iz lesa
+    title: Crafting planks from wood
   - 
-    title: 'Izziv: Izdelava stekla iz peska'
+    title: 'Challenge: Crafting glass from sand'
   - 
-    title: 'Izziv: Ustvarite več surovin'
+    title: 'Challenge: Create more resources'
