@@ -1,8 +1,8 @@
 \--- challenge \---
 
-## Izazov: Promijeni veličinu svog svijeta
+## Challenge: Change your world size
 
-Možeš li izmijeniti vrijednosti promjenljivih `SIRINAMAPE` i `VISINAMAPE` da bi promijenio/promijenila veličinu svog svijeta?
+Can you change the values of your `MAPWIDTH` and `MAPHEIGHT` variables to change the size of the world?
 
 ![screenshot](images/craft-mapsize.png)
 
