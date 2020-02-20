@@ -1,11 +1,11 @@
 #!/bin/python3
 
-# zmienne gry, które można modyfikować!
+#Game variables that can be changed!
 
-# kolor tła gry
+#game background colour.
 BACKGROUNDCOLOUR = 'white'
 
-# zmienne mapy
+#map variables.
 MAXTILES  = 20
 MAPWIDTH  = 10
 MAPHEIGHT = 10
@@ -16,10 +16,10 @@ GRASS   = 1
 WATER   = 2
 BRICK   = 3
 
-# lista wszystkich zasobów gry
+#a list of all game resources.
 resources = [DIRT,GRASS,WATER,BRICK]
 
-# nazwy zasobów
+#the names of the resources.
 names = {
   DIRT    : 'dirt',
   GRASS   : 'grass',
@@ -27,7 +27,7 @@ names = {
   BRICK   : 'brick'
 }
 
-# słownik łączący zasoby z obrazami
+#a dictionary linking resources to images.
 textures = {
   DIRT    : 'dirt.gif',
   GRASS   : 'grass.gif',
@@ -35,7 +35,7 @@ textures = {
   BRICK   : 'brick.gif'
 }
 
-# ilość zasobów posiadanych przez gracza
+#the number of each resource the player has.
 inventory = {
   DIRT    : 10,
   GRASS   : 10,
@@ -43,19 +43,19 @@ inventory = {
   BRICK   : 0
 }
 
-# obrazek gracza
+#the player image.
 playerImg = 'player.gif'
 
 #the player position.
 playerX = 0
 playerY = 0
 
-# zasady  tworzenia nowych zasobów
+#rules to make new resources.
 crafting = {
   BRICK    : { WATER : 1, DIRT : 2 }
 }
 
-# klawisze do umieszczania zasobów
+#keys for placing resources.
 placekeys = {
   DIRT  : '1',
   GRASS : '2',
@@ -63,12 +63,12 @@ placekeys = {
   BRICK : '4'
 }
 
-# klawisze do tworzenia zasobów
+#keys for crafting tiles.
 craftkeys = {
   BRICK : 'r'
 }
 
-# wyświetlane instrukcje gry
+#game instructions that are displayed.
 instructions =  [
   'Instrukcje:',
   'Ruchy - WSAD'
