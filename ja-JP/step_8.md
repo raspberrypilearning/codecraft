@@ -1,39 +1,39 @@
-## 木から板をクラフトする
+## Crafting planks from wood
 
-新しいリソース板（PLANK）を木からクラフトしましょう。
+Let's create a new plank resource that be crafted from wood.
 
-+ 最初に、`PLANK`変数を追加。
++ First, add a new `PLANK` variable to your game.
     
-    ![スクリーンショット](images/craft-plank-const.png)
+    ![screenshot](images/craft-plank-const.png)
 
-+ `PLANK`変数をresoucesに追加。
++ Add a new `PLANK` variable to your game.
     
-    ![スクリーンショット](images/craft-plank-resources.png)
+    ![screenshot](images/craft-plank-resources.png)
 
-+ リソースに `'plank'`と名付け、namesに追加。
++ Name the resource `'plank'`.
     
-    ![スクリーンショット](images/craft-plank-names.png)
+    ![screenshot](images/craft-plank-names.png)
 
-+ `PLANK`リソースに画像を追加。 このプロジェクトは`plank.gif` 画像を含んでいます。しかし、自分の画像を作成してアップロードして使用することもできます。
++ Give your `PLANK` resource an image. The project already contains a `plank.gif` image, but you can create your own if you prefer.
     
-    ![スクリーンショット](images/craft-plank-textures.png)
+    ![screenshot](images/craft-plank-textures.png)
 
-+ 持ち物リストに板を追加。
++ Add planks to your inventory.
     
-    ![スクリーンショット](images/craft-plank-inventory.png)
+    ![screenshot](images/craft-plank-inventory.png)
 
-+ 板を置くキーを設定。
++ Set a key for placing planks.
     
-    ![スクリーンショット](images/craft-plank-placekeys.png)
+    ![screenshot](images/craft-plank-placekeys.png)
 
-+ この板リソースはクラフトできるものなので、３つの木リソースからクラフトするルールを作成。 そのルールを`crafting`辞書に追加。
++ As this resource can be crafted, you need to create a crafting rule, which is that a plank can be made from 3 wood tiles. Add this code to the `crafting` dictionary.
     
-    ![スクリーンショット](images/craft-plank-crafting.png)
+    ![screenshot](images/craft-plank-crafting.png)
 
-+ 板リソースをクラフトするキーを追加。 
++ Finally, you need to set a key for crafting new planks.
     
-    ![スクリーンショット](images/craft-plank-craftkeys.png)
+    ![screenshot](images/craft-plank-craftkeys.png)
 
-+ 板リソースをテストするために、木リソースを集めて板リソースをクラフトする。 ワールドに板リソースが配置できます。
++ To test your new plank resource, gather up a few wood tiles and then craft some planks from your wood. You can then place your new planks in your world.
     
-    ![スクリーンショット](images/craft-plank-test.png)
+    ![screenshot](images/craft-plank-test.png)
