@@ -79,11 +79,11 @@ Ce projet couvre les élements suivants du [Programme Raspberry Pi de Créativit
 
 ## Challenges
 
-+ "Construit ton monde" - Jouer au jeu, placer et fabriquer des blocs existants
++ "Construis ton monde" - Jouer au jeu, placer et fabriquer des blocs existants
 + "Change la taille de ton monde" - Modifier les variables `LARGEURCARTE` et `HAUTEURCARTE` pour changer les dimensions du monde;
 + "Crée du sable" - Créer un nouvel élément sable, avec les données associées au jeu.
 + "Fabrique du verre à partir de sable" - Créer une nouvelle ressource fabriquée, le verre.
-+ "Créer encore plus de ressources" - Utiliser ce qui a été appris pour créer encore plus de blocs et de règles de fabrications.
++ "Crée encore plus de ressources" - Utiliser ce qui a été appris pour créer encore plus de blocs et de règles de fabrications.
 
 ## Foire aux questions
 
