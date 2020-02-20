@@ -1,6 +1,6 @@
-## はじめに
+## Introduction
 
-このプロジェクトでは、2D版のマインクラフトの改良をデザイン・コーディングします。
+In this project, you’ll design and code improvements to a 2D version of Minecraft.
 
 <div class="trinket">
   <iframe src="https://trinket.io/embed/python/ebc5b0148b?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
@@ -8,31 +8,31 @@
   <img src="images/craft-finished.png">
 </div>
 
-### クラブリーダーのための追加情報
+### Additional information for club leaders
 
-このプロジェクトを印刷する必要がある場合は、 [印刷用バージョン](https://projects.raspberrypi.org/en/projects/codecraft/print)を使用してください。
+If you need to print this project, please use the [Printer friendly version](https://projects.raspberrypi.org/en/projects/codecraft/print).
 
 ## \--- collapse \---
 
-## title：クラブリーダー・ノート
+## title: Club leader notes
 
-## はじめに
+## Introduction:
 
-このプロジェクトでは、子供たちは基本的な2Dマインクラフトのクローンを改良することにより、グラフィクスとゲームデザインを学びます。 子供たちはリソースを作成、またはリソースを結合するルールをつくることにより新しいリソースを作ります。 変数・リスト・辞書を理解して操作することにより、このプロジェクトを達成できます。
+In this project, children will learn aspects of graphics and game design by making improvements to a basic 2D Minecraft clone. Children will create new resources, as well as crafting rules for combining resources to make new ones. This will be achieved by understanding and manipulating variables, lists and dictionaries.
 
-## オンライン・リソース
+## Online Resources
 
-**本プロジェクトでは、Python 3**を使います。オンラインでPythonのコードを記述するには、[trinket](https://trinket.io/)の使用をお勧めします。 本プロジェクトには、以下のtrinketが用意されています：
+**This project uses Python 3.** We recommend using [trinket](https://trinket.io/) to write Python online. This project contains the following Trinkets:
 
 + ['CodeCraft' starter project -- rpf.io/codecraft-on](http://rpf.io/codecraft-on)
 
-また、完成版プログラムが入力済みのtrinketも用意されています。
+There is also a trinket containing the completed project:
 
-+ ['コードクラフト'の完成版プログラム -- trinket.io/python/ebc5b0148b](https://trinket.io/python/ebc5b0148b)
++ [‘CodeCraft’ Finished -- trinket.io/python/ebc5b0148b](https://trinket.io/python/ebc5b0148b)
 
-## オフライン・リソース
+## Offline Resources
 
-このプロジェクトは[オフライン](https://www.codeclubprojects.org/en-GB/resources/python-working-offline/)で完成することが可能です。 “プロジェクト資料”のリンクをクリックすることでこのプロジェクトのリソースにアクセスすることが可能です。 リンクには”プロジェクト・リソース”の個所もあり、ここにプロジェクトをオフラインで完成させるために必要なリソースが含まれている。 各子供がこのリソースのコピーを持っていることを確認してください。 このセクションは下記ファイルを含む：
+This project can be [completed offline](https://www.codeclubprojects.org/en-GB/resources/python-working-offline/) if preferred. You can access the project resources by clicking the 'Project Materials' link for this project. This link contains a 'Project Resources' section, which includes resources that children will need to complete this project offline. Make sure that each child has access to a copy of these resources. This section includes the following files:
 
 + codecraft/codecraft.py
 + codecraft/variables.py
@@ -46,7 +46,7 @@
 + codecraft/water.gif
 + codecraft/wood.gif
 
-また、以下の完成版プログラムは、「リーダー用ノート」セクションから入手可能です。
+You can also find a completed version of this project in the 'Volunteer Resources' section, which contains:
 
 + codecraft-finished/codecraft.py
 + codecraft-finished/variables.py
@@ -62,47 +62,47 @@
 
 (All of the resources above are also downloadable as `.zip` files.)
 
-## 学習目標
+## Learning Objectives
 
-+ グラフィクスの作成・編集
-+ ゲームデザイン
-+ 編集 
-    + 変数
-    + リスト
-    + 辞書
++ Creating and editing graphics;
++ Game design;
++ Editing: 
+    + Variables;
+    + Lists;
+    + Dictionaries.
 
-このプロジェクトでは [Raspberry Pi デジタル・メイキング・カリキュラム](http://rpf.io/curriculum)（英語）の柱の一つである、プログラミングの以下の要素を学びます。
+This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
 
-+ [2次元と3次元のアセットをデザインする。](https://www.raspberrypi.org/curriculum/design/creator)
++ [Design basic 2D and 3D assets.](https://www.raspberrypi.org/curriculum/design/creator)
 
-+ [プログラミング構造を組み合わせて問題を解決する。](https://www.raspberrypi.org/curriculum/programming/builder)
++ [Combine programming constructs to solve a problem.](https://www.raspberrypi.org/curriculum/programming/builder)
 
-## チャレンジ
+## Challenges
 
-+ "ワールドを構築" – ゲームをプレイし、既存のブロックを配置または作成する。
-+ "ワールドのサイズを変更" - `MAPWIDTH` と `MAPHEIGHT` 変数を編集してワールドのサイズを変更する。
-+ "砂を作る" – 関連するゲームデータとともに新しい‘砂’リソースを作る。
-+ "砂からガラスをクラフト（作成）する" – 新しいガラスリソースを作る。
-+ ”さらにリソースを作る" – 習ったことを使ってさらにブロックやクラフティングルール（作成ルール）を作成する。
++ "Build your world" - Playing the game, placing and crafting existing blocks;
++ "Change your world size" - editing the `MAPWIDTH` and `MAPHEIGHT` variables to change the world size;
++ "Creating sand" - Creating a new sand resource, along with associated game data.
++ "Crafting glass from sand" - Creating a new craftable glass resource.
++ "Create more resources" - Use what's been learnt to create more blocks and crafting rules.
 
-## よくある質問
+## Frequently Asked Questions
 
-+ 子供は、辞書/リストの要素がコンマで区切られていることを思い出させる必要があるかもしれない。 たとえば、インベントリアイテム、グラフィックス、および作成ルールをゲームに追加する場合などです。
++ Children may need reminding that elements of a dictionary/list are separated by a comma. For example, when adding inventory items, graphics and crafting rules to the game.
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title：プロジェクト資料
+## title: Project materials
 
-## プロジェクト資料
+## Project resources
 
-+ [全プロジェクト・リソースの入った.zipファイル](resources/codecraft-resources.zip)
-+ [「コードクラフト」プロジェクト・リソースの入ったのオンラインtrinket](http://rpf.io/codecraft-on)
++ [.zip file containing all project resources](resources/codecraft-resources.zip)
++ [Online Trinket containing all 'CodeCraft' project resources](http://rpf.io/codecraft-on)
 
-## クラブ・リーダー向けリソース
+## Club leader resources
 
-+ [全プロジェクトの完成版リソースの入った.zipファイル](solutions/codecraft-solution.zip)
-+ [完成版プロジェクトのオンラインtrinket](https://trinket.io/python/ebc5b0148b)
++ [.zip file containing all completed project resources](solutions/codecraft-solution.zip)
++ [Online completed Trinket project](https://trinket.io/python/ebc5b0148b)
 
 \--- /collapse \---
