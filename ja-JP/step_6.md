@@ -1,51 +1,51 @@
-## 新しい木のリソースを作成
+## Creating a new wood resource
 
-新しい木のリソース（WOOD）を作りましょう。 そのために、`variables.py` ファイルにいくつかの変数を追加します。
+Let's create a new wood resource. To do this, you'll need to add to some variables in your `variables.py` file.
 
-+ 最初に、新しいリソースに番号を振る 。 そして、単語 `WOOD` を4として使う。
++ First, you need to give your new resource a number. You'll then be able to use the word `WOOD` in your code instead of the number 4.
     
-    ![スクリーンショット](images/craft-wood-const.png)
+    ![screenshot](images/craft-wood-const.png)
 
-+ 新しいリソース`WOOD` を`resources`リストに追加。
++ You should add your new `WOOD` resource to your list of `resources`.
     
-    ![スクリーンショット](images/craft-wood-resources.png)
+    ![screenshot](images/craft-wood-resources.png)
 
-+ リソースにはインベントリに表示される名前を付ける必要があります。
++ You should also give your resource a name, which will be displayed in the inventory.
     
-    ![スクリーンショット](images/craft-wood-name.png)
+    ![screenshot](images/craft-wood-name.png)
     
-    リストに新しいアイテムを追加する際、”`,`”を追加するのを忘れないように。
+    Notice the comma `,` at the end of the line above.
 
-+ 新しいリソースには画像が必要。 このプロジェクトはすでに`wood.gif`という画像が含まれています。それを`textures` に追加してください。
++ Your resource will also need an image. The project already includes an image called `wood.gif`, which you should add to the `textures` dictionary.
     
-    ![スクリーンショット](images/craft-wood-texture.png)
+    ![screenshot](images/craft-wood-texture.png)
 
-+ `Inventory` のWOOD リソースに初期値を設定。
++ Add the number of your resource that should be in your `inventory` to start with.
     
-    ![スクリーンショット](images/craft-wood-inventory.png)
+    ![screenshot](images/craft-wood-inventory.png)
 
-+ 最後に、木をワールドに配置するための数字をplacekeysに追加。
++ Finally, add the key that you'll press to place wood in the world.
     
-    ![スクリーンショット](images/craft-wood-placekey.png)
+    ![screenshot](images/craft-wood-placekey.png)
 
-+ プロジェクトを実行し、テスト。 木のリソース（WOOD）が持ち物リストにあることを確認。
++ Run your project to test it. You'll see that you now have a new 'wood' resource in your inventory.
     
-    ![スクリーンショット](images/craft-wood-test.png)
+    ![screenshot](images/craft-wood-test.png)
 
-+ ワールドに木がない！ `main.py`ファイルを開き、関数`generateRandomWorld()`を修正します。
++ There's no wood in your world! To fix this, click on your `main.py` file and find the function called `generateRandomWorld()`.
     
-    ![スクリーンショット](images/craft-wood-random1.png)
+    ![screenshot](images/craft-wood-random1.png)
     
-    このコードは0から10の乱数を生成し、その番号によりどのリソースをはいちするかけっていします。
+    This code generates a random number between 0 and 10, and uses the number to decide which resource to place:
     
-    + 1 か 2 = 水
-    + 3 か 4 = 草
-    + それ以外 = 土
+    + 1 or 2 = water
+    + 3 or 4 = grass
+    + anything else = DIRT
 
-+ コードを追加し、`randomNumber` が 5だったら木を追加するようにする。
++ Add this code to add wood to your world whenever the `randomNumber` is 5.
     
-    ![スクリーンショット](images/craft-wood-random2.png)
+    ![screenshot](images/craft-wood-random2.png)
 
-+ プロジェクトをテストする。 今回はワールドに木があるはずです。
++ Test your project again. This time, you should see some wood appear in your world.
     
-    ![スクリーンショット](images/craft-wood-test2.png)
+    ![screenshot](images/craft-wood-test2.png)
