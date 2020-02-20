@@ -3,28 +3,28 @@ hero_image: images/codecraft.png
 duration: 2
 listed: true
 copyedit: false
-title: 代码世界
-description: 对我的世界 2D 版本进行设计和代码改进。
+title: CodeCraft
+description: Design and code improvements to a 2D version of Minecraft.
 version: 3.1.0
 last_tested: 2018-11-22
 steps:
   - 
-    title: 介绍
+    title: Introduction
   - 
-    title: 进行游戏
+    title: Playing the game
   - 
-    title: '挑战：建造你的世界'
+    title: 'Challenge: Build your world'
   - 
-    title: 自定义你的游戏
+    title: Customising your game
   - 
-    title: '挑战：更改你的世界规模'
+    title: 'Challenge: Change your world size'
   - 
-    title: 创建一个新的木材资源
+    title: Creating a new wood resource
   - 
-    title: '挑战：创建沙子'
+    title: 'Challenge: Creating sand'
   - 
-    title: 利用木材制作木板
+    title: Crafting planks from wood
   - 
-    title: '挑战：利用沙子制作玻璃'
+    title: 'Challenge: Crafting glass from sand'
   - 
-    title: '挑战：创建更多资源'
+    title: 'Challenge: Create more resources'
