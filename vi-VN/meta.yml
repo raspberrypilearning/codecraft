@@ -4,27 +4,27 @@ duration: 2
 listed: true
 copyedit: false
 title: CodeCraft
-description: Thiết kế và cải tiến mã cho phiên bản 2D của Minecraft.
+description: Design and code improvements to a 2D version of Minecraft.
 version: 3.1.0
 last_tested: 2018-11-22
 steps:
   - 
-    title: Giới thiệu
+    title: Introduction
   - 
-    title: Chơi trò chơi
+    title: Playing the game
   - 
-    title: 'Thách thức: Xây dựng thế giới của bạn'
+    title: 'Challenge: Build your world'
   - 
-    title: Tùy chỉnh trò chơi của bạn
+    title: Customising your game
   - 
-    title: 'Thách thức: Thay đổi kích thước thế giới của bạn'
+    title: 'Challenge: Change your world size'
   - 
-    title: Tạo tài nguyên gỗ mới
+    title: Creating a new wood resource
   - 
-    title: 'Thử thách: Tạo cát'
+    title: 'Challenge: Creating sand'
   - 
-    title: Ván gỗ từ gỗ
+    title: Crafting planks from wood
   - 
-    title: 'Thử thách: Chế tạo thủy tinh từ cát'
+    title: 'Challenge: Crafting glass from sand'
   - 
-    title: 'Thách thức: Tạo thêm tài nguyên'
+    title: 'Challenge: Create more resources'
