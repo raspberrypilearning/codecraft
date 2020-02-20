@@ -1,51 +1,51 @@
-## Tạo tài nguyên gỗ mới
+## Creating a new wood resource
 
-Hãy tạo ra một nguồn tài nguyên gỗ mới. Để làm điều này, bạn sẽ cần phải thêm vào một số biến trong bạn `variables.py` tập tin.
+Let's create a new wood resource. To do this, you'll need to add to some variables in your `variables.py` file.
 
-+ Đầu tiên, bạn cần cung cấp cho tài nguyên mới của bạn một số. Sau đó, bạn sẽ có thể sử dụng từ `GOOD` trong mã của mình thay vì số 4.
++ First, you need to give your new resource a number. You'll then be able to use the word `WOOD` in your code instead of the number 4.
     
-    ![ảnh chụp màn hình](images/craft-wood-const.png)
+    ![screenshot](images/craft-wood-const.png)
 
-+ Bạn nên thêm tài nguyên `GOOD` vào danh sách `tài nguyên`.
++ You should add your new `WOOD` resource to your list of `resources`.
     
-    ![ảnh chụp màn hình](images/craft-wood-resources.png)
+    ![screenshot](images/craft-wood-resources.png)
 
-+ Bạn cũng nên đặt tên cho tài nguyên của mình, tên này sẽ được hiển thị trong kho.
++ You should also give your resource a name, which will be displayed in the inventory.
     
-    ![ảnh chụp màn hình](images/craft-wood-name.png)
+    ![screenshot](images/craft-wood-name.png)
     
-    Lưu ý dấu phẩy `,` ở cuối dòng trên.
+    Notice the comma `,` at the end of the line above.
 
-+ Tài nguyên của bạn cũng sẽ cần một hình ảnh. Dự án đã bao gồm một hình ảnh gọi là `wood.gif`, bạn nên thêm vào từ điển `kết cấu`.
++ Your resource will also need an image. The project already includes an image called `wood.gif`, which you should add to the `textures` dictionary.
     
-    ![ảnh chụp màn hình](images/craft-wood-texture.png)
+    ![screenshot](images/craft-wood-texture.png)
 
-+ Thêm số lượng tài nguyên của bạn sẽ có trong `kho` của bạn để bắt đầu.
++ Add the number of your resource that should be in your `inventory` to start with.
     
-    ![ảnh chụp màn hình](images/craft-wood-inventory.png)
+    ![screenshot](images/craft-wood-inventory.png)
 
-+ Cuối cùng, thêm chìa khóa mà bạn sẽ nhấn để đặt gỗ trên thế giới.
++ Finally, add the key that you'll press to place wood in the world.
     
-    ![ảnh chụp màn hình](images/craft-wood-placekey.png)
+    ![screenshot](images/craft-wood-placekey.png)
 
-+ Chạy dự án của bạn để kiểm tra nó. Bạn sẽ thấy rằng bây giờ bạn có tài nguyên 'gỗ' mới trong kho của mình.
++ Run your project to test it. You'll see that you now have a new 'wood' resource in your inventory.
     
-    ![ảnh chụp màn hình](images/craft-wood-test.png)
+    ![screenshot](images/craft-wood-test.png)
 
-+ Không có gỗ trong thế giới của bạn! Để khắc phục điều này, hãy nhấp vào tệp `main.txt` của bạn và tìm hàm có tên là `createdRandomWorld ()`.
++ There's no wood in your world! To fix this, click on your `main.py` file and find the function called `generateRandomWorld()`.
     
-    ![ảnh chụp màn hình](images/craft-wood-random1.png)
+    ![screenshot](images/craft-wood-random1.png)
     
-    Mã này tạo một số ngẫu nhiên trong khoảng từ 0 đến 10 và sử dụng số đó để quyết định tài nguyên nào sẽ được đặt:
+    This code generates a random number between 0 and 10, and uses the number to decide which resource to place:
     
-    + 1 hoặc 2 = nước
-    + 3 hoặc 4 = cỏ
-    + bất cứ điều gì khác = DIRT
+    + 1 or 2 = water
+    + 3 or 4 = grass
+    + anything else = DIRT
 
-+ Thêm mã này để thêm gỗ vào thế giới của bạn bất cứ khi nào `ngẫu nhiên` là 5.
++ Add this code to add wood to your world whenever the `randomNumber` is 5.
     
-    ![ảnh chụp màn hình](images/craft-wood-random2.png)
+    ![screenshot](images/craft-wood-random2.png)
 
-+ Kiểm tra dự án của bạn một lần nữa. Lần này, bạn sẽ thấy một số gỗ xuất hiện trong thế giới của bạn.
++ Test your project again. This time, you should see some wood appear in your world.
     
-    ![ảnh chụp màn hình](images/craft-wood-test2.png)
+    ![screenshot](images/craft-wood-test2.png)
