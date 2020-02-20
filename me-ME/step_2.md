@@ -1,23 +1,23 @@
-## Igranje igre
+## Playing the game
 
-+ Otvori ovaj trinket: [rpf.io/codecraft-on](http://rpf.io/codecraft-on){:target="_blank"}.
++ Open this trinket: [rpf.io/codecraft-on](http://rpf.io/codecraft-on){:target="_blank"}.
 
-+ Koristi tastere W, A, S i D za pomjeranje igrača po svijetu koji je pun različitih resursa (zemlje, trave i vode).
++ Use the WASD keys to move your player around the world, which is full of different resources (dirt, grass and water).
     
     ![screenshot](images/craft-move.png)
 
-+ Možeš da pritisneš taster za razmak za sakupljanje resursa. Pokupi nekoliko komada od svake vrste resursa i vidjećeš da su dodati u tvoj inventar.
++ You can press the spacebar to collect resources. Pick up a few of each type of resource, and you'll see them added to your inventory.
     
     ![screenshot](images/craft-pickup.png)
 
-+ Pritisni brojeve od 1 do 3 da postaviš resurse na mapu. Na primjer, pritisni 3 da postaviš vodu na mapu. Ovo će funkcionisati samo ako imaš vodu u svom inventaru.
++ Press the number keys (1 to 3) to place a resource on the map. For example, press 3 to place some water on the map. This will only work if you have some water in your inventory.
     
     ![screenshot](images/craft-place-water.png)
 
-+ Možeš da izradiš elemenat tako što ćeš pritisnuti taster prikazan u meniju. Izrađivanje znači spajanje elemenata koje već imaš u svom inventaru kako bi napravio/napravila nove. Probaj da pritisneš taster 'r' kako bi izradio/izradila novu ciglu (to je moguće samo ako imaš dvije zemlje i jednu vodu u svom inventaru).
++ You can craft an item by pressing the key displayed in the menu. Crafting means combining items you already have in your inventory to create new ones. Try pressing the 'r' key to craft a new brick (as long as you have 2 dirt and 1 water in your inventory).
     
     ![screenshot](images/craft-craft-brick.png)
 
-+ Zatim pritisni taster '4' da postaviš cigle koje si izradio/izradila.
++ You can then press they '4' key to place your crafted bricks.
     
     ![screenshot](images/craft-place-brick.png)
