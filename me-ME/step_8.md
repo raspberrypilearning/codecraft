@@ -1,39 +1,39 @@
-## Izrada dasaka od drva
+## Crafting planks from wood
 
-Napravimo novi resurs, dasku, koja može biti izrađena od drva.
+Let's create a new plank resource that be crafted from wood.
 
-+ Prvo dodaj u svoju igru novu promjenljivu `DASKA`.
++ First, add a new `PLANK` variable to your game.
     
     ![screenshot](images/craft-plank-const.png)
 
-+ Dodaj novu promjenljivu `DASKA` u svoju igru.
++ Add a new `PLANK` variable to your game.
     
     ![screenshot](images/craft-plank-resources.png)
 
-+ Resursu daj naziv `'daska'`.
++ Name the resource `'plank'`.
     
     ![screenshot](images/craft-plank-names.png)
 
-+ Resursu `DASKA` dodijeli sliku. Projekat već sadrži sliku `plank.gif`, ali možeš da napraviš sopstvenu sliku ako želiš.
++ Give your `PLANK` resource an image. The project already contains a `plank.gif` image, but you can create your own if you prefer.
     
     ![screenshot](images/craft-plank-textures.png)
 
-+ Dodaj daske u svoj inventar.
++ Add planks to your inventory.
     
     ![screenshot](images/craft-plank-inventory.png)
 
-+ Odredi taster za postavljanje dasaka.
++ Set a key for placing planks.
     
     ![screenshot](images/craft-plank-placekeys.png)
 
-+ S obzirom na to da ovaj resurs može biti izrađen od drugih resursa, treba da definišeš pravilo za izradu: da daska može biti izrađena od tri pločice drveta. Dodaj ovaj kôd u svoj rječnik `izrada`.
++ As this resource can be crafted, you need to create a crafting rule, which is that a plank can be made from 3 wood tiles. Add this code to the `crafting` dictionary.
     
     ![screenshot](images/craft-plank-crafting.png)
 
-+ Na kraju, treba da odrediš taster za izradu novih dasaka.
++ Finally, you need to set a key for crafting new planks.
     
     ![screenshot](images/craft-plank-craftkeys.png)
 
-+ Da isprobaš svoj novi resurs - dasku, sakupi nekoliko pločica drveta i od njih izradi daske. Zatim postavi nove daske u svoj svijet.
++ To test your new plank resource, gather up a few wood tiles and then craft some planks from your wood. You can then place your new planks in your world.
     
     ![screenshot](images/craft-plank-test.png)
