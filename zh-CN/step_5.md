@@ -1,8 +1,8 @@
 \--- challenge \---
 
-## 挑战：更改你的世界规模
+## Challenge: Change your world size
 
-您可以更改` MAPWIDTH的值吗`和` MAPHEIGHT `变量来改变世界的大小？
+Can you change the values of your `MAPWIDTH` and `MAPHEIGHT` variables to change the size of the world?
 
 ![screenshot](images/craft-mapsize.png)
 
