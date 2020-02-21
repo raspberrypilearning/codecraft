@@ -138,40 +138,40 @@ def rysujZasob(y, x):
   global rysowanie
       # rysuj tylko gdy nic innego nie jest obecnie rysowane
   if rysowanie == False:
-    #something is now being drawn
+    # coś się obecnie rysowane
     rysowanie = True
-    #draw the resource at that position in the tilemap, using the correct image
+    # narysuj zasób w zadanej pozycji na mapie używając odpowiedniego obrazka
     rendererT.goto( (y * ROZMIARKLOCKA) + 20, height - (x * ROZMIARKLOCKA) - 20 )
-    #draw tile with correct texture
-    texture = textures[world[y][x]]
-    rendererT.shape(texture)
+    # rysuj blok używając odpowiedniej tekstury
+    tekstura = tekstury[swiat[y][x]]
+    rendererT.shape(tekstura)
     rendererT.stamp()
-    if playerX == y and playerY == x:
-      rendererT.shape(playerImg)
+    if graczX == y and graczY == x:
+      rendererT.shape(obrazGracz)
       rendererT.stamp()
     screen.update()
-    #nothing is now being drawn
-    drawing = False
+    # obecnie nic już się nie rysuje
+    rysowanie = False
     
-#draws the world map
-def drawWorld():
-  #loop through each row
-  for row in range(MAPHEIGHT):
-    #loop through each column in the row
-    for column in range(MAPWIDTH):
-      #draw the tile at the current position
-      drawResource(column, row)
+# rysuj świat
+def rysujSwiat():
+      # pętla po wierszach
+  for wiersz in range(WYSOKOSCMAPY):
+            # pętla po kolumnach każdego wiersza
+    for kolumna in range(SZEROKOSCMAPY):
+                  # rysuj blok w bieżącej pozycji
+      rysujZasob(kolumna, wiersz)
 
-#draws the inventory to the screen
-def drawInventory():
-  #this variable stops other stuff being drawn
-  global drawing
-  #only draw if nothing else is being drawn
-  if drawing == False:
-    #something is now being drawn
-    drawing = True
-    #use a rectangle to cover the current inventory
-    rendererT.color(BACKGROUNDCOLOUR)
+# rysuj ekwipunek na ekranie
+def rysujEkwipunek():
+      # ta zmienna wstrzymuje rysowanie innych elementów
+  global rysowanie
+      # rysuj tylko gdy nic innego nie jest obecnie rysowane
+  if rysowanie == False:
+    # coś się obecnie rysowane
+    rysowanie = True
+    # przykryj obecny ekwipunek prostokątem
+    rendererT.color(KOLORTLA)
     rendererT.goto(0,0)
     rendererT.begin_fill()
     #rendererT.setheading(0)
@@ -181,73 +181,73 @@ def drawInventory():
       rendererT.forward(width)
       rendererT.right(90)
     rendererT.end_fill()
-    rendererT.color('black')
-    #display the 'place' and 'craft' text
+    rendererT.color('czarny')
+    # wyświetl tekst „wstaw” i „buduj”
     for i in range(1,num_rows+1):
-      rendererT.goto(20, (height - (MAPHEIGHT * TILESIZE)) - 20 - (i * 100))
-      rendererT.write("place")
-      rendererT.goto(20, (height - (MAPHEIGHT * TILESIZE)) - 40 - (i * 100))
-      rendererT.write("craft")
-    #set the inventory position
+      rendererT.goto(20, (height - (WYSOKOSCMAPY * ROZMIARKLOCKA)) - 20 - (i * 100))
+      rendererT.write("wstaw")
+      rendererT.goto(20, (height - (WYSOKOSCMAPY * ROZMIARKLOCKA)) - 40 - (i * 100))
+      rendererT.write("buduj")
+            # ustaw pozycję ekwipunku
     xPosition = 70
-    yPostition = height - (MAPHEIGHT * TILESIZE) - 80
-    itemNum = 0
-    for i, item in enumerate(resources):
-      #add the image
+    yPostition = height - (WYSOKOSCMAPY * ROZMIARKLOCKA) - 80
+    numerElementu = 0
+    for i, element in enumerate(zasoby):
+      # dodaj obrazek
       rendererT.goto(xPosition, yPostition)
-      rendererT.shape(textures[item])
+      rendererT.shape(tekstury[element])
       rendererT.stamp()
-      #add the number in the inventory
-      rendererT.goto(xPosition, yPostition - TILESIZE)
-      rendererT.write(inventory[item])
-      #add key to place
-      rendererT.goto(xPosition, yPostition - TILESIZE - 20)
-      rendererT.write(placekeys[item])
-      #add key to craft
-      if crafting.get(item) != None:
-        rendererT.goto(xPosition, yPostition - TILESIZE - 40)
-        rendererT.write(craftkeys[item])     
-      #move along to place the next inventory item
+      # dodaj numer do ekwipunku
+      rendererT.goto(xPosition, yPostition - ROZMIARKLOCKA)
+      rendererT.write(ekwipunek[element])
+      # dodaj klawisz wstawiania
+      rendererT.goto(xPosition, yPostition - ROZMIARKLOCKA - 20)
+      rendererT.write(klawiszeumieszczania[element])
+      # dodaj klawisz do budowania
+      if budowanie.get(element) != None:
+        rendererT.goto(xPosition, yPostition - ROZMIARKLOCKA - 40)
+        rendererT.write(klawiszetworzenia[element])     
+      # przesuń się, aby wstawić następny element ekwipunku
       xPosition += 50
-      itemNum += 1
-      #drop down to the next row every 10 items
-      if itemNum % INVWIDTH == 0:
+      numerElementu += 1
+      # przesuń się do kolejnego wiersza po każdym 10 elemencie
+      if NumerElementu % SZEROKOSCEKWIPUNKU == 0:
         xPosition = 70
-        itemNum = 0
-        yPostition -= TILESIZE + 80
-    drawing = False
+        numerElementu = 0
+        yPostition -= ROZMIARKLOCKA + 80
+    rysowanie = False
 
-#generate the instructions, including crafting rules
-def generateInstructions():
-  instructions.append('Crafting rules:')
-  #for each resource that can be crafted...
-  for rule in crafting:
-    #create the crafting rule text
-    craftrule = names[rule] + ' = '
-    for resource, number in crafting[rule].items():
-      craftrule += str(number) + ' ' + names[resource] + ' '
-    #add the crafting rule to the instructions
-    instructions.append(craftrule)
-  #display the instructions
+# wygeneruj instrukcje, w tym zasady tworzenia
+def generujInstrukcje():
+  instructions.append('Zasady budowania:')
+  # dla każdego zasobu, który można zbudować...
+  for regula in budowanie:
+    # utwórz tekst dla reguły tworzenia
+    regulabudowania = nazwy[regula] + ' = '
+    for zasob, liczba in budowanie[regula].elementy():
+      regulabudowania += str(liczba) + ' ' + nazwy[zasob] + ' '
+    # dodaj regułę tworzenia do 'instructions'
+    instructions.append(regulabudowania)
+  # wyświetl instrukcje
   yPos = height - 20
-  for item in instructions:
-    rendererT.goto( MAPWIDTH*TILESIZE + 40, yPos)
-    rendererT.write(item)
+  for element in instrukcje:
+    rendererT.goto( SZEROKOSCMAPY*ROZMIARKLOCKA + 40, yPos)
+    rendererT.write(element)
     yPos-=20
 
-#generate a random world
-def generateRandomWorld():
-  #loop through each row
-  for row in range(MAPHEIGHT):
-    #loop through each column in that row
-    for column in range(MAPWIDTH):
-      #pick a random number between 0 and 10
-      randomNumber = random.randint(0,10)
-      #WATER if the random number is a 1 or a 2
-      if randomNumber in [1,2]:
-        tile = WATER
-      #GRASS if the random number is a 3 or a 4
-      elif randomNumber in [3,4]:
+# wygeneruj losowy świat
+def generujLosowySwiat():
+      # pętla po wierszach
+  for wiersz in range(WYSOKOSCMAPY):
+    # pętla po kolumnach każdego wiersza
+    for kolumna in range(SZEROKOSCMAPY):
+      # losuj liczbę między 0, a 10
+      losowaLiczba = random.randint(0,10)
+      # WATER jeśli losowa liczba to 1 lub 2
+      if losowaLiczba in [1,2]:
+        klocek = WODA
+      # GRASS jeśli losowa liczba to 3 lub 4
+      elif losowaLiczba in [3,4]:
         tile = GRASS
       #otherwise it's DIRT
       else:
@@ -284,10 +284,10 @@ screen.bgcolor(BACKGROUNDCOLOUR)
 screen.listen()
 
 #register the player image  
-screen.register_shape(playerImg)
-#register each of the resource images
-for texture in textures.values():
-  screen.register_shape(texture)
+screen.register_shape(obrazGracz)
+#zarejestruj każdy z obrazów zasobów
+for tekstura in tekstury.values():
+  screen.register_shape(tekstura)
 
 #create another turtle to do the graphics drawing
 rendererT = turtle.Turtle()
@@ -297,23 +297,23 @@ rendererT.speed(0)
 rendererT.setheading(90)
 
 #create a world of random resources.
-world = [ [DIRT for w in range(MAPHEIGHT)] for h in range(MAPWIDTH) ]
+swiat = [ [ZIEMIA for w in range(WYSOKOSCMAPY)] for h in range(SZEROKOSCMAPY) ]
 
 #map the keys for moving and picking up to the correct functions.
-screen.onkey(moveUp, 'w')
-screen.onkey(moveDown, 's')
-screen.onkey(moveLeft, 'a')
-screen.onkey(moveRight, 'd')
-screen.onkey(pickUp, 'space')
+screen.onkey(przesunGora, 'w')
+screen.onkey(przesunDol, 's')
+screen.onkey(przesunLewo, 'a')
+screen.onkey(przesunPrawo, 'd')
+screen.onkey(podnies, 'spacja')
 
 #set up the keys for placing and crafting each resource
-bindPlacingKeys()
-bindCraftingKeys()
+polaczKlawiszeUmieszczania()
+polaczKlawiszeTworzenia()
 
 #these functions are defined above
-generateRandomWorld()
-drawWorld()
-drawInventory()
-generateInstructions()
+generujLosowySwiat()
+rysujSwiat()
+rysujEkwipunek()
+generujInstrukcje()
 
 
