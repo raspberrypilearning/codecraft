@@ -248,69 +248,69 @@ def generujLosowySwiat():
         klocek = WODA
       # GRASS jeśli losowa liczba to 3 lub 4
       elif losowaLiczba in [3,4]:
-        tile = GRASS
-      #otherwise it's DIRT
+        klocek = TRAWA
+      # w pozostałych przypadkach to DIRT
       else:
-        tile = DIRT
-      #set the position in the tilemap to the randomly chosen tile
-      world[column][row] = tile
+        klocek = ZIEMIA
+      # losuj pozycję na mapie
+      swiat[kolumna][wiersz] = klocek
 
 #---
-#Code starts running here
+# kod zaczyna działać tutaj
 #---
 
-#import the modules and variables needed
+# importuj wymagane moduły i zmienne
 import turtle
 import random
 from variables import *
 from math import ceil
 
-TILESIZE = 20
-#the number of inventory resources per row
-INVWIDTH = 8
-drawing = False
+ROZMIARKLOCKA = 20
+# liczba zasobów ekwipunku w wierszu
+SZEROKOSCEKWIPUNKU = 8
+rysowanie = False
 
-#create a new 'screen' object
-screen = turtle.Screen()
-#calculate the width and height
-width = (TILESIZE * MAPWIDTH) + max(200,INVWIDTH * 50)
-num_rows = int(ceil((len(resources) / INVWIDTH)))
-inventory_height =  num_rows * 120 + 40
-height = (TILESIZE * MAPHEIGHT) + inventory_height
+# utwórz nowy obiekt „screen”
+ekran = turtle.Screen()
+# oblicz szerokość i wysokość
+szerokosc = (ROZMIARKLOCKA * SZEROKOSCMAPY) + max(200,SZEROKOSCEKWIPUNKU * 50)
+num_rows = int(ceil((len(zasoby) / SZEROKOSCEKWIPUNKU)))
+wysokosc_ekwipunku =  num_rows * 120 + 40
+wysokosc = (ROZMIARKLOCKA * WYSOKOSCMAPY) + wysokosc_ekwipunku
 
 screen.setup(width, height)
 screen.setworldcoordinates(0,0,width,height)
-screen.bgcolor(BACKGROUNDCOLOUR)
+screen.bgcolor(KOLORTLA)
 screen.listen()
 
-#register the player image  
+# zarejestruj obrazek gracza  
 screen.register_shape(obrazGracz)
 #zarejestruj każdy z obrazów zasobów
 for tekstura in tekstury.values():
   screen.register_shape(tekstura)
 
-#create another turtle to do the graphics drawing
+# utwórz kolejnego żółwia do rysowania grafiki
 rendererT = turtle.Turtle()
 rendererT.hideturtle()
 rendererT.penup()
 rendererT.speed(0)
 rendererT.setheading(90)
 
-#create a world of random resources.
+# utwórz świat z losowanych zasobów
 swiat = [ [ZIEMIA for w in range(WYSOKOSCMAPY)] for h in range(SZEROKOSCMAPY) ]
 
-#map the keys for moving and picking up to the correct functions.
+# przypisz klawisze ruchów i podnoszenia do odpowiednich funkcji
 screen.onkey(przesunGora, 'w')
 screen.onkey(przesunDol, 's')
 screen.onkey(przesunLewo, 'a')
 screen.onkey(przesunPrawo, 'd')
 screen.onkey(podnies, 'spacja')
 
-#set up the keys for placing and crafting each resource
+# ustaw klawisze do umieszczania i tworzenia każdego zasobu
 polaczKlawiszeUmieszczania()
 polaczKlawiszeTworzenia()
 
-#these functions are defined above
+# te funkcje są zdefiniowane powyżej
 generujLosowySwiat()
 rysujSwiat()
 rysujEkwipunek()
