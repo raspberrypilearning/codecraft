@@ -5,143 +5,143 @@
 #############
 
 #---
-#Game functions
+# funkcje gry
 #---
 
-#moves the player left 1 tile.
-def moveLeft():
-  global playerX
-  if(drawing == False and playerX > 0):
-    oldX = playerX
-    playerX -= 1
-    drawResource(oldX, playerY)
-    drawResource(playerX, playerY)
+# przesuń gracza o 1 pole w lewo.
+def przesunLewo():
+  global graczX
+  if(rysowanie == False and graczX > 0):
+    staryX = graczX
+    graczX -= 1
+    rysujZasob(staryX, graczY)
+    rysujZasob(graczX, graczY)
     
-#moves the player right 1 tile.
-def moveRight():
-  global playerX, MAPWIDTH
-  if(drawing == False and playerX < MAPWIDTH - 1):
-    oldX = playerX
-    playerX += 1
-    drawResource(oldX, playerY)
-    drawResource(playerX, playerY)
+# przesuń gracza o 1 pole w prawo.
+def przesunPrawo():
+  global graczX, SZEROKOSCMAPY
+  if(rysowanie == False and graczX < SZEROKOSCMAPY - 1):
+    staryX = graczX
+    graczX += 1
+    rysujZasob(staryX, graczY)
+    rysujZasob(graczX, graczY)
     
-#moves the player up 1 tile.
-def moveUp():
-  global playerY
-  if(drawing == False and playerY > 0):
-    oldY = playerY
-    playerY -= 1
-    drawResource(playerX, oldY)
-    drawResource(playerX, playerY)
+# przesuń gracza o 1 pole do góry.
+def przesunGora():
+  global graczY
+  if(rysowanie == False and graczY > 0):
+    staryY = graczY
+    graczY -= 1
+    rysujZasob(graczX, staryY)
+    rysujZasob(graczX, graczY)
     
-#moves the player down 1 tile.
-def moveDown():
-  global playerY, MAPHEIGHT
-  if(drawing == False and playerY < MAPHEIGHT - 1):
-    oldY = playerY
-    playerY += 1
-    drawResource(playerX, oldY)
-    drawResource(playerX, playerY)
+# przesuń gracza o 1 pole w dół.
+def przesunDol():
+  global graczY, WYSOKOSCMAPY
+  if(rysowanie == False and graczY < WYSOKOSCMAPY - 1):
+    staryY = graczY
+    graczY += 1
+    rysujZasob(graczX, staryY)
+    rysujZasob(graczX, graczY)
     
-#picks up the resource at the player's position.
-def pickUp():
-  global playerX, playerY
-  drawing = True
-  currentTile = world[playerX][playerY]
-  #if the user doesn't already have too many...
-  if inventory[currentTile] < MAXTILES:
-    #player now has 1 more of this resource
-    inventory[currentTile] += 1
-    #the player is now standing on dirt
-    world[playerX][playerY] = DIRT
-    #draw the new DIRT tile
-    drawResource(playerX, playerY)
-    #redraw the inventory with the extra resource.
-    drawInventory()
-    #drawPlayer()
+# podnieś zasób z miejsca, w którym znajduje się gracz.
+def podnies():
+  global graczX, graczY
+  rysowanie = True
+  aktualnyKlocek = swiat[graczX][graczY]
+  # o ile gracz nie ma już zbyt wielu...
+  if ekwipunek[aktualnyKlocek] < LIMITZASOBOW:
+    # gracz ma o 1 sztukę zasobu więcej
+    ekwipunek[aktualnyKlocek] += 1
+    # gracz stoi na ziemi
+    swiat[graczX][graczY] = ZIEMIA
+    # rysuj nowy blok ZIEMIA
+    rysujZasob(graczX, graczY)
+    # przerysuj ekwipunek dodając nowy zasób
+    rysujEkwipunek()
+    #rysujGracz()
 
-#place a resource at the player's current position
-def place(resource):
-  print('placing: ', names[resource])
-  #only place if the player has some left...
-  if inventory[resource] > 0:
-    #find out the resourcee at the player's current position
-    currentTile = world[playerX][playerY]
-    #pick up the resource the player's standing on
-    #(if it's not DIRT)
-    if currentTile is not DIRT:
-      inventory[currentTile] += 1
-    #place the resource at the player's current position
-    world[playerX][playerY] = resource
-    #add the new resource to the inventory
-    inventory[resource] -= 1
-    #update the display (world and inventory)
-    drawResource(playerX, playerY)
-    drawInventory()
-    #drawPlayer()
-    print('   Placing', names[resource], 'complete')
-  #...and if they have none left...
+# umieść zasób w obecnej pozycji gracza
+def miejsce(zasob):
+  print('umieszczanie: ', nazwy[zasob])
+  # umieść TYLKO jeśli gracz ma zasób w ekwipunku
+  if ekwipunek[zasob] > 0:
+    # sprawdź na jakim zasobie znajduje się gracz
+    aktualnyKlocek = swiat[graczX][graczY]
+    # podnieś zasób, na którym stoi gracz
+    # (jeśli to nie jest ZIEMIA)
+    if aktualnyKlocek nie jest ZIEMIA:
+      ekwipunek[aktualnyKlocek] += 1
+    # umieść wybrany zasób w bieżącej pozycji gracza
+    swiat[graczX][graczY] = zasob
+    # usuń zasób z ekwipunku
+    ekwipunek[zasob] -= 1
+    # zaktualizuj planszę (świat i ekwipunek)
+    rysujZasob(graczX, graczY)
+    rysujEkwipunek()
+    #rysujGracz()
+    print('     Umieszczanie', nazwy[zasob], 'zakończone')
+  # ...a gdy już nic nie zostało...
   else:
-    print('   You have no', names[resource], 'left')
+    print('     Nie masz już więcej', nazwy[zasob])
 
-#craft a new resource
-def craft(resource):
-  print('Crafting: ', names[resource])
-  #if the resource can be crafted...
-  if resource in crafting:
-    #keeps track of whether we have the resources
-    #to craft this item
-    canBeMade = True
-    #for each item needed to craft the resource
-    for i in crafting[resource]:
-      #...if we don't have enough...
-      if crafting[resource][i] > inventory[i]:
-      #...we can't craft it!
-        canBeMade = False
+# budowanie nowego zasobu
+def budowanie(zasob):
+  print('Budowanie:', nazwy[zasob])
+      # o ile zasób może być zbudowany...
+  if zasob in budowanie:
+    # sprawdza czy mamy odpowiednie zasoby
+            # żeby zbudować nowy zasób
+    mozeBycUtworzony = True
+            # dla każdego z wymaganych zasobów
+    for i in budowanie[zasob]:
+                  # ...jeśli mamy ich za mało...
+      if budowanie[zasob][i] > ekwipunek[i]:
+                      # ...nie możemy budować!
+        mozeBycUtworzony = False
         break
-    #if we can craft it (we have all needed resources)
-    if canBeMade == True:
-      #take each item from the inventory
-      for i in crafting[resource]:
-        inventory[i] -= crafting[resource][i]
-      #add the crafted item to the inventory
-      inventory[resource] += 1
-      print('   Crafting', names[resource], 'complete')
-    #...otherwise the resource can't be crafted...
+            # jeśli możemy zbudować (czyli mamy wszystkie potrzebne zasoby)
+    if mozeBycUtworzony == True:
+                  # weź odpowiednią ilość każdego z potrzebnych zasobów z ekwipunku
+      for i in budowanie[zasob]:
+        ekwipunek[i] -= budowanie[zasob][i]
+                  # dodaj zbudowany zasób do ekwipunku
+      ekwipunek[zasob] += 1
+      print('   Budowanie', nazwy[zasob], 'ukończone')
+            # ...w przeciwnym razie nie da się zbudować nowego zasobu...
     else:
-      print('   Can\'t craft', names[resource])
-    #update the displayed inventory
-    drawInventory()
+      print('   Nie można zbudować', nazwy[zasob])
+            # zaktualizuje wyświetlany ekwipunek
+    rysujEkwipunek()
 
-#creates a function for placing each resource
-def makeplace(resource):
-  return lambda: place(resource)
+# tworzy funkcję do umieszczania zasobu
+def miejscetworzenia(zasob):
+  return lambda: miejsce(zasob)
 
-#attaches a 'placing' function to each key press
-def bindPlacingKeys():
-  for k in placekeys:
-    screen.onkey(makeplace(k), placekeys[k])
+# łączy wciśnięcie klawisza z funkcją „umieszczającą”
+def polaczKlawiszeUmieszczania():
+  for k in klawiszeumieszczania:
+    screen.onkey(miejscetworzenia(k), klawiszeumieszczania[k])
 
-#creates a function for crafting each resource
-def makecraft(resource):
-  return lambda: craft(resource)
+# tworzy funkcję do budowania zasobu
+def tworzenie(zasob):
+  return lambda: utworz(zasob)
 
-#attaches a 'crafting' function to each key press
-def bindCraftingKeys():
-  for k in craftkeys:
-    screen.onkey(makecraft(k), craftkeys[k])
+# łączy wciśnięcie klawisza z funkcją „budującą”
+def polaczKlawiszeTworzenia():
+  for k in klawiszetworzenia:
+    screen.onkey(tworzenie(k), klawiszetworzenia[k])
 
-#draws a resource at the position (y,x)
-def drawResource(y, x):
-  #this variable stops other stuff being drawn
-  global drawing
-  #only draw if nothing else is being drawn
-  if drawing == False:
+# rysuje zasób w pozycji (y, x)
+def rysujZasob(y, x):
+      # ta zmienna wstrzymuje rysowanie innych elementów
+  global rysowanie
+      # rysuj tylko gdy nic innego nie jest obecnie rysowane
+  if rysowanie == False:
     #something is now being drawn
-    drawing = True
+    rysowanie = True
     #draw the resource at that position in the tilemap, using the correct image
-    rendererT.goto( (y * TILESIZE) + 20, height - (x * TILESIZE) - 20 )
+    rendererT.goto( (y * ROZMIARKLOCKA) + 20, height - (x * ROZMIARKLOCKA) - 20 )
     #draw tile with correct texture
     texture = textures[world[y][x]]
     rendererT.shape(texture)
