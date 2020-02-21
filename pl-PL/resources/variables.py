@@ -1,75 +1,75 @@
 #!/bin/python3
 
-#Game variables that can be changed!
+# zmienne gry, które można modyfikować!
 
-#game background colour.
-BACKGROUNDCOLOUR = 'white'
+# kolor tła gry
+KOLORTLA = 'bialy'
 
-#map variables.
-MAXTILES  = 20
-MAPWIDTH  = 10
-MAPHEIGHT = 10
+# zmienne mapy
+LIMITZASOBOW  = 20
+SZEROKOSCMAPY  = 10
+WYSOKOSCMAPY = 10
 
 # zmienne reprezentujące różne zasoby
-DIRT    = 0
-GRASS   = 1
-WATER   = 2
-BRICK   = 3
+ZIEMIA    = 0
+TRAWA   = 1
+WODA   = 2
+CEGLA   = 3
 
-#a list of all game resources.
-resources = [DIRT,GRASS,WATER,BRICK]
+#lista wszystkich zasobów gry.
+zasoby = [ZIEMIA,TRAWA,WODA,CEGLA]
 
-#the names of the resources.
-names = {
-  DIRT    : 'dirt',
-  GRASS   : 'grass',
-  WATER   : 'water',
-  BRICK   : 'brick'
+#nazwy zasobów.
+nazwy = {
+  ZIEMIA    : 'ziemia',
+  TRAWA   : 'trawa',
+  WODA   : 'woda',
+  CEGLA   : 'cegla'
 }
 
-#a dictionary linking resources to images.
-textures = {
-  DIRT    : 'dirt.gif',
-  GRASS   : 'grass.gif',
-  WATER   : 'water.gif',
-  BRICK   : 'brick.gif'
+#słownik łączący zasoby z obrazami.
+tekstury = {
+  ZIEMIA    : 'dirt.gif',
+  TRAWA   : 'grass.gif',
+  WODA   : 'water.gif',
+  CEGLA   : 'brick.gif'
 }
 
-#the number of each resource the player has.
-inventory = {
-  DIRT    : 10,
-  GRASS   : 10,
-  WATER   : 10,
-  BRICK   : 0
+#ilość zasobów posiadanych przez gracza.
+ekwipunek = {
+  ZIEMIA    : 10,
+  TRAWA   : 10,
+  WODA   : 10,
+  CEGLA   : 0
 }
 
-#the player image.
-playerImg = 'player.gif'
+#obrazek gracza.
+graczObraz = 'player.gif'
 
-#the player position.
-playerX = 0
-playerY = 0
+#pozycja gracza.
+graczX = 0
+graczY = 0
 
-#rules to make new resources.
-crafting = {
-  BRICK    : { WATER : 1, DIRT : 2 }
+#zasady tworzenia nowych zasobów.
+budowanie = {
+  CEGLA    : { WODA : 1, ZIEMIA : 2 }
 }
 
-#keys for placing resources.
-placekeys = {
-  DIRT  : '1',
-  GRASS : '2',
-  WATER : '3',
-  BRICK : '4'
+#klawisze do umieszczania zasobów.
+klawiszeumieszczania = {
+  ZIEMIA  : '1',
+  TRAWA : '2',
+  WODA : '3',
+  CEGLA : '4'
 }
 
-#keys for crafting tiles.
-craftkeys = {
-  BRICK : 'r'
+#klawisze do tworzenia zasobów.
+klawiszebudowania = {
+  CEGLA : 'r'
 }
 
-#game instructions that are displayed.
-instructions =  [
+#wyświetlane instrukcje gry.
+instrukcje =  [
   'Instrukcje:',
   'Ruchy - WSAD'
 ]
