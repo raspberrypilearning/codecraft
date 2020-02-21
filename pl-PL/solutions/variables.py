@@ -3,97 +3,97 @@
 # zmienne gry, które można modyfikować!
 
 # kolor tła gry
-BACKGROUNDCOLOUR = 'lightblue'
+KOLORTLA = 'jasnoniebieski'
 
 # zmienne mapy
-MAXTILES  = 40
-MAPWIDTH  = 20
-MAPHEIGHT = 15
+LIMITZASOBOW  = 40
+SZEROKOSCMAPY  = 20
+WYSOKOSCMAPY = 15
 
 # zmienne reprezentujące różne zasoby
-DIRT    = 0
-GRASS   = 1
-WATER   = 2
-BRICK   = 3
-WOOD    = 4
-SAND    = 5
-PLANK   = 6
-GLASS   = 7
+ZIEMIA    = 0
+TRAWA   = 1
+WODA   = 2
+CEGLA   = 3
+DREWNO = 4
+PIASEK    = 5
+DESKA   = 6
+SZKLO   = 7
 
 # lista wszystkich zasobów gry
-resources = [DIRT,GRASS,WATER,BRICK,WOOD,SAND,PLANK,GLASS]
+zasoby = [ZIEMIA,TRAWA,WODA,CEGLA,DREWNO,PIASEK,DESKA,SZKLO]
 
 # nazwy zasobów
-names = {
-  DIRT    : 'dirt',
-  GRASS   : 'grass',
-  WATER   : 'water',
-  BRICK   : 'brick',
-  WOOD    : 'wood',
-  SAND    : 'sand',
-  PLANK   : 'plank',
-  GLASS   : 'glass'
+nazwy = {
+  ZIEMIA    : 'ziemia',
+  TRAWA   : 'trawa',
+  WODA   : 'woda',
+  CEGLA   : 'cegla',
+  DREWNO: 'drewno',
+  PIASEK    : 'piasek',
+  DESKA   : 'deska',
+  SZKLO   : 'szklo'
 }
 
 # słownik łączący zasoby z obrazami
-textures = {
-  DIRT    : 'dirt.gif',
-  GRASS   : 'grass.gif',
-  WATER   : 'water.gif',
-  BRICK   : 'brick.gif',
-  WOOD    : 'wood.gif',
-  SAND    : 'sand.gif',
-  PLANK   : 'plank.gif',
-  GLASS   : 'glass.gif'
+tekstury = {
+  ZIEMIA    : 'dirt.gif',
+  TRAWA   : 'grass.gif',
+  WODA   : 'water.gif',
+  CEGLA   : 'brick.gif',
+  DREWNO    : 'wood.gif',
+  PIASEK    : 'sand.gif',
+  DESKA   : 'plank.gif',
+  SZKLO   : 'glass.gif'
 }
 
 # ilość zasobów posiadanych przez gracza
-inventory = {
-  DIRT    : 10,
-  GRASS   : 10,
-  WATER   : 10,
-  BRICK   : 0,
-  WOOD    : 5,
-  SAND    : 5,
-  PLANK   : 0,
-  GLASS   : 0
+ekwipunek = {
+  ZIEMIA    : 10,
+  TRAWA   : 10,
+  WODA   : 10,
+  CEGLA   : 0,
+  DREWNO    : 5,
+  PIASEK    : 5,
+  DESKA   : 0,
+  SZKLO   : 0
 }
 
 # obrazek gracza
-playerImg = 'player.gif'
+graczObraz = 'player.gif'
 
-#the player position.
-playerX = 0
-playerY = 0
+#pozycja gracza.
+graczX = 0
+graczY = 0
 
 # klawisze do umieszczania zasobów
-placekeys = {
-  DIRT  : '1',
-  GRASS : '2',
-  WATER : '3',
-  BRICK : '4',
-  WOOD  : '5',
-  SAND  : '6',
-  PLANK : '7',
-  GLASS : '8'
+klawiszeumieszczania = {
+  ZIEMIA  : '1',
+  TRAWA : '2',
+  WODA : '3',
+  CEGLA : '4',
+  DREWNO  : '5',
+  PIASEK  : '6',
+  DESKA : '7',
+  SZKLO : '8'
 }
 
 # zasady  tworzenia nowych zasobów
-crafting = {
-  BRICK    : { WATER : 1, DIRT : 2 },
-  PLANK    : { WOOD : 3 },
-  GLASS    : { SAND : 3 }
+budowanie = {
+  CEGLA    : { WODA : 1, ZIEMIA : 2 },
+  DESKA    : { DREWNO : 3 },
+  SZKLO    : { PIASEK : 3 }
 }
 
 # klawisze do tworzenia zasobów
-craftkeys = {
-  BRICK : 'r',
-  PLANK : 'u',
-  GLASS : 'i'
+klawiszebudowania = {
+  CEGLA : 'r',
+  DESKA : 'u',
+  SZKLO : 'i'
 }
 
 # wyświetlane instrukcje gry
-instructions =  [
+instrukcje =  [
   'Instrukcje:',
   'Ruchy - WSAD'
 ]
