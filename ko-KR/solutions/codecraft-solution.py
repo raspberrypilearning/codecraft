@@ -100,21 +100,21 @@ def craft(resource):
       #만들 수 없습니다!
         canBeMade = False
         break
-    #if we can craft it (we have all needed resources)
+    #만약 가공할 수 있다면 수 있다면 (우리가 필요한 자원을 모두 가지고 있는 경우)
     if canBeMade == True:
-      #take each item from the inventory
+      #각 자원을 인벤토리에서 빼냄
       for i in crafting[resource]:
         inventory[i] -= crafting[resource][i]
-      #add the crafted item to the inventory
+      #새 자원을 인벤토리에 추가
       inventory[resource] += 1
-      print('   Crafting', names[resource], 'complete')
-    #...otherwise the resource can't be crafted...
+      print(names[resource], ' 설치 완료')
+    #만약 만들 수 없는 자원이라면
     else:
-      print('   Can\'t craft', names[resource])
-    #update the displayed inventory
+      print(names[resource], ' 를 만들 수 없습니다!')
+    #디스플레이 업데이트(월드 및 인벤토리)
     drawInventory()
 
-#creates a function for placing each resource
+#각 리소스를 배치하기위한 함수 만들기
 def makeplace(resource):
   return lambda: place(resource)
 
@@ -153,13 +153,13 @@ def drawResource(y, x):
     #그리는 중인 것이 없음
     drawing = False
     
-#draws the world map
+#월드 맵을 그림
 def drawWorld():
-  #loop through each row
+  #각 행을 반복
   for row in range(MAPHEIGHT):
-    #loop through each column in the row
+    #해당 행의 각 열을 반복
     for column in range(MAPWIDTH):
-      #draw the tile at the current position
+      #현재 위치에서 타일을 그리기
       drawResource(column, row)
 
 #draws the inventory to the screen
@@ -217,18 +217,18 @@ def drawInventory():
         yPostition -= TILESIZE + 80
     drawing = False
 
-#generate the instructions, including crafting rules
+#게임 플레이 방법과 가공 규칙을 생성
 def generateInstructions():
-  instructions.append('Crafting rules:')
-  #for each resource that can be crafted...
+  instructions.append('가공 규칙:')
+  #만들 수 있는 각 자원 마다 반복
   for rule in crafting:
-    #create the crafting rule text
+    #가공 규칙 텍스트 작성
     craftrule = names[rule] + ' = '
     for resource, number in crafting[rule].items():
       craftrule += str(number) + ' ' + names[resource] + ' '
-    #add the crafting rule to the instructions
+    #게임 방법에 가공 규칙 추가
     instructions.append(craftrule)
-  #display the instructions
+  #규칙을 표시
   yPos = height - 20
   for item in instructions:
     rendererT.goto( MAPWIDTH*TILESIZE + 40, yPos)
