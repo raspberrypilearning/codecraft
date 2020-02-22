@@ -51,13 +51,13 @@ def pickUp():
   currentTile = world[playerX][playerY]
   #만약 플레이어가 과하게 자원을 지니고 있지 않다면...
   if inventory[currentTile] < MAXTILES:
-    #player now has 1 more of this resource
+    #플레이어는 이제 자원을 1개 더 얻음
     inventory[currentTile] += 1
-    #the player is now standing on dirt
+    #플레이어가 흙 위에 서있음
     world[playerX][playerY] = DIRT
-    #draw the new DIRT tile
+    #새로운 흙 타일 그리기
     drawResource(playerX, playerY)
-    #redraw the inventory with the extra resource.
+    #인벤토리 업데이트
     drawInventory()
     #drawPlayer()
 
