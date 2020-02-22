@@ -85,15 +85,15 @@ crafting = {
   GLASS    : { SAND : 3 }
 }
 
-#keys for crafting tiles.
+#タイルを作るキー
 craftkeys = {
   BRICK : 'r',
   PLANK : 'u',
   GLASS : 'i'
 }
 
-#game instructions that are displayed.
+#画面に表示されるゲームの説明
 instructions =  [
-  'Instructions:',
-  'Use WASD to move'
+  '説明:',
+  'プレイヤーを左右上下に移動する場合、WASDキーを押してください'
 ]
