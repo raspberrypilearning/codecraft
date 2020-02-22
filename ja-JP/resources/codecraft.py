@@ -134,15 +134,15 @@ def bindCraftingKeys():
 
 #位置(y,x)のリソースを描画します。
 def drawResource(y, x):
-  #this variable stops other stuff being drawn
+  #この変数は他のものが描画できないようにします
   global drawing
-  #only draw if nothing else is being drawn
+  #他に何も描画されていない場合描画します
   if drawing == False:
-    #something is now being drawn
+    #描画されました。
     drawing = True
-    #draw the resource at that position in the tilemap, using the correct image
+    #正しいイメージを使用して、タイルマップ内のその位置にリソースを描画します
     rendererT.goto( (y * TILESIZE) + 20, height - (x * TILESIZE) - 20 )
-    #draw tile with correct texture
+    #正しいテクスチャーでタイルを描きます
     texture = textures[world[y][x]]
     rendererT.shape(texture)
     rendererT.stamp()
