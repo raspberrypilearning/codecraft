@@ -74,14 +74,14 @@ def place(resource):
       inventory[currentTile] += 1
     #プレーヤーの現在の位置にリソースを置く
     world[playerX][playerY] = resource
-    #add the new resource to the inventory
+    #新しいリソースを持ち物リストに追加します
     inventory[resource] -= 1
-    #update the display (world and inventory)
+    #ゲーム画面を更新(ゲームワールドと持ち物リスト)
     drawResource(playerX, playerY)
     drawInventory()
     #drawPlayer()
-    print('   Placing', names[resource], 'complete')
-  #...and if they have none left...
+    print(u'   配置', names[resource], u'完了')
+  #。。。もし何もなければ
   else:
     print('   You have no', names[resource], 'left')
 
@@ -138,7 +138,7 @@ def drawResource(y, x):
   global drawing
   #他に何も描画されていない場合描画します
   if drawing == False:
-    #描画されました。
+    #何かが描画されます
     drawing = True
     #正しいイメージを使用して、タイルマップ内のその位置にリソースを描画します
     rendererT.goto( (y * TILESIZE) + 20, height - (x * TILESIZE) - 20 )
@@ -150,16 +150,16 @@ def drawResource(y, x):
       rendererT.shape(playerImg)
       rendererT.stamp()
     screen.update()
-    #nothing is now being drawn
+    #何も描画されていません
     drawing = False
     
-#draws the world map
+#ワールドを描く
 def drawWorld():
-  #loop through each row
+  #地図上の行をループします
   for row in range(MAPHEIGHT):
-    #loop through each column in the row
+    #地図上の列をループします
     for column in range(MAPWIDTH):
-      #draw the tile at the current position
+      #現在の位置にタイルを表示します
       drawResource(column, row)
 
 #draws the inventory to the screen
