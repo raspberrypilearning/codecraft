@@ -107,27 +107,27 @@ def craft(resource):
         inventory[i] -= crafting[resource][i]
       #新しいリソースを持ち物リストに追加します
       inventory[resource] += 1
-      print('   Crafting', names[resource], 'complete')
-    #...otherwise the resource can't be crafted...
+      print(u'   作成', names[resource], u'完了')
+    #。。。リソースを作成できない場合
     else:
-      print('   Can\'t craft', names[resource])
-    #update the displayed inventory
+      print(u'   作成できない', names[resource])
+    #表示されている持ち物リストを更新
     drawInventory()
 
-#creates a function for placing each resource
+#各リソースを配置するための関数を作成します
 def makeplace(resource):
   return lambda: place(resource)
 
-#attaches a 'placing' function to each key press
+#各キーに「配置」機能を割り当てます
 def bindPlacingKeys():
   for k in placekeys:
     screen.onkey(makeplace(k), placekeys[k])
 
-#creates a function for crafting each resource
+#リソースを作成する関数を作成する
 def makecraft(resource):
   return lambda: craft(resource)
 
-#attaches a 'crafting' function to each key press
+#各キーに「作成」機能を割り当てます
 def bindCraftingKeys():
   for k in craftkeys:
     screen.onkey(makecraft(k), craftkeys[k])
@@ -210,7 +210,7 @@ def drawInventory():
       #move along to place the next inventory item
       xPosition += 50
       itemNum += 1
-      #drop down to the next row every 10 items
+      #10個のアイテムごとに次の行に移動
       if itemNum % INVWIDTH == 0:
         xPosition = 70
         itemNum = 0
