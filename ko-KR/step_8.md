@@ -10,7 +10,7 @@
     
     ![스크린샷](images/craft-plank-resources.png)
 
-+ Name the resource `'plank'`.
++ 자원의 이름은 `'plank'`으로 지정하세요.
     
     ![스크린샷](images/craft-plank-names.png)
 
@@ -18,22 +18,22 @@
     
     ![스크린샷](images/craft-plank-textures.png)
 
-+ Add planks to your inventory.
++ 인벤토리에 나무판을 아래와 같이 추가하세요.
     
     ![스크린샷](images/craft-plank-inventory.png)
 
-+ Set a key for placing planks.
++ 나무판을 배치하는 키를 설정하세요.
     
     ![스크린샷](images/craft-plank-placekeys.png)
 
-+ As this resource can be crafted, you need to create a crafting rule, which is that a plank can be made from 3 wood tiles. Add this code to the `crafting` dictionary.
++ 이 자원은 가공 할 수 있으므로 세개의 나무 타일로 나무판을 만드는 가공 규칙을 추가 해야 합니다. 이 코드를 `crafting` 딕셔너리에 추가하세요.
     
     ![스크린샷](images/craft-plank-crafting.png)
 
-+ Finally, you need to set a key for crafting new planks.
++ 마지막으로, 나무판을 제작하는 키를 설정하세요.
     
     ![스크린샷](images/craft-plank-craftkeys.png)
 
-+ To test your new plank resource, gather up a few wood tiles and then craft some planks from your wood. You can then place your new planks in your world.
++ 나무판을 테스트하기 위해서는 몇 개의 나무를 모은 다음 나무판을 만들면 됩니다. 이제 새로운 나무판을 월드에 배치 할 수 있습니다.
     
     ![스크린샷](images/craft-plank-test.png)
