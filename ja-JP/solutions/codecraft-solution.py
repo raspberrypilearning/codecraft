@@ -64,7 +64,7 @@ def pickUp():
 #プレーヤーの現在の位置にリソースを置く
 def place(resource):
   print(u'置く', names[resource])
-  #only place if the player has some left...
+  #もしプレイヤーがすでにリソースを持っている場合。。。
   if inventory[resource] > 0:
     #プレイヤーの位置にあるリソースを見ます
     currentTile = world[playerX][playerY]
@@ -83,9 +83,9 @@ def place(resource):
     print(u'   配置', names[resource], u'完了')
   #。。。もし何もなければ
   else:
-    print('   You have no', names[resource], 'left')
+    print(u'   あなたは', names[resource], u'を持っていません')
 
-#craft a new resource
+#新しいリソースを作成
 def craft(resource):
   print('Crafting: ', names[resource])
   #if the resource can be crafted...
@@ -159,18 +159,18 @@ def drawWorld():
   for row in range(MAPHEIGHT):
     #地図上の列をループする
     for column in range(MAPWIDTH):
-      #現在の位置にタイルを描画する
+      #現在の位置にタイルを表示する
       drawResource(column, row)
 
-#draws the inventory to the screen
+#持ち物リストを画面に表示する
 def drawInventory():
-  #this variable stops other stuff being drawn
+  #この変数は他のものを描画しないようにします
   global drawing
-  #only draw if nothing else is being drawn
+  #他に何も描画されていない場合描画します
   if drawing == False:
-    #something is now being drawn
+    #描画中にします
     drawing = True
-    #use a rectangle to cover the current inventory
+    #四角形を使用して持ち物リストをカバーしてください
     rendererT.color(BACKGROUNDCOLOUR)
     rendererT.goto(0,0)
     rendererT.begin_fill()
@@ -182,13 +182,13 @@ def drawInventory():
       rendererT.right(90)
     rendererT.end_fill()
     rendererT.color('black')
-    #display the 'place' and 'craft' text
+    #「場所」と「リソース」の文字を表示する
     for i in range(1,num_rows+1):
       rendererT.goto(20, (height - (MAPHEIGHT * TILESIZE)) - 20 - (i * 100))
-      rendererT.write("place")
+      rendererT.write(u"置く")
       rendererT.goto(20, (height - (MAPHEIGHT * TILESIZE)) - 40 - (i * 100))
-      rendererT.write("craft")
-    #set the inventory position
+      rendererT.write(u"クラフト（作成）")
+    #持ち物リストの位置を設定する
     xPosition = 70
     yPostition = height - (MAPHEIGHT * TILESIZE) - 80
     itemNum = 0
@@ -246,39 +246,39 @@ def generateRandomWorld():
       #WATER if the random number is a 1 or a 2
       if randomNumber in [1,2]:
         tile = WATER
-      #GRASS if the random number is a 3 or a 4
+      #もしランダムに選ばれた数字が3か4だったら草
       elif randomNumber in [3,4]:
         tile = GRASS
-      #WOOD if it's a 5
+      #もしランダムに選ばれた数字が5だったら木
       elif randomNumber == 5:
         tile = WOOD
-      #SAND if it's a 6
+      #もしランダムに選ばれた数字が6だったら木
       elif randomNumber == 6:
         tile = SAND
-      #otherwise it's DIRT
+      #他の数字だったら土
       else:
         tile = DIRT
-      #set the position in the tilemap to the randomly chosen tile
+      #地図上の位置に選ばれたリソースをセットする（置く）
       world[column][row] = tile
 
 #---
-#Code starts running here
+#コードはここから実行を開始します
 #---
 
-#import the modules and variables needed
+#必要なモジュールと変数をインポート
 import turtle
 import random
 from variables import *
 from math import ceil
 
 TILESIZE = 20
-#the number of inventory resources per row
+#各行にあるリソースの数
 INVWIDTH = 8
 drawing = False
 
-#create a new 'screen' object
+#新しい「スクリーン」オブジェクトを作成する
 screen = turtle.Screen()
-#calculate the width and height
+#幅と高さを計算する
 width = (TILESIZE * MAPWIDTH) + max(200,INVWIDTH * 50)
 num_rows = int(ceil((len(resources) / INVWIDTH)))
 inventory_height =  num_rows * 120 + 40
@@ -289,23 +289,23 @@ screen.setworldcoordinates(0,0,width,height)
 screen.bgcolor(BACKGROUNDCOLOUR)
 screen.listen()
 
-#register the player image  
+#プレーヤーの画像を登録する  
 screen.register_shape(playerImg)
-#register each of the resource images
+#各リソースの画像を登録する
 for texture in textures.values():
   screen.register_shape(texture)
 
-#create another turtle to do the graphics drawing
+#グラフィックを描くために別のカメを作成する
 rendererT = turtle.Turtle()
 rendererT.hideturtle()
 rendererT.penup()
 rendererT.speed(0)
 rendererT.setheading(90)
 
-#create a world of random resources.
+#ランダムにリソースが散らばっているワールド（地図）を作成
 world = [ [DIRT for w in range(MAPHEIGHT)] for h in range(MAPWIDTH) ]
 
-#map the keys for moving and picking up to the correct functions.
+#プレイヤーを移動させるキーを設定
 screen.onkey(moveUp, 'w')
 screen.onkey(moveDown, 's')
 screen.onkey(moveLeft, 'a')
