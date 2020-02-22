@@ -1,16 +1,16 @@
 #!/bin/python3
 
-#Game variables that can be changed!
+#게임에 사용되는 변수는 바꿀 수 있습니다.
 
-#game background colour.
+#게임 배경 색깔
 BACKGROUNDCOLOUR = 'lightblue'
 
-#map variables.
+#map 변수
 MAXTILES  = 40
 MAPWIDTH  = 20
 MAPHEIGHT = 15
 
-#variables representing the different resources.
+#자원들에 대한 분류 코드
 DIRT    = 0
 GRASS   = 1
 WATER   = 2
@@ -20,22 +20,22 @@ SAND    = 5
 PLANK   = 6
 GLASS   = 7
 
-#a list of all game resources.
+#게임에서 사용하는 전체 자원의 리스트
 resources = [DIRT,GRASS,WATER,BRICK,WOOD,SAND,PLANK,GLASS]
 
-#the names of the resources.
+#리소스의 이름
 names = {
-  DIRT    : 'dirt',
-  GRASS   : 'grass',
-  WATER   : 'water',
-  BRICK   : 'brick',
-  WOOD    : 'wood',
-  SAND    : 'sand',
-  PLANK   : 'plank',
-  GLASS   : 'glass'
+  DIRT    : '흙 블록',
+  GRASS   : '초원 블록',
+  WATER   : '물 블록',
+  BRICK   : '벽돌 블록',
+  WOOD    : '나무',
+  SAND    : '모래',
+  PLANK   : '나무판',
+  GLASS   : '유리'
 }
 
-#a dictionary linking resources to images.
+#이미지 이름을 담고 있는 딕셔너리
 textures = {
   DIRT    : 'dirt.gif',
   GRASS   : 'grass.gif',
@@ -47,7 +47,7 @@ textures = {
   GLASS   : 'glass.gif'
 }
 
-#the number of each resource the player has.
+#플레이어가 가지고 있는 자원의 수
 inventory = {
   DIRT    : 10,
   GRASS   : 10,
@@ -59,14 +59,14 @@ inventory = {
   GLASS   : 0
 }
 
-#the player image.
+#플레이어 이미지
 playerImg = 'player.gif'
 
-#the player position.
+#플레이어의 위치
 playerX = 0
 playerY = 0
 
-#keys for placing resources.
+#자원 배치 키
 placekeys = {
   DIRT  : '1',
   GRASS : '2',
@@ -78,22 +78,22 @@ placekeys = {
   GLASS : '8'
 }
 
-#rules to make new resources.
+#새로운 자원을 만드는 규칙
 crafting = {
   BRICK    : { WATER : 1, DIRT : 2 },
   PLANK    : { WOOD : 3 },
   GLASS    : { SAND : 3 }
 }
 
-#keys for crafting tiles.
+#제작키
 craftkeys = {
   BRICK : 'r',
   PLANK : 'u',
   GLASS : 'i'
 }
 
-#game instructions that are displayed.
+#표시되는 게임 방법
 instructions =  [
-  'Instructions:',
-  'Use WASD to move'
+  '플레이 방법:',
+  'WASD로 조작'
 ]
