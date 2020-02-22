@@ -207,7 +207,7 @@ def drawInventory():
       if crafting.get(item) != None:
         rendererT.goto(xPosition, yPostition - TILESIZE - 40)
         rendererT.write(craftkeys[item])     
-      #move along to place the next inventory item
+      #移動して次のアイテムを配置
       xPosition += 50
       itemNum += 1
       #10個のアイテムごとに次の行に移動
