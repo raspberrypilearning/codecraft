@@ -83,29 +83,29 @@ def place(resource):
     print(u'   配置', names[resource], u'完了')
   #。。。もし何もなければ
   else:
-    print('   You have no', names[resource], 'left')
+    print(u'   あなたは', names[resource], u'を持っていません')
 
-#craft a new resource
+#新しいリソースを作成
 def craft(resource):
-  print('Crafting: ', names[resource])
-  #if the resource can be crafted...
+  print(u'作成：', names[resource])
+  #もしリソースを作成できる場合
   if resource in crafting:
-    #keeps track of whether we have the resources
-    #to craft this item
+    #新たに作成するのに必要なリソースがあるかを
+    #確認します
     canBeMade = True
-    #for each item needed to craft the resource
+    #リソースの作成に必要な各アイテムについて
     for i in crafting[resource]:
-      #...if we don't have enough...
+      #。。。もしアイテムが足りなければ。。。
       if crafting[resource][i] > inventory[i]:
-      #...we can't craft it!
+      #。。。変数にリソースを作れないと設定する
         canBeMade = False
         break
-    #if we can craft it (we have all needed resources)
+    #もし作成できる場合(作成するために必要なアイテムがある場合)
     if canBeMade == True:
-      #take each item from the inventory
+      #持ち物リストからアイテムを取り出します
       for i in crafting[resource]:
         inventory[i] -= crafting[resource][i]
-      #add the crafted item to the inventory
+      #新しいリソースを持ち物リストに追加します
       inventory[resource] += 1
       print('   Crafting', names[resource], 'complete')
     #...otherwise the resource can't be crafted...
