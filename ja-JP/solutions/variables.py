@@ -2,15 +2,15 @@
 
 #変更可能なゲーム変数！
 
-#game background colour.
+#ゲームの背景色
 BACKGROUNDCOLOUR = 'lightblue'
 
-#map variables.
-MAXTILES  = 40
-MAPWIDTH  = 20
-MAPHEIGHT = 15
+#ゲームマップ（地図上）の変数
+MAXTILES = 40  #持ち物リストに入れられるリソースの最大量
+MAPWIDTH  = 20 #マップの幅
+MAPHEIGHT = 15 #マップの高さ
 
-#variables representing the different resources.
+#リソースをあらわす変数
 DIRT    = 0
 GRASS   = 1
 WATER   = 2
@@ -20,22 +20,22 @@ SAND    = 5
 PLANK   = 6
 GLASS   = 7
 
-#a list of all game resources.
+#ゲームのリソース
 resources = [DIRT,GRASS,WATER,BRICK,WOOD,SAND,PLANK,GLASS]
 
-#the names of the resources.
+#リソースの名前
 names = {
-  DIRT    : 'dirt',
-  GRASS   : 'grass',
-  WATER   : 'water',
-  BRICK   : 'brick',
-  WOOD    : 'wood',
-  SAND    : 'sand',
-  PLANK   : 'plank',
-  GLASS   : 'glass'
+  DIRT : u'土',
+  GRASS: u'草',
+  WATER: u'水',
+  BRICK: u'レンガ',
+  WOOD: u'木',
+  SAND:  u'砂',
+  PLANK : u'板',
+  GLASS   : u'ガラス'
 }
 
-#a dictionary linking resources to images.
+#リソースを画像にリンクするディクショナリ（辞書）
 textures = {
   DIRT    : 'dirt.gif',
   GRASS   : 'grass.gif',
@@ -47,7 +47,7 @@ textures = {
   GLASS   : 'glass.gif'
 }
 
-#the number of each resource the player has.
+#プレイヤーが持つ各リソースの個数
 inventory = {
   DIRT    : 10,
   GRASS   : 10,
@@ -59,14 +59,14 @@ inventory = {
   GLASS   : 0
 }
 
-#the player image.
+#プレイヤーの画像
 playerImg = 'player.gif'
 
-#the player position.
+#プレイヤーの位置
 playerX = 0
 playerY = 0
 
-#keys for placing resources.
+#リソースを配置するキー
 placekeys = {
   DIRT  : '1',
   GRASS : '2',
@@ -78,7 +78,7 @@ placekeys = {
   GLASS : '8'
 }
 
-#rules to make new resources.
+#新しいリソースを作るルール
 crafting = {
   BRICK    : { WATER : 1, DIRT : 2 },
   PLANK    : { WOOD : 3 },
