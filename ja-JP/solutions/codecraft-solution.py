@@ -26,7 +26,7 @@ def moveRight():
     drawResource(oldX, playerY)
     drawResource(playerX, playerY)
     
-#moves the player up 1 tile.
+#プレイヤーを上にに1マス動かす
 def moveUp():
   global playerY
   if(drawing == False and playerY > 0):
@@ -35,7 +35,7 @@ def moveUp():
     drawResource(playerX, oldY)
     drawResource(playerX, playerY)
     
-#moves the player down 1 tile.
+#プレイヤーを下に1マス動かす
 def moveDown():
   global playerY, MAPHEIGHT
   if(drawing == False and playerY < MAPHEIGHT - 1):
@@ -44,14 +44,14 @@ def moveDown():
     drawResource(playerX, oldY)
     drawResource(playerX, playerY)
     
-#picks up the resource at the player's position.
+#プレイヤーの位置にあるリソースをとる。
 def pickUp():
   global playerX, playerY
   drawing = True
   currentTile = world[playerX][playerY]
-  #if the user doesn't already have too many...
+  #ユーザーにリソースがあまりない場合...
   if inventory[currentTile] < MAXTILES:
-    #player now has 1 more of this resource
+    #プレイヤーにリソースが1つ追加されました
     inventory[currentTile] += 1
     #the player is now standing on dirt
     world[playerX][playerY] = DIRT
