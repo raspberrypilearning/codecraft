@@ -193,57 +193,57 @@ def drawInventory():
     yPostition = height - (MAPHEIGHT * TILESIZE) - 80
     itemNum = 0
     for i, item in enumerate(resources):
-      #add the image
+      #画像を追加する
       rendererT.goto(xPosition, yPostition)
       rendererT.shape(textures[item])
       rendererT.stamp()
-      #add the number in the inventory
+      #リソースの数を持ち物リストに追加
       rendererT.goto(xPosition, yPostition - TILESIZE)
       rendererT.write(inventory[item])
-      #add key to place
+      ＃配置するキーを追加
       rendererT.goto(xPosition, yPostition - TILESIZE - 20)
       rendererT.write(placekeys[item])
-      #add key to craft
+      #作成キーを加する
       if crafting.get(item) != None:
         rendererT.goto(xPosition, yPostition - TILESIZE - 40)
         rendererT.write(craftkeys[item])     
-      #move along to place the next inventory item
+      #移動して次のアイテムをリソースに追加
       xPosition += 50
       itemNum += 1
-      #drop down to the next row every 10 items
+      #10個のアイテムごとに次の行に移動
       if itemNum % INVWIDTH == 0:
         xPosition = 70
         itemNum = 0
         yPostition -= TILESIZE + 80
     drawing = False
 
-#generate the instructions, including crafting rules
+#作成ルールを含む説明書きの生成
 def generateInstructions():
-  instructions.append('Crafting rules:')
-  #for each resource that can be crafted...
+  instructions.append('作成ルール:')
+  #もしリソースを作成できる場合
   for rule in crafting:
-    #create the crafting rule text
+    #作成ルールを作成
     craftrule = names[rule] + ' = '
     for resource, number in crafting[rule].items():
       craftrule += str(number) + ' ' + names[resource] + ' '
-    #add the crafting rule to the instructions
+    #作成ルールをゲーム説明に追加
     instructions.append(craftrule)
-  #display the instructions
+  #作成ルールを表示
   yPos = height - 20
   for item in instructions:
     rendererT.goto( MAPWIDTH*TILESIZE + 40, yPos)
     rendererT.write(item)
     yPos-=20
 
-#generate a random world
+#ワールド（地図）をランダムに作成
 def generateRandomWorld():
-  #loop through each row
+  #地図上の行をループする
   for row in range(MAPHEIGHT):
-    #loop through each column in that row
+    #地図上の列をループする
     for column in range(MAPWIDTH):
-      #pick a random number between 0 and 10
+      #0から10の数字をランダムに選ぶ
       randomNumber = random.randint(0,10)
-      #WATER if the random number is a 1 or a 2
+      #もしランダムに選ばれた数字が1か2だったら水
       if randomNumber in [1,2]:
         tile = WATER
       #もしランダムに選ばれた数字が3か4だったら草
