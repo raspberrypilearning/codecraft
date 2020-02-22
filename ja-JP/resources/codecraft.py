@@ -69,7 +69,7 @@ def place(resource):
     #プレイヤーの位置にあるリソースを見つけ出す
     currentTile = world[playerX][playerY]
     #プレイヤーの位置にあるリソースをとる。
-    #(if it's not DIRT)
+    #(もし土ではない場合)
     if currentTile is not DIRT:
       inventory[currentTile] += 1
     #プレーヤーの現在の位置にリソースを置く
@@ -164,13 +164,13 @@ def drawWorld():
 
 #持ち物リストを画面に表示する
 def drawInventory():
-  #this variable stops other stuff being drawn
+  #この変数は他のものを描画しないようにします
   global drawing
-  #only draw if nothing else is being drawn
+  #他に何も描画されていない場合描画します
   if drawing == False:
-    #something is now being drawn
+    #何かが現在描画されています。
     drawing = True
-    #use a rectangle to cover the current inventory
+    #四角形を使用して持ち物リストをカバーしてください
     rendererT.color(BACKGROUNDCOLOUR)
     rendererT.goto(0,0)
     rendererT.begin_fill()
@@ -182,28 +182,28 @@ def drawInventory():
       rendererT.right(90)
     rendererT.end_fill()
     rendererT.color('black')
-    #display the 'place' and 'craft' text
+    #「場所」と「リソース」テキストを表示する
     for i in range(1,num_rows+1):
       rendererT.goto(20, (height - (MAPHEIGHT * TILESIZE)) - 20 - (i * 100))
-      rendererT.write("place")
+      rendererT.write(u"置く")
       rendererT.goto(20, (height - (MAPHEIGHT * TILESIZE)) - 40 - (i * 100))
-      rendererT.write("craft")
-    #set the inventory position
+      rendererT.write(u"クラフト（作成）")
+    #持ち物リストの位置を設定する
     xPosition = 70
     yPostition = height - (MAPHEIGHT * TILESIZE) - 80
     itemNum = 0
     for i, item in enumerate(resources):
-      #add the image
+      #画像を追加する
       rendererT.goto(xPosition, yPostition)
       rendererT.shape(textures[item])
       rendererT.stamp()
-      #add the number in the inventory
+      #リソースの数を持ち物リストに追加
       rendererT.goto(xPosition, yPostition - TILESIZE)
       rendererT.write(inventory[item])
-      #add key to place
+      #キーを追加する
       rendererT.goto(xPosition, yPostition - TILESIZE - 20)
       rendererT.write(placekeys[item])
-      #add key to craft
+      #キーをリソースに追加する
       if crafting.get(item) != None:
         rendererT.goto(xPosition, yPostition - TILESIZE - 40)
         rendererT.write(craftkeys[item])     
@@ -272,7 +272,7 @@ drawing = False
 
 #新しい「スクリーン」オブジェクトを作成する
 screen = turtle.Screen()
-#calculate the width and height
+#幅と高さを計算する
 width = (TILESIZE * MAPWIDTH) + max(200,INVWIDTH * 50)
 num_rows = int(ceil((len(resources) / INVWIDTH)))
 inventory_height =  num_rows * 120 + 40
@@ -283,34 +283,34 @@ screen.setworldcoordinates(0,0,width,height)
 screen.bgcolor(BACKGROUNDCOLOUR)
 screen.listen()
 
-#register the player image  
+#プレーヤーの画像を登録する  
 screen.register_shape(playerImg)
-#register each of the resource images
+#各リソースの画像を登録する
 for texture in textures.values():
   screen.register_shape(texture)
 
-#create another turtle to do the graphics drawing
+#グラフィックを描くために別のカメを作成する
 rendererT = turtle.Turtle()
 rendererT.hideturtle()
 rendererT.penup()
 rendererT.speed(0)
 rendererT.setheading(90)
 
-#create a world of random resources.
+#ランダムにリソースが散らばっているワールド（地図）を作成
 world = [ [DIRT for w in range(MAPHEIGHT)] for h in range(MAPWIDTH) ]
 
-#map the keys for moving and picking up to the correct functions.
+#プレイヤーを移動させるキーを設定
 screen.onkey(moveUp, 'w')
 screen.onkey(moveDown, 's')
 screen.onkey(moveLeft, 'a')
 screen.onkey(moveRight, 'd')
 screen.onkey(pickUp, 'space')
 
-#set up the keys for placing and crafting each resource
+#リソースを作成する、リソースを置くキーの設定
 bindPlacingKeys()
 bindCraftingKeys()
 
-#these functions are defined above
+#これらの関数は上で定義されています
 generateRandomWorld()
 drawWorld()
 drawInventory()
