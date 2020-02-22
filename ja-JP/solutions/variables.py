@@ -1,6 +1,6 @@
 #!/bin/python3
 
-#Game variables that can be changed!
+#変更可能なゲーム変数！
 
 #game background colour.
 BACKGROUNDCOLOUR = 'lightblue'
