@@ -49,39 +49,39 @@ def pickUp():
   global playerX, playerY
   drawing = True
   currentTile = world[playerX][playerY]
-  #ユーザーにリソースがあまりない場合...
+  #ユーザーのリソース数が多すぎない場合...
   if inventory[currentTile] < MAXTILES:
-    #プレイヤーにリソースが1つ追加されました
+    #プレイヤーにリソースが1つ追加されます
     inventory[currentTile] += 1
-    #the player is now standing on dirt
+    #プレイヤーの立っているマスは土になります
     world[playerX][playerY] = DIRT
-    #draw the new DIRT tile
+    #新しい土のマスを描く
     drawResource(playerX, playerY)
-    #redraw the inventory with the extra resource.
+    #持ち物リストにリソースを追加して描き直す
     drawInventory()
     #drawPlayer()
 
-#place a resource at the player's current position
+#プレーヤーの現在の位置にリソースを置く
 def place(resource):
-  print('placing: ', names[resource])
+  print(u'置く', names[resource])
   #only place if the player has some left...
   if inventory[resource] > 0:
-    #find out the resourcee at the player's current position
+    #プレイヤーの位置にあるリソースを見ます
     currentTile = world[playerX][playerY]
-    #pick up the resource the player's standing on
-    #(if it's not DIRT)
+    #プレイヤーの位置にあるリソースをとる。
+    #（もし土ではない場合）
     if currentTile is not DIRT:
       inventory[currentTile] += 1
-    #place the resource at the player's current position
+    #プレーヤーの現在の位置にリソースを置く
     world[playerX][playerY] = resource
-    #add the new resource to the inventory
+    #新しいリソースを持ち物リストに追加する
     inventory[resource] -= 1
-    #update the display (world and inventory)
+    #ゲーム画面を更新（ゲームワールドと持ち物リスト）
     drawResource(playerX, playerY)
     drawInventory()
     #drawPlayer()
-    print('   Placing', names[resource], 'complete')
-  #...and if they have none left...
+    print(u'   配置', names[resource], u'完了')
+  #。。。もし何もなければ
   else:
     print('   You have no', names[resource], 'left')
 
