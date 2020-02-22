@@ -138,11 +138,11 @@ def drawResource(y, x):
   global drawing
   #only draw if nothing else is being drawn
   if drawing == False:
-    #something is now being drawn
+    #描画中にします
     drawing = True
-    #draw the resource at that position in the tilemap, using the correct image
+    #対応する画像を使用して、タイルマップ内のその位置にリソースを描画する
     rendererT.goto( (y * TILESIZE) + 20, height - (x * TILESIZE) - 20 )
-    #draw tile with correct texture
+    #対応するテクスチャーでタイルを描く
     texture = textures[world[y][x]]
     rendererT.shape(texture)
     rendererT.stamp()
@@ -150,16 +150,16 @@ def drawResource(y, x):
       rendererT.shape(playerImg)
       rendererT.stamp()
     screen.update()
-    #nothing is now being drawn
+    #描画完了にします
     drawing = False
     
-#draws the world map
+#ワールドを描く
 def drawWorld():
-  #loop through each row
+  #地図上の行をループする
   for row in range(MAPHEIGHT):
-    #loop through each column in the row
+    #地図上の列をループする
     for column in range(MAPWIDTH):
-      #draw the tile at the current position
+      #現在の位置にタイルを描画する
       drawResource(column, row)
 
 #draws the inventory to the screen
