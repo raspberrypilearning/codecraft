@@ -87,56 +87,56 @@ def place(resource):
 
 #新しいリソースを作成
 def craft(resource):
-  print('Crafting: ', names[resource])
-  #if the resource can be crafted...
+  print(u'作成：', names[resource])
+  #もしリソースを作成できる場合
   if resource in crafting:
-    #keeps track of whether we have the resources
-    #to craft this item
+    #新たに作成するのに必要なリソースがあるかを
+    #確認します
     canBeMade = True
-    #for each item needed to craft the resource
+    #リソースの作成に必要な各アイテムについて
     for i in crafting[resource]:
-      #...if we don't have enough...
+      #。。。もしアイテムが足りなければ。。。
       if crafting[resource][i] > inventory[i]:
-      #...we can't craft it!
+      #。。。変数にリソースを作れないと設定する
         canBeMade = False
         break
-    #if we can craft it (we have all needed resources)
+    #もし作成できる場合（作成するために必要なアイテムがある場合）
     if canBeMade == True:
-      #take each item from the inventory
+      #持ち物リストからアイテムを出す
       for i in crafting[resource]:
         inventory[i] -= crafting[resource][i]
-      #add the crafted item to the inventory
+      #新しいリソースを持ち物リストに追加する
       inventory[resource] += 1
-      print('   Crafting', names[resource], 'complete')
-    #...otherwise the resource can't be crafted...
+      print(names[resource], u'作成完了')
+    #。。。リソースを作成できない場合
     else:
-      print('   Can\'t craft', names[resource])
-    #update the displayed inventory
+      print(names[resource], u'   が作成できません')
+    #表示されている持ち物リストを更新
     drawInventory()
 
-#creates a function for placing each resource
+#各リソースを配置するための関数を作成する
 def makeplace(resource):
   return lambda: place(resource)
 
-#attaches a 'placing' function to each key press
+#各キーに「配置」機能を割り当てます
 def bindPlacingKeys():
   for k in placekeys:
     screen.onkey(makeplace(k), placekeys[k])
 
-#creates a function for crafting each resource
+#リソースを作成する関数を作成する
 def makecraft(resource):
   return lambda: craft(resource)
 
-#attaches a 'crafting' function to each key press
+#各キーに「作成」機能を割り当てます
 def bindCraftingKeys():
   for k in craftkeys:
     screen.onkey(makecraft(k), craftkeys[k])
 
-#draws a resource at the position (y,x)
+＃位置（y、x）にリソースを描画します
 def drawResource(y, x):
-  #this variable stops other stuff being drawn
+  #この変数は他のものを描画しないようにします
   global drawing
-  #only draw if nothing else is being drawn
+  #他に何も描画されていない場合描画します
   if drawing == False:
     #描画中にします
     drawing = True
@@ -312,7 +312,7 @@ screen.onkey(moveLeft, 'a')
 screen.onkey(moveRight, 'd')
 screen.onkey(pickUp, 'space')
 
-#set up the keys for placing and crafting each resource
+#リソースを作成する、リソースを置くキーの設定
 bindPlacingKeys()
 bindCraftingKeys()
 
