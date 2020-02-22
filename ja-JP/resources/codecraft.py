@@ -1,14 +1,14 @@
 #!/bin/python3
 
 #############
-# CodeCraft #
+# コードクラフト #
 #############
 
 #---
-#Game functions
+#ゲーム用の関数
 #---
 
-#moves the player left 1 tile.
+#プレイヤーを左に1マス動かす
 def moveLeft():
   global playerX
   if(drawing == False and playerX > 0):
@@ -17,7 +17,7 @@ def moveLeft():
     drawResource(oldX, playerY)
     drawResource(playerX, playerY)
     
-#moves the player right 1 tile.
+#プレイヤーを右に1マス動かす
 def moveRight():
   global playerX, MAPWIDTH
   if(drawing == False and playerX < MAPWIDTH - 1):
@@ -26,7 +26,7 @@ def moveRight():
     drawResource(oldX, playerY)
     drawResource(playerX, playerY)
     
-#moves the player up 1 tile.
+#プレイヤーを上にに1マス動かす
 def moveUp():
   global playerY
   if(drawing == False and playerY > 0):
@@ -35,7 +35,7 @@ def moveUp():
     drawResource(playerX, oldY)
     drawResource(playerX, playerY)
     
-#moves the player down 1 tile.
+#プレイヤーを下に1マス動かす
 def moveDown():
   global playerY, MAPHEIGHT
   if(drawing == False and playerY < MAPHEIGHT - 1):
