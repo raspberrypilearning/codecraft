@@ -162,7 +162,7 @@ def drawWorld():
       #現在の位置にタイルを表示します
       drawResource(column, row)
 
-#draws the inventory to the screen
+#持ち物リストを画面に表示する
 def drawInventory():
   #this variable stops other stuff being drawn
   global drawing
@@ -217,60 +217,60 @@ def drawInventory():
         yPostition -= TILESIZE + 80
     drawing = False
 
-#generate the instructions, including crafting rules
+#作成ルールを含む説明書きの生成
 def generateInstructions():
-  instructions.append('Crafting rules:')
-  #for each resource that can be crafted...
+  instructions.append('作成ルール:')
+  #もしリソースを作成できる場合
   for rule in crafting:
-    #create the crafting rule text
+    #作成ルール本文を作成
     craftrule = names[rule] + ' = '
     for resource, number in crafting[rule].items():
       craftrule += str(number) + ' ' + names[resource] + ' '
-    #add the crafting rule to the instructions
+    #作成ルールをゲーム説明書きに追加
     instructions.append(craftrule)
-  #display the instructions
+  #説明書きを表示
   yPos = height - 20
   for item in instructions:
     rendererT.goto( MAPWIDTH*TILESIZE + 40, yPos)
     rendererT.write(item)
     yPos-=20
 
-#generate a random world
+#ワールド（地図）をランダムに作成
 def generateRandomWorld():
-  #loop through each row
+  #地図上の行をループする
   for row in range(MAPHEIGHT):
-    #loop through each column in that row
+    #地図上の列をループする
     for column in range(MAPWIDTH):
-      #pick a random number between 0 and 10
+      #0から10の数字をランダムに選ぶ
       randomNumber = random.randint(0,10)
-      #WATER if the random number is a 1 or a 2
+      #もしランダムに選ばれた数字が1か2だったら水
       if randomNumber in [1,2]:
         tile = WATER
-      #GRASS if the random number is a 3 or a 4
+      #もしランダムに選ばれた数字が3か4だったら草
       elif randomNumber in [3,4]:
         tile = GRASS
-      #otherwise it's DIRT
+      #他の数字だったら土
       else:
         tile = DIRT
-      #set the position in the tilemap to the randomly chosen tile
+      #地図上の位置に選ばれたリソースをセットする（置く）
       world[column][row] = tile
 
 #---
-#Code starts running here
+#コードはここから実行を開始します
 #---
 
-#import the modules and variables needed
+#必要なモジュールと変数をインポート
 import turtle
 import random
 from variables import *
 from math import ceil
 
 TILESIZE = 20
-#the number of inventory resources per row
+#各列にあるリソースの数
 INVWIDTH = 8
 drawing = False
 
-#create a new 'screen' object
+#新しい「スクリーン」オブジェクトを作成する
 screen = turtle.Screen()
 #calculate the width and height
 width = (TILESIZE * MAPWIDTH) + max(200,INVWIDTH * 50)
