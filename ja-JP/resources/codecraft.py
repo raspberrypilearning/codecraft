@@ -44,35 +44,35 @@ def moveDown():
     drawResource(playerX, oldY)
     drawResource(playerX, playerY)
     
-#picks up the resource at the player's position.
+#プレイヤーの位置にあるリソースをとる。
 def pickUp():
   global playerX, playerY
   drawing = True
   currentTile = world[playerX][playerY]
-  #if the user doesn't already have too many...
+  #ユーザーにはあまりにも多くのリソースがない場合...
   if inventory[currentTile] < MAXTILES:
-    #player now has 1 more of this resource
+    #プレイヤーにリソースが1つ追加されました
     inventory[currentTile] += 1
-    #the player is now standing on dirt
+    #プレイヤーが土の上に立っている場合
     world[playerX][playerY] = DIRT
-    #draw the new DIRT tile
+    #新しい土のマスを描く
     drawResource(playerX, playerY)
-    #redraw the inventory with the extra resource.
+    #持ち物リストにリソースを追加して描き直す
     drawInventory()
     #drawPlayer()
 
-#place a resource at the player's current position
+#プレーヤーの現在の位置にリソースを置く
 def place(resource):
-  print('placing: ', names[resource])
-  #only place if the player has some left...
+  print(u'置く', names[resource])
+  #もしプレイヤーがすでにリソースを持っている場合。。。
   if inventory[resource] > 0:
-    #find out the resourcee at the player's current position
+    #プレイヤーの位置にあるリソースを見つけ出す
     currentTile = world[playerX][playerY]
-    #pick up the resource the player's standing on
+    #プレイヤーの位置にあるリソースをとる。
     #(if it's not DIRT)
     if currentTile is not DIRT:
       inventory[currentTile] += 1
-    #place the resource at the player's current position
+    #プレーヤーの現在の位置にリソースを置く
     world[playerX][playerY] = resource
     #add the new resource to the inventory
     inventory[resource] -= 1
@@ -132,7 +132,7 @@ def bindCraftingKeys():
   for k in craftkeys:
     screen.onkey(makecraft(k), craftkeys[k])
 
-#draws a resource at the position (y,x)
+#位置(y,x)のリソースを描画します。
 def drawResource(y, x):
   #this variable stops other stuff being drawn
   global drawing
