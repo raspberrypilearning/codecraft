@@ -1,33 +1,33 @@
 #!/bin/python3
 
-#Game variables that can be changed!
+#変更可能なゲーム変数！
 
-#game background colour.
+#ゲームの背景色
 BACKGROUNDCOLOUR = 'white'
 
-#map variables.
-MAXTILES  = 20
-MAPWIDTH  = 10
-MAPHEIGHT = 10
+#ゲームマップ（地図上）の変数
+MAXTILES = 20  #持ち物リストに入れられるリソースの最大量
+MAPWIDTH = 10  #マップの幅
+MAPHEIGHT = 10 #マップの高さ
 
-#variables representing the different resources.
+#リソースをあらわす変数
 DIRT    = 0
 GRASS   = 1
 WATER   = 2
 BRICK   = 3
 
-#a list of all game resources.
+#ゲームのリソース
 resources = [DIRT,GRASS,WATER,BRICK]
 
-#the names of the resources.
+#リソースの名前
 names = {
-  DIRT    : 'dirt',
-  GRASS   : 'grass',
-  WATER   : 'water',
-  BRICK   : 'brick'
+  DIRT : u'土',
+  GRASS: u'草',
+  WATER: u'水',
+  BRICK   : u'レンガ'
 }
 
-#a dictionary linking resources to images.
+#リソースを画像にリンクするディクショナリ（辞書）
 textures = {
   DIRT    : 'dirt.gif',
   GRASS   : 'grass.gif',
@@ -35,7 +35,7 @@ textures = {
   BRICK   : 'brick.gif'
 }
 
-#the number of each resource the player has.
+#プレイヤーが持つ各リソースの個数
 inventory = {
   DIRT    : 10,
   GRASS   : 10,
@@ -43,19 +43,19 @@ inventory = {
   BRICK   : 0
 }
 
-#the player image.
+#プレイヤーの画像
 playerImg = 'player.gif'
 
-#the player position.
+#プレイヤーの位置
 playerX = 0
 playerY = 0
 
-#rules to make new resources.
+#新しいリソースを作るルール
 crafting = {
   BRICK    : { WATER : 1, DIRT : 2 }
 }
 
-#keys for placing resources.
+#リソースを配置するキー
 placekeys = {
   DIRT  : '1',
   GRASS : '2',
@@ -63,7 +63,7 @@ placekeys = {
   BRICK : '4'
 }
 
-#keys for crafting tiles.
+#タイルを作るキー
 craftkeys = {
   BRICK : 'r'
 }
