@@ -1,30 +1,30 @@
 #!/bin/python3
 
-#Game variables that can be changed!
+#게임에 사용되는 변수는 바꿀 수 있습니다.
 
-#game background colour.
+#게임 배경 색깔
 BACKGROUNDCOLOUR = 'white'
 
-#map variables.
+#map 변수
 MAXTILES  = 20
 MAPWIDTH  = 10
 MAPHEIGHT = 10
 
-#variables representing the different resources.
+#자원들에 대한 분류 코드
 DIRT    = 0
 GRASS   = 1
 WATER   = 2
 BRICK   = 3
 
-#a list of all game resources.
+#게임에서 사용하는 모든 자원의 리스트
 resources = [DIRT,GRASS,WATER,BRICK]
 
-#the names of the resources.
+#자원의 이름
 names = {
-  DIRT    : 'dirt',
-  GRASS   : 'grass',
-  WATER   : 'water',
-  BRICK   : 'brick'
+  DIRT    : '흙 블록',
+  GRASS   : '초원 블록',
+  WATER   : '물 블록',
+  BRICK   : '벽돌 블록'
 }
 
 #a dictionary linking resources to images.
@@ -68,8 +68,8 @@ craftkeys = {
   BRICK : 'r'
 }
 
-#game instructions that are displayed.
+#표시되는 게임 방법
 instructions =  [
-  'Instructions:',
-  'Use WASD to move'
+  '플레이 방법:',
+  'WASD로 조작'
 ]
