@@ -64,7 +64,7 @@ def pickUp():
 #플레이어의 위치에 자원을 배치
 def place(resource):
   print('배치 중: ', names[resource])
-  #이 위치에 플레이어가 남긴 자원이 있다면...
+  #이 위치에 플레이어에게 남은 자원이 있다면...
   if inventory[resource] > 0:
     #플레이어의 위치에 배치된 자원 탐색
     currentTile = world[playerX][playerY]
@@ -114,7 +114,7 @@ def craft(resource):
     #디스플레이 업데이트(월드 및 인벤토리)
     drawInventory()
 
-#각 리소스를 배치하기위한 함수 만들기
+#각 리소스를 배치하기 위한 함수 만들기
 def makeplace(resource):
   return lambda: place(resource)
 
@@ -200,10 +200,10 @@ def drawInventory():
       #새롭게 카운트를 인벤토리에 추가
       rendererT.goto(xPosition, yPostition - TILESIZE)
       rendererT.write(inventory[item])
-      #설치 단축키
+      #배치 키 추가
       rendererT.goto(xPosition, yPostition - TILESIZE - 20)
       rendererT.write(placekeys[item])
-      #제작 단축키
+      #제작키 추가
       if crafting.get(item) != None:
         rendererT.goto(xPosition, yPostition - TILESIZE - 40)
         rendererT.write(craftkeys[item])     
@@ -305,7 +305,7 @@ rendererT.setheading(90)
 #무작위로 월드에 자원 배치
 world = [ [DIRT for w in range(MAPHEIGHT)] for h in range(MAPWIDTH) ]
 
-#단축키
+#옮기고 집기 위한 키를 적절한 함수와 연결
 screen.onkey(moveUp, 'w')
 screen.onkey(moveDown, 's')
 screen.onkey(moveLeft, 'a')
@@ -316,7 +316,7 @@ screen.onkey(pickUp, 'space')
 bindPlacingKeys()
 bindCraftingKeys()
 
-#이 함수들은 위에서 정의되어 있습니다.
+#이 함수들은 위에서 정의 됨.
 generateRandomWorld()
 drawWorld()
 drawInventory()
