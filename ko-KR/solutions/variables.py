@@ -92,7 +92,7 @@ craftkeys = {
   GLASS : 'i'
 }
 
-#표시되는 게임 방법
+#표시할 게임 방법
 instructions =  [
   '플레이 방법:',
   'WASD로 조작'
