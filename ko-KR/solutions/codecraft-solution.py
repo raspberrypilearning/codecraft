@@ -166,9 +166,9 @@ def drawWorld():
 def drawInventory():
   #this variable stops other stuff being drawn
   global drawing
-  #only draw if nothing else is being drawn
+  #다른 곳에서 그려지지 않을 때만 그림
   if drawing == False:
-    #something is now being drawn
+    #그려지고 있다는 플래그를 True로 설정
     drawing = True
     #use a rectangle to cover the current inventory
     rendererT.color(BACKGROUNDCOLOUR)
