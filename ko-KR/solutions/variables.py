@@ -20,10 +20,10 @@ SAND    = 5
 PLANK   = 6
 GLASS   = 7
 
-#게임에서 사용하는 전체 자원의 리스트
+#게임에서 사용하는 모든 자원의 리스트
 resources = [DIRT,GRASS,WATER,BRICK,WOOD,SAND,PLANK,GLASS]
 
-#리소스의 이름
+#자원의 이름
 names = {
   DIRT    : '흙 블록',
   GRASS   : '초원 블록',
