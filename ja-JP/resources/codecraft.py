@@ -49,7 +49,7 @@ def pickUp():
   global playerX, playerY
   drawing = True
   currentTile = world[playerX][playerY]
-  #ユーザーにはあまりにも多くのリソースがない場合...
+  #ユーザーのリソース数が多すぎない場合...
   if inventory[currentTile] < MAXTILES:
     #プレイヤーにリソースが1つ追加されました
     inventory[currentTile] += 1
@@ -66,7 +66,7 @@ def place(resource):
   print(u'置く', names[resource])
   #もしプレイヤーがすでにリソースを持っている場合。。。
   if inventory[resource] > 0:
-    #プレイヤーの位置にあるリソースを見つけ出す
+    #プレイヤーの位置にあるリソースを見ます
     currentTile = world[playerX][playerY]
     #プレイヤーの位置にあるリソースをとる。
     #(もし土ではない場合)
@@ -80,7 +80,7 @@ def place(resource):
     drawResource(playerX, playerY)
     drawInventory()
     #drawPlayer()
-    print(u'   配置', names[resource], u'完了')
+    print(names[resource], u'配置完了')
   #。。。もし何もなければ
   else:
     print(u'   あなたは', names[resource], u'を持っていません')
@@ -107,10 +107,10 @@ def craft(resource):
         inventory[i] -= crafting[resource][i]
       #新しいリソースを持ち物リストに追加します
       inventory[resource] += 1
-      print(u'   作成', names[resource], u'完了')
+      print(names[resource], u'作成完了')
     #。。。リソースを作成できない場合
     else:
-      print(u'   作成できない', names[resource])
+      print(names[resource], u'   が作成できません')
     #表示されている持ち物リストを更新
     drawInventory()
 
@@ -132,17 +132,17 @@ def bindCraftingKeys():
   for k in craftkeys:
     screen.onkey(makecraft(k), craftkeys[k])
 
-#位置(y,x)のリソースを描画します。
+＃位置（y、x）にリソースを描画します
 def drawResource(y, x):
   #この変数は他のものが描画できないようにします
   global drawing
   #他に何も描画されていない場合描画します
   if drawing == False:
-    #何かが描画されます
+    #描画中にします
     drawing = True
-    #正しいイメージを使用して、タイルマップ内のその位置にリソースを描画します
+    #対応する画像を使用して、タイルマップ内のその位置にリソースを描画する
     rendererT.goto( (y * TILESIZE) + 20, height - (x * TILESIZE) - 20 )
-    #正しいテクスチャーでタイルを描きます
+    #対応するテクスチャーでタイルを描く
     texture = textures[world[y][x]]
     rendererT.shape(texture)
     rendererT.stamp()
@@ -150,7 +150,7 @@ def drawResource(y, x):
       rendererT.shape(playerImg)
       rendererT.stamp()
     screen.update()
-    #何も描画されていません
+    #描画完了にします
     drawing = False
     
 #ワールドを描く
@@ -168,7 +168,7 @@ def drawInventory():
   global drawing
   #他に何も描画されていない場合描画します
   if drawing == False:
-    #何かが現在描画されています。
+    #描画中にします
     drawing = True
     #四角形を使用して持ち物リストをカバーしてください
     rendererT.color(BACKGROUNDCOLOUR)
@@ -182,7 +182,7 @@ def drawInventory():
       rendererT.right(90)
     rendererT.end_fill()
     rendererT.color('black')
-    #「場所」と「リソース」テキストを表示する
+    #「場所」と「リソース」の文字を表示する
     for i in range(1,num_rows+1):
       rendererT.goto(20, (height - (MAPHEIGHT * TILESIZE)) - 20 - (i * 100))
       rendererT.write(u"置く")
@@ -200,10 +200,10 @@ def drawInventory():
       #リソースの数を持ち物リストに追加
       rendererT.goto(xPosition, yPostition - TILESIZE)
       rendererT.write(inventory[item])
-      #キーを追加する
+      ＃配置するキーを追加
       rendererT.goto(xPosition, yPostition - TILESIZE - 20)
       rendererT.write(placekeys[item])
-      #キーをリソースに追加する
+      #作成キーを加する
       if crafting.get(item) != None:
         rendererT.goto(xPosition, yPostition - TILESIZE - 40)
         rendererT.write(craftkeys[item])     
@@ -266,7 +266,7 @@ from variables import *
 from math import ceil
 
 TILESIZE = 20
-#各列にあるリソースの数
+#各行にあるリソースの数
 INVWIDTH = 8
 drawing = False
 
