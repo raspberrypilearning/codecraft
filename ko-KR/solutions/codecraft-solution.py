@@ -162,7 +162,7 @@ def drawWorld():
       #현재 위치에서 타일을 그리기
       drawResource(column, row)
 
-#draws the inventory to the screen
+#인벤토리를 화면에 표시
 def drawInventory():
   #this variable stops other stuff being drawn
   global drawing
