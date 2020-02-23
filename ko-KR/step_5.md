@@ -1,9 +1,9 @@
-\--- challenge \---
+\--- 도전 과제 \---
 
-## Challenge: Change your world size
+## 과제: 월드 사이즈 수정하기
 
-Can you change the values of your `MAPWIDTH` and `MAPHEIGHT` variables to change the size of the world?
+`MAPWIDTH`와 `MAPHEIGHT` 변수를 수정해서 월드 사이즈를 수정할 수 있나요?
 
-![screenshot](images/craft-mapsize.png)
+![스크린샷](images/craft-mapsize.png)
 
-\--- /challenge \---
+\--- /도전과제 \---
