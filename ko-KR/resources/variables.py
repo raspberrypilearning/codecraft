@@ -27,7 +27,7 @@ names = {
   BRICK   : '벽돌 블록'
 }
 
-#a dictionary linking resources to images.
+#이미지 이름을 담고 있는 딕셔너리
 textures = {
   DIRT    : 'dirt.gif',
   GRASS   : 'grass.gif',
@@ -35,7 +35,7 @@ textures = {
   BRICK   : 'brick.gif'
 }
 
-#the number of each resource the player has.
+#플레이어가 가지고 있는 자원의 수
 inventory = {
   DIRT    : 10,
   GRASS   : 10,
@@ -43,19 +43,19 @@ inventory = {
   BRICK   : 0
 }
 
-#the player image.
+#플레이어 이미지
 playerImg = 'player.gif'
 
-#the player position.
+#플레이어의 위치
 playerX = 0
 playerY = 0
 
-#rules to make new resources.
+#새로운 조합법
 crafting = {
   BRICK    : { WATER : 1, DIRT : 2 }
 }
 
-#keys for placing resources.
+#블럭 배치 단축키
 placekeys = {
   DIRT  : '1',
   GRASS : '2',
@@ -63,12 +63,12 @@ placekeys = {
   BRICK : '4'
 }
 
-#keys for crafting tiles.
+#제작 단축키
 craftkeys = {
   BRICK : 'r'
 }
 
-#표시되는 게임 방법
+#표시할 게임 방법
 instructions =  [
   '플레이 방법:',
   'WASD로 조작'
