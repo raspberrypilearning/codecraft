@@ -61,27 +61,27 @@ def pickUp():
     drawInventory()
     #drawPlayer()
 
-#플레이어의 위치에 아이템을 배치
+#플레이어의 위치에 자원을 배치
 def place(resource):
-  print('placing: ', names[resource])
-  #only place if the player has some left...
+  print('제작 중: ', names[resource])
+  #이 위치에 플레이어가 남긴 자원이 있다면...
   if inventory[resource] > 0:
-    #find out the resourcee at the player's current position
+    #플레이어의 위치에 배치된 자원 탐색
     currentTile = world[playerX][playerY]
-    #pick up the resource the player's standing on
-    #(if it's not DIRT)
+    #플레이어의 위치에서 자원을 줍는 코드
+    #(만약 흙이 아닌 경우)
     if currentTile is not DIRT:
       inventory[currentTile] += 1
-    #place the resource at the player's current position
+    #플레이어의 위치에 자원을 배치
     world[playerX][playerY] = resource
-    #add the new resource to the inventory
+    #새 자원을 인벤토리에 추가
     inventory[resource] -= 1
-    #update the display (world and inventory)
+    #디스플레이 업데이트(월드 및 인벤토리)
     drawResource(playerX, playerY)
     drawInventory()
     #drawPlayer()
-    print('   Placing', names[resource], 'complete')
-  #...and if they have none left...
+    print(names[resource], ' 제작 완료')
+  #...그리고 만약 남은 것이 하나도 없다면...
   else:
     print(names[resource], ' 자원이 없습니다!')
 
