@@ -10,6 +10,6 @@ Let’s modify some variables to change how your game works.
     
     ![screenshot](images/craft-background.png)
 
-+ The variable `MAXTILES` is the amount of each resource that can be held in your inventory. Change this variable if you want to store more (or less) than 20 of each resource.
++ The variable `MAXTILES` is the amount of each resource that can be held in your inventory. 만약 인벤토리에 20개 이상(혹은 이하) 담기도록 하고 싶으면 이 변수를 수정하세요.
     
     ![screenshot](images/craft-maxtiles.png)
