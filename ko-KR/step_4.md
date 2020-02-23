@@ -1,15 +1,15 @@
-## Customising your game
+## 게임 맞춤 설정
 
-Let’s modify some variables to change how your game works.
+게임이 작동하는 방식을 바꾸기 위해 몇 가지 변수를 조정해 봅시다.
 
-+ Click the `variables.py` file to see some variables that can be changed.
++ `variables.py`을 클릭하여 변경할 수 있는 변수를 확인하세요.
     
-    ![screenshot](images/craft-variables.png)
+    ![스크린샷](images/craft-variables.png)
 
-+ Change the value of your `BACKGROUNDCOLOUR` variable, and click 'Run' to see the change to your game.
++ `BACKGROUNDCOLOUR` 변수 값을 아래와 같이 변경하고, 실행을 눌러 실행 결과를 확인해 보세요.
     
-    ![screenshot](images/craft-background.png)
+    ![스크린샷](images/craft-background.png)
 
-+ The variable `MAXTILES` is the amount of each resource that can be held in your inventory. 만약 인벤토리에 20개 이상(혹은 이하) 담기도록 하고 싶으면 이 변수를 수정하세요.
++ `MAXTILES`변수는 각 자원이 인벤토리에 저장 될 수 있는 수량입니다. 만약 인벤토리에 20개 이상(혹은 이하) 저장 하고 싶으면 이 변수를 수정하세요.
     
-    ![screenshot](images/craft-maxtiles.png)
+    ![스크린샷](images/craft-maxtiles.png)
