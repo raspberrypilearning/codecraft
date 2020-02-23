@@ -80,7 +80,7 @@ def place(resource):
     drawResource(playerX, playerY)
     drawInventory()
     #drawPlayer()
-    print(u'   配置', names[resource], u'完了')
+    print(names[resource], u'配置完了')
   #。。。もし何もなければ
   else:
     print(u'   あなたは', names[resource], u'を持っていません')
