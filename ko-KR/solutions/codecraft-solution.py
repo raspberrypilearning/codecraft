@@ -63,7 +63,7 @@ def pickUp():
 
 #플레이어의 위치에 자원을 배치
 def place(resource):
-  print('제작 중: ', names[resource])
+  print('배치 중: ', names[resource])
   #이 위치에 플레이어가 남긴 자원이 있다면...
   if inventory[resource] > 0:
     #플레이어의 위치에 배치된 자원 탐색
@@ -85,13 +85,13 @@ def place(resource):
   else:
     print(names[resource], ' 자원이 없습니다!')
 
-#새로운 자원 생성
+#새로운 자원 제작
 def craft(resource):
-  print('조합 중: ', names[resource])
+  print('제작 중: ', names[resource])
   #만약 만들 수 있는 자원이라면
   if resource in crafting:
     #리소스가 있는지의 여부를 추적
-    #아이템을 만들 수 있는지 알기 위해
+    #이 아이템을 제작하기 위해
     canBeMade = True
     #자원을 만드는 데 필요한 각 항목의 수
     for i in crafting[resource]:
@@ -110,7 +110,7 @@ def craft(resource):
       print(names[resource], ' 설치 완료')
     #만약 만들 수 없는 자원이라면
     else:
-      print(names[resource], ' 를 만들 수 없습니다!')
+      print(names[resource], ' 을(를) 제작 할 수 없습니다.')
     #디스플레이 업데이트(월드 및 인벤토리)
     drawInventory()
 
@@ -164,13 +164,13 @@ def drawWorld():
 
 #인벤토리를 화면에 표시
 def drawInventory():
-  #this variable stops other stuff being drawn
+  #이 변수는 다른 물건이 그려지는 것을 막음
   global drawing
   #다른 곳에서 그려지지 않을 때만 그림
   if drawing == False:
     #그려지고 있다는 플래그를 True로 설정
     drawing = True
-    #use a rectangle to cover the current inventory
+    # 사각형을 이용하여 현재 인벤토리를 덮음
     rendererT.color(BACKGROUNDCOLOUR)
     rendererT.goto(0,0)
     rendererT.begin_fill()
@@ -182,35 +182,35 @@ def drawInventory():
       rendererT.right(90)
     rendererT.end_fill()
     rendererT.color('black')
-    #display the 'place' and 'craft' text
+    #'설치' 및 '제작' 문자열 표시
     for i in range(1,num_rows+1):
       rendererT.goto(20, (height - (MAPHEIGHT * TILESIZE)) - 20 - (i * 100))
-      rendererT.write("place")
+      rendererT.write("설치")
       rendererT.goto(20, (height - (MAPHEIGHT * TILESIZE)) - 40 - (i * 100))
-      rendererT.write("craft")
-    #set the inventory position
+      rendererT.write("제작")
+    #인벤토리 포지션 설정
     xPosition = 70
     yPostition = height - (MAPHEIGHT * TILESIZE) - 80
     itemNum = 0
     for i, item in enumerate(resources):
-      #add the image
+      #이미지 추가
       rendererT.goto(xPosition, yPostition)
       rendererT.shape(textures[item])
       rendererT.stamp()
-      #add the number in the inventory
+      #새롭게 카운트를 인벤토리에 추가
       rendererT.goto(xPosition, yPostition - TILESIZE)
       rendererT.write(inventory[item])
-      #add key to place
+      #설치 단축키
       rendererT.goto(xPosition, yPostition - TILESIZE - 20)
       rendererT.write(placekeys[item])
-      #add key to craft
+      #제작 단축키
       if crafting.get(item) != None:
         rendererT.goto(xPosition, yPostition - TILESIZE - 40)
         rendererT.write(craftkeys[item])     
-      #move along to place the next inventory item
+      #다음 인벤토리 아이템 배치
       xPosition += 50
       itemNum += 1
-      #drop down to the next row every 10 items
+      #10개 항목마다 다음 행
       if itemNum % INVWIDTH == 0:
         xPosition = 70
         itemNum = 0
