@@ -1,4 +1,4 @@
-## Playing the game
+## ゲームをする
 
 + Open this trinket: [rpf.io/codecraft-on](http://rpf.io/codecraft-on){:target="_blank"}.
 
