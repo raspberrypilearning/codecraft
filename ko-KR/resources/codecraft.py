@@ -1,14 +1,14 @@
 #!/bin/python3
 
 #############
-# CodeCraft #
+# 코드크래프트 #
 #############
 
 #---
-#Game functions
+#게임 함수
 #---
 
-#moves the player left 1 tile.
+#플레이어가 왼쪽으로 1칸 이동
 def moveLeft():
   global playerX
   if(drawing == False and playerX > 0):
