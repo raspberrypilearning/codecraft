@@ -85,7 +85,7 @@ crafting = {
   GLASS    : { SAND : 3 }
 }
 
-#タイルを作るキー
+#タイルをクラフトするキー
 craftkeys = {
   BRICK : 'r',
   PLANK : 'u',
