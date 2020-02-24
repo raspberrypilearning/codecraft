@@ -188,7 +188,7 @@ def drawInventory():
       rendererT.write("설치")
       rendererT.goto(20, (height - (MAPHEIGHT * TILESIZE)) - 40 - (i * 100))
       rendererT.write("제작")
-    #인벤토리 포지션 설정
+    #인벤토리 위치 설정
     xPosition = 70
     yPostition = height - (MAPHEIGHT * TILESIZE) - 80
     itemNum = 0
@@ -197,7 +197,7 @@ def drawInventory():
       rendererT.goto(xPosition, yPostition)
       rendererT.shape(textures[item])
       rendererT.stamp()
-      #새롭게 카운트를 인벤토리에 추가
+      #숫자를 인벤토리에 추가
       rendererT.goto(xPosition, yPostition - TILESIZE)
       rendererT.write(inventory[item])
       #배치 키 추가
@@ -222,7 +222,7 @@ def generateInstructions():
   instructions.append('가공 규칙:')
   #만들 수 있는 각 자원 마다 반복
   for rule in crafting:
-    #가공 규칙 텍스트 작성
+    #가공 규칙 문자열 작성
     craftrule = names[rule] + ' = '
     for resource, number in crafting[rule].items():
       craftrule += str(number) + ' ' + names[resource] + ' '
