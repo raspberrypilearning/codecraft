@@ -85,7 +85,7 @@ def place(resource):
   else:
     print(u'   あなたは', names[resource], u'を持っていません')
 
-#新しいリソースを作成
+#新しいリソースを組み立てる
 def craft(resource):
   print(u'組み立て中：', names[resource])
   #もしリソースを組み立てられる場合
@@ -97,7 +97,7 @@ def craft(resource):
     for i in crafting[resource]:
       #。。。もしアイテムが足りなければ。。。
       if crafting[resource][i] > inventory[i]:
-      #。。。変数にリソースを作れないと設定する
+      #。。。変数にリソースを組み立てられないと設定する
         canBeMade = False
         break
     #もし組み立てられる場合(必要なアイテムがすべてある場合)
@@ -222,7 +222,7 @@ def generateInstructions():
   instructions.append('組み立てルール:')
   #もしリソースを組み立てられる場合
   for rule in crafting:
-    #作成ルールを作成
+    #組み立てルール本文を作成
     craftrule = names[rule] + ' = '
     for resource, number in crafting[rule].items():
       craftrule += str(number) + ' ' + names[resource] + ' '
