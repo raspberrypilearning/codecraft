@@ -14,10 +14,10 @@
     
     ![スクリーンショット](images/craft-place-water.png)
 
-+ メニューに表示されたキーを押し、アイテムをクラフト（組み合わせ）する。 クラフトとは、すでに持っているアイテムを組み合わせて新しいものを作ることを意味します 。 Try pressing the 'r' key to craft a new brick (as long as you have 2 dirt and 1 water in your inventory).
++ メニューに表示されたキーを押し、アイテムをクラフト（組み合わせ）する。 クラフトとは、すでに持っているアイテムを組み合わせて新しいものを作ることを意味します 。 Rキーを押し、新しいレンガを作ります（２つの土と１つの水が持ち物リストにある場合のみ）。
     
-    ![screenshot](images/craft-craft-brick.png)
+    ![スクリーンショット](images/craft-craft-brick.png)
 
-+ You can then press they '4' key to place your crafted bricks.
++ 4キーを押してクラフトされたレンガを置きます。
     
-    ![screenshot](images/craft-place-brick.png)
+    ![スクリーンショット](images/craft-place-brick.png)
