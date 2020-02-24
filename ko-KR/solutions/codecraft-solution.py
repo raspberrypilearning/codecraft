@@ -134,13 +134,13 @@ def bindCraftingKeys():
 
 #(y,x) 포지션에 자원 그리기
 def drawResource(y, x):
-  #이 변수는 다른 물건이 그려지는 것을 멈춤
+  #이 변수는 다른 물건이 그려지는 것을 방지함
   global drawing
-  #만약 다른 곳에서 그리고 있지 않다면
+  #만약 다른 물건이 그려지는 중이 아니라면
   if drawing == False:
     #그려지고 있다는 플래그를 True로 설정
     drawing = True
-    #올바른 그림을 사용하여 타일 맵에 자원을 그림
+    #적절한 이미지를 사용하여 타일 맵에 자원을 그림
     rendererT.goto( (y * TILESIZE) + 20, height - (x * TILESIZE) - 20 )
     #올바른 텍스쳐로 타일을 그림
     texture = textures[world[y][x]]
@@ -164,7 +164,7 @@ def drawWorld():
 
 #인벤토리를 화면에 표시
 def drawInventory():
-  #이 변수는 다른 물건이 그려지는 것을 막음
+  #이 변수는 다른 물건이 그려지는 것을 방지함
   global drawing
   #다른 곳에서 그려지지 않을 때만 그림
   if drawing == False:
