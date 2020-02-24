@@ -1,9 +1,9 @@
 \--- challenge \---
 
-## Challenge: Build your world
+## チャレンジ：ワールドを構築
 
-Can you build a house, with a garden and a swimming pool? What else can you create?
+庭とプールのある家を建てることはできますか？ ほかに何が作れますか？
 
-![screenshot](images/craft-build-example.png)
+![スクリーンショット](images/craft-build-example.png)
 
 \--- /challenge \---
