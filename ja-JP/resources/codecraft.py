@@ -85,30 +85,30 @@ def place(resource):
   else:
     print(u'   あなたは', names[resource], u'を持っていません')
 
-#新しいリソースを組み立てる
+#新しいリソースを組み合わせる
 def craft(resource):
-  print(u'組み立て中：', names[resource])
-  #もしリソースを組み立てられる場合
+  print(u'組み合わせ中：', names[resource])
+  #もしリソースを組み合わせられる場合
   if resource in crafting:
-    #新たに組み立てるのに必要なリソースがあるかを
+    #新たに組み合わせるのに必要なリソースがあるかを
     #確認します
     canBeMade = True
-    #リソースの組み立て必要な各アイテムについて
+    #リソースの組み合わせに必要な各アイテムについて
     for i in crafting[resource]:
       #。。。もしアイテムが足りなければ。。。
       if crafting[resource][i] > inventory[i]:
       #。。。変数にリソースを作れないと設定する
         canBeMade = False
         break
-    #もし組み立てられる場合(必要なアイテムがすべてある場合)
+    #もし組み合わせられる場合(必要なアイテムがすべてある場合)
     if canBeMade == True:
       #持ち物リストからアイテムを取り出します
       for i in crafting[resource]:
         inventory[i] -= crafting[resource][i]
       #新しいリソースを持ち物リストに追加します
       inventory[resource] += 1
-      print(names[resource], u'組み立て完了')
-    #。。。リソースを組み立てられない場合
+      print(names[resource], u'組み合わせ完了')
+    #。。。リソースを組み合わせられない場合
     else:
       print(names[resource], u'   が組み立てられません')
     #表示されている持ち物リストを更新
@@ -123,11 +123,11 @@ def bindPlacingKeys():
   for k in placekeys:
     screen.onkey(makeplace(k), placekeys[k])
 
-#リソースを組み立てる関数を作成する
+#リソースを組み合わせる関数を作成する
 def makecraft(resource):
   return lambda: craft(resource)
 
-#各キーに「組み立て」機能を割り当てます
+#各キーに「組み合わせ」機能を割り当てます
 def bindCraftingKeys():
   for k in craftkeys:
     screen.onkey(makecraft(k), craftkeys[k])
@@ -187,7 +187,7 @@ def drawInventory():
       rendererT.goto(20, (height - (MAPHEIGHT * TILESIZE)) - 20 - (i * 100))
       rendererT.write(u"置く")
       rendererT.goto(20, (height - (MAPHEIGHT * TILESIZE)) - 40 - (i * 100))
-      rendererT.write(u"クラフト（組み立て）")
+      rendererT.write(u"クラフト（組み合わせ）")
     #持ち物リストの位置を設定する
     xPosition = 70
     yPostition = height - (MAPHEIGHT * TILESIZE) - 80
@@ -203,7 +203,7 @@ def drawInventory():
       ＃配置するキーを追加
       rendererT.goto(xPosition, yPostition - TILESIZE - 20)
       rendererT.write(placekeys[item])
-      #組み立てキーを加する
+      #組み合わせキーを加する
       if crafting.get(item) != None:
         rendererT.goto(xPosition, yPostition - TILESIZE - 40)
         rendererT.write(craftkeys[item])     
@@ -217,16 +217,16 @@ def drawInventory():
         yPostition -= TILESIZE + 80
     drawing = False
 
-#組み立てルールを含む説明書きの生成
+#組み合わせルールを含む説明書きの生成
 def generateInstructions():
-  instructions.append('組み立てルール:')
-  #組み立てられる各リソースに対して
+  instructions.append('組み合わせルール:')
+  #組み合わせられる各リソースに対して
   for rule in crafting:
-    #組み立てルール本文を作成
+    #組み合わせルール本文を作成
     craftrule = names[rule] + ' = '
     for resource, number in crafting[rule].items():
       craftrule += str(number) + ' ' + names[resource] + ' '
-    #組み立てルールをゲーム説明書きに追加
+    #組み合わせルールをゲーム説明書きに追加
     instructions.append(craftrule)
   #説明書きを表示
   yPos = height - 20
