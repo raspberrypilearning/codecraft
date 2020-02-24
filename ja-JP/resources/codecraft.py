@@ -85,9 +85,9 @@ def place(resource):
   else:
     print(u'   あなたは', names[resource], u'を持っていません')
 
-#新しいリソースを作成
+#新しいリソースを組み立てる
 def craft(resource):
-  print(u'作成：', names[resource])
+  print(u'組み立て中：', names[resource])
   #もしリソースを作成できる場合
   if resource in crafting:
     #新たに作成するのに必要なリソースがあるかを
