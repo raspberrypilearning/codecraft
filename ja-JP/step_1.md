@@ -18,11 +18,11 @@
 
 ## はじめに
 
-このプロジェクトでは、子供たちは基本的な2Dマインクラフトのクローンを改良することにより、グラフィクスとゲームデザインを学びます。 Children will create new resources, as well as crafting rules for combining resources to make new ones. This will be achieved by understanding and manipulating variables, lists and dictionaries.
+このプロジェクトでは、子供たちは基本的な2Dマインクラフトのクローンを改良することにより、グラフィクスとゲームデザインを学びます。 子供は新しいリソースを作成し、リソースを組み合わせて新しいリソースを作成するためのルールを作成します。 これは、変数、リスト、およびディクショナリを理解して操作することにより実現されます。
 
-## Online Resources
+## オンライン・リソース
 
-**This project uses Python 3.** We recommend using [trinket](https://trinket.io/) to write Python online. This project contains the following Trinkets:
+**本プロジェクトでは、Python 3を使います。**オンラインでPythonのコードを記述するには、[trinket](https://trinket.io/)の使用をお勧めします。 本プロジェクトには、以下のtrinketが用意されています：
 
 + ['CodeCraft' starter project -- rpf.io/codecraft-on](http://rpf.io/codecraft-on)
 
