@@ -1,7 +1,7 @@
 \--- challenge \---
 
-## チャレンジ：さらにリソースを作成
+## チャレンジ：さらにリソースを作り出す
 
-Can you add more resources and crafting rules to your game?
+さらにリソースを追加し、作成ルールを追加できますか？
 
 \--- /challenge \---
