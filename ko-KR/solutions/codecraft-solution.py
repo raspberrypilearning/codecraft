@@ -49,11 +49,11 @@ def pickUp():
   global playerX, playerY
   drawing = True
   currentTile = world[playerX][playerY]
-  #만약 플레이어가 과하게 자원을 지니고 있지 않다면...
+  #만약 플레이어가 이미 너무 많은 자원을 지니고 있지 않다면...
   if inventory[currentTile] < MAXTILES:
     #플레이어는 이제 자원을 1개 더 얻음
     inventory[currentTile] += 1
-    #플레이어가 흙 위에 서있음
+    #플레이어가 흙 위에 서 있도록 함
     world[playerX][playerY] = DIRT
     #새로운 흙 타일 그리기
     drawResource(playerX, playerY)
@@ -81,16 +81,16 @@ def place(resource):
     drawInventory()
     #drawPlayer()
     print(names[resource], ' 제작 완료')
-  #...그리고 만약 남은 것이 하나도 없다면...
+  #...그리고 남은 것이 하나도 없다면...
   else:
-    print(names[resource], ' 자원이 없습니다!')
+    print('당신은', names[resource], ' 자원을 가지고 있지 않습니다.')
 
 #새로운 자원 제작
 def craft(resource):
   print('제작 중: ', names[resource])
   #만약 만들 수 있는 자원이라면
   if resource in crafting:
-    #리소스가 있는지의 여부를 추적
+    #자원이 있는지의 여부를 계속 추적
     #이 아이템을 제작하기 위해
     canBeMade = True
     #자원을 만드는 데 필요한 각 항목의 수
@@ -100,7 +100,7 @@ def craft(resource):
       #만들 수 없습니다!
         canBeMade = False
         break
-    #만약 가공할 수 있다면 수 있다면 (우리가 필요한 자원을 모두 가지고 있는 경우)
+    #만약 만들 수 있다면 (우리가 필요한 자원을 모두 가지고 있는 경우)
     if canBeMade == True:
       #각 자원을 인벤토리에서 빼냄
       for i in crafting[resource]:
@@ -114,11 +114,11 @@ def craft(resource):
     #디스플레이 업데이트(월드 및 인벤토리)
     drawInventory()
 
-#각 리소스를 배치하기 위한 함수 만들기
+#각 자원을 배치하기 위한 함수 만들기
 def makeplace(resource):
   return lambda: place(resource)
 
-#각 키와 해당하는 함수를 연결
+#각 키에 해당하는 함수를 연결
 def bindPlacingKeys():
   for k in placekeys:
     screen.onkey(makeplace(k), placekeys[k])
@@ -127,14 +127,14 @@ def bindPlacingKeys():
 def makecraft(resource):
   return lambda: craft(resource)
 
-#제작 키 누름 함수
+#제작 함수를 각 키 누름에 연결ㅁ
 def bindCraftingKeys():
   for k in craftkeys:
     screen.onkey(makecraft(k), craftkeys[k])
 
 #(y,x) 포지션에 자원 그리기
 def drawResource(y, x):
-  #다른 곳에서 작동 중인 함수를 멈춤
+  #이 변수는 다른 물건이 그려지는 것을 멈춤
   global drawing
   #만약 다른 곳에서 그리고 있지 않다면
   if drawing == False:
