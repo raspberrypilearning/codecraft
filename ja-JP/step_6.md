@@ -24,23 +24,23 @@
     
     ![スクリーンショット](images/craft-wood-inventory.png)
 
-+ Finally, add the key that you'll press to place wood in the world.
++ 最後に、木をワールドに配置するために押す数字キーを追加します。
     
-    ![screenshot](images/craft-wood-placekey.png)
+    ![スクリーンショット](images/craft-wood-placekey.png)
 
-+ Run your project to test it. You'll see that you now have a new 'wood' resource in your inventory.
++ プロジェクトを実行し、テストします。 木のリソース（WOOD）が持ち物リストに入っていることがわかります。
     
-    ![screenshot](images/craft-wood-test.png)
+    ![スクリーンショット](images/craft-wood-test.png)
 
-+ There's no wood in your world! To fix this, click on your `main.py` file and find the function called `generateRandomWorld()`.
++ ワールドには木がありません！ `main.py`ファイルを開き、関数`generateRandomWorld()`を修正します。
     
-    ![screenshot](images/craft-wood-random1.png)
+    ![スクリーンショット](images/craft-wood-random1.png)
     
-    This code generates a random number between 0 and 10, and uses the number to decide which resource to place:
+    このコードは0から10の乱数を生成し、その番号によりどのリソースを配置するかを決定します。
     
-    + 1 or 2 = water
-    + 3 or 4 = grass
-    + anything else = DIRT
+    + 1 か 2 = 水
+    + 3 か 4 = 草
+    + それ以外 = 土
 
 + Add this code to add wood to your world whenever the `randomNumber` is 5.
     
