@@ -85,32 +85,32 @@ def place(resource):
   else:
     print(u'   あなたは', names[resource], u'を持っていません')
 
-#新しいリソースを組み立てる
+#新しいリソースを組み合わせる
 def craft(resource):
-  print(u'組み立て中：', names[resource])
-  #もしリソースを組み立てられる場合
+  print(u'組み合わせ中：', names[resource])
+  #もしリソースを組み合わせられる場合
   if resource in crafting:
-    #新たに組み立てるのに必要なリソースがあるかを
+    #新たに組み合わせるのに必要なリソースがあるかを
     #確認します
     canBeMade = True
-    #リソースの組み立て必要な各アイテムについて
+    #リソースの組み合わせに必要な各アイテムについて
     for i in crafting[resource]:
       #。。。もしアイテムが足りなければ。。。
       if crafting[resource][i] > inventory[i]:
-      #。。。変数にリソースを組み立てられないと設定する
+      #。。。変数にリソースを組み合わせられないと設定する
         canBeMade = False
         break
-    #もし組み立てられる場合(必要なアイテムがすべてある場合)
+    #もし組み合わせられる場合(必要なアイテムがすべてある場合)
     if canBeMade == True:
       #持ち物リストからアイテムを出す
       for i in crafting[resource]:
         inventory[i] -= crafting[resource][i]
       #新しいリソースを持ち物リストに追加する
       inventory[resource] += 1
-      print(names[resource], u'組み立て完了')
-    #。。。リソースを組み立てられない場合
+      print(names[resource], u'組み合わせ完了')
+    #。。。リソースを組み合わせられない場合
     else:
-      print(names[resource], u'   が組み立てられません')
+      print(names[resource], u'   が組み合わせられません')
     #表示されている持ち物リストを更新
     drawInventory()
 
