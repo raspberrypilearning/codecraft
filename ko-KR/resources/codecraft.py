@@ -17,7 +17,7 @@ def moveLeft():
     drawResource(oldX, playerY)
     drawResource(playerX, playerY)
     
-#moves the player right 1 tile.
+#플레이어가 오른쪽으로 1칸 이동
 def moveRight():
   global playerX, MAPWIDTH
   if(drawing == False and playerX < MAPWIDTH - 1):
@@ -26,7 +26,7 @@ def moveRight():
     drawResource(oldX, playerY)
     drawResource(playerX, playerY)
     
-#moves the player up 1 tile.
+#플레이어가 위쪽으로 1칸 이동
 def moveUp():
   global playerY
   if(drawing == False and playerY > 0):
@@ -35,7 +35,7 @@ def moveUp():
     drawResource(playerX, oldY)
     drawResource(playerX, playerY)
     
-#moves the player down 1 tile.
+#플레이어가 아래쪽으로 1칸 이동
 def moveDown():
   global playerY, MAPHEIGHT
   if(drawing == False and playerY < MAPHEIGHT - 1):
@@ -44,77 +44,77 @@ def moveDown():
     drawResource(playerX, oldY)
     drawResource(playerX, playerY)
     
-#picks up the resource at the player's position.
+#플레이어의 위치에서 아이템을 줍는 코드
 def pickUp():
   global playerX, playerY
   drawing = True
   currentTile = world[playerX][playerY]
-  #if the user doesn't already have too many...
+  #만약 플레이어가 이미 너무 많은 자원을 지니고 있지 않다면...
   if inventory[currentTile] < MAXTILES:
-    #player now has 1 more of this resource
+    #플레이어는 이제 자원을 1개 더 얻음
     inventory[currentTile] += 1
-    #the player is now standing on dirt
+    #플레이어가 흙 위에 서 있도록 함
     world[playerX][playerY] = DIRT
-    #draw the new DIRT tile
+    #새로운 흙 타일 그리기
     drawResource(playerX, playerY)
-    #redraw the inventory with the extra resource.
+    #인벤토리 업데이트
     drawInventory()
     #drawPlayer()
 
-#place a resource at the player's current position
+#플레이어의 위치에 아이템을 배치
 def place(resource):
-  print('placing: ', names[resource])
-  #only place if the player has some left...
+  print('제작 중: ', names[resource])
+  #이 위치에 플레이어에게 남은 자원이 있다면...
   if inventory[resource] > 0:
-    #find out the resourcee at the player's current position
+    #플레이어의 위치에 배치된 자원 탐색
     currentTile = world[playerX][playerY]
-    #pick up the resource the player's standing on
-    #(if it's not DIRT)
+    #플레이어의 위치에서 아이템을 줍는 코드
+    #(만약 흙이 아닌 경우)
     if currentTile is not DIRT:
       inventory[currentTile] += 1
-    #place the resource at the player's current position
+    #플레이어의 위치에 아이템을 배치
     world[playerX][playerY] = resource
-    #add the new resource to the inventory
+    #새 자원을 인벤토리에 추가
     inventory[resource] -= 1
-    #update the display (world and inventory)
+    #디스플레이 업데이트(월드 및 인벤토리)
     drawResource(playerX, playerY)
     drawInventory()
     #drawPlayer()
-    print('   Placing', names[resource], 'complete')
-  #...and if they have none left...
+    print(names[resource], ' 설치 완료')
+  #...그리고 남은 것이 하나도 없다면...
   else:
-    print('   You have no', names[resource], 'left')
+    print('당신은', names[resource], ' 자원을 가지고 있지 않습니다.')
 
-#craft a new resource
+#새로운 자원 제작
 def craft(resource):
-  print('Crafting: ', names[resource])
-  #if the resource can be crafted...
+  print('제작 중: ', names[resource])
+  #만약 만들 수 있는 자원이라면
   if resource in crafting:
-    #keeps track of whether we have the resources
-    #to craft this item
+    #자원이 있는지의 여부를 계속 추적
+    #이 아이템을 제작하기 위해
     canBeMade = True
-    #for each item needed to craft the resource
+    #자원을 만드는 데 필요한 각 항목의 수
     for i in crafting[resource]:
-      #...if we don't have enough...
+      #만약 충분하지 못하다면
       if crafting[resource][i] > inventory[i]:
-      #...we can't craft it!
+      #만들 수 없습니다!
         canBeMade = False
         break
-    #if we can craft it (we have all needed resources)
+    #만약 만들 수 있다면 (우리가 필요한 자원을 모두 가지고 있는 경우)
     if canBeMade == True:
-      #take each item from the inventory
+      #각 아이템을 인벤토리에서 빼냄
       for i in crafting[resource]:
         inventory[i] -= crafting[resource][i]
-      #add the crafted item to the inventory
+      #새 자원을 인벤토리에 추가
       inventory[resource] += 1
-      print('   Crafting', names[resource], 'complete')
-    #...otherwise the resource can't be crafted...
+      print(names[resource], ' 설치 완료')
+    #만약 만들 수 없는 자원이라면
     else:
-      print('   Can\'t craft', names[resource])
-    #update the displayed inventory
+      print(names[resource], ' 를 만들 수 없습니다!')
+    #디스플레이 업데이트(월드 및 인벤토리)
     drawInventory()
 
-#creates a function for placing each resource
+#각 자원을 배치하기 위한 함수 만들기
 def makeplace(resource):
   return lambda: place(resource)
 
@@ -270,9 +270,9 @@ TILESIZE = 20
 INVWIDTH = 8
 drawing = False
 
-#create a new 'screen' object
+#'screen' 오브젝트 생성
 screen = turtle.Screen()
-#calculate the width and height
+#너비와 높이 계산
 width = (TILESIZE * MAPWIDTH) + max(200,INVWIDTH * 50)
 num_rows = int(ceil((len(resources) / INVWIDTH)))
 inventory_height =  num_rows * 120 + 40
@@ -283,34 +283,34 @@ screen.setworldcoordinates(0,0,width,height)
 screen.bgcolor(BACKGROUNDCOLOUR)
 screen.listen()
 
-#register the player image  
+#플레이어 이미지 등록  
 screen.register_shape(playerImg)
-#register each of the resource images
+#각 자원의 이미지 등록
 for texture in textures.values():
   screen.register_shape(texture)
 
-#create another turtle to do the graphics drawing
+#그래픽을 그리기 위해 다른 Turtle 생성
 rendererT = turtle.Turtle()
 rendererT.hideturtle()
 rendererT.penup()
 rendererT.speed(0)
 rendererT.setheading(90)
 
-#create a world of random resources.
+#무작위로 월드에 자원 배치
 world = [ [DIRT for w in range(MAPHEIGHT)] for h in range(MAPWIDTH) ]
 
-#map the keys for moving and picking up to the correct functions.
+#옮기고 집기 위한 키를 적절한 함수와 연결
 screen.onkey(moveUp, 'w')
 screen.onkey(moveDown, 's')
 screen.onkey(moveLeft, 'a')
 screen.onkey(moveRight, 'd')
 screen.onkey(pickUp, 'space')
 
-#set up the keys for placing and crafting each resource
+#자원 배치 및 제작을 위한 키 설정
 bindPlacingKeys()
 bindCraftingKeys()
 
-#these functions are defined above
+#이 함수들은 위에서 정의 됨.
 generateRandomWorld()
 drawWorld()
 drawInventory()
