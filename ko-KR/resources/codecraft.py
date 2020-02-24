@@ -118,31 +118,31 @@ def craft(resource):
 def makeplace(resource):
   return lambda: place(resource)
 
-#attaches a 'placing' function to each key press
+#각 키에 해당하는 함수를 연결
 def bindPlacingKeys():
   for k in placekeys:
     screen.onkey(makeplace(k), placekeys[k])
 
-#creates a function for crafting each resource
+#각 자원을 제작하기 위한 함수 만들기
 def makecraft(resource):
   return lambda: craft(resource)
 
-#attaches a 'crafting' function to each key press
+#제작 함수를 각 키 누름에 연결
 def bindCraftingKeys():
   for k in craftkeys:
     screen.onkey(makecraft(k), craftkeys[k])
 
-#draws a resource at the position (y,x)
+#(y,x) 포지션에 자원 그리기
 def drawResource(y, x):
-  #this variable stops other stuff being drawn
+  #이 변수는 다른 물건이 그려지는 것을 방지함
   global drawing
-  #only draw if nothing else is being drawn
+  #만약 다른 물건이 그려지는 중이 아니라면
   if drawing == False:
-    #something is now being drawn
+    #그려지고 있다는 플래그를 True로 설정
     drawing = True
-    #draw the resource at that position in the tilemap, using the correct image
+    #적절한 이미지를 사용하여 타일 맵에 자원을 그림
     rendererT.goto( (y * TILESIZE) + 20, height - (x * TILESIZE) - 20 )
-    #draw tile with correct texture
+    #올바른 텍스쳐로 타일을 그림
     texture = textures[world[y][x]]
     rendererT.shape(texture)
     rendererT.stamp()
@@ -150,27 +150,27 @@ def drawResource(y, x):
       rendererT.shape(playerImg)
       rendererT.stamp()
     screen.update()
-    #nothing is now being drawn
+    #그리는 중인 것이 없음
     drawing = False
     
-#draws the world map
+#월드 맵을 그림
 def drawWorld():
-  #loop through each row
+  #각 행을 반복
   for row in range(MAPHEIGHT):
-    #loop through each column in the row
+    #해당 행의 각 열을 반복
     for column in range(MAPWIDTH):
-      #draw the tile at the current position
+      #현재 위치에서 타일을 그리기
       drawResource(column, row)
 
-#draws the inventory to the screen
+#인벤토리를 화면에 표시
 def drawInventory():
-  #this variable stops other stuff being drawn
+  #이 변수는 다른 물건이 그려지는 것을 방지함
   global drawing
-  #only draw if nothing else is being drawn
+  #다른 곳에서 그려지지 않을 때만 그림
   if drawing == False:
-    #something is now being drawn
+    #그려지고 있다는 플래그를 True로 설정
     drawing = True
-    #use a rectangle to cover the current inventory
+    # 사각형을 이용하여 현재 인벤토리를 덮음
     rendererT.color(BACKGROUNDCOLOUR)
     rendererT.goto(0,0)
     rendererT.begin_fill()
@@ -178,95 +178,95 @@ def drawInventory():
     for i in range(2):
       rendererT.forward(inventory_height - 60)
       rendererT.right(90)
-      rendererT.forward(width)
       rendererT.right(90)
+      rendererT.right(90)
+    rendererT.right(90)
     rendererT.end_fill()
-    rendererT.color('black')
-    #display the 'place' and 'craft' text
+    #'설치' 및 '제작' 문자열 표시
     for i in range(1,num_rows+1):
       rendererT.goto(20, (height - (MAPHEIGHT * TILESIZE)) - 20 - (i * 100))
-      rendererT.write("place")
+      rendererT.write("설치")
       rendererT.goto(20, (height - (MAPHEIGHT * TILESIZE)) - 40 - (i * 100))
-      rendererT.write("craft")
-    #set the inventory position
+      rendererT.write("제작")
+    #인벤토리 위치 설정
     xPosition = 70
     yPostition = height - (MAPHEIGHT * TILESIZE) - 80
     itemNum = 0
     for i, item in enumerate(resources):
-      #add the image
+      #이미지 추가
       rendererT.goto(xPosition, yPostition)
       rendererT.shape(textures[item])
       rendererT.stamp()
-      #add the number in the inventory
+      #숫자를 인벤토리에 추가
       rendererT.goto(xPosition, yPostition - TILESIZE)
       rendererT.write(inventory[item])
-      #add key to place
+      #배치 키 추가
       rendererT.goto(xPosition, yPostition - TILESIZE - 20)
       rendererT.write(placekeys[item])
-      #add key to craft
+      #제작키 추가
       if crafting.get(item) != None:
         rendererT.goto(xPosition, yPostition - TILESIZE - 40)
         rendererT.write(craftkeys[item])     
-      #move along to place the next inventory item
+      #다음 인벤토리 아이템 배치
       xPosition += 50
       itemNum += 1
-      #drop down to the next row every 10 items
+      #10개 항목마다 다음 행
       if itemNum % INVWIDTH == 0:
         xPosition = 70
         itemNum = 0
         yPostition -= TILESIZE + 80
     drawing = False
 
-#generate the instructions, including crafting rules
+#게임 플레이 방법과 가공 규칙을 생성
 def generateInstructions():
-  instructions.append('Crafting rules:')
-  #for each resource that can be crafted...
+  instructions.append('제작 방법:')
+  #만들 수 있는 각 자원 마다 반복
   for rule in crafting:
-    #create the crafting rule text
+    #가공 규칙 문자열 작성
     craftrule = names[rule] + ' = '
     for resource, number in crafting[rule].items():
       craftrule += str(number) + ' ' + names[resource] + ' '
-    #add the crafting rule to the instructions
+    #게임 방법에 가공 규칙 추가
     instructions.append(craftrule)
-  #display the instructions
+  #규칙을 표시
   yPos = height - 20
   for item in instructions:
     rendererT.goto( MAPWIDTH*TILESIZE + 40, yPos)
     rendererT.write(item)
     yPos-=20
 
-#generate a random world
+#임의로 블럭 배치
 def generateRandomWorld():
-  #loop through each row
+  #각 행을 반복
   for row in range(MAPHEIGHT):
-    #loop through each column in that row
+    #해당 행의 각 열을 반복
     for column in range(MAPWIDTH):
-      #pick a random number between 0 and 10
+      #0부터 10까지의 임의의 숫자를 뽑음
       randomNumber = random.randint(0,10)
-      #WATER if the random number is a 1 or a 2
+      #1 또는 2일 경우 물
       if randomNumber in [1,2]:
         tile = WATER
-      #GRASS if the random number is a 3 or a 4
+      #3 또는 4일 경우 초원
       elif randomNumber in [3,4]:
         tile = GRASS
-      #otherwise it's DIRT
+      #이외는 흙
       else:
         tile = DIRT
-      #set the position in the tilemap to the randomly chosen tile
+      #무작위로 선정된 타일로 타일 맵의 위치 선정
       world[column][row] = tile
 
 #---
-#Code starts running here
+#코드는 여기서부터 실행됨!
 #---
 
-#import the modules and variables needed
+#필요한 모듈과 변수 가져오기
 import turtle
 import random
 from variables import *
 from math import ceil
 
 TILESIZE = 20
-#the number of inventory resources per row
+#행당 인벤토리 자원의 갯수
 INVWIDTH = 8
 drawing = False
 
