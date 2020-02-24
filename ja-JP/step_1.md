@@ -73,36 +73,36 @@
 
 このプロジェクトは、[ Raspberry Pi デジタル・メイキング・カリキュラム](http://rpf.io/curriculum)の以下の要素をカバーしています ：
 
-+ [Design basic 2D and 3D assets.](https://www.raspberrypi.org/curriculum/design/creator)
++ [2次元と3次元のアセットをデザインする。](https://www.raspberrypi.org/curriculum/design/creator)
 
 + [問題解決のためにプログラミング要素を組み合わせる。](https://www.raspberrypi.org/curriculum/programming/builder)
 
 ## チャレンジ
 
-+ "Build your world" - Playing the game, placing and crafting existing blocks;
-+ "Change your world size" - editing the `MAPWIDTH` and `MAPHEIGHT` variables to change the world size;
-+ "Creating sand" - Creating a new sand resource, along with associated game data.
++ "ワールドを構築" – ゲームをプレイし、既存のブロックを配置または作成する。
++ "ワールドのサイズを変更" - `MAPWIDTH` と `MAPHEIGHT` 変数を編集してワールドのサイズを変更する。
++ "砂を作る" – 関連するゲームデータとともに新しい‘砂’リソースを作る。
 + "砂からガラスをクラフト（組み合わせ）する" – 新しいガラスリソースを作る。
-+ "Create more resources" - Use what's been learnt to create more blocks and crafting rules.
++ ”さらにリソースを作る" – 習ったことを使ってさらにブロックやクラフティングルール（組み合わせルール）を作成する。
 
-## Frequently Asked Questions
+## よくある質問
 
-+ Children may need reminding that elements of a dictionary/list are separated by a comma. For example, when adding inventory items, graphics and crafting rules to the game.
++ 子供たちには、ディクショナリ/リストの要素がコンマで区切られていることを思い出させる必要があるかもしれません。 たとえば、手持ちのアイテム、グラフィックス、および組み合わせルールをゲームに追加する場合などです。
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: Project materials
+## title：プロジェクト資料
 
-## Project resources
+## プロジェクトリソース
 
-+ [.zip file containing all project resources](resources/codecraft-resources.zip)
-+ [Online Trinket containing all 'CodeCraft' project resources](http://rpf.io/codecraft-on)
++ [全プロジェクト・リソースの入った.zipファイル](resources/codecraft-resources.zip)
++ [「コードクラフト」プロジェクト・リソースの入ったのオンラインtrinket](http://rpf.io/codecraft-on)
 
-## Club leader resources
+## クラブ・リーダー向けリソース
 
-+ [.zip file containing all completed project resources](solutions/codecraft-solution.zip)
-+ [Online completed Trinket project](https://trinket.io/python/ebc5b0148b)
++ [全プロジェクトの完成版リソースの入った.zipファイル](solutions/codecraft-solution.zip)
++ [完成版プロジェクトのオンラインtrinket](https://trinket.io/python/ebc5b0148b)
 
 \--- /collapse \---
