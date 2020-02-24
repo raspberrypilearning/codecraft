@@ -1,4 +1,4 @@
-## Creating a new wood resource
+## 新しい木のリソースを作成
 
 Let's create a new wood resource. To do this, you'll need to add to some variables in your `variables.py` file.
 
