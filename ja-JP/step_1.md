@@ -1,6 +1,6 @@
-## Introduction
+## はじめに
 
-In this project, you’ll design and code improvements to a 2D version of Minecraft.
+このプロジェクトでは、Minecraftの2Dバージョンの設計とコードの改善を行います。
 
 <div class="trinket">
   <iframe src="https://trinket.io/embed/python/ebc5b0148b?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
@@ -8,17 +8,17 @@ In this project, you’ll design and code improvements to a 2D version of Minecr
   <img src="images/craft-finished.png">
 </div>
 
-### Additional information for club leaders
+### クラブリーダーのための追加情報
 
-If you need to print this project, please use the [Printer friendly version](https://projects.raspberrypi.org/en/projects/codecraft/print).
+このプロジェクトを印刷する必要がある場合は、 [印刷用バージョン](https://projects.raspberrypi.org/en/projects/codecraft/print)を使用してください。
 
 ## \--- collapse \---
 
-## title: Club leader notes
+## title：クラブリーダー・ノート
 
-## Introduction:
+## はじめに
 
-In this project, children will learn aspects of graphics and game design by making improvements to a basic 2D Minecraft clone. Children will create new resources, as well as crafting rules for combining resources to make new ones. This will be achieved by understanding and manipulating variables, lists and dictionaries.
+このプロジェクトでは、子供たちは基本的な2Dマインクラフトのクローンを改良することにより、グラフィクスとゲームデザインを学びます。 Children will create new resources, as well as crafting rules for combining resources to make new ones. This will be achieved by understanding and manipulating variables, lists and dictionaries.
 
 ## Online Resources
 
