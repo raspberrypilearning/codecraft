@@ -63,7 +63,7 @@ placekeys = {
   BRICK : '4'
 }
 
-#タイルを作るキー
+#タイルをクラフトするキー
 craftkeys = {
   BRICK : 'r'
 }
