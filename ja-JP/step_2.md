@@ -14,7 +14,7 @@
     
     ![スクリーンショット](images/craft-place-water.png)
 
-+ You can craft an item by pressing the key displayed in the menu. Crafting means combining items you already have in your inventory to create new ones. Try pressing the 'r' key to craft a new brick (as long as you have 2 dirt and 1 water in your inventory).
++ メニューに表示されたキーを押し、アイテムをクラフト（組み合わせ）する。 クラフトとは、すでに持っているアイテムを組み合わせて新しいものを作ることを意味します 。 Try pressing the 'r' key to craft a new brick (as long as you have 2 dirt and 1 water in your inventory).
     
     ![screenshot](images/craft-craft-brick.png)
 
