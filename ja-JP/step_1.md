@@ -32,7 +32,7 @@
 
 ## オフライン・リソース
 
-本プロジェクトは、[オフラインで実施する](https://www.codeclubprojects.org/en-GB/resources/python-working-offline/)ことも可能です。 “プロジェクト資料”のリンクをクリックすることでこのプロジェクトのリソースにアクセスすることが可能です。 This link contains a 'Project Resources' section, which includes resources that children will need to complete this project offline. Make sure that each child has access to a copy of these resources. This section includes the following files:
+本プロジェクトは、[オフラインで実施する](https://www.codeclubprojects.org/en-GB/resources/python-working-offline/)ことも可能です。 “プロジェクト資料”のリンクをクリックすることでこのプロジェクトのリソースにアクセスすることが可能です。 このリンクには、「プロジェクトリソース」セクションが含まれています。このセクションには、子供がこのプロジェクトをオフラインで完了するために必要なリソースが含まれています。 子供たち一人ひとりがそれらのリソースのコピーにアクセスできるようにしておいて下さい。 本セクションには、以下のファイルが含まれます：
 
 + codecraft/codecraft.py
 + codecraft/variables.py
@@ -46,7 +46,7 @@
 + codecraft/water.gif
 + codecraft/wood.gif
 
-You can also find a completed version of this project in the 'Volunteer Resources' section, which contains:
+また、以下の完成版プログラムは、「リーダー用ノート」セクションから入手可能です。
 
 + codecraft-finished/codecraft.py
 + codecraft-finished/variables.py
@@ -62,14 +62,14 @@ You can also find a completed version of this project in the 'Volunteer Resource
 
 (All of the resources above are also downloadable as `.zip` files.)
 
-## Learning Objectives
+## 学習目標
 
-+ Creating and editing graphics;
-+ Game design;
-+ Editing: 
-    + Variables;
-    + Lists;
-    + Dictionaries.
++ グラフィクスの作成・編集
++ ゲームデザイン
++ 編集 
+    + 変数
+    + リスト
+    + ディクショナリ
 
 This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
 
@@ -82,7 +82,7 @@ This project covers elements from the following strands of the [Raspberry Pi Dig
 + "Build your world" - Playing the game, placing and crafting existing blocks;
 + "Change your world size" - editing the `MAPWIDTH` and `MAPHEIGHT` variables to change the world size;
 + "Creating sand" - Creating a new sand resource, along with associated game data.
-+ "Crafting glass from sand" - Creating a new craftable glass resource.
++ "砂からガラスをクラフト（組み合わせ）する" – 新しいガラスリソースを作る。
 + "Create more resources" - Use what's been learnt to create more blocks and crafting rules.
 
 ## Frequently Asked Questions
