@@ -24,15 +24,15 @@
 
 **本プロジェクトでは、Python 3を使います。**オンラインでPythonのコードを記述するには、[trinket](https://trinket.io/)の使用をお勧めします。 本プロジェクトには、以下のtrinketが用意されています：
 
-+ ['CodeCraft' starter project -- rpf.io/codecraft-on](http://rpf.io/codecraft-on)
++ [「コードクラフト」スタータープロジェクト -- rpf.io/codecraft-on](http://rpf.io/codecraft-on)
 
-There is also a trinket containing the completed project:
+また、完成版プログラムが入力済みのtrinketも用意されています。
 
-+ [‘CodeCraft’ Finished -- trinket.io/python/ebc5b0148b](https://trinket.io/python/ebc5b0148b)
++ ['コードクラフト'の完成版プログラム -- trinket.io/python/ebc5b0148b](https://trinket.io/python/ebc5b0148b)
 
-## Offline Resources
+## オフライン・リソース
 
-This project can be [completed offline](https://www.codeclubprojects.org/en-GB/resources/python-working-offline/) if preferred. You can access the project resources by clicking the 'Project Materials' link for this project. This link contains a 'Project Resources' section, which includes resources that children will need to complete this project offline. Make sure that each child has access to a copy of these resources. This section includes the following files:
+本プロジェクトは、[オフラインで実施する](https://www.codeclubprojects.org/en-GB/resources/python-working-offline/)ことも可能です。 “プロジェクト資料”のリンクをクリックすることでこのプロジェクトのリソースにアクセスすることが可能です。 This link contains a 'Project Resources' section, which includes resources that children will need to complete this project offline. Make sure that each child has access to a copy of these resources. This section includes the following files:
 
 + codecraft/codecraft.py
 + codecraft/variables.py
