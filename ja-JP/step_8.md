@@ -34,6 +34,6 @@
     
     ![スクリーンショット](images/craft-plank-craftkeys.png)
 
-+ To test your new plank resource, gather up a few wood tiles and then craft some planks from your wood. You can then place your new planks in your world.
++ 板リソースをテストするために、木リソースを集めて板リソースをクラフトしてみましょう。 ワールドに板リソースが配置できるようになります。
     
-    ![screenshot](images/craft-plank-test.png)
+    ![スクリーンショット](images/craft-plank-test.png)
