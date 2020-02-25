@@ -6,8 +6,8 @@
 
 ![スクリーンショット](images/craft-sand.png)
 
-The project already includes a `sand.gif` image, but you can create and upload your own if you prefer.
+このプロジェクトは `sand.gif` 画像を含んでいます。しかし、自分で画像を作成し、アップロードして使用することもできます。
 
 ![screenshot](images/craft-upload.png)
 
-\--- /challenge \---
+\--- challenge \---
