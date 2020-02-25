@@ -1,10 +1,10 @@
 \--- challenge \---
 
-## Challenge: Creating sand
+## チャレンジ：砂の作成
 
-Can you add a `SAND` resource to your game? You can use the steps above to help you.
+`SAND` リソース（砂）を追加できますか？ 上記の手順が役に立ちます。
 
-![screenshot](images/craft-sand.png)
+![スクリーンショット](images/craft-sand.png)
 
 The project already includes a `sand.gif` image, but you can create and upload your own if you prefer.
 
