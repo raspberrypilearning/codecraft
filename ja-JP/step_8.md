@@ -22,17 +22,17 @@
     
     ![スクリーンショット](images/craft-plank-inventory.png)
 
-+ Set a key for placing planks.
++ 板を置くキーを設定します。
     
-    ![screenshot](images/craft-plank-placekeys.png)
+    ![スクリーンショット](images/craft-plank-placekeys.png)
 
-+ As this resource can be crafted, you need to create a crafting rule, which is that a plank can be made from 3 wood tiles. Add this code to the `crafting` dictionary.
++ この板リソースはクラフトできるものなので、クラフトするルールが必要です。３つの木リソースから作るルールとします。 そのルールを`crafting`ディクショナリに追加します。
     
-    ![screenshot](images/craft-plank-crafting.png)
+    ![スクリーンショット](images/craft-plank-crafting.png)
 
-+ Finally, you need to set a key for crafting new planks.
++ 最後に、板リソースをクラフトするキーを設定します。
     
-    ![screenshot](images/craft-plank-craftkeys.png)
+    ![スクリーンショット](images/craft-plank-craftkeys.png)
 
 + To test your new plank resource, gather up a few wood tiles and then craft some planks from your wood. You can then place your new planks in your world.
     
