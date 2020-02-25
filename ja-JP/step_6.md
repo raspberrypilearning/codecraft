@@ -42,10 +42,10 @@
     + 3 か 4 = 草
     + それ以外 = 土
 
-+ Add this code to add wood to your world whenever the `randomNumber` is 5.
++ コードを追加し、`randomNumber` が 5だったら木を追加するようにします。
     
-    ![screenshot](images/craft-wood-random2.png)
+    ![スクリーンショット](images/craft-wood-random2.png)
 
-+ Test your project again. This time, you should see some wood appear in your world.
++ プロジェクトをもう一度テストしてみましょう。 今回はワールドに木があるはずです。
     
-    ![screenshot](images/craft-wood-test2.png)
+    ![スクリーンショット](images/craft-wood-test2.png)
