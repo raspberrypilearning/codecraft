@@ -132,7 +132,7 @@ def bindCraftingKeys():
   for k in craftkeys:
     screen.onkey(makecraft(k), craftkeys[k])
 
-＃位置（y、x）にリソースを描画します
+#位置（y、x）にリソースを描画します
 def drawResource(y, x):
   #この変数は他のものを描画しないようにします
   global drawing
@@ -200,7 +200,7 @@ def drawInventory():
       #リソースの数を持ち物リストに追加
       rendererT.goto(xPosition, yPostition - TILESIZE)
       rendererT.write(inventory[item])
-      ＃配置するキーを追加
+      #配置するキーを追加
       rendererT.goto(xPosition, yPostition - TILESIZE - 20)
       rendererT.write(placekeys[item])
       #クラフトキーを加する
