@@ -32,7 +32,7 @@ Do utworzenia nowego zasobu drewna, potrzebne będą zmiany wartości niektóryc
     
     ![zrzut ekranu](images/craft-wood-test.png)
 
-+ W Twoim świecie nie ma drewna, aby to zmienić, kliknij na pliku `main.py` i odszukaj funkcję `generateRandomWorld()`.
++ W Twoim świecie nie ma drewna, aby to zmienić, kliknij na pliku `main.py` i odszukaj funkcję `generujLosowySwiat()`.
     
     ![zrzut ekranu](images/craft-wood-random1.png)
     
