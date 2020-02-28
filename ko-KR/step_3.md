@@ -1,9 +1,9 @@
-\--- challenge \---
+\--- 도전과제 \---
 
-## Challenge: Build your world
+## 도전과제: 자신만의 월드 구축하기
 
-Can you build a house, with a garden and a swimming pool? What else can you create?
+정원과 수영장이 있는 집을 만들 수 있나요? 이외에도 무엇을 만들 수 있을까요?
 
-![screenshot](images/craft-build-example.png)
+![스크린샷](images/craft-build-example.png)
 
-\--- /challenge \---
+\--- /도전과제 \---
