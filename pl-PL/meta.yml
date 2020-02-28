@@ -1,0 +1,20 @@
+---
+hero_image: images/codecraft.png
+duration: 2
+listed: true
+copyedit: false
+title: CodeCraft
+description: Udoskonalenia projektu i kodu do wersji 2D Minecrafta.
+version: 3.1.0
+last_tested: 2018-11-22
+steps:
+  - title: Wprowadzenie
+  - title: Zasady gry
+  - title: 'Zadanie: tworzenie własnego świata'
+  - title: Modyfikacja własnej gry
+  - title: 'Zadanie: zmiana rozmiarów świata'
+  - title: Tworzenie nowego zasobu drewna
+  - title: 'Wyzwanie: tworzenie piasku'
+  - title: Wytwarzanie desek z drewna
+  - title: 'Zadanie: wytwarzanie szkła z piasku'
+  - title: 'Zadanie: tworzenie nowych zasobów'
