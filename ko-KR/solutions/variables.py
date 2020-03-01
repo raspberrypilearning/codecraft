@@ -25,10 +25,10 @@ resources = [DIRT,GRASS,WATER,BRICK,WOOD,SAND,PLANK,GLASS]
 
 #자원의 이름
 names = {
-  DIRT    : '흙 블록',
-  GRASS   : '초원 블록',
-  WATER   : '물 블록',
-  BRICK   : '벽돌 블록',
+  DIRT    : '흙',
+  GRASS   : '초원',
+  WATER   : '물',
+  BRICK   : '벽돌',
   WOOD    : '나무',
   SAND    : '모래',
   PLANK   : '나무판',
