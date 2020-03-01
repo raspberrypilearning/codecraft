@@ -27,7 +27,7 @@ names = {
   BRICK   : '벽돌 블록'
 }
 
-#이미지 이름을 담고 있는 딕셔너리
+#자원을 이미지에 연결해주는 딕셔너리
 textures = {
   DIRT    : 'dirt.gif',
   GRASS   : 'grass.gif',
