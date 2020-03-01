@@ -10,7 +10,7 @@ MAXTILES  = 20
 MAPWIDTH  = 10
 MAPHEIGHT = 10
 
-#자원들에 대한 분류 코드
+#각 자원을 표현하는 변수들
 DIRT    = 0
 GRASS   = 1
 WATER   = 2
