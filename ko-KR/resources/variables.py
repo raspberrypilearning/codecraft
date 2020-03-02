@@ -55,7 +55,7 @@ crafting = {
   BRICK    : { WATER : 1, DIRT : 2 }
 }
 
-#블럭 배치 단축키
+#자원 배치 키
 placekeys = {
   DIRT  : '1',
   GRASS : '2',
@@ -63,7 +63,7 @@ placekeys = {
   BRICK : '4'
 }
 
-#제작 단축키
+#제작 키
 craftkeys = {
   BRICK : 'r'
 }
