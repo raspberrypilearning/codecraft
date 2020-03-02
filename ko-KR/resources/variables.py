@@ -50,7 +50,7 @@ playerImg = 'player.gif'
 playerX = 0
 playerY = 0
 
-#새로운 조합법
+#새로운 자원을 만드는 규칙
 crafting = {
   BRICK    : { WATER : 1, DIRT : 2 }
 }
