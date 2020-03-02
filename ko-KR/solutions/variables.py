@@ -85,7 +85,7 @@ crafting = {
   GLASS    : { SAND : 3 }
 }
 
-#제작키
+#제작 키
 craftkeys = {
   BRICK : 'r',
   PLANK : 'u',
