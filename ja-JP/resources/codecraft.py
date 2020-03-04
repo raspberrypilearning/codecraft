@@ -87,7 +87,7 @@ def place(resource):
 
 #新しいリソースをクラフトする
 def craft(resource):
-  print(u'組み合わせ中：', names[resource])
+  print(u'クラフト中：', names[resource])
   #もしリソースをクラフトできない場合
   if resource in crafting:
     #新たにクラフトするのに必要なリソースがあるかを
@@ -107,10 +107,10 @@ def craft(resource):
         inventory[i] -= crafting[resource][i]
       #新しいリソースを持ち物リストに追加します
       inventory[resource] += 1
-      print(names[resource], u'組み合わせ完了')
+      print(names[resource], u'クラフト完了')
     #。。。リソースをクラフトできない場合
     else:
-      print(names[resource], u'   が組み立てられません')
+      print(names[resource], u'   がクラフトできません')
     #表示されている持ち物リストを更新
     drawInventory()
 
@@ -219,7 +219,7 @@ def drawInventory():
 
 #クラフトルールを含む説明書きの生成
 def generateInstructions():
-  instructions.append('組み合わせルール:')
+  instructions.append('クラフトルール:')
   #クラフトされる各リソースに対して
   for rule in crafting:
     #クラフトルール本文を作成
