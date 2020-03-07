@@ -1,51 +1,51 @@
-## Creating a new wood resource
+## Creazione della nuova risorsa legno
 
-Let's create a new wood resource. To do this, you'll need to add to some variables in your `variables.py` file.
+Creiamo una nuova risorsa: il legno. Per farlo, dovrai aggiungere ad alcune variabili nel tuo file `variabili.py`.
 
-+ First, you need to give your new resource a number. You'll then be able to use the word `WOOD` in your code instead of the number 4.
++ Innanzitutto, devi assegnare un numero alla tua nuova risorsa. Potrai quindi usare la parola `LEGNO` nel tuo codice invece del numero 4.
     
-    ![screenshot](images/craft-wood-const.png)
+    ![schermata](images/craft-wood-const.png)
 
-+ You should add your new `WOOD` resource to your list of `resources`.
++ Devi aggiungere la tua nuova risorsa `LEGNO` all'elenco di `risorse`.
     
-    ![screenshot](images/craft-wood-resources.png)
+    ![schermata](images/craft-wood-resources.png)
 
-+ You should also give your resource a name, which will be displayed in the inventory.
++ Dovresti anche dare un nome alla tua risorsa, che verrà visualizzato nell'inventario.
     
-    ![screenshot](images/craft-wood-name.png)
+    ![schermata](images/craft-wood-name.png)
     
-    Notice the comma `,` at the end of the line above.
+    Nota la virgola `,` alla fine della riga sopra.
 
-+ Your resource will also need an image. The project already includes an image called `wood.gif`, which you should add to the `textures` dictionary.
++ La tua risorsa avrà anche bisogno di un'immagine. Il progetto include già un'immagine chiamata `wood.gif`, che dovresti aggiungere al dizionario delle `trame` (textures).
     
-    ![screenshot](images/craft-wood-texture.png)
+    ![schermata](images/craft-wood-texture.png)
 
-+ Add the number of your resource that should be in your `inventory` to start with.
++ Aggiungi il numero della tua risorsa che dovrebbe essere nel tuo `inventario` per iniziare.
     
-    ![screenshot](images/craft-wood-inventory.png)
+    ![schermata](images/craft-wood-inventory.png)
 
-+ Finally, add the key that you'll press to place wood in the world.
++ Infine, aggiungi il tasto che premerai per posizionare la legna nel mondo.
     
-    ![screenshot](images/craft-wood-placekey.png)
+    ![schermata](images/craft-wood-placekey.png)
 
-+ Run your project to test it. You'll see that you now have a new 'wood' resource in your inventory.
++ Esegui il tuo progetto per provarlo. Vedrai che ora hai una nuova risorsa "legno" nel tuo inventario.
     
-    ![screenshot](images/craft-wood-test.png)
+    ![schermata](images/craft-wood-test.png)
 
-+ There's no wood in your world! To fix this, click on your `main.py` file and find the function called `generateRandomWorld()`.
++ Non c'è legno nel tuo mondo! Per risolvere questo problema, fai clic su `main.py` file e trova la funzione chiamata `generateRandomWorld()`.
     
-    ![screenshot](images/craft-wood-random1.png)
+    ![schermata](images/craft-wood-random1.png)
     
-    This code generates a random number between 0 and 10, and uses the number to decide which resource to place:
+    Questo codice genera un numero casuale compreso tra 0 e 10 e utilizza il numero per decidere quale risorsa posizionare:
     
-    + 1 or 2 = water
-    + 3 or 4 = grass
-    + anything else = DIRT
+    + 1 o 2 = acqua
+    + 3 o 4 = erba
+    + qualsiasi altra cosa = TERRENO
 
-+ Add this code to add wood to your world whenever the `randomNumber` is 5.
++ Aggiungi questo codice per aggiungere legna al tuo mondo ogni volta che `randomNumber` è 5.
     
-    ![screenshot](images/craft-wood-random2.png)
+    ![schermata](images/craft-wood-random2.png)
 
-+ Test your project again. This time, you should see some wood appear in your world.
++ Prova di nuovo il tuo codice. Questa volta, dovresti vedere del legno apparire nel tuo mondo.
     
-    ![screenshot](images/craft-wood-test2.png)
+    ![schermata](images/craft-wood-test2.png)
