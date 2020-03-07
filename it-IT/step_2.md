@@ -1,12 +1,12 @@
-## Playing the game
+## Inizia la partita
 
-+ Open this trinket: [rpf.io/codecraft-on](http://rpf.io/codecraft-on){:target="_blank"}.
++ Apri questo trinket: [rpf.io/codecraft-on](http://rpf.io/codecraft-on){:target="_blank"}.
 
-+ Use the WASD keys to move your player around the world, which is full of different resources (dirt, grass and water).
++ Usa i tasti WASD per spostare il tuo giocatore in tutto il mondo, che è pieno di risorse diverse (terra, erba e acqua).
     
-    ![screenshot](images/craft-move.png)
+    ![schermata](images/craft-move.png)
 
-+ You can press the spacebar to collect resources. Pick up a few of each type of resource, and you'll see them added to your inventory.
++ Puoi premere la barra spaziatrice per raccogliere risorse. Raccogli alcuni esemplari di ogni tipo di risorsa e li vedrai aggiunti al tuo inventario.
     
     ![screenshot](images/craft-pickup.png)
 
