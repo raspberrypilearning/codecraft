@@ -8,16 +8,16 @@
 
 + Puoi premere la barra spaziatrice per raccogliere risorse. Raccogli alcuni esemplari di ogni tipo di risorsa e li vedrai aggiunti al tuo inventario.
     
-    ![screenshot](images/craft-pickup.png)
+    ![schermata](images/craft-pickup.png)
 
 + Premere i tasti numerici (da 1 a 3) per posizionare una risorsa sulla mappa. Ad esempio, premere 3 per posizionare un po d'acqua sulla mappa. Funzionerà solo se hai un po' d'acqua nel tuo inventario.
     
     ![schermata](images/craft-place-water.png)
 
-+ Puoi creare un oggetto premendo il tasto visualizzato nel menu. Crafting means combining items you already have in your inventory to create new ones. Try pressing the 'r' key to craft a new brick (as long as you have 2 dirt and 1 water in your inventory).
++ Puoi creare un oggetto premendo il tasto visualizzato nel menu. Creare significa combinare oggetti che hai già nel tuo inventario per crearne di nuovi. Prova a premere il tasto 'r' per creare un nuovo mattone (a condizione che tu abbia 2 terre e 1 acqua nel tuo inventario).
     
-    ![screenshot](images/craft-craft-brick.png)
+    ![schermata](images/craft-craft-brick.png)
 
-+ You can then press they '4' key to place your crafted bricks.
++ È quindi possibile premere il tasto '4' per posizionare i mattoni creati.
     
-    ![screenshot](images/craft-place-brick.png)
+    ![schermata](images/craft-place-brick.png)
