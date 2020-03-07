@@ -79,30 +79,30 @@ Questo progetto include elementi tratti dalle seguenti componenti del [Digital M
 
 ## Sfide
 
-+ "Build your world" - Playing the game, placing and crafting existing blocks;
++ "Costruisci il tuo mondo" - Gioca, posiziona e modifica blocchi esistenti
 + "Modifica la dimensione del tuo mondo" - modifica le variabili `LARGHEZZAMAPPA` e `ALTEZZAMAPPA` per modificare la dimensione del mondo;
 + "Creazione di sabbia": creazione di una nuova risorsa 'sabbia', insieme ai dati di gioco associati.
-+ "Crafting glass from sand" - Creating a new craftable glass resource.
-+ "Create more resources" - Use what's been learnt to create more blocks and crafting rules.
++ "Creazione di vetro dalla sabbia": creazione di una nuova risorsa fabbricabile 'vetro'.
++ "Crea più risorse": usa ciò che è stato appreso per creare più blocchi e creare regole.
 
-## Frequently Asked Questions
+## Domande frequenti
 
-+ Children may need reminding that elements of a dictionary/list are separated by a comma. For example, when adding inventory items, graphics and crafting rules to the game.
++ I bambini potrebbero aver bisogno di ricordare che gli elementi di un dizionario/lista sono separati da una virgola. Ad esempio, quando aggiungi oggetti di inventario, grafica e regole di fabbricazione al gioco.
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: Project materials
+## title: Materiali del progetto
 
-## Project resources
+## Risorse del progetto
 
-+ [.zip file containing all project resources](resources/codecraft-resources.zip)
-+ [Online Trinket containing all 'CodeCraft' project resources](http://rpf.io/codecraft-on)
++ [File .zip con tutte le risorse del progetto](resources/codecraft-resources.zip)
++ [Trinket online contenente tutte le risorse del progetto 'CodeCraft'](http://rpf.io/codecraft-on)
 
-## Club leader resources
+## Risorse per gli organizzatori dei club
 
-+ [.zip file containing all completed project resources](solutions/codecraft-solution.zip)
-+ [Online completed Trinket project](https://trinket.io/python/ebc5b0148b)
++ [File .zip con tutte le risorse del progetto](solutions/codecraft-solution.zip)
++ [Trinket online completato](https://trinket.io/python/ebc5b0148b)
 
 \--- /collapse \---
