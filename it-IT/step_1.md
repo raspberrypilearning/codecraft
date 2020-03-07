@@ -1,6 +1,6 @@
-## Introduction
+## Introduzione
 
-In this project, you’ll design and code improvements to a 2D version of Minecraft.
+In questo progetto, progetterai e migliorerai il codice di una versione 2D di Minecraft.
 
 <div class="trinket">
   <iframe src="https://trinket.io/embed/python/ebc5b0148b?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
@@ -8,31 +8,31 @@ In this project, you’ll design and code improvements to a 2D version of Minecr
   <img src="images/craft-finished.png">
 </div>
 
-### Additional information for club leaders
+### Ulteriori informazioni per gli organizzatori dei club
 
-If you need to print this project, please use the [Printer friendly version](https://projects.raspberrypi.org/en/projects/codecraft/print).
+Se intendete stampare questo progetto, cliccate su [Versione stampabile](https://projects.raspberrypi.org/en/projects/codecraft/print).
 
 ## \--- collapse \---
 
-## title: Club leader notes
+## title: Note per i volontari
 
-## Introduction:
+## Introduzione:
 
-In this project, children will learn aspects of graphics and game design by making improvements to a basic 2D Minecraft clone. Children will create new resources, as well as crafting rules for combining resources to make new ones. This will be achieved by understanding and manipulating variables, lists and dictionaries.
+In this project, children will learn aspects of graphics and game design by making improvements to a basic 2D Minecraft clone. I bambini creeranno nuove risorse, oltre a creare regole per combinare le risorse al fine di crearne di nuove. Ciò sarà possibile attraverso la comprensione e la manipolazione di variabili, liste e dizionari.
 
-## Online Resources
+## Risorse online
 
-**This project uses Python 3.** We recommend using [trinket](https://trinket.io/) to write Python online. This project contains the following Trinkets:
+**Questo progetto utilizza Python 3.** Consigliamo di utilizzare [trinket](https://trinket.io/) per scrivere in linguaggio Python online. Questo progetto contiene i seguenti Trinket:
 
-+ ['CodeCraft' starter project -- rpf.io/codecraft-on](http://rpf.io/codecraft-on)
++ [Progetto iniziale 'CodeCraft' -- rpf.io/codecraft-on](http://rpf.io/codecraft-on)
 
-There is also a trinket containing the completed project:
+C'è anche un trinket che contiene il progetto completo:
 
-+ [‘CodeCraft’ Finished -- trinket.io/python/ebc5b0148b](https://trinket.io/python/ebc5b0148b)
++ ['CodeCraft' finito - trinket.io/python/ebc5b0148b](https://trinket.io/python/ebc5b0148b)
 
-## Offline Resources
+## Risorse offline
 
-This project can be [completed offline](https://www.codeclubprojects.org/en-GB/resources/python-working-offline/) if preferred. You can access the project resources by clicking the 'Project Materials' link for this project. This link contains a 'Project Resources' section, which includes resources that children will need to complete this project offline. Make sure that each child has access to a copy of these resources. This section includes the following files:
+Questo progetto può anche essere [completato offline](https://www.codeclubprojects.org/en-GB/resources/python-working-offline/). È possibile accedere alle risorse del progetto facendo click sul link "Materiali del progetto" relativo a questo progetto. Alla sezione "Risorse del progetto", sono raccolte le risorse necessarie ai bambini per completare il progetto offline. È bene assicurarsi che tutti i bambini abbiano accesso a una copia di queste risorse. Questa sezione contiene i seguenti file:
 
 + codecraft/codecraft.py
 + codecraft/variables.py
@@ -46,7 +46,7 @@ This project can be [completed offline](https://www.codeclubprojects.org/en-GB/r
 + codecraft/water.gif
 + codecraft/wood.gif
 
-You can also find a completed version of this project in the 'Volunteer Resources' section, which contains:
+Potete anche trovare una versione completa di questo progetto nella sezione 'Risorse per i volontari', che contiene:
 
 + codecraft-finished/codecraft.py
 + codecraft-finished/variables.py
@@ -60,28 +60,28 @@ You can also find a completed version of this project in the 'Volunteer Resource
 + codecraft-finished/water.gif
 + codecraft-finished/wood.gif
 
-(All of the resources above are also downloadable as `.zip` files.)
+(Tutte le risorse sopra indicate possono essere scaricate anche come file `.zip`)
 
-## Learning Objectives
+## Obiettivi di apprendimento
 
-+ Creating and editing graphics;
-+ Game design;
-+ Editing: 
-    + Variables;
-    + Lists;
-    + Dictionaries.
++ Creazione e modifica di grafica;
++ Progettazione di un gioco;
++ Sviluppo: 
+    + Variabili;
+    + Liste;
+    + Dizionari.
 
-This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+Questo progetto include elementi tratti dalle seguenti componenti del [Digital Making Curriculum di Raspberry Pi](http://rpf.io/curriculum):
 
-+ [Design basic 2D and 3D assets.](https://www.raspberrypi.org/curriculum/design/creator)
++ [Progettazione di elementi 2D e 3D semplici.](https://www.raspberrypi.org/curriculum/design/creator)
 
-+ [Combine programming constructs to solve a problem.](https://www.raspberrypi.org/curriculum/programming/builder)
++ [Combinare i costrutti base di un linguaggio di programmazione per risolvere un problema.](https://www.raspberrypi.org/curriculum/programming/builder)
 
-## Challenges
+## Sfide
 
 + "Build your world" - Playing the game, placing and crafting existing blocks;
-+ "Change your world size" - editing the `MAPWIDTH` and `MAPHEIGHT` variables to change the world size;
-+ "Creating sand" - Creating a new sand resource, along with associated game data.
++ "Modifica la dimensione del tuo mondo" - modifica le variabili `LARGHEZZAMAPPA` e `ALTEZZAMAPPA` per modificare la dimensione del mondo;
++ "Creazione di sabbia": creazione di una nuova risorsa 'sabbia', insieme ai dati di gioco associati.
 + "Crafting glass from sand" - Creating a new craftable glass resource.
 + "Create more resources" - Use what's been learnt to create more blocks and crafting rules.
 
