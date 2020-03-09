@@ -1,13 +1,13 @@
 \--- challenge \---
 
-## Challenge: Creating sand
+## Sfida: Crea la sabbia
 
-Can you add a `SAND` resource to your game? You can use the steps above to help you.
+Puoi aggiungere una risorsa `SABBIA` per il tuo gioco? Puoi utilizzare i passaggi precedenti per aiutarti.
 
-![screenshot](images/craft-sand.png)
+![schermata](images/craft-sand.png)
 
-The project already includes a `sand.gif` image, but you can create and upload your own if you prefer.
+Il progetto include già un'immagine `sand.gif`, ma puoi creare e caricare la tua se preferisci.
 
-![screenshot](images/craft-upload.png)
+![schermata](images/craft-upload.png)
 
 \--- /challenge \---
