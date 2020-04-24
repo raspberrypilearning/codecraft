@@ -4,27 +4,27 @@ duration: 2
 listed: true
 copyedit: false
 title: CodeCraft
-description: Design and code improvements to a 2D version of Minecraft.
-version: 3.1.0
-last_tested: 2018-11-22
+description: Konzipiere und schreibe Code-Verbesserungen für eine 2D Version von Minecraft.
+version: 3
+last_tested: 2017-01-01
 steps:
   - 
-    title: Introduction
+    title: Einleitung
   - 
-    title: Playing the game
+    title: Das Spiel spielen
   - 
-    title: 'Challenge: Build your world'
+    title: 'Herausforderung: Bau dir deine Welt'
   - 
-    title: Customising your game
+    title: Du kannst dein Spiel persönlicher gestalten
   - 
-    title: 'Challenge: Change your world size'
+    title: 'Herausforderung: Ändere die Größe der Welt'
   - 
-    title: Creating a new wood resource
+    title: Schaffe eine neue Ressource - Holz
   - 
-    title: 'Challenge: Creating sand'
+    title: 'Herausforderung: Sand schaffen'
   - 
-    title: Crafting planks from wood
+    title: Bretter aus Holz herstellen
   - 
-    title: 'Challenge: Crafting glass from sand'
+    title: 'Herausforderung: Glas aus Sand herstellen'
   - 
-    title: 'Challenge: Create more resources'
+    title: 'Herausforderung: Weitere Ressourcen herstellen'
