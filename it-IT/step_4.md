@@ -2,7 +2,7 @@
 
 Modifichiamo alcune variabili per cambiare il funzionamento del tuo gioco.
 
-+ Fai clic su `variabili.py` per vedere alcune variabili che possono essere modificate.
++ Fai clic su `variables.py` per vedere alcune variabili che possono essere modificate.
     
     ![schermata](images/craft-variables.png)
 
@@ -10,6 +10,6 @@ Modifichiamo alcune variabili per cambiare il funzionamento del tuo gioco.
     
     ![schermata](images/craft-background.png)
 
-+ La variabile `MAXTILES` è la quantità di ogni risorsa che può essere trattenuta nel tuo inventario. Modificare questa variabile se si desidera archiviare più (o meno) di 20 unità di ciascuna risorsa.
++ La variabile `MAXCASELLE` è la quantità di ogni risorsa che può essere trattenuta nel tuo inventario. Modificare questa variabile se si desidera archiviare più (o meno) di 20 unità di ciascuna risorsa.
     
     ![schermata](images/craft-maxtiles.png)
