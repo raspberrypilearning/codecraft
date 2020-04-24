@@ -10,4 +10,4 @@
 
 ![screenshot](images/craft-upload.png)
 
---- challenge ---
+--- /challenge ---
