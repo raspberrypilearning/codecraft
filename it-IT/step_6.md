@@ -1,6 +1,6 @@
 ## Creazione della nuova risorsa legno
 
-Creiamo una nuova risorsa: il legno. Per farlo, dovrai aggiungere ad alcune variabili nel tuo file `variabili.py`.
+Creiamo una nuova risorsa: il legno. Per farlo, dovrai aggiungere ad alcune variabili nel tuo file `variables.py`.
 
 + Innanzitutto, devi assegnare un numero alla tua nuova risorsa. Potrai quindi usare la parola `LEGNO` nel tuo codice invece del numero 4.
     
@@ -32,7 +32,7 @@ Creiamo una nuova risorsa: il legno. Per farlo, dovrai aggiungere ad alcune vari
     
     ![schermata](images/craft-wood-test.png)
 
-+ Non c'è legno nel tuo mondo! Per risolvere questo problema, fai clic su `main.py` file e trova la funzione chiamata `generateRandomWorld()`.
++ Non c'è legno nel tuo mondo! Per risolvere questo problema, fai clic su `main.py` file e trova la funzione chiamata `generaMondoAleatorio()`.
     
     ![schermata](images/craft-wood-random1.png)
     
