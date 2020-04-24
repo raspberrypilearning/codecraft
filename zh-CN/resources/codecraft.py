@@ -1,14 +1,14 @@
 #!/bin/python3
 
 #############
-# CodeCraft #
+# 代码世界 #
 #############
 
 #---
-#Game functions
+＃游戏功能
 #---
 
-#moves the player left 1 tile.
+＃将玩家向左移动1个图块。
 def moveLeft():
   global playerX
   if(drawing == False and playerX > 0):
@@ -17,7 +17,7 @@ def moveLeft():
     drawResource(oldX, playerY)
     drawResource(playerX, playerY)
     
-#moves the player right 1 tile.
+＃将玩家向右移动1个图块。
 def moveRight():
   global playerX, MAPWIDTH
   if(drawing == False and playerX < MAPWIDTH - 1):
@@ -26,7 +26,7 @@ def moveRight():
     drawResource(oldX, playerY)
     drawResource(playerX, playerY)
     
-#moves the player up 1 tile.
+＃将玩家向上移动1个图块。
 def moveUp():
   global playerY
   if(drawing == False and playerY > 0):
@@ -35,7 +35,7 @@ def moveUp():
     drawResource(playerX, oldY)
     drawResource(playerX, playerY)
     
-#moves the player down 1 tile.
+＃将玩家向下移动1个图块。
 def moveDown():
   global playerY, MAPHEIGHT
   if(drawing == False and playerY < MAPHEIGHT - 1):
@@ -44,105 +44,105 @@ def moveDown():
     drawResource(playerX, oldY)
     drawResource(playerX, playerY)
     
-#picks up the resource at the player's position.
+＃在玩家的位置捡起资源。
 def pickUp():
   global playerX, playerY
   drawing = True
   currentTile = world[playerX][playerY]
-  #if the user doesn't already have too many...
+  ＃如果用户还没有太多资源...
   if inventory[currentTile] < MAXTILES:
-    #player now has 1 more of this resource
+    #玩家现在有1个此资源
     inventory[currentTile] += 1
-    #the player is now standing on dirt
+    ＃玩家现在站在泥土上
     world[playerX][playerY] = DIRT
-    #draw the new DIRT tile
+    ＃绘制新的泥土图块
     drawResource(playerX, playerY)
-    #redraw the inventory with the extra resource.
+    #用额外资源重新绘制。
     drawInventory()
     #drawPlayer()
 
-#place a resource at the player's current position
+＃将资源放置在玩家的当前位置
 def place(resource):
   print('placing: ', names[resource])
-  #only place if the player has some left...
+  ＃仅在玩家有剩余资源时才放置...
   if inventory[resource] > 0:
-    #find out the resourcee at the player's current position
+    ＃找到玩家当前位置的资源
     currentTile = world[playerX][playerY]
-    #pick up the resource the player's standing on
+    ＃在玩家的位置捡起资源。
     #(if it's not DIRT)
     if currentTile is not DIRT:
       inventory[currentTile] += 1
-    #place the resource at the player's current position
+    ＃将资源放置在玩家的当前位置
     world[playerX][playerY] = resource
-    #add the new resource to the inventory
+    ＃将新资源添加到背包
     inventory[resource] -= 1
-    #update the display (world and inventory)
+    ＃更新显示 (世界和背包)
     drawResource(playerX, playerY)
     drawInventory()
     #drawPlayer()
-    print('   Placing', names[resource], 'complete')
-  #...and if they have none left...
+    print('放置', names[resource], '完成')
+  #...如果没有剩余...
   else:
-    print('   You have no', names[resource], 'left')
+    print('您没有', names[resource], '剩余')
 
-#craft a new resource
+#制作一个新的资源
 def craft(resource):
-  print('Crafting: ', names[resource])
-  #if the resource can be crafted...
+  print('构建中: ', names[resource])
+  ＃如果可以制作资源...
   if resource in crafting:
-    #keeps track of whether we have the resources
-    #to craft this item
+    #保持跟踪我们是否有资源
+    #制作这个物品
     canBeMade = True
-    #for each item needed to craft the resource
+    ＃针对制作资源所需的每个项目
     for i in crafting[resource]:
-      #...if we don't have enough...
+      ＃...如果我们没有足够的...
       if crafting[resource][i] > inventory[i]:
-      #...we can't craft it!
+      ＃...我们做不到！
         canBeMade = False
         break
-    #if we can craft it (we have all needed resources)
+    ＃如果我们能制作出来的话 (我们拥有所有需要的资源)
     if canBeMade == True:
-      #take each item from the inventory
+      ＃从背包中取出每个物品
       for i in crafting[resource]:
         inventory[i] -= crafting[resource][i]
-      #add the crafted item to the inventory
+      ＃将制作的物品添加到库存中
       inventory[resource] += 1
-      print('   Crafting', names[resource], 'complete')
-    #...otherwise the resource can't be crafted...
+      print('正在构建', names[resource], '完成')
+    ＃...否则将无法制作资源...
     else:
-      print('   Can\'t craft', names[resource])
-    #update the displayed inventory
+      print('不能构建', names[resource])
+    ＃更新显示的库存
     drawInventory()
 
-#creates a function for placing each resource
+#创建一个用于放置每个资源的函数
 def makeplace(resource):
   return lambda: place(resource)
 
-#attaches a 'placing' function to each key press
+#给按钮事件添加一个 “放置” 函数
 def bindPlacingKeys():
   for k in placekeys:
     screen.onkey(makeplace(k), placekeys[k])
 
-#creates a function for crafting each resource
+＃创建用于制作每个资源的函数
 def makecraft(resource):
   return lambda: craft(resource)
 
-#attaches a 'crafting' function to each key press
+＃给按钮事件添加一个 “制作” 函数
 def bindCraftingKeys():
   for k in craftkeys:
     screen.onkey(makecraft(k), craftkeys[k])
 
-#draws a resource at the position (y,x)
+＃在 (y，x) 位置绘制资源
 def drawResource(y, x):
-  #this variable stops other stuff being drawn
+  ＃此变量停止绘制其他内容
   global drawing
-  #only draw if nothing else is being drawn
+  ＃仅在没有其他内容绘制时绘制
   if drawing == False:
-    #something is now being drawn
+    #东西正在绘制中
     drawing = True
-    #draw the resource at that position in the tilemap, using the correct image
+    ＃使用正确的图片在tilemap中的该位置绘制资源
     rendererT.goto( (y * TILESIZE) + 20, height - (x * TILESIZE) - 20 )
-    #draw tile with correct texture
+    ＃绘制纹理正确的图块
     texture = textures[world[y][x]]
     rendererT.shape(texture)
     rendererT.stamp()
@@ -150,27 +150,27 @@ def drawResource(y, x):
       rendererT.shape(playerImg)
       rendererT.stamp()
     screen.update()
-    #nothing is now being drawn
+    ＃现在什么都没画
     drawing = False
     
-#draws the world map
+＃绘制世界地图
 def drawWorld():
-  #loop through each row
+  ＃循环遍历每一行
   for row in range(MAPHEIGHT):
-    #loop through each column in the row
+    #循环行中的每一列
     for column in range(MAPWIDTH):
-      #draw the tile at the current position
+      ＃在当前位置绘制图块
       drawResource(column, row)
 
-#draws the inventory to the screen
+#将背包里的资源放到屏幕上
 def drawInventory():
-  #this variable stops other stuff being drawn
+  #此变量停止正在绘制的其他内容
   global drawing
-  #only draw if nothing else is being drawn
+  ＃仅在没有其他内容绘制时绘制
   if drawing == False:
-    #something is now being drawn
+    #东西正在绘制中
     drawing = True
-    #use a rectangle to cover the current inventory
+    #使用矩形来覆盖当前物品栏
     rendererT.color(BACKGROUNDCOLOUR)
     rendererT.goto(0,0)
     rendererT.begin_fill()
@@ -182,97 +182,97 @@ def drawInventory():
       rendererT.right(90)
     rendererT.end_fill()
     rendererT.color('black')
-    #display the 'place' and 'craft' text
+    #显示 '位置' 和 '组件' 文本
     for i in range(1,num_rows+1):
       rendererT.goto(20, (height - (MAPHEIGHT * TILESIZE)) - 20 - (i * 100))
-      rendererT.write("place")
+      rendererT.write("位置")
       rendererT.goto(20, (height - (MAPHEIGHT * TILESIZE)) - 40 - (i * 100))
-      rendererT.write("craft")
-    #set the inventory position
+      rendererT.write("组件")
+    ＃设置库存位置
     xPosition = 70
     yPostition = height - (MAPHEIGHT * TILESIZE) - 80
     itemNum = 0
     for i, item in enumerate(resources):
-      #add the image
+      ＃添加图片
       rendererT.goto(xPosition, yPostition)
       rendererT.shape(textures[item])
       rendererT.stamp()
-      #add the number in the inventory
+      # 将物品加入玩家的物品清单
       rendererT.goto(xPosition, yPostition - TILESIZE)
       rendererT.write(inventory[item])
-      #add key to place
+      #添加 key 到位置
       rendererT.goto(xPosition, yPostition - TILESIZE - 20)
       rendererT.write(placekeys[item])
-      #add key to craft
+      #添加 key 到组件
       if crafting.get(item) != None:
         rendererT.goto(xPosition, yPostition - TILESIZE - 40)
         rendererT.write(craftkeys[item])     
-      #move along to place the next inventory item
+      #移动以放置下一个物品栏
       xPosition += 50
       itemNum += 1
-      #drop down to the next row every 10 items
+      ＃每10个项目下移至下一行
       if itemNum % INVWIDTH == 0:
         xPosition = 70
         itemNum = 0
         yPostition -= TILESIZE + 80
     drawing = False
 
-#generate the instructions, including crafting rules
+#生成指令，包括制造规则
 def generateInstructions():
-  instructions.append('Crafting rules:')
-  #for each resource that can be crafted...
+  instructions.append('建造规则:')
+  ＃针对可以制作的每种资源...
   for rule in crafting:
-    #create the crafting rule text
+    #创建制造规则文本
     craftrule = names[rule] + ' = '
     for resource, number in crafting[rule].items():
       craftrule += str(number) + ' ' + names[resource] + ' '
-    #add the crafting rule to the instructions
+    #将制造规则添加到说明中
     instructions.append(craftrule)
-  #display the instructions
+  ＃显示说明
   yPos = height - 20
   for item in instructions:
     rendererT.goto( MAPWIDTH*TILESIZE + 40, yPos)
     rendererT.write(item)
     yPos-=20
 
-#generate a random world
+＃生成随机世界
 def generateRandomWorld():
-  #loop through each row
+  ＃循环遍历每一行
   for row in range(MAPHEIGHT):
-    #loop through each column in that row
+    #循环行中的每一列
     for column in range(MAPWIDTH):
-      #pick a random number between 0 and 10
+      ＃选择0到10之间的随机数
       randomNumber = random.randint(0,10)
-      #WATER if the random number is a 1 or a 2
+      #如果随机数是1或2 创建 WATER 水
       if randomNumber in [1,2]:
         tile = WATER
-      #GRASS if the random number is a 3 or a 4
+      #随机数是3或4 创建 GRASS 草皮
       elif randomNumber in [3,4]:
         tile = GRASS
-      #otherwise it's DIRT
+      ＃否则就是 DIRT 泥土
       else:
         tile = DIRT
-      #set the position in the tilemap to the randomly chosen tile
+      #将层图中的位置设置为随机选择的图块
       world[column][row] = tile
 
 #---
-#Code starts running here
+＃代码从此处开始运行
 #---
 
-#import the modules and variables needed
+＃导入所需的模块和变量
 import turtle
 import random
 from variables import *
 from math import ceil
 
 TILESIZE = 20
-#the number of inventory resources per row
+＃每行的物品栏资源数量
 INVWIDTH = 8
 drawing = False
 
-#create a new 'screen' object
+＃创建一个新的“屏幕”对象
 screen = turtle.Screen()
-#calculate the width and height
+＃计算宽度和高度
 width = (TILESIZE * MAPWIDTH) + max(200,INVWIDTH * 50)
 num_rows = int(ceil((len(resources) / INVWIDTH)))
 inventory_height =  num_rows * 120 + 40
@@ -283,34 +283,34 @@ screen.setworldcoordinates(0,0,width,height)
 screen.bgcolor(BACKGROUNDCOLOUR)
 screen.listen()
 
-#register the player image  
+＃注册玩家图像  
 screen.register_shape(playerImg)
-#register each of the resource images
+#注册每个资源图像
 for texture in textures.values():
   screen.register_shape(texture)
 
-#create another turtle to do the graphics drawing
+#创建另一个海龟来绘制图形
 rendererT = turtle.Turtle()
 rendererT.hideturtle()
 rendererT.penup()
 rendererT.speed(0)
 rendererT.setheading(90)
 
-#create a world of random resources.
+#创建一个随机资源的世界。
 world = [ [DIRT for w in range(MAPHEIGHT)] for h in range(MAPWIDTH) ]
 
-#map the keys for moving and picking up to the correct functions.
+#映射移动和提取到正确函数的键值。
 screen.onkey(moveUp, 'w')
 screen.onkey(moveDown, 's')
 screen.onkey(moveLeft, 'a')
 screen.onkey(moveRight, 'd')
 screen.onkey(pickUp, 'space')
 
-#set up the keys for placing and crafting each resource
+#设置放置和制造每个资源的密钥
 bindPlacingKeys()
 bindCraftingKeys()
 
-#these functions are defined above
+#这些函数已在上面定义
 generateRandomWorld()
 drawWorld()
 drawInventory()
