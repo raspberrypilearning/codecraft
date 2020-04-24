@@ -1,0 +1,20 @@
+---
+hero_image: images/codecraft.png
+duration: 2
+listed: true
+copyedit: false
+title: コードクラフト
+description: Minecraftの2Dバージョンの設計とコードの改善。
+version: 3.1.0
+last_tested: 2018-11-22
+steps:
+  - title: はじめに
+  - title: ゲームをする
+  - title: 'チャレンジ：ワールドを構築'
+  - title: ゲームをカスタマイズする
+  - title: 'チャレンジ：ワールドのサイズを変更'
+  - title: 新しい木のリソースを作成
+  - title: 'チャレンジ：砂の作成'
+  - title: 木から板をクラフトする
+  - title: 'チャレンジ：ガラスを砂からクラフトする'
+  - title: 'チャレンジ：さらにリソースを作成'

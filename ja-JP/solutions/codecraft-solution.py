@@ -1,0 +1,325 @@
+#!/bin/python3
+
+#############
+# コードクラフト #
+#############
+
+#---
+#ゲーム用の関数
+#---
+
+#プレイヤーを左に1マス動かす
+def moveLeft():
+  global playerX
+  if(drawing == False and playerX > 0):
+    oldX = playerX
+    playerX -= 1
+    drawResource(oldX, playerY)
+    drawResource(playerX, playerY)
+    
+#プレイヤーを右に1マス動かす
+def moveRight():
+  global playerX, MAPWIDTH
+  if(drawing == False and playerX < MAPWIDTH - 1):
+    oldX = playerX
+    playerX += 1
+    drawResource(oldX, playerY)
+    drawResource(playerX, playerY)
+    
+#プレイヤーを上にに1マス動かす
+def moveUp():
+  global playerY
+  if(drawing == False and playerY > 0):
+    oldY = playerY
+    playerY -= 1
+    drawResource(playerX, oldY)
+    drawResource(playerX, playerY)
+    
+#プレイヤーを下に1マス動かす
+def moveDown():
+  global playerY, MAPHEIGHT
+  if(drawing == False and playerY < MAPHEIGHT - 1):
+    oldY = playerY
+    playerY += 1
+    drawResource(playerX, oldY)
+    drawResource(playerX, playerY)
+    
+#プレイヤーの位置にあるリソースをとる。
+def pickUp():
+  global playerX, playerY
+  drawing = True
+  currentTile = world[playerX][playerY]
+  #ユーザーのリソース数が多すぎない場合...
+  if inventory[currentTile] < MAXTILES:
+    #プレイヤーにリソースが1つ追加されます
+    inventory[currentTile] += 1
+    #プレイヤーの立っているマスは土になります
+    world[playerX][playerY] = DIRT
+    #新しい土のマスを描く
+    drawResource(playerX, playerY)
+    #持ち物リストにリソースを追加して描き直す
+    drawInventory()
+    #drawPlayer()
+
+#プレーヤーの現在の位置にリソースを置く
+def place(resource):
+  print(u'置く', names[resource])
+  #もしプレイヤーがすでにリソースを持っている場合。。。
+  if inventory[resource] > 0:
+    #プレイヤーの位置にあるリソースを見ます
+    currentTile = world[playerX][playerY]
+    #プレイヤーの位置にあるリソースをとる。
+    #（もし土ではない場合）
+    if currentTile is not DIRT:
+      inventory[currentTile] += 1
+    #プレーヤーの現在の位置にリソースを置く
+    world[playerX][playerY] = resource
+    #新しいリソースを持ち物リストに追加する
+    inventory[resource] -= 1
+    #ゲーム画面を更新（ゲームワールドと持ち物リスト）
+    drawResource(playerX, playerY)
+    drawInventory()
+    #drawPlayer()
+    print(names[resource], u'配置完了')
+  #。。。もし何もなければ
+  else:
+    print(u'   あなたは', names[resource], u'を持っていません')
+
+#新しいリソースをクラフトする
+def craft(resource):
+  print(u'クラフト中：', names[resource])
+  #もしリソースをクラフトできる場合
+  if resource in crafting:
+    #新たにクラフトするのに必要なリソースがあるかを
+    #確認します
+    canBeMade = True
+    #リソースのクラフトに必要な各アイテムについて
+    for i in crafting[resource]:
+      #。。。もしアイテムが足りなければ。。。
+      if crafting[resource][i] > inventory[i]:
+      #。。。変数にリソースをクラフトできないと設定する
+        canBeMade = False
+        break
+    #もしクラフトできる場合(必要なアイテムがすべてある場合)
+    if canBeMade == True:
+      #持ち物リストからアイテムを出す
+      for i in crafting[resource]:
+        inventory[i] -= crafting[resource][i]
+      #新しいリソースを持ち物リストに追加する
+      inventory[resource] += 1
+      print(names[resource], u'クラフト完了')
+    #。。。リソースをクラフトできない場合
+    else:
+      print(names[resource], u'   がクラフトできません')
+    #表示されている持ち物リストを更新
+    drawInventory()
+
+#各リソースを配置するための関数を作成する
+def makeplace(resource):
+  return lambda: place(resource)
+
+#各キーに「配置」機能を割り当てます
+def bindPlacingKeys():
+  for k in placekeys:
+    screen.onkey(makeplace(k), placekeys[k])
+
+#リソースをクラフトする関数を作成する
+def makecraft(resource):
+  return lambda: craft(resource)
+
+#各キーに「クラフト」機能を割り当てます
+def bindCraftingKeys():
+  for k in craftkeys:
+    screen.onkey(makecraft(k), craftkeys[k])
+
+#位置（y、x）にリソースを描画します
+def drawResource(y, x):
+  #この変数は他のものを描画しないようにします
+  global drawing
+  #他に何も描画されていない場合描画します
+  if drawing == False:
+    #描画中にします
+    drawing = True
+    #対応する画像を使用して、タイルマップ内のその位置にリソースを描画する
+    rendererT.goto( (y * TILESIZE) + 20, height - (x * TILESIZE) - 20 )
+    #対応するテクスチャーでタイルを描く
+    texture = textures[world[y][x]]
+    rendererT.shape(texture)
+    rendererT.stamp()
+    if playerX == y and playerY == x:
+      rendererT.shape(playerImg)
+      rendererT.stamp()
+    screen.update()
+    #描画完了にします
+    drawing = False
+    
+#ワールドを描く
+def drawWorld():
+  #地図上の行をループする
+  for row in range(MAPHEIGHT):
+    #地図上の列をループする
+    for column in range(MAPWIDTH):
+      #現在の位置にタイルを表示する
+      drawResource(column, row)
+
+#持ち物リストを画面に表示する
+def drawInventory():
+  #この変数は他のものを描画しないようにします
+  global drawing
+  #他に何も描画されていない場合描画します
+  if drawing == False:
+    #描画中にします
+    drawing = True
+    #四角形を使用して持ち物リストをカバーしてください
+    rendererT.color(BACKGROUNDCOLOUR)
+    rendererT.goto(0,0)
+    rendererT.begin_fill()
+    #rendererT.setheading(0)
+    for i in range(2):
+      rendererT.forward(inventory_height - 60)
+      rendererT.right(90)
+      rendererT.forward(width)
+      rendererT.right(90)
+    rendererT.end_fill()
+    rendererT.color('black')
+    #「場所」と「リソース」の文字を表示する
+    for i in range(1,num_rows+1):
+      rendererT.goto(20, (height - (MAPHEIGHT * TILESIZE)) - 20 - (i * 100))
+      rendererT.write(u"置く")
+      rendererT.goto(20, (height - (MAPHEIGHT * TILESIZE)) - 40 - (i * 100))
+      rendererT.write(u"クラフト（組み合わせ）")
+    #持ち物リストの位置を設定する
+    xPosition = 70
+    yPostition = height - (MAPHEIGHT * TILESIZE) - 80
+    itemNum = 0
+    for i, item in enumerate(resources):
+      #画像を追加する
+      rendererT.goto(xPosition, yPostition)
+      rendererT.shape(textures[item])
+      rendererT.stamp()
+      #リソースの数を持ち物リストに追加
+      rendererT.goto(xPosition, yPostition - TILESIZE)
+      rendererT.write(inventory[item])
+      #配置するキーを追加
+      rendererT.goto(xPosition, yPostition - TILESIZE - 20)
+      rendererT.write(placekeys[item])
+      #クラフトキーを加する
+      if crafting.get(item) != None:
+        rendererT.goto(xPosition, yPostition - TILESIZE - 40)
+        rendererT.write(craftkeys[item])     
+      #移動して次のアイテムをリソースに追加
+      xPosition += 50
+      itemNum += 1
+      #10個のアイテムごとに次の行に移動
+      if itemNum % INVWIDTH == 0:
+        xPosition = 70
+        itemNum = 0
+        yPostition -= TILESIZE + 80
+    drawing = False
+
+#クラフトルールを含む説明書きの生成
+def generateInstructions():
+  instructions.append('クラフトルール:')
+  #もしリソースをクラフトできる場合
+  for rule in crafting:
+    #クラフトルール本文を作成
+    craftrule = names[rule] + ' = '
+    for resource, number in crafting[rule].items():
+      craftrule += str(number) + ' ' + names[resource] + ' '
+    #クラフトルールをゲーム説明書きに追加
+    instructions.append(craftrule)
+  #説明書きを表示
+  yPos = height - 20
+  for item in instructions:
+    rendererT.goto( MAPWIDTH*TILESIZE + 40, yPos)
+    rendererT.write(item)
+    yPos-=20
+
+#ワールド（地図）をランダムに作成
+def generateRandomWorld():
+  #地図上の行をループする
+  for row in range(MAPHEIGHT):
+    #地図上の列をループする
+    for column in range(MAPWIDTH):
+      #0から10の数字をランダムに選ぶ
+      randomNumber = random.randint(0,10)
+      #もしランダムに選ばれた数字が1か2だったら水
+      if randomNumber in [1,2]:
+        tile = WATER
+      #もしランダムに選ばれた数字が3か4だったら草
+      elif randomNumber in [3,4]:
+        tile = GRASS
+      #もしランダムに選ばれた数字が5だったら木
+      elif randomNumber == 5:
+        tile = WOOD
+      #もしランダムに選ばれた数字が6だったら木
+      elif randomNumber == 6:
+        tile = SAND
+      #他の数字だったら土
+      else:
+        tile = DIRT
+      #地図上の位置に選ばれたリソースをセットする（置く）
+      world[column][row] = tile
+
+#---
+#コードはここから実行を開始します
+#---
+
+#必要なモジュールと変数をインポート
+import turtle
+import random
+from variables import *
+from math import ceil
+
+TILESIZE = 20
+#各行にあるリソースの数
+INVWIDTH = 8
+drawing = False
+
+#新しい「スクリーン」オブジェクトを作成する
+screen = turtle.Screen()
+#幅と高さを計算する
+width = (TILESIZE * MAPWIDTH) + max(200,INVWIDTH * 50)
+num_rows = int(ceil((len(resources) / INVWIDTH)))
+inventory_height =  num_rows * 120 + 40
+height = (TILESIZE * MAPHEIGHT) + inventory_height
+
+screen.setup(width, height)
+screen.setworldcoordinates(0,0,width,height)
+screen.bgcolor(BACKGROUNDCOLOUR)
+screen.listen()
+
+#プレーヤーの画像を登録する  
+screen.register_shape(playerImg)
+#各リソースの画像を登録する
+for texture in textures.values():
+  screen.register_shape(texture)
+
+#グラフィックを描くために別のカメを作成する
+rendererT = turtle.Turtle()
+rendererT.hideturtle()
+rendererT.penup()
+rendererT.speed(0)
+rendererT.setheading(90)
+
+#ランダムにリソースが散らばっているワールド（地図）を作成
+world = [ [DIRT for w in range(MAPHEIGHT)] for h in range(MAPWIDTH) ]
+
+#プレイヤーを移動させるキーを設定
+screen.onkey(moveUp, 'w')
+screen.onkey(moveDown, 's')
+screen.onkey(moveLeft, 'a')
+screen.onkey(moveRight, 'd')
+screen.onkey(pickUp, 'space')
+
+#リソースをクラフトする、リソースを置くキーの設定
+bindPlacingKeys()
+bindCraftingKeys()
+
+#these functions are defined above
+generateRandomWorld()
+drawWorld()
+drawInventory()
+generateInstructions()
+
+
