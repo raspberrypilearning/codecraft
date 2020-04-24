@@ -1,8 +1,8 @@
 \--- challenge \---
 
-## التحدي: صمِّم عالمك
+## Challenge: Build your world
 
-هل يمكنك تصميم منزل بحديقة وحمام سباحة؟ ما التصميمات الأخرى التي يمكنك إنشاؤها؟
+Can you build a house, with a garden and a swimming pool? What else can you create?
 
 ![screenshot](images/craft-build-example.png)
 
