@@ -13,8 +13,9 @@
 이 프로젝트를 인쇄하려면 [인쇄용 문서](https://projects.raspberrypi.org/ko-KR/projects/codecraft/print)를 사용하세요.
 
 --- collapse ---
-
-## 제목: 교육자 노트
+---
+title: 교육자 노트
+---
 
 ## 소개
 
