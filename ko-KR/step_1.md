@@ -94,7 +94,7 @@ title: 교육자 노트
 
 --- collapse ---
 ---
-title: Project materials
+title: 프로젝트 자료
 ---
 
 ## 프로젝트 리소스
