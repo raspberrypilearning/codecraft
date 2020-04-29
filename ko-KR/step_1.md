@@ -93,7 +93,7 @@
 
 ## \--- collapse \---
 
-## 타이틀: Project materials
+## title: 프로젝트 자료
 
 ## 프로젝트 리소스
 
