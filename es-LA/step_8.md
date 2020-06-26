@@ -1,39 +1,39 @@
-## Crafting planks from wood
+## Elabora tablas de madera
 
 Let's create a new plank resource that be crafted from wood.
 
-+ First, add a new `PLANK` variable to your game.
++ Primero, añade una nueva variable `PLANK` a tu juego.
     
-    ![screenshot](images/craft-plank-const.png)
+    ![captura de pantalla](images/craft-plank-const.png)
 
-+ Add a new `PLANK` variable to your game.
++ Añade una nueva variable `PLANK` a tu juego.
     
-    ![screenshot](images/craft-plank-resources.png)
+    ![captura de pantalla](images/craft-plank-resources.png)
 
-+ Name the resource `'plank'`.
++ Nombra el recurso `'plank'`.
     
-    ![screenshot](images/craft-plank-names.png)
+    ![captura de pantalla](images/craft-plank-names.png)
 
-+ Give your `PLANK` resource an image. The project already contains a `plank.gif` image, but you can create your own if you prefer.
++ Dale a tu recurso `PLANK` una imagen. El proyecto ya contiene una imagen `plank.gif`, pero puedes crear la tuya si lo prefieres.
     
-    ![screenshot](images/craft-plank-textures.png)
+    ![captura de pantalla](images/craft-plank-textures.png)
 
-+ Add planks to your inventory.
++ Añade tablas a tu inventario.
     
-    ![screenshot](images/craft-plank-inventory.png)
+    ![captura de pantalla](images/craft-plank-inventory.png)
 
-+ Set a key for placing planks.
++ Establece una tecla para poner tablas.
     
-    ![screenshot](images/craft-plank-placekeys.png)
+    ![captura de pantalla](images/craft-plank-placekeys.png)
 
-+ As this resource can be crafted, you need to create a crafting rule, which is that a plank can be made from 3 wood tiles. Add this code to the `crafting` dictionary.
++ Como este recurso puede ser creado, debes crear una regla de elaboración: que una tabla se puede crear con 3 piezas de madera. Añade este código al diccionario de `creacion`.
     
-    ![screenshot](images/craft-plank-crafting.png)
+    ![captura de pantalla](images/craft-plank-crafting.png)
 
-+ Finally, you need to set a key for crafting new planks.
++ Finalmente, debes establecer una tecla para crear tablas nuevas.
     
-    ![screenshot](images/craft-plank-craftkeys.png)
+    ![captura de pantalla](images/craft-plank-craftkeys.png)
 
-+ To test your new plank resource, gather up a few wood tiles and then craft some planks from your wood. You can then place your new planks in your world.
++ Para probar tu nuevo recurso de tabla, junta algunas piezas de madera y luego crea algunas tablas de madera. Luego puedes poner tus nuevas tablas en tu mundo.
     
-    ![screenshot](images/craft-plank-test.png)
+    ![captura de pantalla](images/craft-plank-test.png)
