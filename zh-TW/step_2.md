@@ -1,23 +1,23 @@
-## Playing the game
+## 玩遊戲
 
-+ Open this trinket: [rpf.io/codecraft-on](http://rpf.io/codecraft-on){:target="_blank"}.
++ 點擊這個Trinket連結:[rpf.io/codecraft-on](http://rpf.io/codecraft-on){:target="_blank"}。
 
-+ Use the WASD keys to move your player around the world, which is full of different resources (dirt, grass and water).
++ 使用鍵盤上的WASD鍵將小白點移動到世界上的任一個地方，這世界充滿了不同的資源(土，草和水)。
     
-    ![screenshot](images/craft-move.png)
+    ![截圖](images/craft-move.png)
 
-+ You can press the spacebar to collect resources. Pick up a few of each type of resource, and you'll see them added to your inventory.
++ 您可以按下空白鍵來收集資源。 每種類型的資源都撿起一些，您會看到它們已被添加到您的儲存庫中。
     
-    ![screenshot](images/craft-pickup.png)
+    ![截圖](images/craft-pickup.png)
 
-+ Press the number keys (1 to 3) to place a resource on the map. For example, press 3 to place some water on the map. This will only work if you have some water in your inventory.
++ 按數字鍵(1到3) 將資源放在地圖上。 例如，按數字鍵3在地圖上放置一些水。 這僅適用於您的儲存庫中有水的情況。
     
-    ![screenshot](images/craft-place-water.png)
+    ![截圖](images/craft-place-water.png)
 
-+ You can craft an item by pressing the key displayed in the menu. Crafting means combining items you already have in your inventory to create new ones. Try pressing the 'r' key to craft a new brick (as long as you have 2 dirt and 1 water in your inventory).
++ 你可以通過按資源列表中顯示的按鍵來製作物品。 製作意味著你組合儲存庫中的資源以創建新物品。 嘗試按下“r”鍵來製作新磚塊(只要您的儲存庫中有2個土和1個水)。
     
-    ![screenshot](images/craft-craft-brick.png)
+    ![截圖](images/craft-craft-brick.png)
 
-+ You can then press they '4' key to place your crafted bricks.
++ 然後，您可以按下數字鍵'4'來放置您製作的磚塊。
     
-    ![screenshot](images/craft-place-brick.png)
+    ![截圖](images/craft-place-brick.png)
