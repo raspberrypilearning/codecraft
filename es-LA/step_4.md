@@ -1,15 +1,15 @@
-## Customising your game
+## Personaliza tu juego
 
-Let’s modify some variables to change how your game works.
+Modifiquemos algunas variables para cambiar el funcionamiento de tu juego.
 
-+ Click the `variables.py` file to see some variables that can be changed.
++ Haz clic en el archivo `variables.py` para ver algunas variables que se pueden cambiar.
     
-    ![screenshot](images/craft-variables.png)
+    ![captura de pantalla](images/craft-variables.png)
 
-+ Change the value of your `BACKGROUNDCOLOUR` variable, and click 'Run' to see the change to your game.
++ Cambia el valor de tu variable `BACKGROUNDCOLOUR`, y haz clic en 'Run' para ver el cambio en tu juego.
     
-    ![screenshot](images/craft-background.png)
+    ![captura de pantalla](images/craft-background.png)
 
-+ The variable `MAXTILES` is the amount of each resource that can be held in your inventory. Change this variable if you want to store more (or less) than 20 of each resource.
++ La variable ` MAXTILES ` es la cantidad de cada recurso que puedes mantener en tu inventario. Cambia esta variable si quieres almacenar más (o menos) que 20 de cada recurso.
     
-    ![screenshot](images/craft-maxtiles.png)
+    ![captura de pantalla](images/craft-maxtiles.png)
