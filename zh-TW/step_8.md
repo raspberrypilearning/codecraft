@@ -1,39 +1,39 @@
-## Crafting planks from wood
+## 用木材製作木板
 
-Let's create a new plank resource that be crafted from wood.
+讓我們創建一個用木材製作的新木板資源。
 
-+ First, add a new `PLANK` variable to your game.
++ 首先，在遊戲中添加一個新的 `PLANK` 變數。
     
-    ![screenshot](images/craft-plank-const.png)
+    ![截圖](images/craft-plank-const.png)
 
-+ Add a new `PLANK` variable to your game.
++ 在遊戲中添加一個新的 `PLANK` 變數。
     
-    ![screenshot](images/craft-plank-resources.png)
+    ![截圖](images/craft-plank-resources.png)
 
-+ Name the resource `'plank'`.
++ 將此資源命名為 `'plank'`。
     
-    ![screenshot](images/craft-plank-names.png)
+    ![截圖](images/craft-plank-names.png)
 
-+ Give your `PLANK` resource an image. The project already contains a `plank.gif` image, but you can create your own if you prefer.
++ 為您的 `PLANK` 資源提供圖像。 該專案已包含 `plank.gif` 圖像檔案，但如果您願意，可以創建自己的圖像。
     
-    ![screenshot](images/craft-plank-textures.png)
+    ![截圖](images/craft-plank-textures.png)
 
-+ Add planks to your inventory.
++ 將木板添加到您的儲存庫中。
     
-    ![screenshot](images/craft-plank-inventory.png)
+    ![截圖](images/craft-plank-inventory.png)
 
-+ Set a key for placing planks.
++ 設置放置木板的數字鍵。
     
-    ![screenshot](images/craft-plank-placekeys.png)
+    ![截圖](images/craft-plank-placekeys.png)
 
-+ As this resource can be crafted, you need to create a crafting rule, which is that a plank can be made from 3 wood tiles. Add this code to the `crafting` dictionary.
++ 由於這種木頭資源可以被製作，您需要創建一個製作規則，即木板可以由3個木材資源制成。 將此程式碼添加到 `crafting` 字典。
     
-    ![screenshot](images/craft-plank-crafting.png)
+    ![截圖](images/craft-plank-crafting.png)
 
-+ Finally, you need to set a key for crafting new planks.
++ 最後，您需要設置一個用於製作新木板的按鍵。
     
-    ![screenshot](images/craft-plank-craftkeys.png)
+    ![截圖](images/craft-plank-craftkeys.png)
 
-+ To test your new plank resource, gather up a few wood tiles and then craft some planks from your wood. You can then place your new planks in your world.
++ 要測試你的新木板資源，收集一些木材，然後用木材製作一些木板。 接著，您就可以將新木板放在您的世界中。
     
-    ![screenshot](images/craft-plank-test.png)
+    ![截圖](images/craft-plank-test.png)
