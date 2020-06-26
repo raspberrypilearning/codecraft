@@ -1,6 +1,6 @@
-## Introduction
+## परिचय
 
-In this project, you’ll design and code improvements to a 2D version of Minecraft.
+इस परियोजना में, आप माइनक्राफ 2 डी संस्करण में सुधार और डिजाइन करेंगे।
 
 <div class="trinket">
   <iframe src="https://trinket.io/embed/python/ebc5b0148b?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
@@ -8,31 +8,31 @@ In this project, you’ll design and code improvements to a 2D version of Minecr
   <img src="images/craft-finished.png">
 </div>
 
-### Additional information for club leaders
+### क्लब लीडरों के लिए अतिरिक्त जानकारी
 
-If you need to print this project, please use the [Printer friendly version](https://projects.raspberrypi.org/en/projects/codecraft/print).
+यदि आप इस प्रोजेक्ट को प्रिंट करना चाहते हैं, तो कृपया [प्रिंटर अनुकूल संस्करण](https://projects.raspberrypi.org/en/projects/codecraft/print) का उपयोग करें।
 
 ## \--- collapse \---
 
-## title: Club leader notes
+## शीर्षक: क्लब नेता नोट्स
 
-## Introduction:
+## परिचय:
 
-In this project, children will learn aspects of graphics and game design by making improvements to a basic 2D Minecraft clone. Children will create new resources, as well as crafting rules for combining resources to make new ones. This will be achieved by understanding and manipulating variables, lists and dictionaries.
+इस परियोजना में, बच्चे एक मूल 2D Minecraft क्लोन में सुधार करके ग्राफिक्स और गेम डिज़ाइन के पहलुओं को जानेंगे। बच्चे नए संसाधन बनाएंगे, साथ ही नए बनाने के लिए संसाधनों के संयोजन के लिए नियमों का मसौदा तैयार करेंगे। यह चर, सूचियों और शब्दकोशों को समझने और हेरफेर करने से प्राप्त होगा।
 
-## Online Resources
+## ऑनलाइन संसाधन
 
-**This project uses Python 3.** We recommend using [trinket](https://trinket.io/) to write Python online. This project contains the following Trinkets:
+**इस प्रोजेक्ट में Python 3 का उपयोग किया जाता है।**Python को ऑनलाइन लिखने के लिए हम [trinket](https://trinket.io/) का उपयोग करने की सलाह देते हैं। इस प्रोजेक्ट में निम्नलिखित Trinket हैं:
 
-+ ['CodeCraft' starter project -- rpf.io/codecraft-on](http://rpf.io/codecraft-on)
++ ['कोडक्राफ्ट' स्टार्टर प्रोजेक्ट - rpf.io/codecraft-on](http://rpf.io/codecraft-on)
 
-There is also a trinket containing the completed project:
+एक ऐसा trinket भी है जिसमें पूर्ण किया गया प्रोजेक्ट है:
 
-+ [‘CodeCraft’ Finished -- trinket.io/python/ebc5b0148b](https://trinket.io/python/ebc5b0148b)
++ ['कोडक्राफ्ट' समाप्त - trinket.io/python/ebc5b0148b](https://trinket.io/python/ebc5b0148b)
 
-## Offline Resources
+## ऑफ़लाइन संसाधन
 
-This project can be [completed offline](https://www.codeclubprojects.org/en-GB/resources/python-working-offline/) if preferred. You can access the project resources by clicking the 'Project Materials' link for this project. This link contains a 'Project Resources' section, which includes resources that children will need to complete this project offline. Make sure that each child has access to a copy of these resources. This section includes the following files:
+यदि चाहें तो इस प्रोजेक्ट को [ऑफ़लाइन पूरा](https://www.codeclubprojects.org/en-GB/resources/python-working-offline/) किया जा सकता है। आप इस प्रोजेक्ट के लिए 'प्रोजेक्ट सामग्री' लिंक पर क्लिक करके प्रोजेक्ट के संसाधनों पर पहुँच प्राप्त कर सकते हैं। इस लिंक में 'प्रोजेक्ट संसाधन' खंड है, जिसमें ऐसे संसाधन सम्मिलित हैं जिसकी बच्चों को इस प्रोजेक्ट को ऑफ़लाइन पूरा करने की ज़रूरत होगी। सुनिश्चित करें कि प्रत्येक बच्चे को इन संसाधनों की प्रतिलिपि तक पहुँच प्राप्त होती है। इस खंड में निम्नलिखित फाइलें शामिल हैं:
 
 + codecraft/codecraft.py
 + codecraft/variables.py
@@ -46,7 +46,7 @@ This project can be [completed offline](https://www.codeclubprojects.org/en-GB/r
 + codecraft/water.gif
 + codecraft/wood.gif
 
-You can also find a completed version of this project in the 'Volunteer Resources' section, which contains:
+आपको 'स्वयंसेवक संसाधन' खंड में इस प्रोजेक्ट का पूर्ण किया गया संस्करण भी मिल सकता है, जिसमें निम्न शामिल हैं:
 
 + codecraft-finished/codecraft.py
 + codecraft-finished/variables.py
@@ -60,49 +60,49 @@ You can also find a completed version of this project in the 'Volunteer Resource
 + codecraft-finished/water.gif
 + codecraft-finished/wood.gif
 
-(All of the resources above are also downloadable as `.zip` files.)
+(उपर्युक्त सभी संसाधन प्रोजेक्ट और स्वयंसेवक `.zip` फ़ाइलों के रूप में भी डाउनलोड किए जा सकते हैं।)
 
-## Learning Objectives
+## सीखने के उद्देश्य
 
-+ Creating and editing graphics;
-+ Game design;
-+ Editing: 
-    + Variables;
-    + Lists;
-    + Dictionaries.
++ ग्राफिक्स बनाना और संपादित करना;
++ गेम डिजाइन;
++ संपादन: 
+    + वेरिएबल;
+    + सूचियाँ;
+    + शब्दकोश
 
-This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+इस प्रोजेक्ट में [Raspberry Pi डिजिटल निर्माण पाठ्यक्रम](http://rpf.io/curriculum) के निम्नलिखित पहलुओं के तत्व सम्मिलित हैं:
 
-+ [Design basic 2D and 3D assets.](https://www.raspberrypi.org/curriculum/design/creator)
++ [आधारभूत 2D और 3D संपदाएँ डिज़ाइन करें |](https://www.raspberrypi.org/curriculum/design/creator)
 
-+ [Combine programming constructs to solve a problem.](https://www.raspberrypi.org/curriculum/programming/builder)
++ [समस्या को हल करने के लिए प्रोग्रामिंग संरचनाओं को जोड़े।](https://www.raspberrypi.org/curriculum/programming/builder)
 
-## Challenges
+## चुनौतियाँ
 
-+ "Build your world" - Playing the game, placing and crafting existing blocks;
-+ "Change your world size" - editing the `MAPWIDTH` and `MAPHEIGHT` variables to change the world size;
-+ "Creating sand" - Creating a new sand resource, along with associated game data.
-+ "Crafting glass from sand" - Creating a new craftable glass resource.
-+ "Create more resources" - Use what's been learnt to create more blocks and crafting rules.
++ "अपनी दुनिया का निर्माण करें" - गेम खेलना, मौजूदा ब्लॉकों को रखना और क्राफ्ट करना;
++ "अपना विश्व आकार बदलें" - ` MAPWIDTH का संपादन ` और ` MAPHEIGHT ` दुनिया के आकार को बदलने के लिए वेरिएबल;
++ "रेत बनाना" - संबंधित खेल डेटा के साथ एक नया रेत संसाधन बनाना।
++ "रेत से ग्लास क्राफ्टिंग" - एक नया क्राफ्टेबल ग्लास संसाधन बनाना।
++ "अधिक संसाधन बनाएं" - अधिक ब्लॉक और क्राफ्टिंग नियम बनाने के लिए जो सीखा गया है उसका उपयोग करें।
 
-## Frequently Asked Questions
+## अक्सर पूछे जाने वाले प्रश्न
 
-+ Children may need reminding that elements of a dictionary/list are separated by a comma. For example, when adding inventory items, graphics and crafting rules to the game.
++ बच्चों को यह याद दिलाने की आवश्यकता हो सकती है कि शब्दकोश / सूची के तत्व अल्पविराम द्वारा अलग किए गए हैं। उदाहरण के लिए, खेल में इन्वेंट्री आइटम, ग्राफिक्स और क्राफ्टिंग नियमों को जोड़ने पर।
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: Project materials
+## title: प्रोजेक्ट सामग्री
 
-## Project resources
+## प्रोजेक्ट संसाधन
 
-+ [.zip file containing all project resources](resources/codecraft-resources.zip)
-+ [Online Trinket containing all 'CodeCraft' project resources](http://rpf.io/codecraft-on)
++ [सभी प्रोजेक्ट संसाधनों वाली .zip फ़ाइल](resources/codecraft-resources.zip)
++ [ऑनलाइन ट्रिंकेट जिसमें सभी 'CodeCraft' प्रोजेक्ट संसाधन हैं](http://rpf.io/codecraft-on)
 
-## Club leader resources
+## क्लब नेता संसाधन
 
-+ [.zip file containing all completed project resources](solutions/codecraft-solution.zip)
-+ [Online completed Trinket project](https://trinket.io/python/ebc5b0148b)
++ [सभी प्रोजेक्ट संसाधनों वाली .zip फ़ाइल](solutions/codecraft-solution.zip)
++ [ऑनलाइन पूर्ण Trinket प्रोजेक्ट](https://trinket.io/python/ebc5b0148b)
 
 \--- /collapse \---
