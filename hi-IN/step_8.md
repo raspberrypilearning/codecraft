@@ -1,39 +1,39 @@
-## Crafting planks from wood
+## लकड़ी से तख्ते बनाना
 
-Let's create a new plank resource that be crafted from wood.
+आइए एक नया तख़्त संसाधन बनाएं जो लकड़ी से तैयार किया गया हो।
 
-+ First, add a new `PLANK` variable to your game.
++ सबसे पहले, एक नया ` PLANK ` वेरिएबल अपने खेल के में जोड़ें।
     
-    ![screenshot](images/craft-plank-const.png)
+    ![स्क्रीनशॉट](images/craft-plank-const.png)
 
-+ Add a new `PLANK` variable to your game.
++ सबसे पहले, एक नया ` PLANK ` वेरिएबल अपने खेल में जोड़ें।
     
-    ![screenshot](images/craft-plank-resources.png)
+    ![स्क्रीनशॉट](images/craft-plank-resources.png)
 
-+ Name the resource `'plank'`.
++ संसाधन का नाम रखें` 'मुद्दा' ('plank')` ।
     
-    ![screenshot](images/craft-plank-names.png)
+    ![स्क्रीनशॉट](images/craft-plank-names.png)
 
-+ Give your `PLANK` resource an image. The project already contains a `plank.gif` image, but you can create your own if you prefer.
++ अपना ` PLANK ` संसाधन को एक छवि दें । परियोजना में पहले से ही एक ` plank.gif ` छवि शामिल है, लेकिन यदि आप चाहें तो आप खुद की छवि बना सकते हैं और अपलोड कर सकते हैं।
     
-    ![screenshot](images/craft-plank-textures.png)
+    ![स्क्रीनशॉट](images/craft-plank-textures.png)
 
-+ Add planks to your inventory.
++ अपनी सूची में तख्तियां जोड़ें।
     
-    ![screenshot](images/craft-plank-inventory.png)
+    ![स्क्रीनशॉट](images/craft-plank-inventory.png)
 
-+ Set a key for placing planks.
++ तख्तों को रखने के लिए एक कुंजी तय करें।
     
-    ![screenshot](images/craft-plank-placekeys.png)
+    ![स्क्रीनशॉट](images/craft-plank-placekeys.png)
 
-+ As this resource can be crafted, you need to create a crafting rule, which is that a plank can be made from 3 wood tiles. Add this code to the `crafting` dictionary.
++ क्योंकि इस संसाधन को तैयार किया जा सकता है, आपको एक क्राफ्टिंग नियम बनाने की आवश्यकता है, जो यह है कि 3 लकड़ी की टाइलों से एक तख़्त बनाया जा सकता है। इस कोड को अपने `विद्युत (crafting)` शब्दकोश में जोड़ें।
     
-    ![screenshot](images/craft-plank-crafting.png)
+    ![स्क्रीनशॉट](images/craft-plank-crafting.png)
 
-+ Finally, you need to set a key for crafting new planks.
++ अंत में, आपको नए तख्तों को तैयार करने के लिए एक कुंजी तय करने की आवश्यकता है।
     
-    ![screenshot](images/craft-plank-craftkeys.png)
+    ![स्क्रीनशॉट](images/craft-plank-craftkeys.png)
 
-+ To test your new plank resource, gather up a few wood tiles and then craft some planks from your wood. You can then place your new planks in your world.
++ अपने नए तख़्त संसाधन का परीक्षण करने के लिए, कुछ लकड़ी की टाइलें इकट्ठा करें और फिर अपनी लकड़ी से कुछ तख्तों को तैयार करें। तब आप अपनी दुनिया में अपने नए तख्तों को रख सकते हैं।
     
-    ![screenshot](images/craft-plank-test.png)
+    ![स्क्रीनशॉट](images/craft-plank-test.png)
