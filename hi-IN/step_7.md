@@ -1,13 +1,13 @@
 \--- challenge \---
 
-## Challenge: Creating sand
+## चुनौती: रेत बनाना
 
-Can you add a `SAND` resource to your game? You can use the steps above to help you.
+क्या आप एक ` SAND ` संसाधन अपने खेल के लिए जोड़ सकते हैं? आप मदद के लिए ऊपर दिए गए चरणों का उपयोग कर सकते हैं।
 
-![screenshot](images/craft-sand.png)
+![स्क्रीनशॉट](images/craft-sand.png)
 
-The project already includes a `sand.gif` image, but you can create and upload your own if you prefer.
+परियोजना में पहले से ही एक ` sand.gif ` छवि शामिल है, लेकिन यदि आप चाहें तो आप खुद छवि बना सकते हैं और अपलोड कर सकते हैं।
 
-![screenshot](images/craft-upload.png)
+![स्क्रीनशॉट](images/craft-upload.png)
 
 \--- /challenge \---
