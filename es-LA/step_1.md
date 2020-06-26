@@ -1,6 +1,6 @@
-## Introduction
+## Introducción
 
-In this project, you’ll design and code improvements to a 2D version of Minecraft.
+En este proyecto, diseñarás y codificarás mejoras a una versión 2D de Minecraft.
 
 <div class="trinket">
   <iframe src="https://trinket.io/embed/python/ebc5b0148b?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
@@ -8,31 +8,31 @@ In this project, you’ll design and code improvements to a 2D version of Minecr
   <img src="images/craft-finished.png">
 </div>
 
-### Additional information for club leaders
+### Información adicional para los líderes del club
 
-If you need to print this project, please use the [Printer friendly version](https://projects.raspberrypi.org/en/projects/codecraft/print).
+Si necesita imprimir este proyecto use la [versión para imprimir](https://projects.raspberrypi.org/en/projects/codecraft/print).
 
 ## \--- collapse \---
 
-## title: Club leader notes
+## título: Notas del líder del club
 
-## Introduction:
+## Introducción:
 
-In this project, children will learn aspects of graphics and game design by making improvements to a basic 2D Minecraft clone. Children will create new resources, as well as crafting rules for combining resources to make new ones. This will be achieved by understanding and manipulating variables, lists and dictionaries.
+En este proyecto, los niños aprenderán aspectos de gráficos y diseño de juegos haciendo mejoras a un clon básico de Minecraft 2D. Los niños crearán nuevos recursos, así como reglas de fabricación para combinar recursos y crear otros nuevos. Esto se logrará mediante la comprensión y manipulación de variables, listas y diccionarios.
 
-## Online Resources
+## Recursos en línea
 
-**This project uses Python 3.** We recommend using [trinket](https://trinket.io/) to write Python online. This project contains the following Trinkets:
+**Este proyecto utiliza Python 3.** Recomendamos usar [trinket](https://trinket.io/) para escribir Python en línea. Este proyecto contiene las siguientes Trinkets:
 
-+ ['CodeCraft' starter project -- rpf.io/codecraft-on](http://rpf.io/codecraft-on)
++ [Proyecto de inicio 'CodeCraft' - rpf.io/codecraft-on](http://rpf.io/codecraft-on)
 
-There is also a trinket containing the completed project:
+También hay un Trinket que contiene el proyecto completo:
 
-+ [‘CodeCraft’ Finished -- trinket.io/python/ebc5b0148b](https://trinket.io/python/ebc5b0148b)
++ [‘CodeCraft’ Terminado -- trinket.io/python/ebc5b0148b](https://trinket.io/python/ebc5b0148b)
 
-## Offline Resources
+## Recursos sin conexión
 
-This project can be [completed offline](https://www.codeclubprojects.org/en-GB/resources/python-working-offline/) if preferred. You can access the project resources by clicking the 'Project Materials' link for this project. This link contains a 'Project Resources' section, which includes resources that children will need to complete this project offline. Make sure that each child has access to a copy of these resources. This section includes the following files:
+Si prefiere, este proyecto se puede [completar sin conexión](https://www.codeclubprojects.org/en-GB/resources/python-working-offline/). Puedes acceder a los recursos del proyecto haciendo clic en el enlace 'Materiales del proyecto' de este proyecto. Este enlace contiene una sección de "Recursos del proyecto", que incluye recursos que los niños necesitarán para completar el proyecto sin conexión. Asegúrate que cada niño tenga acceso a una copia de estos recursos. Esta sección incluye los siguientes archivos:
 
 + codecraft/codecraft.py
 + codecraft/variables.py
@@ -46,7 +46,7 @@ This project can be [completed offline](https://www.codeclubprojects.org/en-GB/r
 + codecraft/water.gif
 + codecraft/wood.gif
 
-You can also find a completed version of this project in the 'Volunteer Resources' section, which contains:
+También puedes encontrar una versión completa de este proyecto en la sección 'Recursos para voluntarios', que contiene:
 
 + codecraft-finished/codecraft.py
 + codecraft-finished/variables.py
@@ -60,49 +60,49 @@ You can also find a completed version of this project in the 'Volunteer Resource
 + codecraft-finished/water.gif
 + codecraft-finished/wood.gif
 
-(All of the resources above are also downloadable as `.zip` files.)
+(Todos los recursos anteriores también se pueden descargar como `.zip ` archivos.)
 
-## Learning Objectives
+## Objetivos del Aprendizaje
 
-+ Creating and editing graphics;
-+ Game design;
-+ Editing: 
++ Creación y edición de gráficos;
++ Diseño de juego;
++ Edición: 
     + Variables;
-    + Lists;
-    + Dictionaries.
+    + Listas;
+    + Diccionarios.
 
-This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+Este proyecto incluye los siguientes elementos del [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
 
-+ [Design basic 2D and 3D assets.](https://www.raspberrypi.org/curriculum/design/creator)
++ [Diseño de elementos básicos en 2D y 3D.](https://www.raspberrypi.org/curriculum/design/creator)
 
-+ [Combine programming constructs to solve a problem.](https://www.raspberrypi.org/curriculum/programming/builder)
++ [Combinación de estructuras de programación para resolver un problema.](https://www.raspberrypi.org/curriculum/programming/builder)
 
-## Challenges
+## Desafíos
 
-+ "Build your world" - Playing the game, placing and crafting existing blocks;
-+ "Change your world size" - editing the `MAPWIDTH` and `MAPHEIGHT` variables to change the world size;
-+ "Creating sand" - Creating a new sand resource, along with associated game data.
-+ "Crafting glass from sand" - Creating a new craftable glass resource.
-+ "Create more resources" - Use what's been learnt to create more blocks and crafting rules.
++ "Construye tu mundo"- Juega, posiciona y crea bloques existentes
++ "Cambia el tamaño de tu mundo" - Editando las variables `MAPWIDTH` y `MAPHEIGHT` para cambiar el tamaño del mundo;
++ "Crea arena" - Creando un nuevo recurso de arena, junto con los datos asociados al juego.
++ "Crea vidrio a partir de arena" - Creando un nuevo recurso de vidrio.
++ " Crea más recursos" - Usa lo que has aprendido para crear más bloques y reglas de creación.
 
-## Frequently Asked Questions
+## Preguntas frecuentes
 
-+ Children may need reminding that elements of a dictionary/list are separated by a comma. For example, when adding inventory items, graphics and crafting rules to the game.
++ Es posible que necesite hacer recordar a los niños que los elementos de un diccionario/lista están separados por una coma. Por ejemplo, cuando se añaden artículos de inventario, gráficos y reglas de creación al juego.
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: Project materials
+## título: Materiales del proyecto
 
-## Project resources
+## Recursos del proyecto
 
-+ [.zip file containing all project resources](resources/codecraft-resources.zip)
-+ [Online Trinket containing all 'CodeCraft' project resources](http://rpf.io/codecraft-on)
++ [El archivo.zip contiene todos los recursos del proyecto](resources/codecraft-resources.zip)
++ [Trinket en línea contiene todos los recursos del proyecto 'CodeCraft'](http://rpf.io/codecraft-on)
 
-## Club leader resources
+## Recursos del líder del club
 
-+ [.zip file containing all completed project resources](solutions/codecraft-solution.zip)
-+ [Online completed Trinket project](https://trinket.io/python/ebc5b0148b)
++ [El archivo.zip contiene todos los recursos del proyecto](solutions/codecraft-solution.zip)
++ [Proyecto Trinket completado en línea](https://trinket.io/python/ebc5b0148b)
 
 \--- /collapse \---
