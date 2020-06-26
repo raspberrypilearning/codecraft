@@ -1,11 +1,11 @@
 \--- challenge \---
 
-## Challenge: Crafting glass from sand
+## चुनौती: रेत से काँच बनाना
 
-Can you create a new glass resource, that can be crafted from sand? You can follow the steps above to help you.
+क्या आप एक नया ग्लास संसाधन बना सकते हैं, जिसे रेत से तैयार किया जा सकता है? आप मदद के लिए ऊपर दिए गए चरणों का उपयोग कर सकते हैं।
 
-![screenshot](images/craft-glass.png)
+![स्क्रीनशॉट](images/craft-glass.png)
 
-The project already contains a `glass.gif` image that you can use, or you can create your own image if you prefer.
+परियोजना में पहले से ही एक ` glass.gif ` छवि है जिसका आप उपयोग कर सकते हैं, या आप चाहें तो अपनी खुद की छवि बना सकते हैं।
 
 \--- /challenge \---
