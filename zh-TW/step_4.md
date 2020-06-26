@@ -1,15 +1,15 @@
-## Customising your game
+## 客製化您的遊戲
 
-Let’s modify some variables to change how your game works.
+讓我們來修改一些變數改變遊戲的運作方式。
 
-+ Click the `variables.py` file to see some variables that can be changed.
++ 點擊 `variables.py` 檔案來尋找可以改變的一些變數。
     
-    ![screenshot](images/craft-variables.png)
+    ![截圖](images/craft-variables.png)
 
-+ Change the value of your `BACKGROUNDCOLOUR` variable, and click 'Run' to see the change to your game.
++ 更改 `BACKGROUNDCOLOUR` 變數的值，然後點擊“Run”來查看對遊戲的變動。
     
-    ![screenshot](images/craft-background.png)
+    ![截圖](images/craft-background.png)
 
-+ The variable `MAXTILES` is the amount of each resource that can be held in your inventory. Change this variable if you want to store more (or less) than 20 of each resource.
++ 變數 `MAXTILES` 是您的儲存庫中可以存放的每種資源的數量。 如果要儲存每個資源多於（或少於）20個，請更改此變數。
     
-    ![screenshot](images/craft-maxtiles.png)
+    ![截圖](images/craft-maxtiles.png)
