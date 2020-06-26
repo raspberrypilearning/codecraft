@@ -1,23 +1,23 @@
-## Playing the game
+## गेम खेलना
 
-+ Open this trinket: [rpf.io/codecraft-on](http://rpf.io/codecraft-on){:target="_blank"}.
++ इस ट्रिंकेट को खोलें: [ rpf.io/codecraft-on ](http://rpf.io/codecraft-on) {: लक्ष्य = "_ blank"}।
 
-+ Use the WASD keys to move your player around the world, which is full of different resources (dirt, grass and water).
++ दुनिया भर में अपने खिलाड़ी को स्थानांतरित करने के लिए WASD कुंजियों का उपयोग करें, जो विभिन्न संसाधनों (गंदगी, घास और पानी) से भरा है।
     
-    ![screenshot](images/craft-move.png)
+    ![स्क्रीनशॉट](images/craft-move.png)
 
-+ You can press the spacebar to collect resources. Pick up a few of each type of resource, and you'll see them added to your inventory.
++ संसाधनों को इकट्ठा करने के लिए आप स्पेसबार को दबा सकते हैं। प्रत्येक प्रकार के कुछ संसाधन उठाएँ, और आप उन्हें अपनी सूची में जोड़कर देखेंगे।
     
-    ![screenshot](images/craft-pickup.png)
+    ![स्क्रीनशॉट](images/craft-pickup.png)
 
-+ Press the number keys (1 to 3) to place a resource on the map. For example, press 3 to place some water on the map. This will only work if you have some water in your inventory.
++ मानचित्र पर संसाधन लगाने के लिए संख्या कुंजियों (1 से 3) को दबाएँ। उदाहरण के लिए, मानचित्र पर कुछ पानी रखने के लिए 3 दबाएं। यह तभी काम करेगा जब आपकी इन्वेंट्री में थोड़ा पानी होगा।
     
-    ![screenshot](images/craft-place-water.png)
+    ![स्क्रीनशॉट](images/craft-place-water.png)
 
-+ You can craft an item by pressing the key displayed in the menu. Crafting means combining items you already have in your inventory to create new ones. Try pressing the 'r' key to craft a new brick (as long as you have 2 dirt and 1 water in your inventory).
++ आप मेनू में प्रदर्शित कुंजी दबाकर किसी आइटम को शिल्प कर सकते हैं। क्राफ्टिंग का मतलब है कि नई वस्तुएं बनाने के लिए आपके पास पहले से मौजूद वस्तुएं का उपयोग करें। एक नई ईंट (जब तक आपकी सूची में 2 गंदगी और 1 पानी है) शिल्प करने के लिए 'आर' कुंजी दबाने की कोशिश करें।
     
-    ![screenshot](images/craft-craft-brick.png)
+    ![स्क्रीनशॉट](images/craft-craft-brick.png)
 
-+ You can then press they '4' key to place your crafted bricks.
++ फिर आप अपनी गढ़ी हुई ईंटों को रखने के लिए वे '4' कुंजी दबा सकते हैं।
     
-    ![screenshot](images/craft-place-brick.png)
+    ![स्क्रीनशॉट](images/craft-place-brick.png)
