@@ -1,33 +1,33 @@
 #!/bin/python3
 
-#Game variables that can be changed!
+#नाम परिवर्तन किए जा सकते हैं!
 
-#game background colour.
-BACKGROUNDCOLOUR = 'white'
+#नई पृष्ठभूमि का रंग।
+BACKGROUNDCOLOUR = 'सफेद'
 
-#map variables.
+#मंच चर।
 MAXTILES  = 20
 MAPWIDTH  = 10
 MAPHEIGHT = 10
 
-#variables representing the different resources.
+#विभिन्न संसाधनों का प्रतिनिधित्व करने वाले वेरिएबल।
 DIRT    = 0
 GRASS   = 1
 WATER   = 2
 BRICK   = 3
 
-#a list of all game resources.
+#सभी खेल संसाधनों की सूची।
 resources = [DIRT,GRASS,WATER,BRICK]
 
-#the names of the resources.
+#संसाधनों के नाम।
 names = {
-  DIRT    : 'dirt',
-  GRASS   : 'grass',
-  WATER   : 'water',
-  BRICK   : 'brick'
+  DIRT: 'गंदगी',
+  GRASS: 'घास',
+  WATER   : 'पानी',
+  BRICK   : 'ईंट'
 }
 
-#a dictionary linking resources to images.
+#शब्दकोश संसाधनों को छवियों से जोड़ता हुआ।
 textures = {
   DIRT    : 'dirt.gif',
   GRASS   : 'grass.gif',
@@ -35,7 +35,7 @@ textures = {
   BRICK   : 'brick.gif'
 }
 
-#the number of each resource the player has.
+#खिलाड़ी के पास प्रत्येक संसाधन की संख्या।
 inventory = {
   DIRT    : 10,
   GRASS   : 10,
@@ -43,19 +43,19 @@ inventory = {
   BRICK   : 0
 }
 
-#the player image.
+#खिलाड़ी की छवि।
 playerImg = 'player.gif'
 
-#the player position.
+#खिलाड़ी की स्थिति।
 playerX = 0
 playerY = 0
 
-#rules to make new resources.
+#नियम नए संसाधन बनाने के लिए।
 crafting = {
   BRICK    : { WATER : 1, DIRT : 2 }
 }
 
-#keys for placing resources.
+#संसाधन रखने की कुंजी।
 placekeys = {
   DIRT  : '1',
   GRASS : '2',
@@ -63,13 +63,13 @@ placekeys = {
   BRICK : '4'
 }
 
-#keys for crafting tiles.
+#टाइल बनाने की कुंजी।
 craftkeys = {
-  BRICK : 'r'
+  BRICK : 'आर'
 }
 
-#game instructions that are displayed.
-instructions =  [
-  'Instructions:',
-  'Use WASD to move'
+#खेल निर्देश जो प्रदर्शित होते हैं।
+निर्देश =  [
+  'निर्देश:',
+  'स्थानांतरित करने के लिए WASD का उपयोग करें'
 ]
