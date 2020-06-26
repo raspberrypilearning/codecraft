@@ -1,23 +1,23 @@
-## Playing the game
+## Jugando
 
-+ Open this trinket: [rpf.io/codecraft-on](http://rpf.io/codecraft-on){:target="_blank"}.
++ Abre este trinket: [rpf.io/codecraft-on](http://rpf.io/codecraft-on){:target="_blank"}.
 
-+ Use the WASD keys to move your player around the world, which is full of different resources (dirt, grass and water).
++ Usa las teclas WASD para mover a tu jugador alrededor del mundo, el cual está lleno de diferentes recursos (tierra, césped y agua).
     
-    ![screenshot](images/craft-move.png)
+    ![captura de pantalla](images/craft-move.png)
 
-+ You can press the spacebar to collect resources. Pick up a few of each type of resource, and you'll see them added to your inventory.
++ Puedes presionar la barra espaciadora para recopilar recursos. Recoge algunos de cada tipo de recurso y verás que se añaden a tu inventario.
     
-    ![screenshot](images/craft-pickup.png)
+    ![captura de pantalla](images/craft-pickup.png)
 
-+ Press the number keys (1 to 3) to place a resource on the map. For example, press 3 to place some water on the map. This will only work if you have some water in your inventory.
++ Haz clic en las teclas numéricas (1 al 3) para poner un recurso en el mapa. Por ejemplo, haz clic en el 3 para poner algo de agua en el mapa. Esto sólo funcionará si tienes algo de agua en tu inventario.
     
-    ![screenshot](images/craft-place-water.png)
+    ![captura de pantalla](images/craft-place-water.png)
 
-+ You can craft an item by pressing the key displayed in the menu. Crafting means combining items you already have in your inventory to create new ones. Try pressing the 'r' key to craft a new brick (as long as you have 2 dirt and 1 water in your inventory).
++ Puedes crear un item presionando la tecla que se muestra en el menú. Crear significa combinar items que ya tienes en tu inventario para obtener otros nuevos. Intenta presionar la tecla 'r' para crear un ladrillo nuevo (siempre que tengas 2 tierra y 1 agua en tu inventario).
     
-    ![screenshot](images/craft-craft-brick.png)
+    ![captura de pantalla](images/craft-craft-brick.png)
 
-+ You can then press they '4' key to place your crafted bricks.
++ Luego, puedes presionar la tecla '4' para poner los ladrillos que has creado.
     
-    ![screenshot](images/craft-place-brick.png)
+    ![captura de pantalla](images/craft-place-brick.png)
