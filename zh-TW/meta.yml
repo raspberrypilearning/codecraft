@@ -1,30 +1,30 @@
 ---
-hero_image: images/codecraft.png
+hero_image: images/ codecraft.png
 duration: 2
 listed: true
 copyedit: false
 title: CodeCraft
-description: Design and code improvements to a 2D version of Minecraft.
+description: 對當個創世神的2D版本進行設計和程式碼修改。
 version: 3.1.0
-last_tested: 2018-11-22
+last_tested: 2018年11月22日
 steps:
   - 
-    title: Introduction
+    title: 介紹
   - 
-    title: Playing the game
+    title: 玩遊戲
   - 
-    title: 'Challenge: Build your world'
+    title: '挑戰：建立你的世界'
   - 
-    title: Customising your game
+    title: 客制化您的遊戲
   - 
-    title: 'Challenge: Change your world size'
+    title: '挑戰：改變你的世界大小'
   - 
-    title: Creating a new wood resource
+    title: 創造新的木材資源
   - 
-    title: 'Challenge: Creating sand'
+    title: '挑戰：創造沙子'
   - 
-    title: Crafting planks from wood
+    title: 用木材製作木板
   - 
-    title: 'Challenge: Crafting glass from sand'
+    title: '挑戰：用沙子製作玻璃'
   - 
-    title: 'Challenge: Create more resources'
+    title: '挑戰：創造更多資源'
