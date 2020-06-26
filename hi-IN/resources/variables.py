@@ -3,9 +3,9 @@
 #नाम परिवर्तन किए जा सकते हैं!
 
 #नई पृष्ठभूमि का रंग।
-BACKGROUNDCOLOUR = 'सफेद'
+BACKGROUNDCOLOUR = 'white'
 
-#मंच चर।
+#मंच वेरिएबल।
 MAXTILES  = 20
 MAPWIDTH  = 10
 MAPHEIGHT = 10
@@ -21,10 +21,10 @@ resources = [DIRT,GRASS,WATER,BRICK]
 
 #संसाधनों के नाम।
 names = {
-  DIRT: 'गंदगी',
-  GRASS: 'घास',
-  WATER   : 'पानी',
-  BRICK   : 'ईंट'
+  DIRT    : 'dirt',
+  GRASS   : 'grass',
+  WATER   : 'water',
+  BRICK   : 'brick'
 }
 
 #शब्दकोश संसाधनों को छवियों से जोड़ता हुआ।
@@ -65,7 +65,7 @@ placekeys = {
 
 #टाइल बनाने की कुंजी।
 craftkeys = {
-  BRICK : 'आर'
+  BRICK : 'r'
 }
 
 #खेल निर्देश जो प्रदर्शित होते हैं।
