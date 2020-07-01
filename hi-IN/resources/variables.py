@@ -69,7 +69,7 @@ craftkeys = {
 }
 
 #खेल निर्देश जो प्रदर्शित होते हैं।
-निर्देश =  [
-  'निर्देश:',
-  'स्थानांतरित करने के लिए WASD का उपयोग करें'
+instructions =  [
+  'Instructions:',
+  'Use WASD to move'
 ]
