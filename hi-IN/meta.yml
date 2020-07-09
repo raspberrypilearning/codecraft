@@ -1,25 +1,20 @@
-hero_image: images/banner.png
-theme: blue
+---
+hero_image: images/codecraft.png
 duration: 2
 listed: true
-ingredient: false
 copyedit: false
-curriculum: creator, design-0, programming-0, phys-comp-0, manufacture-0, community-0
 title: कोडक्राफ्ट
 description: माइनक्राफ्ट के 2D संस्करण डिज़ाइन और सुधार के लिए कोड करें।
-original_url: https://codeclubprojects.org/en-GB/python/codecraft
-interests: ''
-technologies: python
-site_areas: codeclub, python
+version: 3.1.0
+last_tested: 2018-11-22
 steps:
-- title: भूमिका
-- title: गेम खेलना
-- title: 'चुनौती: अपनी दुनिया बनाएँ'
-- title: अपनी गेम को कस्टमाइज़
-- title: 'चुनौती: अपनी दुनिया का आकार बदलें'
-- title: नया लकड़ी का संसाधन बनाना
-- title: 'चुनौती: रेत बनाना'
-- title: लकड़ी से तख्ते बनाना
-- title: 'चुनौती: रेत से काँच बनाना'
-- title: 'चुनौती: और संसाधन बनाएँ'
-
+  - title: भूमिका
+  - title: गेम खेलना
+  - title: 'चुनौती: अपनी दुनिया बनाएँ'
+  - title: अपनी गेम को कस्टमाइज़ करना
+  - title: 'चुनौती: अपनी दुनिया का आकार बदलें'
+  - title: नया लकड़ी का संसाधन बनाना
+  - title: 'चुनौती: रेत बनाना'
+  - title: लकड़ी से तख्ते बनाना
+  - title: 'चुनौती: रेत से काँच बनाना'
+  - title: 'चुनौती: और संसाधन बनाएँ'
