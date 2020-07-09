@@ -74,7 +74,7 @@ title: क्लब नेता नोट्स
 
 इस परियोजना में [Raspberry Pi डिजिटल निर्माण पाठ्यक्रम](http://rpf.io/curriculum) के निम्नलिखित पहलुओं के तत्व सम्मिलित हैं:
 
-+ [बुनियादी 2D और 3D संपदाएँ डिज़ाइन करें |](https://www.raspberrypi.org/curriculum/design/creator)
++ [बुनियादी 2D और 3D संपदाएँ डिज़ाइन करें ।](https://www.raspberrypi.org/curriculum/design/creator)
 
 + [समस्या को हल करने के लिए प्रोग्रामिंग संरचनाओं को जोड़े।](https://www.raspberrypi.org/curriculum/programming/builder)
 

@@ -1,6 +1,6 @@
 ## गेम खेलना
 
-+ इस Trinket को खोलें: [rpf.io/codecraft-on](http://rpf.io/codecraft-on) {:target="_blank"}।
++ इस Trinket को खोलें: [rpf.io/codecraft-on](http://rpf.io/codecraft-on){:target="_blank"}।
 
 + दुनिया भर में अपने खिलाड़ी को स्थानांतरित करने के लिए WASD कुंजियों का उपयोग करें, जो विभिन्न संसाधनों (गंदगी, घास और पानी) से भरा है।
     
