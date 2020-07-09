@@ -1,10 +1,9 @@
 --- challenge ---
+
 ## चुनौती: अपनी दुनिया का आकार बदलें
-अपनी दुनिया का आकार बदलने के लिए `MAPWIDTH` और `MAPHEIGHT` वेरिएबल के मान में परिवर्तन करें?
 
-![screenshot](images/craft-mapsize.png)
+क्या आप दुनिया के आकार को बदलने के लिए अपने `MAPWIDTH` और `MAPHEIGHT` वेरिएबल के मूल्यों को बदल सकते हैं?
 
-
-
+![स्क्रीनशॉट](images/craft-mapsize.png)
 
 --- /challenge ---
