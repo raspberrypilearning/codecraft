@@ -28,7 +28,7 @@ def moveRight():
     
 #moves the player up 1 tile.
 def moveUp():
-  global playerY
+  gobal player Y(ಗ್ಲೋಬಲ್ ಪ್ಲೇಯರ್ Y)
   if(drawing == False and playerY > 0):
     oldY = playerY
     playerY -= 1
