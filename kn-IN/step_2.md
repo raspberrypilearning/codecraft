@@ -20,4 +20,4 @@
 
 + ನಿಮ್ಮ ಹೆಣೆದ brick ಇರಿಸಲು ನೀವು '4' key ಒತ್ತಿ.
     
-    ![screenshot](images/craft-place-brick.png)
+    ![ಸ್ಕ್ರೀನ್‍ಶಾಟ್](images/craft-place-brick.png)
