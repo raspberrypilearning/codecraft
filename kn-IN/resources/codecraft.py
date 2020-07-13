@@ -10,7 +10,7 @@
 
 #moves the player left 1 tile.
 def moveLeft():
-  global playerX
+  global player X
   if(drawing == False and playerX > 0):
     oldX = playerX
     playerX -= 1
