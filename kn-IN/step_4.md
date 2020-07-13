@@ -1,15 +1,15 @@
-## Customising your game
+## ನಿಮ್ಮ ಆಟವನ್ನು ಕಸ್ಟಮೈಸ್ ಮಾಡಲಾಗುತ್ತಿದೆ
 
-Let’s modify some variables to change how your game works.
+ನಿಮ್ಮ ಆಟ ಹೇಗೆ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ ಎಂಬುದನ್ನು ಬದಲಾಯಿಸಲು ಕೆಲವು ವೇರಿಯಬಲ್ಗಳನ್ನು ಮಾರ್ಪಡಿಸೋಣ.
 
-+ Click the `variables.py` file to see some variables that can be changed.
++ ` variables.py` ಫೈಲ್ ಮೇಲೆ ಕ್ಲಿಕ್ ಮಾಡಿ ಬದಲಾಯಿಸಬಹುದಾದ ಕೆಲವು variable ನೋಡಲು.
     
-    ![screenshot](images/craft-variables.png)
+    ![ಸ್ಕ್ರೀನ್‍ಶಾಟ್](images/craft-variables.png)
 
-+ Change the value of your `BACKGROUNDCOLOUR` variable, and click 'Run' to see the change to your game.
++ ನಿಮ್ಮ ` BACKGROUNDCOLOUR` ನ ಮೌಲ್ಯವನ್ನು ಬದಲಾಯಿಸಿ ವೇರಿಯಬಲ್, ಮತ್ತು ನಿಮ್ಮ ಆಟದ ಬದಲಾವಣೆಯನ್ನು ನೋಡಲು 'Run' ಕ್ಲಿಕ್ ಮಾಡಿ.
     
-    ![screenshot](images/craft-background.png)
+    ![ಸ್ಕ್ರೀನ್‍ಶಾಟ್](images/craft-background.png)
 
-+ The variable `MAXTILES` is the amount of each resource that can be held in your inventory. Change this variable if you want to store more (or less) than 20 of each resource.
++ Variable ` MAXTILES ` ನಿಮ್ಮ resource ಇರಿಸಬಹುದಾದ ಪ್ರತಿಯೊಂದು redource ಮೊತ್ತವಾಗಿದೆ. ಪ್ರತಿ resourceಕ್ಕಿಂತ 20 ಕ್ಕಿಂತ ಹೆಚ್ಚು (ಅಥವಾ ಕಡಿಮೆ) ಸಂಗ್ರಹಿಸಲು ನೀವು ಬಯಸಿದರೆ ಈ ವೇರಿಯೇಬಲ್ ಅನ್ನು ಬದಲಾಯಿಸಿ.
     
-    ![screenshot](images/craft-maxtiles.png)
+    ![ಸ್ಕ್ರೀನ್‍ಶಾಟ್](images/craft-maxtiles.png)
