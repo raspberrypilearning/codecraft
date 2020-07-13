@@ -1,50 +1,50 @@
-## Creating a new wood resource
+## ಹೊಸ wood resource ರಚಿಸುವುದು
 
-Let's create a new wood resource. To do this, you'll need to add to some variables in your `variables.py` file.
+ಹೊಸ wood resource ರಚಿಸೋಣ. ಇದನ್ನು ಮಾಡಲು ಕೆಲವು Variable `variables.py` ಫೈಲ್ ಇದಕ್ಕೆ ಸೇರಿಸಬೇಕು.
 
-+ First, you need to give your new resource a number. You'll then be able to use the word `WOOD` in your code instead of the number 4.
++ ಮೊದಲಿಗೆ, ನಿಮ್ಮ ಹೊಸ resource ನೀವು ಸಂಖ್ಯೆಯನ್ನು ನೀಡಬೇಕಾಗಿದೆ. ನಂತರ ನೀವು ನಿಮ್ಮ ಕೋಡ್ ಅಲ್ಲಿ ಸಂಖ್ಯೆಯ 4 ಬದಲು `WOOD` ಬಳಸಬಹುದು.
     
-    ![screenshot](images/craft-wood-const.png)
+    ![ಸ್ಕ್ರೀನ್‍ಶಾಟ್](images/craft-wood-const.png)
 
-+ You should add your new `WOOD` resource to your list of `resources`.
++ ನೀವು ನಿಮ್ಮ ಹೊಸ `WOOD`resource `resources` list ಜೊತೆ ಸೇರಿಸಬೇಕು.
     
-    ![screenshot](images/craft-wood-resources.png)
+    ![ಸ್ಕ್ರೀನ್‍ಶಾಟ್](images/craft-wood-resources.png)
 
-+ You should also give your resource a name, which will be displayed in the inventory.
++ ನಿಮ್ಮ resourceಗೆ ನೀವು ಹೆಸರನ್ನು ಸಹ ನೀಡಬೇಕು, ಅದನ್ನು inventoryಅಲ್ಲಿ ಪ್ರದರ್ಶಿಸಲಾಗುವುದು.
     
-    ![screenshot](images/craft-wood-name.png)
+    ![ಸ್ಕ್ರೀನ್‍ಶಾಟ್](images/craft-wood-name.png)
     
-    Notice the comma `,` at the end of the line above.
+    ಅಲ್ಪವಿರಾಮವನ್ನು ಗಮನಿಸಿ `, ` ಮೇಲಿನ ಸಾಲಿನ ಕೊನೆಯಲ್ಲಿ.
 
-+ Your resource will also need an image. The project already includes an image called `wood.gif`, which you should add to the `textures` dictionary.
++ ನಿಮ್ಮ ಸಂಪನ್ಮೂಲಕ್ಕೆ ಚಿತ್ರದ ಅಗತ್ಯವಿದೆ. ಈ ಯೋಜನೆ ಈಗಾಗಲೇ ` wood.gif ` ಎಂಬ image ಒಳಗೊಂಡಿದೆ `textures` dictionary ಸೇರಿಸಬೇಕು.
     
-    ![screenshot](images/craft-wood-texture.png)
+    ![ಸ್ಕ್ರೀನ್‍ಶಾಟ್](images/craft-wood-texture.png)
 
-+ Add the number of your resource that should be in your `inventory` to start with.
++ ನಿಮ್ಮ resource ಜೊತ ಸಂಖ್ಯೆ ಸೇರಿಸಿ ಅದು ಶುರು ಮಾಡುವ ಮೊದಲು ನಿಮ್ಮ `inventory` ಇರಬೇಕು.
     
-    ![screenshot](images/craft-wood-inventory.png)
+    ![ಸ್ಕ್ರೀನ್‍ಶಾಟ್](images/craft-wood-inventory.png)
 
-+ Finally, add the key that you'll press to place wood in the world.
++ ಅಂತಿಮವಾಗಿ, ಜಗತ್ತಿನಲ್ಲಿ ಮರವನ್ನು ಇರಿಸಲು ನೀವು ಒತ್ತುವ key ಸೇರಿಸಿ.
     
     ![screenshot](images/craft-wood-placekey.png)
 
-+ Run your project to test it. You'll see that you now have a new 'wood' resource in your inventory.
++ ಅದನ್ನು ಪರೀಕ್ಷಿಸಲು ಮಾಡಲು ನಿಮ್ಮ ಯೋಜನೆಯನ್ನು ರನ್ ಮಾಡಿ. ನಿಮ್ಮ inventoryಅಲ್ಲಿ ನೀವು ಹೊಸ 'wood'resource ಹೊಂದಿರುವಿರಿ ಎಂದು ನೀವು ನೋಡುತ್ತೀರಿ.
     
-    ![screenshot](images/craft-wood-test.png)
+    ![ಸ್ಕ್ರೀನ್‍ಶಾಟ್](images/craft-wood-test.png)
 
-+ There's no wood in your world! To fix this, click on your `main.py` file and find the function called `generateRandomWorld()`.
++ ನಿಮ್ಮ ಜಗತ್ತಿನಲ್ಲಿ wood ಇಲ್ಲ! ಇದನ್ನು ಸರಿಪಡಿಸಲು, ನಿಮ್ಮ ` main.py ` ಫೈಲ್ ಕ್ಲಿಕ್ ಮಾಡಿ ಮತ್ತು `generateRandomWorld () ` ಎಂಬ ಕಾರ್ಯವನ್ನು ಹುಡುಕಿ.
     
-    ![screenshot](images/craft-wood-random1.png)
+    ![ಸ್ಕ್ರೀನ್‍ಶಾಟ್](images/craft-wood-random1.png)
     
-    This code generates a random number between 0 and 10, and uses the number to decide which resource to place:
+    ಈ ಕೋಡ್0 ಮತ್ತು 10 ರ ನಡುವೆ ಯಾದೃಚ್ ಸಂಖ್ಯೆಯನ್ನು ಉತ್ಪಾದಿಸುತ್ತದೆ ಮತ್ತು ಯಾವ resource ಇಡಬೇಕೆಂದು ನಿರ್ಧರಿಸಲು ಸಂಖ್ಯೆಯನ್ನು ಬಳಸುತ್ತದೆ:
     
     + 1 or 2 = water
     + 3 or 4 = grass
     + anything else = DIRT
 
-+ Add this code to add wood to your world whenever the `randomNumber` is 5.
++ `randomNumber` 5 ಇದ್ದಾಗಲೆಲ್ಲಾ ನಿಮ್ಮ ಜಗತ್ತಿಗೆ wood ಸೇರಿಸಲು ಈ ಕೋಡ್ ಸೇರಿಸಿ.
     
-    ![screenshot](images/craft-wood-random2.png)
+    ![ಸ್ಕ್ರೀನ್‍ಶಾಟ್](images/craft-wood-random2.png)
 
 + Test your project again. This time, you should see some wood appear in your world.
     
