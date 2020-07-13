@@ -4,27 +4,27 @@ duration: 2
 listed: true
 copyedit: false
 title: ಕೋಡ್‌ಕ್ರಾಫ್ಟ್
-description: Design and code improvements to a 2D version of Minecraft.
+description: Minecraft 2D ಆವೃತ್ತಿಗೆ ವಿನ್ಯಾಸ ಮತ್ತು ಕೋಡ್.
 version: 3.1.0
 last_tested: 2018-11-22
 steps:
   - 
-    title: Introduction
+    title: ಪರಿಚಯ
   - 
-    title: Playing the game
+    title: ಆಟವಾಡುವುದು
   - 
-    title: 'Challenge: Build your world'
+    title: 'ಸವಾಲು: ನಿಮ್ಮ ಜಗತ್ತನ್ನು ನಿರ್ಮಿಸಿ'
   - 
-    title: Customising your game
+    title: ನಿಮ್ಮ ಆಟವನ್ನು ಕಸ್ಟಮೈಸ್ ಮಾಡಲಾಗುತ್ತಿದೆ
   - 
-    title: 'Challenge: Change your world size'
+    title: 'ಸವಾಲು: ನಿಮ್ಮ ವಿಶ್ವ ಗಾತ್ರವನ್ನು ಬದಲಾಯಿಸಿ'
   - 
-    title: Creating a new wood resource
+    title: ಹೊಸ wood resource ರಚಿಸುವುದು
   - 
-    title: 'Challenge: Creating sand'
+    title: 'ಸವಾಲು: sand(ಮರಳು) ರಚಿಸುವುದು'
   - 
-    title: Crafting planks from wood
+    title: Woodಇಂದ planks ತಯಾರಿಸುವುದು
   - 
-    title: 'Challenge: Crafting glass from sand'
+    title: 'ಸವಾಲು: sandಇಂದ glass ತಯಾರಿಸುವುದು'
   - 
-    title: 'Challenge: Create more resources'
+    title: 'ಸವಾಲು: ಹೆಚ್ಚು resources ರಚಿಸುವುದು'
