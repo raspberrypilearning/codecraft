@@ -1,9 +1,9 @@
 \--- challenge \---
 
-## Challenge: Change your world size
+## ಸವಾಲು: ನಿಮ್ಮ ವಿಶ್ವ ಗಾತ್ರವನ್ನು ಬದಲಾಯಿಸಿ
 
-Can you change the values of your `MAPWIDTH` and `MAPHEIGHT` variables to change the size of the world?
+ನೀವು ನಿಮ್ಮ ` MAPWIDTH ` ಮತ್ತು ` MAPHEIGHT ` variable ಮೌಲ್ಯ ಬದಲಾಯಿಸಬಹುದೇ ನಿಮ್ಮ ಪ್ರಪಂಚದ ಗಾತ್ರ ಬದಲಾಯಿಸಲು?
 
-![screenshot](images/craft-mapsize.png)
+![ಸ್ಕ್ರೀನ್‍ಶಾಟ್](images/craft-mapsize.png)
 
 \--- /challenge \---
