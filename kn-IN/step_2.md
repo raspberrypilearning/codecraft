@@ -14,10 +14,10 @@
     
     ![screenshot](images/craft-place-water.png)
 
-+ You can craft an item by pressing the key displayed in the menu. Crafting means combining items you already have in your inventory to create new ones. Try pressing the 'r' key to craft a new brick (as long as you have 2 dirt and 1 water in your inventory).
++ You can craft an item by pressing the key displayed in the menu. Crafting means combining items you already have in your inventory to create new ones. ಹೊಸ brick ತಯಾರಿಸಲು 'r' key ಒತ್ತಲು ಪ್ರಯತ್ನಿಸಿ (ನಿಮ್ಮ inventory 2 dirt ಮತ್ತು 1 water ಇರುವವರೆಗೆ).
     
-    ![screenshot](images/craft-craft-brick.png)
+    ![ಸ್ಕ್ರೀನ್‍ಶಾಟ್](images/craft-craft-brick.png)
 
-+ You can then press they '4' key to place your crafted bricks.
++ ನಿಮ್ಮ ಹೆಣೆದ brick ಇರಿಸಲು ನೀವು '4' key ಒತ್ತಿ.
     
     ![screenshot](images/craft-place-brick.png)
