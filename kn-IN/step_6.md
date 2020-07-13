@@ -46,6 +46,6 @@
     
     ![ಸ್ಕ್ರೀನ್‍ಶಾಟ್](images/craft-wood-random2.png)
 
-+ Test your project again. This time, you should see some wood appear in your world.
++ ನಿಮ್ಮ ಯೋಜನೆಯನ್ನು ಮತ್ತೆ ಪರೀಕ್ಷಿಸಿ. ಈ ಸಮಯದಲ್ಲಿ, ನಿಮ್ಮ ಜಗತ್ತಿನಲ್ಲಿ ಕೆಲವು wood ನೀವು ನೋಡಬೇಕು.
     
     ![screenshot](images/craft-wood-test2.png)
