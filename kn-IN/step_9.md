@@ -1,11 +1,11 @@
 \--- challenge \---
 
-## Challenge: Crafting glass from sand
+## ಸವಾಲು: sandನಿಂದ glass craft ಮಾಡುವುದು
 
-Can you create a new glass resource, that can be crafted from sand? You can follow the steps above to help you.
+ನೀವು ಹೊಸ glass (ಗಾಜು) resource (ಸಂಪನ್ಮೂಲ) ರಚಿಸಬಹುದೇ, ಅದನ್ನು ಮರಳಿನಿಂದ ರಚಿಸಬಹುದು? ನಿಮಗೆ ಸಹಾಯ ಮಾಡಲು ಮೇಲಿನ ಹಂತಗಳನ್ನು ನೀವು ಅನುಸರಿಸಬಹುದು.
 
 ![screenshot](images/craft-glass.png)
 
-The project already contains a `glass.gif` image that you can use, or you can create your own image if you prefer.
+ಯೋಜನೆಯು ಈಗಾಗಲೇ `glass.gif`ಅನ್ನು ಒಳಗೊಂಡಿದೆ ನೀವು ಬಳಸಬಹುದಾದ image, ಅಥವಾ ನೀವು ಬಯಸಿದಲ್ಲಿ ನಿಮ್ಮ ಸ್ವಂತ image ರಚಿಸಬಹುದು.
 
 \--- /challenge \---
