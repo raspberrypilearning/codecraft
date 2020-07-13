@@ -1,6 +1,6 @@
-## Introduction
+## ಪರಿಚಯ
 
-In this project, you’ll design and code improvements to a 2D version of Minecraft.
+ಈ ಯೋಜನೆಯಲ್ಲಿ, ನೀವು Minecraft ನ 2D ಆವೃತ್ತಿಗೆ ವಿನ್ಯಾಸ ಮತ್ತು ಕೋಡ್ ಸುಧಾರಣೆಗಳನ್ನು ವಿನ್ಯಾಸಗೊಳಿಸುತ್ತೀರಿ.
 
 <div class="trinket">
   <iframe src="https://trinket.io/embed/python/ebc5b0148b?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
@@ -8,25 +8,25 @@ In this project, you’ll design and code improvements to a 2D version of Minecr
   <img src="images/craft-finished.png">
 </div>
 
-### Additional information for club leaders
+### ಕ್ಲಬ್ ಲೀಡರ್ಸ್ಗೆ ಹೆಚ್ಚುವರಿ ಮಾಹಿತಿ
 
-If you need to print this project, please use the [Printer friendly version](https://projects.raspberrypi.org/en/projects/codecraft/print).
+[Printer friendly version](https://projects.raspberrypi.org/en/projects/codecraft/print) ಇದನ್ನು ಯೋಜನೆ ಪ್ರಿಂಟ್ ಮಾಡಲು ಉಪಯೋಗಿಸಿ.
 
 ## \--- collapse \---
 
-## title: Club leader notes
+## title: ಕ್ಲಬ್ ಲೀಡರ್ಸ್ ಟಿಪ್ಪಣಿಗಳು
 
-## Introduction:
+## ಪರಿಚಯ:
 
-In this project, children will learn aspects of graphics and game design by making improvements to a basic 2D Minecraft clone. Children will create new resources, as well as crafting rules for combining resources to make new ones. This will be achieved by understanding and manipulating variables, lists and dictionaries.
+ಈ ಯೋಜನೆಯಲ್ಲಿ, ಮಕ್ಕಳು ಮೂಲ Minecraft 2D clone ಸುಧಾರಣೆಗಳನ್ನು ಮಾಡುವ ಮೂಲಕ ಗ್ರಾಫಿಕ್ಸ್ ಮತ್ತು ಆಟದ ವಿನ್ಯಾಸದ ಅಂಶಗಳನ್ನು ಕಲಿಯುವರು. ಮಕ್ಕಳು ಹೊಸ resources ರಚಿಸುತ್ತಾರೆ, ಜೊತೆಗೆ ಹೊಸದನ್ನು ತಯಾರಿಸಲು resources crafting ನಿಯಮಗಳನ್ನು ರಚಿಸುತ್ತಾರೆ. Variables, lists ಮತ್ತು dictionaries ಅರ್ಥಮಾಡಿಕೊಳ್ಳುವ ಮತ್ತು ಮನುಪ್ಲಟ್ ಮಾಡುವ ಮೂಲಕ ಸಾಧಿಸಬಹುದು.
 
-## Online Resources
+## ಆನ್‌ಲೈನ್ resources
 
-**This project uses Python 3.** We recommend using [trinket](https://trinket.io/) to write Python online. This project contains the following Trinkets:
+**ಈ project Python 3.** ಬಳಸುತ್ತದೆ ನೀವು Python online ಬರೆಯಲು ನಾವು [trinket](https://trinket.io/) ಬಳಸಲು ಶಿಫಾರಸು ಮಾಡಿದ್ದೇವೆ. ಈ ಯೋಜನೆ ಈ ಕೆಳಗಿನ Trinkets ಒಳಗೊಂಡಿವೆ:
 
 + ['CodeCraft' starter project -- rpf.io/codecraft-on](http://rpf.io/codecraft-on)
 
-There is also a trinket containing the completed project:
+ಮುಗಿದ ಯೋಜನೆ ಒಳಗೊಂಡಿರುವ trinket ಸಹ ಇದೆ:
 
 + [‘CodeCraft’ Finished -- trinket.io/python/ebc5b0148b](https://trinket.io/python/ebc5b0148b)
 
