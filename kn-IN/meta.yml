@@ -3,7 +3,7 @@ hero_image: images/codecraft.png
 duration: 2
 listed: true
 copyedit: false
-title: CodeCraft
+title: ಕೋಡ್‌ಕ್ರಾಫ್ಟ್
 description: Design and code improvements to a 2D version of Minecraft.
 version: 3.1.0
 last_tested: 2018-11-22
