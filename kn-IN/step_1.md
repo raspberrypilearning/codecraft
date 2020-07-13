@@ -30,9 +30,9 @@
 
 + [‘CodeCraft’ Finished -- trinket.io/python/ebc5b0148b](https://trinket.io/python/ebc5b0148b)
 
-## Offline Resources
+## ಆಫ್ಲೈನ್ Resources
 
-This project can be [completed offline](https://www.codeclubprojects.org/en-GB/resources/python-working-offline/) if preferred. You can access the project resources by clicking the 'Project Materials' link for this project. This link contains a 'Project Resources' section, which includes resources that children will need to complete this project offline. Make sure that each child has access to a copy of these resources. This section includes the following files:
+ಬಯಸಿದರೆ ಈ ಯೋಜನೆ [offline ಪೂರ್ಣಗೊಳಿಸಬಹುದು](https://www.codeclubprojects.org/en-GB/resources/python-working-offline/). ಈ ಯೋಜನೆಗಾಗಿ 'ಪ್ರಾಜೆಕ್ಟ್ ವಸ್ತುಗಳು' ಲಿಂಕ್ ಕ್ಲಿಕ್ ಮಾಡುವ ಮೂಲಕ ನೀವು ಪ್ರಾಜೆಕ್ಟ್ resources' ಪಡೆಯಬಹುದು. ಈ ಲಿಂಕ್ 'ಯೋಜನೆ resource' ವಿಭಾಗವನ್ನು ಒಳಗೊಂಡಿದೆ, ಇದರಲ್ಲಿ ಮಕ್ಕಳು ಈ ಯೋಜನೆಯನ್ನು ಆಫ್‌ಲೈನ್‌ನಲ್ಲಿ ಪೂರ್ಣಗೊಳಿಸಬೇಕಾದ resource ಒಳಗೊಂಡಿದೆ. ಈ resource ನಕಲು ಮಾಡಲು ಪ್ರತಿ ಮಗುವಿಗೆ ಪ್ರವೇಶವಿದೆ ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ. ಈ ವಿಭಾಗವು ಈ ಕೆಳಗಿನ ಫೈಲ್ಸ್ ಒಳಗೊಂಡಿದೆ:
 
 + codecraft/codecraft.py
 + codecraft/variables.py
@@ -46,7 +46,7 @@ This project can be [completed offline](https://www.codeclubprojects.org/en-GB/r
 + codecraft/water.gif
 + codecraft/wood.gif
 
-You can also find a completed version of this project in the 'Volunteer Resources' section, which contains:
+ನೀವು ಮುಗಿದ ಯೋಜನೆ 'Volunteer Resources' ವಿಭಾಗದಲ್ಲಿ ನೋಡಬಹುದು ಅದರಲ್ಲಿ ಏನು ಇದೆ ಅಂದರೆ:
 
 + codecraft-finished/codecraft.py
 + codecraft-finished/variables.py
@@ -62,47 +62,47 @@ You can also find a completed version of this project in the 'Volunteer Resource
 
 (All of the resources above are also downloadable as `.zip` files.)
 
-## Learning Objectives
+## ಕಲಿಕೆ ಉದ್ದೇಶಗಳು
 
-+ Creating and editing graphics;
++ ಗ್ರಾಫಿಕ್ಸ್ ರಚಿಸುವುದು ಮತ್ತು ಸಂಪಾದಿಸುವುದು;
 + Game design;
 + Editing: 
     + Variables;
     + Lists;
     + Dictionaries.
 
-This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+ಈ ಯೋಜನೆ[Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum) ಇದರ ಪಠ್ಯಕ್ರಮವನ್ನು ಅನುಸರಿಸುತ್ತದೆ:
 
-+ [Design basic 2D and 3D assets.](https://www.raspberrypi.org/curriculum/design/creator)
++ [ಮೂಲ 2D ಮತ್ತು 3D ಸ್ವತ್ತುಗಳನ್ನು ವಿನ್ಯಾಸಗೊಳಿಸಿ.](https://www.raspberrypi.org/curriculum/design/creator)
 
-+ [Combine programming constructs to solve a problem.](https://www.raspberrypi.org/curriculum/programming/builder)
++ [ಸಮಸ್ಯೆಯನ್ನು ಪರಿಹರಿಸಲು ಪ್ರೋಗ್ರಾಮಿಂಗ್ ರಚನೆಗಳನ್ನು ಸಂಯೋಜಿಸಿ.](https://www.raspberrypi.org/curriculum/programming/builder)
 
-## Challenges
+## ಸವಾಲುಗಳು
 
-+ "Build your world" - Playing the game, placing and crafting existing blocks;
++ "Build your world" - game ಆಡುವುದು, existing ಬ್ಲಾಕ್ಗಳನ್ನು ಇರಿಸಿ ಮತ್ತು ರಚಿಸುವುದು
 + "Change your world size" - editing the `MAPWIDTH` and `MAPHEIGHT` variables to change the world size;
-+ "Creating sand" - Creating a new sand resource, along with associated game data.
-+ "Crafting glass from sand" - Creating a new craftable glass resource.
-+ "Create more resources" - Use what's been learnt to create more blocks and crafting rules.
++ "sand ರಚಿಸುವುದು- ಹೊಸ sand resource ರಚಿಸುವುದು, ಸಂಬಂಧಿತ ಆಟದ ಮಾಹಿತಿ ಜೊತ.
++ " glassಇಂದ sand ರಚಿಸುವುದು" - ಹೊಸ craftable glass resource ರಚಿಸುವುದು.
++ "ಹೆಚ್ಚು resources ರಚಿಸುವುದು" - blocks ರಚಿಸಲು ಮತ್ತು crafting ನಿಯಮಗಳು ರಚಿಸಲು ಏನು ಕಲಿತಿದ್ದೀರ ಅದನ್ನು ಉಪಯೋಗಿಸಿ.
 
-## Frequently Asked Questions
+## ಹೆಚ್ಚಾಗಿ ಕೇಳುವ ಪ್ರಶ್ನೆಗಳು
 
-+ Children may need reminding that elements of a dictionary/list are separated by a comma. For example, when adding inventory items, graphics and crafting rules to the game.
++ ಮಕ್ಕಳಿಗೆ dictionary/list ಅಂಶಗಳು comma ಇಂದ ಬೇರೆ ಮಾಡಬೇಕು ಎಂದು ನೆನಪಿಸುತ್ತಾ ಇರಿ. ಉದಾಹರಣೆಗೆ, ಆಟದ ಜೊತೆ inventory ವಸ್ತುಗಳು, ಗ್ರಾಫಿಕ್ಸ್ crafting ನಿಯಮಗಳನ್ನು ಸೇರಿಸುವಾಗ.
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: Project materials
+## title: ಯೋಜನೆಯ ವಸ್ತುಗಳು
 
-## Project resources
+## ಯೋಜನೆಯ resouceಗಳು
 
-+ [.zip file containing all project resources](resources/codecraft-resources.zip)
-+ [Online Trinket containing all 'CodeCraft' project resources](http://rpf.io/codecraft-on)
++ [ಎಲ್ಲ project resources ಹೊಂದಿರುವ .zip file](resources/codecraft-resources.zip)
++ [Online Trinket ಹೊಂದಿರುವ ಎಲ್ಲಾ 'CodeCraft' project resources](http://rpf.io/codecraft-on)
 
 ## Club leader resources
 
-+ [.zip file containing all completed project resources](solutions/codecraft-solution.zip)
-+ [Online completed Trinket project](https://trinket.io/python/ebc5b0148b)
++ [ಮುಗಿದ project resources ಹೊಂದಿರುವ.zip file](solutions/codecraft-solution.zip)
++ [Online ಮುಗಿದಿರುವ Trinket project](https://trinket.io/python/ebc5b0148b)
 
 \--- /collapse \---
