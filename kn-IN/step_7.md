@@ -1,12 +1,12 @@
 \--- challenge \---
 
-## Challenge: Creating sand
+## Challenge: ಮರಳು ರಚಿಸುವುದು
 
-Can you add a `SAND` resource to your game? You can use the steps above to help you.
+ನೀವು ನಿಮ್ಮ ಆಟಕ್ಕೆ `SAND` resource ಸೆರಿಸಬಲ್ಲಿರೆ? ನಿಮಗೆ ಸಹಾಯ ಮಾಡಲು ಮೇಲಿನ ಹಂತಗಳನ್ನು ನೀವು ಅನುಸರಿಸಬಹುದು.
 
 ![screenshot](images/craft-sand.png)
 
-The project already includes a `sand.gif` image, but you can create and upload your own if you prefer.
+ಯೋಜನೆ ಮೊದಲೇ ಒಂದು `sand.gif` image ಹೊಂದಿದೆ ನೀವು ಅದನ್ನು ಬಳಸಬಹುದು ಅಥವ, ಬೇಕಿದ್ದರೆ ನಿನ್ನ ಸ್ವಂತ image ರಚಿಸಬಹುದು.
 
 ![screenshot](images/craft-upload.png)
 
