@@ -1,20 +1,20 @@
-## Playing the game
+## ಆಟವಾಡುವುದು
 
 + Open this trinket: [rpf.io/codecraft-on](http://rpf.io/codecraft-on){:target="_blank"}.
 
-+ Use the WASD keys to move your player around the world, which is full of different resources (dirt, grass and water).
++ ನಿಮ್ಮ ಆಟಗಾರನನ್ನು ಪ್ರಪಂಚದಾದ್ಯಂತ ಸರಿಸಲು WASD ಕೀಲಿಗಳನ್ನು ಬಳಸಿ, ಅದು ವಿಭಿನ್ನ resources ತುಂಬಿದೆ (ಕೊಳಕು, ಹುಲ್ಲು ಮತ್ತು ನೀರು).
     
     ![screenshot](images/craft-move.png)
 
-+ You can press the spacebar to collect resources. Pick up a few of each type of resource, and you'll see them added to your inventory.
++ Resources ಸಂಗ್ರಹಿಸಲು ನೀವು ಸ್ಪೇಸ್‌ಬಾರ್ ಒತ್ತಿರಿ. ಪ್ರತಿಯೊಂದು ರೀತಿಯ resource ಅಲ್ಲಿ ಕೆಲವು ಎತ್ತಿಕೊಳ್ಳಿ, ಮತ್ತು ಅವುಗಳನ್ನು ನಿಮ್ಮ ದಾಸ್ತಾನುಗಳಿಗೆ ಸೇರಿಸುವುದನ್ನು ನೀವು ನೋಡುತ್ತೀರಿ.
     
     ![screenshot](images/craft-pickup.png)
 
-+ Press the number keys (1 to 3) to place a resource on the map. For example, press 3 to place some water on the map. This will only work if you have some water in your inventory.
++ ನಕ್ಷೆಯಲ್ಲಿ resource ಇರಿಸಲು ಸಂಖ್ಯೆ ಕೀಗಳನ್ನು (1 ರಿಂದ 3) ಒತ್ತಿರಿ. ಉದಾಹರಣೆಗೆ, ನಕ್ಷೆಯಲ್ಲಿ ಸ್ವಲ್ಪ water ಇರಿಸಲು 3 ಒತ್ತಿರಿ. ನಿಮ್ಮ ದಾಸ್ತಾನುಗಳಲ್ಲಿ ಸ್ವಲ್ಪ ನೀರು ಇದ್ದರೆ ಮಾತ್ರ ಇದು ಕೆಲಸ ಮಾಡುತ್ತದೆ.
     
     ![screenshot](images/craft-place-water.png)
 
-+ You can craft an item by pressing the key displayed in the menu. Crafting means combining items you already have in your inventory to create new ones. ಹೊಸ brick ತಯಾರಿಸಲು 'r' key ಒತ್ತಲು ಪ್ರಯತ್ನಿಸಿ (ನಿಮ್ಮ inventory 2 dirt ಮತ್ತು 1 water ಇರುವವರೆಗೆ).
++ ಮೆನುವಿನಲ್ಲಿ ಪ್ರದರ್ಶಿಸಲಾದ key ಒತ್ತುವ ಮೂಲಕ ನೀವು ಐಟಂ ಅನ್ನು ರಚಿಸಬಹುದು. Crafting ಎಂದರೆ ನಿಮ್ಮ inventory ಅಲ್ಲಿ ನೀವು ಈಗಾಗಲೇ ಹೊಂದಿರುವ ವಸ್ತುಗಳನ್ನು ಹೊಸದನ್ನು ರಚಿಸಲು ಸಂಯೋಜಿಸುವುದು. ಹೊಸ brick ತಯಾರಿಸಲು 'r' key ಒತ್ತಲು ಪ್ರಯತ್ನಿಸಿ (ನಿಮ್ಮ inventory 2 dirt ಮತ್ತು 1 water ಇರುವವರೆಗೆ).
     
     ![ಸ್ಕ್ರೀನ್‍ಶಾಟ್](images/craft-craft-brick.png)
 
