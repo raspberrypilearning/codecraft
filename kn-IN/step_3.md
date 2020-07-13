@@ -1,9 +1,9 @@
 \--- challenge \---
 
-## Challenge: Build your world
+## ಸವಾಲು: ನಿಮ್ಮ ಜಗತ್ತನ್ನು ವಿಸ್ತರಿಸಿ
 
-Can you build a house, with a garden and a swimming pool? What else can you create?
+ಉದ್ಯಾನ ಮತ್ತು ಈಜುಕೊಳದೊಂದಿಗೆ ನೀವು ಮನೆ ನಿರ್ಮಿಸಬಹುದೇ? ನೀವು ಇನ್ನೇನು ರಚಿಸಬಹುದು?
 
-![screenshot](images/craft-build-example.png)
+![ಸ್ಕ್ರೀನ್‍ಶಾಟ್](images/craft-build-example.png)
 
 \--- /challenge \---
