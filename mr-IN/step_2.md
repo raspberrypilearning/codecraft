@@ -1,8 +1,8 @@
-## Playing the game
+## खेळ खेळणे
 
-+ Open this trinket: [rpf.io/codecraft-on](http://rpf.io/codecraft-on){:target="_blank"}.
++ हे trinketउघडा: [rpf.io/codecraft-on](http://rpf.io/codecraft-on){:target="_blank"}.
 
-+ Use the WASD keys to move your player around the world, which is full of different resources (dirt, grass and water).
++ तुमच्या खेळाडूला जगभर फिरण्यासाठी WASD keys वापरा, जी विविध संसाधनेनी भरलेली आहे (घाण, गवत आणि पाणी).
     
     ![screenshot](images/craft-move.png)
 
