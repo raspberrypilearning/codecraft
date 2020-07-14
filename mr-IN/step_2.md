@@ -14,10 +14,10 @@
     
     ![screenshot](images/craft-place-water.png)
 
-+ तुम्ही मेनूमध्ये प्रदर्शित key दाबून साहित्याला हस्तकला देवू शकता. Crafting means combining items you already have in your inventory to create new ones. Try pressing the 'r' key to craft a new brick (as long as you have 2 dirt and 1 water in your inventory).
++ तुम्ही मेनूमध्ये प्रदर्शित key दाबून साहित्याला हस्तकला देवू शकता. हस्तकला म्हणजे आपल्याकडे आधीपासून असलेले साहित्या मध्ये नावीन्य करण्यासाठी साहित्य एकत्र करणे. नवीन brick हस्तगत करण्यासाठी 'r' key दाबून पहा (जोपर्यंत आपल्या सूचीमध्ये 2 घाण आणि 1 पाणी आहे तोपर्यंत).
     
     ![screenshot](images/craft-craft-brick.png)
 
-+ You can then press they '4' key to place your crafted bricks.
++ नंतर आपण आपल्या तयार केलेल्या brick ठेवण्यासाठी त्या '4' key दाबू शकता.
     
     ![screenshot](images/craft-place-brick.png)
