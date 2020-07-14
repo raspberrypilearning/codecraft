@@ -1,12 +1,12 @@
 \--- challenge \---
 
-## Challenge: Creating sand
+## आव्हान: वाळू तयार करणे
 
-Can you add a `SAND` resource to your game? You can use the steps above to help you.
+तुम्ही ` वाळू ` तुमच्या खेळासाठी संसाधन जोडू शकता? आपण मदत करण्यासाठी वरील चरणांचा वापर करू शकता.
 
 ![screenshot](images/craft-sand.png)
 
-The project already includes a `sand.gif` image, but you can create and upload your own if you prefer.
+प्रकल्पात आधीपासून `sand.gif` समाविष्ट आहे.प्रतिमा, परंतु आपण प्राधान्य दिल्यास आपण आपले तयार आणि अपलोड करू शकता.
 
 ![screenshot](images/craft-upload.png)
 
