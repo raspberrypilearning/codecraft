@@ -18,21 +18,21 @@
 
 ## प्रस्तावना:
 
-या प्रकल्पात मुले मूलभूत 2D Minicraft clone मध्ये सुधारणा करुन ग्राफिक्स आणि खेळ डिझाइनचे करायचे पैलू जाणून घेतील. Children will create new resources, as well as crafting rules for combining resources to make new ones. This will be achieved by understanding and manipulating variables, lists and dictionaries.
+या प्रकल्पात मुले मूलभूत 2D Minicraft clone मध्ये सुधारणा करुन ग्राफिक्स आणि खेळ डिझाइनचे करायचे पैलू जाणून घेतील. मुले नवीन संसाधने तयार करतील, तसेच संसाधने एकत्रित करण्यासाठी नवीन craft नियम तयार करतील. व्हेरिएबल्स, याद्या आणि शब्दकोष समजून घेऊन हाताळण्याद्वारे उद्देश साध्य होईल.
 
-## Online Resources
+## ऑनलाईन संसाधने
 
-**This project uses Python 3.** We recommend using [trinket](https://trinket.io/) to write Python online. This project contains the following Trinkets:
+हा प्रकल्प **Python 3 **चा वापर करतो. Python ऑनलाईन लिहिण्यासाठी आम्ही [ trinket ](https://trinket.io/)वापरण्याचा सल्ला देतो. या प्रकल्पात पुढील Trinkets आहेत:
 
-+ ['CodeCraft' starter project -- rpf.io/codecraft-on](http://rpf.io/codecraft-on)
++ ['CodeCraft' स्टार्टर प्रकल्प - rpf.io/codecraft-on](http://rpf.io/codecraft-on)
 
-There is also a trinket containing the completed project:
+येथे पूर्ण झालेले प्रकल्प असलेले एक trinket देखील आहे:
 
-+ [‘CodeCraft’ Finished -- trinket.io/python/ebc5b0148b](https://trinket.io/python/ebc5b0148b)
++ ['CodeCraft' समाप्त - trinket.io/python/ebc5b0148b](https://trinket.io/python/ebc5b0148b)
 
-## Offline Resources
+## ऑफलाइन संसाधने
 
-This project can be [completed offline](https://www.codeclubprojects.org/en-GB/resources/python-working-offline/) if preferred. You can access the project resources by clicking the 'Project Materials' link for this project. This link contains a 'Project Resources' section, which includes resources that children will need to complete this project offline. Make sure that each child has access to a copy of these resources. This section includes the following files:
+तुम्हाला पसंत असल्यास हा प्रकल्प [ completed offline ](https://www.codeclubprojects.org/en-GB/resources/python-working-offline/)केला जाऊ शकतो. You can access the project resources by clicking the 'Project Materials' link for this project. This link contains a 'Project Resources' section, which includes resources that children will need to complete this project offline. Make sure that each child has access to a copy of these resources. This section includes the following files:
 
 + codecraft/codecraft.py
 + codecraft/variables.py
