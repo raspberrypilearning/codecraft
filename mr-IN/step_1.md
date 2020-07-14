@@ -1,6 +1,6 @@
-## Introduction
+## प्रस्तावना
 
-In this project, you’ll design and code improvements to a 2D version of Minecraft.
+या प्रकल्पात तुम्ही Minecraft च्या 2D आवृत्तीमध्ये डिझाइन आणि कोड सुधारणा कराल.
 
 <div class="trinket">
   <iframe src="https://trinket.io/embed/python/ebc5b0148b?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
@@ -8,17 +8,17 @@ In this project, you’ll design and code improvements to a 2D version of Minecr
   <img src="images/craft-finished.png">
 </div>
 
-### Additional information for club leaders
+### क्लब प्रमुखांसाठी अधिक माहिती
 
-If you need to print this project, please use the [Printer friendly version](https://projects.raspberrypi.org/en/projects/codecraft/print).
+तुम्हाला जर हा प्रकल्प print करायचा असेल तर तुम्ही [Printer friendly version](https://projects.raspberrypi.org/en/projects/codecraft/print) चा वापर करू शकता.
 
 ## \--- collapse \---
 
-## title: Club leader notes
+## title: क्लब प्रमुखांसाठी टिप
 
-## Introduction:
+## प्रस्तावना:
 
-In this project, children will learn aspects of graphics and game design by making improvements to a basic 2D Minecraft clone. Children will create new resources, as well as crafting rules for combining resources to make new ones. This will be achieved by understanding and manipulating variables, lists and dictionaries.
+या प्रकल्पात मुले मूलभूत 2D Minicraft clone मध्ये सुधारणा करुन ग्राफिक्स आणि खेळ डिझाइनचे करायचे पैलू जाणून घेतील. Children will create new resources, as well as crafting rules for combining resources to make new ones. This will be achieved by understanding and manipulating variables, lists and dictionaries.
 
 ## Online Resources
 
