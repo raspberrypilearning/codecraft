@@ -4,7 +4,7 @@ duration: 2
 listed: true
 copyedit: false
 title: कोड शिल्प
-description: मिनीक्राफ्टच्या 2Dआवृत्तीमध्ये डिझाइन आणि कोड सुधारणा.
+description: Minecraft च्या 2Dआवृत्तीमध्ये डिझाइन आणि कोड सुधारणा.
 version: 3.1.0
 last_tested: 2018-11-22
 steps:
@@ -25,6 +25,6 @@ steps:
   - 
     title: लाकडापासून फळी तयार करणे
   - 
-    title: 'Challenge: Crafting glass from sand'
+    title: 'आव्हान: वाळूपासून काचांचे शिल्प तयार करणे'
   - 
-    title: 'Challenge: Create more resources'
+    title: 'आव्हान: अधिक संसाधने तयार करा'
