@@ -79,15 +79,15 @@
 
 ## आव्हाने
 
-+ "Build your world" - Playing the game, placing and crafting existing blocks;
-+ "Change your world size" - editing the `MAPWIDTH` and `MAPHEIGHT` variables to change the world size;
-+ "Creating sand" - Creating a new sand resource, along with associated game data.
-+ "Crafting glass from sand" - Creating a new craftable glass resource.
-+ "Create more resources" - Use what's been learnt to create more blocks and crafting rules.
++ "Build your world" - खेळ खेळणे, अस्तित्वातील अवरोध ठेवणे आणि हस्तकला तयार करणे
++ "Change your world size" - `MAPWIDTH` आणि `MAPHEIGHT` world चा आकार बदलण्यासाठी variables संपादित करा;
++ "Creating sand" - खेळाच्या संबंधित डेटासह नवीन वाळू संसाधन तयार करणे.
++ "Crafting glass from sand" - नवीन कलायोग्य काचेचे संसाधने तयार करणे.
++ "अधिक संसाधने तयार करा" - अधिक अवरोध आणि हस्तकला नियम तयार करण्यासाठी काय शिकले आहे ते वापरा.
 
-## Frequently Asked Questions
+## वारंवार विचारले जाणारे प्रश्न
 
-+ Children may need reminding that elements of a dictionary/list are separated by a comma. For example, when adding inventory items, graphics and crafting rules to the game.
++ शब्दकोष / सूचीचे घटक स्वल्पविरामाने विभक्त केले आहेत हे मुलांना स्मरण करून देण्याची आवश्यकता असू शकते. For example, when adding inventory items, graphics and crafting rules to the game.
 
 \--- /collapse \---
 
