@@ -1,8 +1,8 @@
 \--- challenge \---
 
-## Challenge: Build your world
+## आव्हान: तुमचे world तयार करा
 
-Can you build a house, with a garden and a swimming pool? What else can you create?
+आपण बाग आणि स्विमिंग पूलसह घर बांधू शकता? आपण आणखी काय तयार करू शकता?
 
 ![screenshot](images/craft-build-example.png)
 
