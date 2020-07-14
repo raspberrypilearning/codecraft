@@ -32,7 +32,7 @@
 
 ## ऑफलाइन संसाधने
 
-तुम्हाला पसंत असल्यास हा प्रकल्प [ completed offline ](https://www.codeclubprojects.org/en-GB/resources/python-working-offline/)केला जाऊ शकतो. You can access the project resources by clicking the 'Project Materials' link for this project. This link contains a 'Project Resources' section, which includes resources that children will need to complete this project offline. Make sure that each child has access to a copy of these resources. This section includes the following files:
+तुम्हाला पसंत असल्यास हा प्रकल्प [ completed offline ](https://www.codeclubprojects.org/en-GB/resources/python-working-offline/)केला जाऊ शकतो. तुम्ही या प्रकल्पाची संसाधने 'Project Materials' link वर​ क्लिक करून मिळवू शकता. ह्या लिंक मध्ये एक 'Project Resources' नामक विभाग आहे, ज्यामध्ये मुलांना हा प्रकल्प ऑफलाइन पूर्ण करण्यासाठी लागणारी संसाधने आहेत. प्रत्येक मुलाकडे संसाधनांची प्रत असल्याचे सुनिश्चित करा. या विभागात खालील फायली समाविष्ट आहेत:
 
 + codecraft/codecraft.py
 + codecraft/variables.py
@@ -46,7 +46,7 @@
 + codecraft/water.gif
 + codecraft/wood.gif
 
-You can also find a completed version of this project in the 'Volunteer Resources' section, which contains:
+तुम्हाला या प्रकल्पातील आव्हानांची पूर्ण आवृत्ती 'Volunteer Resources' विभागात सापडेल, ज्यात खालील बाबी आहेत:
 
 + codecraft-finished/codecraft.py
 + codecraft-finished/variables.py
@@ -60,24 +60,24 @@ You can also find a completed version of this project in the 'Volunteer Resource
 + codecraft-finished/water.gif
 + codecraft-finished/wood.gif
 
-(All of the resources above are also downloadable as `.zip` files.)
+(वरील सर्व प्रकल्प संसाधने `.zip` फायली म्हणून डाउनलोड करण्यायोग्य देखील आहेत.)
 
-## Learning Objectives
+## शिकण्याचे उद्दिष्टे
 
-+ Creating and editing graphics;
-+ Game design;
-+ Editing: 
-    + Variables;
-    + Lists;
-    + Dictionaries.
++ ग्राफिक्स तयार करणे आणि संपादित करणे;
++ खेळ संरचना;
++ संपादन: 
+    + व्हेरियेबल;
+    + याद्या;
+    + शब्दकोश.
 
-This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+या प्रकल्पात [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum) चे खालील घटक समाविष्ट आहेत:
 
-+ [Design basic 2D and 3D assets.](https://www.raspberrypi.org/curriculum/design/creator)
++ [मूलभूत 2Dआणि 3D मालमत्ता डिझाइन करा.](https://www.raspberrypi.org/curriculum/design/creator)
 
-+ [Combine programming constructs to solve a problem.](https://www.raspberrypi.org/curriculum/programming/builder)
++ [समस्या सोडवण्यासाठी प्रोग्रामिंग संकल्पना एकत्र करा.](https://www.raspberrypi.org/curriculum/programming/builder)
 
-## Challenges
+## आव्हाने
 
 + "Build your world" - Playing the game, placing and crafting existing blocks;
 + "Change your world size" - editing the `MAPWIDTH` and `MAPHEIGHT` variables to change the world size;
