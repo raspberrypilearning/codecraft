@@ -1,11 +1,11 @@
 \--- challenge \---
 
-## Challenge: Crafting glass from sand
+## आव्हान: वाळूपासून काचेचे शिल्प तयार करणे
 
-Can you create a new glass resource, that can be crafted from sand? You can follow the steps above to help you.
+तुम्ही नवीन काचेचे संसाधने तयार करू शकता, ते वाळूपासून बनविले जाऊ शकते? तुम्ही मदत करण्यासाठी वरील चरणांचा वापर करू शकता.
 
 ![screenshot](images/craft-glass.png)
 
-The project already contains a `glass.gif` image that you can use, or you can create your own image if you prefer.
+प्रकल्पात आधीपासून `glass.gif` आहे तुम्ही वापरू शकता अशी प्रतिमा किंवा तुम्ही प्राधान्य दिल्यास तुमची स्वतःची प्रतिमा तयार करू शकता.
 
 \--- /challenge \---
