@@ -1,39 +1,39 @@
-## Crafting planks from wood
+## लाकडापासून फळी तयार करणे
 
-Let's create a new plank resource that be crafted from wood.
+चला एक नवीन फळी संसाधन तयार करू जे लाकडापासून बनविले गेले.
 
-+ First, add a new `PLANK` variable to your game.
++ प्रथम, नवीन ` PLANK` जोडा आपल्या खेळासाठी चल.
     
     ![screenshot](images/craft-plank-const.png)
 
-+ Add a new `PLANK` variable to your game.
++ जोडा नवीन ` PLANK ` आपल्या खेळासाठी चल.
     
     ![screenshot](images/craft-plank-resources.png)
 
-+ Name the resource `'plank'`.
++ संसाधनास नाव द्या `'plank'`.
     
     ![screenshot](images/craft-plank-names.png)
 
-+ Give your `PLANK` resource an image. The project already contains a `plank.gif` image, but you can create your own if you prefer.
++ आपले `PLANK`द्या संसाधने प्रतिमा. प्रकल्पात आधीपासून `plank.gif` समाविष्ट आहे.प्रतिमा, परंतु आपण प्राधान्य दिल्यास आपण आपले तयार आणि अपलोड करू शकता.
     
     ![screenshot](images/craft-plank-textures.png)
 
-+ Add planks to your inventory.
++ आपल्या यादीमध्ये फळी (planks) जोडा.
     
     ![screenshot](images/craft-plank-inventory.png)
 
-+ Set a key for placing planks.
++ फळी ठेवण्यासाठी एक किल्ली(key) सेट करा.
     
     ![screenshot](images/craft-plank-placekeys.png)
 
-+ As this resource can be crafted, you need to create a crafting rule, which is that a plank can be made from 3 wood tiles. Add this code to the `crafting` dictionary.
++ हे संसाधन तयार केले जाऊ शकते म्हणून, आपल्याला एक हस्तकला नियम तयार करण्याची आवश्यकता आहे, म्हणजे 3 लाकडी टाईलपासून एक फळी बनविली जाऊ शकते. हा कोड जोडा `crafting` शब्दकोश.
     
     ![screenshot](images/craft-plank-crafting.png)
 
-+ Finally, you need to set a key for crafting new planks.
++ शेवटी, आपल्याला नवीन फळी तयार करण्यासाठी एक की सेट करणे आवश्यक आहे.
     
     ![screenshot](images/craft-plank-craftkeys.png)
 
-+ To test your new plank resource, gather up a few wood tiles and then craft some planks from your wood. You can then place your new planks in your world.
++ आपल्या नवीन फळीच्या संसाधनाची चाचणी घेण्यासाठी, काही लाकडी टाईल एकत्र करा आणि नंतर आपल्या लाकडापासून काही फळी तयार करा. त्यानंतर आपण आपल्या जगात आपले नवीन फळी ठेवू शकता.
     
     ![screenshot](images/craft-plank-test.png)
