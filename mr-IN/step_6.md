@@ -1,51 +1,50 @@
-## Creating a new wood resource
+## नवीन लाकूड संसाधने तयार करा
 
-Let's create a new wood resource. To do this, you'll need to add to some variables in your `variables.py` file.
+चला नवीन लाकूड संसाधने तयार करूया. हे करण्यासाठी, आपल्या ` variables.py` फाईल मध्ये आपल्याला काही चल जोडणे आवश्यक आहे.
 
-+ First, you need to give your new resource a number. You'll then be able to use the word `WOOD` in your code instead of the number 4.
++ प्रथम, आपल्याला आपल्या नवीन संसाधनास एक नंबर देणे आवश्यक आहे. त्यानंतर आपण `WOOD` शब्द वापरण्यास सक्षम व्हाल, आपल्या कोडमध्ये 4 नंबर ऐवजी.
     
     ![screenshot](images/craft-wood-const.png)
 
-+ You should add your new `WOOD` resource to your list of `resources`.
++ आपण आपले नवीन `WOOD`जोडावे आपल्या संसाधनेच्या सूचीत `संसाधने`.
     
     ![screenshot](images/craft-wood-resources.png)
 
-+ You should also give your resource a name, which will be displayed in the inventory.
++ आपण आपल्या संसाधनास एक नाव देखील दिले पाहिजे, जे यादीमध्ये दिसून येईल.
     
     ![screenshot](images/craft-wood-name.png)
     
-    Notice the comma `,` at the end of the line above.
+    स्वल्पविराम लक्षात घ्या `, ` वरील ओळीच्या शेवटी.
 
-+ Your resource will also need an image. The project already includes an image called `wood.gif`, which you should add to the `textures` dictionary.
-    
-    ![screenshot](images/craft-wood-texture.png)
++ आपल्या संसाधनास प्रतिमेची देखील आवश्यकता असेल. प्रकल्पात आधीपासून `wood.gif`नावाची प्रतिमा समाविष्ट आहे,</code>जे आपण जोडले पाहिजे`textures</0> शब्दकोश.</p>
 
-+ Add the number of your resource that should be in your `inventory` to start with.
+<p><img src="images/craft-wood-texture.png" alt="screenshot" /></p></li>
+<li><p>आपल्या संसाधनाची संख्या जोडा जी आपल्या <code>inventory`मध्ये असावी सुरुवात करण्यासाठी.
     
     ![screenshot](images/craft-wood-inventory.png)
 
-+ Finally, add the key that you'll press to place wood in the world.
++ शेवटी, आपण जगात लाकूड ठेवण्यासाठी दाबत असलेली key जोडा.
     
     ![screenshot](images/craft-wood-placekey.png)
 
-+ Run your project to test it. You'll see that you now have a new 'wood' resource in your inventory.
++ तुमच्या कोड ची चाचणी घेण्यासाठी प्रकल्प चालवुन बघा. आपल्या सूचीमध्ये आता आपल्याकडे नवीन 'wood' संसाधन आहे हे आपल्याला दिसेल.
     
     ![screenshot](images/craft-wood-test.png)
 
-+ There's no wood in your world! To fix this, click on your `main.py` file and find the function called `generateRandomWorld()`.
++ आपल्या जगात लाकूड नाही! याचे निराकरण करण्यासाठी आपल्या `main.py` वर क्लिक करा आणि `generateRandomWorld()` नावाचे फंक्शन फाइल करा आणि शोधा.
     
     ![screenshot](images/craft-wood-random1.png)
     
-    This code generates a random number between 0 and 10, and uses the number to decide which resource to place:
+    हा कोड 0 आणि 10 दरम्यान यादृच्छिक (random) संख्या व्युत्पन्न(generates) करतो आणि कोणत्या संसाधनेचे ठेवायचे हे ठरवण्यासाठी नंबरचा वापर करतो:
     
     + 1 or 2 = water
     + 3 or 4 = grass
     + anything else = DIRT
 
-+ Add this code to add wood to your world whenever the `randomNumber` is 5.
++ जेव्हा `randomNumber` असेल तेव्हा आपल्या जगात लाकूड जोडण्यासाठी हा कोड जोडा 5 आहे.
     
     ![screenshot](images/craft-wood-random2.png)
 
-+ Test your project again. This time, you should see some wood appear in your world.
++ आपल्या कोडची पुन्हा चाचणी घ्या. यावेळी, आपण आपल्या जगात काही लाकूड दिसले पाहिजे.
     
     ![screenshot](images/craft-wood-test2.png)
