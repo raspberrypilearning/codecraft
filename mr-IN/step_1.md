@@ -87,22 +87,22 @@
 
 ## वारंवार विचारले जाणारे प्रश्न
 
-+ शब्दकोष / सूचीचे घटक स्वल्पविरामाने विभक्त केले आहेत हे मुलांना स्मरण करून देण्याची आवश्यकता असू शकते. For example, when adding inventory items, graphics and crafting rules to the game.
++ शब्दकोष / सूचीचे घटक स्वल्पविरामाने विभक्त केले आहेत हे मुलांना स्मरण करून देण्याची आवश्यकता असू शकते. उदाहरणार्थ, खेलामधील साहित्य याद्या, ग्राफिक्स आणि हस्तकला करण्याचे नियम.
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: Project materials
+## title: प्रकल्प साहित्य
 
-## Project resources
+## प्रकल्प संसाधने
 
-+ [.zip file containing all project resources](resources/codecraft-resources.zip)
-+ [Online Trinket containing all 'CodeCraft' project resources](http://rpf.io/codecraft-on)
++ [सर्व प्रकल्पाची संसाधने असलेली.zip फाइल](resources/codecraft-resources.zip)
++ [ऑनलाईन Trinketज्यात सर्व 'CodeCraft' प्रकल्प संसाधने आहेत](http://rpf.io/codecraft-on)
 
-## Club leader resources
+## क्लब प्रमुखसाठी संसाधने
 
-+ [.zip file containing all completed project resources](solutions/codecraft-solution.zip)
-+ [Online completed Trinket project](https://trinket.io/python/ebc5b0148b)
++ [सर्व पूर्ण प्रकल्पाची संसाधने असलेली.zip फाइल](solutions/codecraft-solution.zip)
++ [ऑनलाईन पूर्ण Trinket प्रकल्प](https://trinket.io/python/ebc5b0148b)
 
 \--- /collapse \---
