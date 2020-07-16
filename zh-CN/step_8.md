@@ -1,42 +1,39 @@
 ## 利用木材制作木板
 
-让我们创建一个可以使用木材制作的新木板资源。
+让我们创建一个由木材制成的木板新资源。
 
-+ 首先，向你的游戏添加一个新的 `PLANK`（木板）变量。
++ 首先，添加一个新的游戏变量 `PLANK`。
+    
+    ![截图](images/craft-plank-const.png)
 
-    ![screenshot](images/craft-plank-const.png)
++ 添加一个新的游戏变量 `PLANK`。
+    
+    ![截图](images/craft-plank-resources.png)
 
-+ 向你的游戏添加一个新的 `PLANK`（木板）变量。
++ 将资源命名为 `'plank'`。
+    
+    ![截图](images/craft-plank-names.png)
 
-    ![screenshot](images/craft-plank-resources.png)
++ 给你的 `PLANK` 添加图像。 该项目已包含 `plank.gif`图片，但您可以根据需要创建和上传自己的图片。
+    
+    ![截图](images/craft-plank-textures.png)
 
-+ 将该资源命名为 `'plank'`（木板）。
++ 将木板添加到您的库存。
+    
+    ![截图](images/craft-plank-inventory.png)
 
-    ![screenshot](images/craft-plank-names.png)
++ 设置用于放置木板的按键。
+    
+    ![截图](images/craft-plank-placekeys.png)
 
-+ 为你的 `PLANK`（木板）资源提供一张图片。项目中已包含一张 `plank.png` 图片，但如果你愿意的话，你可以创建你自己的图片。
++ 由于这个资源可以被制作出来，因此需要创建一个制作规则，我们规定用 3 个木头可以制作出 1 块木板。 将此代码添加到 `crafting` 字典中。
+    
+    ![截图](images/craft-plank-crafting.png)
 
-    ![screenshot](images/craft-plank-textures.png)
++ 最后，您需要设置制作新木板的按键。
+    
+    ![截图](images/craft-plank-craftkeys.png)
 
-+ 向你的库存添加木板。
-
-    ![screenshot](images/craft-plank-inventory.png)
-
-+ 设置一个放置木板的按键。
-
-    ![screenshot](images/craft-plank-placekeys.png)
-
-+ 由于该资源可被制作出来，你需要创建一个制作规则，即 1 块木板可由 3 个木材块制成。向 `crafting`（制作）字典添加此代码。 
-
-    ![screenshot](images/craft-plank-crafting.png)
-
-+ 最后，你需要设置制作新木板的按键。
-
-    ![screenshot](images/craft-plank-craftkeys.png)
-
-+ 要测试你的新木板资源，将一些木材块聚集起来，然后利用这些木材块制作一些木板。你随后可以在你的世界中放置新木板。
-
-    ![screenshot](images/craft-plank-test.png)
-
-
-
++ 要测试您的新木板资源，请收集一些木头资源，然后用木头制作一些木板。 然后，您可以将新木板放置在您的世界中。
+    
+    ![截图](images/craft-plank-test.png)

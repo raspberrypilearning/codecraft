@@ -1,6 +1,6 @@
 #!/bin/python3
 
-#可以更改的游戏变量！
+＃可以更改的游戏变量！
 
 #游戏背景颜色。
 BACKGROUNDCOLOUR = 'white'
@@ -10,16 +10,16 @@ MAXTILES  = 20
 MAPWIDTH  = 10
 MAPHEIGHT = 10
 
-#v地图变量。
+#代表不同资源的变量。
 DIRT    = 0
 GRASS   = 1
 WATER   = 2
 BRICK   = 3
 
-#所有游戏资源的列表。
+＃所有游戏资源的列表。
 resources = [DIRT,GRASS,WATER,BRICK]
 
-#资源名称。
+＃资源名称。
 names = {
   DIRT    : 'dirt',
   GRASS   : 'grass',
@@ -35,7 +35,7 @@ textures = {
   BRICK   : 'brick.gif'
 }
 
-#玩家拥有的每种资源的数量。
+＃玩家拥有的每种资源的数量。
 inventory = {
   DIRT    : 10,
   GRASS   : 10,
@@ -55,7 +55,7 @@ crafting = {
   BRICK    : { WATER : 1, DIRT : 2 }
 }
 
-#用于放置资源的键。
+＃用于放置资源的键。
 placekeys = {
   DIRT  : '1',
   GRASS : '2',
@@ -63,13 +63,13 @@ placekeys = {
   BRICK : '4'
 }
 
-#制作图块的键值。
+#制作图块的 key
 craftkeys = {
   BRICK : 'r'
 }
 
 #游戏说明显示。
 instructions =  [
-  '说明',
-  '使用W-A-S-D快捷键 移动。'
+  'Instructions:',
+  使用W-A-S-D快捷键 移动。
 ]
