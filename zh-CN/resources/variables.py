@@ -63,13 +63,13 @@ placekeys = {
   BRICK : '4'
 }
 
-#制作图块的 key
+#制作图块的键值。
 craftkeys = {
   BRICK : 'r'
 }
 
 #游戏说明显示。
 instructions =  [
-  'Instructions:',
-  使用W-A-S-D快捷键 移动。
+  '说明:',
+  '使用W-A-S-D快捷键 移动。'
 ]
