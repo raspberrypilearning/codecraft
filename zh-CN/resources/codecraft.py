@@ -63,13 +63,13 @@ def pickUp():
 
 ＃将资源放置在玩家的当前位置
 def place(resource):
-  print('placing: ', names[resource])
+  print('放置中: ', names[resource])
   ＃仅在玩家有剩余资源时才放置...
   if inventory[resource] > 0:
     ＃找到玩家当前位置的资源
     currentTile = world[playerX][playerY]
     ＃在玩家的位置捡起资源。
-    #(if it's not DIRT)
+    #(如果不是DIRT)
     if currentTile is not DIRT:
       inventory[currentTile] += 1
     ＃将资源放置在玩家的当前位置
