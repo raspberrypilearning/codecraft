@@ -1,4 +1,4 @@
-## 玩游戏
+## 进行游戏
 
 + 打开这个示例 trinket： [trinket.io/python/3b27f1c60b](https://trinket.io/python/3b27f1c60b){:target="_blank"}.
 
