@@ -219,7 +219,7 @@ def drawInventory():
 
 #生成指令，包括制作规则
 def generateInstructions():
-  instructions.append('Crafting rules:')
+  instructions.append('建造规则:')
   ＃针对可以制作的每种资源...
   for rule in crafting:
     #创建制造规则文本
@@ -262,7 +262,7 @@ def generateRandomWorld():
       world[column][row] = tile
 
 #---
-#Code starts running here
+＃代码从此处开始运行
 #---
 
 ＃导入所需的模块和变量
