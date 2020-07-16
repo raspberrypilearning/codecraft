@@ -94,6 +94,6 @@ craftkeys = {
 
 #游戏说明显示。
 instructions =  [
-  'Instructions:',
+  '说明:',
   使用W-A-S-D快捷键 移动。
 ]
