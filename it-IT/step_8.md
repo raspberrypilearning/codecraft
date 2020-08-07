@@ -12,7 +12,7 @@ Creiamo una nuova risorsa da costruire a partire dal legno.
 
 + Denominare la risorsa `'tavola'`.
     
-    ![screenshot](images/craft-plank-names.png)
+    ![schermata](images/craft-plank-names.png)
 
 + Dai alla tua risorsa `TAVOLA` un'immagine. Il progetto include già un'immagine `plank.gif`, ma puoi creare e caricare la tua se preferisci.
     
