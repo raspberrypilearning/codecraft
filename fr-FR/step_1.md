@@ -1,69 +1,110 @@
 ## Introduction
 
-Dans ce projet, tu vas dessiner et coder des améliorations dans une version 2D de Minecraft.
+Dans ce projet, tu vas créer et coder des améliorations à une version 2D de Minecraft.
 
 <div class="trinket">
-  <iframe src="https://trinket.io/embed/python/9ac3995d69?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
+  <iframe src="https://trinket.io/embed/python/6ad2c12ac1?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
   </iframe>
   <img src="images/craft-finished.png">
 </div>
 
-## Ressources en ligne
+### Informations complémentaires pour les responsables de club
 
-__Ce projet utilise Python 3.__ Nous vous conseillons d'utiliser [trinket](https://trinket.io/) pour écrire du Python en ligne. Ce projet contient les Trinkets suivants :
+Si vous avez besoin d'imprimer ce projet, merci d'utiliser la [Version imprimable](https://projects.raspberrypi.org/fr-FR/projects/codecraft/print).
 
-+ ['CodeCraft' point de départ -- jumpto.cc/codecraft-go](http://jumpto.cc/codecraft-go)
+--- collapse ---
+---
+title: Notes pour le responsable de club
+---
 
-Il existe aussi un trinket qui contient le projet finalisé :
+## Introduction:
 
-+ [‘CodeCraft’ finalisé -- trinket.io/python/9ac3995d69](https://trinket.io/python/9ac3995d69)
+Dans ce projet, les enfants apprendront les aspects d'interfaces graphiques et la conception de jeux vidéos en apportant des améliorations à une clone basique de Minecraft en 2D. Les enfants créeront des nouvelles ressources, ainsi que des règles de fabrication qui, en combinant des ressources, en feront de nouvelles. Cela sera réalisé en comprenant et manipulant des variables, des listes et des dictionnaires.
+
+## Ressources en-ligne
+
+**Ce projet utilise Python 3.** Nous recommandons l'utilisation de [Trinket](https://trinket.io/) pour écrire du code Python en-ligne. Ce projet contient les Trinkets suivants :
+
++ [Le projet de démarrage « CodeCraft » -- trinket.io/python/7be373ed6d](https://trinket.io/python/7be373ed6d)
+
+Il existe aussi ce trinket qui contient le projet complet:
+
++ [« CodeCraft » terminé -- trinket.io/python/6ad2c12ac1](https://trinket.io/python/6ad2c12ac1)
 
 ## Ressources hors-ligne
-Ce projet peut être [complété hors-ligne](https://www.codeclubprojects.org/en-GB/resources/python-working-offline/) si préférable. Vous pouvez accéder aux ressources du projet en cliquant sur le lien 'Matériaux du projet' pour ce projet. Ce lien contient une section  'Ressources du projet', qui comprend des ressources dont les enfants auraient besoin pour compléter ce projet hors-ligne. Veillez à ce que chaque enfant a une copie des ressources. Cette section inclut les fichiers suivants :
+
+Ce projet peut être [complété hors-ligne](https://www.codeclubprojects.org/en-GB/resources/python-working-offline/) si désiré. Vous pouvez accéder aux ressources du projet en cliquant sur le lien "Matériel pour le projet". Ce lien contient une section "Ressources du projet" qui inclut les ressources dont les enfants auront besoin pour compléter le projet hors-ligne. Assurez-vous que les enfants ont accès à une copie de ces ressources. Cette section inclut les fichiers suivants :
 
 + codecraft/codecraft.py
 + codecraft/variables.py
-+ codecraft/player.gif
-+ codecraft/dirt.gif
-+ codecraft/grass.gif
-+ codecraft/water.gif
 + codecraft/brick.gif
++ codecraft/dirt.gif
++ codecraft/glass.gif
++ codecraft/grass.gif
++ codecraft/plank.gif
++ codecraft/player.gif
++ codecraft/sand.gif
++ codecraft/water.gif
++ codecraft/wood.gif
 
-Vous pouvez également trouver une version finalisée de ce projet dans la section 'Ressources du volontaire', qui contient :
+Vous pouvez aussi trouver une version complétée du projet dans la section "Ressources du bénévole" qui contient :
 
 + codecraft-finished/codecraft.py
 + codecraft-finished/variables.py
-+ codecraft-finished/player.gif
-+ codecraft-finished/dirt.gif
-+ codecraft-finished/grass.gif
-+ codecraft-finished/water.gif
 + codecraft-finished/brick.gif
-+ codecraft-finished/wood.gif
++ codecraft-finished/dirt.gif
++ codecraft-finished/glass.gif
++ codecraft-finished/grass.gif
 + codecraft-finished/plank.gif
++ codecraft-finished/player.gif
++ codecraft-finished/sand.gif
++ codecraft-finished/water.gif
++ codecraft-finished/wood.gif
 
-(Toutes les ressources ci-dessus sont également téléchargeable comme des fichiers `.zip` projet et volontaire.)
+(Toutes les ressources ci-dessus peuvent aussi être téléchargées dans les fichiers`.zip`)
 
-## Objectifs pédagogiques
+## Objectifs d'apprentissage
+
 + Créer et éditer des images;
-+ Dessin de jeu;
-+ Édition :
-	+ Variables ;
-	+ Listes ;
-	+ Dictionnaires.
++ Conception de jeux;
++ Modification: 
+    + Variables;
+    + Listes;
+    + Dictionnaires.
 
-Ce projet couvre des éléments des parcours suivants du [Programme Raspberry Pi de Créativité Numérique](http://rpf.io/curriculum):
+Ce projet couvre les élements suivants du [Programme Raspberry Pi de Créativité Numérique](http://rpf.io/curriculum):
 
-+ [Dessiner des éléments basiques en 2D et 3D.](https://www.raspberrypi.org/curriculum/design/creator)
++ [Concevoir des éléments basiques en 2D et 3D.](https://www.raspberrypi.org/curriculum/design/creator)
 
-+ [Combiner des constructs de programmation pour résoudre des problèmes.](https://www.raspberrypi.org/curriculum/programming/builder)
++ [Combiner des constructions de programmation pour résoudre un problème.](https://www.raspberrypi.org/curriculum/programming/builder)
 
-## Défis
-+ "Construire ton monde" - Jouant le jeu, placant et façonnant des blocs existants ;
-+ "Changer la taille de ton monde" - editer les variables `MAPWIDTH` et `MAPHEIGHT` pour changer la taille du monde ;
-+ "Créer du sable" - Créer une nouvelle ressource sable, avec les données associées du jeu.
-+ "Façonner le verre du sable" - Créer une nouvelle ressource façonnable en verre.
-+ "Créer d'autres ressources" - Utilise ce qui a été appri pour créer d'autres blocs et des règles de façonnage.
+## Challenges
+
++ "Construis ton monde" - Jouer au jeu, placer et fabriquer des blocs existants
++ "Change la taille de ton monde" - Modifier les variables `LARGEURCARTE` et `HAUTEURCARTE` pour changer les dimensions du monde;
++ "Crée du sable" - Créer un nouvel élément sable, avec les données associées au jeu.
++ "Fabrique du verre à partir de sable" - Créer une nouvelle ressource fabriquée, le verre.
++ "Crée encore plus de ressources" - Utiliser ce qui a été appris pour créer encore plus de blocs et de règles de fabrications.
 
 ## Foire aux questions
-+ __Python hors-ligne ne fonctionne pas avec des images .png. Des images .gif ont été fournies pour une utilisation hors-ligne.__
-+ Il faudrait peut-être rappeler aux enfants que les éléments d'un dictionnaire/liste sont séparés d'une virgule. Par exemple, quand on ajoute des articles à un inventaire, images et règles de façonnage au jeu.
+
++ Les enfants peuvent avoir besoin d'un rappel: les éléments dans un dictionnaire/une liste doivent être séparés par des virgules. Par exemple, lorsque l'on ajoute des éléments à l'inventaire, des éléments graphiques ou des règles de fabrications pour le jeu.
+
+--- /collapse ---
+
+--- collapse ---
+---
+title: Matériel pour le projet
+---
+
+## Ressources du projet
+
++ [Fichier .zip contenant toutes les ressources du projet](resources/codecraft-resources.zip)
++ [Trinket en-ligne contenant des ressources du projet "CodeFarication"](https://trinket.io/python/7be373ed6d)
+
+## Ressources pour le responsable de club
+
++ [Fichier .zip contenant toutes les ressources du projet](solutions/codecraft-solution.zip)
++ [Trinket Python en-ligne completé](https://trinket.io/python/6ad2c12ac1)
+
+--- /collapse ---

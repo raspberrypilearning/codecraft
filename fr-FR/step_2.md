@@ -1,28 +1,23 @@
-## Jouer le jeu
+## Jouer au jeu
 
++ Ouvre cette trinket : [trinket.io/python/7be373ed6d](https://trinket.io/python/7be373ed6d){:target="_blank"}.
 
++ Utilise les touches ZQSD pour déplacer ton joueur dans le monde qui est plein de différentes ressources (terre, herbe, et eau).
+    
+    ![capture d'écran](images/craft-move.png)
 
-+ Ouvres ce trinket : <a href="http://jumpto.cc/codecraft-go" target="_blank">jumpto.cc/codecraft-go</a>.
++ Tu peux appuyer sur la barre espace pour récolter ces ressources. Ramasse quelques uns de chaque type de ressource, et tu verras qu'ils s'ajoutent à ton inventaire.
+    
+    ![capture d'écran](images/craft-pickup.png)
 
-+ Utilise les touches WASD pour bouger ton personnage dans le monde virtuel, qui est plein de ressources différentes (earth (terre), grass (herbe) et water (eau)).
++ Appuie sur les touches numériques (1 à 3) pour placer une ressource sur la carte. Par exemple, appuie sur 3 pour placer de l'eau sur la carte. Cela ne fonctionnera que si tu as de l'eau dans ton inventaire.
+    
+    ![capture d'écran](images/craft-place-water.png)
 
-    ![screenshot](images/craft-move.png)
++ Tu peux fabriquer un élément en appuyant sur la touche affichée dans le menu. Fabriquer signifie combiner les éléments que tu possèdes déjà dans ton inventaire pour en créer de nouveaux. Essaie d'appuyer sur la touche "r" pour fabriquer un nouveau bloc de brique (à condition que tu aies 1 de terre et 2 d'eau dans ton inventaire).
+    
+    ![capture d'écran](images/craft-craft-brick.png)
 
-+ Tu peux appuyer sur la barre d'espace pour collectionner des ressources. Ramasse quelques exemplaires de chaque type de ressource, et tu les verras s'ajouter dans la liste d'inventaire.
-
-    ![screenshot](images/craft-pickup.png)
-
-+ Appuie sur les touches des chiffres (1 à 3) afin de placer une ressource sur la carte. Par exemple, appuie sur la touche 3 pour placer de l'eau sur la carte. Cela va marcher uniquement si tu as déjà de l'eau dans ta liste d'inventaire.
-
-    ![screenshot](images/craft-place-water.png)
-
-+ Tu peux façonner un élément en appuyant sur la touché indiquée dans le menu. Le façonnage signifie la combinaison d'éléments déjà existant dans ton inventaire afin de créer de nouveaux articles. Essaie d'appuyer sur la touche 'r' afin de façonner une nouvelle brique (possible tant que tu as 2 dirt (terre) et 1 water (eau) dans ton inventaire).
-
-    ![screenshot](images/craft-craft-brick.png)
-
-+ Tu peux ensuite appuyer sur la touche '4' key afin de déposer tes briques que tu as façonnées.
-
-    ![screenshot](images/craft-place-brick.png)
-
-
-
++ Tu peux maintenant appuyer sur la touche "4" pour déposer la brique fabriquée.
+    
+    ![capture d'écran](images/craft-place-brick.png)

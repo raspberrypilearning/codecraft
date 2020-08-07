@@ -1,12 +1,11 @@
 --- challenge ---
-## Défi : Façonner le verre du sable
-Peux-tu créer une nouvelle ressource verre (glass), qui peut être façonnée de sable ? Tu pourrais suivre des étapes ci-dessus pour t'aider.
 
-![screenshot](images/craft-glass.png)
+## Défi : Fabrique du verre à partir du sable
 
-Le projet contient déjà une image `glass.png` que tu peux utiliser, ou tu peux créer ta propre image si tu préfères.
+Peux-tu créer une nouvelle ressource verre qui peut être fabriquée à partir du sable ? Tu peux suivre les étapes précédentes pour t'aider.
 
+![capture d'écran](images/craft-glass.png)
 
-
+Le projet contient déjà une image `verre.gif` que tu peux utiliser, mais tu peux créer la tienne si tu préfères.
 
 --- /challenge ---

@@ -1,42 +1,39 @@
 ## Fabbricare tavole di legno
 
-Creiamo adesso una nuova risorsa di tavole, che può essere fabbricata con il legno.
+Creiamo una nuova risorsa da costruire a partire dal legno.
 
-+ Per prima cosa, aggiungiamo la nuova variabile "PLANK" al gioco. Plank significa tavola in inglese.
++ Per prima cosa, aggiungi una nuova variabile `ASSE` al tuo gioco.
+    
+    ![schermata](images/craft-plank-const.png)
 
-    ![screenshot](images/craft-plank-const.png)
++ Aggiungi una nuova variabile `ASSE` al tuo gioco.
+    
+    ![schermata](images/craft-plank-resources.png)
 
-+ Aggiungi la nuova variabile "PLANK" al gioco.
++ Denominare la risorsa `'asse'`.
+    
+    ![schermata](images/craft-plank-names.png)
 
-    ![screenshot](images/craft-plank-resources.png)
++ Dai alla tua risorsa `ASSE` un'immagine. Il progetto include già un'immagine `plank.gif`, ma puoi creare e caricare la tua se preferisci.
+    
+    ![schermata](images/craft-plank-textures.png)
 
-+ Chiama questa risorsa "plank" (tavola).
++ Aggiungi tavole al tuo inventario.
+    
+    ![schermata](images/craft-plank-inventory.png)
 
-    ![screenshot](images/craft-plank-names.png)
++ Impostare una chiave per posizionare le tavole.
+    
+    ![schermata](images/craft-plank-placekeys.png)
 
-+ Dai alla tua risorsa "PLANK" un'immagine. Il progetto contiene già un'immagine per la tavola in "plank.png" ma puoi benissimo creare una tua immagine se lo preferisci.
++ Poiché questa risorsa può essere realizzata, è necessario creare una regola di creazione, ovvero che una tavola può essere realizzata utilizzando 3 tessere di legno. Aggiungi questo codice al dizionario `creazione`.
+    
+    ![schermata](images/craft-plank-crafting.png)
 
-    ![screenshot](images/craft-plank-textures.png)
++ Infine, è necessario impostare una chiave per la creazione di nuove tavole.
+    
+    ![schermata](images/craft-plank-craftkeys.png)
 
-+ Aggiungi tavole all'inventario.
-
-    ![screenshot](images/craft-plank-inventory.png)
-
-+ Imposta un tasto per collocare tavole.
-
-    ![screenshot](images/craft-plank-placekeys.png)
-
-+ Dato che questa risorsa può essere fabbricata, devi creare una regola di fabbricazione, vale a dire, una tavola può essere fabbricata con 3 mattonelle di legno. Aggiungi questo codice al dizionario di fabbricazione "crafting".
-
-    ![screenshot](images/craft-plank-crafting.png)
-
-+ Da ultimo, devi impostare un tasto per fabbricare nuove tavole.
-
-    ![screenshot](images/craft-plank-craftkeys.png)
-
-+ Per testare la tua nuova risorsa di tavole, raccogli qualche mattonella di legno e usale per fabbricare delle tavole. Colloca quindi le tue nuove tavole nel mondo.
-
-    ![screenshot](images/craft-plank-test.png)
-
-
-
++ Per testare la tua nuova risorsa tavola, raccogli alcune tessere di legno e poi crea alcune tavole dal tuo legno. Puoi quindi posizionare le tue nuove tavole nel tuo mondo.
+    
+    ![schermata](images/craft-plank-test.png)

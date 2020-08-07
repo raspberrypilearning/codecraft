@@ -1,10 +1,9 @@
 --- challenge ---
+
 ## Sfida: Costruisci il tuo mondo
-Sei capace a costruire una casetta con giardino e piscina? Cos'altro puoi creare?
 
-![screenshot](images/craft-build-example.png)
+Puoi costruire una casa, con un giardino e una piscina? Cos'altro puoi creare?
 
-
-
+![schermata](images/craft-build-example.png)
 
 --- /challenge ---
