@@ -1,42 +1,39 @@
-## Façonner des planches de bois
+## Fabrique des planches à partir du bois
 
-Créons une nouvelle ressource planche qui sera façonnée de bois.
+Créons une nouvelle ressource planche qui peut être fabriquée à partir de bois.
 
-+ D'abord, ajoute une nouvelle variable `PLANK` à ton jeu.
++ D'abord, ajoute une nouvelle variable `PLANCHE` à ton jeu.
+    
+    ![capture d'écran](images/craft-plank-const.png)
 
-    ![screenshot](images/craft-plank-const.png)
++ Ajoute une nouvelle variable `Planche` à ton jeu.
+    
+    ![capture d'écran](images/craft-plank-resources.png)
 
-+ Ajoutes une nouvelle variable `PLANK` à ton jeu.
++ Nomme la ressource `'Planche'`.
+    
+    ![capture d'écran](images/craft-plank-names.png)
 
-    ![screenshot](images/craft-plank-resources.png)
++ Donne une image à ta ressource `Planche`. Le projet contient déjà une image `planche.gif`, mais tu peux créer la tienne si tu préfères.
+    
+    ![capture d'écran](images/craft-plank-textures.png)
 
-+ Nomme la ressource `'plank'`.
++ Ajoutes des planches à ton inventaire.
+    
+    ![capture d'écran](images/craft-plank-inventory.png)
 
-    ![screenshot](images/craft-plank-names.png)
++ Paramètre une touche pour placer des planches.
+    
+    ![capture d'écran](images/craft-plank-placekeys.png)
 
-+ Donne ta ressource `PLANK` une image. Le projet contient déjà une image `plank.png`, mais tu peux créer ta propre image si tu préfères.
++ Comme cette ressource peut être crée, tu dois créer une règle de fabrication qui est qu'une planche peut être fabriquée à partir de 3 tuiles de bois. Ajoute ce code au dictionnaire `fabrication`.
+    
+    ![capture d'écran](images/craft-plank-crafting.png)
 
-    ![screenshot](images/craft-plank-textures.png)
++ Enfin, tu dois paramétrer une touche pour fabriquer des nouvelles planches.
+    
+    ![capture d'écran](images/craft-plank-craftkeys.png)
 
-+ Ajoute des planches à ton inventaire.
-
-    ![screenshot](images/craft-plank-inventory.png)
-
-+ Mettre une clé pour placer les planches.
-
-    ![screenshot](images/craft-plank-placekeys.png)
-
-+ Puisque cette ressource peut être façonnée, tu as besoin de créer une règle de façonnage, qui dit qu'une planche peut être fabriquée de 3 tuiles de bois. Ajoute ce code au dictionnaire `crafting`.
-
-    ![screenshot](images/craft-plank-crafting.png)
-
-+ Enfin, tu as besoin de mettre une clé pour façonner de nouvelles planches.
-
-    ![screenshot](images/craft-plank-craftkeys.png)
-
-+ Pour tester ta nouvelle ressource planche, ramasse quelques tuiles de bois et fabriquer quelques planches de ton bois. Puis tu peux placer tes nouvelles planches dans ton monde.
-
-    ![screenshot](images/craft-plank-test.png)
-
-
-
++ Pour tester ta nouvelle ressource planche, rassemble plusieurs tuiles bois et fabrique quelques planches à partir du bois. Tu peux maintenant placer tes nouvelles planches sur ton monde.
+    
+    ![capture d'écran](images/craft-plank-test.png)

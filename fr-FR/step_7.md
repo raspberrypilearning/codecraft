@@ -1,14 +1,13 @@
 --- challenge ---
-## Défi : Créer du sable
-Peux-tu ajouter une ressource `SAND` (sable) à ton jeu ? Tu peux utiliser les étapes ci-dessus pour t'aider.
 
-![screenshot](images/craft-sand.png)
+## Défi: Crée du sable
 
-Le projet inclut déjà une image `sand.png`, mais tu peux créer et transférer ta propre image si tu préfères.
+Peux-tu ajouter une ressource `SABLE` dans ton jeu ? Tu peux utiliser les étapes précédentes pour t'aider.
 
-![screenshot](images/craft-upload.png)
+![capture d'écran](images/craft-sand.png)
 
+Le projet inclut déjà une image `sable.gif`, mais tu peux créer et télécharger la tienne si tu préfères.
 
-
+![capture d'écran](images/craft-upload.png)
 
 --- /challenge ---

@@ -1,14 +1,13 @@
 --- challenge ---
+
 ## Sfida: Crea la sabbia
-Puoi aggiungere una risorsa di sabbia ("SAND" in inglese) al gioco? Prova a usare guida la stessa procedura descritta qui sopra.
 
-![screenshot](images/craft-sand.png)
+Puoi aggiungere una risorsa `SABBIA` per il tuo gioco? Puoi utilizzare i passaggi precedenti per aiutarti.
 
-Il progetto contiene già un'immagine di sabbia in "sand.png" ma puoi benissimo creare e caricare una tua immagine se lo preferisci.
+![schermata](images/craft-sand.png)
 
-![screenshot](images/craft-upload.png)
+Il progetto include già un'immagine `sand.gif`, ma puoi creare e caricare la tua se preferisci.
 
-
-
+![schermata](images/craft-upload.png)
 
 --- /challenge ---

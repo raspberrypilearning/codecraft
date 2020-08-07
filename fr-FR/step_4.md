@@ -1,16 +1,15 @@
-## Customisation de ton jeu
+## Personnalise ton jeu
 
-Modifions quelques variable pour changer le fonctionnement de ton jeu.
+Modifions certaines variables pour changer le fonctionnement du jeu.
 
-+ Cliques sur le fichier `variables.py` pour voir quelques variables qui peuvent être modifiées.
++ Clique sur le fichier `variables.py` pour voir les variables qui peuvent être changées.
+    
+    ![capture d'écran](images/craft-variables.png)
 
-    ![screenshot](images/craft-variables.png)
++ Change la valeur de `COULEURDEFOND` et clique sur "Éxécuter" pour voir les changements dans ton jeu.
+    
+    ![capture d'écran](images/craft-background.png)
 
-+ Changes la valeur de la variable `BACKGROUNDCOLOUR` (couleur de fond), et cliques 'Run' pour voir les changements dans ton jeu.
-
-    ![screenshot](images/craft-background.png)
-
-+ La variable `MAXTILES` est la quantité de chaque ressource qui peut être stocké dans ton inventaire. Change ce variable si tu veux stocker plus (ou moins) de 20 exemplaires de chaque ressource.
-
-    ![screenshot](images/craft-maxtiles.png)
-
++ La variable `MAXIMUMTUILES` est la quantité de chaque ressource que peut contenir ton inventaire. Change cette variable si tu le désires pour stocker plus (ou moins) que 20 de chaque ressource.
+    
+    ![capture d'écran](images/craft-maxtiles.png)

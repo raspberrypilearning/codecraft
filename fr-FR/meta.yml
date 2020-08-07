@@ -1,28 +1,20 @@
+---
 hero_image: images/codecraft.png
-theme: blue
 duration: 2
 listed: true
-ingredient: false
 copyedit: false
-curriculum: 1, design-1, programming-1, phys-comp-0, manufacture-0, community-0
 title: CodeCraft
-description: Dessiner et coder des améliorations dans une version 2D de Minecraft.
-original_url: https://projects.raspberrypi.org/en/projects/codecraft
-interests: games
-technologies: python
-site_areas: projects
-hardware: ''
-software: python
-version: 3
-last_tested: 2017-01-01
-steps: 
-- title: Introduction
-- title: Jouer le jeu
-- title: "Défi : Construire ton monde"
-- title: Customisation de ton jeu
-- title: "Défi : Change la taille de ton monde"
-- title: Créer une nouvelle ressource en bois
-- title: "Défi : Créer du sable"
-- title: Façonner des planches de bois
-- title: "Défi : Façonner le verre du sable"
-- title: "Défi : Créer d'autres ressources"
+description: Conception et amélioration du code d'une version 2D de Minecraft.
+version: 3.1.0
+last_tested: 2018-11-22
+steps:
+  - title: Introduction
+  - title: Jouer au jeu
+  - title: 'Défi : Construit ton monde'
+  - title: Personnalise ton jeu
+  - title: 'Défi : Change la taille de ton monde'
+  - title: 'Crée une nouvelle ressource : le bois'
+  - title: 'Défi : Crée du sable'
+  - title: Fabrique des planches à partir de bois
+  - title: 'Défi : Fabrique du verre à partir du sable'
+  - title: 'Défi : Crée plus de ressources'

@@ -1,16 +1,15 @@
-## Personalizzazione del gioco
+## Personalizza il tuo gioco
 
-Modifichiamo adesso qualche variabile per vedere come funziona il gioco.
+Modifichiamo alcune variabili per cambiare il funzionamento del tuo gioco.
 
-+ Fai clic sul file "variables.py" per vedere delle variabili che possono essere modificate.
++ Fai clic su `variables.py` per vedere alcune variabili che possono essere modificate.
+    
+    ![schermata](images/craft-variables.png)
 
-    ![screenshot](images/craft-variables.png)
++ Cambia il valore del tuo `COLORESFONDO` variabile e fai clic su "Esegui" per vedere la modifica al tuo gioco.
+    
+    ![schermata](images/craft-background.png)
 
-+ Modifica il valore della variabile "BACKGROUNDCOLOUR" e fai clic su "Run" per vedere in che modo cambia il gioco.
-
-    ![screenshot](images/craft-background.png)
-
-+ La variabile "MAXTILES" indica la quantità di ciascuna risorsa che può essere tenuta nell'inventario. Modifica questa variabile per poter conservare più (o meno) di 20 unità di ciascuna risorsa.
-
-    ![screenshot](images/craft-maxtiles.png)
-
++ La variabile `MAXCASELLE` è la quantità di ogni risorsa che può essere trattenuta nel tuo inventario. Modificare questa variabile se si desidera archiviare più (o meno) di 20 unità di ciascuna risorsa.
+    
+    ![schermata](images/craft-maxtiles.png)
