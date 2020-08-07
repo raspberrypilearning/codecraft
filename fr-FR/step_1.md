@@ -24,11 +24,11 @@ Dans ce projet, les enfants apprendront les aspects d'interfaces graphiques et l
 
 **Ce projet utilise Python 3.** Nous recommandons l'utilisation de [Trinket](https://trinket.io/) pour écrire du code Python en-ligne. Ce projet contient les Trinkets suivants :
 
-+ ['CodeCraft' starter project -- rpf.io/codecraft-on](http://rpf.io/codecraft-on)
++ [Le projet de démarrage « CodeCraft » -- rpf.io/codecraft-on](http://rpf.io/codecraft-on)
 
 Il existe aussi ce trinket qui contient le projet complet:
 
-+ [‘CodeCraft’ Finished -- trinket.io/python/ebc5b0148b](https://trinket.io/python/ebc5b0148b)
++ [« CodeCraft » terminé -- trinket.io/python/ebc5b0148b](https://trinket.io/python/ebc5b0148b)
 
 ## Ressources hors-ligne
 
