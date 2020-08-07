@@ -18,7 +18,7 @@ Se intendete stampare questo progetto, cliccate su [Versione stampabile](https:/
 
 ## Introduzione:
 
-In this project, children will learn aspects of graphics and game design by making improvements to a basic 2D Minecraft clone. I bambini creeranno nuove risorse, oltre a creare regole per combinare le risorse al fine di crearne di nuove. Ciò sarà possibile attraverso la comprensione e la manipolazione di variabili, liste e dizionari.
+In questo progetto, i bambini impareranno aspetti della grafica e del design del gioco apportando miglioramenti a un semplice clone 2D di Minecraft. I bambini creeranno nuove risorse, oltre a creare regole per combinare le risorse al fine di crearne di nuove. Ciò sarà possibile attraverso la comprensione e la manipolazione di variabili, liste e dizionari.
 
 ## Risorse online
 
