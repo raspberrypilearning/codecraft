@@ -5,321 +5,323 @@
 #############
 
 #---
-#Game functions
+#Funzioni del gioco
 #---
 
-#moves the player left 1 tile.
-def moveLeft():
-  global playerX
-  if(drawing == False and playerX > 0):
-    oldX = playerX
-    playerX -= 1
-    drawResource(oldX, playerY)
-    drawResource(playerX, playerY)
+#sposta il giocatore a sinistra di una casella.
+def spostaSinistra():
+  global giocatoreX
+  if(disegno == False and giocatoreX > 0):
+    vecchioX = giocatoreX
+    giocatoreX -= 1
+    disegnaRisorsa(vecchioX, giocatoreY)
+    disegnaRisorsa(giocatoreX, giocatoreY)
     
-#moves the player right 1 tile.
-def moveRight():
-  global playerX, MAPWIDTH
-  if(drawing == False and playerX < MAPWIDTH - 1):
-    oldX = playerX
-    playerX += 1
-    drawResource(oldX, playerY)
-    drawResource(playerX, playerY)
+#sposta il giocatore a destra di 1 casella.
+def spostaDestra():
+  global giocatoreX, LARGHEZZAMAPPA
+  if(disegno == False and giocatoreX < LARGHEZZAMAPPA - 1):
+    vecchioX = giocatoreX
+    giocatoreX += 1
+    disegnaRisorsa(vecchioX, giocatoreY)
+    disegnaRisorsa(giocatoreX, giocatoreY)
     
-#moves the player up 1 tile.
-def moveUp():
-  global playerY
-  if(drawing == False and playerY > 0):
-    oldY = playerY
-    playerY -= 1
-    drawResource(playerX, oldY)
-    drawResource(playerX, playerY)
+#sposta il giocatore verso l'alto di 1 casella.
+def spostaSu():
+  global giocatoreY
+  if (disegno == False and giocatoreY> 0):
+    vecchioY = giocatoreY
+    giocatoreY -= 1
+    disegnaRisorsa(giocatoreX, vecchioY)
+    disegnaRisorsa(giocatoreX, giocatoreY)
     
-#moves the player down 1 tile.
-def moveDown():
-  global playerY, MAPHEIGHT
-  if(drawing == False and playerY < MAPHEIGHT - 1):
-    oldY = playerY
-    playerY += 1
-    drawResource(playerX, oldY)
-    drawResource(playerX, playerY)
+#sposta il giocatore verso il basso di 1 casella.
+def spostaGiu():
+  global giocatoreY, ALTEZZAMAPPA
+  if(disegno == False and giocatoreY < ALTEZZAMAPPA - 1):
+    vecchioY = giocatoreY
+    giocatoreY += 1
+    disegnaRisorsa(giocatoreX, vecchioY)
+    disegnaRisorsa(giocatoreX, giocatoreY)
     
-#picks up the resource at the player's position.
-def pickUp():
-  global playerX, playerY
-  drawing = True
-  currentTile = world[playerX][playerY]
-  #if the user doesn't already have too many...
-  if inventory[currentTile] < MAXTILES:
-    #player now has 1 more of this resource
-    inventory[currentTile] += 1
-    #the player is now standing on dirt
-    world[playerX][playerY] = DIRT
-    #draw the new DIRT tile
-    drawResource(playerX, playerY)
-    #redraw the inventory with the extra resource.
-    drawInventory()
-    #drawPlayer()
+#prendi la risorsa che si trova nella casella in cui c'è il giocatore.
+def prendi():
+  global giocatoreX, giocatoreY
+  disegna = True
+  casellaAttuale = mondo[giocatoreX][giocatoreY]
+  #se il giocatore non ne ha già troppe...
+  if inventario[casellaAttuale] < MAXCASELLE:
+    #il giocatore ora ha un'unità in più di questa risorsa
+    inventario[casellaAttuale] += 1
+    #il giocatore è ora sul terreno
+    mondo[giocatoreX][giocatoreY] = TERRENO
+    #disegna la nuova casella TERRENO
+    disegnaRisorsa(giocatoreX, giocatoreY)
+    #disegna nuovamente l'inventario aggiungendo la nuova risorsa.
+    disegnaInventario()
+    #disegnaGiocatore()
 
-#place a resource at the player's current position
-def place(resource):
-  print('placing: ', names[resource])
-  #only place if the player has some left...
-  if inventory[resource] > 0:
-    #find out the resourcee at the player's current position
-    currentTile = world[playerX][playerY]
-    #pick up the resource the player's standing on
-    #(if it's not DIRT)
-    if currentTile is not DIRT:
-      inventory[currentTile] += 1
-    #place the resource at the player's current position
-    world[playerX][playerY] = resource
-    #add the new resource to the inventory
-    inventory[resource] -= 1
-    #update the display (world and inventory)
-    drawResource(playerX, playerY)
-    drawInventory()
-    #drawPlayer()
-    print('   Placing', names[resource], 'complete')
-  #...and if they have none left...
+#colloca una risorsa sull'attuale posizione del giocatore
+def posiziona(risorsa):
+  print('posiziona: ', nomi[risorsa])
+  #posiziona solo nel caso in cui il giocatore ne abbia altre a disposizione...
+  if inventario[risorsa] > 0:
+    #identifica la risorsa nell'attuale posizione del giocatore
+    casellaAttuale = mondo[giocatoreX][giocatoreY]
+    #prendi la risorsa che si trova nella casella in cui c'è il giocatore
+    #(se non è (ovvero "is not") TERRENO)
+    if casellaAttuale is not TERRENO:
+      inventario[casellaAttuale] += 1
+    #colloca la risorsa sull'attuale posizione del giocatore
+    mondo[giocatoreX][giocatoreY] = risorsa
+    #aggiungi la nuova risorsa all'inventario
+    inventario[risorsa] -= 1
+    #aggiorna quello che viene visualizzato (il mondo e l'inventario)
+    disegnaRisorsa(giocatoreX, giocatoreY)
+    disegnaInventario()
+    #disegnaGiocatore()
+    print('   Posizionamento', nomi[risorsa], 'completato')
+  #...e se non ne hanno più...
   else:
-    print('   You have no', names[resource], 'left')
+    print('   Non hai più risorse', nomi[risorsa], 'a disposizione')
 
-#craft a new resource
-def craft(resource):
-  print('Crafting: ', names[resource])
-  #if the resource can be crafted...
-  if resource in crafting:
-    #keeps track of whether we have the resources
-    #to craft this item
-    canBeMade = True
-    #for each item needed to craft the resource
-    for i in crafting[resource]:
-      #...if we don't have enough...
-      if crafting[resource][i] > inventory[i]:
-      #...we can't craft it!
-        canBeMade = False
+#crea una nuova risorsa
+def crea(risorsa):
+  print('Crea: ', nomi[risorsa])
+  #se la risorsa può essere creata...
+  if risorsa in creazione:
+    #controlla se hai a disposizione le risorse
+    #per realizzare questo oggetto
+    puoEssereCreata = True
+    #per ogni oggetto dell'inventario necessario per creare la risorsa
+    for i in creazione[risorsa]:
+      #...se non ne abbiamo a sufficienza...
+      if creazione[risorsa][i] > inventario[i]:
+      #...non possiamo crearlo!
+        puoEssereCreata = False
         break
-    #if we can craft it (we have all needed resources)
-    if canBeMade == True:
-      #take each item from the inventory
-      for i in crafting[resource]:
-        inventory[i] -= crafting[resource][i]
-      #add the crafted item to the inventory
-      inventory[resource] += 1
-      print('   Crafting', names[resource], 'complete')
-    #...otherwise the resource can't be crafted...
+    #se possiamo creare l'oggetto (abbiamo a disposizione tutte le risorse necessarie)
+    if puoEssereCreata == True:
+      #prendi ogni oggetto dall'inventario
+      for i in creazione[risorsa]:
+        inventario[i] -= creazione[risorsa][i]
+      #aggiungi l'oggetto creato all'inventario
+      inventario[risorsa] += 1
+      print('   Creazione', nomi[risorsa], 'completata')
+    #...in caso contrario la risorsa non può essere creata...
     else:
-      print('   Can\'t craft', names[resource])
-    #update the displayed inventory
-    drawInventory()
+      print('   La risorsa', nomi[risorsa],'non può essere creata')
+    #aggiorna l'inventario visualizzato
+    disegnaInventario()
 
-#creates a function for placing each resource
-def makeplace(resource):
-  return lambda: place(resource)
+#crea una funzione per posizionare ogni risorsa
+def definisciPosizione(risorsa):
+  return lambda: posiziona(risorsa)
 
-#attaches a 'placing' function to each key press
-def bindPlacingKeys():
-  for k in placekeys:
-    screen.onkey(makeplace(k), placekeys[k])
+#questo permette di assegnare la funzione 'posiziona' ad ogni tasto
+def definisciTastiPosizione():
+  for t in tastiPosizione:
+    schermo.onkey(definisciPosizione(t), tastiPosizione[t])
 
-#creates a function for crafting each resource
-def makecraft(resource):
-  return lambda: craft(resource)
+#crea una funzione per realizzare ogni risorsa
+def definisciCreazione(risorsa):
+  return lambda: crea(risorsa)
 
-#attaches a 'crafting' function to each key press
-def bindCraftingKeys():
-  for k in craftkeys:
-    screen.onkey(makecraft(k), craftkeys[k])
+#questo permette di assegnare la funzione 'crea' ad ogni tasto
+def definisciTastiCreazione():
+  for t in tastiCreazione:
+    schermo.onkey(definisciCreazione(t), tastiCreazione[t])
 
-#draws a resource at the position (y,x)
-def drawResource(y, x):
-  #this variable stops other stuff being drawn
-  global drawing
-  #only draw if nothing else is being drawn
-  if drawing == False:
-    #something is now being drawn
-    drawing = True
-    #draw the resource at that position in the tilemap, using the correct image
-    rendererT.goto( (y * TILESIZE) + 20, height - (x * TILESIZE) - 20 )
-    #draw tile with correct texture
-    texture = textures[world[y][x]]
-    rendererT.shape(texture)
-    rendererT.stamp()
-    if playerX == y and playerY == x:
-      rendererT.shape(playerImg)
-      rendererT.stamp()
-    screen.update()
-    #nothing is now being drawn
-    drawing = False
+#disegna una risorsa nella posizione (y,x)
+def disegnaRisorsa(y, x):
+  #questa variabile arresta altri elementi in corso di elaborazione
+  global disegno
+  #disegna solo se non c'è nient'altro in fase di elaborazione
+  if disegno == False:
+    #c'è altro in fase di elaborazione
+    disegna = True
+    #disegna la risorsa nella posizione selezionata nella mappa usando l'immagine corretta
+    visualizzatoreT.goto( (y * DIMENSIONECASELLA) + 20, altezza - (x * DIMENSIONECASELLA) - 20 )
+    #riempie la casella con l'immagine corretta
+    immagine = immagini[mondo[y][x]]
+    visualizzatoreT.shape(immagine)
+    visualizzatoreT.stamp()
+    if giocatoreX == y and giocatoreY == x:
+      visualizzatoreT.shape(immagineGiocatore)
+      visualizzatoreT.stamp()
+    schermo.update()
+    #non c'è nulla in fase di elaborazione
+    disegno = False
     
-#draws the world map
-def drawWorld():
-  #loop through each row
-  for row in range(MAPHEIGHT):
-    #loop through each column in the row
-    for column in range(MAPWIDTH):
-      #draw the tile at the current position
-      drawResource(column, row)
+#disegna la mappa del mondo
+def disegnaMondo():
+  #esegui un ciclo per ogni riga
+  for riga in range(ALTEZZAMAPPA):
+    #esegui un ciclo per ogni colonna nella riga in questione
+    for colonna in range(LARGHEZZAMAPPA):
+      #disegna la casella nella posizione corrente
+      disegnaRisorsa(colonna, riga)
 
-#draws the inventory to the screen
-def drawInventory():
-  #this variable stops other stuff being drawn
-  global drawing
-  #only draw if nothing else is being drawn
-  if drawing == False:
-    #something is now being drawn
-    drawing = True
-    #use a rectangle to cover the current inventory
-    rendererT.color(BACKGROUNDCOLOUR)
-    rendererT.goto(0,0)
-    rendererT.begin_fill()
-    #rendererT.setheading(0)
+#disegna l'inventario sullo schermo
+def disegnaInventario():
+  #questa variabile arresta altri elementi in corso di elaborazione
+  global disegno
+  #disegna solo se non c'è nient'altro in fase di elaborazione
+  if disegno == False:
+    #c'è altro in fase di elaborazione
+    disegna = True
+    #utilizza un rettangolo per coprire l'inventario
+    visualizzatoreT.color(COLORESFONDO)
+    visualizzatoreT.goto(0,0)
+    visualizzatoreT.begin_fill()
+    #visualizzatoreT.setheading(0)
     for i in range(2):
-      rendererT.forward(inventory_height - 60)
-      rendererT.right(90)
-      rendererT.forward(width)
-      rendererT.right(90)
-    rendererT.end_fill()
-    rendererT.color('black')
-    #display the 'place' and 'craft' text
-    for i in range(1,num_rows+1):
-      rendererT.goto(20, (height - (MAPHEIGHT * TILESIZE)) - 20 - (i * 100))
-      rendererT.write("place")
-      rendererT.goto(20, (height - (MAPHEIGHT * TILESIZE)) - 40 - (i * 100))
-      rendererT.write("craft")
-    #set the inventory position
-    xPosition = 70
-    yPostition = height - (MAPHEIGHT * TILESIZE) - 80
-    itemNum = 0
-    for i, item in enumerate(resources):
-      #add the image
-      rendererT.goto(xPosition, yPostition)
-      rendererT.shape(textures[item])
-      rendererT.stamp()
-      #add the number in the inventory
-      rendererT.goto(xPosition, yPostition - TILESIZE)
-      rendererT.write(inventory[item])
-      #add key to place
-      rendererT.goto(xPosition, yPostition - TILESIZE - 20)
-      rendererT.write(placekeys[item])
-      #add key to craft
-      if crafting.get(item) != None:
-        rendererT.goto(xPosition, yPostition - TILESIZE - 40)
-        rendererT.write(craftkeys[item])     
-      #move along to place the next inventory item
-      xPosition += 50
-      itemNum += 1
-      #drop down to the next row every 10 items
-      if itemNum % INVWIDTH == 0:
-        xPosition = 70
-        itemNum = 0
-        yPostition -= TILESIZE + 80
-    drawing = False
+      visualizzatoreT.forward(altezza_inventario - 60)
+      visualizzatoreT.right(90)
+      visualizzatoreT.forward(larghezza)
+      visualizzatoreT.right(90)
+    visualizzatoreT.end_fill()
+    visualizzatoreT.color('black')
+    #visualizza il testo 'posiziona' e 'crea'
+    for i in range(1,num_righe+1):
+      visualizzatoreT.goto(20, (altezza - (ALTEZZAMAPPA * DIMENSIONECASELLA)) - 20 - (i * 100))
+      visualizzatoreT.write("posiziona")
+      visualizzatoreT.goto(20, (altezza - (ALTEZZAMAPPA * DIMENSIONECASELLA)) - 40 - (i * 100))
+      visualizzatoreT.write("crea")
+    #determina la posizione dell'inventario
+    PosizioneX = 70
+    PosizioneY = altezza - (ALTEZZAMAPPA * DIMENSIONECASELLA) - 80
+    oggettoNum = 0
+    for i, oggetto in enumerate(risorse):
+      #aggiungi l'immagine
+      visualizzatoreT.goto(PosizioneX, PosizioneY)
+      visualizzatoreT.shape(immagini[oggetto])
+      visualizzatoreT.stamp()
+      #aggiungi il numero nell'inventario
+      visualizzatoreT.goto(PosizioneX, PosizioneY - DIMENSIONECASELLA)
+      visualizzatoreT.write(inventario[oggetto])
+      #aggiungi il tasto alla posizione
+      visualizzatoreT.goto(PosizioneX, PosizioneY - DIMENSIONECASELLA - 20)
+      visualizzatoreT.write(tastiPosizione[oggetto])
+      #aggiungi il tasto alla creazione
+      if creazione.get(oggetto) != None:
+        visualizzatoreT.goto(PosizioneX, PosizioneY - DIMENSIONECASELLA - 40)
+        visualizzatoreT.write(tastiCreazione[oggetto])     
+      #avanza per posizionare l'oggetto successivo nell'inventario
+      PosizioneX += 50
+      oggettoNum =+ 1
+      #ogni 10 oggetti passa alla riga successiva
+      if oggettoNum % LARGHEZZAINVENTARIO == 0:
+        PosizioneX = 70
+        oggettoNum = 0
+        PosizioneY -= DIMENSIONECASELLA + 80
+    disegno = False
 
-#generate the instructions, including crafting rules
-def generateInstructions():
-  instructions.append('Crafting rules:')
-  #for each resource that can be crafted...
-  for rule in crafting:
-    #create the crafting rule text
-    craftrule = names[rule] + ' = '
-    for resource, number in crafting[rule].items():
-      craftrule += str(number) + ' ' + names[resource] + ' '
-    #add the crafting rule to the instructions
-    instructions.append(craftrule)
-  #display the instructions
-  yPos = height - 20
-  for item in instructions:
-    rendererT.goto( MAPWIDTH*TILESIZE + 40, yPos)
-    rendererT.write(item)
-    yPos-=20
+#genera le istruzioni e le regole per la creazione
+def generaIstruzioni():
+  istruzioni.append('Regole per la creazione delle risorse:')
+  #per ogni risorsa che può essere creata...
+  for regola in creazione:
+    #genera il testo con le istruzioni per la creazione di nuove risorse
+    regolacreazione = nomi[regola] + ' = '
+    for risorsa, numero in creazione[regola].items():
+      regolacreazione += str(numero) + ' ' + nomi[risorsa] + ' '
+    #aggiungi la regola per la creazione alle istruzioni
+    istruzioni.append(regolacreazione)
+  #visualizza le istruzioni
+  posY = altezza - 20
+  for oggetto in istruzioni:
+    visualizzatoreT.goto( LARGHEZZAMAPPA*DIMENSIONECASELLA + 40, posY)
+    visualizzatoreT.write(oggetto)
+    posY-=20
 
-#generate a random world
-def generateRandomWorld():
-  #loop through each row
-  for row in range(MAPHEIGHT):
-    #loop through each column in that row
-    for column in range(MAPWIDTH):
-      #pick a random number between 0 and 10
-      randomNumber = random.randint(0,10)
-      #WATER if the random number is a 1 or a 2
-      if randomNumber in [1,2]:
-        tile = WATER
-      #GRASS if the random number is a 3 or a 4
-      elif randomNumber in [3,4]:
-        tile = GRASS
-      #WOOD if it's a 5
-      elif randomNumber == 5:
-        tile = WOOD
-      #SAND if it's a 6
-      elif randomNumber == 6:
-        tile = SAND
-      #otherwise it's DIRT
+#genera un mondo aleatorio
+def generaMondoAleatorio():
+  #esegui un ciclo per ogni riga
+  for riga in range(ALTEZZAMAPPA):
+    #esegui un ciclo per ogni colonna nella riga in questione
+    for colonna in range(LARGHEZZAMAPPA):
+      #scegli un numero a caso fra 0 e 10
+      numeroACaso = random.randint(0,10)
+      #ACQUA se il numero a caso è 1 oppure 2
+      if numeroACaso in [1,2]:
+        casella = ACQUA
+      #ERBA se il numero a caso è 3 oppure 4
+      elif numeroACaso in [3,4]:
+        casella = ERBA
+      #LEGNO se è 5
+      elif numeroACaso == 5:
+        casella = LEGNO
+      #SABBIA se è 6
+      elif numeroACaso == 6:
+        casella = SABBIA
+      #altrimenti è TERRENO
       else:
-        tile = DIRT
-      #set the position in the tilemap to the randomly chosen tile
-      world[column][row] = tile
+        casella = TERRENO
+      #assegna una posizione nella mappa alla casella scelta in maniera casuale
+      mondo[colonna][riga] = casella
 
 #---
-#Code starts running here
+#Il codice inizia l'esecuzione da qui
 #---
 
-#import the modules and variables needed
+#importa i moduli e le variabili necessarie
 import turtle
 import random
 from variables import *
 from math import ceil
 
-TILESIZE = 20
-#the number of inventory resources per row
-INVWIDTH = 8
-drawing = False
+DIMENSIONECASELLA = 20
+#il numero di risorse dell'inventario per riga
+LARGHEZZAINVENTARIO = 8
+disegno = False
 
-#create a new 'screen' object
-screen = turtle.Screen()
-#calculate the width and height
-width = (TILESIZE * MAPWIDTH) + max(200,INVWIDTH * 50)
-num_rows = int(ceil((len(resources) / INVWIDTH)))
-inventory_height =  num_rows * 120 + 40
-height = (TILESIZE * MAPHEIGHT) + inventory_height
+#crea un nuovo oggetto 'schermo'
+schermo = turtle.Screen()
+#calcola la larghezza e l'altezza
+larghezza = (DIMENSIONECASELLA * LARGHEZZAMAPPA) + max(200, LARGHEZZAINVENTARIO *50)
+num_righe = int(ceil((len(risorse) / LARGHEZZAINVENTARIO)))
+altezza_inventario =  num_righe * 120 + 40
+altezza = (DIMENSIONECASELLA * ALTEZZAMAPPA) + altezza_inventario
 
-screen.setup(width, height)
-screen.setworldcoordinates(0,0,width,height)
-screen.bgcolor(BACKGROUNDCOLOUR)
-screen.listen()
+schermo.setup(larghezza, altezza)
+schermo.setworldcoordinates(0,0,larghezza,altezza)
+schermo.bgcolor(COLORESFONDO)
+schermo.listen()
 
-#register the player image  
-screen.register_shape(playerImg)
-#register each of the resource images
-for texture in textures.values():
-  screen.register_shape(texture)
+#registra l'immagine del giocatore  
+schermo.register_shape(immagineGiocatore)
+#registra ognuna delle immagini delle risorse
+for immagine in immagini.values():
+  schermo.register_shape(immagine)
 
-#create another turtle to do the graphics drawing
-rendererT = turtle.Turtle()
-rendererT.hideturtle()
-rendererT.penup()
-rendererT.speed(0)
-rendererT.setheading(90)
+#crea un altro oggetto con il modulo turtle che permetta di gestire le immagini
+visualizzatoreT = turtle.Turtle()
+visualizzatoreT.hideturtle()
+visualizzatoreT.penup()
+visualizzatoreT.speed(0)
+visualizzatoreT.setheading(90)
 
-#create a world of random resources.
-world = [ [DIRT for w in range(MAPHEIGHT)] for h in range(MAPWIDTH) ]
+#crea un mondo di risorse aleatorie.
+mondo = [ [TERRENO for l in range(ALTEZZAMAPPA)] for a in range(LARGHEZZAMAPPA) ]
 
-#map the keys for moving and picking up to the correct functions.
-screen.onkey(moveUp, 'w')
-screen.onkey(moveDown, 's')
-screen.onkey(moveLeft, 'a')
-screen.onkey(moveRight, 'd')
-screen.onkey(pickUp, 'space')
+#associa alle funzioni corrette i tasti da conoscere per spostare/spostarsi e raccogliere le risorse.
+schermo.onkey(spostaSu, 'w')
+schermo.onkey(spostaGiu, 's')
+schermo.onkey(spostaSinistra, 'a')
+schermo.onkey(spostaDestra, 'd')
+#per prendere un oggetto premi la barra spaziatrice
+schermo.onkey(prendi, ' ')
 
-#set up the keys for placing and crafting each resource
-bindPlacingKeys()
-bindCraftingKeys()
 
-#these functions are defined above
-generateRandomWorld()
-drawWorld()
-drawInventory()
-generateInstructions()
+#imposta i tasti per posizionare e creare ogni risorsa
+definisciTastiPosizione()
+definisciTastiCreazione()
+
+#queste funzioni sono definite in alto
+generaMondoAleatorio()
+disegnaMondo()
+disegnaInventario()
+generaIstruzioni()
 
 
