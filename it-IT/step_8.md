@@ -2,19 +2,19 @@
 
 Creiamo una nuova risorsa da costruire a partire dal legno.
 
-+ Per prima cosa, aggiungi una nuova variabile `TAVOLA` al tuo gioco.
++ Per prima cosa, aggiungi una nuova variabile `ASSE` al tuo gioco.
     
     ![schermata](images/craft-plank-const.png)
 
-+ Aggiungi una nuova variabile `TAVOLA` al tuo gioco.
++ Aggiungi una nuova variabile `ASSE` al tuo gioco.
     
     ![schermata](images/craft-plank-resources.png)
 
-+ Denominare la risorsa `'tavola'`.
++ Denominare la risorsa `'asse'`.
     
     ![schermata](images/craft-plank-names.png)
 
-+ Dai alla tua risorsa `TAVOLA` un'immagine. Il progetto include già un'immagine `plank.gif`, ma puoi creare e caricare la tua se preferisci.
++ Dai alla tua risorsa `ASSE` un'immagine. Il progetto include già un'immagine `plank.gif`, ma puoi creare e caricare la tua se preferisci.
     
     ![schermata](images/craft-plank-textures.png)
 
