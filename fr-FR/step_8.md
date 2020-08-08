@@ -14,7 +14,7 @@ Créons une nouvelle ressource planche qui peut être fabriquée à partir de bo
     
     ![capture d'écran](images/craft-plank-names.png)
 
-+ Donne une image à ta ressource `Planche`. Le projet contient déjà une image `planche.gif`, mais tu peux créer la tienne si tu préfères.
++ Donne une image à ta ressource `Planche`. Le projet contient déjà une image `plank.gif`, mais tu peux créer la tienne si tu préfères.
     
     ![capture d'écran](images/craft-plank-textures.png)
 
