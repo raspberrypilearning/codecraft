@@ -16,7 +16,7 @@ Créons une nouvelle ressource: le bois. Pour ce faire, tu vas avoir besoin d'aj
     
     Remarque la virgule `,` à la fin de la ligne ci dessus.
 
-+ Ta ressource aura également besoin d'une image. Le projet inclut déjà une image appelée `bois.gif`, que tu devras ajouter au dictionnaire des `textures`.
++ Ta ressource aura également besoin d'une image. Le projet inclut déjà une image appelée `wood.gif`, que tu devras ajouter au dictionnaire des `textures`.
     
     ![capture d'écran](images/craft-wood-texture.png)
 
