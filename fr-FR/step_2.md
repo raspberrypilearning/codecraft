@@ -6,7 +6,7 @@
     
     ![capture d'écran](images/craft-move.png)
 
-+ Tu peux appuyer sur la barre espace pour récolter ces ressources. Ramasse quelques uns de chaque type de ressource, et tu verras qu'ils s'ajoutent à ton inventaire.
++ Tu peux appuyer sur la barre espace pour récolter ces ressources. Ramasse quelques unes de chaque type de ressource, et tu verras qu'elles s'ajoutent à ton inventaire.
     
     ![capture d'écran](images/craft-pickup.png)
 
