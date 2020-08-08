@@ -6,6 +6,6 @@ Peux-tu créer une nouvelle ressource verre qui peut être fabriquée à partir 
 
 ![capture d'écran](images/craft-glass.png)
 
-Le projet contient déjà une image `verre.gif` que tu peux utiliser, mais tu peux créer la tienne si tu préfères.
+Le projet contient déjà une image `glass.gif` que tu peux utiliser, mais tu peux créer la tienne si tu préfères.
 
 \--- /challenge \---
