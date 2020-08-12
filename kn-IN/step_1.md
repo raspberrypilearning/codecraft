@@ -100,7 +100,7 @@
 + [ಎಲ್ಲ project resources ಹೊಂದಿರುವ .zip file](resources/codecraft-resources.zip)
 + [Online Trinket ಹೊಂದಿರುವ ಎಲ್ಲಾ 'CodeCraft' project resources](http://rpf.io/codecraft-on)
 
-## Club leader resources
+## ಕ್ಲಬ್ ನಾಯಕ ಸಂಪನ್ಮೂಲಗಳು
 
 + [ಮುಗಿದ project resources ಹೊಂದಿರುವ.zip file](solutions/codecraft-solution.zip)
 + [Online ಮುಗಿದಿರುವ Trinket project](https://trinket.io/python/ebc5b0148b)
