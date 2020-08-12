@@ -10,7 +10,7 @@
 
 ### ಕ್ಲಬ್ ಲೀಡರ್ಸ್ಗೆ ಹೆಚ್ಚುವರಿ ಮಾಹಿತಿ
 
-[Printer friendly version](https://projects.raspberrypi.org/en/projects/codecraft/print) ಇದನ್ನು ಯೋಜನೆ ಪ್ರಿಂಟ್ ಮಾಡಲು ಉಪಯೋಗಿಸಿ.
+ನೀವು ಈ ಯೋಜನೆಯನ್ನು ಮುದ್ರಿಸಬೇಕಾದರೆ, ದಯವಿಟ್ಟು [ಮುದ್ರಕ-ಸ್ನೇಹಿ ಆವೃತ್ತಿಯನ್ನು ಬಳಸಿ](https://projects.raspberrypi.org/en/projects/codecraft/print).
 
 ## \--- collapse \---
 
