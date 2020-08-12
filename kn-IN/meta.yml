@@ -1,0 +1,20 @@
+---
+hero_image: images/codecraft.png
+duration: 2
+listed: true
+copyedit: false
+title: ಕೋಡ್‌ಕ್ರಾಫ್ಟ್
+description: Minecraft 2D ಆವೃತ್ತಿಗೆ ವಿನ್ಯಾಸ ಮತ್ತು ಕೋಡ್.
+version: 3.1.0
+last_tested: 2018-11-22
+steps:
+  - title: ಪರಿಚಯ
+  - title: ಆಟವಾಡುವುದು
+  - title: 'ಸವಾಲು: ನಿಮ್ಮ ಜಗತ್ತನ್ನು ನಿರ್ಮಿಸಿ'
+  - title: ನಿಮ್ಮ ಆಟವನ್ನು ಕಸ್ಟಮೈಸ್ ಮಾಡಲಾಗುತ್ತಿದೆ
+  - title: 'ಸವಾಲು: ನಿಮ್ಮ ವಿಶ್ವ ಗಾತ್ರವನ್ನು ಬದಲಾಯಿಸಿ'
+  - title: ಹೊಸ wood resource ರಚಿಸುವುದು
+  - title: 'ಸವಾಲು: sand(ಮರಳು) ರಚಿಸುವುದು'
+  - title: Woodಇಂದ planks ತಯಾರಿಸುವುದು
+  - title: 'ಸವಾಲು: sandಇಂದ glass ತಯಾರಿಸುವುದು'
+  - title: 'ಸವಾಲು: ಹೆಚ್ಚಿನ resources ರಚಿಸಿ'
