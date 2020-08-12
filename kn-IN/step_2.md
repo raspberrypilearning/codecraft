@@ -1,6 +1,6 @@
 ## ಆಟವಾಡುವುದು
 
-+ Open this trinket: [rpf.io/codecraft-on](http://rpf.io/codecraft-on){:target="_blank"}.
++ ಈ trinket: ತೆರೆಯಿರಿ [rpf.io/codecraft-on](http://rpf.io/codecraft-on){:target="_blank"}.
 
 + ನಿಮ್ಮ ಆಟಗಾರನನ್ನು ಪ್ರಪಂಚದಾದ್ಯಂತ ಸರಿಸಲು WASD ಕೀಲಿಗಳನ್ನು ಬಳಸಿ, ಅದು ವಿಭಿನ್ನ resources ತುಂಬಿದೆ (ಕೊಳಕು, ಹುಲ್ಲು ಮತ್ತು ನೀರು).
     
