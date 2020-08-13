@@ -22,7 +22,7 @@
 
 आपल्या संसाधनाची संख्या जोडा जी आपल्या `inventory` मध्ये असावी सुरुवात करण्यासाठी.
     
-    ![screenshot](images/craft-wood-inventory.png)
+![screenshot](images/craft-wood-inventory.png)
 
 + शेवटी, आपण जगात लाकूड ठेवण्यासाठी दाबत असलेली key जोडा.
     
