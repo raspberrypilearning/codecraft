@@ -190,22 +190,25 @@ def drawInventory():
       rendererT.write("craft")
     #set the inventory position
     xPosition = 70
-    yPostition = height - (MAPHEIGHT * TILESIZE) - 80
+    yPostition = height - (MAPHEIGHT * TILESIZE) - 60
     itemNum = 0
     for i, item in enumerate(resources):
       #add the image
-      rendererT.goto(xPosition, yPostition)
+      rendererT.goto(xPosition + 10, yPostition)
       rendererT.shape(textures[item])
       rendererT.stamp()
       #add the number in the inventory
       rendererT.goto(xPosition, yPostition - TILESIZE)
       rendererT.write(inventory[item])
-      #add key to place
+      #add the name
       rendererT.goto(xPosition, yPostition - TILESIZE - 20)
+      rendererT.write('[' + names[item] + ']')
+      #add key to place
+      rendererT.goto(xPosition, yPostition - TILESIZE - 40)
       rendererT.write(placekeys[item])
       #add key to craft
       if crafting.get(item) != None:
-        rendererT.goto(xPosition, yPostition - TILESIZE - 40)
+        rendererT.goto(xPosition, yPostition - TILESIZE - 60)
         rendererT.write(craftkeys[item])     
       #move along to place the next inventory item
       xPosition += 50
