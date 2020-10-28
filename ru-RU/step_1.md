@@ -97,12 +97,12 @@
 
 ## Ресурсы проекта
 
-+ [.zip-файл, содержащий все ресурсы проекта](resources/codecraft-resources.zip)
++ [.zip-файл, содержащий все ресурсы проекта](http://rpf.io/p/en/codecraft-go)
 + [Онлайн Trinket, содержащий все ресурсы проекта "CodeCraft"](http://rpf.io/codecraft-on)
 
 ## Ресурсы для руководителя клуба
 
-+ [.zip-файл, содержащий все завершенные ресурсы проекта](solutions/codecraft-solution.zip)
++ [.zip-файл, содержащий все завершенные ресурсы проекта](http://rpf.io/p/en/codecraft-get)
 + [Завершённый онлайн-проект в Trinket](https://trinket.io/python/ebc5b0148b)
 
 \--- /collapse \---
