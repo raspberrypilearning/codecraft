@@ -97,12 +97,12 @@ Ce projet couvre les élements suivants du [Programme Raspberry Pi de Créativit
 
 ## Ressources du projet
 
-+ [Fichier .zip contenant toutes les ressources du projet](resources/codecraft-resources.zip)
++ [Fichier .zip contenant toutes les ressources du projet](http://rpf.io/p/en/codecraft-go)
 + [Trinket en-ligne contenant des ressources du projet "CodeFarication"](http://rpf.io/codecraft-on)
 
 ## Ressources pour le responsable de club
 
-+ [Fichier .zip contenant toutes les ressources du projet](solutions/codecraft-solution.zip)
++ [Fichier .zip contenant toutes les ressources du projet](http://rpf.io/p/en/codecraft-get)
 + [Trinket Python en-ligne completé](https://trinket.io/python/ebc5b0148b)
 
 \--- /collapse \---
