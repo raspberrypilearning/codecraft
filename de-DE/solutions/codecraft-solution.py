@@ -190,22 +190,25 @@ def zeichneInventar():
       grafikT.write("Herstellen")
     #Position für das Inventar berechnen
     xPosition = 70
-    yPosition = hoehe - (WELTHOEHE * FELDGROESSE) - 80
+    yPostition = height - (MAPHEIGHT * TILESIZE) - 60
     elementNummer = 0
     for i, element in enumerate(ressourcen):
       #füge das Bild hinzu
-      grafikT.goto(xPosition, yPosition)
+      rendererT.goto(xPosition + 10, yPostition)
       grafikT.shape(texturen[element])
       grafikT.stamp()
       # Füge die Anzahl im Inventar hinzu
       grafikT.goto(xPosition, yPosition - FELDGROESSE)
       grafikT.write(inventar[element])
-      #füge die Taste zum Ablegen hinzu
+      #add the name
       grafikT.goto(xPosition, yPosition - FELDGROESSE - 20)
+      rendererT.write('[' + names[item] + ']')
+      #füge die Taste zum Ablegen hinzu
+      grafikT.goto(xPosition, yPosition - FELDGROESSE - 40)
       grafikT.write(tastenZumAblegen[element])
       #füge die Taste zum Herstellen hinzu
       if herstellenMit.get(element) != None:
-        grafikT.goto(xPosition, yPosition - FELDGROESSE - 40)
+        rendererT.goto(xPosition, yPostition - TILESIZE - 60)
         grafikT.write(tastenZumHerstellen[element])     
       #gehe weiter um das nächste Element vom Inventar abzulegen
       xPosition += 50
