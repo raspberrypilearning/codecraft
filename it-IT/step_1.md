@@ -97,12 +97,12 @@ Questo progetto include elementi tratti dalle seguenti componenti del [Digital M
 
 ## Risorse del progetto
 
-+ [File .zip con tutte le risorse del progetto](resources/codecraft-resources.zip)
++ [File .zip con tutte le risorse del progetto](http://rpf.io/p/en/codecraft-go)
 + [Trinket online contenente tutte le risorse del progetto 'CodeCraft'](http://rpf.io/codecraft-on)
 
 ## Risorse per gli organizzatori dei club
 
-+ [File .zip con tutte le risorse del progetto](solutions/codecraft-solution.zip)
++ [File .zip con tutte le risorse del progetto](http://rpf.io/p/en/codecraft-get)
 + [Trinket online completato](https://trinket.io/python/ebc5b0148b)
 
 \--- /collapse \---
