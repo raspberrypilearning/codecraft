@@ -97,12 +97,12 @@ Dieses Projekt umfasst Elemente aus den folgenden Zweigen des [Raspberry Pi Digi
 
 ## Projektressourcen
 
-+ [.zip-Datei mit allen Projektressourcen](resources/codecraft-resources.zip)
++ [.zip-Datei mit allen Projektressourcen](http://rpf.io/p/en/codecraft-go)
 + [Online Trinket mit allen Ressourcen des 'CodeCraft'-Projekts](http://rpf.io/codecraft-on)
 
 ## Ressourcen für Clubleiter
 
-+ [.zip-Datei mit allen fertig gestellten Projektressourcen](solutions/codecraft-solution.zip)
++ [.zip-Datei mit allen fertig gestellten Projektressourcen](http://rpf.io/p/en/codecraft-get)
 + [Vollständiges Trinket-Projekt (online)](https://trinket.io/python/ebc5b0148b)
 
 \--- /collapse \---
