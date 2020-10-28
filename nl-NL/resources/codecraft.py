@@ -190,22 +190,25 @@ def tekenInventaris():
       rendererT.write("maak")
     #bepaal de positie van de inventaris
     xPositie = 70
-    yPositie = hoogte - (KAARTHOOGTE * TEGELGROOTTE) - 80
+    yPostition = height - (MAPHEIGHT * TILESIZE) - 60
     itemNum = 0
     for i, item in enumerate(bronnen):
       #voeg de afbeelding toe
-      rendererT.goto(xPositie, yPositie)
+      rendererT.goto(xPosition + 10, yPostition)
       rendererT.shape(materialen[item])
       rendererT.stamp()
       #voeg het nummer in de inventaris toe
       rendererT.goto(xPositie, yPositie - TEGELGROOTTE)
       rendererT.write(inventaris[item])
-      #voeg 'plaats'toets toe
+      #add the name
       rendererT.goto(xPositie, yPositie - TEGELGROOTTE - 20)
+      rendererT.write('[' + names[item] + ']')
+      #voeg 'plaats'toets toe
+      rendererT.goto(xPositie, yPostitie - TEGELGROOTTE - 40)
       rendererT.write(plaatstoetsen[item])
       #voeg 'maak'toets toe
       if maken.get(item) != None:
-        rendererT.goto(xPositie, yPostitie - TEGELGROOTTE - 40)
+        rendererT.goto(xPosition, yPostition - TILESIZE - 60)
         rendererT.write(maaktoetsen[item])     
       #ga door naar het volgende inventaris item
       xPositie += 50
@@ -315,5 +318,3 @@ genereerWillekeurigeWereld()
 tekenWereld()
 tekenInventaris()
 genereerInstructies()
-
-
