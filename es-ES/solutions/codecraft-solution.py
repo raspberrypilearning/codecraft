@@ -190,22 +190,25 @@ def drawInventory():
       rendererizadorT.write("crear")
     #determina la posición del inventario
     posicionX = 70
-    posicionY = altura - (ALTURAMAPA * TAMANYOCASILLA) - 80
+    yPostition = height - (MAPHEIGHT * TILESIZE) - 60
     numObjeto = 0
     for i, item in enumerate(recursos):
       #añade la imagen
-      renderizadorT.goto(posicionX, posicionY)
+      rendererT.goto(xPosition + 10, yPostition)
       renderizadorT.shape(texturas[objeto])
       renderizadorT.stamp()
       #añade el número al inventario
       renderizadorT.goto(posicionX, posicionY - TAMANYOCASILLA)
       renderizadorT.write(inventario[objeto])
-      #añade la tecla para colocar
+      #add the name
       renderizadorT.goto(posicionX, posicionY - TAMANYOCASILLA - 20)
+      rendererT.write('[' + names[item] + ']')
+      #añade la tecla para colocar
+      renderizadorT.goto(posicionX, posicionY - TAMANYOCASILLA - 40)
       renderizadorT.write(teclasParaColocar[objeto])
       #añade la tecla para crear
       if crafting.get(objeto) != None:
-        renderizadorT.goto(posicionX, posicionY - TAMANYOCASILLA - 40)
+        rendererT.goto(xPosition, yPostition - TILESIZE - 60)
         renderizadorT.write(teclasParaCrear[objeto])     
       #avanza para poner el próximo artículo del inventario
       posicionX += 50
