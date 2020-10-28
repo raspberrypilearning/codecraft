@@ -97,12 +97,12 @@ This project covers elements from the following strands of the [Raspberry Pi Dig
 
 ## Project resources
 
-+ [.zip file containing all project resources](resources/codecraft-resources.zip)
++ [.zip file containing all project resources](http://rpf.io/p/en/codecraft-go)
 + [Online Trinket containing all 'CodeCraft' project resources](http://rpf.io/codecraft-on)
 
 ## Club leader resources
 
-+ [.zip file containing all completed project resources](solutions/codecraft-solution.zip)
++ [.zip file containing all completed project resources](http://rpf.io/p/en/codecraft-get)
 + [Online completed Trinket project](https://trinket.io/python/ebc5b0148b)
 
 \--- /collapse \---
