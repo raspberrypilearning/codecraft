@@ -1,6 +1,6 @@
 ## Elabora tablas de madera
 
-Let's create a new plank resource that be crafted from wood.
+Vamos a crear un nuevo recurso: tabla, creado a partir de madera.
 
 + Primero, añade una nueva variable `PLANK` a tu juego.
     
