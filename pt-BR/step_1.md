@@ -97,12 +97,12 @@ Este projeto abrange elementos das seguintes vertentes do [Currículo de Criaç�
 
 ## Recursos do projeto
 
-+ [Arquivo .zip contendo todos os recursos do projeto](resources/codecraft-resources.zip)
++ [Arquivo .zip contendo todos os recursos do projeto](http://rpf.io/p/en/codecraft-go)
 + [Trinket Online contendo todos os recursos do projeto 'CodeCraft'](http://rpf.io/codecraft-on)
 
 ## Recursos do líder do clube
 
-+ [Arquivo .zip contendo todos os recursos do projeto concluídos](solutions/codecraft-solution.zip)
++ [Arquivo .zip contendo todos os recursos do projeto concluídos](http://rpf.io/p/en/codecraft-get)
 + [Trinket Online contendo o projeto concluído](https://trinket.io/python/ebc5b0148b)
 
 \--- /collapse \---
