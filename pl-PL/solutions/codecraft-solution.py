@@ -190,22 +190,25 @@ def rysujEkwipunek():
       rendererT.write("buduj")
     # ustaw pozycję ekwipunku
     xPosition = 70
-    yPostition = height - (WYSOKOSCMAPY * ROZMIARKLOCKA) - 80
+    yPostition = height - (MAPHEIGHT * TILESIZE) - 60
     itemNum = 0
     for i, element in enumerate(zasoby):
       # dodaj obrazek
-      rendererT.goto(xPosition, yPostition)
+      rendererT.goto(xPosition + 10, yPostition)
       rendererT.shape(tekstury[element])
       rendererT.stamp()
       # dodaj numer do ekwipunku
       rendererT.goto(xPosition, yPostition - ROZMIARKLOCKA)
       rendererT.write(ekwipunek[element])
-      # dodaj klawisz wstawiania
+      #add the name
       rendererT.goto(xPosition, yPostition - ROZMIARKLOCKA - 20)
+      rendererT.write('[' + names[item] + ']')
+      # dodaj klawisz wstawiania
+      rendererT.goto(xPosition, yPostition - ROZMIARKLOCKA - 40)
       rendererT.write(klawiszeumieszczania[element])
       # dodaj klawisz do budowania
       if budowanie.get(element) != None:
-        rendererT.goto(xPosition, yPostition - ROZMIARKLOCKA - 40)
+        rendererT.goto(xPosition, yPostition - TILESIZE - 60)
         rendererT.write(klawiszetworzenia[element])     
       # przesuń się, aby wstawić następny element ekwipunku
       xPosition += 50
