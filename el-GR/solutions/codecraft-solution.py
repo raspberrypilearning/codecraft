@@ -190,22 +190,25 @@ def drawInventory():
       rendererT.write("δημιουργία")
     #ορίζει τη θέση του αποθέματος
     xPosition = 70
-    yPostition = height - (MAPHEIGHT * TILESIZE) - 80
+    yPostition = height - (MAPHEIGHT * TILESIZE) - 60
     itemNum = 0
     for i, item in enumerate(resources):
       #προσθέτει την εικόνα
-      rendererT.goto(xPosition, yPostition)
+      rendererT.goto(xPosition + 10, yPostition)
       rendererT.shape(textures[item])
       rendererT.stamp()
       #προσθέτει το νούμερο στο απόθεμα
       rendererT.goto(xPosition, yPostition - TILESIZE)
       rendererT.write(inventory[item])
-      #προσθέτει το πλήκτρο τοποθέτησης
+      #add the name
       rendererT.goto(xPosition, yPostition - TILESIZE - 20)
+      rendererT.write('[' + names[item] + ']')
+      #προσθέτει το πλήκτρο τοποθέτησης
+      rendererT.goto(xPosition, yPostition - TILESIZE - 40)
       rendererT.write(placekeys[item])
       #προσθέτει το πλήκτρο δημιουργίας
       if crafting.get(item) != None:
-        rendererT.goto(xPosition, yPostition - TILESIZE - 40)
+        rendererT.goto(xPosition, yPostition - TILESIZE - 60)
         rendererT.write(craftkeys[item])     
       #μεταφέρεται στο επόμενο αντικείμενο του αποθέματος
       xPosition += 50
