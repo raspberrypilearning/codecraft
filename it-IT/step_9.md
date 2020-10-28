@@ -2,7 +2,7 @@
 
 ## Sfida: Fabbricare il vetro con la sabbia
 
-Puoi creare una nuova risorsa di vetro, che può essere fabbricata dalla sabbia? Puoi utilizzare i passaggi precedenti per aiutarti.
+Riesci a creare una nuova risorsa, il vetro, che può essere fabbricata dalla sabbia? Puoi utilizzare i passaggi precedenti per aiutarti.
 
 ![schermata](images/craft-glass.png)
 
