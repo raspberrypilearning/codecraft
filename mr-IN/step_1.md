@@ -10,7 +10,7 @@
 
 ### क्लब प्रमुखांसाठी अधिक माहिती
 
-तुम्हाला जर हा प्रकल्प print करायचा असेल तर तुम्ही [Printer friendly version](https://projects.raspberrypi.org/en/projects/codecraft/print) चा वापर करू शकता.
+If you need to print this project, please use the [Printer friendly version](https://projects.raspberrypi.org/en/projects/codecraft/print).
 
 ## \--- collapse \---
 
@@ -32,7 +32,7 @@
 
 ## ऑफलाइन संसाधने
 
-तुम्हाला पसंत असल्यास हा प्रकल्प [ completed offline ](https://www.codeclubprojects.org/en-GB/resources/python-working-offline/)केला जाऊ शकतो. तुम्ही या प्रकल्पाची संसाधने 'Project Materials' link वर​ क्लिक करून मिळवू शकता. ह्या लिंक मध्ये एक 'Project Resources' नामक विभाग आहे, ज्यामध्ये मुलांना हा प्रकल्प ऑफलाइन पूर्ण करण्यासाठी लागणारी संसाधने आहेत. प्रत्येक मुलाकडे संसाधनांची प्रत असल्याचे सुनिश्चित करा. या विभागात खालील फायली समाविष्ट आहेत:
+तुम्ही प्राधान्य दिल्यास हा प्रकल्प [ ऑफलाइन पूर्ण केला जाऊ शकतो ](https://www.codeclubprojects.org/en-GB/resources/python-working-offline/) . तुम्ही या प्रकल्पाची संसाधने 'Project Materials' link वर​ क्लिक करून मिळवू शकता. ह्या लिंक मध्ये एक 'Project Resources' नामक विभाग आहे, ज्यामध्ये मुलांना हा प्रकल्प ऑफलाइन पूर्ण करण्यासाठी लागणारी संसाधने आहेत. प्रत्येक मुलाकडे संसाधनांची प्रत असल्याचे सुनिश्चित करा. या विभागात खालील फायली समाविष्ट आहेत:
 
 + codecraft/codecraft.py
 + codecraft/variables.py
@@ -97,12 +97,12 @@
 
 ## प्रकल्प संसाधने
 
-+ [सर्व प्रकल्पाची संसाधने असलेली.zip फाइल](resources/codecraft-resources.zip)
++ [सर्व प्रकल्पाची संसाधने असलेली.zip फाइल](http://rpf.io/p/en/codecraft-go)
 + [ऑनलाईन Trinketज्यात सर्व 'CodeCraft' प्रकल्प संसाधने आहेत](http://rpf.io/codecraft-on)
 
 ## क्लब प्रमुखसाठी संसाधने
 
-+ [सर्व पूर्ण प्रकल्पाची संसाधने असलेली.zip फाइल](solutions/codecraft-solution.zip)
++ [सर्व पूर्ण प्रकल्पाची संसाधने असलेली.zip फाइल](http://rpf.io/p/en/codecraft-get)
 + [ऑनलाईन पूर्ण Trinket प्रकल्प](https://trinket.io/python/ebc5b0148b)
 
 \--- /collapse \---
