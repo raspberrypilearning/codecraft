@@ -97,12 +97,12 @@
 
 ## موارد المشروع
 
-+ [ملف.zip يحتوي على كل موارد المشروع](resources/codecraft-resources.zip)
++ [ملف.zip يحتوي على كل موارد المشروع](http://rpf.io/p/en/codecraft-go)
 + [Trinket عبر الإنترنت يحتوي على كل موارد مشروع 'صناعة الأكواد'](http://rpf.io/codecraft-on)
 
 ## موارد قائد النادي
 
-+ [ملف.zip يحتوي على جميع موارد المشروع المكتملة](solutions/codecraft-solution.zip)
++ [ملف.zip يحتوي على جميع موارد المشروع المكتملة](http://rpf.io/p/en/codecraft-get)
 + [مشروع Trinket المكتمل على الإنترنت](https://trinket.io/python/ebc5b0148b)
 
 \--- /collapse \---
