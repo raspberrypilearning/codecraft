@@ -2,7 +2,7 @@
 
 ## Sfida: Crea la sabbia
 
-Puoi aggiungere una risorsa `SABBIA` per il tuo gioco? Puoi utilizzare i passaggi precedenti per aiutarti.
+Riesci ad aggiungere la risorsa `SABBIA` al tuo gioco? Puoi utilizzare i passaggi precedenti per aiutarti.
 
 ![schermata](images/craft-sand.png)
 
