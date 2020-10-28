@@ -97,12 +97,12 @@
 
 ## Πόροι έργου
 
-+ [αρχείο .zip που περιέχει όλους τους πόρους του έργου](resources/codecraft-resources.zip)
++ [αρχείο .zip που περιέχει όλους τους πόρους του έργου](http://rpf.io/p/en/codecraft-go)
 + [Online Trinket που περιέχει όλους τους πόρους του έργου "CodeCraft"](http://rpf.io/codecraft-on)
 
 ## Πόροι συντονιστή ομάδας
 
-+ [Αρχείο .zip που περιέχει όλους τους πόρους του έργου](solutions/codecraft-solution.zip)
++ [Αρχείο .zip που περιέχει όλους τους πόρους του έργου](http://rpf.io/p/en/codecraft-get)
 + [Online ολοκληρωμένο έργο Trinket](https://trinket.io/python/ebc5b0148b)
 
 \--- /collapse \---
