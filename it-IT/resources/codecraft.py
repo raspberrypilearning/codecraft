@@ -190,22 +190,25 @@ def disegnaInventario():
       visualizzatoreT.write("crea")
     #determina la posizione dell'inventario
     PosizioneX = 70
-    PosizioneY = altezza - (ALTEZZAMAPPA * DIMENSIONECASELLA) - 80
+    yPostition = height - (MAPHEIGHT * TILESIZE) - 60
     oggettoNum = 0
     for i, oggetto in enumerate(risorse):
       #aggiungi l'immagine
-      visualizzatoreT.goto(PosizioneX, PosizioneY)
+      rendererT.goto(xPosition + 10, yPostition)
       visualizzatoreT.shape(immagini[oggetto])
       visualizzatoreT.stamp()
       #aggiungi il numero nell'inventario
       visualizzatoreT.goto(PosizioneX, PosizioneY - DIMENSIONECASELLA)
       visualizzatoreT.write(inventario[oggetto])
-      #aggiungi il tasto alla posizione
+      #add the name
       visualizzatoreT.goto(PosizioneX, PosizioneY - DIMENSIONECASELLA - 20)
+      rendererT.write('[' + names[item] + ']')
+      #aggiungi il tasto alla posizione
+      visualizzatoreT.goto(PosizioneX, PosizioneY - DIMENSIONECASELLA - 40)
       visualizzatoreT.write(tastiPosizione[oggetto])
       #aggiungi il tasto alla creazione
       if creazione.get(oggetto) != None:
-        visualizzatoreT.goto(PosizioneX, PosizioneY - DIMENSIONECASELLA - 40)
+        rendererT.goto(xPosition, yPostition - TILESIZE - 60)
         visualizzatoreT.write(tastiCreazione[oggetto])     
       #avanza per posizionare l'oggetto successivo nell'inventario
       PosizioneX += 50
@@ -317,5 +320,3 @@ generaMondoAleatorio()
 disegnaMondo()
 disegnaInventario()
 generaIstruzioni()
-
-
