@@ -97,12 +97,12 @@
 
 ## プロジェクトリソース
 
-+ [全プロジェクト・リソースの入った.zipファイル](resources/codecraft-resources.zip)
++ [全プロジェクト・リソースの入った.zipファイル](http://rpf.io/p/en/codecraft-go)
 + [「コードクラフト」プロジェクト・リソースの入ったのオンラインtrinket](http://rpf.io/codecraft-on)
 
 ## クラブ・リーダー向けリソース
 
-+ [全プロジェクトの完成版リソースの入った.zipファイル](solutions/codecraft-solution.zip)
++ [全プロジェクトの完成版リソースの入った.zipファイル](http://rpf.io/p/en/codecraft-get)
 + [完成版プロジェクトのオンラインtrinket](https://trinket.io/python/ebc5b0148b)
 
 \--- /collapse \---
