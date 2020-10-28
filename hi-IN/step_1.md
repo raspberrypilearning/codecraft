@@ -97,12 +97,12 @@
 
 ## परियोजना संसाधन
 
-+ [सभी परियोजना संसाधनों वाली .zip फ़ाइल](resources/codecraft-resources.zip)
++ [सभी परियोजना संसाधनों वाली .zip फ़ाइल](http://rpf.io/p/en/codecraft-go)
 + [ऑनलाइन Trinket जिसमें सभी 'CodeCraft' प्रोजेक्ट संसाधन हैं](http://rpf.io/codecraft-on)
 
 ## क्लब लीडर ले लिए संसाधन
 
-+ [सभी परियोजना संसाधनों वाली .zip फ़ाइल](solutions/codecraft-solution.zip)
++ [सभी परियोजना संसाधनों वाली .zip फ़ाइल](http://rpf.io/p/en/codecraft-get)
 + [ऑनलाइन पूर्ण की गयी Trinket परियोजना](https://trinket.io/python/ebc5b0148b)
 
 \--- /collapse \---
