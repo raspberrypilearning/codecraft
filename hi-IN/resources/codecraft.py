@@ -190,22 +190,25 @@ def drawInventory():
       rendererT.write("craft")
     #सूची की स्थिति निर्धारित करें
     xPosition = 70
-    yPostition = height - (MAPHEIGHT * TILESIZE) - 80
+    yPostition = height - (MAPHEIGHT * TILESIZE) - 60
     itemNum = 0
     for i, item in enumerate(resources):
       #छवि जोड़ें
-      rendererT.goto(xPosition, yPostition)
+      rendererT.goto(xPosition + 10, yPostition)
       rendererT.shape(textures[item])
       rendererT.stamp()
       #इन्वेंट्री में संख्या जोड़ें
       rendererT.goto(xPosition, yPostition - TILESIZE)
       rendererT.write(inventory[item])
-      #जगह की कुंजी जोड़ें
+      #add the name
       rendererT.goto(xPosition, yPostition - TILESIZE - 20)
+      rendererT.write('[' + names[item] + ']')
+      #जगह की कुंजी जोड़ें
+      rendererT.goto(xPosition, yPostition - TILESIZE - 40)
       rendererT.write(placekeys[item])
       #शिल्प की कुंजी जोड़ें
       if crafting.get(item) != None:
-        rendererT.goto(xPosition, yPostition - TILESIZE - 40)
+        rendererT.goto(xPosition, yPostition - TILESIZE - 60)
         rendererT.write(craftkeys[item])     
       #अगली इन्वेंट्री आइटम रखने के लिए आगे बढे
       xPosition += 50
@@ -315,5 +318,3 @@ generateRandomWorld()
 drawWorld()
 drawInventory()
 generateInstructions()
-
-
