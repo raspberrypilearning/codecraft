@@ -97,12 +97,12 @@
 
 ## 项目资源
 
-+ [包含所有项目资源的.zip文件](resources/codecraft-resources.zip)
++ [包含所有项目资源的.zip文件](http://rpf.io/p/en/codecraft-go)
 + [在线Trinket包含所有“CodeCrafe”项目资源](http://rpf.io/codecraft-on)
 
 ## 俱乐部导师资源
 
-+ [包含所有完整版项目资源的.zip压缩包](solutions/codecraft-solution.zip)
++ [包含所有完整版项目资源的.zip压缩包](http://rpf.io/p/en/codecraft-get)
 + [在线完整版Trinket项目](https://trinket.io/python/ebc5b0148b)
 
 \--- /collapse \---
