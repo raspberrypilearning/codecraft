@@ -190,22 +190,25 @@ def drawInventory():
       rendererT.write(u"クラフト（組み合わせ）")
     #持ち物リストの位置を設定する
     xPosition = 70
-    yPostition = height - (MAPHEIGHT * TILESIZE) - 80
+    yPostition = height - (MAPHEIGHT * TILESIZE) - 60
     itemNum = 0
     for i, item in enumerate(resources):
       #画像を追加する
-      rendererT.goto(xPosition, yPostition)
+      rendererT.goto(xPosition + 10, yPostition)
       rendererT.shape(textures[item])
       rendererT.stamp()
       #リソースの数を持ち物リストに追加
       rendererT.goto(xPosition, yPostition - TILESIZE)
       rendererT.write(inventory[item])
-      #配置するキーを追加
+      #add the name
       rendererT.goto(xPosition, yPostition - TILESIZE - 20)
+      rendererT.write('[' + names[item] + ']')
+      #配置するキーを追加
+      rendererT.goto(xPosition, yPostition - TILESIZE - 40)
       rendererT.write(placekeys[item])
       #クラフトキーを追加する
       if crafting.get(item) != None:
-        rendererT.goto(xPosition, yPostition - TILESIZE - 40)
+        rendererT.goto(xPosition, yPostition - TILESIZE - 60)
         rendererT.write(craftkeys[item])     
       #移動して次のアイテムを配置
       xPosition += 50
@@ -315,5 +318,3 @@ generateRandomWorld()
 drawWorld()
 drawInventory()
 generateInstructions()
-
-
