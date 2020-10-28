@@ -97,12 +97,12 @@
 
 ## 프로젝트 리소스
 
-+ [프로젝트의 모든 자료가 들어있는 .zip 파일](resources/codecraft-resources.zip)
++ [프로젝트의 모든 자료가 들어있는 .zip 파일](http://rpf.io/p/en/codecraft-go)
 + [코드크래프트 프로젝트 자료가 포함된 온라인 Trinket](http://rpf.io/codecraft-on)
 
 ## 교육자를 위한 자료
 
-+ [완료된 프로젝트 리소스가 담긴 .zip 파일](solutions/codecraft-solution.zip)
++ [완료된 프로젝트 리소스가 담긴 .zip 파일](http://rpf.io/p/en/codecraft-get)
 + [완성된 온라인 Trinket 프로젝트](https://trinket.io/python/ebc5b0148b)
 
 \--- /collapse \---
