@@ -97,12 +97,12 @@
 
 ## ಯೋಜನೆಯ resouceಗಳು
 
-+ [ಎಲ್ಲ project resources ಹೊಂದಿರುವ .zip file](resources/codecraft-resources.zip)
++ [ಎಲ್ಲ project resources ಹೊಂದಿರುವ .zip file](http://rpf.io/p/en/codecraft-go)
 + [Online Trinket ಹೊಂದಿರುವ ಎಲ್ಲಾ 'CodeCraft' project resources](http://rpf.io/codecraft-on)
 
 ## ಕ್ಲಬ್ ನಾಯಕ ಸಂಪನ್ಮೂಲಗಳು
 
-+ [ಮುಗಿದ project resources ಹೊಂದಿರುವ.zip file](solutions/codecraft-solution.zip)
++ [ಮುಗಿದ project resources ಹೊಂದಿರುವ.zip file](http://rpf.io/p/en/codecraft-get)
 + [Online ಮುಗಿದಿರುವ Trinket project](https://trinket.io/python/ebc5b0148b)
 
 \--- /collapse \---
