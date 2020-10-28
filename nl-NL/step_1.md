@@ -97,12 +97,12 @@ Dit project behandelt elementen uit de volgende onderdelen van het [Raspberry Pi
 
 ## Projectbronnen
 
-+ [.zip-bestand met alle projectbronnen](resources/codecraft-resources.zip)
++ [.zip-bestand met alle projectbronnen](http://rpf.io/p/en/codecraft-go)
 + [Online Trinket met alle 'CodeCraft' projectbronnen](http://rpf.io/codecraft-on)
 
 ## Clubleiderbronnen
 
-+ [.zip-bestand met alle voltooide projectresources](solutions/codecraft-solution.zip)
++ [.zip-bestand met alle voltooide projectresources](http://rpf.io/p/en/codecraft-get)
 + [Online voltooid Trinket-project](https://trinket.io/python/ebc5b0148b)
 
 \--- /collapse \---
