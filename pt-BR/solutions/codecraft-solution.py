@@ -190,22 +190,25 @@ def desenhar_inventario():
       tornar_r.write("Fabricar")
     #Definir a posição do inventário
     inventario_x = 70
-    inventario_y = altura - (ALTURA_MAPA * TAMANHO_BLOCO) - 80
+    yPostition = height - (MAPHEIGHT * TILESIZE) - 60
     itemNum = 0
     for i, item in enumerate(recursos):
       #Adicionar as imagens
-      tornar_r.goto(inventario_x, inventario_y)
+      rendererT.goto(xPosition + 10, yPostition)
       tornar_r.shape(texturas[item])
       tornar_r.stamp()
       #Adiciona os números das quantidades dos recursos no inventário
       tornar_r.goto(inventario_x, inventario_y - TAMANHO_BLOCO)
       tornar_r.write(inventario[item])
-      #Adiciona as teclas para adicionar cada um dos recursos no inventário
+      #add the name
       tornar_r.goto(inventario_x, inventario_y - TAMANHO_BLOCO - 20)
+      rendererT.write('[' + names[item] + ']')
+      #Adiciona as teclas para adicionar cada um dos recursos no inventário
+      tornar_r.goto(inventario_x, inventario_y - TAMANHO_BLOCO - 40)
       tornar_r.write(chaves_colocar[item])
       #Adiciona as teclas para fabricar os recursos
       if fabricando.get(item) != None:
-        tornar_r.goto(inventario_x, inventario_y - TAMANHO_BLOCO - 40)
+        rendererT.goto(xPosition, yPostition - TILESIZE - 60)
         tornar_r.write(chaves_fabricar[item])     
       #Coloca cada um dos recursos no inventário
       inventario_x += 50
