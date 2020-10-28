@@ -97,12 +97,12 @@
 
 ## 專案資源
 
-+ [包含所有專案資源的.zip文件](resources/codecraft-resources.zip)
++ [包含所有專案資源的.zip文件](http://rpf.io/p/en/codecraft-go)
 + [線上Trinket包含所有'CodeCraft'專案資源](http://rpf.io/codecraft-on)
 
 ## 教師資源
 
-+ [包含所有專案資源的.zip文件](solutions/codecraft-solution.zip)
++ [包含所有專案資源的.zip文件](http://rpf.io/p/en/codecraft-get)
 + [已完成的線上Trinket專案](https://trinket.io/python/ebc5b0148b)
 
 \--- /collapse \---
