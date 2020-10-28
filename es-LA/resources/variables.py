@@ -1,75 +1,75 @@
 #!/bin/python3
 
-#Game variables that can be changed!
+#¡Variables del juego que se puede cambiar!
 
-#game background colour.
-BACKGROUNDCOLOUR = 'white'
+#color del fondo del juego.
+COLORDELFONDO = 'white'
 
-#map variables.
-MAXTILES  = 20
-MAPWIDTH  = 10
-MAPHEIGHT = 10
+#variables del mapa.
+MAXCASILLAS  = 20
+ANCHOMAPA  = 10
+ALTURAMAPA = 10
 
-#variables representing the different resources.
-DIRT    = 0
-GRASS   = 1
-WATER   = 2
-BRICK   = 3
+#variables que representan los recursos distintos.
+TIERRA    = 0
+CESPED   = 1
+AGUA   = 2
+LADRILLO   = 3
 
-#a list of all game resources.
-resources = [DIRT,GRASS,WATER,BRICK]
+#una lista de todos recursos del juego.
+recursos = [TIERRA,CESPED,AGUA,LADRILLO]
 
-#the names of the resources.
-names = {
-  DIRT    : 'dirt',
-  GRASS   : 'grass',
-  WATER   : 'water',
-  BRICK   : 'brick'
+#los nombres de los recursos.
+nombres = {
+  TIERRA    : 'tierra',
+  CESPED   : 'césped',
+  AGUA   : 'agua',
+  LADRILLO   : 'ladrillo'
 }
 
-#a dictionary linking resources to images.
-textures = {
-  DIRT    : 'dirt.gif',
-  GRASS   : 'grass.gif',
-  WATER   : 'water.gif',
-  BRICK   : 'brick.gif'
+#un diccionario que conecta los recursos a las imágenes.
+texturas = {
+  TIERRA    : 'dirt.gif',
+  CESPED   : 'grass.gif',
+  AGUA   : 'water.gif',
+  LADRILLO   : 'brick.gif'
 }
 
-#the number of each resource the player has.
-inventory = {
-  DIRT    : 10,
-  GRASS   : 10,
-  WATER   : 10,
-  BRICK   : 0
+#la cantidad de cada recurso que tiene el jugador.
+inventario = {
+  TIERRA    : 10,
+  CESPED   : 10,
+  AGUA   : 10,
+  LADRILLO   : 0
 }
 
-#the player image.
-playerImg = 'player.gif'
+#la imagen del jugador.
+imgJugador = 'player.gif'
 
-#the player position.
-playerX = 0
-playerY = 0
+#la posición del jugador.
+jugadorX = 0
+jugadorY = 0
 
-#rules to make new resources.
+#las reglas para crear nuevos recursos.
 crafting = {
-  BRICK    : { WATER : 1, DIRT : 2 }
+  LADRILLO    : { AGUA : 1, TIERRA : 2 }
 }
 
-#keys for placing resources.
-placekeys = {
-  DIRT  : '1',
-  GRASS : '2',
-  WATER : '3',
-  BRICK : '4'
+#las teclas para poner recursos.
+teclasParaColocar = {
+  TIERRA: '1',
+  CESPED: '2',
+  AGUA: '3',
+  LADRILLO: '4'
 }
 
-#keys for crafting tiles.
-craftkeys = {
-  BRICK : 'r'
+#las teclas para crear las casillas.
+teclasParaCrear = {
+  LADRILLO: 'r'
 }
 
-#game instructions that are displayed.
-instructions =  [
-  'Instructions:',
-  'Use WASD to move'
+#instrucciones del juego que se muestran.
+instrucciones =  [
+  'Instrucciones:',
+  'Usa las teclas WASD para moverte'
 ]
