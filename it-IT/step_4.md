@@ -6,7 +6,7 @@ Modifichiamo alcune variabili per cambiare il funzionamento del tuo gioco.
     
     ![schermata](images/craft-variables.png)
 
-+ Cambia il valore del tuo `COLORESFONDO` variabile e fai clic su "Esegui" per vedere la modifica al tuo gioco.
++ Cambia il valore della tua variabile `COLORESFONDO` e fai clic su "Esegui" per vedere la modifica al tuo gioco.
     
     ![schermata](images/craft-background.png)
 
