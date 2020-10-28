@@ -190,22 +190,25 @@ def dessineInventaire():
       rendererT.write("fabriquer")
     #paramètre la position de l’inventaire
     xPosition = 70
-    yPosition = hauteur- (HAUTEURCARTE* TAILLETUILE) - 80
+    yPostition = height - (MAPHEIGHT * TILESIZE) - 60
     itemNum = 0
     for i, item in enumerate(ressources):
       #ajoute l'image
-      rendererT.goto(xPosition, yPosition)
+      rendererT.goto(xPosition + 10, yPostition)
       rendererT.shape(textures[item])
       rendererT.stamp()
       #ajoute le numéro dans l'inventaire
       rendererT.goto(xPosition, yPosition - TAILLETUILE)
       rendererT.write(inventaire[item])
-      #ajoute la touche de placement
+      #add the name
       rendererT.goto(xPosition, yPosition - TAILLETUILE - 20)
+      rendererT.write('[' + names[item] + ']')
+      #ajoute la touche de placement
+      rendererT.goto(xPosition, yPosition - TAILLETUILE - 40)
       rendererT.write(touchesPlacement[item])
       #ajoute la touche de fabrication
       if fabrication.get(item) != None:
-        rendererT.goto(xPosition, yPosition - TAILLETUILE - 40)
+        rendererT.goto(xPosition, yPostition - TILESIZE - 60)
         rendererT.write(touchesFabrication[item])     
       #se déplace sur la longueur pour placer l'élément d'inventaire suivant
       xPosition += 50
@@ -315,5 +318,3 @@ genereUnMondeAleatoire()
 dessineCarte()
 dessineInventaire()
 genereInstructions()
-
-
