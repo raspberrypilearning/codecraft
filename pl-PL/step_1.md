@@ -97,12 +97,12 @@ Ten projekt obejmuje zagadnienia zawarte w [Programie nauczania Raspberry Pi Dig
 
 ## Zasoby projektu
 
-+ [Plik .zip zawierający wszystkie zasoby potrzebne do wykonania projektu](resources/codecraft-resources.zip)
++ [Plik .zip zawierający wszystkie zasoby potrzebne do wykonania projektu](http://rpf.io/p/en/codecraft-go)
 + [Trinket zawierający wszystkie zasoby projektu „CodeCraft”.](http://rpf.io/codecraft-on)
 
 ## Zasoby dla lidera klubu
 
-+ [Plik .zip zawierający zasoby z ukończonym projektem](solutions/codecraft-solution.zip)
++ [Plik .zip zawierający zasoby z ukończonym projektem](http://rpf.io/p/en/codecraft-get)
 + [Trinket zawierający wszystkie zasoby ukończonego projektu „CodeCraft”.](https://trinket.io/python/ebc5b0148b)
 
 \--- /collapse \---
