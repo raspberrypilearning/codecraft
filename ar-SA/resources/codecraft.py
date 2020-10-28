@@ -190,22 +190,25 @@ def drawInventory():
       rendererT.write("الصنعة")
     #ضبط منطقة المخزون
     xPosition = 70
-    yPostition = height - (MAPHEIGHT * TILESIZE) - 80
+    yPostition = height - (MAPHEIGHT * TILESIZE) - 60
     itemNum = 0
     for i, item in enumerate(resources):
       #اضف الصورة
-      rendererT.goto(xPosition, yPostition)
+      rendererT.goto(xPosition + 10, yPostition)
       rendererT.shape(textures[item])
       rendererT.stamp()
       #اضف قيمة المخزون
       rendererT.goto(xPosition, yPostition - TILESIZE)
       rendererT.write(inventory[item])
-      #اضف مفتاح للمكان
+      #add the name
       rendererT.goto(xPosition, yPostition - TILESIZE - 20)
+      rendererT.write('[' + names[item] + ']')
+      #اضف مفتاح للمكان
+      rendererT.goto(xPosition, yPostition - TILESIZE - 40)
       rendererT.write(placekeys[item])
       #اضف مفتاح للصناعة
       if crafting.get(item) != None:
-        rendererT.goto(xPosition, yPostition - TILESIZE - 40)
+        rendererT.goto(xPosition, yPostition - TILESIZE - 60)
         rendererT.write(craftkeys[item])     
       #التحرك لوضع عنصر المخزون التالي
       xPosition += 50
@@ -315,5 +318,3 @@ generateRandomWorld()
 drawWorld()
 drawInventory()
 generateInstructions()
-
-
