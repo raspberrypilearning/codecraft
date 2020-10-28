@@ -97,12 +97,12 @@ Este proyecto incluye los siguientes elementos del [Raspberry Pi Digital Making 
 
 ## Recursos del proyecto
 
-+ [El archivo.zip contiene todos los recursos del proyecto](resources/codecraft-resources.zip)
++ [El archivo.zip contiene todos los recursos del proyecto](http://rpf.io/p/en/codecraft-go)
 + [Trinket en línea contiene todos los recursos del proyecto 'CodeCraft'](http://rpf.io/codecraft-on)
 
 ## Recursos del líder del club
 
-+ [El archivo.zip contiene todos los recursos del proyecto](solutions/codecraft-solution.zip)
++ [El archivo.zip contiene todos los recursos del proyecto](http://rpf.io/p/en/codecraft-get)
 + [Proyecto Trinket completado en línea](https://trinket.io/python/ebc5b0148b)
 
 \--- /collapse \---
