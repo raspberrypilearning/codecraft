@@ -10,7 +10,7 @@
     
     ![schermata](images/craft-pickup.png)
 
-+ Premere i tasti numerici (da 1 a 3) per posizionare una risorsa sulla mappa. Ad esempio, premere 3 per posizionare un po d'acqua sulla mappa. Funzionerà solo se hai un po' d'acqua nel tuo inventario.
++ Premi i tasti numerici (da 1 a 3) per posizionare una risorsa sulla mappa. Ad esempio, premere 3 per posizionare un po d'acqua sulla mappa. Funzionerà solo se hai un po' d'acqua nel tuo inventario.
     
     ![schermata](images/craft-place-water.png)
 
