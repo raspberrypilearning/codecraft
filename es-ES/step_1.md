@@ -97,12 +97,12 @@ Este proyecto incluye elementos de los siguientes aspectos del [currículo de di
 
 ## Recursos del proyecto
 
-+ [archivo .zip que contiene todos los recursos del proyecto](resources/codecraft-resources.zip)
++ [archivo .zip que contiene todos los recursos del proyecto](http://rpf.io/p/en/codecraft-go)
 + [Trinket en línea que contiene todos los recursos del proyecto 'Creación de códigos'](http://rpf.io/codecraft-on)
 
 ## Recursos del líder del club
 
-+ [archivo .zip que contiene todos los recursos del proyecto](solutions/codecraft-solution.zip)
++ [archivo .zip que contiene todos los recursos del proyecto](http://rpf.io/p/en/codecraft-get)
 + [Proyecto Trinket completado en línea](https://trinket.io/python/ebc5b0148b)
 
 \--- /collapse \---
