@@ -1,8 +1,8 @@
 \--- challenge \---
 
-## Desafío: Construye tu mundo
+## Desafío: Construir tu mundo
 
-¿Puedes construir una casa con un jardín y una piscina? ¿Qué más puedes crear?
+¿Puedes construir una casa, con un jardín y una piscina? ¿Qué más puedes crear?
 
 ![captura de pantalla](images/craft-build-example.png)
 
