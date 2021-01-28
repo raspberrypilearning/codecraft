@@ -10,7 +10,7 @@ MAXCASILLAS  = 40
 ANCHOMAPA  = 20
 ALTURAMAPA = 15
 
-#variables que representan los recursos distintos.
+#variables que representan los diferentes recursos.
 TIERRA    = 0
 CESPED   = 1
 AGUA   = 2
@@ -67,10 +67,10 @@ jugadorX = 0
 jugadorY = 0
 
 #las teclas para poner recursos.
-teclasParaColocar = {
-  DIRT  : '1',
-  GRASS : '2',
-  WATER : '3',
+teclasParaPoner = {
+  TIERRA: '1',
+  CESPED: '2',
+  AGUA: '3',
   LADRILLO : '4',
   MADERA  : '5',
   ARENA  : '6',
@@ -85,7 +85,7 @@ crafting = {
   CRISTAL    : { ARENA : 3 }
 }
 
-#las teclas para crear fichas.
+#teclas para crear casillas.
 teclasParaCrear = {
   LADRILLO : 'r',
   TABLON : 'u',
