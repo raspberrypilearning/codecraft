@@ -56,14 +56,14 @@ crafting = {
 }
 
 #las teclas para poner recursos.
-teclasParaColocar = {
+teclasParaPoner = {
   TIERRA: '1',
   CESPED: '2',
   AGUA: '3',
   LADRILLO: '4'
 }
 
-#las teclas para crear las casillas.
+#teclas para crear casillas.
 teclasParaCrear = {
   LADRILLO: 'r'
 }
