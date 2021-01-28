@@ -1,4 +1,4 @@
-## Personaliza tu juego
+## Personalizar tu juego
 
 Modifiquemos algunas variables para cambiar el funcionamiento de tu juego.
 
@@ -6,10 +6,10 @@ Modifiquemos algunas variables para cambiar el funcionamiento de tu juego.
     
     ![captura de pantalla](images/craft-variables.png)
 
-+ Cambia el valor de tu variable `BACKGROUNDCOLOUR`, y haz clic en 'Run' para ver el cambio en tu juego.
++ Cambia el valor de tu variable `COLORDELFONDO`, y haz clic en 'Run' para ver el cambio en tu juego.
     
     ![captura de pantalla](images/craft-background.png)
 
-+ La variable ` MAXTILES ` es la cantidad de cada recurso que puedes mantener en tu inventario. Cambia esta variable si quieres almacenar más (o menos) que 20 de cada recurso.
++ La variable `MAXCASILLAS` es la cantidad de cada recurso que puedes mantener en tu inventario. Cambia esta variable si quieres almacenar más (o menos) que 20 de cada recurso.
     
     ![captura de pantalla](images/craft-maxtiles.png)
