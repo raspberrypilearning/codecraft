@@ -1,6 +1,6 @@
 #!/bin/python3
 
-#नाम परिवर्तन किए जा सकते हैं!
+#खेल के वेरिएबल जो बदले जा सकते हैं!
 
 #नई पृष्ठभूमि का रंग।
 BACKGROUNDCOLOUR = 'lightblue'
@@ -35,7 +35,7 @@ names = {
   GLASS   : 'glass'
 }
 
-#शब्दकोश संसाधनों को छवियों से जोड़ता हुआ।
+#संसाधनों को छवियों से जोड़ता हुआ शब्दकोश।
 textures = {
   DIRT    : 'dirt.gif',
   GRASS   : 'grass.gif',
@@ -66,7 +66,7 @@ playerImg = 'player.gif'
 playerX = 0
 playerY = 0
 
-#संसाधन रखने की कुंजी।
+#संसाधन रखने की कुंजियाँ।
 placekeys = {
   DIRT  : '1',
   GRASS : '2',
@@ -85,7 +85,7 @@ crafting = {
   GLASS    : { SAND : 3 }
 }
 
-#टाइल बनाने की कुंजी।
+#टाइल बनाने की कुंजियाँ।
 craftkeys = {
   BRICK : 'r',
   PLANK : 'u',
