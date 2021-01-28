@@ -91,9 +91,9 @@ def craft(resource):
   #अगर संसाधन तैयार किया जा सकता है...
   if resource in crafting:
     #हमारे पास संसाधन हैं या नहीं, इसका ध्यान रखता है
-    #इस आइटम को शिल्प करने के लिए
+    #इस वस्तु को शिल्प करने के लिए
     canBeMade = True
-    #आइटम को शिल्प करने के लिए आवश्यक प्रत्येक संसाधन
+    #संसाधन को शिल्प करने के लिए आवश्यक प्रत्येक वस्तु
     for i in crafting[resource]:
       #...अगर हमारे पास पर्याप्त नहीं है...
       if crafting[resource][i] > inventory[i]:
@@ -102,7 +102,7 @@ def craft(resource):
         break
     #यदि हम इसे तैयार कर सकते हैं (हमारे पास सभी आवश्यक संसाधन हैं)
     if canBeMade == True:
-      #इन्वेंट्री से प्रत्येक आइटम ले
+      #इन्वेंट्री से प्रत्येक वस्तु ले
       for i in crafting[resource]:
         inventory[i] -= crafting[resource][i]
       #सूची में बनायीं गई वस्तु को जोड़ें
@@ -200,7 +200,7 @@ def drawInventory():
       #इन्वेंट्री में संख्या जोड़ें
       rendererT.goto(xPosition, yPostition - TILESIZE)
       rendererT.write(inventory[item])
-      #add the name
+      #नाम जोड़ें
       rendererT.goto(xPosition, yPostition - TILESIZE - 20)
       rendererT.write('[' + names[item] + ']')
       #जगह की कुंजी जोड़ें
@@ -308,14 +308,14 @@ rendererT.setheading(90)
 #यादृच्छिक संसाधनों की एक दुनिया बनाएँ।
 world = [ [DIRT for w in range(MAPHEIGHT)] for h in range(MAPWIDTH) ]
 
-#आगे बढ़ने और लेने के लिए सही फंक्शन के लिए चाबियाँ चुनें।
+#आगे बढ़ने और लेने के लिए सही फंक्शन के लिए कुंजियाँ चुनें।
 screen.onkey(moveUp, 'w')
 screen.onkey(moveDown, 's')
 screen.onkey(moveLeft, 'a')
 screen.onkey(moveRight, 'd')
 screen.onkey(pickUp, 'space')
 
-#प्रत्येक संसाधन को रखने और तैयार करने के लिए कुंजी को चुनें
+#प्रत्येक संसाधन को रखने और तैयार करने के लिए कुंजियों को चुनें
 bindPlacingKeys()
 bindCraftingKeys()
 
