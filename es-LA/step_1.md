@@ -10,11 +10,11 @@ En este proyecto, diseñarás y codificarás mejoras a una versión 2D de Minecr
 
 ### Información adicional para los líderes del club
 
-Si necesita imprimir este proyecto use la [versión para imprimir](https://projects.raspberrypi.org/en/projects/codecraft/print).
+Si necesitas imprimir este proyecto, por favor usa la [versión para imprimir](https://projects.raspberrypi.org/en/projects/codecraft/print).
 
 ## \--- collapse \---
 
-## título: Notas del líder del club
+## title: Notas para el líder del club
 
 ## Introducción:
 
@@ -32,7 +32,7 @@ También hay un Trinket que contiene el proyecto completo:
 
 ## Recursos sin conexión
 
-Si prefiere, este proyecto se puede [completar sin conexión](https://www.codeclubprojects.org/en-GB/resources/python-working-offline/). Puedes acceder a los recursos del proyecto haciendo clic en el enlace 'Materiales del proyecto' de este proyecto. Este enlace contiene una sección de "Recursos del proyecto", que incluye recursos que los niños necesitarán para completar el proyecto sin conexión. Asegúrate que cada niño tenga acceso a una copia de estos recursos. Esta sección incluye los siguientes archivos:
+Este proyecto se puede [completar sin conexión](https://www.codeclubprojects.org/en-GB/resources/python-working-offline/) si se prefiere. Puedes acceder a los recursos del proyecto haciendo clic en el enlace 'Materiales del proyecto' para este proyecto. Este enlace contiene una sección de "Recursos del proyecto", que incluye recursos que los niños necesitarán para completar el proyecto sin conexión. Asegúrate que cada niño tenga acceso a una copia de estos recursos. Esta sección incluye los siguientes archivos:
 
 + codecraft/codecraft.py
 + codecraft/variables.py
@@ -60,7 +60,7 @@ También puedes encontrar una versión completa de este proyecto en la sección 
 + codecraft-finished/water.gif
 + codecraft-finished/wood.gif
 
-(Todos los recursos anteriores también se pueden descargar como `.zip ` archivos.)
+(Todos los recursos anteriores también se pueden descargar como archivos `.zip`)
 
 ## Objetivos del Aprendizaje
 
@@ -71,7 +71,7 @@ También puedes encontrar una versión completa de este proyecto en la sección 
     + Listas;
     + Diccionarios.
 
-Este proyecto incluye los siguientes elementos del [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+Este proyecto incluye elementos de los siguientes aspectos del [Currículo de creación digital de Raspberry Pi](http://rpf.io/curriculum):
 
 + [Diseño de elementos básicos en 2D y 3D.](https://www.raspberrypi.org/curriculum/design/creator)
 
@@ -79,30 +79,30 @@ Este proyecto incluye los siguientes elementos del [Raspberry Pi Digital Making 
 
 ## Desafíos
 
-+ "Construye tu mundo"- Juega, posiciona y crea bloques existentes
-+ "Cambia el tamaño de tu mundo" - Editando las variables `MAPWIDTH` y `MAPHEIGHT` para cambiar el tamaño del mundo;
-+ "Crea arena" - Creando un nuevo recurso de arena, junto con los datos asociados al juego.
-+ "Crea vidrio a partir de arena" - Creando un nuevo recurso de vidrio.
-+ " Crea más recursos" - Usa lo que has aprendido para crear más bloques y reglas de creación.
++ "Construir tu mundo"- Jugar el juego, colocar y crear bloques existentes
++ "Cambiar el tamaño de tu mundo" - Editar las variables `ANCHOMAPA` y `ALTURAMAPA` para cambiar el tamaño del mundo;
++ "Crear arena" - Crear un nuevo recurso de arena, junto con los datos asociados al juego.
++ "Crear cristal a partir de arena" - Crear un nuevo recurso de cristal.
++ "Crear más recursos" - Usar lo que se ha aprendido para crear más bloques y reglas de creación.
 
 ## Preguntas frecuentes
 
-+ Es posible que necesite hacer recordar a los niños que los elementos de un diccionario/lista están separados por una coma. Por ejemplo, cuando se añaden artículos de inventario, gráficos y reglas de creación al juego.
++ Es posible que se necesite recordar a los niños que los elementos de un diccionario / lista están separados por una coma. Por ejemplo, cuando se añaden artículos de inventario, gráficos y reglas de creación al juego.
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## título: Materiales del proyecto
+## title: Materiales del proyecto
 
 ## Recursos del proyecto
 
-+ [El archivo.zip contiene todos los recursos del proyecto](http://rpf.io/p/en/codecraft-go)
-+ [Trinket en línea contiene todos los recursos del proyecto 'CodeCraft'](http://rpf.io/codecraft-on)
++ [archivo .zip que contiene todos los recursos del proyecto](http://rpf.io/p/en/codecraft-go)
++ [Trinket en línea que contiene todos los recursos del proyecto 'CodeCraft'](http://rpf.io/codecraft-on)
 
 ## Recursos del líder del club
 
-+ [El archivo.zip contiene todos los recursos del proyecto](http://rpf.io/p/en/codecraft-get)
++ [archivo .zip que contiene todos los recursos del proyecto](http://rpf.io/p/en/codecraft-get)
 + [Proyecto Trinket completado en línea](https://trinket.io/python/ebc5b0148b)
 
 \--- /collapse \---
