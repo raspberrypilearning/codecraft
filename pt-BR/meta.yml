@@ -8,13 +8,15 @@ description: Design e melhorias de código para uma versão 2D do Minecraft.
 version: 3
 last_tested: 2017-01-01
 steps:
-  - title: Introdução
-  - title: Jogando o jogo
-  - title: 'Desafio: Construa o seu mundo'
-  - title: Personalizando o seu jogo
-  - title: 'Desafio: Mude tamanho do seu mundo'
-  - title: Criando um novo recurso - Madeira
-  - title: 'Desafio: Criar areia'
-  - title: Criar tábuas a partir da madeira
-  - title: 'Desafio: Criar vidro a partir da areia'
-  - title: 'Desafio: Criar mais recursos'
+- title: Introdução
+  completion: engaged
+- title: Jogando o jogo
+- title: 'Desafio: Construa o seu mundo'
+- title: Personalizando o seu jogo
+- title: 'Desafio: Mude tamanho do seu mundo'
+- title: Criando um novo recurso - Madeira
+- title: 'Desafio: Criar areia'
+- title: Criar tábuas a partir da madeira
+- title: 'Desafio: Criar vidro a partir da areia'
+  completion: internal
+- title: 'Desafio: Criar mais recursos'

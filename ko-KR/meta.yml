@@ -8,13 +8,15 @@ description: 2D 마인크래프트를 설계하고 코드를 개선시켜 보세
 version: 3.1.0
 last_tested: 2018-22-01
 steps:
-  - title: 소개
-  - title: 게임 플레이 하기
-  - title: '도전과제: 나만의 세계 구축하기'
-  - title: 게임 맞춤 설정
-  - title: '도전과제: 월드 사이즈 수정하기'
-  - title: 새로운 나무 자원 만들기
-  - title: '도전과제: 모래 만들기'
-  - title: 나무로 나무판 만들기
-  - title: '도전과제: 모래로 유리 만들기'
-  - title: '도전과제: 더 많은 자원 만들기'
+- title: 소개
+  completion: engaged
+- title: 게임 플레이 하기
+- title: '도전과제: 나만의 세계 구축하기'
+- title: 게임 맞춤 설정
+- title: '도전과제: 월드 사이즈 수정하기'
+- title: 새로운 나무 자원 만들기
+- title: '도전과제: 모래 만들기'
+- title: 나무로 나무판 만들기
+- title: '도전과제: 모래로 유리 만들기'
+  completion: internal
+- title: '도전과제: 더 많은 자원 만들기'

@@ -8,13 +8,15 @@ description: Konzipiere und schreibe Code-Verbesserungen für eine 2D Version vo
 version: 3
 last_tested: 2017-01-01
 steps:
-  - title: Einleitung
-  - title: Das Spiel spielen
-  - title: 'Herausforderung: Bau dir deine Welt'
-  - title: Du kannst dein Spiel persönlicher gestalten
-  - title: 'Herausforderung: Die Größe deiner Welt verändern'
-  - title: Schaffe eine neue Ressource - Holz
-  - title: 'Herausforderung: Sand erschaffen'
-  - title: Bretter aus Holz herstellen
-  - title: 'Herausforderung: Glas aus Sand herstellen'
-  - title: 'Herausforderung: Weitere Ressourcen schaffen'
+- title: Einleitung
+  completion: engaged
+- title: Das Spiel spielen
+- title: 'Herausforderung: Bau dir deine Welt'
+- title: Du kannst dein Spiel persönlicher gestalten
+- title: 'Herausforderung: Die Größe deiner Welt verändern'
+- title: Schaffe eine neue Ressource - Holz
+- title: 'Herausforderung: Sand erschaffen'
+- title: Bretter aus Holz herstellen
+- title: 'Herausforderung: Glas aus Sand herstellen'
+  completion: internal
+- title: 'Herausforderung: Weitere Ressourcen schaffen'

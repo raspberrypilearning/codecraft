@@ -18,6 +18,7 @@ version: 3
 last_tested: 2017-01-01
 steps:
 - title: Inleiding
+  completion: engaged
 - title: Speel het spel
 - title: 'Uitdaging: bouw je wereld'
 - title: Je spel aanpassen
@@ -26,4 +27,5 @@ steps:
 - title: 'Uitdaging: maak zand'
 - title: Maak planken van hout
 - title: 'Uitdaging: maak glas van zand'
+  completion: internal
 - title: 'Uitdaging: meer bronnen maken'
