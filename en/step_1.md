@@ -25,7 +25,7 @@ In this project, children will learn aspects of graphics and game design by maki
 
 __This project uses Python 3.__ We recommend using [trinket](https://trinket.io/) to write Python online. This project contains the following Trinkets:
 
-+ ['CodeCraft' starter project -- rpf.io/codecraft-on](http://rpf.io/codecraft-on)
++ ['CodeCraft' starter project -- rpf.io/codecraft-on](https://rpf.io/codecraft-on)
 
 There is also a trinket containing the completed project:
 
@@ -72,7 +72,7 @@ You can also find a completed version of this project in the 'Volunteer Resource
 	+ Lists;
 	+ Dictionaries.
 
-This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](https://rpf.io/curriculum):
 
 + [Design basic 2D and 3D assets.](https://www.raspberrypi.org/curriculum/design/creator)
 
@@ -99,12 +99,12 @@ title: Project materials
 
 ## Project resources
 
-* [.zip file containing all project resources](http://rpf.io/p/en/codecraft-go)
-* [Online Trinket containing all 'CodeCraft' project resources](http://rpf.io/codecraft-on)
+* [.zip file containing all project resources](https://rpf.io/p/en/codecraft-go)
+* [Online Trinket containing all 'CodeCraft' project resources](https://rpf.io/codecraft-on)
 
 ## Club leader resources
 
-* [.zip file containing all completed project resources](http://rpf.io/p/en/codecraft-get)
+* [.zip file containing all completed project resources](https://rpf.io/p/en/codecraft-get)
 * [Online completed Trinket project](https://trinket.io/python/ebc5b0148b)
 
 --- /collapse ---

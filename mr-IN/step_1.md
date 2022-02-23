@@ -25,7 +25,7 @@ title: क्लब प्रमुखांसाठी टिप
 
 हा प्रकल्प **Python 3** चा वापर करतो. Python ऑनलाईन लिहिण्यासाठी आम्ही [trinket](https://trinket.io/) वापरण्याचा सल्ला देतो. या प्रकल्पात पुढील Trinkets आहेत:
 
-+ ['CodeCraft' स्टार्टर प्रकल्प - rpf.io/codecraft-on](http://rpf.io/codecraft-on)
++ ['CodeCraft' स्टार्टर प्रकल्प - rpf.io/codecraft-on](https://rpf.io/codecraft-on)
 
 येथे पूर्ण झालेले प्रकल्प असलेले एक trinket देखील आहे:
 
@@ -72,7 +72,7 @@ title: क्लब प्रमुखांसाठी टिप
     + याद्या;
     + शब्दकोश.
 
-या प्रकल्पात [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum) चे खालील घटक समाविष्ट आहेत:
+या प्रकल्पात [Raspberry Pi Digital Making Curriculum](https://rpf.io/curriculum) चे खालील घटक समाविष्ट आहेत:
 
 + [मूलभूत 2Dआणि 3D मालमत्ता डिझाइन करा.](https://www.raspberrypi.org/curriculum/design/creator)
 
@@ -100,7 +100,7 @@ title: प्रकल्प साहित्य
 ## प्रकल्प संसाधने
 
 + [सर्व प्रकल्पाची संसाधने असलेली.zip फाइल](resources/codecraft-resources.zip)
-+ [ऑनलाईन Trinketज्यात सर्व 'CodeCraft' प्रकल्प संसाधने आहेत](http://rpf.io/codecraft-on)
++ [ऑनलाईन Trinketज्यात सर्व 'CodeCraft' प्रकल्प संसाधने आहेत](https://rpf.io/codecraft-on)
 
 ## क्लब प्रमुखसाठी संसाधने
 

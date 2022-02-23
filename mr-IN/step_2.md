@@ -1,6 +1,6 @@
 ## खेळ खेळणे
 
-+ हे trinketउघडा: [rpf.io/codecraft-on](http://rpf.io/codecraft-on){:target="_blank"}.
++ हे trinketउघडा: [rpf.io/codecraft-on](https://rpf.io/codecraft-on){:target="_blank"}.
 
 + तुमच्या खेळाडूला जगभर फिरण्यासाठी WASD keys वापरा, ज्यात विविध संसाधने भरलेली आहे (घाण, गवत आणि पाणी).
     

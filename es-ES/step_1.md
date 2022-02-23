@@ -64,7 +64,7 @@ También se puede encontrar una versión completa de este proyecto en la secció
     + Listas;
     + Diccionarios.
 
-Este proyecto incluye elementos de los siguientes aspectos del [currículo de digitalización de Raspberry Pi](http://rpf.io/curriculum):
+Este proyecto incluye elementos de los siguientes aspectos del [currículo de digitalización de Raspberry Pi](https://rpf.io/curriculum):
 
 + [Diseña elementos básicos en 2D y 3D.](https://www.raspberrypi.org/curriculum/design/creator)
 

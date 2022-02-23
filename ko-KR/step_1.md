@@ -72,7 +72,7 @@ title: 교육자 노트
     + 리스트;
     + 딕셔너리.
 
-이 프로젝트는 [라즈베리파이 디지털 메이킹 커리큘럼](http://rpf.io/curriculum) 중 아래의 과정에 있는 요소들을 다룹니다.
+이 프로젝트는 [라즈베리파이 디지털 메이킹 커리큘럼](https://rpf.io/curriculum) 중 아래의 과정에 있는 요소들을 다룹니다.
 
 + [기초적인 2차원과 3차원의 물체의 설계.](https://www.raspberrypi.org/curriculum/design/creator)
 

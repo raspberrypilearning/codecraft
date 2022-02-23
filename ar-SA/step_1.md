@@ -72,7 +72,7 @@ title: ملاحظات قادة النادي
     + القوائم;
     + القواميس.
 
-يتناول هذا المشروع عناصر من معايير [المنهج الرقمي الخاص بـ Raspberry Pi ](http://rpf.io/curriculum):
+يتناول هذا المشروع عناصر من معايير [المنهج الرقمي الخاص بـ Raspberry Pi ](https://rpf.io/curriculum):
 
 + [الأصول الأساسية للتصميمات ثنائية وثلاثية الأبعاد.](https://www.raspberrypi.org/curriculum/design/creator)
 

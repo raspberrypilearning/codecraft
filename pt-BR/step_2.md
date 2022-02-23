@@ -1,6 +1,6 @@
 ## Jogando o jogo
 
-+ Abra este template trinket: [rpf.io/codecraft-on](http://rpf.io/codecraft-on){:target="_blank"}.
++ Abra este template trinket: [rpf.io/codecraft-on](https://rpf.io/codecraft-on){:target="_blank"}.
 
 + Use as teclas WASD para mover o seu jogador ao redor do mundo, que é cheio de recursos diferentes (terra, grama e água).
     

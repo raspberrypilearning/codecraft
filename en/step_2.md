@@ -1,6 +1,6 @@
 ## Playing the game
 
-+ Open this trinket: [rpf.io/codecraft-on](http://rpf.io/codecraft-on){:target="_blank"}. 
++ Open this trinket: [rpf.io/codecraft-on](https://rpf.io/codecraft-on){:target="_blank"}. 
 
 + Use the WASD keys to move your player around the world, which is full of different resources (dirt, grass and water).
 
