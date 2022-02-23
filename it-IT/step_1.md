@@ -72,7 +72,7 @@ Potete anche trovare una versione completa di questo progetto nella sezione 'Ris
     + Liste;
     + Dizionari.
 
-Questo progetto include elementi tratti dalle seguenti componenti del [Digital Making Curriculum di Raspberry Pi](http://rpf.io/curriculum):
+Questo progetto include elementi tratti dalle seguenti componenti del [Digital Making Curriculum di Raspberry Pi](https://rpf.io/curriculum):
 
 + [Progettazione di elementi 2D e 3D semplici.](https://www.raspberrypi.org/curriculum/design/creator)
 

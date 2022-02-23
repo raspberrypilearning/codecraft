@@ -71,7 +71,7 @@ title: クラブリーダー・ノート
     + リスト
     + ディクショナリ
 
-このプロジェクトは、[Raspberry Pi デジタル・メイキング・カリキュラム](http://rpf.io/curriculum)の以下の要素をカバーしています ：
+このプロジェクトは、[Raspberry Pi デジタル・メイキング・カリキュラム](https://rpf.io/curriculum)の以下の要素をカバーしています ：
 
 + [2次元と3次元のアセットをデザインする。](https://www.raspberrypi.org/curriculum/design/creator)
 

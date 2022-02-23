@@ -72,7 +72,7 @@ También puedes encontrar una versión completa de este proyecto en la sección 
     + Listas;
     + Diccionarios.
 
-Este proyecto incluye elementos de los siguientes aspectos del [Currículo de creación digital de Raspberry Pi](http://rpf.io/curriculum):
+Este proyecto incluye elementos de los siguientes aspectos del [Currículo de creación digital de Raspberry Pi](https://rpf.io/curriculum):
 
 + [Diseño de elementos básicos en 2D y 3D.](https://www.raspberrypi.org/curriculum/design/creator)
 
@@ -99,12 +99,12 @@ title: Materiales del proyecto
 
 ## Recursos del proyecto
 
-+ [archivo .zip que contiene todos los recursos del proyecto](http://rpf.io/p/es-LA/codecraft-go)
++ [archivo .zip que contiene todos los recursos del proyecto](https://rpf.io/p/es-LA/codecraft-go)
 + [Trinket en línea que contiene todos los recursos del proyecto 'CodeCraft'](https://trinket.io/python/c82f32a12f)
 
 ## Recursos del líder del club
 
-+ [archivo .zip que contiene todos los recursos del proyecto](http://rpf.io/p/es-LA/codecraft-get)
++ [archivo .zip que contiene todos los recursos del proyecto](https://rpf.io/p/es-LA/codecraft-get)
 + [Proyecto Trinket completado en línea](https://trinket.io/python/45632f87fd)
 
 --- /collapse ---

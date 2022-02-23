@@ -25,7 +25,7 @@ title: ಕ್ಲಬ್ ಲೀಡರ್ಸ್ ಟಿಪ್ಪಣಿಗಳು
 
 **ಈ project Python 3.** ಬಳಸುತ್ತದೆ ನೀವು Python online ಬರೆಯಲು ನಾವು [trinket](https://trinket.io/) ಬಳಸಲು ಶಿಫಾರಸು ಮಾಡಿದ್ದೇವೆ. ಈ ಯೋಜನೆ ಈ ಕೆಳಗಿನ Trinkets ಒಳಗೊಂಡಿವೆ:
 
-+ ['CodeCraft' starter project -- rpf.io/codecraft-on](http://rpf.io/codecraft-on)
++ ['CodeCraft' starter project -- rpf.io/codecraft-on](https://rpf.io/codecraft-on)
 
 ಮುಗಿದ ಯೋಜನೆ ಒಳಗೊಂಡಿರುವ trinket ಸಹ ಇದೆ:
 
@@ -70,7 +70,7 @@ title: ಕ್ಲಬ್ ಲೀಡರ್ಸ್ ಟಿಪ್ಪಣಿಗಳು
     + Lists;
     + Dictionaries.
 
-ಈ ಯೋಜನೆ[Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum) ಇದರ ಪಠ್ಯಕ್ರಮವನ್ನು ಅನುಸರಿಸುತ್ತದೆ:
+ಈ ಯೋಜನೆ[Raspberry Pi Digital Making Curriculum](https://rpf.io/curriculum) ಇದರ ಪಠ್ಯಕ್ರಮವನ್ನು ಅನುಸರಿಸುತ್ತದೆ:
 
 + [ಮೂಲ 2D ಮತ್ತು 3D ಸ್ವತ್ತುಗಳನ್ನು ವಿನ್ಯಾಸಗೊಳಿಸಿ.](https://www.raspberrypi.org/curriculum/design/creator)
 
@@ -98,7 +98,7 @@ title: ಯೋಜನೆಯ ವಸ್ತುಗಳು
 ## ಯೋಜನೆಯ resouceಗಳು
 
 + [ಎಲ್ಲ project resources ಹೊಂದಿರುವ .zip file](resources/codecraft-resources.zip)
-+ [Online Trinket ಹೊಂದಿರುವ ಎಲ್ಲಾ 'CodeCraft' project resources](http://rpf.io/codecraft-on)
++ [Online Trinket ಹೊಂದಿರುವ ಎಲ್ಲಾ 'CodeCraft' project resources](https://rpf.io/codecraft-on)
 
 ## ಕ್ಲಬ್ ನಾಯಕ ಸಂಪನ್ಮೂಲಗಳು
 

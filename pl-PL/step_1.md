@@ -72,7 +72,7 @@ Ukończoną wersję tego projektu można również znaleźć w sekcji "Zasoby dl
     + Listy;
     + słowników.
 
-Ten projekt obejmuje zagadnienia zawarte w [Programie nauczania Raspberry Pi Digital Making](http://rpf.io/curriculum):
+Ten projekt obejmuje zagadnienia zawarte w [Programie nauczania Raspberry Pi Digital Making](https://rpf.io/curriculum):
 
 + [Projektowanie podstawowych obiektów 2D i 3D.](https://www.raspberrypi.org/curriculum/design/creator)
 

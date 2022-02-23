@@ -72,7 +72,7 @@ Vous pouvez aussi trouver une version complétée du projet dans la section "Res
     + Listes;
     + Dictionnaires.
 
-Ce projet couvre les élements suivants du [Programme Raspberry Pi de Créativité Numérique](http://rpf.io/curriculum):
+Ce projet couvre les élements suivants du [Programme Raspberry Pi de Créativité Numérique](https://rpf.io/curriculum):
 
 + [Concevoir des éléments basiques en 2D et 3D.](https://www.raspberrypi.org/curriculum/design/creator)
 

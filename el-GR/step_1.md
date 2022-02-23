@@ -25,7 +25,7 @@ title: Σημειώσεις συντονιστή ομάδας
 
 **Αυτό το έργο χρησιμοποιεί Python 3.** Συνιστούμε να χρησιμοποιήσετε το [trinket](https://trinket.io/) για να γράψετε Python online. Το έργο αυτό περιλαμβάνει τα ακόλουθα Trinkets:
 
-+ [Το σημείο στο οποίο ξεκινάει το μάθημα του CodeCraft - rpf.io/codecraft-on](http://rpf.io/codecraft-on)
++ [Το σημείο στο οποίο ξεκινάει το μάθημα του CodeCraft - rpf.io/codecraft-on](https://rpf.io/codecraft-on)
 
 Υπάρχει επίσης ένα trinket που περιέχει το ολοκληρωμένο έργο:
 
@@ -72,7 +72,7 @@ title: Σημειώσεις συντονιστή ομάδας
     + Λίστες
     + Λεξικά.
 
-Αυτό το έργο καλύπτει στοιχεία από τις ακόλουθες πτυχές του [Προγράμματος Μαθημάτων Ψηφιακής Δημιουργίας του Raspberry Pi](http://rpf.io/curriculum):
+Αυτό το έργο καλύπτει στοιχεία από τις ακόλουθες πτυχές του [Προγράμματος Μαθημάτων Ψηφιακής Δημιουργίας του Raspberry Pi](https://rpf.io/curriculum):
 
 + [Σχεδιασμός βασικών στοιχείων 2D και 3D.](https://www.raspberrypi.org/curriculum/design/creator)
 
@@ -100,7 +100,7 @@ title: Υλικό έργου
 ## Πόροι έργου
 
 + [αρχείο .zip που περιέχει όλους τους πόρους του έργου](resources/codecraft-resources.zip)
-+ [Online Trinket που περιέχει όλους τους πόρους του έργου "CodeCraft"](http://rpf.io/codecraft-on)
++ [Online Trinket που περιέχει όλους τους πόρους του έργου "CodeCraft"](https://rpf.io/codecraft-on)
 
 ## Πόροι συντονιστή ομάδας
 

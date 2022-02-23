@@ -25,7 +25,7 @@ title: क्लब नेता नोट्स
 
 **इस प्रोजेक्ट में Python 3 का उपयोग किया जाता है।** Python को ऑनलाइन लिखने के लिए हम [trinket](https://trinket.io/) का उपयोग करने की सलाह देते हैं। इस प्रोजेक्ट में निम्नलिखित Trinket हैं:
 
-+ ['कोडक्राफ्ट' प्रारंभक परियोजना - rpf.io/codecraft-on](http://rpf.io/codecraft-on)
++ ['कोडक्राफ्ट' प्रारंभक परियोजना - rpf.io/codecraft-on](https://rpf.io/codecraft-on)
 
 एक ऐसा trinket भी है जिसमें पूरा प्रोजेक्ट है:
 
@@ -72,7 +72,7 @@ title: क्लब नेता नोट्स
     + सूचियाँ;
     + शब्दकोश।
 
-इस परियोजना में [Raspberry Pi डिजिटल निर्माण पाठ्यक्रम](http://rpf.io/curriculum) के निम्नलिखित पहलुओं के तत्व सम्मिलित हैं:
+इस परियोजना में [Raspberry Pi डिजिटल निर्माण पाठ्यक्रम](https://rpf.io/curriculum) के निम्नलिखित पहलुओं के तत्व सम्मिलित हैं:
 
 + [बुनियादी 2D और 3D संपदाएँ डिज़ाइन करें ।](https://www.raspberrypi.org/curriculum/design/creator)
 
@@ -100,7 +100,7 @@ title: प्रोजेक्ट सामग्री
 ## परियोजना संसाधन
 
 + [सभी परियोजना संसाधनों वाली .zip फ़ाइल](resources/codecraft-resources.zip)
-+ [ऑनलाइन Trinket जिसमें सभी 'CodeCraft' प्रोजेक्ट संसाधन हैं](http://rpf.io/codecraft-on)
++ [ऑनलाइन Trinket जिसमें सभी 'CodeCraft' प्रोजेक्ट संसाधन हैं](https://rpf.io/codecraft-on)
 
 ## क्लब लीडर ले लिए संसाधन
 

@@ -72,7 +72,7 @@ title: 俱乐部导师说明
     + 列表;
     + 字典。
 
-本项目涵盖[树莓派数字制作课程](http://rpf.io/curriculum)如下几方面内容：
+本项目涵盖[树莓派数字制作课程](https://rpf.io/curriculum)如下几方面内容：
 
 + [设计基本的2D和3D素材。](https://www.raspberrypi.org/curriculum/design/creator)
 

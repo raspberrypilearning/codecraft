@@ -25,7 +25,7 @@ Neste projeto, as crianças aprenderão aspectos de gráficos e design de jogos,
 
 **Este projeto usa o Python 3.** Recomendamos usar [trinket](https://trinket.io/) para escrever Python online. Este projeto contém os seguintes Trinkets:
 
-+ [Ponto de partida 'CodeCraft' - rpf.io/codecraft-on](http://rpf.io/codecraft-on)
++ [Ponto de partida 'CodeCraft' - rpf.io/codecraft-on](https://rpf.io/codecraft-on)
 
 Há também uma trinket contendo o projeto concluído:
 
@@ -72,7 +72,7 @@ Você também pode encontrar uma versão completa deste projeto na seção 'Recu
     + Listas;
     + Dicionários
 
-Este projeto abrange elementos das seguintes vertentes do [Currículo de Criação Digital Raspberry Pi](http://rpf.io/curriculum):
+Este projeto abrange elementos das seguintes vertentes do [Currículo de Criação Digital Raspberry Pi](https://rpf.io/curriculum):
 
 + [Projetar designs básicos em 2D e 3D.](https://www.raspberrypi.org/curriculum/design/creator)
 
@@ -100,7 +100,7 @@ title: Materiais do projeto
 ## Recursos do projeto
 
 + [Arquivo .zip contendo todos os recursos do projeto](resources/codecraft-resources.zip)
-+ [Trinket Online contendo todos os recursos do projeto 'CodeCraft'](http://rpf.io/codecraft-on)
++ [Trinket Online contendo todos os recursos do projeto 'CodeCraft'](https://rpf.io/codecraft-on)
 
 ## Recursos do líder do clube
 
