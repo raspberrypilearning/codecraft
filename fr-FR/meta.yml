@@ -8,13 +8,17 @@ description: Conception et amélioration du code d'une version 2D de Minecraft.
 version: 3.1.0
 last_tested: 2018-11-22
 steps:
-  - title: Introduction
-  - title: Jouer au jeu
-  - title: 'Défi : Construit ton monde'
-  - title: Personnalise ton jeu
-  - title: 'Défi : Change la taille de ton monde'
-  - title: 'Crée une nouvelle ressource : le bois'
-  - title: 'Défi : Crée du sable'
-  - title: Fabrique des planches à partir de bois
-  - title: 'Défi : Fabrique du verre à partir du sable'
-  - title: 'Défi : Crée plus de ressources'
+- title: Introduction
+- title: Jouer au jeu
+- title: 'Défi : Construit ton monde'
+- title: Personnalise ton jeu
+  completion:
+  - engaged
+- title: 'Défi : Change la taille de ton monde'
+- title: 'Crée une nouvelle ressource : le bois'
+- title: 'Défi : Crée du sable'
+- title: Fabrique des planches à partir de bois
+  completion:
+  - internal
+- title: 'Défi : Fabrique du verre à partir du sable'
+- title: 'Défi : Crée plus de ressources'
