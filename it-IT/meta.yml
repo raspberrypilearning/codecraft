@@ -9,14 +9,16 @@ version: 3.1.0
 last_tested: 2018-11-22
 steps:
 - title: Introduzione
-  completion: engaged
 - title: Inizia la partita
 - title: 'Sfida: Costruisci il tuo mondo'
 - title: Personalizza il tuo gioco
+  completion:
+  - engaged
 - title: 'Sfida: Cambia le dimensioni del tuo mondo'
 - title: Creazione della nuova risorsa legno
 - title: 'Sfida: Crea la sabbia'
 - title: Fabbricare tavole di legno
+  completion:
+  - internal
 - title: 'Sfida: Fabbricare il vetro con la sabbia'
-  completion: internal
 - title: 'Sfida: Creare altre risorse'

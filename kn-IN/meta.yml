@@ -9,14 +9,16 @@ version: 3.1.0
 last_tested: 2018-11-22
 steps:
 - title: ಪರಿಚಯ
-  completion: engaged
 - title: ಆಟವಾಡುವುದು
 - title: 'ಸವಾಲು: ನಿಮ್ಮ ಜಗತ್ತನ್ನು ನಿರ್ಮಿಸಿ'
 - title: ನಿಮ್ಮ ಆಟವನ್ನು ಕಸ್ಟಮೈಸ್ ಮಾಡಲಾಗುತ್ತಿದೆ
+  completion:
+  - engaged
 - title: 'ಸವಾಲು: ನಿಮ್ಮ ವಿಶ್ವ ಗಾತ್ರವನ್ನು ಬದಲಾಯಿಸಿ'
 - title: ಹೊಸ wood resource ರಚಿಸುವುದು
 - title: 'ಸವಾಲು: sand(ಮರಳು) ರಚಿಸುವುದು'
 - title: Woodಇಂದ planks ತಯಾರಿಸುವುದು
+  completion:
+  - internal
 - title: 'ಸವಾಲು: sandಇಂದ glass ತಯಾರಿಸುವುದು'
-  completion: internal
 - title: 'ಸವಾಲು: ಹೆಚ್ಚಿನ resources ರಚಿಸಿ'

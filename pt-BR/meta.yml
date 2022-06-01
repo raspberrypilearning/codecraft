@@ -9,14 +9,16 @@ version: 3
 last_tested: 2017-01-01
 steps:
 - title: Introdução
-  completion: engaged
 - title: Jogando o jogo
 - title: 'Desafio: Construa o seu mundo'
 - title: Personalizando o seu jogo
+  completion:
+  - engaged
 - title: 'Desafio: Mude tamanho do seu mundo'
 - title: Criando um novo recurso - Madeira
 - title: 'Desafio: Criar areia'
 - title: Criar tábuas a partir da madeira
+  completion:
+  - internal
 - title: 'Desafio: Criar vidro a partir da areia'
-  completion: internal
 - title: 'Desafio: Criar mais recursos'

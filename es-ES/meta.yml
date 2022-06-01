@@ -19,14 +19,16 @@ version: 3
 last_tested: 2017-01-01
 steps:
 - title: Introducción
-  completion: engaged
 - title: Jugar al juego
 - title: 'Desafío: Crea tu propio mundo'
 - title: Personalizar tu juego
+  completion:
+  - engaged
 - title: 'Desafío: Cambia el tamaño de tu mundo'
 - title: 'Creación de un nuevo recurso: madera'
 - title: 'Desafío: Crear arena'
 - title: 'Paso 4: Crear tablones de madera'
+  completion:
+  - internal
 - title: 'Desafío: Crear cristal a partir de arena'
-  completion: internal
 - title: 'Desafío: Crea más recursos'

@@ -9,14 +9,16 @@ version: 3.1.0
 last_tested: 2018-11-22
 steps:
 - title: Introduction
-  completion: engaged
 - title: Playing the game
 - title: 'Challenge: Build your world'
 - title: Customising your game
+  completion:
+  - engaged
 - title: 'Challenge: Change your world size'
 - title: Creating a new wood resource
 - title: 'Challenge: Creating sand'
 - title: Crafting planks from wood
+  completion:
+  - internal
 - title: 'Challenge: Crafting glass from sand'
-  completion: internal
 - title: 'Challenge: Create more resources'

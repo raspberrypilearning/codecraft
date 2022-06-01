@@ -9,14 +9,16 @@ version: 3.1.0
 last_tested: 2018-11-22
 steps:
 - title: भूमिका
-  completion: engaged
 - title: गेम खेलना
 - title: 'चुनौती: अपनी दुनिया बनाएँ'
 - title: अपनी गेम को कस्टमाइज़ करना
+  completion:
+  - engaged
 - title: 'चुनौती: अपनी दुनिया का आकार बदलें'
 - title: नया लकड़ी का संसाधन बनाना
 - title: 'चुनौती: रेत बनाना'
 - title: लकड़ी से तख्ते बनाना
+  completion:
+  - internal
 - title: 'चुनौती: रेत से काँच बनाना'
-  completion: internal
 - title: 'चुनौती: और संसाधन बनाएँ'

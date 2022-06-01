@@ -9,14 +9,16 @@ version: 3.1.0
 last_tested: 2018-11-22
 steps:
 - title: Wprowadzenie
-  completion: engaged
 - title: Zasady gry
 - title: 'Zadanie: tworzenie własnego świata'
 - title: Modyfikacja własnej gry
+  completion:
+  - engaged
 - title: 'Zadanie: zmiana rozmiarów świata'
 - title: Tworzenie nowego zasobu drewna
 - title: 'Wyzwanie: tworzenie piasku'
 - title: Wytwarzanie desek z drewna
+  completion:
+  - internal
 - title: 'Zadanie: wytwarzanie szkła z piasku'
-  completion: internal
 - title: 'Zadanie: tworzenie nowych zasobów'

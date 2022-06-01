@@ -9,14 +9,16 @@ version: 3
 last_tested: 2017-01-01
 steps:
 - title: Einleitung
-  completion: engaged
 - title: Das Spiel spielen
 - title: 'Herausforderung: Bau dir deine Welt'
 - title: Du kannst dein Spiel persönlicher gestalten
+  completion:
+  - engaged
 - title: 'Herausforderung: Die Größe deiner Welt verändern'
 - title: Schaffe eine neue Ressource - Holz
 - title: 'Herausforderung: Sand erschaffen'
 - title: Bretter aus Holz herstellen
+  completion:
+  - internal
 - title: 'Herausforderung: Glas aus Sand herstellen'
-  completion: internal
 - title: 'Herausforderung: Weitere Ressourcen schaffen'

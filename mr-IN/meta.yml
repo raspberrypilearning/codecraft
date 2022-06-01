@@ -9,14 +9,16 @@ version: 3.1.0
 last_tested: 2018-11-22
 steps:
 - title: प्रस्तावना
-  completion: engaged
 - title: खेळ खेळणे
 - title: 'आव्हान: तुमचे world तयार करा'
 - title: तुमचा खेळ अनुकुलीत करणे
+  completion:
+  - engaged
 - title: 'आव्हान: तुमच्या world चा आकार बदला'
 - title: नवीन लाकूड संसाधने तयार करणे
 - title: 'आव्हान: वाळू तयार करणे'
 - title: लाकडापासून फळी तयार करणे
+  completion:
+  - internal
 - title: 'आव्हान: वाळूपासून काचांचे शिल्प तयार करणे'
-  completion: internal
 - title: 'आव्हान: अधिक संसाधने तयार करा'
