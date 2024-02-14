@@ -1,6 +1,6 @@
 \--- challenge \---
 
-## Wyzwanie: Wytwarzanie szkła z piasku
+## Wyzwanie: wytwarzanie szkła z piasku
 
 Czy możesz stworzyć nowy materiał - szkło, który można wykonać z piasku? Dla ułatwienia wykonaj powyższe kroki.
 
