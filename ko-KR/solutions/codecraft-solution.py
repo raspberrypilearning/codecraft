@@ -190,17 +190,17 @@ def drawInventory():
       rendererT.write("제작")
     #인벤토리 위치 설정
     xPosition = 70
-    yPostition = height - (MAPHEIGHT * TILESIZE) - 60
+    yPostition = height - (MAPHEIGHT * TILESIZE) - 80
     itemNum = 0
     for i, item in enumerate(resources):
       #이미지 추가
-      rendererT.goto(xPosition + 10, yPostition)
+      rendererT.goto(xPosition, yPostition)
       rendererT.shape(textures[item])
       rendererT.stamp()
       #숫자를 인벤토리에 추가
       rendererT.goto(xPosition, yPostition - TILESIZE)
       rendererT.write(inventory[item])
-      #add the name
+      #이름 추가
       rendererT.goto(xPosition, yPostition - TILESIZE - 20)
       rendererT.write('[' + names[item] + ']')
       #배치 키 추가
