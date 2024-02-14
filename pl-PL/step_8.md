@@ -26,7 +26,7 @@ Stwórzmy nowy zasób – deskę (ang. plank), który będzie wykonany z drewna.
     
     ![zrzut ekranu](images/craft-plank-placekeys.png)
 
-+ Ponieważ ten zasób może zostać stworzony, musisz stworzyć regułę tworzenia, która polega na tym, że deskę można wykonać z 3 drewnianych płytek. Dodaj ten kod do słownika `tworzenie`.
++ Należy utworzyć reguły budowania zasobu, skoro może on być wytwarzany. Deskę można zbudować z 3 sztuk drewna. Dodaj ten kod do słownika `tworzenie`.
     
     ![zrzut ekranu](images/craft-plank-crafting.png)
 
