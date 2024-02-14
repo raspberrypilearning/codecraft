@@ -20,7 +20,7 @@ Jeśli chcesz wydrukować ten projekt, użyj [wersji do druku](https://projects.
 
 W tym projekcie dzieci poznają aspekty grafiki i projektowania gier, wprowadzając ulepszenia do podstawowego klona 2D Minecrafta. Dzieci będą tworzyć nowe zasoby, a także reguły łączenia zasobów w celu utworzenia nowych. Do osiągnięcia celu potrzebne będzie zrozumienie zasad użycia zmiennych, list i słowników.
 
-## Zasoby Online
+## Zasoby online
 
 **Ten projekt używa języka Python 3.** Do pisania kodu w Pythonie zalecamy użycie edytora [trinket](https://trinket.io/). Ten projekt zawiera następujące szablony:
 
@@ -30,7 +30,7 @@ Jest też Trinket zawierający ukończony projekt:
 
 + [„CodeCraft” – projekt ukończony -- trinket.io/python/ebc5b0148b](https://trinket.io/python/ebc5b0148b)
 
-## Zasoby Offline
+## Zasoby offline
 
 Ten projekt można także [wykonać offline](https://www.codeclubprojects.org/en-GB/resources/python-working-offline/). Żeby pobrać materiały dotyczące projektu, kliknij w odnośnik „Materiały do projektu". Ten odnośnik zawiera sekcję "Zasoby", których dzieci będą potrzebować, aby ukończyć ten projekt bez dostępu do sieci. Upewnij się, że każde dziecko ma dostęp do kopii tych zasobów. Ta sekcja zawiera następujące pliki:
 
@@ -77,7 +77,7 @@ Ten projekt obejmuje zagadnienia zawarte w [Programie nauczania Raspberry Pi Dig
 
 + [Łączenie struktur programistycznych, w celu rozwiązania zadania.](https://www.raspberrypi.org/curriculum/programming/builder)
 
-## Zadania
+## Wyzwania
 
 + „Tworzenie własnego świata” – granie w grę, umieszczanie i wytwarzanie bloków.
 + „Zmiana rozmiarów świata” - edycja zmiennych `MAPWIDTH` i `MAPHEIGHT`, w celu modyfikacji rozmiarów świata;
@@ -85,7 +85,7 @@ Ten projekt obejmuje zagadnienia zawarte w [Programie nauczania Raspberry Pi Dig
 + "Wytwarzanie szkła z piasku" - Tworzenie nowego, nadającego się do ręcznego wytwarzania szkła.
 + „Tworzenie nowych zasobów” - użycie zdobytej wiedzy do tworzenia nowych bloków i zasad ich wytwarzania.
 
-## Najczęściej Zadawane Pytania
+## Często zadawane pytania
 
 + Warto dzieciom przypominać, że elementy list i słowników należy oddzielać przecinkami, np. gdy będą dodawać elementy do ekwipunku, obrazy, czy zasady wytwarzania.
 
