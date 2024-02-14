@@ -1,6 +1,6 @@
 \--- challenge \---
 
-## Zadanie: tworzenie własnego świata
+## Wyzwanie: tworzenie własnego świata
 
 Czy możesz zbudować dom z ogrodem i basenem? Co jeszcze możesz stworzyć?
 
