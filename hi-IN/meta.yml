@@ -4,7 +4,7 @@ duration: 2
 listed: true
 copyedit: false
 title: कोडक्राफ्ट
-description: माइनक्राफ्ट के 2D संस्करण डिज़ाइन और सुधार के लिए कोड करें।
+description: Minecraft के 2D संस्करण में डिज़ाइन और कोड सुधार।
 version: 3.1.0
 last_tested: 2018-11-22
 steps:
@@ -19,7 +19,7 @@ steps:
   - 
     title: 'चुनौती: अपनी दुनिया का आकार बदलें'
   - 
-    title: नया लकड़ी का संसाधन बनाना
+    title: नया लकड़ी संसाधन बनाना
   - 
     title: 'चुनौती: रेत बनाना'
   - 
