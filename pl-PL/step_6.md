@@ -2,7 +2,7 @@
 
 Do utworzenia nowego zasobu drewna, potrzebne będą zmiany wartości niektórych zmiennych w pliku `variables.py`.
 
-+ Najpierw należy przypisać wartość liczbową nowemu zasobowi, aby później móc używać słowa `WOOD` w swoim kodzie zamiast liczby 4.
++ Najpierw należy przypisać wartość liczbową nowemu zasobowi, aby później móc używać słowa `DREWNO` w swoim kodzie zamiast liczby 4.
     
     ![zrzut ekranu](images/craft-wood-const.png)
 
@@ -20,7 +20,7 @@ Do utworzenia nowego zasobu drewna, potrzebne będą zmiany wartości niektóryc
     
     ![zrzut ekranu](images/craft-wood-texture.png)
 
-+ Zacznij od dodania numeru swojego zasobu jaki powinien mieć w `ekwipunek`.
++ Zacznij od dodania numeru swojego zasobu jaki powinien mieć w `ekwipunku`.
     
     ![zrzut ekranu](images/craft-wood-inventory.png)
 
