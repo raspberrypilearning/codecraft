@@ -11,14 +11,16 @@ steps:
 - title: Introduction
 - title: Playing the game
 - title: 'Challenge: Build your world'
-- title: Customising your game
   completion:
   - engaged
+- title: Customising your game
 - title: 'Challenge: Change your world size'
 - title: Creating a new wood resource
-- title: 'Challenge: Creating sand'
-- title: Crafting planks from wood
   completion:
   - internal
+- title: 'Challenge: Creating sand'
+- title: Crafting planks from wood
 - title: 'Challenge: Crafting glass from sand'
 - title: 'Challenge: Create more resources'
+  completion:
+  - external
