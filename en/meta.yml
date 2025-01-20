@@ -23,4 +23,4 @@ steps:
 - title: 'Challenge: Crafting glass from sand'
 - title: 'Challenge: Create more resources'
   completion:
-  - internal
+  - external
