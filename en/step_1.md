@@ -2,11 +2,7 @@
 
 In this project, you’ll design and code improvements to a 2D version of Minecraft.
 
-<div class="trinket">
-  <iframe src="https://trinket.io/embed/python/ebc5b0148b?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
-  </iframe>
-  <img src="images/craft-finished.png">
-</div>
+<iframe src="https://editor.raspberrypi.org/en/embed/viewer/codecraft-complete" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> </iframe>
 
 ### Additional information for club leaders
 

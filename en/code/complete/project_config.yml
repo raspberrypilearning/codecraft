@@ -1,0 +1,4 @@
+name: 'Codecraft Complete'
+identifier: 'editor-codecraft-complete'
+type: 'python'
+build: true
