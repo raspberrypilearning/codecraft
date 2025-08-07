@@ -1,4 +1,4 @@
 name: 'Codecraft Starter'
-identifier: 'editor-codecraft-starter'
+identifier: 'codecraft-starter'
 type: 'python'
 build: true
